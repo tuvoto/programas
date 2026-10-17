@@ -1,25 +1,52 @@
 {
   "expo": {
-    "name": "programas29n",
-    "slug": "programas29n",
+    "name": "TuVoto",
+    "slug": "programas-electorales",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "es.programaselectorales.app",
+      "supportsTablet": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "es"
+      }
     },
     "android": {
+      "package": "es.programaselectorales.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#161144",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro",
+      "name": "TuVoto",
+      "description": "Compara por temas los programas electorales de las elecciones generales del 29 de noviembre de 2026.",
+      "themeColor": "#161144",
+      "backgroundColor": "#F6F4EF"
+    },
+    "experiments": {
+      "baseUrl": "/programas"
+    },
+    "scheme": "programaselectorales",
+    "plugins": [
+      "expo-router"
+    ],
+    "description": "Compara por temas los programas electorales de las elecciones generales del 29 de noviembre de 2026."
   }
 }

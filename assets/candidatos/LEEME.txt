@@ -1,0 +1,18 @@
+FOTOS DE LOS CANDIDATOS
+
+1. Guarda cada foto aquí con el id del partido como nombre:
+   psoe.jpg, pp.jpg, vox.jpg, podemos.jpg, salf.jpg, junts.jpg, pnv.jpg, cc.jpg
+   (y frente-amplio, erc, bildu, bng o upn cuando tengan candidato)
+   Mejor cuadrada (por ejemplo 400 x 400) y con la cara centrada.
+
+2. Escribe el autor y la licencia en creditos.json, así:
+   {
+     "psoe": { "autor": "Nombre del fotógrafo", "licencia": "CC BY-SA 4.0" },
+     "pp":   { "autor": "Nombre del fotógrafo", "licencia": "CC BY 2.0" }
+   }
+
+3. En la carpeta del proyecto ejecuta:  npm run fotos
+
+Usa solo fotos con licencia libre (Wikimedia Commons) o fotos oficiales que
+el partido permita usar. Mismo tipo de foto para todos, por neutralidad.
+Si un partido no tiene foto, la app muestra las iniciales del candidato.

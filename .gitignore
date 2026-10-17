@@ -39,3 +39,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Noticias generadas en local con npm run noticias
+public/noticias.json

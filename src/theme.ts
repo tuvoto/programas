@@ -71,7 +71,7 @@ export const ESTADO_TEXTO: Record<string, string> = {
 };
 
 // Ancho máximo del contenido en pantallas grandes (web en ordenador).
-export const ANCHO_MAX = 1100;
+export const ANCHO_MAX = 880;
 // Margen lateral estándar
 export const M = 18;
 // Espacio que deja libre la barra de pestañas flotante al final de cada pantalla

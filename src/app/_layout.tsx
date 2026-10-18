@@ -2,26 +2,19 @@ import { Stack } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
-import {
-  BricolageGrotesque_600SemiBold,
-  BricolageGrotesque_800ExtraBold,
-} from '@expo-google-fonts/bricolage-grotesque';
-import {
-  Figtree_400Regular,
-  Figtree_500Medium,
-  Figtree_600SemiBold,
-  Figtree_700Bold,
-} from '@expo-google-fonts/figtree';
 import { C } from '../theme';
 
 export default function RootLayout() {
+  // Las fuentes están copiadas en assets/fuentes con nombres cortos: así la web
+  // no depende de rutas largas dentro de node_modules (Windows y GitHub Pages
+  // las perdían al publicar).
   const [cargadas, error] = useFonts({
-    BricolageGrotesque_600SemiBold,
-    BricolageGrotesque_800ExtraBold,
-    Figtree_400Regular,
-    Figtree_500Medium,
-    Figtree_600SemiBold,
-    Figtree_700Bold,
+    BricolageGrotesque_600SemiBold: require('../../assets/fuentes/bricolage-600.ttf'),
+    BricolageGrotesque_800ExtraBold: require('../../assets/fuentes/bricolage-800.ttf'),
+    Figtree_400Regular: require('../../assets/fuentes/figtree-400.ttf'),
+    Figtree_500Medium: require('../../assets/fuentes/figtree-500.ttf'),
+    Figtree_600SemiBold: require('../../assets/fuentes/figtree-600.ttf'),
+    Figtree_700Bold: require('../../assets/fuentes/figtree-700.ttf'),
   });
 
   // Si las fuentes fallan, la app sigue funcionando con la fuente del sistema.

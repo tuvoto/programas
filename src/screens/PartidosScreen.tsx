@@ -11,7 +11,7 @@ import { C, HUECO_BARRA, M, R, S, T, textoSobre, ANCHO_MAX, CENTRADO } from '../
 
 export default function PartidosScreen() {
   const [ancho, setAncho] = useState(0);
-  const columnas = ancho >= 760 ? 2 : 1;
+  const columnas = ancho >= 980 ? 3 : ancho >= 760 ? 2 : 1;
 
   return (
     <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>

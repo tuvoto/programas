@@ -29,6 +29,8 @@ export default function TemasScreen({ onAbrirTema }: Props) {
   const columnas = ancho >= 900 ? 4 : ancho >= 600 ? 3 : 2;
   const dias = diasHastaElecciones();
   const ancho760 = ancho >= 760;
+  // En pantallas anchas, el test y los resúmenes van uno al lado del otro.
+  const pareja = ancho >= 960;
 
   // Reparto en filas: las tarjetas de una misma fila quedan alineadas y con la misma altura.
   const filas: Tema[][] = [];
@@ -67,17 +69,18 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         </Tarjeta>
       </Revelar>
 
+      <View style={pareja ? s.pareja : undefined}>
       {/* Test de afinidad, destacado */}
-      <Revelar>
+      <Revelar style={pareja ? s.mitad : undefined}>
         <Pulsable
           onPress={() => router.push('/test')}
-          style={[s.test, ancho760 && s.testAncho]}
+          style={[s.test, ancho760 && !pareja && s.testAncho, pareja && s.alto]}
           escala={0.98}
           vibracion="ligera"
           accessibilityRole="link"
           accessibilityLabel="Hacer el test de afinidad"
         >
-          <View style={{ flex: ancho760 ? 1 : undefined, gap: 6 }}>
+          <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
             <Text style={[T.seccion, { color: C.sobreTinta, fontSize: 24, lineHeight: 28 }]}>¿Con qué programa coincides?</Text>
             <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>
               {AFIRMACIONES.length} frases, unos {Math.round((AFIRMACIONES.length * 8) / 60)} minutos.
@@ -91,16 +94,16 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       </Revelar>
 
       {/* Resúmenes de los programas: lleva a la pestaña Partidos */}
-      <Revelar>
+      <Revelar style={pareja ? s.mitad : undefined}>
         <Pulsable
           onPress={() => router.navigate('/partidos')}
-          style={[s.resumenes, ancho760 && s.testAncho]}
+          style={[s.resumenes, ancho760 && !pareja && s.testAncho, pareja && s.alto]}
           escala={0.98}
           vibracion="ligera"
           accessibilityRole="link"
           accessibilityLabel="Ver los resúmenes de los programas en Partidos"
         >
-          <View style={{ flex: ancho760 ? 1 : undefined, gap: 6 }}>
+          <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
             <Text style={[T.seccion, { color: C.tinta, fontSize: 24, lineHeight: 28 }]}>Resúmenes de los programas</Text>
             <Text style={[T.cuerpo, { color: C.tinta, opacity: 0.8 }]}>
               Descarga el programa de cada partido o sus propuestas por temas en PDF.
@@ -112,6 +115,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           </View>
         </Pulsable>
       </Revelar>
+      </View>
 
       <InstalarWeb />
 
@@ -213,6 +217,9 @@ const s = StyleSheet.create({
     boxShadow: S.flotante,
   },
   testAncho: { flexDirection: 'row', alignItems: 'center', gap: 24 },
+  pareja: { flexDirection: 'row', gap: 12, alignItems: 'stretch', marginTop: 12 },
+  mitad: { flex: 1, minWidth: 0 },
+  alto: { flex: 1, marginTop: 0, justifyContent: 'space-between' },
   boton: {
     flexDirection: 'row',
     alignItems: 'center',

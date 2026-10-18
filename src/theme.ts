@@ -35,13 +35,16 @@ export const PALETA = [
 ];
 
 // Familias: una por peso, para que Android no sintetice negritas.
+// En la web se añade una lista de respaldo: si las fuentes tardan o fallan,
+// se ve una fuente sin serifa del sistema en vez de Times.
+const RESPALDO = Platform.OS === 'web' ? ", system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" : '';
 export const F = {
-  titular: 'BricolageGrotesque_800ExtraBold',
-  titularSemi: 'BricolageGrotesque_600SemiBold',
-  texto: 'Figtree_400Regular',
-  textoMedia: 'Figtree_500Medium',
-  textoSemi: 'Figtree_600SemiBold',
-  textoNegrita: 'Figtree_700Bold',
+  titular: 'BricolageGrotesque_800ExtraBold' + RESPALDO,
+  titularSemi: 'BricolageGrotesque_600SemiBold' + RESPALDO,
+  texto: 'Figtree_400Regular' + RESPALDO,
+  textoMedia: 'Figtree_500Medium' + RESPALDO,
+  textoSemi: 'Figtree_600SemiBold' + RESPALDO,
+  textoNegrita: 'Figtree_700Bold' + RESPALDO,
 };
 
 export const T = {
@@ -71,7 +74,7 @@ export const ESTADO_TEXTO: Record<string, string> = {
 };
 
 // Ancho máximo del contenido en pantallas grandes (web en ordenador).
-export const ANCHO_MAX = 880;
+export const ANCHO_MAX = 1120;
 // Centra el contenido en pantallas anchas. Se aplica dentro del scroll para
 // que la barra de desplazamiento quede en el borde de la ventana.
 export const CENTRADO = { width: '100%', maxWidth: ANCHO_MAX, alignSelf: 'center' } as const;

@@ -34,6 +34,10 @@ export default function Root({ children }: PropsWithChildren) {
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#161144" />
         {CONFIG.googleVerificacion ? <meta name="google-site-verification" content={CONFIG.googleVerificacion} /> : null}
+        {/* Contador de visitas anónimo, sin cookies (ver política de privacidad) */}
+        {CONFIG.goatcounter ? (
+          <script data-goatcounter={`https://${CONFIG.goatcounter}.goatcounter.com/count`} async src="https://gc.zgo.at/count.js" />
+        ) : null}
 
         <ScrollViewStyleReset />
         <style dangerouslySetInnerHTML={{ __html: 'body{background-color:#F3F5F9}' }} />

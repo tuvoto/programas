@@ -1,10 +1,31 @@
-import { Stack } from 'expo-router';
+import { useEffect, useRef } from 'react';
+import { Platform } from 'react-native';
+import { Stack, usePathname } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 import { C } from '../theme';
+import { CONFIG } from '../config';
+
+// Web: el contador cuenta solo la primera página; al cambiar de pantalla
+// dentro de la web se le avisa aquí.
+function useContarVisitas() {
+  const ruta = usePathname();
+  const primera = useRef(true);
+  useEffect(() => {
+    if (Platform.OS !== 'web') return;
+    if (primera.current) {
+      primera.current = false;
+      return;
+    }
+    const gc = (window as unknown as { goatcounter?: { count?: (o: { path: string }) => void } }).goatcounter;
+    const base = new URL(CONFIG.webUrl).pathname.replace(/\/$/, '');
+    gc?.count?.({ path: base + ruta });
+  }, [ruta]);
+}
 
 export default function RootLayout() {
+  useContarVisitas();
   // Las fuentes están copiadas en assets/fuentes con nombres cortos: así la web
   // no depende de rutas largas dentro de node_modules (Windows y GitHub Pages
   // las perdían al publicar).

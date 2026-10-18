@@ -25,6 +25,13 @@ export default function PartidosScreen() {
         <>
           <Grupo titulo="Se presentan en toda España" partidos={ESTATALES} columnas={columnas} />
           <Grupo titulo="Se presentan solo en su comunidad" partidos={AUTONOMICOS} columnas={columnas} />
+          {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
+          <Revelar>
+            <Text style={[T.meta, s.criterio]}>
+              Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023 o en el Parlamento Europeo en 2024, y los
+              que han surgido de ellos. En cada provincia se presentan más candidaturas: la lista oficial se publica en el BOE.
+            </Text>
+          </Revelar>
         </>
       )}
     </ScrollAnimado>
@@ -133,6 +140,7 @@ function TarjetaPartido({ p }: { p: Partido }) {
 const s = StyleSheet.create({
   tarjeta: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, overflow: 'hidden' },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
+  criterio: { color: C.sobrePartidos, opacity: 0.85, marginTop: 28, maxWidth: 640 },
   rejilla: { flexDirection: 'row', gap: 12, marginTop: 12, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 12, minWidth: 0 },
   cabecera: { flexDirection: 'row', alignItems: 'center', gap: 10 },

@@ -10,7 +10,7 @@ import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import Tarjeta from '../components/Tarjeta';
-import { C, F, M, R, S, T } from '../theme';
+import { C, F, M, R, S, T, ANCHO_MAX, CENTRADO } from '../theme';
 
 type Props = { tema: Tema; onVolver: () => void };
 
@@ -29,7 +29,7 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
   visibles.forEach((p, i) => cols[i % columnas].push(p));
 
   return (
-    <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(e.nativeEvent.layout.width - M * 2)}>
+    <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       <Pulsable onPress={onVolver} style={s.volver} accessibilityRole="button" accessibilityLabel="Volver a temas">
         <Icono nombre="back" tam={16} color={C.tinta} peso="bold" />
         <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Temas</Text>
@@ -198,7 +198,7 @@ function BloquePartido({ partido: p, temaId }: { partido: Partido; temaId: strin
 }
 
 const s = StyleSheet.create({
-  contenedor: { paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
+  contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
   volver: {
     flexDirection: 'row',
     alignItems: 'center',

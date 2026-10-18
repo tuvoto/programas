@@ -11,7 +11,7 @@ import Icono from '../components/Icono';
 import Tarjeta from '../components/Tarjeta';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import InstalarWeb from '../components/InstalarWeb';
-import { C, F, HUECO_BARRA, M, R, S, T, plural } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, CENTRADO } from '../theme';
 
 type Props = { onAbrirTema: (tema: Tema) => void };
 
@@ -35,7 +35,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
   for (let i = 0; i < TEMAS.length; i += columnas) filas.push(TEMAS.slice(i, i + columnas));
 
   return (
-    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(e.nativeEvent.layout.width - M * 2)}>
+    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       {/* Portada: se aleja despacio al hacer scroll */}
       <Paralaje>
         <Text style={[T.portada, s.portada]} accessibilityRole="header">
@@ -196,7 +196,7 @@ function TarjetaTema({ tema: t, onPress }: { tema: Tema; onPress: () => void }) 
 }
 
 const s = StyleSheet.create({
-  contenedor: {
+  contenedor: { ...CENTRADO,
     paddingHorizontal: M,
     paddingTop: 12,
     paddingBottom: HUECO_BARRA,

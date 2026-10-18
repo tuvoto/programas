@@ -5,7 +5,7 @@ import Pulsable from '../components/Pulsable';
 import DocumentoScreen from '../screens/DocumentoScreen';
 import { PARTIDOS } from '../data/partidos';
 import { TEMAS } from '../data/temas';
-import { C, M, R, S, T } from '../theme';
+import { C, M, R, S, T, CENTRADO } from '../theme';
 
 // Ruta /documento?partido=pp&temas=vivienda,empleo: vista previa del PDF antes de descargarlo.
 export default function DocumentoRoute() {
@@ -22,7 +22,7 @@ export default function DocumentoRoute() {
       {partido && temas.length > 0 ? (
         <DocumentoScreen partido={partido} temas={temas} onVolver={volver} />
       ) : (
-        <View style={{ padding: M, paddingTop: 28, gap: 12 }}>
+        <View style={{ ...CENTRADO, padding: M, paddingTop: 28, gap: 12 }}>
           <Text style={[T.titulo, { color: C.tinta }]}>Este documento no existe</Text>
           <Text style={[T.cuerpo, { color: C.suave }]}>Puede que el enlace esté mal copiado.</Text>
           <Pulsable

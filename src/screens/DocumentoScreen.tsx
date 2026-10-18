@@ -9,7 +9,7 @@ import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import Marca from '../components/Marca';
 import VistaDocumento from '../components/VistaDocumento';
-import { C, M, R, S, T, esWeb } from '../theme';
+import { C, M, R, S, T, esWeb, CENTRADO } from '../theme';
 
 type Props = { partido: Partido; temas: Tema[]; onVolver: () => void };
 
@@ -84,7 +84,7 @@ export default function DocumentoScreen({ partido: p, temas, onVolver }: Props) 
 }
 
 const s = StyleSheet.create({
-  arriba: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: M, paddingTop: 12, paddingBottom: 10 },
+  arriba: { ...CENTRADO, flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: M, paddingTop: 12, paddingBottom: 10 },
   volver: {
     flexDirection: 'row',
     alignItems: 'center',

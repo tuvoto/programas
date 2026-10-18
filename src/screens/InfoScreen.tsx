@@ -7,7 +7,7 @@ import { MEDIOS } from '../lib/noticiasCore';
 import Desplegable from '../components/Desplegable';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, F, HUECO_BARRA, M, R, T } from '../theme';
+import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, CENTRADO } from '../theme';
 
 // Pestaña «Vota»: guía práctica para votar el 29-N y, al final, información
 // sobre la app. Todo en desplegables para que no sea un muro de texto.
@@ -182,7 +182,7 @@ export default function InfoScreen() {
     ));
 
   return (
-    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(e.nativeEvent.layout.width - M * 2)}>
+    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       <Paralaje>
         <Text style={[T.titulo, { color: C.tinta, marginTop: 18 }]} accessibilityRole="header">
           Vota
@@ -216,7 +216,7 @@ export default function InfoScreen() {
 }
 
 const s = StyleSheet.create({
-  contenedor: { paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
+  contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
   lista: { gap: 10, marginTop: 16 },
   columnas: { flexDirection: 'row', gap: 12, marginTop: 16, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 10, minWidth: 0 },

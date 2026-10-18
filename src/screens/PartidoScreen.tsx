@@ -10,7 +10,7 @@ import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import SelectorTemas from '../components/SelectorTemas';
 import Tarjeta from '../components/Tarjeta';
-import { C, F, M, PALETA, R, S, T, suave, textoSobre } from '../theme';
+import { C, F, M, PALETA, R, S, T, suave, textoSobre, ANCHO_MAX, CENTRADO } from '../theme';
 
 type Props = { partido: Partido; onVolver: () => void };
 
@@ -20,7 +20,7 @@ export default function PartidoScreen({ partido: p, onVolver }: Props) {
   const sobre = textoSobre(p.color);
 
   return (
-    <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(e.nativeEvent.layout.width - M * 2)}>
+    <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       <Pulsable onPress={onVolver} style={s.volver} accessibilityRole="button" accessibilityLabel="Volver a partidos">
         <Icono nombre="back" tam={16} color={C.tinta} peso="bold" />
         <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Partidos</Text>
@@ -228,7 +228,7 @@ function BloqueNoticias({ p }: { p: Partido }) {
 }
 
 const s = StyleSheet.create({
-  contenedor: { paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
+  contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
   volver: {
     flexDirection: 'row',
     alignItems: 'center',

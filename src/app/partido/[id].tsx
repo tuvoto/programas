@@ -4,7 +4,7 @@ import Pantalla from '../../components/Pantalla';
 import Pulsable from '../../components/Pulsable';
 import PartidoScreen from '../../screens/PartidoScreen';
 import { partidoPorId } from '../../data/partidos';
-import { C, M, R, S, T, suave } from '../../theme';
+import { C, M, R, S, T, suave, CENTRADO } from '../../theme';
 
 // Ruta /partido/<id>: programa completo y noticias de un partido.
 export default function PartidoRoute() {
@@ -17,7 +17,7 @@ export default function PartidoRoute() {
       {partido ? (
         <PartidoScreen partido={partido} onVolver={volver} />
       ) : (
-        <View style={{ padding: M, paddingTop: 28, gap: 12 }}>
+        <View style={{ ...CENTRADO, padding: M, paddingTop: 28, gap: 12 }}>
           <Text style={[T.titulo, { color: C.tinta }]}>Ese partido no está en la lista</Text>
           <Text style={[T.cuerpo, { color: C.suave }]}>Puede que el enlace esté mal copiado.</Text>
           <Pulsable

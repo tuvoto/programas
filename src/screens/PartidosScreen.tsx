@@ -7,14 +7,14 @@ import { AUTONOMICOS, ESTATALES, Partido } from '../data/partidos';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, HUECO_BARRA, M, R, S, T, textoSobre } from '../theme';
+import { C, HUECO_BARRA, M, R, S, T, textoSobre, ANCHO_MAX, CENTRADO } from '../theme';
 
 export default function PartidosScreen() {
   const [ancho, setAncho] = useState(0);
   const columnas = ancho >= 760 ? 2 : 1;
 
   return (
-    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(e.nativeEvent.layout.width - M * 2)}>
+    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       <Paralaje>
         <Text style={[T.titulo, { color: C.sobrePartidos, marginTop: 18 }]} accessibilityRole="header">
           Partidos
@@ -132,7 +132,7 @@ function TarjetaPartido({ p }: { p: Partido }) {
 
 const s = StyleSheet.create({
   tarjeta: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, overflow: 'hidden' },
-  contenedor: { paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
+  contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
   rejilla: { flexDirection: 'row', gap: 12, marginTop: 12, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 12, minWidth: 0 },
   cabecera: { flexDirection: 'row', alignItems: 'center', gap: 10 },

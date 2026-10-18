@@ -72,6 +72,9 @@ export const ESTADO_TEXTO: Record<string, string> = {
 
 // Ancho máximo del contenido en pantallas grandes (web en ordenador).
 export const ANCHO_MAX = 880;
+// Centra el contenido en pantallas anchas. Se aplica dentro del scroll para
+// que la barra de desplazamiento quede en el borde de la ventana.
+export const CENTRADO = { width: '100%', maxWidth: ANCHO_MAX, alignSelf: 'center' } as const;
 // Margen lateral estándar
 export const M = 18;
 // Espacio que deja libre la barra de pestañas flotante al final de cada pantalla

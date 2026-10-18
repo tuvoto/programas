@@ -238,3 +238,17 @@ icono o se añade una librería nativa.
 - El mismo nivel de detalle y un número parecido de propuestas por partido y tema.
 - Resúmenes descriptivos, sin adjetivos valorativos, siempre con la página.
 - Si alguien señala un error, corrígelo enseguida con `eas update`.
+
+## 11. Que la web salga en Google (opcional, recomendado)
+
+La web genera una página propia por cada tema, partido y ficha, con su título
+y descripción, y un `sitemap.xml` con todas. Para que Google la encuentre antes:
+
+1. Entra en **search.google.com/search-console** con el Gmail de TuVoto.
+2. **Añadir propiedad → Prefijo de la URL** → `https://tuvoto.github.io/programas/`.
+3. Elige verificar con **Etiqueta HTML**. Copia solo el código que va en
+   `content="…"` y pégalo en `src/config.ts`, en `googleVerificacion: '…'`.
+4. `npm run deploy` y, en Search Console, pulsa **Verificar**.
+5. **Sitemaps** → escribe `sitemap.xml` → **Enviar**.
+
+Google tarda unos días en empezar a mostrar las páginas.

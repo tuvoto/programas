@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Animated, { Easing, FadeIn, FadeOut } from 'react-native-reanimated';
 import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { urlPagina } from '../lib/web';
 import { router } from 'expo-router';
-import { AUTONOMICOS, ESTATALES, PARTIDOS, Partido } from '../data/partidos';
+import { AUTONOMICOS, ESTATALES, PARTIDOS, Partido, sePresentaEn } from '../data/partidos';
+import { provinciaPorId } from '../data/provincias';
+import { useProvincia } from '../lib/provincia';
 import { edicionVigente, propuestasDe } from '../data/propuestas';
 import { Tema } from '../data/temas';
 import Marca from '../components/Marca';
@@ -18,6 +20,11 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
   // Por defecto se comparan los que se presentan en toda España; los que solo
   // se presentan en su comunidad se añaden con un toque.
   const [seleccion, setSeleccion] = useState<string[]>(ESTATALES.map((p) => p.id));
+  // Si la persona ha elegido dónde vota, se marcan los partidos de su papeleta.
+  const provincia = provinciaPorId(useProvincia());
+  useEffect(() => {
+    if (provincia) setSeleccion(PARTIDOS.filter((p) => sePresentaEn(p, provincia.comunidad)).map((p) => p.id));
+  }, [provincia]);
   const alternar = (id: string) =>
     setSeleccion((sel) => (sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id]));
   const visibles = PARTIDOS.filter((p) => seleccion.includes(p.id));
@@ -46,6 +53,9 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
 
       {/* Qué partidos comparar */}
       <View accessibilityLabel="Partidos que se comparan">
+        {provincia && (
+          <Text style={[T.meta, { color: C.suave, marginTop: 14 }]}>Marcados los partidos de tu papeleta en {provincia.nombre}.</Text>
+        )}
         <Text style={[T.etiqueta, s.grupo]}>En toda España</Text>
         <View style={s.filtro}>
           {ESTATALES.map((p) => (
@@ -65,7 +75,7 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
           Marca al menos un partido para ver sus propuestas.
         </Text>
       ) : (
-        ancho > 0 && (
+        (
           <View style={s.rejilla}>
             {cols.map((col, c) => (
               <View key={c} style={s.columna}>

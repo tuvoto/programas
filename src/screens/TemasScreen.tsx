@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { TEMAS, Tema } from '../data/temas';
 import { AFIRMACIONES } from '../data/test';
@@ -27,7 +27,10 @@ const CON_PROGRAMA = PARTIDOS.filter((p) => edicionVigente(p.id) !== null);
 export default function TemasScreen({ onAbrirTema }: Props) {
   const [ancho, setAncho] = useState(0);
   const columnas = ancho >= 900 ? 4 : ancho >= 600 ? 3 : 2;
-  const dias = diasHastaElecciones();
+  // En la web la página se genera antes (al publicarla), así que los días se
+  // calculan al abrirla en el navegador para que siempre estén al día.
+  const [dias, setDias] = useState<number | null>(Platform.OS === 'web' ? null : diasHastaElecciones());
+  useEffect(() => setDias(diasHastaElecciones()), []);
   const ancho760 = ancho >= 760;
   // En pantallas anchas, el test y los resúmenes van uno al lado del otro.
   const pareja = ancho >= 960;
@@ -50,13 +53,13 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       <Revelar>
         <Tarjeta style={s.resumen}>
           <View style={s.cuenta}>
-            <View style={s.dias} accessibilityLabel={dias === 0 ? 'Las elecciones son hoy' : dias === 1 ? 'Falta 1 día' : `Faltan ${dias} días`}>
+            <View style={[s.dias, dias === null && { opacity: 0 }]} accessibilityLabel={dias === 0 ? 'Las elecciones son hoy' : dias === 1 ? 'Falta 1 día' : `Faltan ${dias ?? ''} días`}>
               {dias === 0 ? (
                 <Text style={[s.diasNum, { fontSize: 24 }]}>Hoy</Text>
               ) : (
                 <>
                   <Text style={s.diasTxt}>{dias === 1 ? 'Falta' : 'Faltan'}</Text>
-                  <Text style={s.diasNum}>{dias}</Text>
+                  <Text style={s.diasNum}>{dias ?? 42}</Text>
                   <Text style={s.diasTxt}>{dias === 1 ? 'día' : 'días'}</Text>
                 </>
               )}
@@ -133,7 +136,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         <Leyenda partidos={PARTIDOS} />
       </Revelar>
 
-      {ancho > 0 && (
+      {(
         <View style={s.rejilla}>
           {filas.map((fila, f) => (
             <View key={f} style={s.fila}>

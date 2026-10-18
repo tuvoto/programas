@@ -29,6 +29,10 @@ export type Partido = {
   ambito: 'estatal' | 'autonomico';
   // Solo partidos autonómicos: dónde se presentan (p. ej. «Cataluña»).
   territorio?: string;
+  // Comunidades (ids de data/provincias) en las que se presenta. Los partidos
+  // estatales se presentan en todas salvo las de `noSePresentaEn`.
+  comunidades?: string[];
+  noSePresentaEn?: string[];
   estadoCandidatura: EstadoCandidatura;
   nota?: string;
   programa: {
@@ -85,6 +89,8 @@ export const PARTIDOS: Partido[] = [
     nombre: 'Frente Amplio (Sumar, IU, Más Madrid, Comuns…)',
     color: '#E5007E',
     ambito: 'estatal',
+    // En Canarias, Baleares y la Comunitat Valenciana sus partidos van en otras coaliciones.
+    noSePresentaEn: ['canarias', 'baleares', 'valenciana'],
     estadoCandidatura: 'confirmada',
     nota: 'Coalición registrada. En Canarias, Baleares y la Comunitat Valenciana concurre dentro de otras coaliciones.',
     programa: {},
@@ -102,6 +108,8 @@ export const PARTIDOS: Partido[] = [
     candidata: true,
     color: '#6B2C91',
     ambito: 'estatal',
+    // En Cataluña apoya a ERC; en Canarias y la Comunitat Valenciana va en coalición.
+    noSePresentaEn: ['cataluna', 'canarias', 'valenciana'],
     estadoCandidatura: 'confirmada',
     nota: 'Concurre por separado del Frente Amplio en la mayoría de comunidades; en Canarias y la Comunitat Valenciana, dentro de coaliciones; en Cataluña apoya la lista de ERC.',
     programa: {},
@@ -135,6 +143,7 @@ export const PARTIDOS: Partido[] = [
     color: '#F28C00',
     ambito: 'autonomico',
     territorio: 'Cataluña',
+    comunidades: ['cataluna'],
     estadoCandidatura: 'provisional',
     nota: 'Incluye independientes de Podemos en la lista de Barcelona.',
     programa: {},
@@ -149,6 +158,7 @@ export const PARTIDOS: Partido[] = [
     color: '#20B8AC',
     ambito: 'autonomico',
     territorio: 'Cataluña',
+    comunidades: ['cataluna'],
     estadoCandidatura: 'provisional',
     programa: {},
     anterior: { documento: 'Programa de Junts para el 23-J (2023)' },
@@ -160,6 +170,7 @@ export const PARTIDOS: Partido[] = [
     color: '#9DBB12',
     ambito: 'autonomico',
     territorio: 'País Vasco y Navarra',
+    comunidades: ['pais-vasco', 'navarra'],
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
@@ -174,6 +185,7 @@ export const PARTIDOS: Partido[] = [
     color: '#0F6B3A',
     ambito: 'autonomico',
     territorio: 'País Vasco',
+    comunidades: ['pais-vasco'],
     estadoCandidatura: 'provisional',
     programa: {},
     anterior: { documento: 'Programa del PNV para el 23-J (2023)' },
@@ -185,6 +197,7 @@ export const PARTIDOS: Partido[] = [
     color: '#76B3DE',
     ambito: 'autonomico',
     territorio: 'Galicia',
+    comunidades: ['galicia'],
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
@@ -199,6 +212,7 @@ export const PARTIDOS: Partido[] = [
     color: '#F5C400',
     ambito: 'autonomico',
     territorio: 'Canarias',
+    comunidades: ['canarias'],
     estadoCandidatura: 'provisional',
     programa: {},
     anterior: { documento: 'Programa de Coalición Canaria para el 23-J (2023)' },
@@ -212,6 +226,7 @@ export const PARTIDOS: Partido[] = [
     color: '#C2410C',
     ambito: 'autonomico',
     territorio: 'Comunitat Valenciana',
+    comunidades: ['valenciana'],
     estadoCandidatura: 'confirmada',
     nota: 'Coalición registrada.',
     programa: {},
@@ -228,6 +243,7 @@ export const PARTIDOS: Partido[] = [
     color: '#24406E',
     ambito: 'autonomico',
     territorio: 'Navarra',
+    comunidades: ['navarra'],
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
@@ -239,6 +255,13 @@ export const PARTIDOS: Partido[] = [
 // Congreso saliente + partidos que se presentan en toda España.
 export const ESTATALES = PARTIDOS.filter((p) => p.ambito === 'estatal');
 export const AUTONOMICOS = PARTIDOS.filter((p) => p.ambito === 'autonomico');
+
+// ¿Está este partido en la papeleta de esa comunidad? Según las coaliciones
+// registradas; se confirma cuando se proclaman las candidaturas.
+export function sePresentaEn(p: Partido, comunidad: string): boolean {
+  if (p.comunidades) return p.comunidades.includes(comunidad);
+  return !(p.noSePresentaEn ?? []).includes(comunidad);
+}
 
 export function partidoPorId(id: string): Partido | undefined {
   return PARTIDOS.find((p) => p.id === id);

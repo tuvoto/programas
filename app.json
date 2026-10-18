@@ -36,7 +36,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "output": "single",
+      "output": "static",
       "bundler": "metro",
       "name": "TuVoto",
       "description": "Compara por temas los programas electorales de las elecciones generales del 29 de noviembre de 2026.",

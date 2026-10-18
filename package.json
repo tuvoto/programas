@@ -40,7 +40,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "web:build": "expo export -p web && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "web:build": "expo export -p web && node scripts/web-final.mjs",
     "predeploy": "npm run web:build && (npm run noticias -- dist/noticias.json || echo Las noticias se publicaran con GitHub Actions)",
     "deploy": "gh-pages --nojekyll -d dist",
     "noticias": "node --experimental-strip-types --no-warnings scripts/noticias.mjs",

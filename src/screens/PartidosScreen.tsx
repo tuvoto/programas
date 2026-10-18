@@ -3,7 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import { router, useFocusEffect } from 'expo-router';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
-import { AUTONOMICOS, ESTATALES, Partido } from '../data/partidos';
+import { AUTONOMICOS, ESTATALES, Partido, sePresentaEn } from '../data/partidos';
+import { comunidadPorId, provinciaPorId } from '../data/provincias';
+import { useProvincia } from '../lib/provincia';
+import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
@@ -21,20 +24,77 @@ export default function PartidosScreen() {
         </Text>
       </Paralaje>
 
-      {ancho > 0 && (
-        <>
-          <Grupo titulo="Se presentan en toda España" partidos={ESTATALES} columnas={columnas} />
-          <Grupo titulo="Se presentan solo en su comunidad" partidos={AUTONOMICOS} columnas={columnas} />
-          {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
-          <Revelar>
-            <Text style={[T.meta, s.criterio]}>
-              Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023 o en el Parlamento Europeo en 2024, y los
-              que han surgido de ellos. En cada provincia se presentan más candidaturas: la lista oficial se publica en el BOE.
-            </Text>
-          </Revelar>
-        </>
-      )}
+      <DondeVotas />
+
+      <ListaPartidos columnas={columnas} />
+
+      {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
+      <Revelar>
+        <Text style={[T.meta, s.criterio]}>
+          Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023 o en el Parlamento Europeo en 2024, y los
+          que han surgido de ellos. En cada provincia se presentan más candidaturas: la lista oficial se publica en el BOE.
+        </Text>
+      </Revelar>
     </ScrollAnimado>
+  );
+}
+
+// Tarjeta «¿Dónde votas?»: al elegir provincia, solo salen los partidos de esa papeleta.
+function DondeVotas() {
+  const provincia = provinciaPorId(useProvincia());
+  const [abierto, setAbierto] = useState(false);
+  return (
+    <>
+      <Pulsable
+        onPress={() => setAbierto(true)}
+        style={s.donde}
+        escala={0.98}
+        vibracion="ligera"
+        accessibilityRole="button"
+        accessibilityLabel={provincia ? `Votas en ${provincia.nombre}. Cambiar provincia` : 'Elegir la provincia en la que votas'}
+      >
+        <View style={s.dondeIcono}>
+          <Icono nombre="lugar" tam={20} color={C.tinta} />
+        </View>
+        <View style={{ flex: 1, minWidth: 0 }}>
+          <Text style={[T.tarjeta, { color: C.tinta, fontSize: 17, lineHeight: 21 }]}>
+            {provincia ? `Votas en ${provincia.nombre}` : '¿Dónde votas?'}
+          </Text>
+          <Text style={[T.meta, { color: C.suave, marginTop: 2 }]}>
+            {provincia ? 'Solo ves los partidos de tu papeleta.' : 'Elige tu provincia y verás solo los partidos de tu papeleta.'}
+          </Text>
+        </View>
+        <View style={s.dondeBoton}>
+          <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 13.5 }]}>{provincia ? 'Cambiar' : 'Elegir'}</Text>
+        </View>
+      </Pulsable>
+      <SelectorProvincia visible={abierto} actual={provincia?.id ?? null} onCerrar={() => setAbierto(false)} />
+    </>
+  );
+}
+
+function ListaPartidos({ columnas }: { columnas: number }) {
+  const provincia = provinciaPorId(useProvincia());
+  if (!provincia) {
+    return (
+      <>
+        <Grupo titulo="Se presentan en toda España" partidos={ESTATALES} columnas={columnas} />
+        <Grupo titulo="Se presentan solo en su comunidad" partidos={AUTONOMICOS} columnas={columnas} />
+      </>
+    );
+  }
+  const comunidad = comunidadPorId(provincia.comunidad)!;
+  const estatales = ESTATALES.filter((p) => sePresentaEn(p, comunidad.id));
+  const propios = AUTONOMICOS.filter((p) => sePresentaEn(p, comunidad.id));
+  return (
+    <>
+      <Grupo titulo="Se presentan en toda España" partidos={estatales} columnas={columnas} />
+      {propios.length > 0 && <Grupo titulo={`Se presentan solo en ${comunidad.nombre}`} partidos={propios} columnas={columnas} />}
+      <Text style={[T.meta, s.aviso]}>
+        Según las coaliciones registradas ante la Junta Electoral. Se confirmará cuando se proclamen las candidaturas, a
+        principios de noviembre.
+      </Text>
+    </>
   );
 }
 
@@ -140,6 +200,19 @@ function TarjetaPartido({ p }: { p: Partido }) {
 const s = StyleSheet.create({
   tarjeta: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, overflow: 'hidden' },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
+  donde: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginTop: 18,
+    padding: 14,
+    borderRadius: R.tarjeta,
+    backgroundColor: C.tarjeta,
+    boxShadow: S.tarjeta,
+  },
+  dondeIcono: { width: 40, height: 40, borderRadius: 12, backgroundColor: C.relleno, alignItems: 'center', justifyContent: 'center' },
+  dondeBoton: { backgroundColor: C.tinta, paddingHorizontal: 14, paddingVertical: 9, borderRadius: R.boton },
+  aviso: { color: C.sobrePartidos, opacity: 0.85, marginTop: 14 },
   criterio: { color: C.sobrePartidos, opacity: 0.85, marginTop: 28, maxWidth: 640 },
   rejilla: { flexDirection: 'row', gap: 12, marginTop: 12, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 12, minWidth: 0 },

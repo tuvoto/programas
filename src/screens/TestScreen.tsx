@@ -4,7 +4,7 @@ import { ActivityIndicator, Linking, Modal, Platform, Pressable, ScrollView, Sty
 import Animated, { Easing, FadeIn, FadeOut, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
 import { partidoPorId } from '../data/partidos';
 import { TEMAS, temaPorId } from '../data/temas';
-import { AFIRMACIONES, Afirmacion, PARTIDOS_TEST, Respuesta, Respuestas, barajar, calcular } from '../data/test';
+import { AFIRMACIONES, Afirmacion, PARTIDOS_TEST, Respuesta, Respuestas, calcular, mezclarPorTemas } from '../data/test';
 import { urlPagina } from '../lib/web';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -33,13 +33,13 @@ const PRACTICA = { tema: 'Práctica', texto: 'Estoy listo para empezar el test.'
 
 export default function TestScreen({ onVolver }: { onVolver: () => void }) {
   const [fase, setFase] = useState<Fase>('tarjetas');
-  const [orden, setOrden] = useState<Afirmacion[]>(() => barajar(AFIRMACIONES));
+  const [orden, setOrden] = useState<Afirmacion[]>(() => mezclarPorTemas(AFIRMACIONES));
   const [ronda, setRonda] = useState(0);
   const [respuestas, setRespuestas] = useState<Respuestas>({});
   const [importantes, setImportantes] = useState<string[]>([]);
 
   const empezar = () => {
-    setOrden(barajar(AFIRMACIONES));
+    setOrden(mezclarPorTemas(AFIRMACIONES));
     setRespuestas({});
     setImportantes([]);
     setRonda((r) => r + 1);

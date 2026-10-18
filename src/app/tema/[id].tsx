@@ -2,11 +2,17 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { Text, View } from 'react-native';
 import Pantalla from '../../components/Pantalla';
 import ComparativaScreen from '../../screens/ComparativaScreen';
-import { temaPorId } from '../../data/temas';
+import { TEMAS, temaPorId } from '../../data/temas';
 import Pulsable from '../../components/Pulsable';
 import { C, M, R, S, T, CENTRADO } from '../../theme';
+import Meta from '../../components/Meta';
 
 // Ruta /tema/<id>: en la web se puede compartir el enlace de un tema.
+// La web genera una página por tema para que Google pueda encontrarlas.
+export function generateStaticParams() {
+  return TEMAS.map((t) => ({ id: t.id }));
+}
+
 export default function TemaRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const tema = temaPorId(String(id));
@@ -16,6 +22,7 @@ export default function TemaRoute() {
 
   return (
     <Pantalla>
+      {tema && <Meta titulo={`${tema.nombre}: qué proponen los partidos`} ruta={`/tema/${tema.id}`} descripcion={`Qué proponen PSOE, PP, Vox, Frente Amplio y el resto de partidos sobre ${tema.nombre.toLowerCase()} para las elecciones del 29-N, con la página de cada programa.`} />}
       {tema ? (
         <ComparativaScreen tema={tema} onVolver={volver} />
       ) : (

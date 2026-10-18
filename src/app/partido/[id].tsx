@@ -3,10 +3,16 @@ import { Text, View } from 'react-native';
 import Pantalla from '../../components/Pantalla';
 import Pulsable from '../../components/Pulsable';
 import PartidoScreen from '../../screens/PartidoScreen';
-import { partidoPorId } from '../../data/partidos';
+import { PARTIDOS, partidoPorId } from '../../data/partidos';
 import { C, M, R, S, T, suave, CENTRADO } from '../../theme';
+import Meta from '../../components/Meta';
 
 // Ruta /partido/<id>: programa completo y noticias de un partido.
+// La web genera una página por partido.
+export function generateStaticParams() {
+  return PARTIDOS.map((p) => ({ id: p.id }));
+}
+
 export default function PartidoRoute() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const partido = partidoPorId(String(id));
@@ -14,6 +20,7 @@ export default function PartidoRoute() {
 
   return (
     <Pantalla fondo={partido ? suave(partido.color, 0.88) : undefined}>
+      {partido && <Meta titulo={`${partido.siglas}: programa y noticias`} ruta={`/partido/${partido.id}`} descripcion={`Propuestas de ${partido.siglas} por temas, su programa electoral completo y noticias recientes. Elecciones generales del 29 de noviembre de 2026.`} />}
       {partido ? (
         <PartidoScreen partido={partido} onVolver={volver} />
       ) : (

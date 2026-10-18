@@ -9,6 +9,9 @@ export const CONFIG = {
   privacidadUrl: `${WEB}/privacidad.html`,
   // Correo de contacto que aparecerá en la app y en las tiendas.
   contacto: 'tuvotoapp@gmail.com',
+  // Código de Google Search Console (opcional), para ver cómo aparece la web en
+  // Google. Es el valor «content» de la etiqueta que da Google al verificar.
+  googleVerificacion: '',
 };
 
 // Fuentes oficiales. Google Play exige mostrar fuentes verificables en

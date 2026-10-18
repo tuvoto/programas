@@ -551,3 +551,30 @@ export function barajar<T>(lista: T[]): T[] {
   }
   return a;
 }
+
+// Orden del test: aleatorio, pero sin dos frases seguidas del mismo tema y
+// empezando por un tema de economía (vivienda, empleo, impuestos o pensiones).
+// En cada paso se elige entre los temas a los que les quedan más frases, para
+// que no se acumulen frases de un mismo tema al final.
+const ECONOMIA = ['vivienda', 'empleo', 'impuestos', 'pensiones'];
+export function mezclarPorTemas(lista: Afirmacion[]): Afirmacion[] {
+  const grupos = new Map<string, Afirmacion[]>();
+  for (const a of barajar(lista)) grupos.set(a.temaId, [...(grupos.get(a.temaId) ?? []), a]);
+  const res: Afirmacion[] = [];
+  let anterior: string | null = null;
+  while (res.length < lista.length) {
+    const quedan = [...grupos.entries()].filter(([, v]) => v.length > 0);
+    let candidatos = quedan.filter(([t]) => t !== anterior);
+    if (res.length === 0) {
+      const eco = candidatos.filter(([t]) => ECONOMIA.includes(t));
+      if (eco.length) candidatos = eco;
+    }
+    if (candidatos.length === 0) candidatos = quedan;
+    const max = Math.max(...candidatos.map(([, v]) => v.length));
+    const mejores = candidatos.filter(([, v]) => v.length === max);
+    const [tema, frases] = mejores[Math.floor(Math.random() * mejores.length)];
+    res.push(frases.shift()!);
+    anterior = tema;
+  }
+  return res;
+}

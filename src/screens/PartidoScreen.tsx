@@ -43,7 +43,7 @@ export default function PartidoScreen({ partido: p, onVolver }: Props) {
         )}
       </View>
 
-      {ancho > 0 && (
+      {(
         <View style={[s.rejilla, !dosColumnas && { flexDirection: 'column' }]}>
           <View style={[s.columna, dosColumnas && { flex: 5 }]}>
             <BloqueDescargas p={p} />

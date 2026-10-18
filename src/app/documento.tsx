@@ -1,5 +1,6 @@
+import { useEffect, useState } from 'react';
 import { router, useLocalSearchParams } from 'expo-router';
-import { Text, View } from 'react-native';
+import { Platform, Text, View } from 'react-native';
 import Pantalla from '../components/Pantalla';
 import Pulsable from '../components/Pulsable';
 import DocumentoScreen from '../screens/DocumentoScreen';
@@ -15,7 +16,14 @@ export default function DocumentoRoute() {
   // Mismo orden que en la app, aunque el enlace los traiga desordenados.
   const temas = TEMAS.filter((t) => ids.includes(t.id));
 
+  // En la web esta página se genera sin saber qué documento se pedirá (va en
+  // la dirección, tras «?»), así que se dibuja al abrirla en el navegador.
+  const [listo, setListo] = useState(Platform.OS !== 'web');
+  useEffect(() => setListo(true), []);
+
   const volver = () => (router.canGoBack() ? router.back() : router.replace(partido ? `/partido/${partido.id}` : '/'));
+
+  if (!listo) return <Pantalla fondo="#E9ECF2">{null}</Pantalla>;
 
   return (
     <Pantalla fondo="#E9ECF2">

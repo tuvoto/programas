@@ -1,0 +1,12 @@
+Fuentes de TuVoto
+=================
+
+- Bricolage Grotesque (titulares): © 2022 The Bricolage Grotesque Project Authors.
+- Figtree (textos): © 2022 The Figtree Project Authors.
+
+Las dos son de Google Fonts y tienen la licencia SIL Open Font License 1.1
+(archivos OFL-*.txt de esta carpeta). Se pueden usar gratis en apps y webs,
+también comerciales. Lo único que no se permite es vender los archivos de
+fuente por sí solos. Si se reparten los archivos .ttf, va con ellos su licencia.
+
+Iconos: Phosphor Icons (https://phosphoricons.com), licencia MIT.

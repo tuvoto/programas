@@ -1,8 +1,11 @@
 import { Tabs } from 'expo-router';
 import BarraPestanas from '../../components/BarraPestanas';
 import { C } from '../../theme';
+import { useAbrirDesdeAviso } from '../../lib/avisos';
 
 export default function TabsLayout() {
+  // Al tocar un aviso de fechas, se abre la sección que toca (solo en el móvil).
+  useAbrirDesdeAviso();
   return (
     <Tabs
       tabBar={(props) => <BarraPestanas {...props} />}

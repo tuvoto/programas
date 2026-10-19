@@ -1,5 +1,5 @@
 // Mano que enseña cómo se responde el test, como en las apps de deslizar:
-// arrastra la tarjeta a la derecha, a la izquierda y hacia arriba, y después
+// arrastra la tarjeta a la derecha y a la izquierda, y después
 // pulsa los tres botones. Se repite hasta que la persona toca algo.
 //
 // Todo se anima en el hilo de la interfaz con secuencias de Reanimated que
@@ -59,7 +59,6 @@ function guion(p: PosicionesDemo): Paso[] {
     { t: 350, ho: 1, hy: c.y, curva: 'salir' },
     ...arrastre(D, 0),
     ...arrastre(-D, 0),
-    ...arrastre(0, -D),
     ...boton(p.no, 'pNo', -36, 0),
     ...boton(p.igual, 'pIgual', 0, -36),
     ...boton(p.si, 'pSi', 36, 0),

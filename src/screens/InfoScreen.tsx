@@ -5,6 +5,7 @@ import { router } from 'expo-router';
 import { CONFIG, FUENTES_OFICIALES } from '../config';
 import { MEDIOS } from '../lib/noticiasCore';
 import Desplegable from '../components/Desplegable';
+import AvisosTarjeta from '../components/AvisosTarjeta';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, CENTRADO } from '../theme';
@@ -15,7 +16,8 @@ import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, CENTRADO } from '../theme';
 // Fuentes de los datos (comprobados en octubre de 2026):
 //   - Calendario electoral de la Junta Electoral Central (eg2026_calendario.pdf)
 //   - Nota de prensa del INE sobre el censo para el 29-N
-//   - Ministerio del Interior / La Moncloa (voto por correo)
+//   - Ministerio del Interior / La Moncloa (voto por correo y voto desde el extranjero)
+//   - Consulados de España (exteriores.gob.es): plazos CERA y ERTA del 29-N
 
 // Fechas clave, en orden.
 const FECHAS = [
@@ -109,13 +111,37 @@ export default function InfoScreen() {
       <Nota>Si escribes algo en la papeleta del Congreso o la tachas, el voto es nulo.</Nota>
     </Desplegable>,
 
-    <Desplegable key="fuera" color={2} titulo="Si estás fuera de España" icono="avion" resumen="Erasmus, trabajo o viaje">
+    <Desplegable key="fuera" color={2} titulo="Votar desde el extranjero" icono="avion" resumen="Si vives fuera o estás de Erasmus">
+      <Text style={[T.cuerpoSemi, { color: C.tinta }]}>Si vives fuera de España (CERA)</Text>
       <P>
-        Si vives en España pero estarás fuera (por ejemplo, de Erasmus), inscríbete en el consulado como no residente y
-        pide allí el voto <B>en persona antes del 31 de octubre</B>. Te enviarán la documentación desde el 3 de
-        noviembre y tendrás que mandar el voto por correo certificado como muy tarde el 25 de noviembre.
+        No hace falta pedir el voto: si estás inscrito en tu consulado, la documentación te llega a casa. Primero los
+        sobres, <B>del 24 al 30 de octubre</B>, y después las papeletas, <B>del 4 al 8 de noviembre</B> (hasta el 14 si
+        se recurre alguna candidatura).
       </P>
-      <Nota>Si vives fuera de forma habitual, el procedimiento es distinto: consulta en tu consulado.</Nota>
+      <Punto>
+        <B>En el consulado:</B> deposita tu voto en la urna <B>del 21 al 26 de noviembre</B>, con tu DNI o pasaporte.
+      </Punto>
+      <Punto>
+        <B>Por correo:</B> envíalo por correo certificado a tu consulado. Tiene que llegar como muy tarde el{' '}
+        <B>24 de noviembre</B>.
+      </Punto>
+      <Punto>
+        Si en esas fechas estás en España, pide el voto por correo en Correos hasta el 19 de noviembre y envíalo hasta
+        el 25.
+      </Punto>
+      <Text style={[T.cuerpoSemi, { color: C.tinta, marginTop: 6 }]}>Si vives en España y estarás fuera (ERTA)</Text>
+      <P>
+        Por ejemplo, de Erasmus o por trabajo: inscríbete en el consulado como no residente y pide allí el voto{' '}
+        <B>en persona antes del 31 de octubre</B>. Te enviarán la documentación y tendrás que mandar el voto por correo
+        certificado a tu mesa en España como muy tarde el <B>25 de noviembre</B>.
+      </P>
+      <Nota>Los horarios cambian en cada consulado: consúltalos en su web.</Nota>
+      <View style={s.enlaces}>
+        <Enlace
+          texto="La Moncloa: cómo votar desde el extranjero"
+          url="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-extranjero-elecciones-generales-29n.aspx"
+        />
+      </View>
     </Desplegable>,
 
     <Desplegable key="mesa" color={1} titulo="Si te toca estar en una mesa" icono="mesa" resumen="Sorteo del 31 de octubre al 4 de noviembre">
@@ -167,7 +193,7 @@ export default function InfoScreen() {
       </Nota>
     </Desplegable>,
     <Desplegable key="privacidad" titulo="Privacidad">
-      <P>La app no crea cuentas ni recoge datos personales.</P>
+      <P>La app no crea cuentas ni recoge datos personales. Los avisos de fechas los programa tu propio móvil.</P>
       <View style={s.enlaces}>
         <Enlace texto="Política de privacidad" url={CONFIG.privacidadUrl} />
       </View>
@@ -195,6 +221,9 @@ export default function InfoScreen() {
           Vota
         </Text>
       </Paralaje>
+
+      {/* Solo en la app del móvil */}
+      <AvisosTarjeta />
 
       {dosColumnas ? (
         <View style={s.columnas}>

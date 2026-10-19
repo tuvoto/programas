@@ -40,7 +40,8 @@ function vibrar() {
   if (!esWeb) Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
 }
 
-// Tarjeta de una frase del test. Derecha = sí, izquierda = no, arriba = me da igual.
+// Tarjeta de una frase del test. Derecha = sí, izquierda = no. «Me da igual» va
+// solo con su botón: así deslizar hacia arriba o abajo mueve la página.
 // El arrastre corre entero en el hilo de la interfaz; React solo se entera al decidir.
 const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizable({ tema, texto, aFavor, enContra, onDecidir, ex, ey, onTocar }, ref) {
   const { width, height } = useWindowDimensions();
@@ -75,17 +76,19 @@ const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizab
   useImperativeHandle(ref, () => ({ lanzar: (d) => salir(d) }));
 
   const arrastre = Gesture.Pan()
+    // Solo se engancha con movimiento lateral; el vertical es para hacer scroll.
+    .activeOffsetX([-10, 10])
+    .failOffsetY([-12, 12])
     .onBegin(() => {
       if (onTocar) scheduleOnRN(tocar);
     })
     .onUpdate((e) => {
       x.set(e.translationX);
-      y.set(e.translationY);
+      y.set(e.translationY * 0.25);
     })
     .onEnd((e) => {
       if (e.translationX > UMBRAL || e.velocityX > UMBRAL_VEL) salir('si', e.velocityX, e.velocityY);
       else if (e.translationX < -UMBRAL || e.velocityX < -UMBRAL_VEL) salir('no', e.velocityX, e.velocityY);
-      else if (e.translationY < -UMBRAL || e.velocityY < -UMBRAL_VEL) salir('igual', e.velocityX, e.velocityY);
       else {
         // No llega al umbral: vuelve a su sitio conservando la velocidad del dedo.
         const muelle = { duration: 400, dampingRatio: 0.8, reduceMotion: ReduceMotion.System };
@@ -110,7 +113,7 @@ const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizab
   });
 
   return (
-    <GestureDetector gesture={arrastre}>
+    <GestureDetector gesture={arrastre} touchAction="pan-y">
       <Animated.View style={[s.tarjeta, estiloTarjeta]} accessible accessibilityLabel={`${tema}. ${texto}${aFavor ? `. A favor: ${aFavor}` : ''}${enContra ? `. En contra: ${enContra}` : ''}`}>
         <Text style={[T.etiqueta, { color: C.suave, fontSize: 13 }]}>{tema}</Text>
         <Text style={[T.seccion, s.texto, aFavor ? s.textoConContexto : null]}>{texto}</Text>

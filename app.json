@@ -2,7 +2,7 @@
   "expo": {
     "name": "TuVoto",
     "slug": "programas-electorales",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -28,10 +28,79 @@
       "blockedPermissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
-        "android.permission.SYSTEM_ALERT_WINDOW",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "path": "/programas"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "path": "/programas/"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/tema"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/partido"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/ficha"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/buscar"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/cara-a-cara"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/test"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/vota"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/partidos"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/voto-correo"
+            },
+            {
+              "scheme": "https",
+              "host": "tuvoto.github.io",
+              "pathPrefix": "/programas/documento"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
       ]
     },
     "web": {
@@ -48,7 +117,14 @@
     },
     "scheme": "programaselectorales",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notificacion.png",
+          "color": "#161144"
+        }
+      ]
     ],
     "description": "Compara por temas los programas electorales de las elecciones generales del 29 de noviembre de 2026.",
     "extra": {

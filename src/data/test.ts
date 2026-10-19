@@ -49,9 +49,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'limitar-alquiler',
     temaId: 'vivienda',
     corta: true,
-    texto: 'Aunque algunos propietarios dejen de alquilar sus pisos, el Estado debería poder poner un tope al precio del alquiler en las zonas más caras.',
-    aFavor: 'Los inquilinos pagarían menos en las zonas más caras.',
-    enContra: 'Algunos propietarios podrían dejar de alquilar y habría menos pisos en oferta.',
+    texto: 'El Estado debería poder poner un tope al precio del alquiler en las zonas donde más ha subido.',
+    aFavor: 'Los inquilinos pagarían menos. Para que no falten pisos, varios programas proponen sacar al mercado las viviendas vacías: más IBI, un registro o ventajas fiscales a quien alquile barato.',
+    enContra: 'Quienes se oponen creen que algunos propietarios dejarían de alquilar o pasarían al alquiler de temporada, y habría menos pisos en oferta.',
     posturas: {
       psoe: P(2, 221, 'Desarrollar las medidas de contención de precios de la Ley de Vivienda.'),
       pp: P(-1, 34, 'Derogar la Ley de Vivienda, que permite limitar los alquileres.'),
@@ -116,8 +116,8 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'cotizaciones',
     temaId: 'empleo',
-    texto: 'Para crear empleo, hay que bajar lo que pagan empresas y autónomos a la Seguridad Social, aunque esta ingrese menos.',
-    aFavor: 'Contratar sería más barato para empresas y autónomos.',
+    texto: 'Para crear empleo, habría que bajar lo que pagan empresas y autónomos a la Seguridad Social.',
+    aFavor: 'Contratar sería más barato. Algunos programas lo limitan a nuevos autónomos o a quienes más difícil lo tienen para encontrar trabajo.',
     enContra: 'La Seguridad Social, que paga las pensiones, ingresaría menos.',
     posturas: {
       pp: P(2, 20, 'Tarifa cero de cotización para nuevos autónomos el primer año.'),
@@ -131,9 +131,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'jornada',
     temaId: 'empleo',
     corta: true,
-    texto: 'La jornada laboral debería bajar por ley a 37,5 horas semanales, con el mismo sueldo, aunque a las empresas les cueste más.',
-    aFavor: 'Más tiempo libre con el mismo sueldo.',
-    enContra: 'Para muchas empresas, sobre todo pequeñas, sería un coste mayor.',
+    texto: 'La jornada laboral máxima debería bajar por ley de 40 a 37,5 horas semanales, cobrando lo mismo.',
+    aFavor: 'Más tiempo para la vida personal y familiar, con el mismo salario.',
+    enContra: 'Quienes se oponen creen que subiría los costes, sobre todo en pequeños negocios y en sectores con horarios largos.',
     posturas: {
       psoe: P(1, 50, 'Impulsar la reducción de jornada sin bajar el sueldo.'),
       'frente-amplio': P(2, 7, 'Jornada máxima de 37,5 horas por ley, sin bajar el sueldo.'),
@@ -165,9 +165,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'bajar-irpf',
     temaId: 'impuestos',
     corta: true,
-    texto: 'Prefiero pagar menos IRPF aunque eso suponga menos dinero para los servicios públicos.',
-    aFavor: 'Te quedarías con más dinero de tu sueldo cada mes.',
-    enContra: 'Habría menos dinero para sanidad, educación o pensiones, o más deuda.',
+    texto: 'Habría que bajar el IRPF a la mayoría de los contribuyentes.',
+    aFavor: 'Más dinero en el bolsillo cada mes. Algunos programas proponen ajustarlo a la inflación, para no pagar más por subidas de sueldo que solo compensan los precios.',
+    enContra: 'Habría menos dinero para sanidad, educación o pensiones, salvo que se recorte otro gasto o suba la deuda.',
     posturas: {
       psoe: P(-1, 39, 'Defender los impuestos para sostener el Estado del bienestar.'),
       pp: P(2, 23, 'Bajada inmediata, ajustando el IRPF a la inflación.'),
@@ -180,9 +180,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'impuesto-empresas',
     temaId: 'impuestos',
     corta: true,
-    texto: 'Bajar el impuesto que pagan las empresas por sus beneficios trae más inversión y empleo, aunque se recaude menos.',
-    aFavor: 'Las empresas tendrían más dinero para invertir y contratar.',
-    enContra: 'El Estado ingresaría menos para los servicios públicos.',
+    texto: 'Habría que bajar el impuesto de sociedades, el que pagan las empresas por sus beneficios.',
+    aFavor: 'Quienes lo defienden creen que traería más inversión y empleo.',
+    enContra: 'El Estado ingresaría menos. Otros programas proponen lo contrario: un tipo mínimo para las grandes empresas.',
     posturas: {
       psoe: P(-1, 39, 'Impulsar en la UE una tributación mínima en el impuesto de sociedades.'),
       pp: P(1, 23, 'Simplificar el impuesto de sociedades de las pymes, con atención a las que contraten.'),
@@ -239,9 +239,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'pensiones-bajas',
     temaId: 'pensiones',
     corta: true,
-    texto: 'Las pensiones más bajas deberían subir más que el resto, aunque se acorte la distancia con quien cotizó más.',
-    aFavor: 'Ayuda más a quien tiene menos para vivir.',
-    enContra: 'Quien cotizó más años o con sueldos más altos lo notaría menos.',
+    texto: 'Las pensiones más bajas deberían subir más que el resto.',
+    aFavor: 'Ayuda más a quien tiene menos para vivir. Varios programas quieren llevarlas al umbral de la pobreza o al 60 % del salario medio.',
+    enContra: 'Quien cotizó más años o con sueldos más altos vería que su pensión se acerca a la mínima.',
     posturas: {
       psoe: P(2, 170, 'Seguir subiendo las pensiones mínimas y no contributivas.'),
       'frente-amplio': P(2, 15, 'Subir más las mínimas y no contributivas.'),
@@ -283,8 +283,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'sanidad-irregulares',
     temaId: 'sanidad',
     texto: 'La sanidad pública debería atender a los inmigrantes en situación irregular en todos los servicios, igual que a los demás.',
-    aFavor: 'Se tratan antes las enfermedades y se evitan urgencias más caras.',
-    enContra: 'Aumenta el gasto sanitario y puede verse como un incentivo a llegar de forma irregular.',
+    aFavor: 'Las enfermedades se tratan antes, se protege la salud de todos y se evitan urgencias más caras.',
+    enContra: 'Supone más gasto sanitario. Quienes se oponen prefieren limitar la atención a urgencias y enfermedades contagiosas.',
     posturas: {
       vox: P(-2, 60, 'Para ellos, solo urgencias vitales y enfermedades infecciosas.'),
       'frente-amplio': P(2, 105, 'Acceso universal, incluidos los migrantes en situación irregular.'),
@@ -321,9 +321,9 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'dentista',
     temaId: 'sanidad',
-    texto: 'La sanidad pública debería cubrir el dentista, aunque haya que dedicarle bastante más presupuesto.',
+    texto: 'La sanidad pública debería cubrir el dentista.',
     aFavor: 'Ir al dentista dejaría de depender del bolsillo de cada uno.',
-    enContra: 'Costaría mucho dinero que podría ir a reducir las listas de espera.',
+    enContra: 'Costaría mucho dinero, que habría que sacar de otras partidas o de más impuestos.',
     posturas: {
       psoe: P(1, 183, 'Salud bucodental para niños y adolescentes.'),
       vox: P(2, 58, 'Incluir la salud bucodental y oftalmológica.'),
@@ -338,8 +338,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     temaId: 'educacion',
     corta: true,
     texto: 'El Estado debería dar a cada familia un cheque para pagar el colegio que elija, sea público, concertado o privado.',
-    aFavor: 'Las familias podrían elegir colegio con más libertad.',
-    enContra: 'Parte del dinero de la escuela pública podría ir a colegios privados.',
+    aFavor: 'Las familias podrían elegir colegio con más libertad, también las que hoy no pueden pagar uno concertado o privado.',
+    enContra: 'Parte del dinero de la escuela pública iría a colegios privados, y quienes se oponen temen que aumente la separación de alumnos por nivel económico entre colegios.',
     posturas: {
       pp: P(1, 51, 'Defender la libertad de elegir centro.'),
       vox: P(2, 33, 'Cheque escolar para elegir centro.'),
@@ -350,8 +350,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'universidad-gratis',
     temaId: 'educacion',
     texto: 'La matrícula de la universidad pública debería ser gratis para todo el alumnado, con independencia de sus notas o de su renta.',
-    aFavor: 'Nadie dejaría de estudiar por dinero.',
-    enContra: 'También pagaría el Estado los estudios de quien sí puede pagarlos.',
+    aFavor: 'Nadie dejaría de estudiar por dinero. Ya hay modelos cercanos: Andalucía descuenta el 99 % de la matrícula de los créditos aprobados a la primera.',
+    enContra: 'También pagaría el Estado los estudios de quien sí puede pagarlos, y se perdería el incentivo de aprobar a la primera.',
     posturas: {
       psoe: P(1, 116, 'Gratis para quien apruebe las asignaturas a la primera.'),
       'frente-amplio': P(2, 160, 'Bajar las tasas hasta la gratuidad.'),
@@ -361,7 +361,7 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'examen-comun',
     temaId: 'educacion',
-    texto: 'La selectividad debería ser un único examen igual en toda España, aunque las comunidades dejen de organizarla.',
+    texto: 'La selectividad debería ser un único examen igual en toda España.',
     aFavor: 'Todos competirían por las plazas con el mismo examen.',
     enContra: 'Las comunidades perderían una competencia y las pruebas en lenguas propias.',
     posturas: {
@@ -390,7 +390,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     corta: true,
     texto: 'Quien lleva años viviendo en España sin papeles debería tener una vía para regularizar su situación.',
     aFavor: 'Esas personas pagarían impuestos y tendrían derechos laborales.',
-    enContra: 'Puede animar a otras personas a llegar de forma irregular.',
+    enContra: 'Quienes se oponen creen que podría atraer más llegadas irregulares.',
     posturas: {
       pp: P(-1, 81, 'Agilizar el retorno de inmigrantes en situación irregular.'),
       vox: P(-2, 103, 'Suprimir el arraigo como vía de regularización.'),
@@ -404,9 +404,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'control-fronteras',
     temaId: 'inmigracion',
     corta: true,
-    texto: 'Hay que endurecer el control de fronteras, aunque eso suponga devolver a más personas que llegan de forma irregular.',
-    aFavor: 'Llegarían menos personas de forma irregular.',
-    enContra: 'Algunas personas que podrían pedir asilo serían devueltas.',
+    texto: 'España debería reforzar el control de fronteras para que lleguen menos personas de forma irregular.',
+    aFavor: 'Menos llegadas irregulares y por rutas peligrosas. Algunos programas proponen más medios policiales y acuerdos con los países de origen.',
+    enContra: 'Quienes se oponen temen que se devuelva a personas que podrían pedir asilo, y piden vías legales y seguras.',
     posturas: {
       pp: P(2, 81, 'Más personal y medios para el control de fronteras.'),
       vox: P(2, 102, 'Un bloqueo naval contra la llegada irregular de embarcaciones.'),
@@ -423,7 +423,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     temaId: 'inmigracion',
     texto: 'España necesita más trabajadores de fuera y debería ponerles más fácil venir con un contrato.',
     aFavor: 'Se cubren puestos de trabajo que faltan y se reduce la llegada irregular.',
-    enContra: 'Más competencia por algunos empleos y más presión sobre los servicios públicos.',
+    enContra: 'Quienes se oponen temen más competencia en algunos empleos y más presión sobre los servicios públicos.',
     posturas: {
       psoe: P(2, 256, 'Más vías de migración regular, con convenios de migración circular.'),
       'frente-amplio': P(1, 104, 'Reformar la ley de extranjería.'),
@@ -462,8 +462,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'clima',
     temaId: 'medioambiente',
     corta: true,
-    texto: 'España debería ir más rápido contra el cambio climático, aunque algunas cosas suban de precio.',
-    aFavor: 'Menos emisiones y menos daños por calor, sequías o incendios.',
+    texto: 'España debería ir más rápido en la lucha contra el cambio climático.',
+    aFavor: 'Menos emisiones y menos daños por calor, sequías o incendios. Algunos programas añaden ayudas para que los hogares vulnerables no paguen más.',
     enContra: 'Algunos productos, la energía o el transporte podrían ser más caros a corto plazo.',
     posturas: {
       psoe: P(2, 88, 'Revisar siempre al alza los objetivos climáticos.'),
@@ -529,9 +529,9 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'edad-redes',
     temaId: 'juventud',
-    texto: 'Las redes sociales deberían comprobar de verdad la edad, aunque haya que identificarse para usarlas.',
+    texto: 'Las redes sociales deberían comprobar de verdad la edad de quien se registra.',
     aFavor: 'Los menores estarían más protegidos en internet.',
-    enContra: 'Habría que dar datos personales para usar las redes.',
+    enContra: 'Habría que dar datos personales para usar las redes, con riesgos para la privacidad.',
     posturas: {
       pp: P(2, 54, 'Verificación de edad eficaz para redes sociales.'),
       vox: P(1, 94, 'Proteger a los menores en internet.'),
@@ -636,9 +636,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'competencias',
     temaId: 'territorial',
     corta: true,
-    texto: 'La sanidad y la educación deberían volver a gestionarse desde el Estado, aunque las comunidades pierdan autogobierno.',
+    texto: 'La sanidad y la educación deberían volver a gestionarse desde el Estado en lugar de desde las comunidades.',
     aFavor: 'Los mismos servicios para todo el país y menos diferencias entre comunidades.',
-    enContra: 'Las decisiones se tomarían lejos de cada territorio.',
+    enContra: 'Las comunidades perderían autogobierno y las decisiones se tomarían lejos de cada territorio.',
     posturas: {
       vox: P(2, 8, 'Devolver al Estado educación, sanidad, seguridad y justicia.'),
       'frente-amplio': P(-1, 120, 'Un pacto territorial que reconozca la plurinacionalidad.'),
@@ -686,7 +686,7 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'menos-parlamentos',
     temaId: 'territorial',
-    texto: 'Habría que reducir el número de diputados y cargos públicos de las comunidades autónomas, aunque tengan menos representantes.',
+    texto: 'Habría que reducir el número de diputados y cargos públicos de las comunidades autónomas.',
     aFavor: 'Menos gasto público en cargos políticos.',
     enContra: 'Las comunidades y los partidos pequeños tendrían menos voz.',
     posturas: {
@@ -698,9 +698,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'defensa',
     temaId: 'exterior',
     corta: true,
-    texto: 'España debería gastar bastante más en defensa, aunque haya que recortar en otras partidas.',
+    texto: 'España debería gastar bastante más en defensa.',
     aFavor: 'España estaría más preparada y cumpliría lo acordado con sus aliados.',
-    enContra: 'Habría menos dinero para otros gastos, como servicios públicos o pensiones.',
+    enContra: 'Habría que recortar otros gastos, como servicios públicos o pensiones, o subir impuestos o deuda.',
     posturas: {
       psoe: P(1, 270, 'Aumentar el presupuesto de Defensa.'),
       pp: P(2, 103, 'Dedicar el 2 % del PIB a seguridad y defensa.'),
@@ -727,7 +727,7 @@ export const AFIRMACIONES: Afirmacion[] = [
   {
     id: 'ayuda-desarrollo',
     temaId: 'exterior',
-    texto: 'España debería dedicar el 0,7 % de su riqueza a ayudar a países pobres, aunque también haya necesidades aquí.',
+    texto: 'España debería dedicar el 0,7 % de su riqueza a ayudar a países pobres.',
     aFavor: 'Mejora la vida en los países pobres y puede reducir la emigración forzada.',
     enContra: 'Es dinero que no se gasta en necesidades de aquí.',
     posturas: {
@@ -755,7 +755,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     id: 'sahara',
     temaId: 'exterior',
     corta: true,
-    texto: 'España debería defender que el pueblo saharaui decida en referéndum su futuro, aunque eso tense la relación con Marruecos.',
+    texto: 'España debería defender que el pueblo saharaui decida su futuro en un referéndum.',
     aFavor: 'Se defiende lo que dicen las resoluciones de la ONU.',
     enContra: 'Empeoraría la relación con Marruecos, clave en migración y comercio.',
     posturas: {

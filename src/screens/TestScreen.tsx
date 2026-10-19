@@ -61,7 +61,9 @@ export default function TestScreen({ onVolver }: { onVolver: () => void }) {
   };
 
   return (
-    <ScrollView contentContainerStyle={s.contenedor} scrollEnabled={fase !== 'tarjetas'}>
+    // En el móvil, mientras se arrastran tarjetas, la página no se mueve. En la
+    // web sí, para que en ventanas bajas se lleguen a ver los botones.
+    <ScrollView contentContainerStyle={s.contenedor} scrollEnabled={esWeb || fase !== 'tarjetas'}>
       <Pulsable onPress={onVolver} style={s.volver} accessibilityRole="button" accessibilityLabel="Volver">
         <Icono nombre="back" tam={16} color={C.tinta} peso="bold" />
         <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Volver</Text>
@@ -150,6 +152,9 @@ function Tarjetas({
   const [i, setI] = useState(0);
   const tarjeta = useRef<TarjetaRef>(null);
   const { partidos, sinTest, provincia } = usePartidosTest();
+  // La tarjeta se adapta a pantallas bajas para que los botones quepan debajo.
+  const { height: altoVentana } = useWindowDimensions();
+  const altoPila = Math.max(300, Math.min(390, altoVentana - 400));
   // Las flechas del teclado solo se mencionan si hay ratón (ordenador), no en el móvil.
   const [conRaton, setConRaton] = useState(false);
   useEffect(() => {
@@ -262,7 +267,7 @@ function Tarjetas({
         <View style={[s.barraLlena, { width: `${practicando ? 0 : (i / orden.length) * 100}%` }]} />
       </View>
 
-      <View style={s.pila} onLayout={(e) => setPila(e.nativeEvent.layout)}>
+      <View style={[s.pila, { height: altoPila }]} onLayout={(e) => setPila(e.nativeEvent.layout)}>
         {celebrando ? (
           <Animated.View entering={ENTRAR} exiting={FadeOut.duration(150)} style={s.celebrar}>
             <Text style={[T.seccion, { color: C.sobreTinta, fontSize: 26, lineHeight: 30 }]}>¡Perfecto!</Text>

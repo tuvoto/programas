@@ -44,6 +44,8 @@ export default function Pulsable({
   return (
     <AnimatedPressable
       {...rest}
+      // En la web, marca para el efecto al pasar el ratón (ver +html.tsx).
+      {...(Platform.OS === 'web' ? ({ dataSet: { pulsable: '' } } as object) : {})}
       hitSlop={rest.hitSlop ?? 6}
       pressRetentionOffset={16}
       onPressIn={(e) => {

@@ -7,7 +7,11 @@ const salida = process.argv[2] ?? 'public/noticias.json';
 
 const descargar = async (url) => {
   const r = await fetch(url, {
-    headers: { 'User-Agent': 'Programas29N/1.0 (+https://github.com)' },
+    headers: {
+      // Algunos medios rechazan peticiones sin un navegador conocido.
+      'User-Agent': 'Mozilla/5.0 (compatible; TuVoto/1.0; +https://tuvoto.github.io/programas)',
+      Accept: '*/*',
+    },
     signal: AbortSignal.timeout(15000),
   });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);

@@ -93,6 +93,11 @@ function Tarjetas({
 }) {
   const [i, setI] = useState(0);
   const tarjeta = useRef<TarjetaRef>(null);
+  // Las flechas del teclado solo se mencionan si hay ratón (ordenador), no en el móvil.
+  const [conRaton, setConRaton] = useState(false);
+  useEffect(() => {
+    if (esWeb && typeof window !== 'undefined') setConRaton(window.matchMedia?.('(pointer: fine)').matches ?? false);
+  }, []);
   const actual = orden.at(i);
   const siguiente = orden.at(i + 1);
 
@@ -235,7 +240,7 @@ function Tarjetas({
         <BotonRespuesta texto="Sí" icono="✓" color={C.okTexto} onPress={() => lanzar('si')} presion={demo.pSi} onMedir={setBSi} />
       </View>
       <Text style={[T.meta, { color: C.suave, textAlign: 'center', marginTop: 10 }]}>
-        {esWeb ? 'Arrastra la tarjeta, pulsa un botón o usa las flechas del teclado.' : 'Desliza la tarjeta o pulsa un botón.'}
+        {conRaton ? 'Arrastra la tarjeta, pulsa un botón o usa las flechas del teclado.' : 'Desliza la tarjeta o pulsa un botón.'}
       </Text>
 
       {practicando && !tocado && !celebrando && <ManoDemo demo={demo} />}

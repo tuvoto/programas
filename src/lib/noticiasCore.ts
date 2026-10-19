@@ -26,26 +26,35 @@ export type ArchivoNoticias = {
 // el script lo indica en el registro y sigue con los demás.
 // `rss` admite varias direcciones: se prueban en orden y se usa la primera que
 // responde (los medios cambian a veces la dirección de su RSS).
-export const MEDIOS: { medio: string; corto: string; rss: string | string[] }[] = [
+export const MEDIOS: { medio: string; corto: string; rss: string | string[]; zona?: string }[] = [
+  // Medios estatales
   { medio: 'El País', corto: 'País', rss: 'https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada' },
   { medio: 'El Mundo', corto: 'Mundo', rss: 'https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml' },
   { medio: 'ABC', corto: 'ABC', rss: 'https://www.abc.es/rss/2.0/espana/' },
   { medio: 'elDiario.es', corto: 'elD', rss: 'https://www.eldiario.es/rss/politica/' },
-  {
-    medio: 'La Razón',
-    corto: 'Razón',
-    rss: ['https://www.larazon.es/rss/espana.xml', 'https://www.larazon.es/rss/portada.xml', 'https://www.larazon.es/arc/outboundfeeds/rss/?outputType=xml'],
-  },
-  {
-    medio: 'Público',
-    corto: 'Púb',
-    rss: ['https://www.publico.es/rss/', 'https://www.publico.es/rss/politica/', 'https://www.publico.es/rss/espana', 'https://www.publico.es/feed'],
-  },
+  // La Razón y Público se quitaron en octubre de 2026: sus RSS no responden
+  // (403 y 404). Se quitan los dos para no desequilibrar la lista.
   { medio: 'El Confidencial', corto: 'Conf', rss: 'https://rss.elconfidencial.com/espana/' },
   { medio: 'La Vanguardia', corto: 'Vang', rss: 'https://www.lavanguardia.com/rss/politica.xml' },
   { medio: '20minutos', corto: '20m', rss: 'https://www.20minutos.es/rss/nacional/' },
   { medio: 'RTVE', corto: 'RTVE', rss: 'https://api2.rtve.es/rss/temas_espana.xml' },
   { medio: 'Europa Press', corto: 'EP', rss: 'https://www.europapress.es/rss/rss.aspx?ch=00066' },
+
+  // Medios regionales: para que los partidos que solo se presentan en una
+  // comunidad también tengan noticias. Se prueban varias direcciones por medio.
+  // (El Periódico, Levante-EMV y Noticias de Navarra rechazan las peticiones
+  // automáticas con error 406: se usan las ediciones regionales de elDiario.es.)
+  { medio: 'La Voz de Galicia', corto: 'Voz', zona: 'Galicia', rss: ['https://www.lavozdegalicia.es/galicia/index.xml', 'https://www.lavozdegalicia.es/index.xml'] },
+  { medio: 'elDiario.es Galicia', corto: 'elDG', zona: 'Galicia', rss: ['https://www.eldiario.es/rss/galicia/'] },
+  { medio: 'Canarias7', corto: 'C7', zona: 'Canarias', rss: ['https://www.canarias7.es/rss/2.0/portada', 'https://www.canarias7.es/rss/2.0/?section=politica'] },
+  { medio: 'Canarias Ahora', corto: 'CanA', zona: 'Canarias', rss: ['https://www.eldiario.es/rss/canariasahora/'] },
+  { medio: 'Diario de Navarra', corto: 'DNav', zona: 'Navarra', rss: ['https://www.diariodenavarra.es/rss/portada.xml', 'https://www.diariodenavarra.es/rss/navarra.xml'] },
+  { medio: 'elDiario.es Navarra', corto: 'elDN', zona: 'Navarra', rss: ['https://www.eldiario.es/rss/navarra/'] },
+  { medio: 'El Correo', corto: 'Corr', zona: 'País Vasco', rss: ['https://www.elcorreo.com/rss/atom/?section=politica', 'https://www.elcorreo.com/rss/2.0/portada/'] },
+  { medio: 'elDiario.es Catalunya', corto: 'elDC', zona: 'Cataluña', rss: ['https://www.eldiario.es/rss/catalunya/'] },
+  { medio: 'Ara', corto: 'Ara', zona: 'Cataluña', rss: ['https://www.ara.cat/rss/'] },
+  { medio: 'elDiario.es Comunitat Valenciana', corto: 'elDV', zona: 'Comunitat Valenciana', rss: ['https://www.eldiario.es/rss/comunitat-valenciana/'] },
+  { medio: 'Las Provincias', corto: 'LasP', zona: 'Comunitat Valenciana', rss: ['https://www.lasprovincias.es/rss/2.0/portada'] },
 ];
 
 // Qué cuenta como mención de cada partido en un titular (distingue mayúsculas).
@@ -60,10 +69,11 @@ export const BUSQUEDA: Record<string, RegExp[]> = {
   erc: [/\bERC\b/, /\bEsquerra\b/, /\bRufián\b/],
   junts: [/\bJunts\b/, /\bPuigdemont\b/, /\bNogueras\b/],
   bildu: [/\bBildu\b/, /\bOtegi\b/],
-  pnv: [/\bPNV\b/, /\bEAJ\b/],
-  bng: [/\bBNG\b/, /Bloque Nacionalista Galego/, /\bPontón\b/],
-  cc: [/Coalición Canaria/],
-  upn: [/\bUPN\b/, /Unión del Pueblo Navarro/],
+  pnv: [/\bPNV\b/, /\bEAJ\b/, /Aitor Esteban/, /Maribel Vaquero/],
+  bng: [/\bBNG\b/, /Bloque Nacionalista Galego/, /\bPontón\b/, /Néstor Rego/],
+  // «CC» sola, pero no «CC.OO.» ni «CCOO»
+  cc: [/Coalición Canaria/, /Cristina Valido/, /Primero Canarias/, /\bCC\b(?!\.?\s?OO)/],
+  upn: [/\bUPN\b/, /Unión del Pueblo Navarro/, /Javier Esparza/],
   compromis: [/Compromís/, /Àgueda Micó/],
 };
 

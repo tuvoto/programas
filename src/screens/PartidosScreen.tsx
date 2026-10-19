@@ -10,7 +10,7 @@ import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, HUECO_BARRA, M, R, S, T, textoSobre, ANCHO_MAX, CENTRADO } from '../theme';
+import { C, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 export default function PartidosScreen() {
   const [ancho, setAncho] = useState(0);
@@ -30,7 +30,7 @@ export default function PartidosScreen() {
 
       {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
       <Revelar>
-        <Text style={[T.meta, s.criterio]}>
+        <Text style={[T.meta, s.criterio, { maxWidth: ANCHO_LECTURA }]}>
           Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023 o en el Parlamento Europeo en 2024, y los
           que han surgido de ellos. En cada provincia se presentan más candidaturas: la lista oficial se publica en el BOE.
         </Text>
@@ -90,7 +90,7 @@ function ListaPartidos({ columnas }: { columnas: number }) {
     <>
       <Grupo titulo="Se presentan en toda España" partidos={estatales} columnas={columnas} />
       {propios.length > 0 && <Grupo titulo={`Se presentan solo en ${comunidad.nombre}`} partidos={propios} columnas={columnas} />}
-      <Text style={[T.meta, s.aviso]}>
+      <Text style={[T.meta, s.aviso, { maxWidth: ANCHO_LECTURA }]}>
         Según las coaliciones registradas ante la Junta Electoral. Se confirmará cuando se proclamen las candidaturas, a
         principios de noviembre.
       </Text>
@@ -128,7 +128,8 @@ function TarjetaPartido({ p }: { p: Partido }) {
   const [activa, setActiva] = useState(false);
   const tinte = useSharedValue(0);
   const capa = useAnimatedStyle(() => ({ opacity: tinte.get() }));
-  const sobre = textoSobre(p.color);
+  const fondo = fondoLegible(p.color);
+  const sobre = textoSobre(fondo);
 
   // Se tiñe nada más tocar; si el toque se cancela (por ejemplo, al hacer
   // scroll), vuelve a blanco.
@@ -170,7 +171,7 @@ function TarjetaPartido({ p }: { p: Partido }) {
       accessibilityRole="link"
       accessibilityLabel={`${p.siglas}: programa y noticias`}
     >
-      <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { backgroundColor: p.color, borderRadius: R.tarjeta }, capa]} />
+      <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, { backgroundColor: fondo, borderRadius: R.tarjeta }, capa]} />
       <View style={s.cabecera}>
         <Marca color={activa ? sobre : p.color} tam={14} />
         <Text style={[T.tarjeta, { color: tinta, fontSize: 20, lineHeight: 24, flexShrink: 1 }]}>{p.siglas}</Text>

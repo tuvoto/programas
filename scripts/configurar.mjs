@@ -1,13 +1,13 @@
 // Rellena el usuario de GitHub y el correo de contacto en la app y en la
 // política de privacidad. Uso:  npm run configurar -- mi-usuario programaselectorales.app@gmail.com
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 
 const [usuario, correo] = process.argv.slice(2);
 if (!/^[a-z0-9-]+$/i.test(usuario ?? '') || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(correo ?? '')) {
   console.error('Uso: npm run configurar -- <usuario-github> <correo>');
   process.exit(1);
 }
-const archivos = ['src/config.ts', 'public/privacidad.html', 'public/index.html'];
+const archivos = ['src/config.ts', 'public/privacidad.html'].filter((f) => existsSync(f));
 for (const f of archivos) {
   const antes = readFileSync(f, 'utf8');
   const despues = antes

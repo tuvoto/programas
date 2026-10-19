@@ -103,7 +103,7 @@ function Dato({ nombre, valor }: { nombre: string; valor: string }) {
 function Seccion({ titulo, propuestas, desde, archivo }: { titulo: string; propuestas: Propuesta[]; desde: number; archivo?: string }) {
   return (
     <View style={{ marginTop: 26 }}>
-      <Text style={[T.seccion, { color: C.tinta, fontSize: 19 }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
         {titulo}
       </Text>
       <View style={{ marginTop: 6 }}>

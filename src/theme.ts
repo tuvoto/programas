@@ -51,6 +51,7 @@ export const T = {
   portada: { fontFamily: F.titular, fontSize: 36, lineHeight: 38, letterSpacing: -0.9 },
   titulo: { fontFamily: F.titular, fontSize: 32, lineHeight: 35, letterSpacing: -0.8 },
   seccion: { fontFamily: F.titular, fontSize: 21, lineHeight: 26, letterSpacing: -0.2 },
+  subseccion: { fontFamily: F.titular, fontSize: 19, lineHeight: 24, letterSpacing: -0.2 },
   tarjeta: { fontFamily: F.titularSemi, fontSize: 17, lineHeight: 20, letterSpacing: -0.2 },
   cuerpo: { fontFamily: F.texto, fontSize: 16, lineHeight: 23 },
   cuerpoSemi: { fontFamily: F.textoSemi, fontSize: 16, lineHeight: 23 },
@@ -75,6 +76,8 @@ export const ESTADO_TEXTO: Record<string, string> = {
 
 // Ancho máximo del contenido en pantallas grandes (web en ordenador).
 export const ANCHO_MAX = 1120;
+// Ancho máximo de un párrafo: unas 75 letras por línea, cómodo de leer.
+export const ANCHO_LECTURA = 680;
 // Centra el contenido en pantallas anchas. Se aplica dentro del scroll para
 // que la barra de desplazamiento quede en el borde de la ventana.
 export const CENTRADO = { width: '100%', maxWidth: ANCHO_MAX, alignSelf: 'center' } as const;
@@ -90,16 +93,37 @@ export function plural(n: number, uno: string, varios: string) {
   return `${n.toLocaleString('es-ES')} ${n === 1 ? uno : varios}`;
 }
 
-// Color de texto sobre el color de un partido: blanco si alcanza un contraste
-// de 3:1 (WCAG para texto grande), si no, tinta.
-export function textoSobre(fondo: string): string {
-  const h = fondo.replace('#', '');
+// Contraste entre dos colores (WCAG).
+function luminancia(hex: string): number {
+  const h = hex.replace('#', '');
   const [r, g, b] = [0, 2, 4].map((i) => {
     const c = parseInt(h.slice(i, i + 2), 16) / 255;
     return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
   });
-  const L = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-  return 1.05 / (L + 0.05) >= 3 ? '#FFFFFF' : C.tinta;
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+export function contraste(a: string, b: string): number {
+  const [x, y] = [luminancia(a), luminancia(b)].sort((m, n) => n - m);
+  return (x + 0.05) / (y + 0.05);
+}
+
+// Color de texto sobre el color de un partido: el que más contraste da (blanco o tinta).
+export function textoSobre(fondo: string): string {
+  return contraste(fondo, '#FFFFFF') >= contraste(fondo, C.tinta) ? '#FFFFFF' : C.tinta;
+}
+
+// Fondo de cabecera con texto legible (4,5:1, WCAG AA para texto normal).
+// Si ni el blanco ni la tinta llegan sobre el color del partido, se oscurece
+// un poco el color hasta que el blanco se lea bien.
+export function fondoLegible(color: string): string {
+  if (contraste(color, textoSobre(color)) >= 4.5) return color;
+  const h = color.replace('#', '');
+  const c = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
+  for (let k = 0.04; k < 0.6; k += 0.04) {
+    const o = '#' + c.map((v) => Math.round(v * (1 - k)).toString(16).padStart(2, '0')).join('');
+    if (contraste(o, '#FFFFFF') >= 4.5) return o;
+  }
+  return color;
 }
 
 // Versión suave de un color (mezclado con blanco). cuanto = 0 → el color, 1 → blanco.

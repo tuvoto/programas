@@ -3,7 +3,7 @@ import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import Tarjeta from '../components/Tarjeta';
-import { C, F, M, R, S, T } from '../theme';
+import { C, F, M, R, S, T, ANCHO_LECTURA } from '../theme';
 
 // Plazos del Real Decreto 806/2026 de convocatoria (BOE del 6 de octubre de 2026).
 // Fuentes: Ministerio del Interior / La Moncloa y Correos.
@@ -48,7 +48,7 @@ export default function VotoCorreoScreen({ onVolver }: { onVolver: () => void })
       <Text style={[T.titulo, { color: C.tinta, marginTop: 22 }]} accessibilityRole="header">
         Cómo votar por correo
       </Text>
-      <Text style={[T.cuerpo, { color: C.suave, marginTop: 8 }]}>
+      <Text style={[T.cuerpo, { color: C.suave, marginTop: 8, maxWidth: ANCHO_LECTURA }]}>
         Si el 29 de noviembre no vas a poder ir a tu colegio electoral, puedes votar antes desde Correos.
       </Text>
 

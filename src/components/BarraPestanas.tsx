@@ -77,5 +77,5 @@ const s = StyleSheet.create({
   },
   marcador: { position: 'absolute', top: PAD, bottom: PAD, left: PAD, borderRadius: 16, backgroundColor: C.tinta },
   boton: { flex: 1, alignItems: 'center', gap: 2, paddingTop: 8, paddingBottom: 6 },
-  etiqueta: { fontFamily: F.textoSemi, fontSize: 11.5, lineHeight: 14 },
+  etiqueta: { fontFamily: F.textoSemi, fontSize: 12, lineHeight: 15 },
 });

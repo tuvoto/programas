@@ -10,14 +10,15 @@ import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import SelectorTemas from '../components/SelectorTemas';
 import Tarjeta from '../components/Tarjeta';
-import { C, F, M, PALETA, R, S, T, suave, textoSobre, ANCHO_MAX, CENTRADO } from '../theme';
+import { C, F, M, PALETA, R, S, T, suave, textoSobre, fondoLegible, ANCHO_MAX, CENTRADO } from '../theme';
 
 type Props = { partido: Partido; onVolver: () => void };
 
 export default function PartidoScreen({ partido: p, onVolver }: Props) {
   const [ancho, setAncho] = useState(0);
   const dosColumnas = ancho >= 860;
-  const sobre = textoSobre(p.color);
+  const fondo = fondoLegible(p.color);
+  const sobre = textoSobre(fondo);
 
   return (
     <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
@@ -27,17 +28,17 @@ export default function PartidoScreen({ partido: p, onVolver }: Props) {
       </Pulsable>
 
       {/* Cabecera en el color del partido */}
-      <View style={[s.cabecera, { backgroundColor: p.color }]}>
+      <View style={[s.cabecera, { backgroundColor: fondo }]}>
         <Text style={[T.portada, { color: sobre }]} accessibilityRole="header">
           {p.siglas}
         </Text>
-        {p.nombre !== p.siglas && <Text style={[T.cuerpo, { color: sobre, opacity: 0.9, marginTop: 6 }]}>{p.nombre}</Text>}
+        {p.nombre !== p.siglas && <Text style={[T.cuerpo, { color: sobre, marginTop: 6 }]}>{p.nombre}</Text>}
         {p.territorio && (
-          <Text style={[T.cuerpo, { color: sobre, opacity: 0.9, marginTop: 2 }]}>{p.territorio}</Text>
+          <Text style={[T.cuerpo, { color: sobre, marginTop: 2 }]}>{p.territorio}</Text>
         )}
         {p.candidato && (
           <Text style={[T.cuerpo, { color: sobre, marginTop: 14 }]}>
-            <Text style={{ opacity: 0.85 }}>{p.candidata ? 'Candidata' : 'Candidato'}: </Text>
+            <Text>{p.candidata ? 'Candidata' : 'Candidato'}: </Text>
             <Text style={{ fontFamily: F.textoSemi }}>{p.candidato}</Text>
           </Text>
         )}
@@ -98,7 +99,7 @@ function BloqueDescargas({ p }: { p: Partido }) {
 
   return (
     <Tarjeta style={{ gap: 10 }}>
-      <Text style={[T.seccion, { color: C.tinta, fontSize: 19 }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
         Descargas
       </Text>
       {archivo || hayPropuestas ? (
@@ -156,10 +157,10 @@ function BloqueNoticias({ p }: { p: Partido }) {
   const { estado, reintentar } = useNoticias(p.id);
   return (
     <Tarjeta style={{ gap: 4 }}>
-      <Text style={[T.seccion, { color: C.tinta, fontSize: 19 }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
         Noticias
       </Text>
-      <Text style={[T.meta, { color: C.suave }]}>Últimos 7 días, de {MEDIOS.length} medios, por orden de fecha.</Text>
+      <Text style={[T.meta, { color: C.suave }]}>Últimos 7 días, de {estado.tipo === 'ok' && estado.medios.length ? estado.medios.length : MEDIOS.length} medios, por orden de fecha.</Text>
 
       {estado.tipo === 'cargando' && (
         <View style={s.centro}>

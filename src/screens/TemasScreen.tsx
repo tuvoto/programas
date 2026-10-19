@@ -11,7 +11,8 @@ import Icono from '../components/Icono';
 import Tarjeta from '../components/Tarjeta';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import InstalarWeb from '../components/InstalarWeb';
-import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, CENTRADO } from '../theme';
+import CuentaAtras from '../components/CuentaAtras';
+import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 type Props = { onAbrirTema: (tema: Tema) => void };
 
@@ -51,25 +52,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
 
       {/* Cuenta atrás */}
       <Revelar>
-        <Tarjeta style={s.resumen}>
-          <View style={s.cuenta}>
-            <View style={[s.dias, dias === null && { opacity: 0 }]} accessibilityLabel={dias === 0 ? 'Las elecciones son hoy' : dias === 1 ? 'Falta 1 día' : `Faltan ${dias ?? ''} días`}>
-              {dias === 0 ? (
-                <Text style={[s.diasNum, { fontSize: 24 }]}>Hoy</Text>
-              ) : (
-                <>
-                  <Text style={s.diasTxt}>{dias === 1 ? 'Falta' : 'Faltan'}</Text>
-                  <Text style={s.diasNum}>{dias ?? 42}</Text>
-                  <Text style={s.diasTxt}>{dias === 1 ? 'día' : 'días'}</Text>
-                </>
-              )}
-            </View>
-            <View style={{ flexShrink: 1 }}>
-              <Text style={[T.tarjeta, { color: C.tinta, fontSize: 19, lineHeight: 23 }]}>Elecciones generales</Text>
-              <Text style={[T.cuerpo, { color: C.suave }]}>29 de noviembre</Text>
-            </View>
-          </View>
-        </Tarjeta>
+        <CuentaAtras dias={dias} ancho={ancho} />
       </Revelar>
 
       <View style={pareja ? s.pareja : undefined}>
@@ -84,9 +67,9 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           accessibilityLabel="Hacer el test de afinidad"
         >
           <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
-            <Text style={[T.seccion, { color: C.sobreTinta, fontSize: 24, lineHeight: 28 }]}>¿Con qué programa coincides?</Text>
+            <Text style={[T.portada, { color: C.sobreTinta }]}>Test</Text>
             <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>
-              {AFIRMACIONES.length} frases, unos {Math.round((AFIRMACIONES.length * 8) / 60)} minutos.
+              ¿Con qué programa coincides? {AFIRMACIONES.length} frases, unos {Math.round((AFIRMACIONES.length * 8) / 60)} minutos.
             </Text>
           </View>
           <View style={[s.boton, { backgroundColor: C.amarillo }]}>
@@ -107,10 +90,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           accessibilityLabel="Ver los resúmenes de los programas en Partidos"
         >
           <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
-            <Text style={[T.seccion, { color: C.tinta, fontSize: 24, lineHeight: 28 }]}>Resúmenes de los programas</Text>
-            <Text style={[T.cuerpo, { color: C.tinta, opacity: 0.8 }]}>
-              Descarga el programa de cada partido o sus propuestas por temas en PDF.
-            </Text>
+            <Text style={[T.portada, { color: C.tinta }]}>Resúmenes de los programas</Text>
           </View>
           <View style={[s.boton, { backgroundColor: C.tinta }]}>
             <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 15 }]}>Ver partidos</Text>
@@ -129,7 +109,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
             Temas
           </Text>
         </View>
-        <Text style={[T.meta, { color: C.suave }]}>
+        <Text style={[T.meta, { color: C.suave, maxWidth: ANCHO_LECTURA }]}>
           Mientras los partidos publican sus programas para el 29-N, se muestran los de las elecciones de 2023. Cada
           cuadrado es un partido: relleno si su programa trata el tema.
         </Text>
@@ -210,7 +190,6 @@ const s = StyleSheet.create({
   },
   portada: { color: C.tinta, marginTop: 22, marginBottom: 4, maxWidth: 640 },
   subrayado: { backgroundColor: C.amarillo },
-  resumen: { marginTop: 20, gap: 16 },
   test: {
     marginTop: 12,
     backgroundColor: C.tinta,
@@ -234,27 +213,6 @@ const s = StyleSheet.create({
     borderRadius: R.boton,
   },
   resumenes: { marginTop: 12, backgroundColor: C.amarillo, borderRadius: R.tarjeta, padding: 20, gap: 16, boxShadow: S.tarjeta },
-  cuenta: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-  dias: {
-    backgroundColor: C.tinta,
-    borderRadius: 14,
-    paddingVertical: 10,
-    minWidth: 66,
-    alignItems: 'center',
-  },
-  diasNum: {
-    fontFamily: F.titular,
-    fontSize: 30,
-    lineHeight: 32,
-    color: C.sobreTinta,
-    fontVariant: ['tabular-nums'],
-  },
-  diasTxt: {
-    fontFamily: F.textoSemi,
-    fontSize: 11,
-    color: C.sobreTintaSuave,
-    marginTop: 2,
-  },
   leyenda: { flexDirection: 'row', flexWrap: 'wrap', columnGap: 12, rowGap: 6 },
   leyendaItem: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   seccion: { marginTop: 28, marginBottom: 12, gap: 2 },

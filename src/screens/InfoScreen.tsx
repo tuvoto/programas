@@ -157,7 +157,14 @@ export default function InfoScreen() {
         Titulares de los últimos 7 días que mencionan a cada partido o a su líder, con el mismo criterio para todos y
         ordenados por fecha. La app no los elige ni los valora.
       </P>
-      <Nota>{MEDIOS.map((m) => m.medio).join(', ')}.</Nota>
+      <Nota>Estatales: {MEDIOS.filter((m) => !m.zona).map((m) => m.medio).join(', ')}.</Nota>
+      <Nota>
+        Regionales:{' '}
+        {MEDIOS.filter((m) => m.zona)
+          .map((m) => `${m.medio} (${m.zona})`)
+          .join(', ')}
+        .
+      </Nota>
     </Desplegable>,
     <Desplegable key="privacidad" titulo="Privacidad">
       <P>La app no crea cuentas ni recoge datos personales.</P>

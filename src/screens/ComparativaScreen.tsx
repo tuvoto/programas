@@ -132,7 +132,7 @@ function BloquePartido({ partido: p, temaId }: { partido: Partido; temaId: strin
         <Text style={[T.tarjeta, { color: C.tinta, fontSize: 18, flexShrink: 1 }]}>{p.siglas}</Text>
         {edicion === 2023 && (
           <View style={s.edicion}>
-            <Text style={[T.etiqueta, { color: C.suave, fontSize: 11.5 }]}>Programa de 2023</Text>
+            <Text style={[T.etiqueta, { color: C.suave }]}>Programa de 2023</Text>
           </View>
         )}
       </View>

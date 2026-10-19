@@ -14,7 +14,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
 import * as Haptics from 'expo-haptics';
-import { C, R, S, T, esWeb } from '../theme';
+import { C, F, R, S, T, esWeb } from '../theme';
 
 export type Direccion = 'si' | 'no' | 'igual';
 export type TarjetaRef = { lanzar: (d: Direccion) => void };
@@ -22,6 +22,8 @@ export type TarjetaRef = { lanzar: (d: Direccion) => void };
 type Props = {
   tema: string;
   texto: string;
+  aFavor?: string;
+  enContra?: string;
   onDecidir: (d: Direccion) => void;
   // Desplazamiento extra que mueve la demostración (mano) sin que nadie toque.
   ex?: SharedValue<number>;
@@ -40,7 +42,7 @@ function vibrar() {
 
 // Tarjeta de una frase del test. Derecha = sí, izquierda = no, arriba = me da igual.
 // El arrastre corre entero en el hilo de la interfaz; React solo se entera al decidir.
-const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizable({ tema, texto, onDecidir, ex, ey, onTocar }, ref) {
+const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizable({ tema, texto, aFavor, enContra, onDecidir, ex, ey, onTocar }, ref) {
   const { width, height } = useWindowDimensions();
   const reducido = useReducedMotion();
   const x = useSharedValue(0);
@@ -109,9 +111,21 @@ const TarjetaDeslizable = forwardRef<TarjetaRef, Props>(function TarjetaDeslizab
 
   return (
     <GestureDetector gesture={arrastre}>
-      <Animated.View style={[s.tarjeta, estiloTarjeta]} accessible accessibilityLabel={`${tema}. ${texto}`}>
+      <Animated.View style={[s.tarjeta, estiloTarjeta]} accessible accessibilityLabel={`${tema}. ${texto}${aFavor ? `. A favor: ${aFavor}` : ''}${enContra ? `. En contra: ${enContra}` : ''}`}>
         <Text style={[T.etiqueta, { color: C.suave, fontSize: 13 }]}>{tema}</Text>
-        <Text style={[T.seccion, s.texto]}>{texto}</Text>
+        <Text style={[T.seccion, s.texto, aFavor ? s.textoConContexto : null]}>{texto}</Text>
+        {aFavor && enContra && (
+          <View style={s.contexto}>
+            <Text style={[T.meta, { color: C.suave }]}>
+              <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>A favor: </Text>
+              {aFavor}
+            </Text>
+            <Text style={[T.meta, { color: C.suave }]}>
+              <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>En contra: </Text>
+              {enContra}
+            </Text>
+          </View>
+        )}
 
         <Animated.View style={[s.sello, s.selloSi, estiloSi]} pointerEvents="none">
           <Text style={[T.etiqueta, s.selloTexto, { color: C.okTexto }]}>SÍ</Text>
@@ -143,13 +157,15 @@ const s = StyleSheet.create({
     bottom: 0,
     backgroundColor: C.tarjeta,
     borderRadius: R.tarjeta + 4,
-    padding: 24,
+    padding: 22,
     boxShadow: S.flotante,
     justifyContent: 'center',
     gap: 14,
   },
   fondo: { transform: [{ scale: 0.95 }, { translateY: 14 }], opacity: 0.7, boxShadow: S.tarjeta },
   texto: { color: C.tinta, fontSize: 25, lineHeight: 32 },
+  textoConContexto: { fontSize: 21, lineHeight: 27 },
+  contexto: { gap: 6, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: C.linea, paddingTop: 12 },
   sello: { position: 'absolute', top: 22, borderWidth: 2.5, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 5 },
   selloSi: { left: 22, borderColor: C.okTexto, transform: [{ rotate: '-10deg' }] },
   selloNo: { right: 22, borderColor: '#9B2C2C', transform: [{ rotate: '10deg' }] },

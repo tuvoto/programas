@@ -9,7 +9,7 @@ import { useProvincia } from '../lib/provincia';
 import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
-import Icono from '../components/Icono';
+import Icono, { NombreIcono } from '../components/Icono';
 import { C, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 export default function PartidosScreen() {
@@ -24,7 +24,16 @@ export default function PartidosScreen() {
         </Text>
       </Paralaje>
 
-      <DondeVotas />
+      <View style={columnas > 1 ? s.dosAtajos : undefined}>
+        <DondeVotas />
+        <Atajo
+          icono="comparar"
+          titulo="Cara a cara"
+          texto="Compara dos partidos tema a tema."
+          boton="Comparar"
+          onPress={() => router.push('/cara-a-cara')}
+        />
+      </View>
 
       <ListaPartidos columnas={columnas} />
 
@@ -40,6 +49,23 @@ export default function PartidosScreen() {
 }
 
 // Tarjeta «¿Dónde votas?»: al elegir provincia, solo salen los partidos de esa papeleta.
+function Atajo({ icono, titulo, texto, boton, onPress }: { icono: NombreIcono; titulo: string; texto: string; boton: string; onPress: () => void }) {
+  return (
+    <Pulsable onPress={onPress} style={[s.donde, { flex: 1 }]} escala={0.98} vibracion="ligera" accessibilityRole="link" accessibilityLabel={`${titulo}. ${texto}`}>
+      <View style={s.dondeIcono}>
+        <Icono nombre={icono} tam={20} color={C.tinta} />
+      </View>
+      <View style={{ flex: 1, minWidth: 0 }}>
+        <Text style={[T.tarjeta, { color: C.tinta, fontSize: 17, lineHeight: 21 }]}>{titulo}</Text>
+        <Text style={[T.meta, { color: C.suave, marginTop: 2 }]}>{texto}</Text>
+      </View>
+      <View style={s.dondeBoton}>
+        <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 13.5 }]}>{boton}</Text>
+      </View>
+    </Pulsable>
+  );
+}
+
 function DondeVotas() {
   const provincia = provinciaPorId(useProvincia());
   const [abierto, setAbierto] = useState(false);
@@ -47,7 +73,7 @@ function DondeVotas() {
     <>
       <Pulsable
         onPress={() => setAbierto(true)}
-        style={s.donde}
+        style={[s.donde, { flex: 1 }]}
         escala={0.98}
         vibracion="ligera"
         accessibilityRole="button"
@@ -211,6 +237,7 @@ const s = StyleSheet.create({
     backgroundColor: C.tarjeta,
     boxShadow: S.tarjeta,
   },
+  dosAtajos: { flexDirection: 'row', gap: 12, alignItems: 'stretch' },
   dondeIcono: { width: 40, height: 40, borderRadius: 12, backgroundColor: C.relleno, alignItems: 'center', justifyContent: 'center' },
   dondeBoton: { backgroundColor: C.tinta, paddingHorizontal: 14, paddingVertical: 9, borderRadius: R.boton },
   aviso: { color: C.sobrePartidos, opacity: 0.85, marginTop: 14 },

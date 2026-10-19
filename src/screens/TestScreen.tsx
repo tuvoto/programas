@@ -4,7 +4,9 @@ import { ActivityIndicator, Linking, Modal, Platform, Pressable, ScrollView, Sty
 import Animated, { Easing, FadeIn, FadeOut, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
 import { partidoPorId } from '../data/partidos';
 import { TEMAS, temaPorId } from '../data/temas';
-import { AFIRMACIONES, Afirmacion, PARTIDOS_TEST, Respuesta, Respuestas, calcular, mezclarPorTemas } from '../data/test';
+import { AFIRMACIONES, AFIRMACIONES_CORTAS, Afirmacion, Respuesta, Respuestas, calcular, mezclarPorTemas, partidosDelTest, partidosSinTest } from '../data/test';
+import { useProvincia } from '../lib/provincia';
+import { provinciaPorId } from '../data/provincias';
 import { urlPagina } from '../lib/web';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -17,7 +19,6 @@ import { compartirResultado } from '../lib/compartirResultado';
 import { C, F, M, R, S, T, esWeb } from '../theme';
 
 const ENTRAR = FadeIn.duration(220).easing(Easing.bezier(0.23, 1, 0.32, 1));
-const TOTAL = AFIRMACIONES.length;
 const MAX_IMPORTANTES = 3;
 
 const VALOR: Record<Direccion, Respuesta> = { si: 2, no: -2, igual: null };
@@ -26,20 +27,33 @@ const textoPostura = (v?: number) =>
   v == null ? 'No se pronuncia' : v >= 2 ? 'A favor' : v === 1 ? 'Algo a favor' : v === -1 ? 'Algo en contra' : 'En contra';
 const textoRespuesta = (v: Respuesta | undefined) => (v === 2 ? 'Sí' : v === -2 ? 'No' : 'Me da igual');
 
-type Fase = 'tarjetas' | 'temas' | 'resultado';
+type Fase = 'elegir' | 'tarjetas' | 'temas' | 'resultado';
+type Modo = 'corto' | 'completo';
+const lista = (m: Modo) => (m === 'corto' ? AFIRMACIONES_CORTAS() : AFIRMACIONES);
+// Unos 8 segundos por frase.
+const minutos = (n: number) => Math.max(1, Math.round((n * 8) / 60));
 
 // Primera tarjeta de cada test: sirve para aprender el gesto y no cuenta.
 const PRACTICA = { tema: 'Práctica', texto: 'Estoy listo para empezar el test.' };
 
+// Partidos del test según la provincia elegida (si la hay).
+function usePartidosTest() {
+  const provincia = provinciaPorId(useProvincia());
+  const comunidad = provincia?.comunidad ?? null;
+  return { partidos: partidosDelTest(comunidad), sinTest: partidosSinTest(comunidad), provincia };
+}
+
 export default function TestScreen({ onVolver }: { onVolver: () => void }) {
-  const [fase, setFase] = useState<Fase>('tarjetas');
-  const [orden, setOrden] = useState<Afirmacion[]>(() => mezclarPorTemas(AFIRMACIONES));
+  const [fase, setFase] = useState<Fase>('elegir');
+  const [modo, setModo] = useState<Modo>('corto');
+  const [orden, setOrden] = useState<Afirmacion[]>(() => mezclarPorTemas(AFIRMACIONES_CORTAS()));
   const [ronda, setRonda] = useState(0);
   const [respuestas, setRespuestas] = useState<Respuestas>({});
   const [importantes, setImportantes] = useState<string[]>([]);
 
-  const empezar = () => {
-    setOrden(mezclarPorTemas(AFIRMACIONES));
+  const empezar = (m: Modo = modo) => {
+    setModo(m);
+    setOrden(mezclarPorTemas(lista(m)));
     setRespuestas({});
     setImportantes([]);
     setRonda((r) => r + 1);
@@ -53,6 +67,7 @@ export default function TestScreen({ onVolver }: { onVolver: () => void }) {
         <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Volver</Text>
       </Pulsable>
 
+      {fase === 'elegir' && <ElegirModo onElegir={empezar} />}
       {fase === 'tarjetas' && (
         <Tarjetas
           key={ronda}
@@ -72,9 +87,50 @@ export default function TestScreen({ onVolver }: { onVolver: () => void }) {
         <Importantes elegidos={importantes} onCambiar={setImportantes} onSeguir={() => setFase('resultado')} />
       )}
       {fase === 'resultado' && (
-        <Resultado respuestas={respuestas} importantes={importantes} onRepetir={empezar} />
+        <Resultado
+          respuestas={respuestas}
+          importantes={importantes}
+          total={orden.length}
+          modo={modo}
+          onRepetir={() => setFase('elegir')}
+        />
       )}
     </ScrollView>
+  );
+}
+
+// Antes de empezar: test corto o completo.
+function ElegirModo({ onElegir }: { onElegir: (m: Modo) => void }) {
+  const corto = AFIRMACIONES_CORTAS().length;
+  const largo = AFIRMACIONES.length;
+  return (
+    <Animated.View entering={ENTRAR} style={{ marginTop: 22, gap: 12 }}>
+      <Text style={[T.titulo, { color: C.tinta }]} accessibilityRole="header">
+        Test
+      </Text>
+      <Text style={[T.cuerpo, { color: C.suave, maxWidth: 560 }]}>
+        Frases sobre medidas concretas, sin nombres de partidos. Debajo de cada una verás qué se gana y qué se pierde. Al final,
+        con qué programas coincides más. No es una recomendación de voto.
+      </Text>
+      <View style={s.modos}>
+        <Pulsable onPress={() => onElegir('corto')} style={[s.modo, { backgroundColor: C.tinta }]} escala={0.98} vibracion="ligera" accessibilityRole="button">
+          <Text style={[T.seccion, { color: C.sobreTinta }]}>Corto</Text>
+          <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>{`${corto} frases, unos ${minutos(corto)} minutos. Dos de cada tema.`}</Text>
+          <View style={[s.modoBoton, { backgroundColor: C.amarillo }]}>
+            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 15 }]}>Empezar</Text>
+            <Icono nombre="next" tam={15} color={C.tinta} peso="bold" />
+          </View>
+        </Pulsable>
+        <Pulsable onPress={() => onElegir('completo')} style={[s.modo, { backgroundColor: C.tarjeta, boxShadow: S.tarjeta }]} escala={0.98} vibracion="ligera" accessibilityRole="button">
+          <Text style={[T.seccion, { color: C.tinta }]}>Completo</Text>
+          <Text style={[T.cuerpo, { color: C.suave }]}>{`${largo} frases, unos ${minutos(largo)} minutos. Resultado más preciso.`}</Text>
+          <View style={[s.modoBoton, { backgroundColor: C.tinta }]}>
+            <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 15 }]}>Empezar</Text>
+            <Icono nombre="next" tam={15} color={C.sobreTinta} peso="bold" />
+          </View>
+        </Pulsable>
+      </View>
+    </Animated.View>
   );
 }
 
@@ -93,6 +149,7 @@ function Tarjetas({
 }) {
   const [i, setI] = useState(0);
   const tarjeta = useRef<TarjetaRef>(null);
+  const { partidos, sinTest, provincia } = usePartidosTest();
   // Las flechas del teclado solo se mencionan si hay ratón (ordenador), no en el móvil.
   const [conRaton, setConRaton] = useState(false);
   useEffect(() => {
@@ -182,7 +239,12 @@ function Tarjetas({
     <View style={{ marginTop: 14 }}>
       <Text style={[T.meta, { color: C.suave, marginBottom: 14 }]}>
         <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>No es una recomendación de voto.</Text> Partidos incluidos:{' '}
-        {PARTIDOS_TEST.map((id) => partidoPorId(id)!.siglas).join(', ')}, con sus programas de 2023.
+        {partidos.map((id) => partidoPorId(id)!.siglas).join(', ')}, con sus programas de 2023.
+        {provincia
+          ? ` Según tu provincia (${provincia.nombre}).`
+          : ' Si eliges tu provincia en Partidos, se añaden los partidos de tu comunidad.'}
+        {sinTest.length > 0 &&
+          ` ${sinTest.map((id) => partidoPorId(id)!.siglas).join(', ')} no entra${sinTest.length > 1 ? 'n' : ''}: su programa de 2023 no habla de suficientes frases.`}
       </Text>
       <View style={s.progresoFila}>
         <Text style={[T.etiqueta, { color: C.suave }]}>{practicando ? 'Práctica: no cuenta' : `${i + 1} de ${orden.length}`}</Text>
@@ -228,6 +290,8 @@ function Tarjetas({
               ref={tarjeta}
               tema={temaPorId(actual.temaId)?.nombre ?? ''}
               texto={actual.texto}
+              aFavor={actual.aFavor}
+              enContra={actual.enContra}
               onDecidir={decidir}
             />
           </>
@@ -344,14 +408,21 @@ function Importantes({
 function Resultado({
   respuestas,
   importantes,
+  total,
+  modo,
   onRepetir,
 }: {
   respuestas: Respuestas;
   importantes: string[];
+  total: number;
+  modo: Modo;
   onRepetir: () => void;
 }) {
-  const resultados = calcular(respuestas, importantes);
+  const TOTAL = total;
+  const { partidos } = usePartidosTest();
+  const resultados = calcular(respuestas, importantes, partidos);
   const contestadas = AFIRMACIONES.filter((a) => respuestas[a.id] != null).length;
+  const hechas = lista(modo);
   const [detalle, setDetalle] = useState(false);
   const [compartir, setCompartir] = useState(false);
 
@@ -422,11 +493,12 @@ function Resultado({
         onCerrar={() => setCompartir(false)}
         resultados={resultados}
         contestadas={contestadas}
+        total={TOTAL}
       />
 
       {detalle && (
         <View style={{ gap: 12, marginTop: 16 }}>
-          {AFIRMACIONES.map((a) => (
+          {hechas.map((a) => (
             <Tarjeta key={a.id} style={{ gap: 10 }}>
               <Text style={[T.meta, { color: C.suave }]}>{temaPorId(a.temaId)?.nombre}</Text>
               <Text style={[T.cuerpoSemi, { color: C.tinta }]}>{a.texto}</Text>
@@ -434,7 +506,7 @@ function Resultado({
                 Tú: <Text style={{ fontFamily: F.textoSemi }}>{textoRespuesta(respuestas[a.id])}</Text>
               </Text>
               <View style={{ gap: 8 }}>
-                {PARTIDOS_TEST.map((id) => {
+                {partidos.map((id) => {
                   const p = partidoPorId(id)!;
                   const po = a.posturas[id];
                   const archivo = p.anterior?.archivo;
@@ -483,12 +555,15 @@ function VentanaCompartir({
   onCerrar,
   resultados,
   contestadas,
+  total,
 }: {
   visible: boolean;
   onCerrar: () => void;
   resultados: ReturnType<typeof calcular>;
   contestadas: number;
+  total: number;
 }) {
+  const TOTAL = total;
   const { width, height } = useWindowDimensions();
   // Que la tarjeta quepa entera con los botones debajo.
   const ancho = Math.min(width - 64, (height - 200) * (9 / 16), 320);
@@ -569,7 +644,10 @@ const s = StyleSheet.create({
   deshacer: { flexDirection: 'row', alignItems: 'center', gap: 4, paddingHorizontal: 10, paddingVertical: 6, borderRadius: R.pildora, backgroundColor: C.tarjeta, boxShadow: S.tarjeta },
   barra: { height: 8, borderRadius: 4, backgroundColor: C.linea, overflow: 'hidden', marginTop: 8 },
   barraLlena: { height: '100%', borderRadius: 4, backgroundColor: C.tinta },
-  pila: { height: 340, marginTop: 22 },
+  pila: { height: 390, marginTop: 22 },
+  modos: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginTop: 6 },
+  modo: { flexGrow: 1, flexBasis: 260, borderRadius: R.tarjeta, padding: 20, gap: 8 },
+  modoBoton: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', paddingHorizontal: 18, paddingVertical: 12, borderRadius: R.boton, marginTop: 8 },
   velo: { flex: 1, backgroundColor: 'rgba(18,24,38,0.6)', alignItems: 'center', justifyContent: 'center', padding: 16 },
   compartir: {
     flexDirection: 'row',

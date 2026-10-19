@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { TEMAS, Tema } from '../data/temas';
-import { AFIRMACIONES } from '../data/test';
+import { AFIRMACIONES, AFIRMACIONES_CORTAS } from '../data/test';
 import { PARTIDOS, Partido } from '../data/partidos';
 import { edicionVigente, numPropuestasTema, partidoTrataTema } from '../data/propuestas';
 import Marca from '../components/Marca';
@@ -55,6 +55,23 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         <CuentaAtras dias={dias} ancho={ancho} />
       </Revelar>
 
+      {/* Buscador: lleva a /buscar */}
+      <Revelar>
+        <Pulsable
+          onPress={() => router.push('/buscar')}
+          style={s.buscador}
+          escala={0.98}
+          vibracion="ligera"
+          accessibilityRole="search"
+          accessibilityLabel="Buscar una medida en los programas"
+        >
+          <Icono nombre="buscar" tam={20} color={C.suave} peso="bold" />
+          <Text style={[T.cuerpo, { color: C.suave, flex: 1 }]} numberOfLines={1}>
+            Busca una medida: alquiler, SMI, becas…
+          </Text>
+        </Pulsable>
+      </Revelar>
+
       <View style={pareja ? s.pareja : undefined}>
       {/* Test de afinidad, destacado */}
       <Revelar style={pareja ? s.mitad : undefined}>
@@ -69,7 +86,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
             <Text style={[T.portada, { color: C.sobreTinta }]}>Test</Text>
             <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>
-              ¿Con qué programa coincides? {AFIRMACIONES.length} frases, unos {Math.round((AFIRMACIONES.length * 8) / 60)} minutos.
+              ¿Con qué programa coincides? Versión corta de {AFIRMACIONES_CORTAS().length} frases o completa de {AFIRMACIONES.length}.
             </Text>
           </View>
           <View style={[s.boton, { backgroundColor: C.amarillo }]}>
@@ -199,6 +216,17 @@ const s = StyleSheet.create({
     boxShadow: S.flotante,
   },
   testAncho: { flexDirection: 'row', alignItems: 'center', gap: 24 },
+  buscador: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginTop: 14,
+    paddingHorizontal: 18,
+    minHeight: 54,
+    borderRadius: R.boton + 4,
+    backgroundColor: C.tarjeta,
+    boxShadow: S.tarjeta,
+  },
   pareja: { flexDirection: 'row', gap: 12, alignItems: 'stretch', marginTop: 12 },
   mitad: { flex: 1, minWidth: 0 },
   alto: { flex: 1, marginTop: 0, justifyContent: 'space-between' },

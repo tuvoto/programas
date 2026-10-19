@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Partido } from '../data/partidos';
@@ -7,7 +8,7 @@ import { haceCuanto, useNoticias } from '../lib/useNoticias';
 import { MEDIOS } from '../lib/noticiasCore';
 import { urlPublica } from '../lib/web';
 import Pulsable from '../components/Pulsable';
-import Icono from '../components/Icono';
+import Icono, { NombreIcono } from '../components/Icono';
 import SelectorTemas from '../components/SelectorTemas';
 import Tarjeta from '../components/Tarjeta';
 import { C, F, M, PALETA, R, S, T, suave, textoSobre, fondoLegible, ANCHO_MAX, CENTRADO } from '../theme';
@@ -62,11 +63,13 @@ function Opcion({
   titulo,
   texto,
   tono,
+  icono = 'descargar',
   onPress,
 }: {
   titulo: string;
   texto: string;
   tono: number;
+  icono?: NombreIcono;
   onPress: () => void;
 }) {
   const color = PALETA[tono % PALETA.length];
@@ -85,7 +88,7 @@ function Opcion({
         <Text style={[T.meta, { color: C.suave }]}>{texto}</Text>
       </View>
       <View style={s.opcionBoton}>
-        <Icono nombre="descargar" tam={17} color={C.sobreTinta} peso="bold" />
+        <Icono nombre={icono} tam={17} color={C.sobreTinta} peso="bold" />
       </View>
     </Pulsable>
   );
@@ -110,6 +113,15 @@ function BloqueDescargas({ p }: { p: Partido }) {
               tono={2}
               texto="Elige los temas, míralas y descárgalas en PDF."
               onPress={() => setSelector(true)}
+            />
+          )}
+          {hayPropuestas && (
+            <Opcion
+              titulo="Cara a cara"
+              tono={1}
+              icono="comparar"
+              texto={`Compara a ${p.siglas} con otro partido, tema a tema.`}
+              onPress={() => router.push(`/cara-a-cara?a=${p.id}`)}
             />
           )}
           {archivo && (

@@ -40,7 +40,7 @@ export default function Root({ children }: PropsWithChildren) {
         ) : null}
 
         <ScrollViewStyleReset />
-        <style dangerouslySetInnerHTML={{ __html: 'body{background-color:#F3F5F9}[tabindex]:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #161144;outline-offset:3px}[tabindex]:focus:not(:focus-visible){outline:none}@media (hover:hover) and (pointer:fine){[data-pulsable]{transition:filter 150ms ease}[data-pulsable]:hover{filter:brightness(0.96)}}@media (prefers-reduced-motion:reduce){[data-pulsable]{transition:none}}' }} />
+        <style dangerouslySetInnerHTML={{ __html: 'body{background-color:#F3F5F9}[tabindex]:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #161144;outline-offset:3px}input:focus,textarea:focus{outline:none}[tabindex]:focus:not(:focus-visible){outline:none}@media (hover:hover) and (pointer:fine){[data-pulsable]{transition:filter 150ms ease}[data-pulsable]:hover{filter:brightness(0.96)}}@media (prefers-reduced-motion:reduce){[data-pulsable]{transition:none}}' }} />
       </head>
       <body>
         <noscript>Para usar TuVoto hay que activar JavaScript.</noscript>

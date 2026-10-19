@@ -147,7 +147,7 @@ export const PARTIDOS: Partido[] = [
     estadoCandidatura: 'provisional',
     nota: 'Incluye independientes de Podemos en la lista de Barcelona.',
     programa: {},
-    anterior: { documento: 'Programa de ERC para el 23-J (2023)' },
+    anterior: { documento: 'Programa de ERC para el 23-J (2023)', url: 'https://defensacatalunya.esquerrarepublicana.cat/documents/e2023-programa.pdf', archivo: 'programas/erc-2023.pdf' },
   },
   {
     id: 'junts',
@@ -161,7 +161,7 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['cataluna'],
     estadoCandidatura: 'provisional',
     programa: {},
-    anterior: { documento: 'Programa de Junts para el 23-J (2023)' },
+    anterior: { documento: 'Programa de Junts para el 23-J (2023)', archivo: 'programas/junts-2023.pdf' },
   },
   {
     id: 'bildu',
@@ -174,7 +174,7 @@ export const PARTIDOS: Partido[] = [
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
-    anterior: { documento: 'Programa de EH Bildu para el 23-J (2023)' },
+    anterior: { documento: 'Programa de EH Bildu para el 23-J (2023)', archivo: 'programas/bildu-2023.pdf' },
   },
   {
     id: 'pnv',
@@ -188,7 +188,7 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['pais-vasco'],
     estadoCandidatura: 'provisional',
     programa: {},
-    anterior: { documento: 'Programa del PNV para el 23-J (2023)' },
+    anterior: { documento: 'Programa del PNV para el 23-J (2023)', url: 'https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j', archivo: 'programas/pnv-2023.pdf' },
   },
   {
     id: 'bng',
@@ -201,7 +201,7 @@ export const PARTIDOS: Partido[] = [
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
-    anterior: { documento: 'Programa del BNG para el 23-J (2023)' },
+    anterior: { documento: 'Programa del BNG para el 23-J (2023)', url: 'https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf', archivo: 'programas/bng-2023.pdf' },
   },
   {
     id: 'cc',
@@ -215,7 +215,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['canarias'],
     estadoCandidatura: 'provisional',
     programa: {},
-    anterior: { documento: 'Programa de Coalición Canaria para el 23-J (2023)' },
+    anterior: {
+      documento: 'Manifiesto de Coalición Canaria para el 23-J (2023)',
+      url: 'https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf',
+      archivo: 'programas/cc-2023.pdf',
+      nota: 'En 2023 Coalición Canaria no publicó un programa largo: presentó un manifiesto con 52 compromisos.',
+    },
   },
   {
     id: 'compromis',
@@ -247,7 +252,10 @@ export const PARTIDOS: Partido[] = [
     estadoCandidatura: 'provisional',
     nota: 'Candidatura por confirmar.',
     programa: {},
-    anterior: { documento: 'Programa de UPN para el 23-J (2023)' },
+    anterior: {
+      documento: 'Sin programa propio para las generales de 2023',
+      nota: 'En 2023 UPN no publicó programa para las generales, solo el de las elecciones forales de Navarra.',
+    },
   },
 ];
 

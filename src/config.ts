@@ -27,9 +27,7 @@ export const CONFIG = {
 export const FUENTES_OFICIALES = [
   { nombre: 'Convocatoria y plazos: Boletín Oficial del Estado', url: 'https://www.boe.es' },
   { nombre: 'Calendario y resultados: Ministerio del Interior (Infoelectoral)', url: 'https://infoelectoral.interior.gob.es' },
-  { nombre: 'Junta Electoral Central', url: 'https://www.juntaelectoralcentral.es' },
   { nombre: 'Censo electoral: Instituto Nacional de Estadística', url: 'https://www.ine.es' },
   { nombre: 'Voto desde el extranjero: La Moncloa', url: 'https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-extranjero-elecciones-generales-29n.aspx' },
   { nombre: 'Consulados: Ministerio de Asuntos Exteriores', url: 'https://www.exteriores.gob.es' },
-  { nombre: 'Voto por correo: Correos', url: 'https://www.correos.es' },
 ];

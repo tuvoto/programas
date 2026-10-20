@@ -24,14 +24,9 @@ export default function Root({ children }: PropsWithChildren) {
         <meta property="og:locale" content="es_ES" />
         <meta name="twitter:card" content="summary_large_image" />
 
-        {/* Web instalable: icono y pantalla completa al añadirla al inicio del móvil */}
-        <link rel="manifest" href={`${BASE}/manifest.webmanifest`} />
+        {/* Iconos de la web. No es instalable como app: la app se descarga de las tiendas. */}
         <link rel="icon" type="image/png" sizes="192x192" href={`${BASE}/icono-192.png`} />
         <link rel="apple-touch-icon" href={`${BASE}/apple-touch-icon.png`} />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-title" content="TuVoto" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="theme-color" content="#161144" />
         {CONFIG.googleVerificacion ? <meta name="google-site-verification" content={CONFIG.googleVerificacion} /> : null}
         {/* Contador de visitas anónimo, sin cookies (ver política de privacidad) */}

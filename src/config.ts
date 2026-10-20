@@ -16,12 +16,20 @@ export const CONFIG = {
   // personales). Es el nombre de la cuenta: «tuvoto» en tuvoto.goatcounter.com.
   // Vacío = sin contador. La app del móvil no cuenta nada.
   goatcounter: 'tuvoto',
+  // Botón «Descárgala en Google Play» en la web. Ponlo en true cuando la app
+  // esté publicada para todo el mundo (no en la prueba cerrada).
+  googlePlayPublicada: false,
+  googlePlayUrl: 'https://play.google.com/store/apps/details?id=es.programaselectorales.app',
 };
 
 // Fuentes oficiales. Google Play exige mostrar fuentes verificables en
 // apps con información electoral que no son de un organismo público.
 export const FUENTES_OFICIALES = [
-  { nombre: 'Ministerio del Interior – Infoelectoral', url: 'https://infoelectoral.interior.gob.es' },
+  { nombre: 'Convocatoria y plazos: Boletín Oficial del Estado', url: 'https://www.boe.es' },
+  { nombre: 'Calendario y resultados: Ministerio del Interior (Infoelectoral)', url: 'https://infoelectoral.interior.gob.es' },
   { nombre: 'Junta Electoral Central', url: 'https://www.juntaelectoralcentral.es' },
-  { nombre: 'Boletín Oficial del Estado (BOE)', url: 'https://www.boe.es' },
+  { nombre: 'Censo electoral: Instituto Nacional de Estadística', url: 'https://www.ine.es' },
+  { nombre: 'Voto desde el extranjero: La Moncloa', url: 'https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-extranjero-elecciones-generales-29n.aspx' },
+  { nombre: 'Consulados: Ministerio de Asuntos Exteriores', url: 'https://www.exteriores.gob.es' },
+  { nombre: 'Voto por correo: Correos', url: 'https://www.correos.es' },
 ];

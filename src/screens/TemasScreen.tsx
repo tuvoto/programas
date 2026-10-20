@@ -10,14 +10,22 @@ import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import Tarjeta from '../components/Tarjeta';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
-import InstalarWeb from '../components/InstalarWeb';
 import CuentaAtras from '../components/CuentaAtras';
+import DescargarApp from '../components/DescargarApp';
 import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 type Props = { onAbrirTema: (tema: Tema) => void };
 
-const DIA_ELECCIONES = new Date('2026-11-29T00:00:00+01:00');
-const diasHastaElecciones = () => Math.max(0, Math.ceil((DIA_ELECCIONES.getTime() - Date.now()) / 86_400_000));
+// Días de calendario entre hoy (fecha del móvil u ordenador) y el 29 de
+// noviembre. Se cuentan fechas, no horas: así el número cambia justo a
+// medianoche, también la semana del cambio de hora (25 de octubre).
+const DIA_ELECCIONES = Date.UTC(2026, 10, 29);
+const diasHastaElecciones = () => {
+  const h = new Date();
+  const hoy = Date.UTC(h.getFullYear(), h.getMonth(), h.getDate());
+  // Negativo cuando ya han pasado: entonces la cuenta atrás no se muestra.
+  return Math.round((DIA_ELECCIONES - hoy) / 86_400_000);
+};
 
 const SEPARACION = 12;
 
@@ -31,7 +39,12 @@ export default function TemasScreen({ onAbrirTema }: Props) {
   // En la web la página se genera antes (al publicarla), así que los días se
   // calculan al abrirla en el navegador para que siempre estén al día.
   const [dias, setDias] = useState<number | null>(Platform.OS === 'web' ? null : diasHastaElecciones());
-  useEffect(() => setDias(diasHastaElecciones()), []);
+  // Se recalcula cada minuto: si la página sigue abierta a medianoche, cambia sola.
+  useEffect(() => {
+    setDias(diasHastaElecciones());
+    const t = setInterval(() => setDias(diasHastaElecciones()), 60_000);
+    return () => clearInterval(t);
+  }, []);
   const ancho760 = ancho >= 760;
   // En pantallas anchas, el test y los resúmenes van uno al lado del otro.
   const pareja = ancho >= 960;
@@ -51,9 +64,11 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       </Paralaje>
 
       {/* Cuenta atrás */}
-      <Revelar>
-        <CuentaAtras dias={dias} ancho={ancho} />
-      </Revelar>
+      {(dias === null || dias >= 0) && (
+        <Revelar>
+          <CuentaAtras dias={dias} ancho={ancho} />
+        </Revelar>
+      )}
 
       {/* Buscador: lleva a /buscar */}
       <Revelar>
@@ -117,7 +132,8 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       </Revelar>
       </View>
 
-      <InstalarWeb />
+      {/* Solo en la web, cuando la app esté publicada */}
+      <DescargarApp />
 
       {/* Temas */}
       <Revelar style={s.seccion}>

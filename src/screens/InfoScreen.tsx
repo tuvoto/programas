@@ -8,7 +8,7 @@ import Desplegable from '../components/Desplegable';
 import AvisosTarjeta from '../components/AvisosTarjeta';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, CENTRADO } from '../theme';
+import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 // Pestaña «Vota»: guía práctica para votar el 29-N y, al final, información
 // sobre la app. Todo en desplegables para que no sea un muro de texto.
@@ -221,6 +221,11 @@ export default function InfoScreen() {
           Vota
         </Text>
       </Paralaje>
+      {/* Google Play pide que quede claro que la app no es oficial y de dónde salen los datos. */}
+      <Text style={[T.cuerpo, { color: C.suave, marginTop: 6, maxWidth: ANCHO_LECTURA }]}>
+        TuVoto no es una app oficial ni representa a ningún organismo público. Las fechas y los trámites salen de las{' '}
+        <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>fuentes oficiales</Text> que se enlazan más abajo.
+      </Text>
 
       {/* Solo en la app del móvil */}
       <AvisosTarjeta />
@@ -233,6 +238,22 @@ export default function InfoScreen() {
       ) : (
         <View style={s.lista}>{animar(guia)}</View>
       )}
+
+      <Revelar>
+        <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header">
+          Fuentes oficiales
+        </Text>
+        <Text style={[T.meta, { color: C.suave, marginTop: 4, maxWidth: ANCHO_LECTURA }]}>
+          Consulta siempre los datos en los organismos oficiales. TuVoto no tiene relación con ninguno de ellos.
+        </Text>
+        <View style={[s.enlaces, { marginTop: 12, backgroundColor: C.tarjeta }]}>
+          {FUENTES_OFICIALES.map((f, i) => (
+            <View key={f.url} style={i > 0 && s.separador}>
+              <Enlace texto={f.nombre} url={f.url} />
+            </View>
+          ))}
+        </View>
+      </Revelar>
 
       <Revelar>
         <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header">

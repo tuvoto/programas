@@ -1,7 +1,8 @@
 // Partidos para las elecciones generales del 29 de noviembre de 2026.
 //
 // Coaliciones revisadas tras el registro ante la Junta Electoral Central
-// (plazo hasta el 16 de octubre de 2026). Las candidaturas se proclaman el
+// (registradas el 17 de octubre de 2026). Ya están todos los partidos que se
+// presentan aunque aún no tengan programa: se añade en cuanto lo publiquen. Las candidaturas se proclaman el
 // 2 de noviembre y se publican en el BOE el 3: entonces hay que revisar los
 // candidatos.
 //
@@ -87,12 +88,14 @@ export const PARTIDOS: Partido[] = [
     id: 'frente-amplio',
     siglas: 'Frente Amplio',
     nombre: 'Frente Amplio (Sumar, IU, Más Madrid, Comuns…)',
+    candidato: 'Ada Colau',
+    candidata: true,
     color: '#E5007E',
     ambito: 'estatal',
     // En Canarias, Baleares y la Comunitat Valenciana sus partidos van en otras coaliciones.
     noSePresentaEn: ['canarias', 'baleares', 'valenciana'],
     estadoCandidatura: 'confirmada',
-    nota: 'Coalición registrada. En Canarias, Baleares y la Comunitat Valenciana concurre dentro de otras coaliciones.',
+    nota: 'Coalición registrada ante la Junta Electoral. En Aragón se presenta como Chunta Aragonesista-Frente Amplio y en Andalucía como Frente Amplio Por Andalucía. En Canarias va dentro de Unidad del Pueblo Canario, en Baleares con Ara Més y en la Comunitat Valenciana dentro de Compromís.',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
@@ -111,7 +114,7 @@ export const PARTIDOS: Partido[] = [
     // En Cataluña apoya a ERC; en Canarias y la Comunitat Valenciana va en coalición.
     noSePresentaEn: ['cataluna', 'canarias', 'valenciana'],
     estadoCandidatura: 'confirmada',
-    nota: 'Concurre por separado del Frente Amplio en la mayoría de comunidades; en Canarias y la Comunitat Valenciana, dentro de coaliciones; en Cataluña apoya la lista de ERC.',
+    nota: 'Concurre por separado del Frente Amplio en la mayoría de comunidades, también en Baleares. En Canarias va dentro de Unidad del Pueblo Canario y en la Comunitat Valenciana dentro de Compromís. En Cataluña no presenta lista: apoya la de ERC.',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
@@ -134,7 +137,8 @@ export const PARTIDOS: Partido[] = [
     },
   },
 
-  // ── Se presentan solo en su comunidad (tienen diputados en el Congreso saliente)
+  // ── Se presentan solo en su comunidad (tienen escaños en el Congreso saliente,
+  //    en el Parlamento Europeo o en su parlamento autonómico)
   {
     id: 'erc',
     siglas: 'ERC',
@@ -233,12 +237,46 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Comunitat Valenciana',
     comunidades: ['valenciana'],
     estadoCandidatura: 'confirmada',
-    nota: 'Coalición registrada.',
+    nota: 'Coalición registrada ante la Junta Electoral. Une a Compromís, Podemos, Esquerra Unida, Esquerra Republicana del País Valencià y otros partidos valencianos.',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
       nota: 'En 2023 Compromís concurrió dentro de Sumar.',
+    },
+  },
+  {
+    id: 'upc',
+    siglas: 'Unidad del Pueblo Canario',
+    nombre: 'Nueva Canarias, Podemos, Sumar e IU Canaria',
+    color: '#00838F',
+    ambito: 'autonomico',
+    territorio: 'Canarias',
+    comunidades: ['canarias'],
+    estadoCandidatura: 'confirmada',
+    nota: 'Coalición registrada ante la Junta Electoral, para el Congreso y el Senado. Une a Nueva Canarias-Bloque Canarista, Podemos, Movimiento Sumar e Izquierda Unida Canaria.',
+    programa: {},
+    anterior: {
+      documento: 'Programa de Sumar para el 23-J (2023)',
+      archivo: 'programas/sumar-2023.pdf',
+      nota: 'Es una coalición nueva. En 2023, Podemos, Sumar e IU concurrieron juntos como Sumar; Nueva Canarias fue por separado.',
+    },
+  },
+  {
+    id: 'ara-mes',
+    siglas: 'Ara Més-Front Ampli',
+    nombre: 'Més per Mallorca, Més per Menorca, Ara Eivissa, Sumar e IU',
+    color: '#C2185B',
+    ambito: 'autonomico',
+    territorio: 'Illes Balears',
+    comunidades: ['baleares'],
+    estadoCandidatura: 'provisional',
+    nota: 'Coalición anunciada para el Congreso en Baleares, encabezada por Ara Més junto al Frente Amplio. Podemos se presenta por separado.',
+    programa: {},
+    anterior: {
+      documento: 'Programa de Sumar para el 23-J (2023)',
+      archivo: 'programas/sumar-2023.pdf',
+      nota: 'En 2023, Més per Mallorca concurrió dentro de Sumar.',
     },
   },
   {
@@ -257,10 +295,47 @@ export const PARTIDOS: Partido[] = [
       nota: 'En 2023 UPN no publicó programa para las generales, solo el de las elecciones forales de Navarra.',
     },
   },
+  {
+    id: 'adelante',
+    siglas: 'Adelante Andalucía',
+    nombre: 'Adelante Andalucía',
+    color: '#1B7F4B',
+    ambito: 'autonomico',
+    territorio: 'Andalucía',
+    comunidades: ['andalucia'],
+    estadoCandidatura: 'provisional',
+    nota: 'Ha anunciado que se presenta en solitario en las ocho provincias andaluzas, sin el Frente Amplio. Tiene 8 escaños en el Parlamento de Andalucía desde mayo de 2026.',
+    programa: {},
+  },
+  {
+    id: 'existe',
+    siglas: 'Existe',
+    nombre: 'Teruel Existe y Aragón Existe',
+    color: '#5D7C2E',
+    ambito: 'autonomico',
+    territorio: 'Aragón',
+    comunidades: ['aragon'],
+    estadoCandidatura: 'confirmada',
+    nota: 'Coalición registrada ante la Junta Electoral para el Congreso y el Senado en Aragón. Tiene escaños en las Cortes de Aragón.',
+    programa: {},
+  },
+  {
+    id: 'geroa-bai',
+    siglas: 'Geroa Bai',
+    nombre: 'Geroa Bai',
+    color: '#E0572A',
+    ambito: 'autonomico',
+    territorio: 'Navarra',
+    comunidades: ['navarra'],
+    estadoCandidatura: 'provisional',
+    nota: 'Se presenta con candidatura propia al Congreso en Navarra. Tiene 7 escaños en el Parlamento de Navarra.',
+    programa: {},
+  },
 ];
 
-// Criterio de inclusión (neutral y verificable): partidos con diputados en el
-// Congreso saliente + partidos que se presentan en toda España.
+// Criterio de inclusión (neutral y verificable): partidos con escaños en el
+// Congreso saliente, en el Parlamento Europeo (2024) o en su parlamento
+// autonómico, y los que han surgido de ellos.
 export const ESTATALES = PARTIDOS.filter((p) => p.ambito === 'estatal');
 export const AUTONOMICOS = PARTIDOS.filter((p) => p.ambito === 'autonomico');
 

@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Partido } from '../data/partidos';
+import { comunidadPorId } from '../data/provincias';
 import { propuestasDe } from '../data/propuestas';
 import { TEMAS } from '../data/temas';
 import { haceCuanto, useNoticias } from '../lib/useNoticias';
@@ -48,6 +49,7 @@ export default function PartidoScreen({ partido: p, onVolver }: Props) {
       {(
         <View style={[s.rejilla, !dosColumnas && { flexDirection: 'column' }]}>
           <View style={[s.columna, dosColumnas && { flex: 5 }]}>
+            <BloqueCandidatura p={p} />
             <BloqueDescargas p={p} />
           </View>
           <View style={[s.columna, dosColumnas && { flex: 6 }]}>
@@ -91,6 +93,57 @@ function Opcion({
         <Icono nombre={icono} tam={17} color={C.sobreTinta} peso="bold" />
       </View>
     </Pulsable>
+  );
+}
+
+// Dónde se presenta, qué se sabe de su candidatura y si ya hay programa para
+// el 29-N. Así se ve que la ficha está al día aunque falte el programa.
+function dondeSePresenta(p: Partido): string {
+  const nombres = (ids: string[]) => ids.map((id) => comunidadPorId(id)?.nombre ?? id);
+  const lista = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} y ${xs[xs.length - 1]}` : xs[0]);
+  if (p.comunidades) return lista(nombres(p.comunidades));
+  if (p.noSePresentaEn?.length) return `Toda España salvo ${lista(nombres(p.noSePresentaEn))}`;
+  return 'Toda España';
+}
+
+function fechaLarga(iso: string): string {
+  const [a, m, d] = iso.split('-').map(Number);
+  const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  return `${d} de ${meses[m - 1]} de ${a}`;
+}
+
+function BloqueCandidatura({ p }: { p: Partido }) {
+  const publicado = !!p.programa.url;
+  return (
+    <Tarjeta style={{ gap: 12 }}>
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+        Candidatura
+      </Text>
+      <Dato titulo="Dónde se presenta" texto={dondeSePresenta(p)} />
+      {p.nota && <Dato titulo="Lo que se sabe" texto={p.nota} />}
+      <Dato
+        titulo="Programa para el 29-N"
+        texto={
+          publicado
+            ? p.programa.fechaPublicacion
+              ? `Publicado el ${fechaLarga(p.programa.fechaPublicacion)}.`
+              : 'Publicado.'
+            : p.anterior?.archivo
+              ? 'Todavía no lo ha publicado. Mientras, puedes consultar su programa de 2023.'
+              : 'Todavía no lo ha publicado. Aparecerá aquí en cuanto lo haga.'
+        }
+        aviso={!publicado}
+      />
+    </Tarjeta>
+  );
+}
+
+function Dato({ titulo, texto, aviso }: { titulo: string; texto: string; aviso?: boolean }) {
+  return (
+    <View style={{ gap: 2 }}>
+      <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>{titulo}</Text>
+      <Text style={[T.cuerpo, { color: aviso ? C.avisoTexto : C.tinta }]}>{texto}</Text>
+    </View>
   );
 }
 

@@ -552,9 +552,9 @@ function Resultado({
   const { width } = useWindowDimensions();
   // En pantallas anchas: ranking a la izquierda y detalle a la derecha.
   const ancho = width >= 900;
-  // Partido abierto: al empezar, el más parecido.
-  const [abierto, setAbierto] = useState<string | null>(resultados[0]?.partidoId ?? null);
-  const elegido = abierto ?? resultados[0]?.partidoId;
+  // Partido abierto: al empezar, ninguno; se abre al tocarlo.
+  const [abierto, setAbierto] = useState<string | null>(null);
+  const elegido = abierto;
   // Tras un resultado de verdad, la tienda puede pedir una valoración.
   useEffect(() => {
     if (contestadas >= 5) pedirValoracion();
@@ -651,23 +651,33 @@ function Resultado({
 
   // Pantalla ancha: ranking fijo a la izquierda, detalle a la derecha.
   if (ancho) {
-    const r = resultados.find((x) => x.partidoId === elegido) ?? resultados[0];
+    const r = resultados.find((x) => x.partidoId === elegido);
     return (
       <Animated.View entering={ENTRAR} style={s.dosColumnas}>
         <View style={[s.colRanking, esWeb && ({ position: 'sticky', top: 12 } as object)]}>
           {cabecera}
           <View style={{ gap: 10, marginTop: 16 }}>
             {resultados.map((x, i) => (
-              <Tarjeta key={x.partidoId} style={[s.borde, x.partidoId === r.partidoId && s.seleccionado]}>
-                {fila(x, i, x.partidoId === r.partidoId)}
+              <Tarjeta key={x.partidoId} style={[s.borde, x.partidoId === r?.partidoId && s.seleccionado]}>
+                {fila(x, i, x.partidoId === r?.partidoId)}
               </Tarjeta>
             ))}
           </View>
-          <Text style={[T.meta, { color: C.suave, marginTop: 10 }]}>Pulsa otro partido para ver su detalle.</Text>
+          <Text style={[T.meta, { color: C.suave, marginTop: 10 }]}>
+            {r ? 'Pulsa otro partido para ver su detalle.' : 'Pulsa un partido para ver en qué coincidís y en qué no.'}
+          </Text>
           {acciones}
         </View>
         <View style={{ flex: 1, minWidth: 0, marginTop: 22 }}>
-          <Detalle partidoId={r.partidoId} porcentaje={r.porcentaje} frases={hechas} respuestas={respuestas} importantes={importantes} columnas={width >= 1180} todo />
+          {r ? (
+            <Detalle partidoId={r.partidoId} porcentaje={r.porcentaje} frases={hechas} respuestas={respuestas} importantes={importantes} columnas={width >= 1180} todo />
+          ) : (
+            <Tarjeta style={{ alignItems: 'center', paddingVertical: 48 }}>
+              <Text style={[T.cuerpo, { color: C.suave, textAlign: 'center' }]}>
+                Pulsa un partido de la izquierda para ver, frase a frase, en qué coincidís y en qué no.
+              </Text>
+            </Tarjeta>
+          )}
         </View>
       </Animated.View>
     );
@@ -677,7 +687,8 @@ function Resultado({
   return (
     <Animated.View entering={ENTRAR}>
       {cabecera}
-      <View style={{ gap: 10, marginTop: 16 }}>
+      <Text style={[T.meta, { color: C.suave, marginTop: 16 }]}>Toca un partido para ver en qué coincidís y en qué no.</Text>
+      <View style={{ gap: 10, marginTop: 10 }}>
         {resultados.map((x, i) => {
           const abiertoAqui = abierto === x.partidoId;
           return (

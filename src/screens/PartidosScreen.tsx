@@ -1,16 +1,17 @@
 import { useCallback, useRef, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Linking, StyleSheet, Text, View } from 'react-native';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import { router, useFocusEffect } from 'expo-router';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { AUTONOMICOS, ESTATALES, Partido, sePresentaEn } from '../data/partidos';
-import { comunidadPorId, provinciaPorId } from '../data/provincias';
+import { comunidadPorId, provinciaPorId, Provincia } from '../data/provincias';
+import { BOE_CANDIDATURAS, OTRAS_CANDIDATURAS } from '../data/candidaturas';
 import { useProvincia } from '../lib/provincia';
 import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono, { NombreIcono } from '../components/Icono';
-import { C, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
 export default function PartidosScreen() {
   const [ancho, setAncho] = useState(0);
@@ -40,8 +41,9 @@ export default function PartidosScreen() {
       {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
       <Revelar>
         <Text style={[T.meta, s.criterio, { maxWidth: ANCHO_LECTURA }]}>
-          Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023 o en el Parlamento Europeo en 2024, y los
-          que han surgido de ellos. En cada provincia se presentan más candidaturas: la lista oficial se publica en el BOE.
+          Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023, en el Parlamento Europeo en 2024 o en su
+          parlamento autonómico en las últimas elecciones, y los que han surgido de ellos. En cada provincia se presentan más
+          candidaturas: la lista oficial se publica en el BOE.
         </Text>
       </Revelar>
     </ScrollAnimado>
@@ -116,6 +118,7 @@ function ListaPartidos({ columnas }: { columnas: number }) {
     <>
       <Grupo titulo="Se presentan en toda España" partidos={estatales} columnas={columnas} />
       {propios.length > 0 && <Grupo titulo={`Se presentan solo en ${comunidad.nombre}`} partidos={propios} columnas={columnas} />}
+      <OtrasCandidaturas provincia={provincia} />
       <Text style={[T.meta, s.aviso, { maxWidth: ANCHO_LECTURA }]}>
         Según las coaliciones registradas ante la Junta Electoral. Se confirmará cuando se proclamen las candidaturas, a
         principios de noviembre.
@@ -124,9 +127,50 @@ function ListaPartidos({ columnas }: { columnas: number }) {
   );
 }
 
+// El resto de candidaturas de la papeleta, solo con su nombre, según el BOE.
+function OtrasCandidaturas({ provincia }: { provincia: Provincia }) {
+  const lista = OTRAS_CANDIDATURAS[provincia.id];
+  const url = BOE_CANDIDATURAS.url;
+  return (
+    <Revelar>
+      <View style={s.otras}>
+        <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+          Otras candidaturas en {provincia.nombre}
+        </Text>
+        {lista ? (
+          <>
+            <Text style={[T.meta, { color: C.suave }]}>
+              También están en tu papeleta. No tienen ficha en la app porque no obtuvieron escaños en las últimas elecciones.
+            </Text>
+            <View style={{ gap: 6, marginTop: 4 }}>
+              {lista.map((nombre) => (
+                <Text key={nombre} style={[T.cuerpo, { color: C.tinta }]}>
+                  {nombre}
+                </Text>
+              ))}
+            </View>
+          </>
+        ) : (
+          <Text style={[T.meta, { color: C.suave }]}>
+            El 28 de octubre el BOE publica la lista oficial de candidaturas de cada provincia. Las que no tienen ficha en la app
+            aparecerán aquí, con su nombre.
+          </Text>
+        )}
+        {url && (
+          <Pulsable onPress={() => Linking.openURL(url)} style={s.boe} vibracion="ligera" accessibilityRole="link">
+            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 13.5 }]}>Ver la lista oficial en el BOE</Text>
+            <Icono nombre="next" tam={14} color={C.tinta} peso="bold" />
+          </Pulsable>
+        )}
+      </View>
+    </Revelar>
+  );
+}
+
 function Grupo({ titulo, partidos, columnas }: { titulo: string; partidos: Partido[]; columnas: number }) {
-  const cols: Partido[][] = Array.from({ length: columnas }, () => []);
-  partidos.forEach((p, i) => cols[i % columnas].push(p));
+  // Cuadrícula por filas: las tarjetas de una misma fila miden lo mismo.
+  const filas: Partido[][] = [];
+  for (let i = 0; i < partidos.length; i += columnas) filas.push(partidos.slice(i, i + columnas));
   return (
     <>
       <Revelar>
@@ -134,13 +178,16 @@ function Grupo({ titulo, partidos, columnas }: { titulo: string; partidos: Parti
           {titulo}
         </Text>
       </Revelar>
-      <View style={s.rejilla}>
-        {cols.map((col, c) => (
-          <View key={c} style={s.columna}>
-            {col.map((p) => (
-              <Revelar key={p.id} retraso={c * 80}>
+      <View style={s.filas}>
+        {filas.map((fila, f) => (
+          <View key={f} style={s.fila}>
+            {fila.map((p, c) => (
+              <Revelar key={p.id} retraso={c * 80} style={s.celda}>
                 <TarjetaPartido p={p} />
               </Revelar>
+            ))}
+            {Array.from({ length: columnas - fila.length }, (_, i) => (
+              <View key={`hueco-${i}`} style={s.celda} />
             ))}
           </View>
         ))}
@@ -203,10 +250,12 @@ function TarjetaPartido({ p }: { p: Partido }) {
         <Text style={[T.tarjeta, { color: tinta, fontSize: 20, lineHeight: 24, flexShrink: 1 }]}>{p.siglas}</Text>
       </View>
       {p.nombre !== p.siglas && (
-        <Text style={[T.meta, { color: suave, marginTop: 4 }]}>{p.nombre}</Text>
+        <Text style={[T.meta, { color: tinta, marginTop: 4 }]}>{p.nombre}</Text>
       )}
       {p.territorio && (
-        <Text style={[T.meta, { color: suave, marginTop: 2 }]}>Se presenta en {p.territorio}</Text>
+        <Text style={[T.meta, { color: tinta, marginTop: 2 }]}>
+          Se presenta en <Text style={{ fontFamily: F.textoNegrita, color: tinta }}>{p.territorio}</Text>
+        </Text>
       )}
       {p.candidato && (
         <Text style={[T.cuerpo, { color: tinta, marginTop: 10 }]}>
@@ -215,6 +264,8 @@ function TarjetaPartido({ p }: { p: Partido }) {
         </Text>
       )}
 
+      {/* Empuja el pie abajo para que todas las tarjetas de la fila acaben igual */}
+      <View style={{ flexGrow: 1, minHeight: 14 }} />
       <View style={[s.pie, activa && { borderTopColor: 'rgba(255,255,255,0.3)' }]}>
         <View style={{ flex: 1 }} />
         <Text style={[T.etiqueta, { color: tinta, fontSize: 13.5 }]}>Programa y noticias</Text>
@@ -225,7 +276,7 @@ function TarjetaPartido({ p }: { p: Partido }) {
 }
 
 const s = StyleSheet.create({
-  tarjeta: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, overflow: 'hidden' },
+  tarjeta: { flex: 1, backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, overflow: 'hidden' },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: HUECO_BARRA },
   donde: {
     flexDirection: 'row',
@@ -241,9 +292,12 @@ const s = StyleSheet.create({
   dondeIcono: { width: 40, height: 40, borderRadius: 12, backgroundColor: C.relleno, alignItems: 'center', justifyContent: 'center' },
   dondeBoton: { backgroundColor: C.tinta, paddingHorizontal: 14, paddingVertical: 9, borderRadius: R.boton },
   aviso: { color: C.sobrePartidos, opacity: 0.85, marginTop: 14 },
+  otras: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, gap: 6, marginTop: 28, maxWidth: ANCHO_LECTURA },
+  boe: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', marginTop: 8, paddingVertical: 6 },
   criterio: { color: C.sobrePartidos, opacity: 0.85, marginTop: 28, maxWidth: 640 },
-  rejilla: { flexDirection: 'row', gap: 12, marginTop: 12, alignItems: 'flex-start' },
-  columna: { flex: 1, gap: 12, minWidth: 0 },
+  filas: { gap: 12, marginTop: 12 },
+  fila: { flexDirection: 'row', gap: 12, alignItems: 'stretch' },
+  celda: { flex: 1, minWidth: 0 },
   cabecera: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  pie: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: C.linea },
+  pie: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingTop: 12, borderTopWidth: 1, borderTopColor: C.linea },
 });

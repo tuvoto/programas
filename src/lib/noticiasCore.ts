@@ -75,6 +75,11 @@ export const BUSQUEDA: Record<string, RegExp[]> = {
   cc: [/Coalición Canaria/, /Cristina Valido/, /Primero Canarias/, /\bCC\b(?!\.?\s?OO)/],
   upn: [/\bUPN\b/, /Unión del Pueblo Navarro/, /Javier Esparza/],
   compromis: [/Compromís/, /Àgueda Micó/],
+  upc: [/Unidad del Pueblo Canario/, /Nueva Canarias/, /\bUPC\b/],
+  'ara-mes': [/Ara Més/, /Més per Mallorca/, /Més per Menorca/, /Vicenç Vidal/],
+  adelante: [/Adelante Andalucía/i, /José Ignacio García/],
+  existe: [/Teruel Existe/, /Aragón Existe/],
+  'geroa-bai': [/Geroa Bai/i, /Uxue Barkos/],
 };
 
 // Partidos de los que se buscan noticias.

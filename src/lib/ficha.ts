@@ -77,7 +77,7 @@ function documentoHtml(p: Partido, temas: Tema[], titulo: string): string {
 <style>
   @page { size: A4; margin: 16mm 18mm 16mm; }
   * { box-sizing: border-box; }
-  @media screen { html, body { background: #FBFAF6; } }
+  @media screen { html, body { background: #FFFFFF; } }
   body { margin: 0; color: #161144; font: 10pt/1.6 Figtree, 'Helvetica Neue', Arial, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .cab { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; border-bottom: 1.5pt solid #161144; padding-bottom: 7pt; font-size: 8pt; font-weight: 600; color: #5B6273; }
   .cab b { font-family: 'Bricolage Grotesque', Figtree, sans-serif; font-weight: 800; font-size: 10.5pt; color: #161144; white-space: nowrap; }
@@ -114,7 +114,7 @@ export function htmlVista(d: Documento): string {
 <style>
   @media screen {
     html { background: #E9ECF2 !important; }
-    body { max-width: 794px; margin: 16px auto 40px; padding: 48px 56px; background: #FBFAF6; border-radius: 10px;
+    body { max-width: 794px; margin: 16px auto 40px; padding: 48px 56px; background: #FFFFFF; border-radius: 10px;
            box-shadow: 0 10px 28px -12px rgba(18,24,38,.30), 0 0 0 1px rgba(18,24,38,.05); }
   }
   @media screen and (max-width: 600px) {

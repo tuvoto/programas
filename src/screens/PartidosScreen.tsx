@@ -6,7 +6,9 @@ import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from '
 import { AUTONOMICOS, ESTATALES, Partido, sePresentaEn } from '../data/partidos';
 import { comunidadPorId, provinciaPorId, Provincia } from '../data/provincias';
 import { BOE_CANDIDATURAS, OTRAS_CANDIDATURAS } from '../data/candidaturas';
-import { useProvincia } from '../lib/provincia';
+import { DIPUTADOS } from '../data/escanos';
+import { listaDe } from '../data/listas';
+import { tocaPreguntar, useProvincia } from '../lib/provincia';
 import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -41,9 +43,7 @@ export default function PartidosScreen() {
       {/* Criterio de inclusión, para que quede claro que no se deja fuera a nadie a propósito */}
       <Revelar>
         <Text style={[T.meta, s.criterio, { maxWidth: ANCHO_LECTURA }]}>
-          Se incluyen los partidos que obtuvieron escaños en el Congreso en 2023, en el Parlamento Europeo en 2024 o en su
-          parlamento autonómico en las últimas elecciones, y los que han surgido de ellos. En cada provincia se presentan más
-          candidaturas: la lista oficial se publica en el BOE.
+          Están los partidos con escaños en el Congreso, el Parlamento Europeo o su parlamento autonómico.
         </Text>
       </Revelar>
     </ScrollAnimado>
@@ -71,6 +71,24 @@ function Atajo({ icono, titulo, texto, boton, onPress }: { icono: NombreIcono; t
 function DondeVotas() {
   const provincia = provinciaPorId(useProvincia());
   const [abierto, setAbierto] = useState(false);
+  const [pregunta, setPregunta] = useState(false);
+  // La primera vez que se entra en Partidos sin provincia elegida, se pregunta
+  // en una ventana (una vez por sesión; en la web, la elección se recuerda).
+  useFocusEffect(
+    useCallback(() => {
+      const t = setTimeout(() => {
+        if (tocaPreguntar()) {
+          setPregunta(true);
+          setAbierto(true);
+        }
+      }, 450);
+      return () => clearTimeout(t);
+    }, []),
+  );
+  const cerrar = () => {
+    setAbierto(false);
+    setPregunta(false);
+  };
   return (
     <>
       <Pulsable
@@ -89,14 +107,16 @@ function DondeVotas() {
             {provincia ? `Votas en ${provincia.nombre}` : '¿Dónde votas?'}
           </Text>
           <Text style={[T.meta, { color: C.suave, marginTop: 2 }]}>
-            {provincia ? 'Solo ves los partidos de tu papeleta.' : 'Elige tu provincia y verás solo los partidos de tu papeleta.'}
+            {provincia
+              ? `Se eligen ${DIPUTADOS[provincia.nombre]} diputados. Solo ves los partidos de tu papeleta.`
+              : 'Elige tu provincia y verás solo los partidos de tu papeleta.'}
           </Text>
         </View>
         <View style={s.dondeBoton}>
           <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 13.5 }]}>{provincia ? 'Cambiar' : 'Elegir'}</Text>
         </View>
       </Pulsable>
-      <SelectorProvincia visible={abierto} actual={provincia?.id ?? null} onCerrar={() => setAbierto(false)} />
+      <SelectorProvincia visible={abierto} actual={provincia?.id ?? null} onCerrar={cerrar} pregunta={pregunta} />
     </>
   );
 }
@@ -112,17 +132,13 @@ function ListaPartidos({ columnas }: { columnas: number }) {
     );
   }
   const comunidad = comunidadPorId(provincia.comunidad)!;
-  const estatales = ESTATALES.filter((p) => sePresentaEn(p, comunidad.id));
-  const propios = AUTONOMICOS.filter((p) => sePresentaEn(p, comunidad.id));
+  const estatales = ESTATALES.filter((p) => sePresentaEn(p, provincia));
+  const propios = AUTONOMICOS.filter((p) => sePresentaEn(p, provincia));
   return (
     <>
       <Grupo titulo="Se presentan en toda España" partidos={estatales} columnas={columnas} />
       {propios.length > 0 && <Grupo titulo={`Se presentan solo en ${comunidad.nombre}`} partidos={propios} columnas={columnas} />}
       <OtrasCandidaturas provincia={provincia} />
-      <Text style={[T.meta, s.aviso, { maxWidth: ANCHO_LECTURA }]}>
-        Según las coaliciones registradas ante la Junta Electoral. Se confirmará cuando se proclamen las candidaturas, a
-        principios de noviembre.
-      </Text>
     </>
   );
 }
@@ -140,7 +156,10 @@ function OtrasCandidaturas({ provincia }: { provincia: Provincia }) {
         {lista ? (
           <>
             <Text style={[T.meta, { color: C.suave }]}>
-              También están en tu papeleta. No tienen ficha en la app porque no obtuvieron escaños en las últimas elecciones.
+              {lista.length === 0
+                ? 'No hay más candidaturas al Congreso en tu provincia.'
+                : 'También están en tu papeleta. No tienen ficha en la app porque no tienen escaños en el Congreso, el Parlamento Europeo ni su parlamento autonómico.'}
+              {!BOE_CANDIDATURAS.proclamadas && ' Son las candidaturas presentadas: las definitivas se publican el 3 de noviembre.'}
             </Text>
             <View style={{ gap: 6, marginTop: 4 }}>
               {lista.map((nombre) => (
@@ -203,6 +222,8 @@ function TarjetaPartido({ p }: { p: Partido }) {
   const capa = useAnimatedStyle(() => ({ opacity: tinte.get() }));
   const fondo = fondoLegible(p.color);
   const sobre = textoSobre(fondo);
+  const provincia = provinciaPorId(useProvincia());
+  const cabeza = provincia ? listaDe(p.id, provincia.nombre)?.congreso[0] : undefined;
 
   // Se tiñe nada más tocar; si el toque se cancela (por ejemplo, al hacer
   // scroll), vuelve a blanco.
@@ -263,6 +284,12 @@ function TarjetaPartido({ p }: { p: Partido }) {
           {p.candidato}
         </Text>
       )}
+      {cabeza && provincia && (
+        <Text style={[T.cuerpo, { color: tinta, marginTop: 4 }]}>
+          <Text style={{ color: suave }}>Cabeza de lista en {provincia.nombre}: </Text>
+          <Text style={{ fontFamily: F.textoSemi, color: tinta }}>{cabeza}</Text>
+        </Text>
+      )}
 
       {/* Empuja el pie abajo para que todas las tarjetas de la fila acaben igual */}
       <View style={{ flexGrow: 1, minHeight: 14 }} />
@@ -291,7 +318,6 @@ const s = StyleSheet.create({
   dosAtajos: { flexDirection: 'row', gap: 12, alignItems: 'stretch' },
   dondeIcono: { width: 40, height: 40, borderRadius: 12, backgroundColor: C.relleno, alignItems: 'center', justifyContent: 'center' },
   dondeBoton: { backgroundColor: C.tinta, paddingHorizontal: 14, paddingVertical: 9, borderRadius: R.boton },
-  aviso: { color: C.sobrePartidos, opacity: 0.85, marginTop: 14 },
   otras: { backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 16, boxShadow: S.tarjeta, gap: 6, marginTop: 28, maxWidth: ANCHO_LECTURA },
   boe: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', marginTop: 8, paddingVertical: 6 },
   criterio: { color: C.sobrePartidos, opacity: 0.85, marginTop: 28, maxWidth: 640 },

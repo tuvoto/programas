@@ -6,7 +6,7 @@ import { urlPublica } from './web';
 
 type Estado =
   | { tipo: 'cargando' }
-  | { tipo: 'ok'; noticias: Noticia[]; actualizado: string; medios: string[] }
+  | { tipo: 'ok'; noticias: Noticia[]; actualizado: string; medios: string[]; iconos: Record<string, string> }
   | { tipo: 'error' }
   | { tipo: 'sin-archivo' }; // la web aún no tiene noticias.json
 
@@ -50,7 +50,7 @@ export function useNoticias(partidoId: string) {
     setEstado({ tipo: 'cargando' });
     if (!cache || intento > 0) cache = cargar();
     cache
-      .then((d) => vivo && setEstado({ tipo: 'ok', noticias: d.partidos[partidoId] ?? [], actualizado: d.actualizado, medios: d.medios ?? [] }))
+      .then((d) => vivo && setEstado({ tipo: 'ok', noticias: d.partidos[partidoId] ?? [], actualizado: d.actualizado, medios: d.medios ?? [], iconos: d.iconos ?? {} }))
       .catch((e) => {
         cache = null;
         if (vivo) setEstado({ tipo: e instanceof SinArchivo ? 'sin-archivo' : 'error' });

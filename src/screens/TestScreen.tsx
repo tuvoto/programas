@@ -5,9 +5,7 @@ import { ActivityIndicator, Linking, Modal, Platform, Pressable, ScrollView, Sty
 import Animated, { Easing, FadeIn, FadeOut, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
 import { partidoPorId } from '../data/partidos';
 import { TEMAS, temaPorId } from '../data/temas';
-import { AFIRMACIONES, AFIRMACIONES_CORTAS, Afirmacion, Respuesta, Respuestas, calcular, mezclarPorTemas, partidosDelTest, partidosSinTest } from '../data/test';
-import { useProvincia } from '../lib/provincia';
-import { provinciaPorId } from '../data/provincias';
+import { AFIRMACIONES, AFIRMACIONES_CORTAS, Afirmacion, Respuesta, Respuestas, calcular, mezclarPorTemas, partidosDelTest } from '../data/test';
 import { urlPagina } from '../lib/web';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -38,11 +36,9 @@ const minutos = (n: number) => Math.max(1, Math.round((n * 8) / 60));
 // Primera tarjeta de cada test: sirve para aprender el gesto y no cuenta.
 const PRACTICA = { tema: 'Práctica', texto: 'Estoy listo para empezar el test.' };
 
-// Partidos del test según la provincia elegida (si la hay).
+// Partidos del test: los mismos para todo el mundo.
 function usePartidosTest() {
-  const provincia = provinciaPorId(useProvincia());
-  const comunidad = provincia?.comunidad ?? null;
-  return { partidos: partidosDelTest(comunidad), sinTest: partidosSinTest(comunidad), provincia };
+  return { partidos: partidosDelTest() };
 }
 
 export default function TestScreen({ onVolver }: { onVolver: () => void }) {
@@ -252,7 +248,7 @@ function Tarjetas({
 }) {
   const [i, setI] = useState(0);
   const tarjeta = useRef<TarjetaRef>(null);
-  const { partidos, sinTest, provincia } = usePartidosTest();
+  const { partidos } = usePartidosTest();
   // La tarjeta se adapta a pantallas bajas para que los botones quepan debajo.
   const { height: altoVentana } = useWindowDimensions();
   const altoPila = Math.max(300, Math.min(390, altoVentana - 400));
@@ -345,12 +341,8 @@ function Tarjetas({
     <View style={{ marginTop: 14 }}>
       <Text style={[T.meta, { color: C.suave, marginBottom: 14 }]}>
         <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>No es una recomendación de voto.</Text> Partidos incluidos:{' '}
-        {partidos.map((id) => partidoPorId(id)!.siglas).join(', ')}, con sus programas de 2023.
-        {provincia
-          ? ` Según tu provincia (${provincia.nombre}).`
-          : ' Si eliges tu provincia en Partidos, se añaden los partidos de tu comunidad.'}
-        {sinTest.length > 0 &&
-          ` ${sinTest.map((id) => partidoPorId(id)!.siglas).join(', ')} no entra${sinTest.length > 1 ? 'n' : ''}: su programa de 2023 no habla de suficientes frases.`}
+        {partidos.map((id) => partidoPorId(id)!.siglas).join(', ')}, con sus programas de 2023. Algunos solo se presentan
+        en su comunidad. Los demás partidos no entran: su programa de 2023 no trata suficientes frases.
       </Text>
       <View style={s.progresoFila}>
         <Text style={[T.etiqueta, { color: C.suave }]}>{practicando ? 'Práctica: no cuenta' : `${i + 1} de ${orden.length}`}</Text>
@@ -644,6 +636,7 @@ function Resultado({
         </View>
         <Text style={[T.meta, { color: C.suave, fontSize: 12.5, marginLeft: 32 }]}>
           Coincides en {rep.si.length} de {conPostura} {conPostura === 1 ? 'frase' : 'frases'} con postura
+          {p.territorio ? ` · solo se presenta en ${p.territorio}` : ''}
         </Text>
       </Pulsable>
     );

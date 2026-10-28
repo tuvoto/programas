@@ -24,7 +24,10 @@ const TarjetaResultado = forwardRef<View, Props>(function TarjetaResultado({ res
   const u = ancho / 360; // 1 unidad = 3 px en la imagen final
   // Con más de 4 partidos (los de tu comunidad), todo un poco más compacto
   // para que quepa sin pisar el aviso de abajo.
-  const n = resultados.length;
+  // Como mucho, los 6 primeros: con más no se leen bien en una historia.
+  const lista = resultados.slice(0, 6);
+  const n = lista.length;
+  const resto = resultados.length - n;
   const k = n <= 4 ? 1 : n === 5 ? 0.85 : 0.7;
   return (
     <View
@@ -45,12 +48,12 @@ const TarjetaResultado = forwardRef<View, Props>(function TarjetaResultado({ res
             Mi resultado en el test de afinidad
           </Text>
           <Text style={{ fontFamily: F.texto, fontSize: 13 * u, lineHeight: 18 * u, color: C.sobreTintaSuave }}>
-            {contestadas} de {total} frases respondidas · programas de 2023
+            {contestadas} de {total} frases respondidas · programas de 2023{resto > 0 ? ` · los ${n} primeros de ${resultados.length} partidos` : ''}
           </Text>
         </View>
 
         <View style={{ gap: 18 * k * u }}>
-          {resultados.map((r) => {
+          {lista.map((r) => {
             const p = partidoPorId(r.partidoId);
             if (!p) return null;
             return (

@@ -4,10 +4,12 @@ import { elegirProvincia } from '../lib/provincia';
 import Pulsable from './Pulsable';
 import { C, R, S, T } from '../theme';
 
-type Props = { visible: boolean; actual: string | null; onCerrar: () => void };
+// `pregunta`: se abre solo al entrar en Partidos; explica para qué sirve y deja
+// seguir sin elegir.
+type Props = { visible: boolean; actual: string | null; onCerrar: () => void; pregunta?: boolean };
 
 // Ventana para elegir la provincia en la que se vota.
-export default function SelectorProvincia({ visible, actual, onCerrar }: Props) {
+export default function SelectorProvincia({ visible, actual, onCerrar, pregunta }: Props) {
   const elegir = (id: string | null) => {
     elegirProvincia(id);
     onCerrar();
@@ -22,7 +24,11 @@ export default function SelectorProvincia({ visible, actual, onCerrar }: Props) 
               <Text style={[T.seccion, { color: C.tinta, fontSize: 20 }]} accessibilityRole="header">
                 ¿Dónde votas?
               </Text>
-              <Text style={[T.meta, { color: C.suave }]}>Votas en la provincia en la que estás empadronado.</Text>
+              <Text style={[T.meta, { color: C.suave }]}>
+                {pregunta
+                  ? 'Elige tu provincia y verás solo los partidos de tu papeleta. Es donde estás empadronado.'
+                  : 'Votas en la provincia en la que estás empadronado.'}
+              </Text>
             </View>
             <Pulsable onPress={onCerrar} style={s.cerrar} accessibilityRole="button" accessibilityLabel="Cerrar">
               <Text style={[T.cuerpoSemi, { color: C.tinta, fontSize: 18, lineHeight: 20 }]}>✕</Text>
@@ -59,6 +65,11 @@ export default function SelectorProvincia({ visible, actual, onCerrar }: Props) 
               </View>
             ))}
           </ScrollView>
+          {pregunta && (
+            <Pulsable onPress={onCerrar} style={s.ahoraNo} accessibilityRole="button">
+              <Text style={[T.etiqueta, { color: C.suave, fontSize: 14 }]}>Ahora no, ver todos los partidos</Text>
+            </Pulsable>
+          )}
         </View>
       </View>
     </Modal>
@@ -78,6 +89,7 @@ const s = StyleSheet.create({
     boxShadow: S.flotante,
   },
   cabecera: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
+  ahoraNo: { alignSelf: 'center', paddingVertical: 8, paddingHorizontal: 12 },
   cerrar: { width: 36, height: 36, borderRadius: 18, backgroundColor: C.relleno, alignItems: 'center', justifyContent: 'center' },
   todas: { paddingVertical: 12, paddingHorizontal: 14, borderRadius: R.boton, backgroundColor: C.relleno, marginBottom: 6 },
   grupo: { gap: 8, paddingVertical: 8 },

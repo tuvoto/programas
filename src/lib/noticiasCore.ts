@@ -19,6 +19,9 @@ export type Noticia = {
 export type ArchivoNoticias = {
   actualizado: string; // ISO 8601
   medios: string[]; // medios que respondieron
+  // Icono de cada medio (el de su web), para mostrarlo junto a su nombre.
+  // Se carga desde la web del medio: la app no guarda copia.
+  iconos?: Record<string, string>;
   partidos: Record<string, Noticia[]>;
 };
 
@@ -26,36 +29,41 @@ export type ArchivoNoticias = {
 // el script lo indica en el registro y sigue con los demás.
 // `rss` admite varias direcciones: se prueban en orden y se usa la primera que
 // responde (los medios cambian a veces la dirección de su RSS).
-export const MEDIOS: { medio: string; corto: string; rss: string | string[]; zona?: string }[] = [
+export const MEDIOS: { medio: string; corto: string; web: string; rss: string | string[]; zona?: string }[] = [
   // Medios estatales
-  { medio: 'El País', corto: 'País', rss: 'https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada' },
-  { medio: 'El Mundo', corto: 'Mundo', rss: 'https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml' },
-  { medio: 'ABC', corto: 'ABC', rss: 'https://www.abc.es/rss/2.0/espana/' },
-  { medio: 'elDiario.es', corto: 'elD', rss: 'https://www.eldiario.es/rss/politica/' },
+  { medio: 'El País', corto: 'País', web: 'https://elpais.com', rss: 'https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada' },
+  { medio: 'El Mundo', corto: 'Mundo', web: 'https://www.elmundo.es', rss: 'https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml' },
+  { medio: 'ABC', corto: 'ABC', web: 'https://www.abc.es', rss: 'https://www.abc.es/rss/2.0/espana/' },
+  { medio: 'elDiario.es', corto: 'elD', web: 'https://www.eldiario.es', rss: 'https://www.eldiario.es/rss/politica/' },
   // La Razón y Público se quitaron en octubre de 2026: sus RSS no responden
   // (403 y 404). Se quitan los dos para no desequilibrar la lista.
-  { medio: 'El Confidencial', corto: 'Conf', rss: 'https://rss.elconfidencial.com/espana/' },
-  { medio: 'La Vanguardia', corto: 'Vang', rss: 'https://www.lavanguardia.com/rss/politica.xml' },
-  { medio: '20minutos', corto: '20m', rss: 'https://www.20minutos.es/rss/nacional/' },
-  { medio: 'RTVE', corto: 'RTVE', rss: 'https://api2.rtve.es/rss/temas_espana.xml' },
-  { medio: 'Europa Press', corto: 'EP', rss: 'https://www.europapress.es/rss/rss.aspx?ch=00066' },
+  { medio: 'El Confidencial', corto: 'Conf', web: 'https://www.elconfidencial.com', rss: 'https://rss.elconfidencial.com/espana/' },
+  { medio: 'La Vanguardia', corto: 'Vang', web: 'https://www.lavanguardia.com', rss: 'https://www.lavanguardia.com/rss/politica.xml' },
+  { medio: '20minutos', corto: '20m', web: 'https://www.20minutos.es', rss: 'https://www.20minutos.es/rss/nacional/' },
+  { medio: 'RTVE', corto: 'RTVE', web: 'https://www.rtve.es', rss: 'https://api2.rtve.es/rss/temas_espana.xml' },
+  { medio: 'Europa Press', corto: 'EP', web: 'https://www.europapress.es', rss: 'https://www.europapress.es/rss/rss.aspx?ch=00066' },
 
   // Medios regionales: para que los partidos que solo se presentan en una
   // comunidad también tengan noticias. Se prueban varias direcciones por medio.
   // (El Periódico, Levante-EMV y Noticias de Navarra rechazan las peticiones
   // automáticas con error 406: se usan las ediciones regionales de elDiario.es.)
-  { medio: 'La Voz de Galicia', corto: 'Voz', zona: 'Galicia', rss: ['https://www.lavozdegalicia.es/galicia/index.xml', 'https://www.lavozdegalicia.es/index.xml'] },
-  { medio: 'elDiario.es Galicia', corto: 'elDG', zona: 'Galicia', rss: ['https://www.eldiario.es/rss/galicia/'] },
-  { medio: 'Canarias7', corto: 'C7', zona: 'Canarias', rss: ['https://www.canarias7.es/rss/2.0/portada', 'https://www.canarias7.es/rss/2.0/?section=politica'] },
-  { medio: 'Canarias Ahora', corto: 'CanA', zona: 'Canarias', rss: ['https://www.eldiario.es/rss/canariasahora/'] },
-  { medio: 'Diario de Navarra', corto: 'DNav', zona: 'Navarra', rss: ['https://www.diariodenavarra.es/rss/portada.xml', 'https://www.diariodenavarra.es/rss/navarra.xml'] },
-  { medio: 'elDiario.es Navarra', corto: 'elDN', zona: 'Navarra', rss: ['https://www.eldiario.es/rss/navarra/'] },
-  { medio: 'El Correo', corto: 'Corr', zona: 'País Vasco', rss: ['https://www.elcorreo.com/rss/atom/?section=politica', 'https://www.elcorreo.com/rss/2.0/portada/'] },
-  { medio: 'elDiario.es Catalunya', corto: 'elDC', zona: 'Cataluña', rss: ['https://www.eldiario.es/rss/catalunya/'] },
-  { medio: 'Ara', corto: 'Ara', zona: 'Cataluña', rss: ['https://www.ara.cat/rss/'] },
-  { medio: 'elDiario.es Comunitat Valenciana', corto: 'elDV', zona: 'Comunitat Valenciana', rss: ['https://www.eldiario.es/rss/comunitat-valenciana/'] },
-  { medio: 'Las Provincias', corto: 'LasP', zona: 'Comunitat Valenciana', rss: ['https://www.lasprovincias.es/rss/2.0/portada'] },
+  { medio: 'La Voz de Galicia', corto: 'Voz', web: 'https://www.lavozdegalicia.es', zona: 'Galicia', rss: ['https://www.lavozdegalicia.es/galicia/index.xml', 'https://www.lavozdegalicia.es/index.xml'] },
+  { medio: 'elDiario.es Galicia', corto: 'elDG', web: 'https://www.eldiario.es', zona: 'Galicia', rss: ['https://www.eldiario.es/rss/galicia/'] },
+  { medio: 'Canarias7', corto: 'C7', web: 'https://www.canarias7.es', zona: 'Canarias', rss: ['https://www.canarias7.es/rss/2.0/portada', 'https://www.canarias7.es/rss/2.0/?section=politica'] },
+  { medio: 'Canarias Ahora', corto: 'CanA', web: 'https://www.eldiario.es', zona: 'Canarias', rss: ['https://www.eldiario.es/rss/canariasahora/'] },
+  { medio: 'Diario de Navarra', corto: 'DNav', web: 'https://www.diariodenavarra.es', zona: 'Navarra', rss: ['https://www.diariodenavarra.es/rss/portada.xml', 'https://www.diariodenavarra.es/rss/navarra.xml'] },
+  { medio: 'elDiario.es Navarra', corto: 'elDN', web: 'https://www.eldiario.es', zona: 'Navarra', rss: ['https://www.eldiario.es/rss/navarra/'] },
+  { medio: 'El Correo', corto: 'Corr', web: 'https://www.elcorreo.com', zona: 'País Vasco', rss: ['https://www.elcorreo.com/rss/atom/?section=politica', 'https://www.elcorreo.com/rss/2.0/portada/'] },
+  { medio: 'elDiario.es Catalunya', corto: 'elDC', web: 'https://www.eldiario.es', zona: 'Cataluña', rss: ['https://www.eldiario.es/rss/catalunya/'] },
+  { medio: 'Ara', corto: 'Ara', web: 'https://www.ara.cat', zona: 'Cataluña', rss: ['https://www.ara.cat/rss/'] },
+  { medio: 'elDiario.es Comunitat Valenciana', corto: 'elDV', web: 'https://www.eldiario.es', zona: 'Comunitat Valenciana', rss: ['https://www.eldiario.es/rss/comunitat-valenciana/'] },
+  { medio: 'Las Provincias', corto: 'LasP', web: 'https://www.lasprovincias.es', zona: 'Comunitat Valenciana', rss: ['https://www.lasprovincias.es/rss/2.0/portada'] },
 ];
+
+// Medios cuyas fotos no se muestran (por ejemplo, porque lo han pedido). Basta
+// con añadir aquí su nombre, tal cual está en MEDIOS: la app deja de enseñarlas
+// en cuanto se publica el cambio, sin esperar a la siguiente descarga.
+export const SIN_FOTOS: string[] = [];
 
 // Qué cuenta como mención de cada partido en un titular (distingue mayúsculas).
 export const BUSQUEDA: Record<string, RegExp[]> = {
@@ -68,7 +76,7 @@ export const BUSQUEDA: Record<string, RegExp[]> = {
   salf: [/Se Acabó La Fiesta/i, /\bSALF\b/, /\bAlvise\b/],
   erc: [/\bERC\b/, /\bEsquerra\b/, /\bRufián\b/],
   junts: [/\bJunts\b/, /\bPuigdemont\b/, /\bNogueras\b/],
-  bildu: [/\bBildu\b/, /\bOtegi\b/],
+  bildu: [/\bBildu\b/, /\bOtegi\b/, /Oskar Matute/],
   pnv: [/\bPNV\b/, /\bEAJ\b/, /Aitor Esteban/, /Maribel Vaquero/],
   bng: [/\bBNG\b/, /Bloque Nacionalista Galego/, /\bPontón\b/, /Néstor Rego/],
   // «CC» sola, pero no «CC.OO.» ni «CCOO»
@@ -146,7 +154,9 @@ export function leerRss(xml: string, medio: string): Noticia[] {
     const fechaTxt = etiqueta(b, 'pubDate') ?? etiqueta(b, 'dc:date') ?? etiqueta(b, 'updated') ?? etiqueta(b, 'published');
     const fecha = fechaTxt ? new Date(fechaTxt) : null;
     if (!titulo || !url || !/^https?:\/\//.test(url) || !fecha || isNaN(fecha.getTime())) continue;
-    const imagen = imagenDe(b);
+    // La foto se enlaza desde la web del medio (no se copia). Los medios de
+    // SIN_FOTOS no la llevan.
+    const imagen = SIN_FOTOS.includes(medio) ? undefined : imagenDe(b);
     salida.push({ titulo, medio, url, fecha: fecha.toISOString(), ...(imagen ? { imagen } : {}) });
   }
   return salida;
@@ -183,8 +193,60 @@ export function repartir(todas: Noticia[], partidos: string[], ahora = Date.now(
 
 type Descargar = (url: string) => Promise<string>;
 
+// Icono de la web de un medio, a partir del HTML de su portada. Se prefiere
+// el «apple-touch-icon» (PNG grande); los .ico y .svg no se usan porque el
+// móvil no siempre los muestra.
+export function iconoDeHtml(html: string, base: string): string | undefined {
+  const enlaces = html.match(/<link\b[^>]*>/gi) ?? [];
+  const candidatos: { href: string; puntos: number }[] = [];
+  for (const etq of enlaces) {
+    const rel = (etq.match(/\srel\s*=\s*["']([^"']+)["']/i)?.[1] ?? '').toLowerCase();
+    const href = etq.match(/\shref\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (!href || !rel.includes('icon')) continue;
+    const ruta = href.toLowerCase().split('?')[0];
+    if (ruta.endsWith('.ico') || ruta.endsWith('.svg') || /image\/(svg|x-icon|vnd)/i.test(etq)) continue;
+    const tam = Number(etq.match(/\ssizes\s*=\s*["'](\d+)x\d+["']/i)?.[1] ?? 0);
+    candidatos.push({ href, puntos: (rel.includes('apple-touch-icon') ? 1000 : 0) + Math.min(tam, 512) });
+  }
+  candidatos.sort((a, b) => b.puntos - a.puntos);
+  try {
+    return candidatos[0] ? new URL(candidatos[0].href, base).toString() : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+async function iconos(descargar: Descargar, aviso?: (m: string) => void): Promise<Record<string, string>> {
+  const webs = [...new Set(MEDIOS.map((m) => m.web))];
+  const porWeb: Record<string, string> = {};
+  await Promise.all(
+    webs.map(async (web) => {
+      try {
+        let icono = iconoDeHtml(await descargar(web), web);
+        if (!icono) {
+          // Muchas webs lo tienen en esta ruta aunque no lo enlacen.
+          const directo = `${web}/apple-touch-icon.png`;
+          icono = await descargar(directo).then(() => directo, () => undefined);
+        }
+        if (icono) porWeb[web] = icono;
+        else aviso?.(`${web}: sin icono PNG`);
+      } catch (e) {
+        aviso?.(`${web}: icono no disponible (${(e as Error).message})`);
+      }
+    }),
+  );
+  const res: Record<string, string> = {};
+  for (const m of MEDIOS) if (porWeb[m.web]) res[m.medio] = porWeb[m.web];
+  return res;
+}
+
 // Descarga todos los medios a la vez; los que fallen se ignoran.
-export async function recopilar(descargar: Descargar, partidos: string[], aviso?: (m: string) => void): Promise<ArchivoNoticias> {
+export async function recopilar(
+  descargar: Descargar,
+  partidos: string[],
+  aviso?: (m: string) => void,
+  conIconos = false,
+): Promise<ArchivoNoticias> {
   const listas = await Promise.all(
     MEDIOS.map(async ({ medio, rss }) => {
       let ultimoError = '';
@@ -207,5 +269,6 @@ export async function recopilar(descargar: Descargar, partidos: string[], aviso?
     actualizado: new Date().toISOString(),
     medios: ok.map((l) => l.medio),
     partidos: repartir(ok.flatMap((l) => l.n), partidos),
+    ...(conIconos ? { iconos: await iconos(descargar, aviso) } : {}),
   };
 }

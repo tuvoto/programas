@@ -18,6 +18,8 @@ import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '
 //   - Nota de prensa del INE sobre el censo para el 29-N
 //   - Ministerio del Interior / La Moncloa (voto por correo y voto desde el extranjero)
 //   - Consulados de España (exteriores.gob.es): plazos CERA y ERTA del 29-N
+//   - Real decreto de convocatoria (BOE, 6 de octubre de 2026): diputados por provincia
+//   - Constitución (art. 69) y LOREG: Senado y reparto de escaños
 
 // Fechas clave, en orden.
 const FECHAS = [
@@ -59,6 +61,30 @@ export default function InfoScreen() {
   const dosColumnas = ancho >= 760;
 
   const guia = [
+    <Desplegable key="que" color={1} titulo="¿Qué se vota el 29-N?" icono="escanos" resumen="Congreso, Senado y quién elige al presidente">
+      <P>
+        Votas <B>dos cosas a la vez</B>, con dos papeletas:
+      </P>
+      <Punto>
+        <B>Congreso (papeleta blanca):</B> se eligen <B>350 diputados</B>, repartidos por provincias según su población.
+        Votas a la lista de un partido en tu provincia. Madrid elige 38 y Soria, 2; al elegir tu provincia en
+        Partidos verás cuántos elige la tuya.
+      </Punto>
+      <Punto>
+        <B>Senado (papeleta sepia):</B> votas a personas, no a listas, y puedes marcar candidatos de partidos distintos.{' '}
+        En la mayoría de provincias se eligen 4 senadores y puedes marcar hasta 3; en las islas, Ceuta y Melilla, menos.
+      </Punto>
+      <Text style={[T.cuerpoSemi, { color: C.tinta, marginTop: 6 }]}>¿Y el presidente?</Text>
+      <P>
+        <B>No se vota directamente:</B> lo eligen después los diputados en el Congreso. Necesita 176 votos, o en una
+        segunda votación, más síes que noes.
+      </P>
+      <Nota>
+        Los diputados de cada provincia se reparten con la ley D’Hondt entre los partidos que tienen al menos el 3 % de los
+        votos válidos en esa provincia.
+      </Nota>
+    </Desplegable>,
+
     <Desplegable key="fechas" color={0} titulo="Fechas clave" icono="calendario" resumen="Del censo al día de las elecciones">
       <View style={{ gap: 2 }}>
         {FECHAS.map((f) => (

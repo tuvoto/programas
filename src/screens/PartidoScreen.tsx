@@ -1,12 +1,15 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { ActivityIndicator, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Partido } from '../data/partidos';
-import { comunidadPorId } from '../data/provincias';
+import { Partido, sePresentaEn } from '../data/partidos';
+import { provinciaPorId, Provincia } from '../data/provincias';
+import { DIPUTADOS } from '../data/escanos';
+import { BOE_LISTAS, listaDe } from '../data/listas';
+import { useProvincia } from '../lib/provincia';
 import { propuestasDe } from '../data/propuestas';
 import { TEMAS } from '../data/temas';
+import { SIN_FOTOS } from '../lib/noticiasCore';
 import { haceCuanto, useNoticias } from '../lib/useNoticias';
-import { MEDIOS } from '../lib/noticiasCore';
 import { urlPublica } from '../lib/web';
 import Pulsable from '../components/Pulsable';
 import Icono, { NombreIcono } from '../components/Icono';
@@ -49,7 +52,7 @@ export default function PartidoScreen({ partido: p, onVolver }: Props) {
       {(
         <View style={[s.rejilla, !dosColumnas && { flexDirection: 'column' }]}>
           <View style={[s.columna, dosColumnas && { flex: 5 }]}>
-            <BloqueCandidatura p={p} />
+            <BloquePapeleta p={p} />
             <BloqueDescargas p={p} />
           </View>
           <View style={[s.columna, dosColumnas && { flex: 6 }]}>
@@ -96,54 +99,81 @@ function Opcion({
   );
 }
 
-// Dónde se presenta, qué se sabe de su candidatura y si ya hay programa para
-// el 29-N. Así se ve que la ficha está al día aunque falte el programa.
-function dondeSePresenta(p: Partido): string {
-  const nombres = (ids: string[]) => ids.map((id) => comunidadPorId(id)?.nombre ?? id);
-  const lista = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} y ${xs[xs.length - 1]}` : xs[0]);
-  if (p.comunidades) return lista(nombres(p.comunidades));
-  if (p.noSePresentaEn?.length) return `Toda España salvo ${lista(nombres(p.noSePresentaEn))}`;
-  return 'Toda España';
+// «En tu papeleta de Granada»: si has elegido provincia en Partidos y el
+// partido se presenta allí, sus candidatos al Congreso y al Senado.
+function BloquePapeleta({ p }: { p: Partido }) {
+  const provincia = provinciaPorId(useProvincia());
+  if (!provincia || !sePresentaEn(p, provincia)) return null;
+  return <Papeleta p={p} provincia={provincia} />;
 }
 
-function fechaLarga(iso: string): string {
-  const [a, m, d] = iso.split('-').map(Number);
-  const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
-  return `${d} de ${meses[m - 1]} de ${a}`;
-}
-
-function BloqueCandidatura({ p }: { p: Partido }) {
-  const publicado = !!p.programa.url;
+function Papeleta({ p, provincia }: { p: Partido; provincia: Provincia }) {
+  const [abierta, setAbierta] = useState(false);
+  const lista = listaDe(p.id, provincia.nombre);
+  const diputados = DIPUTADOS[provincia.nombre];
   return (
-    <Tarjeta style={{ gap: 12 }}>
+    <Tarjeta style={{ gap: 10 }}>
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
-        Candidatura
+        En tu papeleta de {provincia.nombre}
       </Text>
-      <Dato titulo="Dónde se presenta" texto={dondeSePresenta(p)} />
-      {p.nota && <Dato titulo="Lo que se sabe" texto={p.nota} />}
-      <Dato
-        titulo="Programa para el 29-N"
-        texto={
-          publicado
-            ? p.programa.fechaPublicacion
-              ? `Publicado el ${fechaLarga(p.programa.fechaPublicacion)}.`
-              : 'Publicado.'
-            : p.anterior?.archivo
-              ? 'Todavía no lo ha publicado. Mientras, puedes consultar su programa de 2023.'
-              : 'Todavía no lo ha publicado. Aparecerá aquí en cuanto lo haga.'
-        }
-        aviso={!publicado}
-      />
+      <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>Congreso · se eligen {diputados}</Text>
+      {!lista ? (
+        <Text style={[T.cuerpo, { color: C.avisoTexto }]}>
+          Los nombres de los candidatos se publican en el BOE: las candidaturas presentadas, el 28 de octubre, y las
+          definitivas, el 3 de noviembre. Aparecerán aquí.
+        </Text>
+      ) : (
+        <>
+          {!abierta ? (
+            <View style={{ gap: 1 }}>
+              <Text style={[T.cuerpoSemi, { color: C.tinta, fontSize: 18 }]}>{lista.congreso[0]}</Text>
+              <Text style={[T.meta, { color: C.suave }]}>Cabeza de lista</Text>
+            </View>
+          ) : (
+            <View style={{ gap: 6 }}>
+              {lista.congreso.map((n, i) => (
+                <View key={n} style={{ flexDirection: 'row', gap: 10 }}>
+                  <Text style={[T.cuerpoSemi, { color: C.suave, width: 22, textAlign: 'right' }]}>{i + 1}</Text>
+                  <Text style={[i === 0 ? T.cuerpoSemi : T.cuerpo, { color: C.tinta, flex: 1 }]}>{n}</Text>
+                </View>
+              ))}
+              {lista.suplentes.length > 0 && (
+                <>
+                  <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi, marginTop: 4 }]}>Suplentes</Text>
+                  <Text style={[T.cuerpo, { color: C.tinta }]}>{lista.suplentes.join(' · ')}</Text>
+                </>
+              )}
+            </View>
+          )}
+          <Pulsable onPress={() => setAbierta(!abierta)} style={s.verLista} vibracion="seleccion" accessibilityRole="button" accessibilityState={{ expanded: abierta }}>
+            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14, flex: 1 }]}>
+              {abierta
+                ? 'Ocultar la lista'
+                : `Ver la lista completa (${lista.congreso.length}${lista.suplentes.length ? ` + ${lista.suplentes.length} suplentes` : ''})`}
+            </Text>
+            <View style={{ transform: [{ rotate: abierta ? '-90deg' : '90deg' }] }}>
+              <Icono nombre="next" tam={14} color={C.tinta} peso="bold" />
+            </View>
+          </Pulsable>
+          {lista.senado.length > 0 && (
+            <View style={{ gap: 4, borderTopWidth: 1, borderTopColor: C.linea, paddingTop: 10 }}>
+              <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>
+                Senado{lista.senadoCandidatura ? ` · en la candidatura ${lista.senadoCandidatura}` : ''}
+              </Text>
+              <Text style={[T.cuerpo, { color: C.tinta }]}>{lista.senado.join(' · ')}</Text>
+            </View>
+          )}
+          {!BOE_LISTAS.proclamadas && (
+            <Text style={[T.meta, { color: C.suave }]}>Candidaturas presentadas. Las definitivas se publican el 3 de noviembre.</Text>
+          )}
+          {BOE_LISTAS.url && (
+            <Pulsable onPress={() => Linking.openURL(BOE_LISTAS.url!)} style={{ alignSelf: 'flex-start' }} accessibilityRole="link">
+              <Text style={[T.meta, { color: C.suave, textDecorationLine: 'underline' }]}>Fuente: BOE</Text>
+            </Pulsable>
+          )}
+        </>
+      )}
     </Tarjeta>
-  );
-}
-
-function Dato({ titulo, texto, aviso }: { titulo: string; texto: string; aviso?: boolean }) {
-  return (
-    <View style={{ gap: 2 }}>
-      <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>{titulo}</Text>
-      <Text style={[T.cuerpo, { color: aviso ? C.avisoTexto : C.tinta }]}>{texto}</Text>
-    </View>
   );
 }
 
@@ -158,13 +188,20 @@ function BloqueDescargas({ p }: { p: Partido }) {
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
         Descargas
       </Text>
+      {!p.programa.url && (
+        <Text style={[T.meta, { color: C.avisoTexto }]}>
+          {p.anterior?.archivo
+            ? 'Aún no ha publicado su programa para el 29-N. Mientras, aquí tienes el de 2023.'
+            : 'Aún no ha publicado su programa para el 29-N.'}
+        </Text>
+      )}
       {archivo || hayPropuestas ? (
         <>
           {hayPropuestas && (
             <Opcion
               titulo="Propuestas por temas"
               tono={2}
-              texto="Elige los temas, míralas y descárgalas en PDF."
+              texto="Por temas, también en PDF."
               onPress={() => setSelector(true)}
             />
           )}
@@ -173,7 +210,7 @@ function BloqueDescargas({ p }: { p: Partido }) {
               titulo="Cara a cara"
               tono={1}
               icono="comparar"
-              texto={`Compara a ${p.siglas} con otro partido, tema a tema.`}
+              texto="Con otro partido, tema a tema."
               onPress={() => router.push(`/cara-a-cara?a=${p.id}`)}
             />
           )}
@@ -188,33 +225,44 @@ function BloqueDescargas({ p }: { p: Partido }) {
           <SelectorTemas partido={p} visible={selector} onCerrar={() => setSelector(false)} />
         </>
       ) : (
-        <Text style={[T.cuerpo, { color: C.suave }]}>Programa aún no disponible.</Text>
+        <Text style={[T.cuerpo, { color: C.suave }]}>Aparecerá aquí en cuanto lo publique.</Text>
       )}
     </Tarjeta>
   );
 }
 
-// Foto de la noticia en pequeño. Si el medio no la da o no carga, un cuadro
-// con el nombre corto del medio, para que todas las noticias queden alineadas.
-function Miniatura({ imagen, medio }: { imagen?: string; medio: string }) {
+// Icono de la web del medio, pequeño y sin modificar, junto a su nombre: solo
+// sirve para identificar de dónde es la noticia. Se carga desde la web del
+// medio; si no hay o no carga, se muestra solo el nombre.
+function IconoMedio({ url }: { url?: string }) {
   const [falla, setFalla] = useState(false);
-  if (imagen && !falla) {
-    return (
-      <Image
-        source={{ uri: imagen }}
-        style={s.miniatura}
-        resizeMode="cover"
-        onError={() => setFalla(true)}
-        accessibilityIgnoresInvertColors
-        alt=""
-      />
-    );
-  }
-  const corto = MEDIOS.find((m) => m.medio === medio)?.corto ?? medio.slice(0, 4);
+  if (!url || falla) return null;
   return (
-    <View style={[s.miniatura, s.sinFoto]}>
-      <Text style={[T.etiqueta, { color: C.suave, fontSize: 13 }]}>{corto}</Text>
-    </View>
+    <Image
+      source={{ uri: url }}
+      style={s.iconoMedio}
+      resizeMode="contain"
+      onError={() => setFalla(true)}
+      accessibilityIgnoresInvertColors
+      alt=""
+    />
+  );
+}
+
+// Foto de la noticia en pequeño, cargada desde la web del medio. Si no hay o
+// no carga, no se muestra nada.
+function FotoNoticia({ imagen }: { imagen?: string }) {
+  const [falla, setFalla] = useState(false);
+  if (!imagen || falla) return null;
+  return (
+    <Image
+      source={{ uri: imagen }}
+      style={s.miniatura}
+      resizeMode="cover"
+      onError={() => setFalla(true)}
+      accessibilityIgnoresInvertColors
+      alt=""
+    />
   );
 }
 
@@ -225,7 +273,7 @@ function BloqueNoticias({ p }: { p: Partido }) {
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
         Noticias
       </Text>
-      <Text style={[T.meta, { color: C.suave }]}>Últimos 7 días, de {estado.tipo === 'ok' && estado.medios.length ? estado.medios.length : MEDIOS.length} medios, por orden de fecha.</Text>
+      <Text style={[T.meta, { color: C.suave }]}>De los últimos 7 días.</Text>
 
       {estado.tipo === 'cargando' && (
         <View style={s.centro}>
@@ -273,12 +321,13 @@ function BloqueNoticias({ p }: { p: Partido }) {
               >
                 <View style={{ flex: 1, gap: 4 }}>
                   <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+                    <IconoMedio url={estado.iconos[n.medio]} />
                     <Text style={[T.etiqueta, { color: C.tinta }]}>{n.medio}</Text>
                     <Text style={[T.meta, { color: C.suave, fontSize: 12.5 }]}>{haceCuanto(n.fecha)}</Text>
                   </View>
                   <Text style={[T.cuerpo, { color: C.tinta, fontFamily: F.textoMedia }]}>{n.titulo}</Text>
                 </View>
-                <Miniatura imagen={n.imagen} medio={n.medio} />
+                {!SIN_FOTOS.includes(n.medio) && <FotoNoticia imagen={n.imagen} />}
               </Pulsable>
             ))}
           </View>
@@ -286,7 +335,8 @@ function BloqueNoticias({ p }: { p: Partido }) {
 
       {estado.tipo === 'ok' && (
         <Text style={[T.meta, { color: C.suave, fontSize: 12.5, marginTop: 10, paddingTop: 10, borderTopWidth: 1, borderTopColor: C.linea }]}>
-          Actualizado {haceCuanto(estado.actualizado)}.
+          Actualizado {haceCuanto(estado.actualizado)}. Titulares y fotos enlazados desde cada medio. Si eres un medio y no
+          quieres aparecer, escríbenos a tuvotoapp@gmail.com y lo quitamos.
         </Text>
       )}
     </Tarjeta>
@@ -294,6 +344,9 @@ function BloqueNoticias({ p }: { p: Partido }) {
 }
 
 const s = StyleSheet.create({
+  iconoMedio: { width: 18, height: 18, borderRadius: 4 },
+  miniatura: { width: 96, height: 72, borderRadius: 12, backgroundColor: C.relleno },
+  verLista: { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: C.relleno, borderRadius: 12, paddingVertical: 11, paddingHorizontal: 12 },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
   volver: {
     flexDirection: 'row',
@@ -314,8 +367,6 @@ const s = StyleSheet.create({
   opcionBoton: { width: 36, height: 36, borderRadius: 18, backgroundColor: C.tinta, alignItems: 'center', justifyContent: 'center' },
   linea: { borderTopWidth: 1, borderTopColor: C.linea },
   noticia: { flexDirection: 'row', gap: 14, paddingVertical: 12, alignItems: 'flex-start' },
-  miniatura: { width: 96, height: 72, borderRadius: 12, backgroundColor: C.relleno },
-  sinFoto: { alignItems: 'center', justifyContent: 'center' },
   centro: { alignItems: 'center', gap: 10, paddingVertical: 24 },
   aviso: { marginTop: 12, padding: 12, borderRadius: 14, backgroundColor: C.avisoFondo },
   pildora: { paddingHorizontal: 14, paddingVertical: 9, borderRadius: R.pildora, backgroundColor: C.relleno },

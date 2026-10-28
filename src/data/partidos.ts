@@ -18,6 +18,8 @@
 // `anterior` describe el programa de las elecciones del 23-J de 2023, que se
 // muestra mientras no esté el nuevo. `documento` es cómo se cita en la app.
 
+import { EN_PAPELETA } from './candidaturas';
+
 export type EstadoCandidatura = 'confirmada' | 'provisional' | 'en-negociacion';
 
 export type Partido = {
@@ -58,7 +60,7 @@ export const PARTIDOS: Partido[] = [
     candidato: 'Pedro Sánchez',
     color: '#E1251B',
     ambito: 'estatal',
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: { documento: 'Programa del PSOE para el 23-J (2023)', archivo: 'programas/psoe-2023.pdf' },
   },
@@ -69,7 +71,10 @@ export const PARTIDOS: Partido[] = [
     candidato: 'Alberto Núñez Feijóo',
     color: '#1D84CE',
     ambito: 'estatal',
-    estadoCandidatura: 'provisional',
+    // En Navarra va dentro de la coalición UPN-PP (ficha de UPN).
+    noSePresentaEn: ['navarra'],
+    estadoCandidatura: 'confirmada',
+    nota: 'En Navarra se presenta en coalición con UPN (UPN-PP).',
     programa: {},
     anterior: { documento: 'Programa del PP para el 23-J (2023)', archivo: 'programas/pp-2023.pdf' },
   },
@@ -80,7 +85,7 @@ export const PARTIDOS: Partido[] = [
     candidato: 'Santiago Abascal',
     color: '#5AC035',
     ambito: 'estatal',
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: { documento: 'Programa de Vox para el 23-J (2023)', archivo: 'programas/vox-2023.pdf' },
   },
@@ -95,7 +100,7 @@ export const PARTIDOS: Partido[] = [
     // En Canarias, Baleares y la Comunitat Valenciana sus partidos van en otras coaliciones.
     noSePresentaEn: ['canarias', 'baleares', 'valenciana'],
     estadoCandidatura: 'confirmada',
-    nota: 'Coalición registrada ante la Junta Electoral. En Aragón se presenta como Chunta Aragonesista-Frente Amplio y en Andalucía como Frente Amplio Por Andalucía. En Canarias va dentro de Unidad del Pueblo Canario, en Baleares con Ara Més y en la Comunitat Valenciana dentro de Compromís.',
+    nota: 'En Canarias, Baleares y la Comunitat Valenciana va dentro de otras coaliciones, y no presenta lista en Teruel, Ceuta ni Melilla.',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
@@ -112,9 +117,9 @@ export const PARTIDOS: Partido[] = [
     color: '#6B2C91',
     ambito: 'estatal',
     // En Cataluña apoya a ERC; en Canarias y la Comunitat Valenciana va en coalición.
-    noSePresentaEn: ['cataluna', 'canarias', 'valenciana'],
+    noSePresentaEn: ['cataluna', 'canarias', 'valenciana', 'baleares'],
     estadoCandidatura: 'confirmada',
-    nota: 'Concurre por separado del Frente Amplio en la mayoría de comunidades, también en Baleares. En Canarias va dentro de Unidad del Pueblo Canario y en la Comunitat Valenciana dentro de Compromís. En Cataluña no presenta lista: apoya la de ERC.',
+    nota: 'Va por separado del Frente Amplio. En Canarias y la Comunitat Valenciana va dentro de otras coaliciones; en Cataluña apoya la lista de ERC, y no presenta lista en Baleares ni en Melilla.',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
@@ -129,7 +134,7 @@ export const PARTIDOS: Partido[] = [
     candidato: 'Alvise Pérez',
     color: '#A0522D',
     ambito: 'estatal',
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: {
       documento: 'Sin programa para las generales de 2023',
@@ -148,7 +153,7 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Cataluña',
     comunidades: ['cataluna'],
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     nota: 'Incluye independientes de Podemos en la lista de Barcelona.',
     programa: {},
     anterior: { documento: 'Programa de ERC para el 23-J (2023)', url: 'https://defensacatalunya.esquerrarepublicana.cat/documents/e2023-programa.pdf', archivo: 'programas/erc-2023.pdf' },
@@ -163,7 +168,7 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Cataluña',
     comunidades: ['cataluna'],
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: { documento: 'Programa de Junts para el 23-J (2023)', archivo: 'programas/junts-2023.pdf' },
   },
@@ -171,12 +176,13 @@ export const PARTIDOS: Partido[] = [
     id: 'bildu',
     siglas: 'EH Bildu',
     nombre: 'Euskal Herria Bildu',
+    candidato: 'Oskar Matute',
     color: '#9DBB12',
     ambito: 'autonomico',
     territorio: 'País Vasco y Navarra',
     comunidades: ['pais-vasco', 'navarra'],
-    estadoCandidatura: 'provisional',
-    nota: 'Candidatura por confirmar.',
+    estadoCandidatura: 'confirmada',
+    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
     programa: {},
     anterior: { documento: 'Programa de EH Bildu para el 23-J (2023)', archivo: 'programas/bildu-2023.pdf' },
   },
@@ -190,7 +196,7 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'País Vasco',
     comunidades: ['pais-vasco'],
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: { documento: 'Programa del PNV para el 23-J (2023)', url: 'https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j', archivo: 'programas/pnv-2023.pdf' },
   },
@@ -198,12 +204,13 @@ export const PARTIDOS: Partido[] = [
     id: 'bng',
     siglas: 'BNG',
     nombre: 'Bloque Nacionalista Galego',
+    candidato: 'Néstor Rego',
     color: '#76B3DE',
     ambito: 'autonomico',
     territorio: 'Galicia',
     comunidades: ['galicia'],
-    estadoCandidatura: 'provisional',
-    nota: 'Candidatura por confirmar.',
+    estadoCandidatura: 'confirmada',
+    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
     programa: {},
     anterior: { documento: 'Programa del BNG para el 23-J (2023)', url: 'https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf', archivo: 'programas/bng-2023.pdf' },
   },
@@ -217,7 +224,7 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Canarias',
     comunidades: ['canarias'],
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     programa: {},
     anterior: {
       documento: 'Manifiesto de Coalición Canaria para el 23-J (2023)',
@@ -270,8 +277,8 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Illes Balears',
     comunidades: ['baleares'],
-    estadoCandidatura: 'provisional',
-    nota: 'Coalición anunciada para el Congreso en Baleares, encabezada por Ara Més junto al Frente Amplio. Podemos se presenta por separado.',
+    estadoCandidatura: 'confirmada',
+    nota: 'Coalición para el Congreso en Baleares de Ara Més con el Frente Amplio (Esquerra Unida y Movimiento Sumar).',
     programa: {},
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
@@ -282,13 +289,13 @@ export const PARTIDOS: Partido[] = [
   {
     id: 'upn',
     siglas: 'UPN',
-    nombre: 'Unión del Pueblo Navarro',
+    nombre: 'Unión del Pueblo Navarro (en coalición con el PP)',
     color: '#24406E',
     ambito: 'autonomico',
     territorio: 'Navarra',
     comunidades: ['navarra'],
-    estadoCandidatura: 'provisional',
-    nota: 'Candidatura por confirmar.',
+    estadoCandidatura: 'confirmada',
+    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
     programa: {},
     anterior: {
       documento: 'Sin programa propio para las generales de 2023',
@@ -303,8 +310,8 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Andalucía',
     comunidades: ['andalucia'],
-    estadoCandidatura: 'provisional',
-    nota: 'Ha anunciado que se presenta en solitario en las ocho provincias andaluzas, sin el Frente Amplio. Tiene 8 escaños en el Parlamento de Andalucía desde mayo de 2026.',
+    estadoCandidatura: 'confirmada',
+    nota: 'Se presenta en solitario en las ocho provincias andaluzas, sin el Frente Amplio. Tiene 8 escaños en el Parlamento de Andalucía desde mayo de 2026.',
     programa: {},
   },
   {
@@ -316,7 +323,7 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Aragón',
     comunidades: ['aragon'],
     estadoCandidatura: 'confirmada',
-    nota: 'Coalición registrada ante la Junta Electoral para el Congreso y el Senado en Aragón. Tiene escaños en las Cortes de Aragón.',
+    nota: 'Al Congreso solo se presenta en Teruel, como Teruel Existe. Tiene escaños en las Cortes de Aragón.',
     programa: {},
   },
   {
@@ -327,7 +334,7 @@ export const PARTIDOS: Partido[] = [
     ambito: 'autonomico',
     territorio: 'Navarra',
     comunidades: ['navarra'],
-    estadoCandidatura: 'provisional',
+    estadoCandidatura: 'confirmada',
     nota: 'Se presenta con candidatura propia al Congreso en Navarra. Tiene 7 escaños en el Parlamento de Navarra.',
     programa: {},
   },
@@ -339,11 +346,14 @@ export const PARTIDOS: Partido[] = [
 export const ESTATALES = PARTIDOS.filter((p) => p.ambito === 'estatal');
 export const AUTONOMICOS = PARTIDOS.filter((p) => p.ambito === 'autonomico');
 
-// ¿Está este partido en la papeleta de esa comunidad? Según las coaliciones
-// registradas; se confirma cuando se proclaman las candidaturas.
-export function sePresentaEn(p: Partido, comunidad: string): boolean {
-  if (p.comunidades) return p.comunidades.includes(comunidad);
-  return !(p.noSePresentaEn ?? []).includes(comunidad);
+// ¿Está este partido en la papeleta del Congreso de esa provincia? Si ya está
+// el BOE cargado (data/candidaturas), manda el BOE; si no, las coaliciones
+// registradas por comunidad.
+export function sePresentaEn(p: Partido, provincia: { id: string; comunidad: string }): boolean {
+  const boe = EN_PAPELETA[provincia.id];
+  if (boe) return boe.includes(p.id);
+  if (p.comunidades) return p.comunidades.includes(provincia.comunidad);
+  return !(p.noSePresentaEn ?? []).includes(provincia.comunidad);
 }
 
 export function partidoPorId(id: string): Partido | undefined {

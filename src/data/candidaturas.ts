@@ -1,15 +1,123 @@
-// Resto de candidaturas al Congreso en cada provincia, según la publicación
-// oficial en el BOE. Son las que no tienen ficha en la app (ver el criterio de
-// inclusión en data/partidos.ts): aquí solo va el nombre, tal cual aparece en
-// el BOE, sin programa ni análisis.
+// Candidaturas al Congreso de cada provincia, según el BOE del 28 de octubre de
+// 2026 (BOE-A-2026-22607: candidaturas presentadas). Las proclamadas salen en el
+// BOE el 3 de noviembre: ese día hay que revisar estas listas.
 //
-// Las claves son los ids de data/provincias (p. ej. 'granada', 'a-coruna').
-// Mientras no se publique el BOE (28 de octubre de 2026), queda vacío y la app
-// avisa de que la lista llegará ese día.
+// EN_PAPELETA: qué partidos con ficha en la app están en la papeleta del
+// Congreso de cada provincia. OTRAS_CANDIDATURAS: el resto, solo con su nombre
+// (sin programa ni análisis). Las claves son los ids de data/provincias.
 
-export const BOE_CANDIDATURAS: { fecha: string | null; url: string | null } = {
-  fecha: null, // AAAA-MM-DD de la publicación en el BOE
-  url: null, // enlace al BOE con las candidaturas proclamadas
+export const BOE_CANDIDATURAS: { fecha: string | null; url: string | null; proclamadas: boolean } = {
+  fecha: '2026-10-28', // AAAA-MM-DD de la publicación en el BOE
+  url: 'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-22607',
+  proclamadas: false, // true cuando se carguen las del 3 de noviembre
 };
 
-export const OTRAS_CANDIDATURAS: Record<string, string[]> = {};
+export const EN_PAPELETA: Record<string, string[]> = {
+  'a-coruna': ['psoe', 'vox', 'pp', 'salf', 'bng', 'podemos', 'frente-amplio'],
+  'alava': ['psoe', 'bildu', 'pnv', 'vox', 'podemos', 'salf', 'pp', 'frente-amplio'],
+  'albacete': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'alicante': ['psoe', 'salf', 'compromis', 'vox', 'pp'],
+  'almeria': ['psoe', 'salf', 'adelante', 'vox', 'pp', 'podemos', 'frente-amplio'],
+  'asturias': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'avila': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'badajoz': ['psoe', 'salf', 'vox', 'pp', 'frente-amplio', 'podemos'],
+  'barcelona': ['psoe', 'junts', 'erc', 'salf', 'vox', 'frente-amplio', 'pp'],
+  'bizkaia': ['pnv', 'psoe', 'bildu', 'vox', 'frente-amplio', 'podemos', 'pp'],
+  'burgos': ['psoe', 'salf', 'podemos', 'vox', 'pp', 'frente-amplio'],
+  'caceres': ['psoe', 'salf', 'vox', 'pp', 'podemos', 'frente-amplio'],
+  'cadiz': ['psoe', 'adelante', 'salf', 'vox', 'frente-amplio', 'podemos', 'pp'],
+  'cantabria': ['psoe', 'podemos', 'vox', 'pp', 'frente-amplio'],
+  'castellon': ['psoe', 'salf', 'vox', 'compromis', 'pp'],
+  'ceuta': ['pp', 'psoe', 'vox', 'podemos', 'salf'],
+  'ciudad-real': ['psoe', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'cordoba': ['psoe', 'adelante', 'salf', 'vox', 'pp', 'frente-amplio', 'podemos'],
+  'cuenca': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'gipuzkoa': ['bildu', 'psoe', 'pnv', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'girona': ['psoe', 'junts', 'erc', 'frente-amplio', 'vox', 'pp'],
+  'granada': ['psoe', 'adelante', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'guadalajara': ['salf', 'vox', 'psoe', 'frente-amplio', 'podemos', 'pp'],
+  'huelva': ['psoe', 'adelante', 'vox', 'pp', 'frente-amplio', 'salf', 'podemos'],
+  'huesca': ['psoe', 'vox', 'salf', 'podemos', 'pp', 'frente-amplio'],
+  'illes-balears': ['psoe', 'vox', 'salf', 'pp', 'ara-mes'],
+  'jaen': ['psoe', 'adelante', 'salf', 'vox', 'pp', 'podemos', 'frente-amplio'],
+  'la-rioja': ['psoe', 'salf', 'frente-amplio', 'vox', 'podemos', 'pp'],
+  'las-palmas': ['psoe', 'pp', 'vox', 'cc', 'salf', 'upc'],
+  'leon': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'lleida': ['psoe', 'junts', 'erc', 'frente-amplio', 'vox', 'pp'],
+  'lugo': ['psoe', 'podemos', 'vox', 'bng', 'pp', 'frente-amplio', 'salf'],
+  'madrid': ['psoe', 'vox', 'salf', 'pp', 'frente-amplio', 'podemos'],
+  'malaga': ['psoe', 'adelante', 'vox', 'salf', 'pp', 'podemos', 'frente-amplio'],
+  'melilla': ['psoe', 'salf', 'vox', 'pp'],
+  'murcia': ['psoe', 'vox', 'salf', 'pp', 'podemos', 'frente-amplio'],
+  'navarra': ['bildu', 'psoe', 'geroa-bai', 'upn', 'salf', 'vox', 'podemos', 'frente-amplio'],
+  'ourense': ['psoe', 'podemos', 'vox', 'salf', 'pp', 'bng', 'frente-amplio'],
+  'palencia': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'pontevedra': ['vox', 'psoe', 'pp', 'frente-amplio', 'bng', 'salf', 'podemos'],
+  'salamanca': ['psoe', 'podemos', 'salf', 'vox', 'pp', 'frente-amplio'],
+  'santa-cruz-de-tenerife': ['psoe', 'cc', 'pp', 'salf', 'vox', 'upc'],
+  'segovia': ['psoe', 'salf', 'vox', 'podemos', 'frente-amplio', 'pp'],
+  'sevilla': ['psoe', 'adelante', 'salf', 'vox', 'podemos', 'frente-amplio', 'pp'],
+  'soria': ['psoe', 'salf', 'vox', 'frente-amplio', 'pp', 'podemos'],
+  'tarragona': ['psoe', 'erc', 'junts', 'salf', 'frente-amplio', 'vox', 'pp'],
+  'teruel': ['psoe', 'vox', 'salf', 'existe', 'pp', 'podemos'],
+  'toledo': ['psoe', 'salf', 'vox', 'pp', 'podemos', 'frente-amplio'],
+  'valencia': ['psoe', 'vox', 'compromis', 'salf', 'pp'],
+  'valladolid': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'zamora': ['psoe', 'salf', 'vox', 'podemos', 'pp', 'frente-amplio'],
+  'zaragoza': ['psoe', 'vox', 'podemos', 'pp', 'frente-amplio', 'salf'],
+};
+
+export const OTRAS_CANDIDATURAS: Record<string, string[]> = {
+  'a-coruna': ['Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Comunista dos Traballadores da Galiza (PCTG)', 'Frente Obrero (FO)'],
+  'alava': ['Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Comunista de los Trabajadores de Euskadi (PCTE/ELAK)', 'Frente Obrero (FO)', 'Feministas al Congreso (PFAC)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Justicia y Ley (JL)'],
+  'albacete': ['Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'alicante': ['Frente Obrero (FO)', 'Partido Autónomos', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Falange Española de las JONS (FE de las JONS)'],
+  'almeria': ['Frente Obrero (FO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Izquierda por Almería (IPAL)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'asturias': ['Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Unionista Estado de España (PUEDE)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'avila': ['Por un Mundo Más Justo (MUNDO+JUSTO)', 'Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Demócrata Social Jubilados Europeos (PDSJE)'],
+  'badajoz': ['Frente Obrero (FO)', 'Nuevo Extremeñismo - Adelante Extremadura (NEX)', 'Juntos por Extremadura (JUEX)', 'Por un Mundo Más Justo (MUNDO+JUSTO)'],
+  'barcelona': ['Frente Obrero (FO)', 'Partit Comunista dels Treballadors de Catalunya (PCTC)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Democracia para el Siglo 21 (D21)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Alhora'],
+  'bizkaia': ['Partido Comunista de los Trabajadores de Euskadi (PCTE/ELAK)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Feministas al Congreso (PFAC)'],
+  'burgos': ['Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'caceres': ['Partido Comunista de los Trabajadores de España (PCTE)', 'Frente Obrero (FO)', 'Juntos por Extremadura (JUEX)', 'Nuevo Extremeñismo - Adelante Extremadura (NEX)'],
+  'cadiz': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Por un Mundo Más Justo (MUNDO+JUSTO)'],
+  'cantabria': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'castellon': ['Partido Autónomos', 'Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Falange Española de las JONS (FE de las JONS)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'ceuta': ['Frente Obrero (FO)'],
+  'ciudad-real': ['Frente Obrero (FO)'],
+  'cordoba': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Falange Española de las JONS (FE de las JONS)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'cuenca': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'gipuzkoa': ['Partido Animalista con el Medio Ambiente (PACMA)', 'Frente Obrero (FO)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'girona': ['Frente Obrero (FO)', 'Partit Comunista dels Treballadors de Catalunya (PCTC)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Alhora'],
+  'granada': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Por un Mundo Más Justo (MUNDO+JUSTO)'],
+  'guadalajara': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Falange Española de las JONS (FE de las JONS)'],
+  'huelva': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'huesca': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Federación de los Independientes de Aragón (FIA)'],
+  'illes-balears': ['Frente Obrero (FO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'jaen': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Por un Mundo Más Justo (MUNDO+JUSTO)'],
+  'la-rioja': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'las-palmas': ['Liberación Canaria (LIB)', 'Partido Drago Canarias (DRG)', 'Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Comunista del Pueblo Canario (PCPC)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'leon': ['Frente Obrero (FO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Proyecto Alantre (P ALANTRE)', 'Partido Regionalista del País Leonés (PREPAL)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'lleida': ['Frente Obrero (FO)', 'Partit Comunista dels Treballadors de Catalunya (PCTC)', 'Partit Animalista amb el Medi Ambient (PACMA)', 'Alhora'],
+  'lugo': ['Frente Obrero (FO)'],
+  'madrid': ['Frente Obrero (FO)', 'Falange Española de las JONS (FE de las JONS)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Humanista (PH)', 'Democracia para el Siglo 21 (D21)', 'Iustitia Europa (IE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'malaga': ['Frente Obrero (FO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Alternativa Malagueña (29)', 'José María Calvo Guerra', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'melilla': ['Frente Obrero (FO)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'murcia': ['Frente Obrero (FO)', 'Tercera Edad en Acción (3e)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Unión Cartaginense (UC)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'navarra': ['Frente Obrero (FO)', 'Eguzkilore', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'ourense': ['Frente Obrero (FO)', 'Partido Comunista dos Traballadores da Galiza (PCTG)', 'Por un Mundo Máis Xusto (PUM+J)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'palencia': ['Falange Española de las JONS (FE de las JONS)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'pontevedra': ['Frente Obrero (FO)', 'Partido Comunista dos Traballadores da Galiza (PCTG)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)'],
+  'salamanca': ['Frente Obrero (FO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Regionalista del País Leonés (PREPAL)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'santa-cruz-de-tenerife': ['Partido Drago Canarias (DRG)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Frente Obrero (FO)', 'Liberación Canaria (LIB)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Autónomos', 'Feminism8 (F8)'],
+  'segovia': ['Frente Obrero (FO)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'sevilla': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Falange Española de las JONS (FE de las JONS)'],
+  'soria': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Soria ¡Ya! (SY)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'tarragona': ['Frente Obrero (FO)', 'Partit Comunista dels Treballadors de Catalunya (PCTC)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Convergents (CNV)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Alhora'],
+  'teruel': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Falange Española de las JONS (FE de las JONS)', 'Partido Animalista con el Medio Ambiente (PACMA)'],
+  'toledo': ['Frente Obrero (FO)', 'Falange Española de las JONS (FE de las JONS)', 'Partido Comunista de los Trabajadores de España (PCTE)'],
+  'valencia': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Partido Autónomos', 'Valencia Unida (VLC)', 'Renacer Renaixer (RRB)', 'Falange Española de las JONS (FE de las JONS)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Agenda Valenciana'],
+  'valladolid': ['Frente Obrero (FO)', 'Partido Nacionalista de Castilla y León-Unión Reformista Ciudadana (PANCAL-URCI)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Falange Española de las JONS (FE de las JONS)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Escaños en Blanco (ESCAÑOS EN BLANCO)'],
+  'zamora': ['Partido Comunista de los Trabajadores de España (PCTE)', 'Partido Regionalista del País Leonés (PREPAL)', 'Frente Obrero (FO)'],
+  'zaragoza': ['Frente Obrero (FO)', 'Partido Comunista de los Trabajadores de España (PCTE)', 'Por un Mundo Más Justo (MUNDO+JUSTO)', 'Federación de los Independientes de Aragón (FIA)', 'Partido Animalista con el Medio Ambiente (PACMA)', 'Falange Española de las JONS (FE de las JONS)'],
+};

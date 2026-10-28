@@ -23,7 +23,7 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
   // Si la persona ha elegido dónde vota, se marcan los partidos de su papeleta.
   const provincia = provinciaPorId(useProvincia());
   useEffect(() => {
-    if (provincia) setSeleccion(PARTIDOS.filter((p) => sePresentaEn(p, provincia.comunidad)).map((p) => p.id));
+    if (provincia) setSeleccion(PARTIDOS.filter((p) => sePresentaEn(p, provincia)).map((p) => p.id));
   }, [provincia]);
   const alternar = (id: string) =>
     setSeleccion((sel) => (sel.includes(id) ? sel.filter((x) => x !== id) : [...sel, id]));

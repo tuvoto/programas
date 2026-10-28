@@ -18,7 +18,7 @@ const descargar = async (url) => {
   return r.text();
 };
 
-const datos = await recopilar(descargar, PARTIDOS, (m) => console.log(m));
+const datos = await recopilar(descargar, PARTIDOS, (m) => console.log(m), true);
 if (datos.medios.length === 0) {
   console.error('Ningún medio ha respondido: se mantiene el archivo anterior.');
   process.exit(1);

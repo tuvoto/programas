@@ -15,7 +15,7 @@
 //
 // Cuando salgan los programas de 2026, hay que revisar todas las posturas.
 
-import { PARTIDOS, partidoPorId, sePresentaEn } from './partidos';
+import { PARTIDOS } from './partidos';
 
 export type Postura = { valor: -2 | -1 | 1 | 2; pagina: number; motivo: string };
 
@@ -776,36 +776,20 @@ export type Respuestas = Record<string, Respuesta>;
 
 export type Resultado = { partidoId: string; porcentaje: number; preguntas: number };
 
+// Partidos que entran en el test: los mismos para todo el mundo, sin depender
+// de la provincia. Los estatales con programa cargado y los autonómicos cuyo
+// programa trata suficientes frases (aunque solo se presenten en su comunidad).
+export function partidosDelTest(): string[] {
+  const propios = PARTIDOS.filter(
+    (p) => p.ambito === 'autonomico' && AFIRMACIONES.filter((a) => a.posturas[p.id]).length >= MIN_POSTURAS,
+  ).map((p) => p.id);
+  return [...PARTIDOS_TEST, ...propios];
+}
+
 // Coincidencia en cada frase: 1 si tu respuesta coincide con la postura del
 // programa, 0 si es la contraria (escala de -2 a 2). Las frases de tus temas
 // importantes cuentan el doble. Solo cuentan las frases que has respondido y
 // sobre las que el programa se pronuncia.
-// Partidos que entran en el test: los estatales con programa cargado y, si hay
-// provincia elegida, los de esa comunidad que tengan suficientes posturas.
-// Con provincia, solo cuentan los partidos que se presentan allí.
-export function partidosDelTest(comunidad?: string | null): string[] {
-  if (!comunidad) return PARTIDOS_TEST;
-  const estatales = PARTIDOS_TEST.filter((id) => {
-    const p = partidoPorId(id);
-    return !p || sePresentaEn(p, comunidad);
-  });
-  const propios = PARTIDOS.filter(
-    (p) =>
-      p.ambito === 'autonomico' &&
-      sePresentaEn(p, comunidad) &&
-      AFIRMACIONES.filter((a) => a.posturas[p.id]).length >= MIN_POSTURAS,
-  ).map((p) => p.id);
-  return [...estatales, ...propios];
-}
-
-// Partidos de la comunidad que no entran por tener pocas posturas.
-export function partidosSinTest(comunidad?: string | null): string[] {
-  if (!comunidad) return [];
-  return PARTIDOS.filter(
-    (p) => p.ambito === 'autonomico' && sePresentaEn(p, comunidad) && !partidosDelTest(comunidad).includes(p.id),
-  ).map((p) => p.id);
-}
-
 export function calcular(respuestas: Respuestas, temasImportantes: string[] = [], partidos: string[] = PARTIDOS_TEST): Resultado[] {
   return partidos.map((id) => {
     let suma = 0;

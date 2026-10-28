@@ -48,6 +48,9 @@ async function dibujar(resultados: Resultado[], contestadas: number, total: numb
   rect(ctx, 0, 0, W, H, 0, C.tinta);
 
   // Mismas medidas que TarjetaResultado: con más de 4 partidos, más compacto.
+  // Como mucho, los 6 primeros (igual que TarjetaResultado).
+  const total_ = resultados.length;
+  resultados = resultados.slice(0, 6);
   const n = resultados.length;
   const k = n <= 4 ? 1 : n === 5 ? 0.85 : 0.7;
   const m = Math.max(k, 0.9);
@@ -79,7 +82,7 @@ async function dibujar(resultados: Resultado[], contestadas: number, total: numb
   const altoFila = 26 * m * U;
   const desde = arribaPx + 30 * U + 10 * U;
   const hasta = piePx - 20 * U;
-  const fijo = titulo.length * altoLinea + 8 * U + 18 * U + 26 * k * U + n * (altoFila + 7 * k * U + 9 * U);
+  const fijo = titulo.length * altoLinea + 8 * U + 18 * U + (total_ > n ? 18 * U : 0) + 26 * k * U + n * (altoFila + 7 * k * U + 9 * U);
   // Hueco entre partidos: el normal si cabe; si no, el que quepa.
   const hueco = n > 1 ? Math.max(6 * U, Math.min(18 * k * U, (hasta - desde - fijo) / (n - 1))) : 0;
   const altoBloque = fijo + (n - 1) * hueco;
@@ -94,6 +97,10 @@ async function dibujar(resultados: Resultado[], contestadas: number, total: numb
   ctx.fillStyle = C.sobreTintaSuave;
   ctx.font = `400 ${13 * U}px ${F.texto}`;
   ctx.fillText(`${contestadas} de ${total} frases respondidas · programas de 2023`, x0, y);
+  if (total_ > n) {
+    y += 18 * U;
+    ctx.fillText(`Los ${n} primeros de ${total_} partidos`, x0, y);
+  }
   y += 18 * U + 26 * k * U;
 
   for (const r of resultados) {

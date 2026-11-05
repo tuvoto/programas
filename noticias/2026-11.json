@@ -1,0 +1,823 @@
+[
+ {
+  "titulo": "Policías de ayuntamientos de Bildu hacen prácticas de tiro en el cuartel de Intxaurrondo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/policias-ayuntamientos-bildu-practicas-tiro-cuartel-intxaurrondo-20261102001347-nt.html",
+  "fecha": "2026-11-02T06:19:10.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Junts denuncia por vía penal a Renfe y Adif por “la crisis estructural” de Rodalies",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261102/11674010/junts-denuncia-renfe-adif-crisis-estructural-rodalies.html",
+  "fecha": "2026-11-02T11:50:54.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PNV confía en mantener grupo propio, pese a que reconoce que son “elecciones complejas”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/paisvasco/20261102/11674191/pnv-confian-mantener-grupo-propio-pese-reconoce-son-elecciones-complejas.html",
+  "fecha": "2026-11-02T13:03:32.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El Frente Amplio propone recuperar el control público del ferrocarril fusionando Renfe y Adif",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261102/11674199/frente-amplio-propone-recuperar-control-publico-ferrocarril-fusion-renfe-adif.html",
+  "fecha": "2026-11-02T13:05:35.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "ERC culpa a PSOE y PP del “colapso” ferroviario, pero espera para pedir el cese de Puente",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261102/11674219/erc-culpa-psoe-pp-colapso-ferroviario-espera-pedir-cese-puente.html",
+  "fecha": "2026-11-02T13:24:58.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Vox se une a PSOE y Podemos y pide microcréditos para las elecciones del 29-N con el interés más alto",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261102/11674296/vox-une-psoe-pide-microcreditos-elecciones-29-n-interes-mas-alto.html",
+  "fecha": "2026-11-02T15:19:02.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Junts redobla la presión sobre el Gobierno con una denuncia por el accidente de Gelida",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/junts-redobla-presion-sobre-gobierno-denuncia-accidente-20261102170549-ntrc.html",
+  "fecha": "2026-11-02T16:05:50.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El consejero de Universidades alerta de que «la violencia puede anegar de nuevo nuestras calles» si Bildu no la deslegitima",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/consejero-perez-iglesias-alerta-violencia-puede-anegar-20261102130206-nt.html",
+  "fecha": "2026-11-02T17:07:21.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PNV acusa a Bildu de «reforzar» a la Guardia Civil por formar a policías en Intxaurrondo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pnv-pide-dimision-alcaldes-tolosa-andoain-instruir-20261102164500-nt.html",
+  "fecha": "2026-11-02T22:03:35.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Frente Amplio denuncia la exhibición de un ataúd con una foto de Pedro Sánchez en un ayuntamiento de Ávila",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261103/11674788/frente-amplio-denuncian-exhibicion-ataud-foto-pedro-sanchez-ayuntamiento-avila.html",
+  "fecha": "2026-11-03T08:52:40.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Junts, ERC, Comuns y la CUP impulsan la creación de un cuerpo propio de Protecció Civil",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261103/11674897/junts-erc-comuns-cup-impulsan-creacion-cuerpo-propio-proteccio-civil.html",
+  "fecha": "2026-11-03T10:42:53.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Compromís no irá al pleno de las Corts el día de la huelga y el PSPV sí pese a apoyar la protesta",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261103/11674906/compromis-ira-pleno-corts-dia-huelga-pspv-pese-apoyar-protesta.html",
+  "fecha": "2026-11-03T11:41:20.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Puente admite que puede “compartir” que Colau pida su dimisión, pero no se lo acepta a Feijóo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261103/11675087/puente-admite-compartir-colau-pida-dimision-acepta-feijoo.html",
+  "fecha": "2026-11-03T13:57:40.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El juez Llarena deja sin efecto el procesamiento de Puigdemont por malversación",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261103/11675094/juez-llarena-deja-efecto-procesamiento-puigdemont-malversacion.html",
+  "fecha": "2026-11-03T14:04:17.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Llarena cierra de manera definitiva la causa contra Puigdemont en el Supremo tras la aplicación total de la amnistía",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/llarena-cierra-manera-definitiva-causa-puigdemont-supremo-20261103151649-ntrc.html",
+  "fecha": "2026-11-03T14:34:58.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Llarena deja sin efecto el procesamiento de Puigdemont y envía la causa a la Sala para su archivo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/03/6ae9ed5e21efa014748b45b0.html",
+  "fecha": "2026-11-03T14:40:54.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El juez Llarena levanta el procesamiento de Puigdemont y deja en manos del Supremo el final judicial del procés",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/juez-llarena-levanta-procesamiento-puigdemont-deja-manos-supremo-final-judicial-proces_1_13634484.html",
+  "fecha": "2026-11-03T15:04:37.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El alcalde de Andoain de EH Bildu dice que «no apoyamos» la presencia de municipales en prácticas de tiro en Intxaurrondo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/alcalde-andoain-bildu-dice-apoyamos-presencia-municipales-20261103160601-nt.html",
+  "fecha": "2026-11-03T15:06:01.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "ELA acusa a EH Bildu de «blanquear» a la Guardia Civil por enviar a policías locales a Intxaurrondo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/ela-acusa-bildu-blanquear-guardia-civil-enviar-policias-intxaurrondo-20261103124401-nt.html",
+  "fecha": "2026-11-03T15:13:44.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Confirman la imputación de la portavoz de Vox en Cantabria por usar un boli espía contra diputados de su partido",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/confirman-imputacion-portavoz-vox-cantabria-usar-boli-20261103193603-ntrc.html",
+  "fecha": "2026-11-03T18:36:51.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Albiol pide aglutinar el apoyo en el PP y evitar el tándem “Sánchez con Colau de vicepresidenta”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261103/11675285/albiol-pide-aglutinar-apoyo-pp-evitar-tandem-sanchez-colau-vicepresidenta.html",
+  "fecha": "2026-11-03T18:56:20.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Abascal ve insuficiente la dimisión de Puente y apunta a Sánchez: «Siempre se esconde detrás de sus esbirros»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/abascal-insuficiente-dimision-puente-apunta-sanchez-siempre-20261103215603-ntrc.html",
+  "fecha": "2026-11-03T21:11:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PP y Vox quieren una la ley valenciana del suelo más laxa con el suelo no urbanizable y con menos control público en las licencias",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-quieren-ley-valenciana-suelo-laxa-suelo-no-urbanizable-control-publico-licencias_1_13635420.html",
+  "fecha": "2026-11-03T21:31:08.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "PP y Vox exigen ante la Junta Electoral Central «igualdad de acceso» a los datos del voto por correo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pp-exige-ante-junta-electoral-central-igualdad-20261103162925-ntrc.html",
+  "fecha": "2026-11-03T21:46:09.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "PP y Vox abren otro frente con los sindicatos por la huelga de la vivienda",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/pp-vox-abren-frente-sindicatos-huelga-vivienda_1_13635542.html",
+  "fecha": "2026-11-03T23:18:34.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PNV cree que «no le quedaba otra salida» tras haber «perdido la confianza de la ciudadanía»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pnv-cree-quedaba-salida-tras-haber-perdido-20261103230613-nt.html",
+  "fecha": "2026-11-04T06:15:51.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Los jefes de Policía de los ayuntamientos de Bildu coordinaron con la Guardia Civil los cursos de tiro",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/jefes-policia-ayuntamientos-bildu-coordinaron-intxaurrondo-cursos-20261103054346-nt.html",
+  "fecha": "2026-11-04T06:47:25.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau elogia la dimisión de Puente como un gesto de “dignidad” y pide soluciones a la derecha",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261104/11675741/colau-elogia-dimision-puente-dignidad-pide-soluciones-derecha.html",
+  "fecha": "2026-11-04T09:22:34.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El gesto de Rufián con Puente tras su dimisión: «Has sido un gran ministro»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/gesto-rufian-puente-tras-dimision-gran-ministro-20261103223928-nt.html",
+  "fecha": "2026-11-04T09:28:15.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Las juventudes del PNV visten de guardia civil a Otegi y Aizpurua por la polémica de Intxaurrondo: «El nuevo modelo policial de EH Bildu»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/juventudes-pnv-visten-guardia-civil-otegi-aizpuru-20261104100113-nt.html",
+  "fecha": "2026-11-04T09:53:27.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Abascal no se subiría a un tren y ve “irresponsable” que Feijóo diga que el sistema merece “confianza”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261104/11675787/abascal-subiria-tren-ve-irresponsable-feijoo-diga-sistema-merece-confianza.html",
+  "fecha": "2026-11-04T10:11:57.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Unidad del Pueblo Canario propone subir el salario mínimo a 1.800 euros para garantizar una alimentación sana",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/pueblo-canario-salario-minimo-1-800-euros-alimentacion-sana_1_13637339.html",
+  "fecha": "2026-11-04T11:59:02.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Rueda calla ante las acusaciones de Pontón de haber faltado a las víctimas de Angrois: “Ojalá las de Toledo no pasen ese calvario”",
+  "medio": "elDiario.es Galicia",
+  "url": "https://www.eldiario.es/galicia/rueda-calla-acusaciones-ponton-haber-faltado-victimas-angrois-ojala-toledo-no-pasen-calvario_1_13637378.html",
+  "fecha": "2026-11-04T12:19:02.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau pide «pasar página» tras la dimisión de Puente y empezar a hablar de «soluciones y propuestas»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/colau-pide-pasar-pagina-tras-dimision-puente-20261104123504-ntrc.html",
+  "fecha": "2026-11-04T12:23:13.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "<![CDATA[UPN presenta una enmienda a la totalidad a los Presupuestos de Navarra, que \"persisten en el error\" de años anteriores]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/04/upn-presenta-enmienda-totalidad-presupuestos-navarra-persisten-error-anos-anteriores-841213-15.html",
+  "fecha": "2026-11-04T12:29:36.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Satisfacción en la izquierda por la derrota de Trump, Feijóo avisa del “vuelco” y Abascal le quita hierro",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261104/11675961/satisfaccion-izquierda-derrota-trump-feijoo-avisa-vuelco-abascal-le-quita-hierro.html",
+  "fecha": "2026-11-04T12:34:17.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Prioridad nacional y rebaja de impuestos marcan los nuevos presupuestos PP-Vox",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261104/11675959/prioridad-nacional-rebaja-impuestos-marcan-nuevos-presupuestos-pp-vox.html",
+  "fecha": "2026-11-04T12:36:28.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "La moción de censura en Rairiz de Veiga sale adelante con los votos de los concejales no adscritos que abandonaron el PP, el BNG y el PSOE",
+  "medio": "La Voz de Galicia",
+  "url": "https://www.lavozdegalicia.es/noticia/ourense/2026/11/04/mocion-censura-rairiz-veiga-sale-adelante-votos-concejales-adscritos-abandonaron-pp-bng-psoe/00031793795117541498763.htm",
+  "fecha": "2026-11-04T13:19:00.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Feijóo contradice a Moreno y Abascal: negarse a usar el AVE es “apoyar el descrédito” de España",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/feijoo-contradice-moreno-abascal-negarse-ave-apoyar-descredito-espana_1_13637787.html",
+  "fecha": "2026-11-04T13:24:41.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PP garantiza que se respetarán las condiciones específicas de Canarias si llegan a gobernar tras el 29N",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/29n-canarias7-pregunta-manuel-dominguez-sergio-ramos-20261104084547-di.html",
+  "fecha": "2026-11-04T13:26:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El Supremo rechaza imputar a Pedro Sánchez por la crisis de Ceuta a petición de Vox y Manos Limpias",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/supremo-rechaza-imputar-pedro-sanchez-crisis-ceuta-peticion-vox-manos-limpias_1_13637976.html",
+  "fecha": "2026-11-04T13:55:58.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Feijóo tilda de «teatrillo» la marcha de Puente y promete presentar dos Presupuestos en 2027 si llega a la Moncloa",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-tilda-teatrillo-marcha-puente-promete-presentar-20261104121456-ntrc.html",
+  "fecha": "2026-11-04T13:59:56.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Gabriel Rufián afirma que la reforma laboral \"fue buena\" pese a que votó en contra de su aprobación",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/gabriel-rufian-afirma-reforma-laboral-buena-pese-voto-aprobacion_1_13637865.html",
+  "fecha": "2026-11-04T14:00:36.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Santiago Abascal convierte el relevo de Óscar Puente en un ataque al presidente: “Siempre tiene un fusible que desconectar”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-04/abascal-convierte-el-relevo-de-puente-en-un-ataque-al-presidente-siempre-tiene-un-fusible-que-desconectar.html",
+  "fecha": "2026-11-04T15:08:57.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Ezequiel Domínguez (PSOE), alcalde de San Juan de la Rambla al prosperar la moción de censura contra Juan Ramos (CC)",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/tenerifeahora/politica/jesus-ezequiel-dominguez-psoe-alcalde-san-rambla-tenerife_1_13638299.html",
+  "fecha": "2026-11-04T15:38:18.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Qué día va a publicar Jordi Wild las entrevistas con Pedro Sánchez, Abascal, Feijóo y Colau",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/jordi-wild-entrevistas-pedro-sanchez-20261026125352-nt.html",
+  "fecha": "2026-11-04T16:46:22.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Milei planta al Rey en el arranque de la Cumbre Iberoamericana y se reúne con Abascal",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261104/11676184/milei-planta-rey-arranque-cumbre-iberoamericana-reune-abascal.html",
+  "fecha": "2026-11-04T16:51:51.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "<![CDATA[UPN pide la retirada del PEAU del Ensanche, \"plagado de errores\"]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/pamplona-comarca/2026/11/04/upn-pide-retirada-peau-ensanche-plagado-errores-841253-16.html",
+  "fecha": "2026-11-04T18:09:02.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "\"Mayday, mayday, Canarias está siendo invadida\": el PP canario reproduce el discurso antiinmigracion de Vox",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/canarias-invadida-mensaje-desesperado-vicepresidente-canario-pp-llegada-cayucos_1_13638658.html",
+  "fecha": "2026-11-04T18:29:16.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Ni Trump, ni Feijóo, ni el jefe apache Gerónimo estaban en las papeletas",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/opinion/trump-feijoo-jefe-apache-geronimo-estaban-papeletas_132_13639177.html",
+  "fecha": "2026-11-04T18:48:32.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "CC ficha para su campaña al exconsejero del PSOE en Gran Canaria Francisco Castellano",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/cc-ficha-campana-exconsejero-psoe-gran-canaria-francisco-castellano_1_13639263.html",
+  "fecha": "2026-11-04T19:25:17.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PSOE denuncia otro \"pelotazo\" urbanístico de CC en Arrecife con más de 340 viviendas que amenazan con \"colapsar las infraestructuras\"",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/lanzarote-ahora/psoe-denuncia-pelotazo-urbanistico-cc-arrecife-340-viviendas-amenazan-colapsar-infraestructuras_1_13639284.html",
+  "fecha": "2026-11-04T19:49:17.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Encuentro entre Santiago Abascal y Javier Milei en Madrid: \"Me he reunido con mi amigo y aliado\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/encuentro-entre-santiago-abascal-javier-milei-madrid-me-he-reunido-con-mi-amigo-aliado_7057411_0.html",
+  "fecha": "2026-11-04T22:56:12.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Alivio en el Frente Amplio por \"pasar página\" de Puente, \"dejar sin argumentos\" al PP y girar el debate hacia \"más Cercanías\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aeb6f1de9cf4aa86d8b4587.html",
+  "fecha": "2026-11-04T23:00:20.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Revilla, tajante sobre el resultado de las elecciones: «Feijóo no se consolida como líder, va a sacar menos votos que la última vez»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/miguel-angel-revilla-tajante-sobre-resultado-elecciones-20261104001829-nt.html",
+  "fecha": "2026-11-04T23:18:29.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "«La inmigración descontrolada preocupa a una mayoría, da igual si son del PP, PNV o PSE»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/inmigracion-descontrolada-preocupa-mayoria-igual-pp-pnv-20261104004358-nt.html",
+  "fecha": "2026-11-04T23:43:58.000Z",
+  "partidos": [
+   "pnv",
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Feijóo: \"En estos años ha perdido la clase media, nosotros vamos a gobernar para el trabajador\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/alberto-nunez-feijoo-estos-anos-ha-perdido-clase-media-nosotros-vamos-gobernar-para-trabajador_7057412_0.html",
+  "fecha": "2026-11-05T04:00:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo: \"A la gente no se le puede hacer un nudo en el estómago al entrar en un tren\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/alberto-nunez-feijoo-gente-no-se-le-puede-hacer-un-nudo-estomago-cuando-entra-un-tren_7057413_0.html",
+  "fecha": "2026-11-05T04:00:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "<![CDATA[UPN no convocará comisiones el 11-N pero no habrá 'cierre' municipal]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/tierra-estella/2026/11/05/upn-no-convocara-comisiones-11-n-no-habra-cierre-municipal-841286-19.html",
+  "fecha": "2026-11-05T04:00:00.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Koldo García diu que va pactar amb l'advocat del PP un milió d'euros a canvi d'informació contra Sánchez",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/koldo-garcia-diu-pactar-l-advocat-pp-milio-d-euros-canvi-d-informacio-sanchez_1_5900713.html",
+  "fecha": "2026-11-05T07:44:25.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Koldo García afirma que el abogado del PP le ofreció un millón por mentir contra el Gobierno de Sánchez",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/koldo-garcia-afirma-abogado-pp-le-ofrecio-millon-informacion-gobierno-sanchez_1_13639592.html",
+  "fecha": "2026-11-05T07:45:28.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Sánchez mantiene un encuentro con diferentes líderes en la Cumbre Iberoamericana",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676613/sanchez-mantiene-encuentro-diferentes-lideres-cumbre-iberoamericana.html",
+  "fecha": "2026-11-05T08:09:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Frío saludo entre Sánchez y Milei en su primer encuentro cara a cara tras su encontronazo",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frio-saludo-entre-sanchez-milei-su-primer-encuentro-cara-cara-tras-su-encontronazo_7057479_0.html",
+  "fecha": "2026-11-05T08:29:15.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Juanma Moreno, contundente: «El que se tendría que ir es el señor Sánchez»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/juanma-moreno-contundente-senor-sanchez-20261105092230-nts.html",
+  "fecha": "2026-11-05T08:37:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Milei y Sánchez protagonizan un frío saludo tras llamarle “impresentable dictador”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676636/miley-sanchez-protagonizan-frio-saludo-llamarle-impresentable-dictador.html",
+  "fecha": "2026-11-05T08:40:44.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Frío saludo entre Pedro Sánchez y Milei en su encuentro en la XXX Cumbre Iberoamericana tras sus encontronazos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/frio-saludo-pedro-sanchez-milei-encuentro-xxx-20261105094230-nt.html",
+  "fecha": "2026-11-05T08:51:18.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Sánchez pide ambición a los socios iberoamericanos ante un mundo dividido: \"Lo fácil sería no estar aquí\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-cumbre-ibesanchez-pide-ambicion-socios-iberoamericanos-mundo-dividido-facil-seria-no-estar-aqui-hoy-20261105100339.html",
+  "fecha": "2026-11-05T09:03:39.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone el impuesto \"tax the rich\" para gravar a patrimonios de más de un millón de euros",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/colau-propone-impuesto-tax-the-rich-gravar-patrimonios-millon-euros_1_13639759.html",
+  "fecha": "2026-11-05T09:04:57.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone un impuesto a ultrarricos y elevar la tributación a la banca y grandes empresas",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-colau-propone-impuesto-ultrarricos-recaudar-10000-millones-elevar-tributacion-banca-20261105100844.html",
+  "fecha": "2026-11-05T09:08:44.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone 'tax the rich', un impuesto al patrimonio neto de los ultrarricos para quienes acumulen más de un millón de euros",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/colau-propone-tax-the-rich-un-impuesto-patrimonio-neto-los-ultrarricos-para-quienes-acumulen-mas-un-millon-euros_7057506_0.html",
+  "fecha": "2026-11-05T09:16:55.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone un impuesto del 2% a las grandes fortunas y del 3% a partir de los 50 millones",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676655/colau-plantea-impuesto-grandes-fortunas-recaudar-10-000-millones.html",
+  "fecha": "2026-11-05T09:21:23.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "La diputada del PP que sacó gas pimienta en el Congreso llama \"gilipollas\" a Armengol",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/diputada-saco-gas-pimienta-congreso-ana-vazquez-llama-gilipollas-armengol_1_13639747.html",
+  "fecha": "2026-11-05T09:22:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Milei equipara el socialismo con el fascismo delante de Sánchez durante la Cumbre Iberoamericana",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-milei-equipara-socialismo-fascismo-delante-sanchez-cumbre-iberoamericana-20261105103357.html",
+  "fecha": "2026-11-05T09:33:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El frío saludo entre Milei y Sánchez en la Cumbre Iberoamericana de Madrid",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/frio-saludo-milei-sanchez-cumbre-iberoamericana-madrid-20261105101557-nt.html",
+  "fecha": "2026-11-05T09:40:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "El PSOE acusa de \"guerra sucia\" al PP para \"derribar un Gobierno legítimo\" por \"intentar comprar\" el testimonio de Koldo",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-psoe-acusa-guerra-sucia-pp-derribar-gobierno-legitimo-intentar-comprar-testimonio-koldo-20261105105421.html",
+  "fecha": "2026-11-05T09:54:21.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Javier Milei, tras su frío saludo con Sánchez, eleva la tensión en la Cumbre Iberoamericana: \"La equivalencia entre socialistas y fascistas no es casual\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aec3c2821efa0b2518b4597.html",
+  "fecha": "2026-11-05T09:56:40.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "La UCO detiene al exchófer de Sánchez y registra la casa de Ábalos por la sospecha de amaños de obra pública",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/uco-registra-casa-abalos-valencia-orden-juez-20261105102127-nt.html",
+  "fecha": "2026-11-05T09:57:43.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Milei equipara el socialisme i el feixisme davant Sánchez i Felip VI",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/milei-ataca-agendes-progressistes-europees-davant-sanchez-felip-vi_1_5900811.html",
+  "fecha": "2026-11-05T10:05:17.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Koldo García asegura que acordó con el abogado del PP un millón de euros a cambio de información para hacer caer a Sánchez",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-05/koldo-garcia-asegura-que-acordo-con-el-abogado-del-pp-un-millon-de-euros-a-cambio-de-informacion-para-hacer-caer-a-sanchez.html",
+  "fecha": "2026-11-05T10:07:51.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone una tasa de ricos para recaudar más de 10.000 millones de euros",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/colau-propone-tax-the-rich-recaudar-10000-20261105105833-ntrc.html",
+  "fecha": "2026-11-05T10:08:36.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "La UCO lanza una nueva operación anticorrupción donde se persona en casa de Ábalos, detiene al ex chófer de Sánchez y reclama información a Adif",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aec4851e9cf4ac94c8b459e.html",
+  "fecha": "2026-11-05T10:17:13.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T10:18:54.888Z"
+ }
+]

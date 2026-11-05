@@ -145,6 +145,7 @@ function Papeleta({ p, provincia }: { p: Partido; provincia: Provincia }) {
               )}
             </View>
           )}
+          {lista.aviso && <Text style={[T.meta, { color: C.avisoTexto }]}>{lista.aviso}</Text>}
           <Pulsable onPress={() => setAbierta(!abierta)} style={s.verLista} vibracion="seleccion" accessibilityRole="button" accessibilityState={{ expanded: abierta }}>
             <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14, flex: 1 }]}>
               {abierta

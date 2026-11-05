@@ -52,7 +52,6 @@ export default function RootLayout() {
         <Stack.Screen name="ficha/[tema]/[partido]" options={{ animation: 'default' }} />
         <Stack.Screen name="partido/[id]" options={{ animation: 'default' }} />
         <Stack.Screen name="voto-correo" options={{ animation: 'default' }} />
-        <Stack.Screen name="test" options={{ animation: 'default' }} />
         <Stack.Screen name="documento" options={{ animation: 'default' }} />
       </Stack>
     </GestureHandlerRootView>

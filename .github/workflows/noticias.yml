@@ -1,6 +1,7 @@
 # Actualiza las noticias de la web cada 3 horas sin necesidad de servidor:
 # descarga los RSS de los medios, genera noticias.json y lo sube a la rama
-# gh-pages (la que publica GitHub Pages).
+# gh-pages (la que publica GitHub Pages). Además, guarda todos los titulares
+# en la rama «historico» (no se publica) para tener un archivo completo.
 name: Actualizar noticias
 
 on:
@@ -39,3 +40,20 @@ jobs:
           git add noticias.json
           git diff --cached --quiet || git commit -m "Noticias actualizadas"
           git push
+      - name: Guardar en el histórico
+        if: ${{ !cancelled() }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd codigo
+          if git ls-remote --exit-code --heads origin historico > /dev/null; then
+            git fetch --depth 1 origin historico
+            git worktree add -B historico ../historico FETCH_HEAD
+          else
+            git worktree add --orphan -b historico ../historico
+          fi
+          cd ../historico
+          node ../codigo/scripts/historico.mjs ../web/noticias.json noticias
+          git add noticias
+          git diff --cached --quiet || git commit -m "Histórico de noticias"
+          git push origin historico

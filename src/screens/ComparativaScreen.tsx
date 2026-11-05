@@ -32,11 +32,17 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
   // Móvil: una columna. Tablet/ordenador: partidos lado a lado.
   const [ancho, setAncho] = useState(0);
   const columnas = ancho >= 960 ? 3 : ancho >= 640 ? 2 : 1;
+  // Hasta medir la pantalla, se supone móvil.
+  const movil = ancho === 0 || ancho < 640;
   const cols: Partido[][] = Array.from({ length: columnas }, () => []);
   visibles.forEach((p, i) => cols[i % columnas].push(p));
 
   return (
-    <ScrollView contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
+    <ScrollView
+      contentContainerStyle={s.contenedor}
+      stickyHeaderIndices={movil ? [3] : undefined}
+      onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}
+    >
       <Pulsable onPress={onVolver} style={s.volver} accessibilityRole="button" accessibilityLabel="Volver a temas">
         <Icono nombre="back" tam={16} color={C.tinta} peso="bold" />
         <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Temas</Text>
@@ -51,24 +57,46 @@ export default function ComparativaScreen({ tema, onVolver }: Props) {
         </Text>
       </View>
 
-      {/* Qué partidos comparar */}
-      <View accessibilityLabel="Partidos que se comparan">
+      {/* Siempre hay un elemento aquí, para que la fila fija sea siempre el cuarto hijo */}
+      <View>
         {provincia && (
           <Text style={[T.meta, { color: C.suave, marginTop: 14 }]}>Marcados los partidos de tu papeleta en {provincia.nombre}.</Text>
         )}
-        <Text style={[T.etiqueta, s.grupo]}>En toda España</Text>
-        <View style={s.filtro}>
-          {ESTATALES.map((p) => (
-            <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
-          ))}
-        </View>
-        <Text style={[T.etiqueta, s.grupo]}>Solo en su comunidad</Text>
-        <View style={s.filtro}>
-          {AUTONOMICOS.map((p) => (
-            <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
-          ))}
-        </View>
       </View>
+
+      {/* Qué partidos comparar. En el móvil, una sola fila que se desliza de
+          lado y se queda fija arriba al bajar por las propuestas. */}
+      {movil ? (
+        <View style={s.barraFija} accessibilityLabel="Partidos que se comparan">
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.filaChips}>
+            {ESTATALES.map((p) => (
+              <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
+            ))}
+            <View style={s.separadorChips} />
+            {AUTONOMICOS.map((p) => (
+              <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
+            ))}
+          </ScrollView>
+          <Text style={[T.meta, { color: C.suave, fontSize: 12.5, paddingHorizontal: M }]}>
+            {`${visibles.length} de ${PARTIDOS.length} partidos · desliza para ver más`}
+          </Text>
+        </View>
+      ) : (
+        <View accessibilityLabel="Partidos que se comparan">
+          <Text style={[T.etiqueta, s.grupo]}>En toda España</Text>
+          <View style={s.filtro}>
+            {ESTATALES.map((p) => (
+              <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
+            ))}
+          </View>
+          <Text style={[T.etiqueta, s.grupo]}>Solo en su comunidad</Text>
+          <View style={s.filtro}>
+            {AUTONOMICOS.map((p) => (
+              <Chip key={p.id} p={p} activo={seleccion.includes(p.id)} onPress={() => alternar(p.id)} />
+            ))}
+          </View>
+        </View>
+      )}
 
       {visibles.length === 0 ? (
         <Text style={[T.cuerpo, { color: C.suave, marginTop: 20 }]}>
@@ -224,6 +252,10 @@ const s = StyleSheet.create({
   titulo: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 22 },
   icono: { width: 48, height: 48, borderRadius: 14, backgroundColor: C.tarjeta, alignItems: 'center', justifyContent: 'center', boxShadow: S.tarjeta },
   filtro: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 8 },
+  // La fila fija ocupa todo el ancho (anula el margen del contenedor).
+  barraFija: { marginHorizontal: -M, paddingTop: 16, paddingBottom: 8, gap: 6, backgroundColor: C.fondo, borderBottomWidth: 1, borderBottomColor: C.linea },
+  filaChips: { gap: 8, paddingHorizontal: M, paddingVertical: 4, alignItems: 'center' },
+  separadorChips: { width: 1, height: 24, backgroundColor: C.linea, marginHorizontal: 2 },
   grupo: { color: C.suave, marginTop: 16, fontSize: 12.5 },
   chip: {
     flexDirection: 'row',

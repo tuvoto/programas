@@ -7,6 +7,8 @@ export const CONFIG = {
   webUrl: WEB,
   // Política de privacidad: obligatoria en App Store y Google Play.
   privacidadUrl: `${WEB}/privacidad.html`,
+  // Aviso legal: quién está detrás, que no es oficial y de dónde salen los datos.
+  avisoLegalUrl: `${WEB}/aviso-legal.html`,
   // Correo de contacto que aparecerá en la app y en las tiendas.
   contacto: 'tuvotoapp@gmail.com',
   // Código de Google Search Console (opcional), para ver cómo aparece la web en
@@ -25,9 +27,9 @@ export const CONFIG = {
 // Fuentes oficiales. Google Play exige mostrar fuentes verificables en
 // apps con información electoral que no son de un organismo público.
 export const FUENTES_OFICIALES = [
-  { nombre: 'Convocatoria y plazos: Boletín Oficial del Estado', url: 'https://www.boe.es' },
-  { nombre: 'Calendario y resultados: Ministerio del Interior (Infoelectoral)', url: 'https://infoelectoral.interior.gob.es' },
-  { nombre: 'Censo electoral: Instituto Nacional de Estadística', url: 'https://www.ine.es' },
-  { nombre: 'Voto desde el extranjero: La Moncloa', url: 'https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-extranjero-elecciones-generales-29n.aspx' },
-  { nombre: 'Consulados: Ministerio de Asuntos Exteriores', url: 'https://www.exteriores.gob.es' },
+  { nombre: 'Convocatoria y plazos: Boletín Oficial del Estado', corto: 'BOE', url: 'https://www.boe.es' },
+  { nombre: 'Calendario y resultados: Ministerio del Interior (Infoelectoral)', corto: 'Ministerio del Interior', url: 'https://infoelectoral.interior.gob.es' },
+  { nombre: 'Censo electoral: Instituto Nacional de Estadística', corto: 'INE', url: 'https://www.ine.es' },
+  { nombre: 'Voto desde el extranjero: La Moncloa', corto: 'La Moncloa', url: 'https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/paginas/voto-extranjero-elecciones-generales-29n.aspx' },
+  { nombre: 'Consulados: Ministerio de Asuntos Exteriores', corto: 'Exteriores', url: 'https://www.exteriores.gob.es' },
 ];

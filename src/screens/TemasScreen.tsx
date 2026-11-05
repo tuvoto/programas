@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Linking, Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { TEMAS, Tema } from '../data/temas';
 import { AFIRMACIONES, AFIRMACIONES_CORTAS } from '../data/test';
 import { PARTIDOS, Partido } from '../data/partidos';
-import { edicionVigente, numPropuestasTema, partidoTrataTema } from '../data/propuestas';
+import { edicionVigente, numPropuestasTema, partidoTrataTema, vigentes } from '../data/propuestas';
+import { BOE_CANDIDATURAS } from '../data/candidaturas';
+import { CONFIG, FUENTES_OFICIALES } from '../config';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
@@ -35,7 +37,7 @@ const CON_PROGRAMA = PARTIDOS.filter((p) => edicionVigente(p.id) !== null);
 
 export default function TemasScreen({ onAbrirTema }: Props) {
   const [ancho, setAncho] = useState(0);
-  const columnas = ancho >= 900 ? 4 : ancho >= 600 ? 3 : 2;
+  const columnas = ancho >= 900 ? 4 : 3;
   // En la web la página se genera antes (al publicarla), así que los días se
   // calculan al abrirla en el navegador para que siempre estén al día.
   const [dias, setDias] = useState<number | null>(Platform.OS === 'web' ? null : diasHastaElecciones());
@@ -46,6 +48,10 @@ export default function TemasScreen({ onAbrirTema }: Props) {
     return () => clearInterval(t);
   }, []);
   const ancho760 = ancho >= 760;
+  // Móvil: los temas, en una cuadrícula compacta de tres, justo después del buscador.
+  // Hasta medir la pantalla, se supone móvil (así la web generada y la que se
+  // abre en el navegador empiezan igual).
+  const movil = ancho === 0 || ancho < 760;
   // En pantallas anchas, el test y los resúmenes van uno al lado del otro.
   const pareja = ancho >= 960;
 
@@ -70,6 +76,11 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         </Revelar>
       )}
 
+      {/* Tres datos que se pueden comprobar */}
+      <Revelar>
+        <DatosComprobables centrado={ancho760} />
+      </Revelar>
+
       {/* Buscador: lleva a /buscar */}
       <Revelar>
         <Pulsable
@@ -87,11 +98,12 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         </Pulsable>
       </Revelar>
 
+      {!movil && (
       <View style={pareja ? s.pareja : undefined}>
       {/* Test de afinidad, destacado */}
       <Revelar style={pareja ? s.mitad : undefined}>
         <Pulsable
-          onPress={() => router.push('/test')}
+          onPress={() => router.navigate('/test')}
           style={[s.test, ancho760 && !pareja && s.testAncho, pareja && s.alto]}
           escala={0.98}
           vibracion="ligera"
@@ -131,6 +143,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         </Pulsable>
       </Revelar>
       </View>
+      )}
 
       {/* Solo en la web, cuando la app esté publicada */}
       <DescargarApp />
@@ -143,10 +156,11 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           </Text>
         </View>
         <Text style={[T.meta, { color: C.suave, maxWidth: ANCHO_LECTURA }]}>
-          Mientras los partidos publican sus programas para el 29-N, se muestran los de las elecciones de 2023. Cada
-          cuadrado es un partido: relleno si su programa trata el tema.
+          {movil
+            ? 'Programas de 2023 hasta que salgan los del 29-N.'
+            : 'Programas de 2023 hasta que salgan los del 29-N. Cuadrado relleno: el partido trata el tema.'}
         </Text>
-        <Leyenda partidos={PARTIDOS} />
+        {!movil && <Leyenda partidos={PARTIDOS} />}
       </Revelar>
 
       {(
@@ -155,7 +169,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
             <View key={f} style={s.fila}>
               {fila.map((t, c) => (
                 <Revelar key={t.id} style={s.celda} retraso={c * 80}>
-                  <TarjetaTema tema={t} onPress={() => onAbrirTema(t)} />
+                  {movil ? <TemaCompacto tema={t} onPress={() => onAbrirTema(t)} /> : <TarjetaTema tema={t} onPress={() => onAbrirTema(t)} />}
                 </Revelar>
               ))}
               {/* Huecos vacíos para que la última fila no estire sus tarjetas */}
@@ -166,7 +180,101 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           ))}
         </View>
       )}
+
+      {/* Móvil: accesos al test y a los partidos, debajo de los temas */}
+      {movil && (
+        <Revelar style={s.accesos}>
+          <Pulsable onPress={() => router.navigate('/test')} style={[s.acceso, { backgroundColor: C.tinta }]} escala={0.97} vibracion="ligera" accessibilityRole="link" accessibilityLabel="Hacer el test de afinidad">
+            <Text style={[T.subseccion, { color: C.sobreTinta }]}>Test</Text>
+            <Text style={[T.etiqueta, { color: C.amarillo, fontSize: 13 }]}>¿Con qué programa coincides? ›</Text>
+          </Pulsable>
+          <Pulsable onPress={() => router.navigate('/partidos')} style={[s.acceso, { backgroundColor: C.amarillo }]} escala={0.97} vibracion="ligera" accessibilityRole="link" accessibilityLabel="Ver los partidos y sus resúmenes">
+            <Text style={[T.subseccion, { color: C.tinta }]}>Partidos</Text>
+            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 13 }]}>Resúmenes y candidatos ›</Text>
+          </Pulsable>
+        </Revelar>
+      )}
+
+      {/* Aviso de que no es oficial y de dónde salen los datos */}
+      <Revelar>
+        <NoOficial />
+      </Revelar>
     </ScrollAnimado>
+  );
+}
+
+// Fecha del BOE en corto: «3 nov».
+const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+const fechaCorta = (iso: string) => `${Number(iso.slice(8, 10))} ${MESES[Number(iso.slice(5, 7)) - 1]}`;
+
+// Cifras de la propia app que cualquiera puede comprobar.
+function DatosComprobables({ centrado }: { centrado: boolean }) {
+  const datos = [
+    plural(PARTIDOS.length, 'partido', 'partidos'),
+    `${plural(vigentes().length, 'propuesta', 'propuestas')} con su página`,
+    BOE_CANDIDATURAS.fecha
+      ? `${BOE_CANDIDATURAS.proclamadas ? 'Listas' : 'Candidaturas'} del BOE · ${fechaCorta(BOE_CANDIDATURAS.fecha)}`
+      : null,
+  ].filter((d): d is string => d !== null);
+  return (
+    <View style={[s.datos, centrado && { justifyContent: 'center' }]}>
+      {datos.map((d) => (
+        <View key={d} style={s.dato}>
+          <Text style={[T.etiqueta, { color: C.tinta, fontSize: 13 }]}>{d}</Text>
+        </View>
+      ))}
+    </View>
+  );
+}
+
+// Franja final: TuVoto no es oficial y enlaza a las fuentes oficiales.
+function NoOficial() {
+  return (
+    <View style={s.noOficial}>
+      <Text style={[T.subseccion, { color: C.tinta }]}>TuVoto no es una app oficial</Text>
+      <Text style={[T.cuerpo, { color: C.suave, maxWidth: ANCHO_LECTURA }]}>
+        No pertenece a ningún gobierno, organismo electoral ni partido. Cada propuesta enlaza a la página de su programa
+        para que lo compruebes.
+      </Text>
+      <Text style={[T.etiqueta, { color: C.suave, fontSize: 13, marginTop: 6 }]}>Datos oficiales de</Text>
+      <View style={s.fuentes}>
+        {FUENTES_OFICIALES.map((f) => (
+          <Pulsable key={f.url} onPress={() => Linking.openURL(f.url)} style={s.fuente} vibracion="ligera" accessibilityRole="link" accessibilityLabel={f.nombre}>
+            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 13, textDecorationLine: 'underline' }]}>{f.corto}</Text>
+          </Pulsable>
+        ))}
+      </View>
+      <Text style={[T.meta, { color: C.suave, marginTop: 8 }]}>
+        Sin registro, sin anuncios y sin seguimiento.{' '}
+        <Text onPress={() => Linking.openURL(CONFIG.avisoLegalUrl)} style={{ textDecorationLine: 'underline' }} accessibilityRole="link">
+          Aviso legal
+        </Text>
+        {' · '}
+        <Text selectable>{CONFIG.contacto}</Text>
+      </Text>
+    </View>
+  );
+}
+
+// Tema en el móvil: icono y nombre, en una cuadrícula de tres.
+function TemaCompacto({ tema: t, onPress }: { tema: Tema; onPress: () => void }) {
+  const [pulsada, setPulsada] = useState(false);
+  const n = numPropuestasTema(t.id);
+  return (
+    <Pulsable
+      onPress={onPress}
+      onPressIn={() => setPulsada(true)}
+      onPressOut={() => setPulsada(false)}
+      style={[s.temaCompacto, pulsada && s.temaPulsada]}
+      accessibilityRole="link"
+      accessibilityLabel={`${t.nombre}. ${n === 0 ? 'Sin propuestas todavía' : plural(n, 'propuesta', 'propuestas')}`}
+      vibracion="ligera"
+    >
+      <View style={[s.icono, { width: 38, height: 38, borderRadius: 11 }]}>
+        <Icono nombre={t.icono} tam={20} color={C.tinta} />
+      </View>
+      <Text style={[T.etiqueta, { color: C.tinta, fontSize: 13, lineHeight: 16, textAlign: 'center' }]}>{t.nombre}</Text>
+    </Pulsable>
   );
 }
 
@@ -283,4 +391,32 @@ const s = StyleSheet.create({
   },
   temaPulsada: { backgroundColor: '#E8EBF0' },
   marcas: { flexDirection: 'row', gap: 3 },
+  temaCompacto: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    minHeight: 96,
+    paddingHorizontal: 6,
+    paddingVertical: 12,
+    backgroundColor: C.tarjeta,
+    borderRadius: R.tarjeta,
+    boxShadow: S.tarjeta,
+  },
+  datos: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 10 },
+  dato: { backgroundColor: C.tarjeta, borderWidth: 1, borderColor: C.linea, borderRadius: 99, paddingHorizontal: 11, paddingVertical: 6 },
+  accesos: { flexDirection: 'row', gap: 10, marginTop: 14 },
+  acceso: { flex: 1, borderRadius: R.tarjeta, padding: 14, gap: 4, minHeight: 84, justifyContent: 'space-between' },
+  noOficial: {
+    marginTop: 24,
+    backgroundColor: C.tarjeta,
+    borderRadius: R.tarjeta,
+    borderLeftWidth: 5,
+    borderLeftColor: C.amarillo,
+    padding: 16,
+    gap: 4,
+    boxShadow: S.tarjeta,
+  },
+  fuentes: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 4 },
+  fuente: { backgroundColor: C.relleno, borderRadius: 10, paddingHorizontal: 10, paddingVertical: 7 },
 });

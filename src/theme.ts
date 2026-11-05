@@ -16,6 +16,8 @@ export const C = {
   linea: '#E4E7ED',
   relleno: '#F1F3F7', // fondo de iconos y etiquetas neutras
   amarillo: '#EABF42', // subrayado
+  amarilloClaro: '#FBF0CF', // círculos y fondos suaves
+  azulClaro: '#E7EEF8', // círculos y fondos suaves
   fondoPartidos: '#90ABCE', // fondo de la pestaña Partidos
   sobrePartidos: '#161144', // títulos sobre ese fondo
   sobrePartidosSuave: '#2E2A5C',

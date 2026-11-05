@@ -1,0 +1,24 @@
+# Revisa cada lunes que los enlaces de TuVoto funcionen (programas, BOE,
+# fuentes oficiales, RSS de los medios y titulares publicados). Si hay alguno
+# roto, la ejecución falla y GitHub manda un correo a la cuenta del repositorio.
+# El detalle está en Actions → «Revisar enlaces» → la última ejecución.
+name: Revisar enlaces
+
+on:
+  schedule:
+    - cron: '41 7 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  enlaces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Revisar enlaces
+        run: node scripts/enlaces.mjs --noticias

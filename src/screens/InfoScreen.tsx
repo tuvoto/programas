@@ -1,5 +1,5 @@
-import { ReactElement, ReactNode, useState } from 'react';
-import { Linking, StyleSheet, Text, View } from 'react-native';
+import { ReactElement, ReactNode, useEffect, useState } from 'react';
+import { Linking, Platform, StyleSheet, Text, View } from 'react-native';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import { router } from 'expo-router';
 import { CONFIG, FUENTES_OFICIALES } from '../config';
@@ -10,7 +10,7 @@ import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
 import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
 
-// Pestaña «Vota»: guía práctica para votar el 29-N y, al final, información
+// Pestaña «Cómo votar»: tu próximo paso según la fecha, las próximas fechas, guía práctica para votar el 29-N y, al final, información
 // sobre la app. Todo en desplegables para que no sea un muro de texto.
 //
 // Fuentes de los datos (comprobados en octubre de 2026):
@@ -21,17 +21,110 @@ import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '
 //   - Real decreto de convocatoria (BOE, 6 de octubre de 2026): diputados por provincia
 //   - Constitución (art. 69) y LOREG: Senado y reparto de escaños
 
-// Fechas clave, en orden.
+// Fechas clave, en orden. «fin»: último día en que la fecha sigue siendo útil.
 const FECHAS = [
-  { fecha: '12–19 oct', texto: 'Consulta del censo y reclamaciones' },
-  { fecha: '31 oct–4 nov', texto: 'Sorteo de los miembros de mesa' },
-  { fecha: 'Desde 2 nov', texto: 'Llegan las tarjetas censales, con tu mesa' },
-  { fecha: '13–27 nov', texto: 'Campaña electoral' },
-  { fecha: '19 nov', texto: 'Último día para pedir el voto por correo' },
-  { fecha: '25 nov', texto: 'Último día para enviar el voto por correo' },
-  { fecha: '28 nov', texto: 'Jornada de reflexión' },
-  { fecha: '29 nov', texto: 'Elecciones, de 9:00 a 20:00', destacada: true },
+  { fecha: '12–19 oct', fin: '2026-10-19', texto: 'Consulta del censo y reclamaciones' },
+  { fecha: '31 oct–4 nov', fin: '2026-11-04', texto: 'Sorteo de los miembros de mesa' },
+  { fecha: 'Desde 2 nov', fin: '2026-11-12', texto: 'Llegan las tarjetas censales, con tu mesa' },
+  { fecha: '13–27 nov', fin: '2026-11-27', texto: 'Campaña electoral' },
+  { fecha: '19 nov', fin: '2026-11-19', texto: 'Último día para pedir el voto por correo' },
+  { fecha: '25 nov', fin: '2026-11-25', texto: 'Último día para enviar el voto por correo' },
+  { fecha: '28 nov', fin: '2026-11-28', texto: 'Jornada de reflexión' },
+  { fecha: '29 nov', fin: '2026-11-29', texto: 'Elecciones, de 9:00 a 20:00', destacada: true },
 ];
+
+// «Tu próximo paso»: lo que toca hacer ahora, según la fecha. «hasta»: último
+// día en que se muestra (incluido). Después del 29 de noviembre no sale nada.
+type Paso = { hasta: string; desde: string; titulo: string; texto: string; boton?: { texto: string; ir: () => void } };
+const PASOS: Paso[] = [
+  {
+    desde: 'Desde el 2 de noviembre',
+    hasta: '2026-11-12',
+    titulo: 'Mira tu buzón: llega la tarjeta censal',
+    texto: 'Te dice tu colegio y tu mesa. Si no te llega, puedes votar igual con tu DNI.',
+    boton: { texto: 'Consultar en el INE', ir: () => Linking.openURL('https://sede.ine.gob.es') },
+  },
+  {
+    desde: 'Hasta el 19 de noviembre',
+    hasta: '2026-11-19',
+    titulo: '¿No vas a estar el 29? Pide el voto por correo',
+    texto: 'En Correos, en persona o por internet. La campaña electoral va del 13 al 27 de noviembre.',
+    boton: { texto: 'Guía del voto por correo', ir: () => router.push('/voto-correo') },
+  },
+  {
+    desde: 'Hasta el 25 de noviembre',
+    hasta: '2026-11-25',
+    titulo: 'Si pediste el voto por correo, envíalo',
+    texto: 'Como muy tarde el 25 de noviembre, en cualquier oficina de Correos.',
+    boton: { texto: 'Guía del voto por correo', ir: () => router.push('/voto-correo') },
+  },
+  {
+    desde: 'Hasta el 27 de noviembre',
+    hasta: '2026-11-27',
+    titulo: 'Compara antes de decidir',
+    texto: 'La campaña acaba el 27. Mira qué propone cada partido en los temas que te importan.',
+    boton: { texto: 'Ver los temas', ir: () => router.navigate('/') },
+  },
+  {
+    desde: 'Sábado 28 de noviembre',
+    hasta: '2026-11-28',
+    titulo: 'Mañana se vota',
+    texto: 'Hoy es jornada de reflexión. Ten a mano tu DNI, pasaporte o carné de conducir, originales y con foto.',
+  },
+  {
+    desde: 'Domingo 29 de noviembre',
+    hasta: '2026-11-29',
+    titulo: 'Hoy se vota, de 9:00 a 20:00',
+    texto: 'Lleva tu DNI, pasaporte o carné de conducir, originales. El DNI en el móvil no sirve para votar.',
+  },
+];
+
+// Fecha de hoy en el móvil u ordenador, como «2026-11-04».
+const hoyISO = () => {
+  const h = new Date();
+  return `${h.getFullYear()}-${String(h.getMonth() + 1).padStart(2, '0')}-${String(h.getDate()).padStart(2, '0')}`;
+};
+
+function ProximoPaso({ hoy }: { hoy: string }) {
+  const paso = PASOS.find((p) => hoy <= p.hasta);
+  if (!paso) return null;
+  return (
+    <View style={s.paso} accessible={!paso.boton} accessibilityLabel={`Tu próximo paso: ${paso.titulo}. ${paso.texto}`}>
+      <Text style={[T.etiqueta, { color: C.amarillo, fontSize: 12.5, letterSpacing: 0.3 }]}>
+        {`TU PRÓXIMO PASO · ${paso.desde.toUpperCase()}`}
+      </Text>
+      <Text style={[T.seccion, { color: C.sobreTinta, fontSize: 23, lineHeight: 27 }]}>{paso.titulo}</Text>
+      <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>{paso.texto}</Text>
+      {paso.boton && (
+        <Pulsable onPress={paso.boton.ir} style={s.pasoBoton} vibracion="ligera" accessibilityRole="link">
+          <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>{paso.boton.texto}</Text>
+          <Icono nombre="next" tam={14} color={C.tinta} peso="bold" />
+        </Pulsable>
+      )}
+    </View>
+  );
+}
+
+// Las próximas fechas, siempre a la vista (las pasadas desaparecen solas).
+function ProximasFechas({ hoy }: { hoy: string }) {
+  const proximas = FECHAS.filter((f) => f.fin >= hoy).slice(0, 4);
+  if (proximas.length === 0) return null;
+  return (
+    <View style={{ marginTop: 18 }}>
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+        Próximas fechas
+      </Text>
+      <View style={{ marginTop: 6 }}>
+        {proximas.map((f) => (
+          <View key={f.fecha} style={s.fecha}>
+            <Text style={[T.cuerpoSemi, s.fechaDia, f.destacada && { color: C.tinta }]}>{f.fecha}</Text>
+            <Text style={[f.destacada ? T.cuerpoSemi : T.cuerpo, { color: C.tinta, flex: 1 }]}>{f.texto}</Text>
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+}
 
 const P = ({ children }: { children: ReactNode }) => <Text style={[T.cuerpo, { color: C.tinta }]}>{children}</Text>;
 const B = ({ children }: { children: ReactNode }) => <Text style={{ fontFamily: F.textoSemi }}>{children}</Text>;
@@ -59,6 +152,11 @@ export default function InfoScreen() {
   // En pantallas anchas, dos columnas.
   const [ancho, setAncho] = useState(0);
   const dosColumnas = ancho >= 760;
+  // En la web la página se genera al publicarla: la fecha se mira al abrirla.
+  const [hoy, setHoy] = useState<string | null>(Platform.OS === 'web' ? null : hoyISO());
+  useEffect(() => {
+    setHoy(hoyISO());
+  }, []);
 
   const guia = [
     <Desplegable key="que" color={1} titulo="¿Qué se vota el 29-N?" icono="escanos" resumen="Congreso, Senado y quién elige al presidente">
@@ -124,7 +222,7 @@ export default function InfoScreen() {
     <Desplegable key="dia" color={0} titulo="El día de la votación" icono="dni" resumen="Qué llevar y cómo votar">
       <P>
         Los colegios abren de <B>9:00 a 20:00</B>. Lleva tu <B>DNI, pasaporte o carné de conducir</B>, originales y con
-        foto.
+        foto. El DNI en el móvil no sirve para votar: la Junta Electoral Central no lo ha aceptado para el 29-N.
       </P>
       <Punto>
         <B>Congreso:</B> papeleta blanca. Votas una lista entera de un partido, sin tachar ni añadir nada.
@@ -218,10 +316,13 @@ export default function InfoScreen() {
         .
       </Nota>
     </Desplegable>,
-    <Desplegable key="privacidad" titulo="Privacidad">
+    <Desplegable key="privacidad" titulo="Privacidad y aviso legal">
       <P>La app no crea cuentas ni recoge datos personales. Los avisos de fechas los programa tu propio móvil.</P>
       <View style={s.enlaces}>
         <Enlace texto="Política de privacidad" url={CONFIG.privacidadUrl} />
+        <View style={s.separador}>
+          <Enlace texto="Aviso legal" url={CONFIG.avisoLegalUrl} />
+        </View>
       </View>
     </Desplegable>,
     <Desplegable key="error" titulo="¿Has visto un error?">
@@ -244,14 +345,27 @@ export default function InfoScreen() {
     <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
       <Paralaje>
         <Text style={[T.titulo, { color: C.tinta, marginTop: 18 }]} accessibilityRole="header">
-          Vota
+          Cómo votar
         </Text>
       </Paralaje>
       {/* Google Play pide que quede claro que la app no es oficial y de dónde salen los datos. */}
       <Text style={[T.cuerpo, { color: C.suave, marginTop: 6, maxWidth: ANCHO_LECTURA }]}>
-        TuVoto no es una app oficial ni representa a ningún organismo público. Las fechas y los trámites salen de las{' '}
-        <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>fuentes oficiales</Text> que se enlazan más abajo.
+        TuVoto no es una app oficial ni representa a ningún organismo público. Los datos salen de las{' '}
+        <Text style={{ fontFamily: F.textoSemi, color: C.tinta }}>fuentes oficiales</Text> enlazadas abajo.
       </Text>
+
+      {hoy && (
+        <Revelar>
+          <View style={dosColumnas ? s.cabeceraAncha : undefined}>
+            <View style={dosColumnas ? s.columna : undefined}>
+              <ProximoPaso hoy={hoy} />
+            </View>
+            <View style={dosColumnas ? s.columna : undefined}>
+              <ProximasFechas hoy={hoy} />
+            </View>
+          </View>
+        </Revelar>
+      )}
 
       {/* Solo en la app del móvil */}
       <AvisosTarjeta />
@@ -270,7 +384,7 @@ export default function InfoScreen() {
           Fuentes oficiales
         </Text>
         <Text style={[T.meta, { color: C.suave, marginTop: 4, maxWidth: ANCHO_LECTURA }]}>
-          Consulta siempre los datos en los organismos oficiales. TuVoto no tiene relación con ninguno de ellos.
+          TuVoto no tiene relación con ninguno de estos organismos.
         </Text>
         <View style={[s.enlaces, { marginTop: 12, backgroundColor: C.tarjeta }]}>
           {FUENTES_OFICIALES.map((f, i) => (
@@ -304,6 +418,9 @@ const s = StyleSheet.create({
   columnas: { flexDirection: 'row', gap: 12, marginTop: 16, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 10, minWidth: 0 },
   fecha: { flexDirection: 'row', gap: 12, paddingVertical: 7, borderTopWidth: 1, borderTopColor: C.linea },
+  paso: { marginTop: 16, backgroundColor: C.tinta, borderRadius: R.tarjeta + 2, padding: 18, gap: 6 },
+  pasoBoton: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', backgroundColor: C.amarillo, paddingHorizontal: 14, paddingVertical: 10, borderRadius: R.boton, marginTop: 6 },
+  cabeceraAncha: { flexDirection: 'row', gap: 12, alignItems: 'flex-start' },
   fechaDia: { width: 104, color: C.suave },
   punto: { flexDirection: 'row', gap: 10 },
   bolita: { width: 6, height: 6, borderRadius: 3, backgroundColor: C.vacia, marginTop: 9 },

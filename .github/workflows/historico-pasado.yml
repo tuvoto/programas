@@ -1,0 +1,51 @@
+# Se ejecuta UNA vez a mano (Actions → «Recuperar histórico de noticias» →
+# Run workflow). Recorre todas las versiones de noticias.json que se han ido
+# publicando en gh-pages desde el principio y las añade a la rama «historico».
+name: Recuperar histórico de noticias
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: noticias
+  cancel-in-progress: false
+
+jobs:
+  recuperar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: codigo
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: web
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Recorrer las versiones antiguas
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cd codigo
+          if git ls-remote --exit-code --heads origin historico > /dev/null; then
+            git fetch --depth 1 origin historico
+            git worktree add -B historico ../historico FETCH_HEAD
+          else
+            git worktree add --orphan -b historico ../historico
+          fi
+          cd ../web
+          # De la más antigua a la más nueva, con la fecha en que se publicó cada una.
+          git log --reverse --format='%H %cI' -- noticias.json | while read hash fecha; do
+            git show "$hash:noticias.json" > /tmp/noticias.json 2>/dev/null || continue
+            node ../codigo/scripts/historico.mjs /tmp/noticias.json ../historico/noticias "$fecha" || true
+          done
+          cd ../historico
+          git add noticias
+          git diff --cached --quiet || git commit -m "Histórico de noticias recuperado"
+          git push origin historico

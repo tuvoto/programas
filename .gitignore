@@ -42,3 +42,7 @@ yarn-error.*
 
 # Noticias generadas en local con npm run noticias
 public/noticias.json
+
+# Claves y secretos: nunca al repositorio
+.env
+.env.*

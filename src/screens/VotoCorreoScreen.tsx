@@ -42,7 +42,7 @@ export default function VotoCorreoScreen({ onVolver }: { onVolver: () => void })
     <ScrollView contentContainerStyle={s.contenedor}>
       <Pulsable onPress={onVolver} style={s.volver} accessibilityRole="button" accessibilityLabel="Volver">
         <Icono nombre="back" tam={16} color={C.tinta} peso="bold" />
-        <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Vota</Text>
+        <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>Cómo votar</Text>
       </Pulsable>
 
       <Text style={[T.titulo, { color: C.tinta, marginTop: 22 }]} accessibilityRole="header">
@@ -66,7 +66,7 @@ export default function VotoCorreoScreen({ onVolver }: { onVolver: () => void })
         <Paso n={1} titulo="Pídelo en Correos, hasta el 19 de noviembre">
           <P>
             <B>En una oficina de Correos:</B> ve en persona con tu DNI, pasaporte o carné de conducir y rellena el
-            impreso. Puedes pedir cita previa en la web o la app de Correos.
+            impreso.
           </P>
           <P>
             <B>Por internet:</B> en la web de Correos, con DNI electrónico o certificado digital.
@@ -120,14 +120,9 @@ export default function VotoCorreoScreen({ onVolver }: { onVolver: () => void })
       <Tarjeta style={{ marginTop: 12, gap: 8 }}>
         <Text style={[T.tarjeta, { color: C.tinta }]}>Si vas a estar fuera de España</Text>
         <P>
-          Si vives en España pero estás temporalmente en el extranjero (por ejemplo, de Erasmus), inscríbete en el
-          consulado como no residente y pide allí el voto <B>en persona antes del 31 de octubre</B>. Te enviarán la
-          documentación a partir del 3 de noviembre y tendrás que mandar el voto por correo certificado como muy tarde
-          el 25 de noviembre.
+          Si estás de Erasmus o vives fuera, el trámite es otro: pídelo en el consulado <B>antes del 31 de octubre</B>.
+          Lo tienes explicado en Vota, en «Votar desde el extranjero».
         </P>
-        <Text style={[T.meta, { color: C.suave }]}>
-          Si vives fuera de forma habitual, el procedimiento es distinto: consulta en tu consulado.
-        </Text>
       </Tarjeta>
 
       <Tarjeta style={{ marginTop: 12, gap: 8 }}>

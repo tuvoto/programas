@@ -17,7 +17,7 @@ const paginas = [];
     const p = join(dir, n);
     if (statSync(p).isDirectory()) {
       if (!['_expo', 'assets', 'programas'].includes(n)) recorrer(p);
-    } else if (n.endsWith('.html') && !n.startsWith('+') && !['404.html', 'privacidad.html', 'documento.html'].includes(n) && !n.includes('[')) {
+    } else if (n.endsWith('.html') && !n.startsWith('+') && !['404.html', 'privacidad.html', 'aviso-legal.html', 'documento.html'].includes(n) && !n.includes('[')) {
       const ruta = '/' + relative(DIST, p).replace(/\\/g, '/').replace(/(index)?\.html$/, '');
       paginas.push(ruta);
     }

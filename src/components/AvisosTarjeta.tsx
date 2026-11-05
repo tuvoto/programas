@@ -11,7 +11,7 @@ const corta = (iso: string) => {
   return `${d.getDate()} nov`;
 };
 
-// Tarjeta de la pestaña «Vota» para activar o quitar los avisos de fechas clave.
+// Tarjeta de la pestaña «Cómo votar» para activar o quitar los avisos de fechas clave.
 // Solo en la app del móvil.
 export default function AvisosTarjeta() {
   const estado = useAvisos();

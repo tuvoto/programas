@@ -210,7 +210,9 @@ export function iconoDeHtml(html: string, base: string): string | undefined {
   }
   candidatos.sort((a, b) => b.puntos - a.puntos);
   try {
-    return candidatos[0] ? new URL(candidatos[0].href, base).toString() : undefined;
+    const url = candidatos[0] ? new URL(candidatos[0].href, base).toString() : undefined;
+    // Solo direcciones https: nada de data:, javascript: ni http sin cifrar.
+    return url && url.startsWith('https://') ? url : undefined;
   } catch {
     return undefined;
   }

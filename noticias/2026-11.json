@@ -526,6 +526,16 @@
   "vista": "2026-11-05T10:18:54.888Z"
  },
  {
+  "titulo": "Cómo Vox quiere arrasar entre los jóvenes proletarios: \"Ya funcionamos mejor en Parla que en Pozuelo\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/04/6aeb7719fc6c83f76e8b4595.html",
+  "fecha": "2026-11-04T21:41:34.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
   "titulo": "Encuentro entre Santiago Abascal y Javier Milei en Madrid: \"Me he reunido con mi amigo y aliado\"",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/encuentro-entre-santiago-abascal-javier-milei-madrid-me-he-reunido-con-mi-amigo-aliado_7057411_0.html",
@@ -1108,6 +1118,26 @@
   "vista": "2026-11-05T13:29:03.062Z"
  },
  {
+  "titulo": "Irene Montero se rebela contra el \"voto útil\" en la izquierda y las encuestas: \"Tienes que votar lo que quieres y sientes\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/05/6aec7c26e4d4d8ac478b4582.html",
+  "fecha": "2026-11-05T12:59:05.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Feijóo aprovecha la Cumbre Iberoamericana para reunirse con Corina Machado, Zelenski y Kast",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676941/feijoo-aprovecha-cumbre-iberoamericana-reunirse-corina-machado-zelenski-kast.html",
+  "fecha": "2026-11-05T13:07:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
   "titulo": "ERC diseña una campaña a medida de Rufián para recuperar los votos cedidos al PSOE en 2023",
   "medio": "El Correo",
   "url": "https://www.elcorreo.com/politica/erc-disena-campana-medida-rufian-recuperar-votos-20261105140950-ntrc.html",
@@ -1148,5 +1178,118 @@
    "pp"
   ],
   "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Irene Montero, sobre la subida del SMI: “¿Se puede vivir con 1.286 euros?”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-05/irene-montero-sobre-la-subida-del-smi-se-puede-vivir-con-1286-euros.html",
+  "fecha": "2026-11-05T13:36:02.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "PP, PSOE y Frente Amplio garantizan que la ley de pacientes \"será una realidad\" en la próxima legislatura",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-05/ley-organizaciones-pacientes-1hms-1svm_4459643/",
+  "fecha": "2026-11-05T14:00:00.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Rufián hará actos en Catalunya, Madrid, Palma y Castellón para el 29-N bajo el lema 'Defiéndete'",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/elecciones/20261105/11676979/rufian-hara-actos-catalunya-madrid-palma-castellon-29-n-lema-defiendete.html",
+  "fecha": "2026-11-05T14:14:22.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "\"El campo es una cuestión de país\": Compromís y La Unió unen fuerzas para blindar la soberanía alimentaria y el relevo generacional",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/campo-cuestion-pais-compromis-unio-unen-fuerzas-blindar-soberania-alimentaria-relevo-generacional_1_13641517.html",
+  "fecha": "2026-11-05T14:45:44.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "PP y Vox cambian el guion de las Corts para debatir la ley del suelo el día de la huelga general",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261105/11677027/pp-vox-cambian-guion-corts-debatir-ley-suelo-dia-huelga-general.html",
+  "fecha": "2026-11-05T15:05:54.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "La Junta Electoral acuerda que Puente siga al frente de la lista electoral del PSOE por Valladolid",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11677021/junta-electoral-acuerda-puente-siga-frente-lista-electoral-valladolid.html",
+  "fecha": "2026-11-05T15:08:37.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Podemos se revela contra el voto útil del PSOE y se reivindica como única alternativa",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/podemos-revela-voto-util-psoe-reivindica-unica-20261105160644-ntrc.html",
+  "fecha": "2026-11-05T15:17:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Sánchez comparece en la Cumbre Iberoamericana",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11677047/sanchez-comparece-cumbre-iberoamericana.html",
+  "fecha": "2026-11-05T15:20:56.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Feijóo irrumpe en la Cumbre Iberoamericana apoyando a María Corina y se acerca a Zelenski y Kast",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-irrumpe-cumbre-iberoamericana-apoyando-maria-corina-20261105142203-nt.html",
+  "fecha": "2026-11-05T15:46:55.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "Cerdán se quejó a Koldo García del exchófer de Sánchez detenido: «Nos jugamos mucho en Andalucía y Cristian lo está jodiendo en Córdoba»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cerdan-quejo-koldo-garcia-exchofer-sanchez-detenido-20261105130825-nt.html",
+  "fecha": "2026-11-05T15:49:59.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "García Albiol visita una fábrica okupada de Vitoria y así le reciben: «¡Viva Pedro Sánchez! Es lo primero que nos han dicho»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/garcia-albiol-visita-fabrica-okupada-vitoria-reciben-20261105165549-nt.html",
+  "fecha": "2026-11-05T15:55:50.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T16:19:27.516Z"
  }
 ]

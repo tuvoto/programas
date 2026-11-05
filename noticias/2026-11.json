@@ -547,6 +547,16 @@
   "vista": "2026-11-05T10:18:54.888Z"
  },
  {
+  "titulo": "Milei se reúne con Abascal tras dar plantón al Rey en la inauguración de la Cumbre Iberoamericana",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-04/milei-se-reune-con-abascal-tras-dar-planton-al-rey-en-la-inauguracion-de-la-cumbre-iberoamericana.html",
+  "fecha": "2026-11-04T23:04:14.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
   "titulo": "Revilla, tajante sobre el resultado de las elecciones: «Feijóo no se consolida como líder, va a sacar menos votos que la última vez»",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/culturas/tv/miguel-angel-revilla-tajante-sobre-resultado-elecciones-20261104001829-nt.html",
@@ -819,5 +829,324 @@
    "psoe"
   ],
   "vista": "2026-11-05T10:18:54.888Z"
+ },
+ {
+  "titulo": "Colau propone aumentar los impuestos a ultrarricos y grandes empresas para recaudar 10.000 millones de euros",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-05/colau-propone-aumentar-los-impuestos-a-ultrarricos-y-grandes-empresas-para-recaudar-10000-millones-de-euros.html",
+  "fecha": "2026-11-05T10:28:48.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo archiva la causa contra Alvise por la falsa prueba PCR de Salvador Illa",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/supremo-archiva-causa-alvise-falsa-prueba-pcr-salvador-illa_1_13640305.html",
+  "fecha": "2026-11-05T10:47:20.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo archiva la causa contra 'Alvise' por la difusión de una PCR falsa de Illa por no haber indicios suficientes",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-supremo-archiva-causa-contra-alvise-difusion-pcr-falsa-illa-no-haber-indicios-suficientes-20261105114937.html",
+  "fecha": "2026-11-05T10:49:37.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo archiva la causa contra Alvise por la difusión de una prueba de covid falsa de Salvador Illa",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676785/supremo-archiva-causa-alvise-difusion-pueba-covid-falsa-salvador-illa.html",
+  "fecha": "2026-11-05T11:22:06.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El PP, tras el registro en casa de Ábalos: “La corrupción cuesta vidas”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676787/pp-registro-casa-abalos-adif-corrupcion-cuesta-vidas.html",
+  "fecha": "2026-11-05T11:24:20.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo pide por quinta vez a la Eurocámara que levante la inmunidad a Alvise, ahora para investigarlo por provocar desórdenes públicos",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-05/el-supremo-pide-por-quinta-vez-a-la-eurocamara-que-levante-la-inmunidad-a-alvise-por-una-nueva-investigacion.html",
+  "fecha": "2026-11-05T11:32:14.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Podemos exige plaza y voz para Irene Montero en el debate electoral con Sánchez, Feijóo, Colau y Abascal",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/05/6aec67b0fdddff6f188b45c1.html",
+  "fecha": "2026-11-05T11:32:29.000Z",
+  "partidos": [
+   "frente-amplio",
+   "podemos",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Cristian Corvillo, la caída del conductor de Sánchez en su gira de reconquista del PSOE que ya anunció: \"Lo voy a aprovechar\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aec5aa821efa07f108b45a2.html",
+  "fecha": "2026-11-05T11:40:22.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Suprem arxiva la causa contra Alvise Pérez per la PCR falsa de Salvador Illa",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/suprem-arxiva-causa-alvise-perez-pcr-falsa-salvador-illa_25_5900924.html",
+  "fecha": "2026-11-05T11:42:16.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Koldo García insiste en que el PP le ofreció dinero",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676780/koldo-garcia-carcel-condena-firme-busca-resarcirse-psoe.html",
+  "fecha": "2026-11-05T11:43:12.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El PP valenciano se trae a Díaz Ayuso el día después del mitin de Sánchez en el Cabanyal",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pp-valenciano-trae-diaz-ayuso-dia-despues-20261105124610-nt.html",
+  "fecha": "2026-11-05T11:46:23.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "<![CDATA[Asiron se queda sin comisión de investigación contra UPN: \"No se ajusta a derecho\"]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/pamplona-comarca/2026/11/05/asiron-queda-comision-investigacion-upn-no-ajusta-derecho-841330-16.html",
+  "fecha": "2026-11-05T11:48:27.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El PP anuncia a Kevin Betancor como candidato a la Alcaldía de Agüimes",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/canarias/gran-canaria/pp-anuncia-kevin-betancor-candidato-alcaldia-aguimes-20261105125452-nt.html",
+  "fecha": "2026-11-05T11:54:52.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El BNG plantea una agenda gallega de pensiones para sacarlas del furgón de cola del Estado",
+  "medio": "La Voz de Galicia",
+  "url": "https://www.lavozdegalicia.es/noticia/galicia/2026/11/05/bng-plantea-agenda-gallega-pensiones-sacarlas-furgon-cola-estado/00031793878181552833841.htm",
+  "fecha": "2026-11-05T11:57:00.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo pide un quinto suplicatorio contra Alvise por provocar desórdenes públicos",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aec68eb21efa0fc068b45a4.html",
+  "fecha": "2026-11-05T11:59:40.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Impuesto a los superricos para superar el 10% y multiplicar escaños: la receta de Colau para el Frente Amplio",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-05/impuesto-a-los-superricos-para-superar-el-10-y-multiplicar-escanos-la-receta-de-colau-para-el-frente-amplio_4459469/",
+  "fecha": "2026-11-05T12:03:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El PP señala a Sánchez como único miembro de \"la banda del Peugeot\" no encausado pero cree que \"es cuestión de tiempo\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-senala-sanchez-como-unico-miembro-banda-peugeot-no-encausado-pero-cree-que-es-cuestion-tiempo_7057627_0.html",
+  "fecha": "2026-11-05T12:07:01.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Díaz Ayuso arropará a Catalá y Llorca en Valencia el día después de la mitin de Pedro Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/comunidad-valenciana/2026/11/05/6aec6e0efc6c83fc068b4594.html",
+  "fecha": "2026-11-05T12:10:13.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Podemos se reivindica como alternativa al PSOE con una campaña contra los privilegios de los ricos",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11676861/reivindica-alternativa-psoe-campana-privilegios-ricos.html",
+  "fecha": "2026-11-05T12:10:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Ada Colau acusa a Pedro Sánchez de apropiarse de los logros de los ministros de Sumar en su campaña",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ada-colau-acusa-pedro-sanchez-apropiarse-logros-20261105111908-nt.html",
+  "fecha": "2026-11-05T12:15:59.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Ester Muñoz (PP) apunta a Pedro Sánchez tras las detenciones por el caso Koldo: \"Solo queda el número uno\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/comunitat-valenciana/noticia-ester-munoz-pp-apunta-pedro-sanchez-detenciones-caso-koldo-solo-queda-numero-20261105132745.html",
+  "fecha": "2026-11-05T12:27:45.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Sigue en directo la sesión plenaria de la XXX Cumbre Iberoamericana, presidida por el Rey Felipe VI y con la intervención de Sánchez",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sigue-directo-sesion-plenaria-xxx-cumbre-iberoamericana-20261105084201-nt.html",
+  "fecha": "2026-11-05T12:31:20.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Las encuestas no los ven, pero las redes sí: Alvise tira de Ángel Gaitán, Míriam González es como una “influencer” y el azote de la ‘ley de nietos’",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-05/las-encuestas-no-los-ven-pero-las-redes-si-alvise-tira-de-angel-gaitan-miriam-gonzalez-es-como-una-influencer-y-el-azote-de-la-ley-de-nietos.html",
+  "fecha": "2026-11-05T12:33:19.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El PP se apoya en Ayuso para impulsar la campaña en una Valencia clave para el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/comunidad-valenciana/pp-apoya-ayuso-impulsar-campana-valencia-clave-20261105132613-nt.html",
+  "fecha": "2026-11-05T12:33:55.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "La UCO irrumpe en ADIF, registra la casa de Ábalos y detiene al exchófer de Sánchez en una nueva operación contra amaños en obras del caso Koldo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/uco-desata-nueva-operacion-dentro-nueva-pieza-20261105094317-ntrc.html",
+  "fecha": "2026-11-05T12:47:58.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Así ha sido la detención en Córdoba de Cristian Corvillo, exchófer de Pedro Sánchez",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/cordoba/cristian-corvillo-detenido-cordoba-20261105102127-nts.html",
+  "fecha": "2026-11-05T12:53:36.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Rufián i Montero compartiran dos mítings pel 29-N: un a Madrid i un a Barcelona",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/rufian-montero-compartiran-mitings-pel-29-n-madrid-barcelona_1_5900943.html",
+  "fecha": "2026-11-05T12:57:46.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "ERC diseña una campaña a medida de Rufián para recuperar los votos cedidos al PSOE en 2023",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/erc-disena-campana-medida-rufian-recuperar-votos-20261105140950-ntrc.html",
+  "fecha": "2026-11-05T13:09:51.000Z",
+  "partidos": [
+   "erc",
+   "psoe"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Koldo García desde prisión insiste en que el PP le ofreció dinero: \"Yo daré el remate final\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/koldo-garcia-prision-insiste-pp-le-ofrecio-dinero-dare-remate-final_1_13640815.html",
+  "fecha": "2026-11-05T13:12:21.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "El Supremo pide un quinto suplicatorio contra Alvise y sobresee la causa por la falsa prueba de covid de Illa",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/supremo-pide-quinto-suplicatorio-alvise-sobresee-causa-20261105115907-ntrc.html",
+  "fecha": "2026-11-05T13:12:40.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
+ },
+ {
+  "titulo": "Barbero (Frente Amplio), sobre supuestos pagos a Koldo por el PP: \"Hay que investigar\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/galicia/noticia-barbero-frente-amplio-supuestos-pagos-koldo-pp-hay-investigar-20261105141453.html",
+  "fecha": "2026-11-05T13:14:53.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp"
+  ],
+  "vista": "2026-11-05T13:29:03.062Z"
  }
 ]

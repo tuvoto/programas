@@ -80,6 +80,16 @@
   "vista": "2026-11-05T10:18:54.888Z"
  },
  {
+  "titulo": "Vox persevera en su mensaje de dureza contra el Gobierno: “Subirse al tren es una ruleta rusa”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261102/11674435/vox-persevera-mensaje-dureza-gobierno-subirse-tren-ruleta-rusa.html",
+  "fecha": "2026-11-02T18:32:26.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
   "titulo": "El PNV acusa a Bildu de «reforzar» a la Guardia Civil por formar a policías en Intxaurrondo",
   "medio": "El Correo",
   "url": "https://www.elcorreo.com/politica/pnv-pide-dimision-alcaldes-tolosa-andoain-instruir-20261102164500-nt.html",
@@ -1291,5 +1301,157 @@
    "psoe"
   ],
   "vista": "2026-11-05T16:19:27.516Z"
+ },
+ {
+  "titulo": "La historia de superación de Sandra Sánchez inspira al karate valenciano",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/deportes/mas-deportes/historia-superacion-sandra-sanchez-inspira-karate-valenciano-20261105170408-nt.html",
+  "fecha": "2026-11-05T16:04:08.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Zelenski pide apoyo a los países iberoamericanos y Sánchez avisa: “Mañana podríamos ser nosotros”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11677127/zelenski-pide-apoyo-paises-iberoamericanos-sanchez-avisa-manana.html",
+  "fecha": "2026-11-05T16:40:27.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "A qué hora y dónde es el mitin de Pedro Sánchez en Valencia",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/hora-mitin-pedro-sanchez-valencia-ubicacion-llegar-20261105175042-nt.html",
+  "fecha": "2026-11-05T16:50:42.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "El PSPV impone «asistencia obligatoria» a sus cargos y candidatos para el mitin del viernes con Sánchez",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pspv-impone-asistencia-obligatoria-mitin-sanchez-20261104104219-nt.html",
+  "fecha": "2026-11-05T16:51:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez se desvincula de los detenidos en el 'caso Koldo': \"Ninguna de estas personas tiene nada que ver conmigo\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-desvincula-detenciones-caso-koldo-ninguna-personas-tiene-nada-ver-conmigo-20261105181439.html",
+  "fecha": "2026-11-05T17:14:39.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez exige explicaciones a Feijóo sobre el supuesto intento de soborno a Koldo García",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/sanchez-exige-explicaciones-feijoo-supuesto-soborno-koldo-garcia_1_13642109.html",
+  "fecha": "2026-11-05T17:22:22.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez se desvincula de los detenidos por el caso Koldo: “Ninguno tiene nada que ver conmigo”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261105/11677162/sanchez-desvincula-detenidos-caso-koldo-ninguno-ver.html",
+  "fecha": "2026-11-05T17:22:44.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez evita confrontar con Milei: \"El insulto no forma parte de mi manera de hacer política\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-evita-confrontar-milei-insulto-no-forma-parte-manera-hacer-politica-20261105183308.html",
+  "fecha": "2026-11-05T17:33:08.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez, ante el resurgir del caso Koldo: «No es nada nuevo y no tienen nada que ver conmigo»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-ante-resurgir-koldo-nuevo-ver-conmigo-20261105182625-nt.html",
+  "fecha": "2026-11-05T18:04:53.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez, a Milei: \"Los presidentes estamos para unir y el insulto no forma parte de mi forma de entender la política\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-milei-los-presidentes-estamos-para-unir-insulto-no-forma-parte-mi-forma-entender-politica_7057871_0.html",
+  "fecha": "2026-11-05T18:20:49.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Sánchez defensa que Óscar Puente \"ha donat la cara\"",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/sanchez-defensa-oscar-puente-donat-cara_25_5901477.html",
+  "fecha": "2026-11-05T18:32:36.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Gamarra defiende que el PP «sentó a Koldo en el banquillo» y «ahora está condenado a más de 19 años de cárcel»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/gamarra-defiende-pp-sento-koldo-banquillo-condenado-20261105193412-nt.html",
+  "fecha": "2026-11-05T18:34:13.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "El exchófer de Sánchez detenido en Córdoba declaró que se reunió con Ábalos por «asuntos del partido»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/exchofer-sanchez-detenido-cordoba-declaro-reunio-abalos-20261105185346-nt.html",
+  "fecha": "2026-11-05T18:37:19.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "El cara a cara entre Sánchez y Feijóo, en el aire",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cara-cara-feijoo-sanchez-aire-20261105191926-nt.html",
+  "fecha": "2026-11-05T18:43:16.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
+ },
+ {
+  "titulo": "Feijóo defiende poner fecha a la celebración de elecciones en Venezuela durante una videoconferencia con María Corina Machado",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/05/6aecc228fc6c83f6498b4577.html",
+  "fecha": "2026-11-05T18:53:33.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-05T19:12:48.763Z"
  }
 ]

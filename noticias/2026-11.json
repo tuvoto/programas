@@ -2221,6 +2221,16 @@
   "vista": "2026-11-06T13:24:28.541Z"
  },
  {
+  "titulo": "El PP desplegará a todo el partido en una campaña territorial y digital para extender el mensaje de 'El cambio necesario'",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-desplegara-todo-partido-una-campana-territorial-digital-para-extender-mensaje-cambio-necesario_7058193_0.html",
+  "fecha": "2026-11-06T12:25:18.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
   "titulo": "Irene Carvajal (Vox) defiende que los espacios municipales respetan «siempre» la «libertad de creación»",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/castilla-leon/irene-carvajal-vox-defiende-espacios-municipales-respetan-20261106131325-nt.html",
@@ -2309,5 +2319,107 @@
    "pp"
   ],
   "vista": "2026-11-06T13:24:28.541Z"
+ },
+ {
+  "titulo": "El Gobierno ve en la presunta oferta de un millón del PP a Koldo García el \"mayor ataque\" reciente a la democracia",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-gobierno-ve-presunta-oferta-millon-pp-koldo-garcia-mayor-ataque-reciente-democracia-20261106143229.html",
+  "fecha": "2026-11-06T13:32:29.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "<![CDATA[UPN-PP llaman a concentrar el voto para conseguir un \"cambio de ciclo político\" y \"sacar a Sánchez de la Moncloa\"]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/06/upn-pp-llaman-concentrar-voto-conseguir-cambio-ciclo-politico-sacar-sanchez-moncloa-841489-15.html",
+  "fecha": "2026-11-06T13:36:02.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "upn"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "El candidato de Podemos en Murcia interrumpe la Feria de Vivienda al grito de ¡fuera buitres!",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/murcia/2026/11/06/6aedd991e9cf4ad56e8b458b.html",
+  "fecha": "2026-11-06T13:47:00.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "Prohens afronta su segunda prórroga de los Presupuestos al congelar la negociación con Vox",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261106/11678075/prohens-afronta-segunda-prorroga-presupuestos-congelar-negociacion-vox.html",
+  "fecha": "2026-11-06T13:59:40.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "Misas y funerales: Sánchez, religioso por conveniencia",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-religioso-conveniencia-20261106143412-nt.html",
+  "fecha": "2026-11-06T14:04:54.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "El PP lanza su lema 'El cambio necesario' y arrancará la campaña electoral en Badalona",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pp-lanza-lema-cambio-necesario-arrancara-campana-20261106141204-nt.html",
+  "fecha": "2026-11-06T14:12:12.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "Torres reclama al PP que aclare «cuanto antes» si está detrás de las «difamaciones» contra el Gobierno",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/canarias/torres-reclama-pp-aclare-detras-difamaciones-gobierno-20261106151454-nt.html",
+  "fecha": "2026-11-06T14:14:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "Vox se atreve con la plaza de toros y la reserva para el día 27 en Valencia",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/vox-plaza-toros-valencia-20261106151504-nt.html",
+  "fecha": "2026-11-06T14:17:10.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "Vox convierte su lema estrella en una canción creada con IA para el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/vox-convierte-lema-estrella-cancion-creada-ia-20261106151156-nt.html",
+  "fecha": "2026-11-06T14:42:18.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
+ },
+ {
+  "titulo": "'La Revuelta' prescinde Nogueras, aunque ha invitado a otros candidatos del 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261106/11678136/revuelta-prescinde-nogueras-invitado-otros-candidatos-29-n.html",
+  "fecha": "2026-11-06T15:37:58.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-06T16:01:50.832Z"
  }
 ]

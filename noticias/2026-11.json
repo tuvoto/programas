@@ -1746,6 +1746,16 @@
   "vista": "2026-11-06T01:27:49.473Z"
  },
  {
+  "titulo": "El PP promete \"movilizar\" 20.000 millones al año en infraestructuras con \"prioridad\" para el mantenimiento ferroviario",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/06/6aecda3cfc6c836c1c8b459e.html",
+  "fecha": "2026-11-06T00:22:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
   "titulo": "El exchófer de Sánchez, investigado por blanquear dinero de obra pública",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/miembros-clan-primarias-sanchez-investigando-blanquear-dinero-20261106012254-nt.html",
@@ -1919,5 +1929,79 @@
    "psoe"
   ],
   "vista": "2026-11-06T07:31:53.654Z"
+ },
+ {
+  "titulo": "UD Las Palmas, en directo: Albert Sánchez habla en la previa de su estreno liguero en el Gran Canaria",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/deportes/ud-las-palmas/palmas-directo-albert-sanchez-habla-previa-estreno-20261106092943-nt.html",
+  "fecha": "2026-11-06T08:29:43.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Albares reprocha al PP que no plantara a Milei cuando llamó a Sánchez “impresentable dictador”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261106/11677692/albares-reprocha-pp-plantara-milei-llamo-sanchez-impresentable-dictador.html",
+  "fecha": "2026-11-06T08:56:08.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Irene Montero plantea dedicar gasto militar a nacionalizar Repsol, contratar sanitarios y crear un 'súper' público",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-irene-montero-plantea-dedicar-gasto-militar-nacionalizar-repsol-contratar-sanitarios-crear-super-publico-20261106102737.html",
+  "fecha": "2026-11-06T09:27:37.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Fúnez (PP) no da credibilidad a la declaración de Koldo García contra su partido para tumbar a Sánchez: \"Menuda fuente\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-funez-pp-no-da-credibilidad-declaracion-koldo-garcia-contra-partido-tumbar-sanchez-menuda-fuente-20261106104133.html",
+  "fecha": "2026-11-06T09:41:33.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Contigo La Palma se presenta en La Laguna como alternativa “al más de lo mismo de CC, PP y PSOE”",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/palma-presenta-laguna-alternativa-cc-pp-psoe_1_13643259.html",
+  "fecha": "2026-11-06T09:47:53.000Z",
+  "partidos": [
+   "cc",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Urtasun anuncia que Frente Amplio propondrá renunciar al AVE a 350 km/h en favor de Rodalies",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/catalunya/noticia-urtasun-anuncia-frente-amplio-propondra-renunciar-ave-350-km-favor-rodalies-20261106105112.html",
+  "fecha": "2026-11-06T09:51:12.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
+ },
+ {
+  "titulo": "Vox presenta una enmienda a la totalidad de los presupuestos de Castilla-La Mancha para 2027",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/vox-presenta-enmienda-totalidad-presupuestos-castillala-mancha-20261106105210-nt.html",
+  "fecha": "2026-11-06T09:53:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-06T10:18:05.430Z"
  }
 ]

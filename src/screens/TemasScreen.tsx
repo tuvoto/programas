@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Linking, Platform, StyleSheet, Text, View } from 'react-native';
+import { Image, Linking, Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { TEMAS, Tema } from '../data/temas';
-import { AFIRMACIONES, AFIRMACIONES_CORTAS } from '../data/test';
 import { PARTIDOS, Partido } from '../data/partidos';
 import { edicionVigente, numPropuestasTema, partidoTrataTema, vigentes } from '../data/propuestas';
 import { BOE_CANDIDATURAS } from '../data/candidaturas';
@@ -14,7 +13,11 @@ import Tarjeta from '../components/Tarjeta';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import CuentaAtras from '../components/CuentaAtras';
 import DescargarApp from '../components/DescargarApp';
-import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO, nivel } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO, nivel, esWeb } from '../theme';
+
+// Ordenador de sobremesa con el mapa de diputados por provincia (datos del BOE),
+// para la portada de la web en pantallas anchas.
+const ORDENADOR = require('../../assets/portada/web-ordenador.png');
 
 type Props = { onAbrirTema: (tema: Tema) => void };
 
@@ -52,36 +55,15 @@ export default function TemasScreen({ onAbrirTema }: Props) {
   // Hasta medir la pantalla, se supone móvil (así la web generada y la que se
   // abre en el navegador empiezan igual).
   const movil = ancho === 0 || ancho < 760;
-  // En pantallas anchas, el test y los resúmenes van uno al lado del otro.
-  const pareja = ancho >= 960;
+  // Solo en la web del ordenador: el texto a la izquierda y un portátil con la web a la derecha.
+  const hero = esWeb && ancho >= 1000;
 
   // Reparto en filas: las tarjetas de una misma fila quedan alineadas y con la misma altura.
   const filas: Tema[][] = [];
   for (let i = 0; i < TEMAS.length; i += columnas) filas.push(TEMAS.slice(i, i + columnas));
 
-  return (
-    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
-      {/* Portada: se aleja despacio al hacer scroll */}
-      <Paralaje>
-        <Text style={[T.portada, s.portada]} accessibilityRole="header">
-          Compara los programas del {/* Guion y espacios que no se parten, para que «29-N» no se separe */}
-          <Text style={s.subrayado}>{'\u00A029\u2011N\u00A0'}</Text>
-        </Text>
-      </Paralaje>
-
-      {/* Cuenta atrás */}
-      {(dias === null || dias >= 0) && (
-        <Revelar>
-          <CuentaAtras dias={dias} ancho={ancho} />
-        </Revelar>
-      )}
-
-      {/* Tres datos que se pueden comprobar */}
-      <Revelar>
-        <DatosComprobables centrado={ancho760} />
-      </Revelar>
-
-      {/* Buscador: lleva a /buscar */}
+  // Buscador: lleva a /buscar.
+  const buscador = (
       <Revelar>
         <Pulsable
           onPress={() => router.push('/buscar')}
@@ -97,54 +79,45 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           </Text>
         </Pulsable>
       </Revelar>
+  );
 
-      {!movil && (
-      <View style={pareja ? s.pareja : undefined}>
-      {/* Test de afinidad, destacado */}
-      <Revelar style={pareja ? s.mitad : undefined}>
-        <Pulsable
-          onPress={() => router.navigate('/test')}
-          style={[s.test, ancho760 && !pareja && s.testAncho, pareja && s.alto]}
-          escala={0.98}
-          vibracion="ligera"
-          accessibilityRole="link"
-          accessibilityLabel="Hacer el test de afinidad"
-        >
-          <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
-            <Text style={[T.portada, { color: C.sobreTinta }]}>Test</Text>
-            <Text style={[T.cuerpo, { color: C.sobreTintaSuave }]}>
-              ¿Con qué programa coincides? Versión corta de {AFIRMACIONES_CORTAS().length} frases o completa de {AFIRMACIONES.length}.
-            </Text>
-          </View>
-          <View style={[s.boton, { backgroundColor: C.amarillo }]}>
-            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 15 }]}>Hacer el test</Text>
-            <Icono nombre="next" tam={15} color={C.tinta} peso="bold" />
-          </View>
-        </Pulsable>
-      </Revelar>
+  return (
+    <ScrollAnimado contentContainerStyle={s.contenedor} onLayout={(e) => setAncho(Math.min(e.nativeEvent.layout.width, ANCHO_MAX) - M * 2)}>
+      <View style={hero ? s.hero : undefined}>
+      <View style={hero ? s.heroTexto : undefined}>
+      {/* Portada: se aleja despacio al hacer scroll */}
+      <Paralaje>
+        <Text style={[T.portada, s.portada]} accessibilityRole="header">
+          Compara los programas del {/* Guion y espacios que no se parten, para que «29-N» no se separe */}
+          <Text style={s.subrayado}>{'\u00A029\u2011N\u00A0'}</Text>
+        </Text>
+      </Paralaje>
 
-      {/* Resúmenes de los programas: lleva a la pestaña Partidos */}
-      <Revelar style={pareja ? s.mitad : undefined}>
-        <Pulsable
-          onPress={() => router.navigate('/partidos')}
-          style={[s.resumenes, ancho760 && !pareja && s.testAncho, pareja && s.alto]}
-          escala={0.98}
-          vibracion="ligera"
-          accessibilityRole="link"
-          accessibilityLabel="Ver los resúmenes de los programas en Partidos"
-        >
-          <View style={{ flex: ancho760 && !pareja ? 1 : undefined, gap: 6 }}>
-            <Text style={[T.portada, { color: C.tinta }]}>Resúmenes de los programas</Text>
-          </View>
-          <View style={[s.boton, { backgroundColor: C.tinta }]}>
-            <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 15 }]}>Ver partidos</Text>
-            <Icono nombre="next" tam={15} color={C.sobreTinta} peso="bold" />
-          </View>
-        </Pulsable>
-      </Revelar>
-      </View>
+      {/* Cuenta atrás */}
+      {(dias === null || dias >= 0) && (
+        <Revelar>
+          <CuentaAtras dias={dias} ancho={ancho} izquierda={hero} />
+        </Revelar>
       )}
 
+      {/* Tres datos que se pueden comprobar */}
+      <Revelar>
+        <DatosComprobables centrado={ancho760 && !hero} />
+      </Revelar>
+
+      {/* En el móvil, el buscador va arriba; en pantallas anchas, encima de las tarjetas de temas */}
+      {movil && buscador}
+      </View>
+      {hero && (
+        <View style={s.heroImagen}>
+          <Revelar>
+            <Ordenador />
+          </Revelar>
+        </View>
+      )}
+      </View>
+
+      {/* El test y los partidos ya están en el menú de arriba: sin tarjetas aquí. */}
       {/* Solo en la web, cuando la app esté publicada */}
       <DescargarApp />
 
@@ -162,6 +135,8 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         </Text>
         {!movil && <Leyenda partidos={PARTIDOS} />}
       </Revelar>
+
+      {!movil && <View style={{ marginBottom: 16, marginTop: -2 }}>{buscador}</View>}
 
       {(
         <View style={s.rejilla}>
@@ -200,6 +175,21 @@ export default function TemasScreen({ onAbrirTema }: Props) {
         <NoOficial />
       </Revelar>
     </ScrollAnimado>
+  );
+}
+
+// Ordenador con el mapa de España por diputados (solo en la web del ordenador).
+function Ordenador() {
+  return (
+    <View
+      style={s.ordenador}
+      accessible
+      accessibilityRole="image"
+      accessibilityLabel="Mapa de España con los diputados que elige cada provincia, de Madrid (38) y Barcelona (32) a Soria (2), Ceuta y Melilla (1 cada una)"
+    >
+      <View style={s.circulo} />
+      <Image source={ORDENADOR} style={s.imagenOrdenador} resizeMode="contain" />
+    </View>
   );
 }
 
@@ -331,15 +321,6 @@ const s = StyleSheet.create({
   },
   portada: { color: C.tinta, marginTop: 22, marginBottom: 4, maxWidth: 640 },
   subrayado: { backgroundColor: C.amarillo },
-  test: {
-    marginTop: 12,
-    backgroundColor: C.tinta,
-    borderRadius: R.tarjeta,
-    padding: 20,
-    gap: 16,
-    boxShadow: S.flotante,
-  },
-  testAncho: { flexDirection: 'row', alignItems: 'center', gap: 24 },
   buscador: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -351,20 +332,6 @@ const s = StyleSheet.create({
     backgroundColor: C.tarjeta,
     boxShadow: S.tarjeta,
   },
-  pareja: { flexDirection: 'row', gap: 12, alignItems: 'stretch', marginTop: 12 },
-  mitad: { flex: 1, minWidth: 0 },
-  alto: { flex: 1, marginTop: 0, justifyContent: 'space-between' },
-  boton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    alignSelf: 'flex-start',
-    backgroundColor: C.amarillo,
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    borderRadius: R.boton,
-  },
-  resumenes: { marginTop: 12, backgroundColor: C.amarillo, borderRadius: R.tarjeta, padding: 20, gap: 16, boxShadow: S.tarjeta },
   leyenda: { flexDirection: 'row', flexWrap: 'wrap', columnGap: 12, rowGap: 6 },
   leyendaItem: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   seccion: { marginTop: 28, marginBottom: 12, gap: 2 },
@@ -391,6 +358,12 @@ const s = StyleSheet.create({
   },
   temaPulsada: { backgroundColor: '#E8EBF0' },
   marcas: { flexDirection: 'row', gap: 3 },
+  hero: { flexDirection: 'row', alignItems: 'center', gap: 56 },
+  heroTexto: { flex: 1, minWidth: 0 },
+  heroImagen: { width: 500, flexShrink: 0, paddingTop: 24 },
+  ordenador: { width: 500, position: 'relative' },
+  imagenOrdenador: { width: 500, height: 346 },
+  circulo: { position: 'absolute', right: -50, top: -50, width: 380, height: 380, borderRadius: 190, backgroundColor: C.fondoPartidos, opacity: 0.3 },
   temaCompacto: {
     flex: 1,
     alignItems: 'center',

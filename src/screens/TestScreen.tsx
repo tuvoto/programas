@@ -208,6 +208,12 @@ function ConfirmarSalida({ visible, onSalir, onSeguir }: { visible: boolean; onS
 // Antes de empezar: test corto o completo. Dos tarjetas iguales y claras:
 // lo que las distingue es el número de frases, en grande.
 function ElegirModo({ onElegir }: { onElegir: (m: Modo) => void }) {
+  // Antes de empezar se pregunta dónde vota (si no lo ha dicho ya), para que
+  // el resultado enseñe primero los partidos de su papeleta. Se puede saltar.
+  const provincia = provinciaPorId(useProvincia());
+  const [pendiente, setPendiente] = useState<Modo | null>(null);
+  const [cambiando, setCambiando] = useState(false);
+  const pulsar = (m: Modo) => (provincia ? onElegir(m) : setPendiente(m));
   const opciones: { m: Modo; n: number; nombre: string; texto: string; circulo: string }[] = [
     { m: 'corto', n: AFIRMACIONES_CORTAS().length, nombre: 'Corto', texto: 'Rápido, para hacerte una idea.', circulo: C.azulClaro },
     { m: 'completo', n: AFIRMACIONES.length, nombre: 'Completo', texto: 'Más preciso, con todos los temas.', circulo: C.amarilloClaro },
@@ -224,7 +230,7 @@ function ElegirModo({ onElegir }: { onElegir: (m: Modo) => void }) {
         {opciones.map((o) => (
           <Pulsable
             key={o.m}
-            onPress={() => onElegir(o.m)}
+            onPress={() => pulsar(o.m)}
             style={s.modo}
             escala={0.98}
             vibracion="ligera"
@@ -248,9 +254,35 @@ function ElegirModo({ onElegir }: { onElegir: (m: Modo) => void }) {
           </Pulsable>
         ))}
       </View>
+      {provincia && (
+        <Text style={[T.meta, { color: C.suave }]}>
+          {`Votas en ${provincia.nombre}: al final verás primero los partidos de tu papeleta. `}
+          <Text onPress={() => setCambiando(true)} style={{ color: C.tinta, fontFamily: F.textoSemi, textDecorationLine: 'underline' }} accessibilityRole="link">
+            Cambiar
+          </Text>
+        </Text>
+      )}
       <Text style={[T.meta, { color: C.suave, maxWidth: 560 }]}>
         No es una recomendación de voto. Tus respuestas no se guardan ni se envían: al salir del test se borran.
       </Text>
+      <SelectorProvincia
+        visible={pendiente !== null || cambiando}
+        actual={provincia?.id ?? null}
+        pregunta={pendiente !== null}
+        textoPregunta="Elige tu provincia y, al terminar, verás primero los partidos de tu papeleta. No se guarda en ningún sitio."
+        textoSaltar="Ahora no, empezar con todos los partidos"
+        onCerrar={() => {
+          // Cerrar con la ✕ cancela: no empieza el test.
+          setCambiando(false);
+          setPendiente(null);
+        }}
+        onElegir={() => {
+          if (pendiente) onElegir(pendiente);
+        }}
+        onSaltar={() => {
+          if (pendiente) onElegir(pendiente);
+        }}
+      />
     </Animated.View>
   );
 }

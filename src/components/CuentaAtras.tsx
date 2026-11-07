@@ -4,16 +4,17 @@ import { C, F, T } from '../theme';
 type Props = {
   dias: number | null; // null mientras se calcula en la web
   ancho: number; // ancho disponible
+  izquierda?: boolean; // en la portada ancha de la web, alineada a la izquierda
 };
 
 // Cuenta atrás con la cifra muy grande como protagonista; el texto acompaña.
-export default function CuentaAtras({ dias, ancho }: Props) {
+export default function CuentaAtras({ dias, ancho, izquierda = false }: Props) {
   const ancha = ancho >= 760;
   const tam = ancha ? 152 : 112;
   const etiqueta = dias === 0 ? 'Las elecciones son hoy' : `Faltan ${dias ?? ''} días para las elecciones del 29 de noviembre`;
   const sub = ancha ? 28 : 22;
   return (
-    <View style={[g.bloque, ancha && g.bloqueAncho, dias === null && { opacity: 0 }]} accessible accessibilityLabel={etiqueta}>
+    <View style={[g.bloque, ancha && !izquierda && g.bloqueAncho, dias === null && { opacity: 0 }]} accessible accessibilityLabel={etiqueta}>
       {dias !== 0 && (
         <Text style={[T.seccion, { color: C.tinta, fontSize: sub, lineHeight: sub + 4 }]}>{dias === 1 ? 'Falta' : 'Faltan'}</Text>
       )}

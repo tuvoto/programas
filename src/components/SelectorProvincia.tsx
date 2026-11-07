@@ -6,13 +6,25 @@ import { C, R, S, T, nivel } from '../theme';
 
 // `pregunta`: se abre solo al entrar en Partidos; explica para qué sirve y deja
 // seguir sin elegir.
-type Props = { visible: boolean; actual: string | null; onCerrar: () => void; pregunta?: boolean };
+// `textoPregunta` y `textoSaltar` cambian los textos de esa pregunta (por
+// ejemplo, al empezar el test). `onElegir` y `onSaltar` avisan de la elección.
+type Props = {
+  visible: boolean;
+  actual: string | null;
+  onCerrar: () => void;
+  pregunta?: boolean;
+  textoPregunta?: string;
+  textoSaltar?: string;
+  onElegir?: (id: string | null) => void;
+  onSaltar?: () => void;
+};
 
 // Ventana para elegir la provincia en la que se vota.
-export default function SelectorProvincia({ visible, actual, onCerrar, pregunta }: Props) {
+export default function SelectorProvincia({ visible, actual, onCerrar, pregunta, textoPregunta, textoSaltar, onElegir, onSaltar }: Props) {
   const elegir = (id: string | null) => {
     elegirProvincia(id);
     onCerrar();
+    onElegir?.(id);
   };
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCerrar}>
@@ -26,7 +38,7 @@ export default function SelectorProvincia({ visible, actual, onCerrar, pregunta 
               </Text>
               <Text style={[T.meta, { color: C.suave }]}>
                 {pregunta
-                  ? 'Elige tu provincia y verás solo los partidos de tu papeleta. Es donde estás empadronado.'
+                  ? textoPregunta ?? 'Elige tu provincia y verás solo los partidos de tu papeleta. Es donde estás empadronado.'
                   : 'Votas en la provincia en la que estás empadronado.'}
               </Text>
             </View>
@@ -66,8 +78,15 @@ export default function SelectorProvincia({ visible, actual, onCerrar, pregunta 
             ))}
           </ScrollView>
           {pregunta && (
-            <Pulsable onPress={onCerrar} style={s.ahoraNo} accessibilityRole="button">
-              <Text style={[T.etiqueta, { color: C.suave, fontSize: 14 }]}>Ahora no, ver todos los partidos</Text>
+            <Pulsable
+              onPress={() => {
+                onCerrar();
+                onSaltar?.();
+              }}
+              style={s.ahoraNo}
+              accessibilityRole="button"
+            >
+              <Text style={[T.etiqueta, { color: C.suave, fontSize: 14 }]}>{textoSaltar ?? 'Ahora no, ver todos los partidos'}</Text>
             </Pulsable>
           )}
         </View>

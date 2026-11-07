@@ -2866,6 +2866,26 @@
   "vista": "2026-11-07T07:17:46.733Z"
  },
  {
+  "titulo": "La campaña que Sánchez quiso adelantar se le complica al PSOE entre la crisis ferroviaria y la presunta corrupción",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/campana-que-sanchez-quiso-adelantar-se-le-complica-psoe-entre-crisis-ferroviaria-presunta-corrupcion_7057740_0.html",
+  "fecha": "2026-11-07T06:43:12.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
+  "titulo": "Rocío de Meer (Vox): \"Hay 13 millones de personas en riesgo de pobreza bajo un Gobierno que se vanagloria de escudo social\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/rocio-meer-vox-hay-13-millones-personas-riesgo-pobreza-bajo-un-gobierno-que-se-vanagloria-escudo-social_7057160_0.html",
+  "fecha": "2026-11-07T06:50:12.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
   "titulo": "\"A les eleccions espanyoles votaré Vox i a les catalanes Aliança\"",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/eleccions-espanyoles-votare-vox-catalanes-alianca_1_5898930.html",
@@ -2884,5 +2904,58 @@
    "vox"
   ],
   "vista": "2026-11-07T07:17:46.733Z"
+ },
+ {
+  "titulo": "Feijóo promete que ninguna CCAA tendrá una financiación singular como la pactada para Cataluña entre Sánchez y ERC",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-promete-ninguna-ccaa-tendra-financiacion-singular-pactada-cataluna-sanchez-erc-20261107092957.html",
+  "fecha": "2026-11-07T08:29:57.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
+  "titulo": "El nou impost que proposa Ada Colau és més alt que el que ja paguen els rics?",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/nou-impost-proposa-ada-colau-mes-alt-ja-paguen-rics_1_5902284.html",
+  "fecha": "2026-11-07T08:34:48.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
+  "titulo": "PNV defiende unos Presupuestos \"récord, porque el país funciona\", mientras EH Bildu cree que \"se queda corto\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-pnv-defiende-presupuestos-record-porque-pais-funciona-mientras-eh-bildu-cree-queda-corto-20261107101711.html",
+  "fecha": "2026-11-07T09:17:11.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
+  "titulo": "Illa recurrirá el archivo de la causa contra Alvise por haber difundido una prueba de Covid falsa",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/illa-recurrira-archivo-causa-alvise-haber-difundido-prueba-covid-falsa_1_13646046.html",
+  "fecha": "2026-11-07T09:19:12.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
+ },
+ {
+  "titulo": "La militancia socialista desborda el pabellón del Cabanyal en el primer mitin de Pedro Sánchez tras la tragedia de Urda",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/militancia-socialista-desborda-pabellon-cabanyal-primer-mitin-pedro-sanchez-tragedia-urda_1_13646079.html",
+  "fecha": "2026-11-07T09:38:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T09:59:21.325Z"
  }
 ]

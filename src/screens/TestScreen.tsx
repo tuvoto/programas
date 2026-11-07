@@ -3,7 +3,10 @@ import { useNavigation } from 'expo-router';
 import { LayoutRectangle } from 'react-native';
 import { ActivityIndicator, Linking, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import Animated, { Easing, FadeIn, FadeOut, SharedValue, useAnimatedStyle } from 'react-native-reanimated';
-import { partidoPorId } from '../data/partidos';
+import { partidoPorId, sePresentaEn } from '../data/partidos';
+import { provinciaPorId } from '../data/provincias';
+import { useProvincia } from '../lib/provincia';
+import SelectorProvincia from '../components/SelectorProvincia';
 import { TEMAS, temaPorId } from '../data/temas';
 import { AFIRMACIONES, AFIRMACIONES_CORTAS, Afirmacion, Respuesta, Respuestas, calcular, mezclarPorTemas, partidosDelTest } from '../data/test';
 import { urlPagina } from '../lib/web';
@@ -16,7 +19,7 @@ import { ManoDemo, PosicionesDemo, useDemo } from '../components/ManoDemo';
 import TarjetaResultado from '../components/TarjetaResultado';
 import { compartirResultado } from '../lib/compartirResultado';
 import { pedirValoracion } from '../lib/valorar';
-import { C, F, HUECO_BARRA, M, R, S, T, esWeb } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, esWeb, nivel } from '../theme';
 
 const ENTRAR = FadeIn.duration(220).easing(Easing.bezier(0.23, 1, 0.32, 1));
 const MAX_IMPORTANTES = 3;
@@ -184,7 +187,7 @@ function ConfirmarSalida({ visible, onSalir, onSeguir }: { visible: boolean; onS
       <View style={s.velo}>
         <Pressable style={StyleSheet.absoluteFill} onPress={onSeguir} accessibilityLabel="Seguir con el test" />
         <View style={s.dialogo} accessibilityViewIsModal>
-          <Text style={[T.seccion, { color: C.tinta }]} accessibilityRole="header">
+          <Text style={[T.seccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
             ¿Salir del test?
           </Text>
           <Text style={[T.cuerpo, { color: C.suave }]}>Si sales ahora, se pierden las respuestas que llevas.</Text>
@@ -557,7 +560,20 @@ function Resultado({
 }) {
   const TOTAL = total;
   const { partidos } = usePartidosTest();
-  const resultados = calcular(respuestas, importantes, partidos);
+  const todosLosResultados = calcular(respuestas, importantes, partidos);
+  // Si sabemos dónde vota, primero solo los partidos de su papeleta: así el
+  // primer resultado es siempre alguien a quien puede votar.
+  const provincia = provinciaPorId(useProvincia());
+  const [verTodos, setVerTodos] = useState(false);
+  const [eligiendo, setEligiendo] = useState(false);
+  const deSuPapeleta = provincia
+    ? todosLosResultados.filter((r) => sePresentaEn(partidoPorId(r.partidoId)!, provincia))
+    : todosLosResultados;
+  const resultados = provincia && !verTodos ? deSuPapeleta : todosLosResultados;
+  // Sin provincia, se abre el más parecido de los que se presentan en toda España.
+  const porDefecto =
+    (provincia && !verTodos ? resultados[0] : resultados.find((r) => !partidoPorId(r.partidoId)?.territorio) ?? resultados[0])
+      ?.partidoId ?? null;
   const contestadas = AFIRMACIONES.filter((a) => respuestas[a.id] != null).length;
   const hechas = lista(modo);
   const [compartir, setCompartir] = useState(false);
@@ -566,7 +582,12 @@ function Resultado({
   const ancho = width >= 900;
   // Partido abierto: al empezar, el que más se parece (ya desplegado);
   // los demás se abren al tocarlos.
-  const [abierto, setAbierto] = useState<string | null>(() => resultados[0]?.partidoId ?? null);
+  // undefined = el que toca por defecto; null = ninguno abierto.
+  const [abiertoElegido, setAbierto] = useState<string | null | undefined>(undefined);
+  const abierto =
+    abiertoElegido === undefined || (abiertoElegido && !resultados.some((r) => r.partidoId === abiertoElegido))
+      ? porDefecto
+      : abiertoElegido;
   // Con muchos partidos, primero los 5 más parecidos; el resto, con un botón.
   const [todos, setTodos] = useState(false);
   const PRIMEROS = 5;
@@ -593,6 +614,65 @@ function Resultado({
         </Text>
       </View>
     </>
+  );
+
+  // Papeleta: «En tu papeleta (N) · Todos (M)», o invitación a elegir provincia.
+  const filtro = (
+    <View style={{ marginTop: 14 }}>
+      {provincia ? (
+        <View style={{ gap: 8 }}>
+          <Text style={[T.meta, { color: C.suave }]}>
+            {`Votas en ${provincia.nombre}. `}
+            <Text onPress={() => setEligiendo(true)} style={{ color: C.tinta, fontFamily: F.textoSemi, textDecorationLine: 'underline' }} accessibilityRole="link">
+              Cambiar
+            </Text>
+          </Text>
+          <View style={s.segmento} accessibilityRole="tablist">
+            {[
+              { id: false, texto: `En tu papeleta (${deSuPapeleta.length})` },
+              { id: true, texto: `Todos (${todosLosResultados.length})` },
+            ].map((o) => {
+              const on = verTodos === o.id;
+              return (
+                <Pulsable
+                  key={String(o.id)}
+                  onPress={() => {
+                    setVerTodos(o.id);
+                    setAbierto(undefined);
+                  }}
+                  style={[s.segmentoOpcion, on && s.segmentoOn]}
+                  escala={0.98}
+                  vibracion="seleccion"
+                  accessibilityRole="tab"
+                  accessibilityState={{ selected: on }}
+                >
+                  <Text style={[T.etiqueta, { color: on ? C.tinta : C.suave, fontSize: 14 }]}>{o.texto}</Text>
+                </Pulsable>
+              );
+            })}
+          </View>
+        </View>
+      ) : (
+        <Pulsable onPress={() => setEligiendo(true)} style={s.dondeVotas} escala={0.98} vibracion="ligera" accessibilityRole="button">
+          <View style={{ flex: 1, gap: 2 }}>
+            <Text style={[T.cuerpoSemi, { color: C.tinta, fontSize: 15 }]}>¿Dónde votas?</Text>
+            <Text style={[T.meta, { color: C.suave }]}>Elige tu provincia y verás primero los partidos de tu papeleta.</Text>
+          </View>
+          <View style={s.dondeBoton}>
+            <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 13.5 }]}>Elegir</Text>
+          </View>
+        </Pulsable>
+      )}
+      <SelectorProvincia
+        visible={eligiendo}
+        actual={provincia?.id ?? null}
+        onCerrar={() => {
+          setEligiendo(false);
+          setVerTodos(false);
+          setAbierto(undefined);
+        }}
+      />
+    </View>
   );
 
   const acciones = (
@@ -693,6 +773,7 @@ function Resultado({
       <Animated.View entering={ENTRAR} style={s.dosColumnas}>
         <View style={[s.colRanking, esWeb && ({ position: 'sticky', top: 12 } as object)]}>
           {cabecera}
+          {filtro}
           <View style={{ gap: 10, marginTop: 16 }}>
             {visibles.map((x, i) => (
               <Tarjeta key={x.partidoId} style={[s.borde, x.partidoId === r?.partidoId && s.seleccionado]}>
@@ -725,7 +806,12 @@ function Resultado({
   return (
     <Animated.View entering={ENTRAR}>
       {cabecera}
-      <Text style={[T.meta, { color: C.suave, marginTop: 16 }]}>El primero ya está abierto. Toca otro partido para ver su detalle.</Text>
+      {filtro}
+      <Text style={[T.meta, { color: C.suave, marginTop: 16 }]}>
+        {porDefecto && porDefecto !== resultados[0]?.partidoId
+          ? 'Te abrimos el más parecido de los que se presentan en toda España. Toca otro partido para ver su detalle.'
+          : 'El primero ya está abierto. Toca otro partido para ver su detalle.'}
+      </Text>
       <View style={{ gap: 10, marginTop: 10 }}>
         {visibles.map((x, i) => {
           const abiertoAqui = abierto === x.partidoId;
@@ -1021,6 +1107,11 @@ const s = StyleSheet.create({
   pieFila: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 22, flexWrap: 'wrap' },
   filaResultado: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   postura: { flexDirection: 'row', gap: 8, alignItems: 'flex-start' },
+  segmento: { flexDirection: 'row', backgroundColor: C.linea, borderRadius: 14, padding: 4, gap: 4 },
+  segmentoOpcion: { flex: 1, minHeight: 40, alignItems: 'center', justifyContent: 'center', borderRadius: 11, paddingHorizontal: 8 },
+  segmentoOn: { backgroundColor: C.tarjeta, boxShadow: S.tarjeta },
+  dondeVotas: { flexDirection: 'row', alignItems: 'center', gap: 12, backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 14, boxShadow: S.tarjeta },
+  dondeBoton: { backgroundColor: C.tinta, borderRadius: R.boton, paddingHorizontal: 14, paddingVertical: 10 },
   aviso: { marginTop: 12, backgroundColor: C.avisoFondo, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 9 },
   compartirBoton: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingHorizontal: 16, paddingVertical: 11, borderRadius: R.boton, backgroundColor: C.amarillo },
   dosColumnas: { flexDirection: 'row', alignItems: 'flex-start', gap: 40 },

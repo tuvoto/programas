@@ -7,7 +7,7 @@ import { Ficha } from '../lib/ficha';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, F, M, R, S, T } from '../theme';
+import { C, F, M, R, S, T, nivel } from '../theme';
 
 type Props = { ficha: Ficha; onVolver: () => void };
 
@@ -103,7 +103,7 @@ function Dato({ nombre, valor }: { nombre: string; valor: string }) {
 function Seccion({ titulo, propuestas, desde, archivo }: { titulo: string; propuestas: Propuesta[]; desde: number; archivo?: string }) {
   return (
     <View style={{ marginTop: 26 }}>
-      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         {titulo}
       </Text>
       <View style={{ marginTop: 6 }}>

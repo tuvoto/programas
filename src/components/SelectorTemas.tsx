@@ -6,7 +6,7 @@ import { propuestasDe } from '../data/propuestas';
 import { TEMAS } from '../data/temas';
 import Pulsable from './Pulsable';
 import Icono, { NombreIcono } from './Icono';
-import { C, R, S, T } from '../theme';
+import { C, R, S, T, nivel } from '../theme';
 
 type Props = { partido: Partido; visible: boolean; onCerrar: () => void };
 
@@ -40,7 +40,7 @@ export default function SelectorTemas({ partido: p, visible, onCerrar }: Props) 
           <View style={s.cabecera}>
             <View style={{ flex: 1, gap: 2 }}>
               <Text style={[T.etiqueta, { color: C.suave, fontSize: 13 }]}>{p.nombre}</Text>
-              <Text style={[T.seccion, { color: C.tinta, fontSize: 20 }]} accessibilityRole="header">
+              <Text style={[T.seccion, { color: C.tinta, fontSize: 20 }]} accessibilityRole="header" {...nivel(2)}>
                 Elige los temas
               </Text>
             </View>

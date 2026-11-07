@@ -1,6 +1,6 @@
 import { ComponentProps, useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Tabs } from 'expo-router';
+import { Tabs, router, usePathname } from 'expo-router';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 import Icono, { NombreIcono } from './Icono';
@@ -23,50 +23,69 @@ export default function BarraPestanas(props: BarraProps & { posicion?: PosicionB
   return <BarraMovil {...props} />;
 }
 
-function MenuEscritorio({ state, descriptors, navigation }: BarraProps) {
+// Secciones fijas de la web (las mismas que las pestañas).
+const SECCIONES = [
+  { name: 'index', titulo: 'Temas', ruta: '/' },
+  { name: 'test', titulo: 'Test', ruta: '/test' },
+  { name: 'partidos', titulo: 'Partidos', ruta: '/partidos' },
+  { name: 'vota', titulo: 'Cómo votar', ruta: '/vota' },
+] as const;
+
+function MenuEscritorio({ state, navigation }: BarraProps) {
   const ir = (i: number) => {
     const route = state.routes[i];
     const ev = navigation.emit({ type: 'tabPress', target: route.key, canPreventDefault: true });
     if (state.index !== i && !ev.defaultPrevented) navigation.navigate(route.name, route.params);
   };
-  const marca = (
-    <Pressable onPress={() => ir(0)} style={e.marca} accessibilityRole="link" accessibilityLabel="TuVoto, inicio">
-      <Logo tam={26} />
-      <Text style={[T.seccion, { color: C.tinta, fontSize: 22 }]}>TuVoto</Text>
-      <View style={e.noOficial}>
-        <Text style={[T.etiqueta, { color: C.suave, fontSize: 11.5 }]}>No oficial</Text>
-      </View>
-    </Pressable>
-  );
-  const enlaces = state.routes.map((route, i) => {
-    const activa = state.index === i;
-    const { options } = descriptors[route.key];
-    const titulo = typeof options.title === 'string' ? options.title : route.name;
-    const color = activa ? C.sobreTinta : C.tinta;
-    return (
-      <Pressable
-        key={route.key}
-        accessibilityRole="tab"
-        accessibilityState={{ selected: activa }}
-        onPress={() => ir(i)}
-        style={({ hovered, pressed }: { hovered?: boolean; pressed: boolean }) => [
-          e.item,
-          activa ? { backgroundColor: C.tinta } : (hovered || pressed) && { backgroundColor: C.relleno },
-        ]}
-      >
-        <Icono nombre={ICONOS[route.name] ?? 'info'} tam={18} color={color} peso={activa ? 'fill' : 'regular'} />
-        <Text style={[T.etiqueta, { color, fontSize: 14.5 }]}>{titulo}</Text>
-      </Pressable>
-    );
-  });
+  const activa = SECCIONES.findIndex((x) => x.name === state.routes[state.index]?.name);
+  return <CabeceraEscritorio activa={activa} onIr={(i) => ir(state.routes.findIndex((r) => r.name === SECCIONES[i].name))} />;
+}
+
+// Cabecera de la web en pantallas anchas. La usan las pestañas y también las
+// páginas de detalle (tema, partido, ficha, buscar…), para que el menú esté
+// siempre en el mismo sitio, como en cualquier web.
+export function CabeceraEscritorio({ activa, onIr }: { activa: number; onIr: (i: number) => void }) {
   return (
     <View style={e.arriba}>
       <View style={e.arribaDentro} accessibilityRole="tablist">
-        {marca}
-        <View style={{ flexDirection: 'row', gap: 4 }}>{enlaces}</View>
+        <Pressable onPress={() => onIr(0)} style={e.marca} accessibilityRole="link" accessibilityLabel="TuVoto, inicio">
+          <Logo tam={26} />
+          <Text style={[T.seccion, { color: C.tinta, fontSize: 22 }]}>TuVoto</Text>
+          <View style={e.noOficial}>
+            <Text style={[T.etiqueta, { color: C.suave, fontSize: 11.5 }]}>No oficial</Text>
+          </View>
+        </Pressable>
+        <View style={{ flexDirection: 'row', gap: 4 }}>
+          {SECCIONES.map((x, i) => {
+            const on = activa === i;
+            const color = on ? C.sobreTinta : C.tinta;
+            return (
+              <Pressable
+                key={x.name}
+                accessibilityRole="tab"
+                accessibilityState={{ selected: on }}
+                onPress={() => onIr(i)}
+                style={({ hovered, pressed }: { hovered?: boolean; pressed: boolean }) => [
+                  e.item,
+                  on ? { backgroundColor: C.tinta } : (hovered || pressed) && { backgroundColor: C.relleno },
+                ]}
+              >
+                <Icono nombre={ICONOS[x.name] ?? 'info'} tam={18} color={color} peso={on ? 'fill' : 'regular'} />
+                <Text style={[T.etiqueta, { color, fontSize: 14.5 }]}>{x.titulo}</Text>
+              </Pressable>
+            );
+          })}
+        </View>
       </View>
     </View>
   );
+}
+
+// En las páginas de detalle se marca la sección de la que cuelgan.
+export function CabeceraPaginas() {
+  const ruta = usePathname();
+  const activa = /^\/(partido|cara-a-cara)/.test(ruta) ? 2 : /^\/(voto-correo|documento)/.test(ruta) ? 3 : 0;
+  return <CabeceraEscritorio activa={activa} onIr={(i) => router.navigate(SECCIONES[i].ruta)} />;
 }
 
 function BarraMovil({ state, descriptors, navigation, insets }: BarraProps) {

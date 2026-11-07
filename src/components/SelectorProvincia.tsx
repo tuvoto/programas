@@ -2,7 +2,7 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 import { COMUNIDADES, PROVINCIAS } from '../data/provincias';
 import { elegirProvincia } from '../lib/provincia';
 import Pulsable from './Pulsable';
-import { C, R, S, T } from '../theme';
+import { C, R, S, T, nivel } from '../theme';
 
 // `pregunta`: se abre solo al entrar en Partidos; explica para qué sirve y deja
 // seguir sin elegir.
@@ -21,7 +21,7 @@ export default function SelectorProvincia({ visible, actual, onCerrar, pregunta 
         <View style={s.ventana} accessibilityViewIsModal>
           <View style={s.cabecera}>
             <View style={{ flex: 1, gap: 2 }}>
-              <Text style={[T.seccion, { color: C.tinta, fontSize: 20 }]} accessibilityRole="header">
+              <Text style={[T.seccion, { color: C.tinta, fontSize: 20 }]} accessibilityRole="header" {...nivel(2)}>
                 ¿Dónde votas?
               </Text>
               <Text style={[T.meta, { color: C.suave }]}>

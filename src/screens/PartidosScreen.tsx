@@ -13,7 +13,7 @@ import SelectorProvincia from '../components/SelectorProvincia';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
 import Icono, { NombreIcono } from '../components/Icono';
-import { C, F, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, textoSobre, fondoLegible, ANCHO_MAX, ANCHO_LECTURA, CENTRADO, nivel } from '../theme';
 
 export default function PartidosScreen() {
   const [ancho, setAncho] = useState(0);
@@ -150,7 +150,7 @@ function OtrasCandidaturas({ provincia }: { provincia: Provincia }) {
   return (
     <Revelar>
       <View style={s.otras}>
-        <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+        <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
           Otras candidaturas en {provincia.nombre}
         </Text>
         {lista ? (
@@ -193,7 +193,7 @@ function Grupo({ titulo, partidos, columnas }: { titulo: string; partidos: Parti
   return (
     <>
       <Revelar>
-        <Text style={[T.seccion, { color: C.sobrePartidos, marginTop: 28 }]} accessibilityRole="header">
+        <Text style={[T.seccion, { color: C.sobrePartidos, marginTop: 28 }]} accessibilityRole="header" {...nivel(2)}>
           {titulo}
         </Text>
       </Revelar>

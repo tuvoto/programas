@@ -14,7 +14,7 @@ import Tarjeta from '../components/Tarjeta';
 import { Paralaje, Revelar, ScrollAnimado } from '../components/Revelar';
 import CuentaAtras from '../components/CuentaAtras';
 import DescargarApp from '../components/DescargarApp';
-import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
+import { C, F, HUECO_BARRA, M, R, S, T, plural, ANCHO_MAX, ANCHO_LECTURA, CENTRADO, nivel } from '../theme';
 
 type Props = { onAbrirTema: (tema: Tema) => void };
 
@@ -151,7 +151,7 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       {/* Temas */}
       <Revelar style={s.seccion}>
         <View style={s.tituloSeccion}>
-          <Text style={[T.seccion, { color: C.tinta }]} accessibilityRole="header">
+          <Text style={[T.seccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
             Temas
           </Text>
         </View>
@@ -418,5 +418,5 @@ const s = StyleSheet.create({
     boxShadow: S.tarjeta,
   },
   fuentes: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 4 },
-  fuente: { backgroundColor: C.relleno, borderRadius: 10, paddingHorizontal: 10, paddingVertical: 7 },
+  fuente: { backgroundColor: C.relleno, borderRadius: 10, paddingHorizontal: 10, paddingVertical: 9 },
 });

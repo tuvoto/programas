@@ -85,9 +85,7 @@ export default function CaraACaraScreen({ a: aInicial, b: bInicial, onVolver }: 
       </View>
 
       {!pa || !pb ? (
-        <Text style={[T.cuerpo, { color: C.suave, marginTop: 18 }]}>
-          {!pa && !pb ? 'Elige el primer partido.' : 'Ahora elige el segundo.'}
-        </Text>
+        <PorElegir pa={pa} />
       ) : (
         <>
           {/* Cabecera fija de las dos columnas */}
@@ -118,6 +116,40 @@ export default function CaraACaraScreen({ a: aInicial, b: bInicial, onVolver }: 
         </>
       )}
     </ScrollView>
+  );
+}
+
+// Antes de tener los dos: dos huecos que se van llenando, el paso en el que
+// estás y qué vas a ver después.
+function PorElegir({ pa }: { pa?: Partido }) {
+  const hueco = (p: Partido | undefined, n: number) => (
+    <View style={[s.hueco, p ? s.huecoLleno : s.huecoVacio]}>
+      {p ? (
+        <>
+          <Marca color={p.color} tam={12} />
+          <Text style={[T.cuerpoSemi, { color: C.tinta, fontSize: 16 }]} numberOfLines={1}>
+            {p.siglas}
+          </Text>
+        </>
+      ) : (
+        <Text style={[T.etiqueta, { color: C.suave, fontSize: 14 }]}>{`Partido ${n}`}</Text>
+      )}
+    </View>
+  );
+  return (
+    <View style={s.porElegir} accessibilityLiveRegion="polite">
+      <View style={s.huecos}>
+        {hueco(pa, 1)}
+        <Text style={[T.etiqueta, { color: C.suave }]}>frente a</Text>
+        {hueco(undefined, 2)}
+      </View>
+      <Text style={[T.cuerpoSemi, { color: C.tinta }]}>
+        {pa ? 'Paso 2 de 2: ahora toca el segundo partido.' : 'Paso 1 de 2: toca el primer partido de la lista.'}
+      </Text>
+      <Text style={[T.meta, { color: C.suave, maxWidth: ANCHO_LECTURA }]}>
+        Verás sus propuestas lado a lado en los {TEMAS.length} temas, de vivienda a política exterior, cada una con la página de su programa.
+      </Text>
+    </View>
   );
 }
 
@@ -206,6 +238,11 @@ function Columna({ p, lista, lado }: { p: Partido; lista: ReturnType<typeof prop
 }
 
 const s = StyleSheet.create({
+  porElegir: { marginTop: 18, gap: 10, backgroundColor: C.tarjeta, borderRadius: R.tarjeta, padding: 18, boxShadow: S.tarjeta },
+  huecos: { flexDirection: 'row', alignItems: 'center', gap: 10, flexWrap: 'wrap' },
+  hueco: { flexDirection: 'row', alignItems: 'center', gap: 8, minWidth: 110, minHeight: 44, paddingHorizontal: 14, borderRadius: R.pildora },
+  huecoVacio: { borderWidth: 2, borderStyle: 'dashed', borderColor: C.vacia },
+  huecoLleno: { backgroundColor: C.relleno },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
   volver: {
     flexDirection: 'row',

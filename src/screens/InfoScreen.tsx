@@ -8,7 +8,7 @@ import Desplegable from '../components/Desplegable';
 import AvisosTarjeta from '../components/AvisosTarjeta';
 import Pulsable from '../components/Pulsable';
 import Icono from '../components/Icono';
-import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO } from '../theme';
+import { C, F, HUECO_BARRA, M, R, T, ANCHO_MAX, ANCHO_LECTURA, CENTRADO, nivel } from '../theme';
 
 // Pestaña «Cómo votar»: tu próximo paso según la fecha, las próximas fechas, guía práctica para votar el 29-N y, al final, información
 // sobre la app. Todo en desplegables para que no sea un muro de texto.
@@ -111,7 +111,7 @@ function ProximasFechas({ hoy }: { hoy: string }) {
   if (proximas.length === 0) return null;
   return (
     <View style={{ marginTop: 18 }}>
-      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         Próximas fechas
       </Text>
       <View style={{ marginTop: 6 }}>
@@ -380,7 +380,7 @@ export default function InfoScreen() {
       )}
 
       <Revelar>
-        <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header">
+        <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header" {...nivel(2)}>
           Fuentes oficiales
         </Text>
         <Text style={[T.meta, { color: C.suave, marginTop: 4, maxWidth: ANCHO_LECTURA }]}>
@@ -396,7 +396,7 @@ export default function InfoScreen() {
       </Revelar>
 
       <Revelar>
-        <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header">
+        <Text style={[T.seccion, { color: C.tinta, marginTop: 30 }]} accessibilityRole="header" {...nivel(2)}>
           Sobre esta app
         </Text>
       </Revelar>

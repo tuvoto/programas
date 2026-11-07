@@ -1,11 +1,12 @@
-import { useEffect, useRef } from 'react';
-import { Platform } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { Platform, useWindowDimensions } from 'react-native';
 import { Stack, usePathname } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts } from 'expo-font';
 import { C } from '../theme';
 import { CONFIG } from '../config';
+import { CabeceraPaginas } from '../components/BarraPestanas';
 
 // Web: el contador cuenta solo la primera página; al cambiar de pantalla
 // dentro de la web se le avisa aquí.
@@ -38,6 +39,13 @@ export default function RootLayout() {
     Figtree_700Bold: require('../../assets/fuentes/figtree-700.ttf'),
   });
 
+  // En pantallas anchas, las páginas de detalle llevan la misma cabecera que
+  // las pestañas. Se decide después de abrir la página para que la web
+  // generada y la del navegador empiecen igual.
+  const { width } = useWindowDimensions();
+  const [ancha, setAncha] = useState(false);
+  useEffect(() => setAncha(width >= 1000), [width]);
+
   // Si las fuentes fallan, la app sigue funcionando con la fuente del sistema.
   if (!cargadas && !error) return null;
 
@@ -45,8 +53,8 @@ export default function RootLayout() {
     // Necesario para los gestos (tarjetas del test).
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar style="dark" />
-      <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: C.fondo } }}>
-        <Stack.Screen name="(tabs)" />
+      <Stack screenOptions={{ headerShown: ancha, header: () => <CabeceraPaginas />, contentStyle: { backgroundColor: C.fondo } }}>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         {/* Abrir un tema: la transición nativa de la plataforma (desliza desde la derecha) */}
         <Stack.Screen name="tema/[id]" options={{ animation: 'default' }} />
         <Stack.Screen name="ficha/[tema]/[partido]" options={{ animation: 'default' }} />

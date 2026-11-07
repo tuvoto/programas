@@ -135,3 +135,7 @@ export function suave(color: string, cuanto = 0.88): string {
   const m = c.map((v) => Math.round(v + (255 - v) * cuanto));
   return '#' + m.map((v) => v.toString(16).padStart(2, '0')).join('');
 }
+
+// Nivel del título para lectores de pantalla en la web: el título de la
+// pantalla es el 1 (por defecto) y las secciones, el 2. En el móvil no hace falta.
+export const nivel = (n: 2 | 3) => (Platform.OS === 'web' ? ({ 'aria-level': n } as object) : {});

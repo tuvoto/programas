@@ -15,7 +15,7 @@ import Pulsable from '../components/Pulsable';
 import Icono, { NombreIcono } from '../components/Icono';
 import SelectorTemas from '../components/SelectorTemas';
 import Tarjeta from '../components/Tarjeta';
-import { C, F, M, PALETA, R, S, T, suave, textoSobre, fondoLegible, ANCHO_MAX, CENTRADO } from '../theme';
+import { C, F, M, PALETA, R, S, T, suave, textoSobre, fondoLegible, ANCHO_MAX, CENTRADO, nivel } from '../theme';
 
 type Props = { partido: Partido; onVolver: () => void };
 
@@ -113,7 +113,7 @@ function Papeleta({ p, provincia }: { p: Partido; provincia: Provincia }) {
   const diputados = DIPUTADOS[provincia.nombre];
   return (
     <Tarjeta style={{ gap: 10 }}>
-      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         En tu papeleta de {provincia.nombre}
       </Text>
       <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>Congreso · se eligen {diputados}</Text>
@@ -186,7 +186,7 @@ function BloqueDescargas({ p }: { p: Partido }) {
 
   return (
     <Tarjeta style={{ gap: 10 }}>
-      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         Descargas
       </Text>
       {!p.programa.url && (
@@ -271,7 +271,7 @@ function BloqueNoticias({ p }: { p: Partido }) {
   const { estado, reintentar } = useNoticias(p.id);
   return (
     <Tarjeta style={{ gap: 4 }}>
-      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header">
+      <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         Noticias
       </Text>
       <Text style={[T.meta, { color: C.suave }]}>De los últimos 7 días.</Text>

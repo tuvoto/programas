@@ -2839,5 +2839,50 @@
    "psoe"
   ],
   "vista": "2026-11-07T04:04:28.070Z"
+ },
+ {
+  "titulo": "Encuestas elecciones generales en Galicia: resultados de PP, PSOE, Vox, Sumar y BNG y ganador el 29N según los sondeos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/encuestas-elecciones-generales-galicia-resultados-pp-psoe-20261107050017-nt.html",
+  "fecha": "2026-11-07T04:00:17.000Z",
+  "partidos": [
+   "bng",
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-07T07:17:46.733Z"
+ },
+ {
+  "titulo": "Abascal echa un pulso a Feijóo en València",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261107/11678122/abascal-echa-pulso-feijoo-valencia.html",
+  "fecha": "2026-11-07T04:30:00.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-07T07:17:46.733Z"
+ },
+ {
+  "titulo": "\"A les eleccions espanyoles votaré Vox i a les catalanes Aliança\"",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-espanyoles-votare-vox-catalanes-alianca_1_5898930.html",
+  "fecha": "2026-11-07T07:00:48.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-07T07:17:46.733Z"
+ },
+ {
+  "titulo": "Vox ja parla els fills en català",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/vox-ja-parla-fills-catala_1_5897470.html",
+  "fecha": "2026-11-07T07:00:49.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-07T07:17:46.733Z"
  }
 ]

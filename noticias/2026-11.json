@@ -2781,6 +2781,16 @@
   "vista": "2026-11-07T01:18:46.192Z"
  },
  {
+  "titulo": "José Ignacio García, líder de Adelante Andalucía: \"Para qué sirve la izquierda si vamos todos en la papeleta del PSOE\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/06/6aeb009c21efa02d2f8b4597.html",
+  "fecha": "2026-11-06T21:46:01.000Z",
+  "partidos": [
+   "adelante"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
   "titulo": "La Generalitat paga 8.000 euros a la Academia Valenciana del Tango, vinculada a un expresidente de las Corts del PP",
   "medio": "elDiario.es Comunitat Valenciana",
   "url": "https://www.eldiario.es/comunitat-valenciana/politica/generalitat-paga-8-000-euros-academia-valenciana-tango-vinculada-expresidente-corts-pp_1_13640760.html",
@@ -3369,6 +3379,16 @@
   "vista": "2026-11-07T15:52:13.400Z"
  },
  {
+  "titulo": "Nogueras posa la recaptació dels impostos a Catalunya com a condició per negociar un govern a l'Estat",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/nogueras-posa-recaptacio-dels-impostos-catalunya-condicio-negociar-govern-l_25_5903203.html",
+  "fecha": "2026-11-07T14:38:30.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
   "titulo": "Ayuso da la réplica a Sánchez en Valencia y arremete contra «la mafia que gobierna España»",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/comunitat/ayuso-replica-sanchez-valencia-arremete-mafia-gobierna-20261107155817-nt.html",
@@ -3399,6 +3419,16 @@
   "vista": "2026-11-07T15:52:13.400Z"
  },
  {
+  "titulo": "UPC se propugna para mantener «la lucha frente a los clavijos, los feijoós, los abascal»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/upc-propugna-mantener-lucha-frente-clavijos-feijoos-20261107161706-nt.html",
+  "fecha": "2026-11-07T15:17:06.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
   "titulo": "Abascal: «Quiero una España en la que no tenga que llamar mafia criminal al Gobierno»",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/castilla-la-mancha/abascal-quiero-espana-llamar-mafia-criminal-gobierno-20261107135734-nt.html",
@@ -3407,5 +3437,126 @@
    "vox"
   ],
   "vista": "2026-11-07T15:52:13.400Z"
+ },
+ {
+  "titulo": "Sánchez y Feijóo ponen las cartas bocarriba de cara al 29N",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-feijoo-muestran-sus-cartas_7058537_3.html",
+  "fecha": "2026-11-07T15:43:16.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Ayuso asegura que Sánchez tiene \"miedo\" a cambiar Moncloa \"por Soto del Real\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ayuso-asegura-que-sanchez-tiene-miedo-cambiar-moncloa-por-soto-real_7058535_0.html",
+  "fecha": "2026-11-07T15:50:06.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Ada Colau: \"Marquesa Cayetana, a usted y a sus amigos pijos los vamos a freír a impuestos\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ada-colau-marquesa-cayetana-usted-sus-amigos-pijos-los-vamos-freir-impuestos_7058538_0.html",
+  "fecha": "2026-11-07T15:51:18.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Sánchez se reúne con los padres de Guillem Agulló, el joven asesinado en 1993 por fascistas",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261107/11678791/sanchez-reune-padres-guillem-agullo-joven-antifascista-asesinado-1993-grupo-extrema-derecha-servimedia20261107.html",
+  "fecha": "2026-11-07T16:00:06.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "CC y Primero Canarias presenta sus candidaturas al 29N con el objetivo de recuperar un grupo propio en el Congreso",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/cc-canarias-presenta-candidaturas-29n-objetivo-recuperar-grupo-propio-congreso_1_13646935.html",
+  "fecha": "2026-11-07T16:06:29.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Armengol pide al PP aclarar si financia a Okdiario y los populares le exigen responsabilidades por el caso mascarillas",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/armengol-pide-pp-aclarar-si-financia-okdiario-los-populares-le-exigen-responsabilidades-por-caso-mascarillas_7058546_0.html",
+  "fecha": "2026-11-07T16:14:37.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Frente Amplio promete \"expropiar a los fondos buitre\" de vivienda y avanza una \"motosierra\" fiscal \"para los de arriba\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frente-amplio-promete-expropiar-los-fondos-buitre-vivienda-avanza-una-motosierra-fiscal-para-los-arriba_7058554_0.html",
+  "fecha": "2026-11-07T16:51:41.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Polèmica pel públic a l'entrevista de Santiago Abascal a 'La Revuelta'",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/polemica-pel-public-l-entrevista-santiago-abascal-revuelta_25_5903299.html",
+  "fecha": "2026-11-07T17:05:23.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Teodoro Sosa (Primero Canarias): “Coalición Canaria es la alianza natural, pero no somos su marca blanca”",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/teodoro-sosa-canarias-coalicion-canaria-alianza-natural-no-marca-blanca_1_13643909.html",
+  "fecha": "2026-11-07T17:35:10.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Un \"filocomunista\" i tres absències sonades: la complicada relació entre Illa i Sánchez Llibre",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/govern/filocomunista-tres-absencies-sensibles-complicada-relacio-illa-sanchez-llibre-foment-del-treball_1_5901101.html",
+  "fecha": "2026-11-07T18:00:38.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Isabel Díaz Ayuso, aclamada en Valencia: \"España necesita a Feijóo, va a cumplir, es el único que une tantas sensibilidades\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/isabel-diaz-ayuso-aclamada-valencia-espana-necesita-feijoo-cumplir-unico-sensibilidades_7058571_0.html",
+  "fecha": "2026-11-07T18:19:41.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "La creciente presión migratoria en Canarias compromete a Sánchez a convocar una Comisión Interministerial",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-07/canarias-inmigracion-comision-interministerial-clavijo-sanchez-1tps_4461084/",
+  "fecha": "2026-11-07T18:47:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T19:00:06.282Z"
  }
 ]

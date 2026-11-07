@@ -3265,6 +3265,16 @@
   "vista": "2026-11-07T15:52:13.400Z"
  },
  {
+  "titulo": "Pedro Sánchez es reuneix amb la família de Guillem Agulló 33 anys després de l'assassinat",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/govern-espanyol-compromet-reconeixer-guillem-agullo-victima-terrorisme_1_5903161.html",
+  "fecha": "2026-11-07T13:43:17.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T21:50:43.912Z"
+ },
+ {
   "titulo": "Feijóo confronta el discurso de la \"dignidad\" sobre Puente: \"Hemos visto más abrazos del PSOE y de sus socios al ministro dimitido que a las víctimas\"",
   "medio": "El Mundo",
   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/07/6aee6b98fdddff77098b456e.html",
@@ -3558,5 +3568,35 @@
    "psoe"
   ],
   "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "UPC presenta sus candidaturas a las elecciones generales como la \"única papeleta” de la izquierda canaria",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/upc-presenta-candidaturas-elecciones-generales-unica-papeleta-izquierda-canaria_1_13647204.html",
+  "fecha": "2026-11-07T19:25:45.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-07T21:50:43.912Z"
+ },
+ {
+  "titulo": "Salvador Illa: “Es una bajeza moral que Feijóo utilice a las 69 víctimas de Urda para que no se convoque la huelga general”",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/catalunya/salvador-illa-bajeza-moral-feijoo-utilice-69-victimas-urda-no-convoque-huelga-general_128_13643854.html",
+  "fecha": "2026-11-07T21:41:34.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-07T21:50:43.912Z"
+ },
+ {
+  "titulo": "El Frente Amplio se fija como meta alcanzar la barrera del 10% de los votos para iniciar la \"remontada\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/frente-amplio-fija-meta-alcanzar-barrera-10-votos-iniciar-remontada_1_13616315.html",
+  "fecha": "2026-11-07T21:41:34.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-07T21:50:43.912Z"
  }
 ]

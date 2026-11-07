@@ -2343,6 +2343,16 @@
   "vista": "2026-11-06T16:01:50.832Z"
  },
  {
+  "titulo": "Ada Colau lanza su ley \"estrella\" para expropiar viviendas a los grandes fondos de inversión",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/06/6aedcb20e9cf4ad16a8b45b0.html",
+  "fecha": "2026-11-06T13:44:53.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
   "titulo": "El candidato de Podemos en Murcia interrumpe la Feria de Vivienda al grito de ¡fuera buitres!",
   "medio": "El Mundo",
   "url": "https://www.elmundo.es/murcia/2026/11/06/6aedd991e9cf4ad56e8b458b.html",
@@ -2648,6 +2658,17 @@
   "vista": "2026-11-06T21:53:56.448Z"
  },
  {
+  "titulo": "El PSOE convierte a Valencia en el revulsivo de la campaña para confrontar con el PP de la dana tras Urda: \"No somos iguales\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/06/6aedeebee9cf4a41148b457b.html",
+  "fecha": "2026-11-06T20:17:09.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
   "titulo": "Pedro Sánchez llama a la movilización en su retorno a la precampaña: “Si se pudo en Brasil y EE UU, en España también”",
   "medio": "El País",
   "url": "https://elpais.com/espana/comunidad-valenciana/2026-11-06/pedro-sanchez-llama-a-la-movilizacion-en-su-retorno-a-la-precampana-si-se-pudo-en-brasil-y-ee-uu-en-espana-tambien.html",
@@ -2738,5 +2759,75 @@
    "pp"
   ],
   "vista": "2026-11-06T21:53:56.448Z"
+ },
+ {
+  "titulo": "Coalición Canaria inaugura una nueva sede en Arucas para reforzar su presencia en Gran Canaria",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/politica/coalicion-canaria-inaugura-nueva-sede-arucas-reforzar-20261106222831-nt.html",
+  "fecha": "2026-11-06T21:28:31.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "El modelo fanático de Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/06/6aee3c65fc6c8323738b45a8.html",
+  "fecha": "2026-11-06T21:45:51.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "La Generalitat paga 8.000 euros a la Academia Valenciana del Tango, vinculada a un expresidente de las Corts del PP",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/generalitat-paga-8-000-euros-academia-valenciana-tango-vinculada-expresidente-corts-pp_1_13640760.html",
+  "fecha": "2026-11-06T22:01:39.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "La Junta Electoral paraliza las papeletas de Unidad del Pueblo Canario hasta que se resuelva si induce a confusión",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/tribunales/papeletas-unidad-pueblo-canario-elecciones-2026_1_13645834.html",
+  "fecha": "2026-11-06T22:37:50.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "Feijóo rediseña la gestión de catástrofes: blindaje legal y ayudas inmediatas exentas de impuestos",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-redisena-gestion-catastrofes-blindaje-legal-ayudas-20261107001139-ntrc.html",
+  "fecha": "2026-11-06T23:35:24.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "«Soy muy diferente a Rufián, lo egocéntrico no tiene cabida en mi cultura política»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/diferente-rufian-egocentrico-cabida-cultura-politica-20261106005354-nt.html",
+  "fecha": "2026-11-06T23:53:54.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
+ },
+ {
+  "titulo": "Ester Muñoz: «La derecha es la esperanza de este país. Hay un deber moral de sacar a Sánchez del Gobierno»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ester-munoz-derecha-esperanza-pais-deber-moral-20261108011852-nt.html",
+  "fecha": "2026-11-07T00:19:48.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-07T01:18:46.192Z"
  }
 ]

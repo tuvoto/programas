@@ -3540,6 +3540,16 @@
   "vista": "2026-11-07T19:00:06.282Z"
  },
  {
+  "titulo": "Montero y Rufián hacen campaña antiSánchez: huelga \"contra el Gobierno\" y la corrupción de Ábalos, por ser \"cercano\" al presidente",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/07/6aef020de85ecea1368b456e.html",
+  "fecha": "2026-11-07T17:50:25.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
   "titulo": "Un \"filocomunista\" i tres absències sonades: la complicada relació entre Illa i Sánchez Llibre",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/govern/filocomunista-tres-absencies-sensibles-complicada-relacio-illa-sanchez-llibre-foment-del-treball_1_5901101.html",
@@ -3548,6 +3558,16 @@
    "psoe"
   ],
   "vista": "2026-11-07T19:00:06.282Z"
+ },
+ {
+  "titulo": "Sánchez convoca de urgencia una Comisión Interministerial de Inmigración tras la llegada de miles de inmigrantes a la isla de El Hierro",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/07/6aef6566e85ece64678b4574.html",
+  "fecha": "2026-11-07T18:02:32.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
  },
  {
   "titulo": "Isabel Díaz Ayuso, aclamada en Valencia: \"España necesita a Feijóo, va a cumplir, es el único que une tantas sensibilidades\"",
@@ -3598,5 +3618,116 @@
    "frente-amplio"
   ],
   "vista": "2026-11-07T21:50:43.912Z"
+ },
+ {
+  "titulo": "Bulos no: Vox sí defiende las pensiones",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/opinion/bulos-no-vox-si-defiende-pensiones_129_13646766.html",
+  "fecha": "2026-11-07T22:01:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "María Teresa Pérez, número uno por Alicante de Compromís-Front Valencià: \"Hay que prohibir la venta de vivienda a no residentes\"",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/alicante/maria-teresa-perez-numero-alicante-compromis-front-valencia-hay-prohibir-venta-vivienda-no-residentes_128_13644046.html",
+  "fecha": "2026-11-07T22:01:04.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "Abascal dice que El Hierro vive otra invasión: \"Han llegado 8.000 a una isla de 12.000\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/abascal-dice-hierro-vive-otra-invasion_7058602_0.html",
+  "fecha": "2026-11-07T22:36:05.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "\"Un diputado más\" en Valladolid: Feijóo eleva la meta contra la papeleta de Puente y \"la ministra de las pulseras\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/08/6aef7e3afdddffa90e8b457e.html",
+  "fecha": "2026-11-07T23:01:40.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "Puente, una dimisión que rompe algo en el PSOE",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/08/6aef6a30e85eced81a8b4598.html",
+  "fecha": "2026-11-07T23:01:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "Feijóo promete un nuevo modelo de financiación multilateral frente a los «agravios» de Sánchez",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-promete-nuevo-modelo-financiacion-multilateral-frente-20261108001203-ntrc.html",
+  "fecha": "2026-11-07T23:12:03.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "El restaurante de carretera donde comen García-Page y Abascal: bufé libre por 16 euros y más de 50 platos caseros",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/gente-estilo/restaurante-carretera-comen-garciapage-abascal-bufe-libre-20261102100316-nt.html",
+  "fecha": "2026-11-07T23:51:28.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "'La Revuelta' cancela al público convocado para la entrevista de Abascal y los cambia por asistentes de agencia para evitar abucheos",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/revuelta-cancela-publico-convocado-entrevista-abascal-cambia-20261107010130-nt.html",
+  "fecha": "2026-11-08T00:01:31.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "El perfil del nuevo votante de Vox: exabstencionistas y jóvenes que se estrenan en el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/perfil-nuevo-votante-vox-exabstencionista-jovenes-estrenan-20261023011935-nt.html",
+  "fecha": "2026-11-08T00:19:58.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "Feijóo prioriza las infraestructuras y nombrará a un ministro con perfil gestor",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-prioriza-infraestructuras-nombrara-ministro-perfil-gestor-20261108011952-nt.html",
+  "fecha": "2026-11-08T00:21:15.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
+ },
+ {
+  "titulo": "Sánchez recluta al cerebro de la remontada de Lula en redes para repetir la hazaña en España",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-confia-colaborador-lula-creacion-ejercito-activistas-20261105011940-nt.html",
+  "fecha": "2026-11-08T00:38:51.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T01:24:46.441Z"
  }
 ]

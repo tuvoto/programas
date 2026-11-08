@@ -4003,6 +4003,18 @@
   "vista": "2026-11-08T13:08:33.687Z"
  },
  {
+  "titulo": "Sánchez advierte que si PP y Vox gobiernan se plegarán a Trump: “Estos tragan con todo”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261108/11679248/sanchez-advierte-pp-vox-gobiernan-plegaran-trump-tragan.html",
+  "fecha": "2026-11-08T12:42:45.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
   "titulo": "Feijóo carga contra Sánchez: \"Menos mirar a Trump y más mirar los trenes, que este país está colapsado\"",
   "medio": "El Confidencial",
   "url": "https://www.elconfidencial.com/espana/2026-11-08/feijoo-mitin-moreno-malaga-precampana-elecciones_4461271/",
@@ -4025,6 +4037,27 @@
   "vista": "2026-11-08T13:08:33.687Z"
  },
  {
+  "titulo": "Irene Montero acusa al Gobierno de un aumento \"premeditado\" de la \"violencia policial\" contra las movilizaciones",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/irene-montero-acusa-gobierno-un-aumento-premeditado-violencia-policial-contra-las-movilizaciones_7058674_0.html",
+  "fecha": "2026-11-08T12:53:40.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Colau apela al voto útil frente a un PSOE al que le “tiemblan las piernas” ante los poderosos",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261108/11679247/colau-apela-voto-util-frente-psoe-le-tiemblan-piernas-poderosos.html",
+  "fecha": "2026-11-08T12:54:01.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
   "titulo": "Feijóo exige que los directivos de Adif devuelvan las gratificaciones cobradas tras el accidente de Urda: «Es vomitivo»",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/andalucia/malaga/feijoo-exige-directivos-adif-devuelvan-gratificaciones-cobradas-20261108133455-nts.html",
@@ -4035,14 +4068,35 @@
   "vista": "2026-11-08T13:08:33.687Z"
  },
  {
+  "titulo": "Feijóo pide en Málaga un “apoyo fuerte” para un “cambio claro y rotundo”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261108/11679252/feijoo-pide-malaga-apoyo-fuerte-cambio-claro-rotundo.html",
+  "fecha": "2026-11-08T12:54:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
   "titulo": "Rufián i Junqueras pugen al mateix escenari per arrencar la cursa cap al 29-N",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/eleccions-generals/rufian-junqueras-pugen-mateix-escenari-arrencar-cursa-cap-29-n_1_5903989.html",
   "fecha": "2026-11-08T12:58:52.000Z",
   "partidos": [
-   "erc"
+   "erc",
+   "junts"
   ],
   "vista": "2026-11-08T13:08:33.687Z"
+ },
+ {
+  "titulo": "Puigdemont va per sorpresa a Prats de Molló per inaugurar la Casa Macià",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/puigdemont-sorpresa-prats-mollo-inaugurar-casa-macia_25_5904101.html",
+  "fecha": "2026-11-08T13:01:34.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
  },
  {
   "titulo": "El BNG se proclama como la alternativa que defiende a Galicia y a la mayoría social para lograr un «apoio masivo»",
@@ -4053,5 +4107,256 @@
    "bng"
   ],
   "vista": "2026-11-08T13:08:33.687Z"
+ },
+ {
+  "titulo": "Sánchez avisa al \"sheriff del mundo\" de que \"lo que pasa en España se decide en España\" y acusa a Feijóo y Abascal de tragar \"con todo\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-08/sanchez-psoe-trump-eeuu-feijoo-elecciones-29-n_4461274/",
+  "fecha": "2026-11-08T13:09:00.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Rufián apuesta por el catalanismo en su primer mitin en solitario: \"Quiero un PSOE sometido a fuerzas soberanistas\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/catalunya/rufian-apuesta-catalanismo-primer-mitin-solitario-quiero-psoe-sometido-fuerzas-sobreranistas_1_13647784.html",
+  "fecha": "2026-11-08T13:17:07.000Z",
+  "partidos": [
+   "erc",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Aitor Esteban: “No vamos a Madrid a ser los siervos de nadie, sino la voz de Euskadi”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/paisvasco/20261108/11679263/aitor-esteban-madrid-siervos-nadie-voz-euskadi.html",
+  "fecha": "2026-11-08T13:22:05.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Núñez advierte de que el PSOE «pagará en las urnas su nefasta gestión y su traición a España»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/nunez-advierte-psoe-pagara-urnas-nefasta-gestion-20261108142622-nt.html",
+  "fecha": "2026-11-08T13:26:23.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "<![CDATA[Fotos del acto del PP con Cayetana Álvarez de Toledo]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/multimedia/galerias-imagenes/navarra/2026/11/08/fotos-acto-pp-cayetana-alvarez-toledo.html",
+  "fecha": "2026-11-08T13:40:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Feijóo pide a Sánchez \"menos mirar a Trump y más a los trenes\" y a los directivos de Adif devolver las gratificaciones que han cobrado",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/feijoo-pide-sanchez-menos-mirar-trump-mas-trenes-directivos-adif-devolver-gratificaciones-han-cobrado_7058678_0.html",
+  "fecha": "2026-11-08T13:43:31.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Puigdemont acude a la inauguración de la Casa Macià en Francia, a 13 kilómetros de la frontera con España",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/puigdemont-acude-inauguracion-casa-macia-francia-kilometros-20261108144220-ntrc.html",
+  "fecha": "2026-11-08T13:43:38.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "<![CDATA[Maillo defiende en Pamplona el \"voto útil\" al Frente Amplio para hacer \"cambios estructurales\" que el PSOE \"no se atreve\"]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/08/maillo-defiende-pamplona-voto-util-frente-amplio-cambios-estructurales-psoe-no-atreve-841697-15.html",
+  "fecha": "2026-11-08T13:47:31.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Rufián aboga por \"intervenir de una vez por todas\" el mercado de la vivienda y \"freír a impuestos a los acumuladores\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/rufian-aboga-por-intervenir-una-vez-por-todas-mercado-vivienda-freir-impuestos-los-acumuladores_7058680_0.html",
+  "fecha": "2026-11-08T13:58:33.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Vox pide una tarjeta sanitaria única y poder recibir los mismos tratamientos en toda España",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/vox-pide-tarjeta-sanitaria-unica-poder-recibir-20261108145010-nt.html",
+  "fecha": "2026-11-08T14:01:45.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Nogueras acusa a ERC de hacer seguidismo del PSOE",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261108/11679269/nogueras-acusa-erc-seguidismo-psoe-rufian-le-reprocha-pactos-pp-vox.html",
+  "fecha": "2026-11-08T14:01:47.000Z",
+  "partidos": [
+   "erc",
+   "junts",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Rufián apela al apoyo de los socialistas “decepcionados”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261108/11679271/rufian-apela-apoyo-socialistas-decepcionados.html",
+  "fecha": "2026-11-08T14:10:18.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Frente Amplio aspira al 10% de los votos y Colau dice que se presenta \"para hacer efectivo el derecho a la vivienda\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frente-amplio-aspira-10-los-votos-colau-dice-que-se-presenta-para-hacer-efectivo-derecho-vivienda_7058683_0.html",
+  "fecha": "2026-11-08T14:33:53.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "El PSOE acusa a Núñez de hacer una oposición basada en el «ruido y los bulos»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/psoe-acusa-nunez-oposicion-basada-ruido-bulos-20261108154452-nt.html",
+  "fecha": "2026-11-08T14:44:52.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Junts s'erigeix com \"l'únic\" partit que defensa els interessos dels catalans i acusa PSC i ERC de \"no haver-ho fet quan han pogut\"",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/junts-s-erigeix-l-unic-partit-defensa-interessos-dels-catalans-acusa-psc-erc-no-ho-fet-han-pogut_25_5904134.html",
+  "fecha": "2026-11-08T14:49:13.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Sánchez deja de lado el accidente de Urda y dice que blindará las pensiones y el aborto en la Constitución",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-deja-lado-accidente-urda-dice-que-blindara-las-pensiones-aborto-constitucion_7058690_0.html",
+  "fecha": "2026-11-08T14:51:01.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Feijóo reforçarà \"la presència de l'Estat\" a Catalunya si governa després del 29-N",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/feijoo-reforcara-presencia-l-catalunya-governa-despres-29-n_25_5904140.html",
+  "fecha": "2026-11-08T14:56:59.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Ada Colau, sobre sus trabajos antes de la política: «He estado en una consultora de comunicación, en producción de televisión y de traductora. Todos los trabajos eran precarios»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/ada-colau-sobre-trabajos-politica-trabajado-consultora-20261108160000-nt.html",
+  "fecha": "2026-11-08T15:00:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Sánchez moviliza al Ejército del Aire para trasladar a inmigrantes de El Hierro a Madrid",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/canarias/sanchez-moviliza-ejercito-aire-trasladar-inmigrantes-hierro-20261108160225-nt.html",
+  "fecha": "2026-11-08T15:02:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Velázquez reivindica la fuerza municipal del PP para afrontar las elecciones del 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/pueblos/velazquez-reivindica-fuerza-municipal-pp-afrontar-elecciones-20261108160635-nt.html",
+  "fecha": "2026-11-08T15:06:36.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Sánchez acusa Feijóo de voler-se \"empassar\" les directrius de Trump",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/sanchez-acusa-feijoo-voler-empassar-directrius-trump_25_5904147.html",
+  "fecha": "2026-11-08T15:07:03.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Feijóo reivindica su sobriedad frente a Sánchez: «Se acabó el espectáculo, empieza la gestión»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-reivindica-sobriedad-frente-sanchez-acabo-espectaculo-20261108144608-ntrc.html",
+  "fecha": "2026-11-08T15:07:41.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Feijóo pone a Andalucía como ejemplo contra la corrupción socialista",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/malaga/feijoo-pone-andalucia-ejemplo-corrupcion-socialista-20261108161653-nts.html",
+  "fecha": "2026-11-08T15:22:05.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
+ },
+ {
+  "titulo": "Martínez considera que votar a Vox o al PP «es lo mismo»: «Quien quiera engañarse, que se engañe»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/martinez-considera-votar-vox-pp-quiera-enganarse-20261108161315-nt.html",
+  "fecha": "2026-11-08T15:28:52.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-08T15:51:59.275Z"
  }
 ]

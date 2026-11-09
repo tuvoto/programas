@@ -342,7 +342,8 @@ const s = StyleSheet.create({
   tema: {
     flex: 1,
     backgroundColor: C.tarjeta,
-    borderRadius: R.tarjeta,
+    // Esquinas suaves: más sobrias que el resto de tarjetas.
+    borderRadius: 8,
     padding: 14,
     gap: 12,
     minHeight: 136,
@@ -373,7 +374,7 @@ const s = StyleSheet.create({
     paddingHorizontal: 6,
     paddingVertical: 12,
     backgroundColor: C.tarjeta,
-    borderRadius: R.tarjeta,
+    borderRadius: 8,
     boxShadow: S.tarjeta,
   },
   datos: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 10 },

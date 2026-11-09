@@ -51,7 +51,7 @@ export const MEDIOS: { medio: string; corto: string; web: string; rss: string | 
   { medio: 'elDiario.es Galicia', corto: 'elDG', web: 'https://www.eldiario.es', zona: 'Galicia', rss: ['https://www.eldiario.es/rss/galicia/'] },
   { medio: 'Canarias7', corto: 'C7', web: 'https://www.canarias7.es', zona: 'Canarias', rss: ['https://www.canarias7.es/rss/2.0/portada', 'https://www.canarias7.es/rss/2.0/?section=politica'] },
   { medio: 'Canarias Ahora', corto: 'CanA', web: 'https://www.eldiario.es', zona: 'Canarias', rss: ['https://www.eldiario.es/rss/canariasahora/'] },
-  { medio: 'Diario de Navarra', corto: 'DNav', web: 'https://www.diariodenavarra.es', zona: 'Navarra', rss: ['https://www.diariodenavarra.es/rss/portada.xml', 'https://www.diariodenavarra.es/rss/navarra.xml'] },
+  { medio: 'Diario de Navarra', corto: 'DNav', web: 'https://www.diariodenavarra.es', zona: 'Navarra', rss: ['https://www.diariodenavarra.es/rss/navarra.xml'] },
   { medio: 'elDiario.es Navarra', corto: 'elDN', web: 'https://www.eldiario.es', zona: 'Navarra', rss: ['https://www.eldiario.es/rss/navarra/'] },
   { medio: 'El Correo', corto: 'Corr', web: 'https://www.elcorreo.com', zona: 'País Vasco', rss: ['https://www.elcorreo.com/rss/atom/?section=politica', 'https://www.elcorreo.com/rss/2.0/portada/'] },
   { medio: 'elDiario.es Catalunya', corto: 'elDC', web: 'https://www.eldiario.es', zona: 'Cataluña', rss: ['https://www.eldiario.es/rss/catalunya/'] },

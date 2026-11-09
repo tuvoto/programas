@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ActivityIndicator, Image, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Partido, sePresentaEn } from '../data/partidos';
 import { provinciaPorId, Provincia } from '../data/provincias';
-import { DIPUTADOS } from '../data/escanos';
+import { senado } from '../data/escanos';
 import { BOE_LISTAS, listaDe } from '../data/listas';
 import { useProvincia } from '../lib/provincia';
 import { propuestasDe } from '../data/propuestas';
@@ -107,16 +107,29 @@ function BloquePapeleta({ p }: { p: Partido }) {
   return <Papeleta p={p} provincia={provincia} />;
 }
 
+// Cuántos nombres se ven en la papeleta del Congreso antes de «Ver los N».
+const VISIBLES = 5;
+const ISLAS = ['Illes Balears', 'Las Palmas', 'Santa Cruz de Tenerife'];
+
+// Qué haces con la papeleta del Senado, en media frase.
+function reglaSenado(provincia: string) {
+  if (provincia === 'Ceuta' || provincia === 'Melilla') return 'marca 1 con una X';
+  if (ISLAS.includes(provincia)) return 'marca con una X (depende de tu isla)';
+  return 'marca hasta 3 con una X';
+}
+
+// Las dos papeletas dibujadas como te las encontrarás: la blanca del Congreso
+// (se mete tal cual) y la sepia del Senado (se marcan casillas). Sin suplentes.
 function Papeleta({ p, provincia }: { p: Partido; provincia: Provincia }) {
   const [abierta, setAbierta] = useState(false);
   const lista = listaDe(p.id, provincia.nombre);
-  const diputados = DIPUTADOS[provincia.nombre];
+  const larga = !!lista && lista.congreso.length > VISIBLES + 1;
+  const nombres = lista ? (larga && !abierta ? lista.congreso.slice(0, VISIBLES) : lista.congreso) : [];
   return (
-    <Tarjeta style={{ gap: 10 }}>
+    <Tarjeta style={{ gap: 12 }}>
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
-        En tu papeleta de {provincia.nombre}
+        Tu papeleta en {provincia.nombre}
       </Text>
-      <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>Congreso · se eligen {diputados}</Text>
       {!lista ? (
         <Text style={[T.cuerpo, { color: C.avisoTexto }]}>
           Los nombres de los candidatos se publican en el BOE: las candidaturas presentadas, el 28 de octubre, y las
@@ -124,59 +137,67 @@ function Papeleta({ p, provincia }: { p: Partido; provincia: Provincia }) {
         </Text>
       ) : (
         <>
-          {!abierta ? (
-            <View style={{ gap: 1 }}>
-              <Text style={[T.cuerpoSemi, { color: C.tinta, fontSize: 18 }]}>{lista.congreso[0]}</Text>
-              <Text style={[T.meta, { color: C.suave }]}>Cabeza de lista</Text>
-            </View>
-          ) : (
-            <View style={{ gap: 6 }}>
-              {lista.congreso.map((n, i) => (
-                <View key={n} style={{ flexDirection: 'row', gap: 10 }}>
-                  <Text style={[T.cuerpoSemi, { color: C.suave, width: 22, textAlign: 'right' }]}>{i + 1}</Text>
-                  <Text style={[i === 0 ? T.cuerpoSemi : T.cuerpo, { color: C.tinta, flex: 1 }]}>{n}</Text>
+          <Text style={s.papeletaTitulo}>
+            Congreso <Text style={s.papeletaRegla}>· la metes tal cual</Text>
+          </Text>
+          <View style={[s.papeleta, s.papeletaBlanca]}>
+            <Text style={s.papeletaCabecera}>CONGRESO · {provincia.nombre.toUpperCase()}</Text>
+            <Text style={s.papeletaPartido}>{p.siglas}</Text>
+            {nombres.map((n) => (
+              <Text key={n} style={s.papeletaNombre}>{n}</Text>
+            ))}
+            {larga && (
+              <Pulsable onPress={() => setAbierta(!abierta)} style={s.papeletaMas} vibracion="seleccion" accessibilityRole="button" accessibilityState={{ expanded: abierta }}>
+                <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14 }]}>
+                  {abierta ? 'Ver menos' : `Ver los ${lista.congreso.length} nombres`}
+                </Text>
+                <View style={{ transform: [{ rotate: abierta ? '-90deg' : '90deg' }] }}>
+                  <Icono nombre="next" tam={12} color={C.tinta} peso="bold" />
                 </View>
-              ))}
-              {lista.suplentes.length > 0 && (
-                <>
-                  <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi, marginTop: 4 }]}>Suplentes</Text>
-                  <Text style={[T.cuerpo, { color: C.tinta }]}>{lista.suplentes.join(' · ')}</Text>
-                </>
-              )}
-            </View>
-          )}
+              </Pulsable>
+            )}
+          </View>
           {lista.aviso && <Text style={[T.meta, { color: C.avisoTexto }]}>{lista.aviso}</Text>}
-          <Pulsable onPress={() => setAbierta(!abierta)} style={s.verLista} vibracion="seleccion" accessibilityRole="button" accessibilityState={{ expanded: abierta }}>
-            <Text style={[T.etiqueta, { color: C.tinta, fontSize: 14, flex: 1 }]}>
-              {abierta
-                ? 'Ocultar la lista'
-                : `Ver la lista completa (${lista.congreso.length}${lista.suplentes.length ? ` + ${lista.suplentes.length} suplentes` : ''})`}
-            </Text>
-            <View style={{ transform: [{ rotate: abierta ? '-90deg' : '90deg' }] }}>
-              <Icono nombre="next" tam={14} color={C.tinta} peso="bold" />
-            </View>
-          </Pulsable>
           {lista.senado.length > 0 && (
-            <View style={{ gap: 4, borderTopWidth: 1, borderTopColor: C.linea, paddingTop: 10 }}>
-              <Text style={[T.meta, { color: C.suave, fontFamily: F.textoSemi }]}>
-                Senado{lista.senadoCandidatura ? ` · en la candidatura ${lista.senadoCandidatura}` : ''}
+            <>
+              <Text style={[s.papeletaTitulo, { marginTop: 4 }]}>
+                Senado <Text style={s.papeletaRegla}>· {reglaSenado(provincia.nombre)}</Text>
               </Text>
-              <Text style={[T.cuerpo, { color: C.tinta }]}>{lista.senado.join(' · ')}</Text>
-            </View>
+              <View style={[s.papeleta, s.papeletaSepia]}>
+                <Text style={[s.papeletaCabecera, { color: SEPIA.texto, borderBottomColor: SEPIA.linea }]}>
+                  SENADO · {provincia.nombre.toUpperCase()}
+                </Text>
+                {lista.senadoCandidatura && <Text style={s.papeletaCandidatura}>{lista.senadoCandidatura}</Text>}
+                <View style={{ gap: 10, marginTop: 4 }}>
+                  {lista.senado.map((n) => (
+                    <View key={n} style={{ flexDirection: 'row', gap: 12, alignItems: 'center' }}>
+                      <View style={s.casilla} />
+                      <Text style={[T.cuerpo, { color: C.tinta, flex: 1 }]}>{n}</Text>
+                    </View>
+                  ))}
+                </View>
+              </View>
+            </>
           )}
-          {!BOE_LISTAS.proclamadas && (
-            <Text style={[T.meta, { color: C.suave }]}>Candidaturas presentadas. Las definitivas se publican el 3 de noviembre.</Text>
-          )}
-          {BOE_LISTAS.url && (
-            <Pulsable onPress={() => Linking.openURL(BOE_LISTAS.url!)} style={{ alignSelf: 'flex-start' }} accessibilityRole="link">
-              <Text style={[T.meta, { color: C.suave, textDecorationLine: 'underline' }]}>Fuente: BOE</Text>
-            </Pulsable>
-          )}
+          {ISLAS.includes(provincia.nombre) && <Text style={[T.meta, { color: C.suave }]}>Senado: {senado(provincia.nombre)}</Text>}
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
+            <Text style={[T.meta, { color: C.suave, flex: 1 }]}>
+              {!BOE_LISTAS.proclamadas ? 'Candidaturas presentadas. Las definitivas se publican el 3 de noviembre.' : lista.senado.length > 0 ? 'En la del Senado salen también los demás partidos.' : 'Listas oficiales'}
+            </Text>
+            {BOE_LISTAS.url && (
+              <Pulsable onPress={() => Linking.openURL(BOE_LISTAS.url!)} accessibilityRole="link" accessibilityLabel="Fuente: BOE">
+                <Text style={[T.meta, { color: C.suave, textDecorationLine: 'underline', fontFamily: F.textoSemi }]}>BOE ↗</Text>
+              </Pulsable>
+            )}
+          </View>
         </>
       )}
     </Tarjeta>
   );
 }
+
+// Colores de la papeleta del Senado (sepia, como la de verdad).
+const SEPIA = { fondo: '#F1E6CF', linea: 'rgba(110, 88, 48, 0.22)', borde: '#8C7650', texto: '#6E5830' };
 
 // Dos descargas: un PDF con sus propuestas de los temas que elijas y el programa completo.
 function BloqueDescargas({ p }: { p: Partido }) {
@@ -347,7 +368,17 @@ function BloqueNoticias({ p }: { p: Partido }) {
 const s = StyleSheet.create({
   iconoMedio: { width: 18, height: 18, borderRadius: 4 },
   miniatura: { width: 96, height: 72, borderRadius: 12, backgroundColor: C.relleno },
-  verLista: { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: C.relleno, borderRadius: 12, paddingVertical: 11, paddingHorizontal: 12 },
+  papeletaTitulo: { fontFamily: F.textoSemi, fontSize: 15, lineHeight: 20, color: C.tinta },
+  papeletaRegla: { fontFamily: F.texto, color: C.suave },
+  papeleta: { borderRadius: 6, paddingVertical: 14, paddingHorizontal: 16, gap: 2 },
+  papeletaBlanca: { backgroundColor: C.tarjeta, borderWidth: 1, borderColor: C.linea, boxShadow: '0px 8px 20px -10px rgba(22, 17, 68, 0.18)' },
+  papeletaSepia: { backgroundColor: SEPIA.fondo, boxShadow: '0px 8px 20px -10px rgba(22, 17, 68, 0.18)' },
+  papeletaCabecera: { fontFamily: F.textoNegrita, fontSize: 11, letterSpacing: 1.2, color: C.suave, textAlign: 'center', paddingBottom: 8, marginBottom: 8, borderBottomWidth: 1, borderBottomColor: C.linea },
+  papeletaPartido: { fontFamily: F.titular, fontSize: 18, lineHeight: 24, color: C.tinta, textAlign: 'center', marginBottom: 4 },
+  papeletaNombre: { ...T.cuerpo, lineHeight: 25, color: C.tinta, textAlign: 'center' },
+  papeletaMas: { flexDirection: 'row', alignSelf: 'center', alignItems: 'center', gap: 6, marginTop: 8, paddingVertical: 8, paddingHorizontal: 14, borderRadius: R.pildora, backgroundColor: C.relleno },
+  papeletaCandidatura: { fontFamily: F.textoSemi, fontSize: 13, lineHeight: 18, color: SEPIA.texto, textAlign: 'center' },
+  casilla: { width: 18, height: 18, borderWidth: 1.6, borderColor: SEPIA.borde, backgroundColor: '#FFFAF0', borderRadius: 2 },
   contenedor: { ...CENTRADO, paddingHorizontal: M, paddingTop: 12, paddingBottom: 48 },
   volver: {
     flexDirection: 'row',

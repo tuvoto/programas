@@ -70,7 +70,11 @@ async function comprobar(url) {
       return { estado: 'roto', codigo: r.status };
     } catch (e) {
       if (method === 'HEAD') continue;
-      return { estado: 'roto', codigo: e.cause?.code ?? e.name };
+      const codigo = e.cause?.code ?? e.name;
+      // Webs con el certificado mal instalado (les falta el intermedio): el
+      // navegador las abre bien, pero Node no puede comprobarlas.
+      if (/CERT|SIGNATURE|ISSUER/.test(codigo)) return { estado: 'bloqueado', codigo };
+      return { estado: 'roto', codigo };
     }
   }
 }
@@ -105,6 +109,12 @@ if (bloqueados.length) {
   console.log('⚠️  No dejan comprobarlos automáticamente (ábrelos a mano):');
   for (const r of bloqueados) console.log(`   [${r.codigo}] ${r.url}`);
   console.log('');
+}
+// En GitHub Actions, además, cada fallo sale como aviso en la página de la
+// ejecución (se ve sin abrir el registro y sin iniciar sesión).
+if (process.env.GITHUB_ACTIONS) {
+  for (const a of faltan) console.log(`::error title=Falta un PDF::${a}`);
+  for (const r of rotos) console.log(`::error title=Enlace roto (${r.codigo})::${r.url} — en ${[...donde.get(r.url)].join(', ')}`);
 }
 if (!rotos.length && !faltan.length) console.log('✅ No hay enlaces rotos.');
 process.exit(rotos.length || faltan.length ? 1 : 0);

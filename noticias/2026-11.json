@@ -5555,6 +5555,17 @@
   "vista": "2026-11-09T19:12:10.487Z"
  },
  {
+  "titulo": "El PP accepta la proposta del PSOE que els debats electorals siguin a l'Acadèmia de Televisió",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/pp-accepta-proposta-psoe-debats-electorals-siguin-l-academia-televisio_25_5905482.html",
+  "fecha": "2026-11-09T18:52:14.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
   "titulo": "El PNV apuesta en su programa por una migración «ordenada y planificada»",
   "medio": "El Correo",
   "url": "https://www.elcorreo.com/politica/pnv-apuesta-programa-migracion-ordenada-planificada-20261109195330-nt.html",
@@ -5563,5 +5574,97 @@
    "pnv"
   ],
   "vista": "2026-11-09T19:12:10.487Z"
+ },
+ {
+  "titulo": "Pedro Sánchez anuncia la fecha en la que visitará Canarias en su campaña de cara al 29N",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/pedro-sanchez-fecha-canarias-29n_1_13650803.html",
+  "fecha": "2026-11-09T19:39:55.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Feijóo: «Vamos a cambiar un Gobierno que sirve a Sánchez por otro que sirva a España»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/baleares/feijoo-vamos-cambiar-gobierno-sirve-sanchez-sirva-20261109204124-nt.html",
+  "fecha": "2026-11-09T19:49:26.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Feijóo promete crear un plan de choque para proteger la frontera marítima y combatir a las mafias en la ruta Argelia-Baleares",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/baleares/2026/11/09/6af2070de4d4d804028b459a.html",
+  "fecha": "2026-11-09T20:01:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Santiago Abascal, en 'La Revuelta', en directo | Abascal, sobre el problema de la vivienda: \"No se construye y cada vez entra más gente\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/santiago-abascal-revuelta-directo-broncano-entrevista-lider-vox-marcada-por-cambios-publico-previsto_7058937_6.html",
+  "fecha": "2026-11-09T20:15:01.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Sánchez pide a la Justicia que investigue los pagos a Koldo García para que mintiera contra el Gobierno",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/sanchez-pide-justicia-investigue-pagos-koldo-garcia-mintiera-gobierno_1_13650855.html",
+  "fecha": "2026-11-09T20:48:35.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "El corte de Pedro Sánchez a Javier Ruiz en 'La Séptima': «Pero qué estás diciendo»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/pedro-sanchez-saca-pecho-septima-espana-vive-20261109214842-nt.html",
+  "fecha": "2026-11-09T20:57:55.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Abascal en 'La Revuelta', hoy en directo: “La de Sánchez es la única entrevista vuestra que he visto. Me reí”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11680253/entrevista-santiago-abascal-la-revuelta-david-broncano-ultima-hora-hoy-en-directo.html",
+  "fecha": "2026-11-09T21:24:20.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "El regalo de Abascal a Broncano en ‘La Revuelta’: “Tiene que ver con la dignidad de todos nosotros”",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-09/regalo-abascal-broncano-revuelta-television-vox_4461798/",
+  "fecha": "2026-11-09T21:34:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "El president espanyol diu que treballa perquè el 29-N diguin “Pedro Sánchez, quin fill de...”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/president-espanyol-diu-treballa-perque-29-n-diguin-pedro-sanchez-quin-fill_1_5905626.html",
+  "fecha": "2026-11-09T21:38:20.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T21:59:53.667Z"
  }
 ]

@@ -4626,6 +4626,16 @@
   "vista": "2026-11-09T07:44:31.836Z"
  },
  {
+  "titulo": "El PP ampliará hasta los 50 años de edad el aval público para pagar la entrada de una casa",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-09/el-pp-ampliara-hasta-los-50-anos-de-edad-el-aval-publico-para-pagar-la-entrada-de-una-casa.html",
+  "fecha": "2026-11-09T04:30:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
   "titulo": "El factor Sánchez decanta el voto vasco",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261109/11679345/factor-sanchez-decanta-voto-vasco.html",
@@ -4761,5 +4771,78 @@
    "psoe"
   ],
   "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Feijóo y Abascal acusan a Sánchez de usar al ejército para trasladar a migrantes de Canarias a la Península",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679617/abascal-feijoo-acusan-sanchez-ejercito-trasladar-migrantes-canarias-peninsula.html",
+  "fecha": "2026-11-09T07:57:53.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Feijóo se compromete a garantizar pensiones, un millón de nuevas viviendas y reducir el gasto superfluo",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-compromete-garantizar-pensiones-millon-nuevas-viviendas-reducir-gasto-superfluo-20261109091540.html",
+  "fecha": "2026-11-09T08:15:40.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Sánchez aparca su agenda internacional y prioriza la carrera electoral del 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679649/sanchez-aparca-agenda-internacional-prioriza-carrera-electoral-29-n.html",
+  "fecha": "2026-11-09T09:13:27.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Rufián no es presenta al segon debat electoral perquè està \"exhaust\"",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/rufian-no-presenta-segon-debat-electoral-perque-exhaust_1_5904909.html",
+  "fecha": "2026-11-09T09:37:20.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Quién es Alvise Pérez y a qué se dedicaba antes de fundar Se Acabó La Fiesta",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-09/alvise-perez-que-dedicaba-antes-fundar-acabo-fiesta_4461513/",
+  "fecha": "2026-11-09T09:44:00.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Puigdemont reconoce que le «violenta» ser español «como quien se siente mujer atrapada en el cuerpo de un hombre»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/puigdemont-reconoce-violenta-espanol-siente-mujer-atrapada-20261109104223-nt.html",
+  "fecha": "2026-11-09T09:46:49.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
+ },
+ {
+  "titulo": "Salvador Illa se resiste a las encuestas: “No ganarán PP y Vox si hay movilización”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679728/salvador-illa-resiste-encuestas-ganaran-pp-vox-hay-movilizacion.html",
+  "fecha": "2026-11-09T09:46:49.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-09T10:12:58.713Z"
  }
 ]

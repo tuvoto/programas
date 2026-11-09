@@ -4447,6 +4447,16 @@
   "vista": "2026-11-08T21:51:41.836Z"
  },
  {
+  "titulo": "Las maniobras del alcalde de Santa Cruz de Tenerife y de la asociación de un concejal de Vox para mantener el monumento a Franco",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/sociedad/maniobras-alcalde-santa-cruz-tenerife-asociacion-concejal-vox-mantener-monumento-franco_1_13645383.html",
+  "fecha": "2026-11-08T20:36:44.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
   "titulo": "Vox dice que acoger a los migrantes llegados a El Hierro multiplicará el \"efecto llamada\"",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/vox-dice-acoger-migrantes-llegados-hierro-multiplicara-efecto-llamada_7058757_0.html",
@@ -4590,5 +4600,166 @@
    "junts"
   ],
   "vista": "2026-11-09T04:14:34.547Z"
+ },
+ {
+  "titulo": "Encuestas elecciones generales en el País Vasco: resultados de PSOE, PP, Bildu y PNV y ganador según los sondeos el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/encuestas-elecciones-generales-pais-vasco-resultados-psoe-20261109050000-nt.html",
+  "fecha": "2026-11-09T04:08:11.000Z",
+  "partidos": [
+   "bildu",
+   "pnv",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "El bloque de la derecha mantiene su ventaja pero el PSOE se acerca al PP",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-09/el-bloque-de-la-derecha-mantiene-su-ventaja-pero-el-psoe-se-acerca-al-pp.html",
+  "fecha": "2026-11-09T04:30:01.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "El factor Sánchez decanta el voto vasco",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679345/factor-sanchez-decanta-voto-vasco.html",
+  "fecha": "2026-11-09T05:00:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Las nucleares verán prolongada su vida útil de inmediato si gobierna Feijóo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679346/nucleares-veran-prolongada-vida-util-inmediato-gobierna-feijoo.html",
+  "fecha": "2026-11-09T05:00:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Sánchez y Feijóo salen a la caza del voto catalán, que ya fue clave en el 2023",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261109/11679375/sanchez-feijoo-salen-caza-voto-catalan-clave-2023.html",
+  "fecha": "2026-11-09T05:00:00.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Cristina Valido: «Si el PP o el PSOE quieren nuestro apoyo, hablaremos de Canarias»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/cristina-valido-pp-psoe-quieren-apoyo-hablaremos-20261109073000-nt.html",
+  "fecha": "2026-11-09T05:30:00.000Z",
+  "partidos": [
+   "cc",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Els plans de Puigdemont i Nogueras",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/plans-puigdemont-nogueras_1_5888067.html",
+  "fecha": "2026-11-09T06:00:26.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Bildu lograría su mejor resultado y el PNV perdería el grupo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-lograria-mejor-resultado-pnv-perderia-grupo-20261109071323-nt.html",
+  "fecha": "2026-11-09T06:13:24.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Feijóo es el líder mejor valorado y el único que pasa del 4, pero Sánchez también repunta",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-lider-mejor-valorado-unico-pasa-sanchez-20261109071121-ntrc.html",
+  "fecha": "2026-11-09T06:14:37.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "PP y Vox rebasan el 50% del voto y la tragedia de Urda esfuma el 'efecto remontada' del PSOE",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pp-vox-rebasan-voto-tragedia-urda-esfuma-20261109070934-ntrc.html",
+  "fecha": "2026-11-09T06:14:55.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "El PP prohibirá las redes sociales a menores de 14, limitará el 'scroll' infinito y obligará a las plataformas a ofrecer descanso nocturno",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-prohibira-las-redes-sociales-menores-14-limitara-scroll-infinito-obligara-las-plataformas-ofrecer-descanso-nocturno_7058321_0.html",
+  "fecha": "2026-11-09T06:17:36.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Broncano recibe a Abascal en 'La Revuelta': todo lo que se sabe de una entrevista que el Gobierno lleva días 'calentando'",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/broncano-recibe-abascal-revuelta-todo-sabe-entrevista-gobierno-lleva-dias-calentando_7058750_0.html",
+  "fecha": "2026-11-09T06:22:07.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Elisa Garrido (PSOE): \"Los países con una política de inmigración más agresiva tienen peores resultados que España\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/elisa-garrido-psoe-los-paises-con-una-politica-inmigracion-mas-agresiva-tienen-peores-resultados-que-espana_7057781_0.html",
+  "fecha": "2026-11-09T06:22:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Los apuntes de Leire Díez hace casi dos años: \"Koldo es un buen Aldama. PP ha ofrecido un pastizal\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/apuntes-leire-diez-anos-koldo-buen-aldama-pp-ofrecido-pastizal_1_13648465.html",
+  "fecha": "2026-11-09T06:24:38.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
+ },
+ {
+  "titulo": "Del 53 al 30 por ciento de los votos: la decadencia en Córdoba de un PSOE siempre agitado",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/cordoba/ciento-votos-decadencia-cordoba-psoe-siempre-agitado-20261109072926-nts.html",
+  "fecha": "2026-11-09T06:29:26.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-09T07:44:31.836Z"
  }
 ]

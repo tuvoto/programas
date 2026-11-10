@@ -20,7 +20,7 @@ export const CONFIG = {
   goatcounter: 'tuvoto',
   // Botón «Descárgala en Google Play» en la web. Ponlo en true cuando la app
   // esté publicada para todo el mundo (no en la prueba cerrada).
-  googlePlayPublicada: false,
+  googlePlayPublicada: true,
   googlePlayUrl: 'https://play.google.com/store/apps/details?id=es.programaselectorales.app',
 };
 

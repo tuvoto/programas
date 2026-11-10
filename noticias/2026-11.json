@@ -5930,5 +5930,80 @@
    "vox"
   ],
   "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Frente Amplio marca 15 provincias en rojo para dar un vuelco a las encuestas el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/frente-amplio-marca-provincias-rojo-dar-vuelco-20261109022354-nt.html",
+  "fecha": "2026-11-10T01:24:08.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "La dana no pasa factura al PP en la provincia de Valencia ante el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/comunidad-valenciana/dana-pasa-factura-pp-provincia-valencia-20261110023023-nt.html",
+  "fecha": "2026-11-10T01:30:23.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "El PP encabeza 31 circunscripciones y empata en nueve con el PSOE, que solo lidera dos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pp-encabeza-circunscripciones-empata-nueve-psoe-solo-20261109023029-nt.html",
+  "fecha": "2026-11-10T01:30:42.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "Rufián situaría a ERC en 12 escaños el 29N y Vox se quedaría a solo uno del PP en Cataluña",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/rufian-situaria-erc-escanos-29n-vox-quedaria-20261110023040-nt.html",
+  "fecha": "2026-11-10T02:00:21.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "Bildu doblaría en escaños al PNV el 29N, que perdería su grupo en el Congreso",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/bildu-doblaria-escanos-pnv-29n-perderia-grupo-20261110023010-nt.html",
+  "fecha": "2026-11-10T02:19:29.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "<![CDATA[Esparza (UPN) sostiene que PSN, Bildu, Geroa y Contigo aprobarán el impuesto a parques eólicos y fotovoltaicos tras las elecciones]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/10/esparza-upn-sostiene-psn-bildu-geroa-contigo-aprobaran-impuesto-parques-eolicos-fotovoltaicos-elecciones-841876-15.html",
+  "fecha": "2026-11-10T04:00:00.000Z",
+  "partidos": [
+   "bildu",
+   "upn"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
+ },
+ {
+  "titulo": "<![CDATA[Parlamentarios de PSN, Bildu y Contigo harán huelga el 11-N, pese a no tener derecho a ella]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/10/parlamentarios-psn-bildu-contigo-haran-huelga-11-n-pese-no-derecho-841873-15.html",
+  "fecha": "2026-11-10T04:00:00.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-10T04:05:43.558Z"
  }
 ]

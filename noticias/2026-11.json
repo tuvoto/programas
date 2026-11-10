@@ -5607,6 +5607,16 @@
   "vista": "2026-11-09T21:59:53.667Z"
  },
  {
+  "titulo": "Frente Amplio acepta que la Academia de TV organice los debates pero exige que incluyan a las cuatro candidaturas",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-frente-amplio-acepta-academia-tv-organice-debates-exige-incluyan-cuatro-candidaturas-20261109210717.html",
+  "fecha": "2026-11-09T20:07:17.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
   "titulo": "Santiago Abascal, en 'La Revuelta', en directo | Abascal, sobre el problema de la vivienda: \"No se construye y cada vez entra más gente\"",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/santiago-abascal-revuelta-directo-broncano-entrevista-lider-vox-marcada-por-cambios-publico-previsto_7058937_6.html",
@@ -5635,6 +5645,16 @@
    "psoe"
   ],
   "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "Sánchez reconoce que se quedó \"sorprendido\" cuando Puente le informó por un mensaje de su dimisión, pero evita cuestionarlo: \"Hizo lo correcto\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/09/6af21b6afc6c83ae4b8b4578.html",
+  "fecha": "2026-11-09T21:15:04.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
  },
  {
   "titulo": "Abascal en 'La Revuelta', hoy en directo: “La de Sánchez es la única entrevista vuestra que he visto. Me reí”",
@@ -5666,5 +5686,249 @@
    "psoe"
   ],
   "vista": "2026-11-09T21:59:53.667Z"
+ },
+ {
+  "titulo": "El voto útil no compra todas las conciencias en Teruel: \"Yo no votaré al PSOE\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/09/6af1f5cde4d4d8c61f8b4579.html",
+  "fecha": "2026-11-09T21:42:24.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Los alumnos no podrán pasar de curso con suspensos en la ESO y habrá nota mínima para estudiar Magisterio: así es el programa de Feijóo en Educación",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/09/6af1dc48fc6c835f188b4575.html",
+  "fecha": "2026-11-09T21:42:49.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "\"No has tingut ous de denunciar el genocidi d'Israel\": Broncano i Abascal s'enganxen a 'La Revuelta'",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/no-has-tingut-ous-denunciar-genocidi-d-israel-broncano-abascal-s-enganxen-revuelta_1_5904896.html",
+  "fecha": "2026-11-09T21:57:52.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "El Frente Amplio centrará su campaña en 16 provincias para pelear por el último escaño",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/frente-amplio-centrara-campana-16-provincias-pelear-ultimo-escano_1_13650440.html",
+  "fecha": "2026-11-09T22:02:46.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "La mayoría de los votantes del PSOE respalda la gestión del Gobierno del accidente de Urda",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/mayoria-votantes-psoe-respalda-gestion-gobierno-accidente-urda_1_13649244.html",
+  "fecha": "2026-11-09T22:02:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Sánchez confirma que Puente le comunicó por mensaje su «dimisión irrevocable»: «Me quedé un poco sorprendido»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/sanchez-confirma-puente-comunico-mensaje-dimision-irrevocable-20261109224611-ntrc.html",
+  "fecha": "2026-11-09T22:11:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "La angustia de probar que Abascal no es un monstruo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/09/6af2456bfc6c8308488b458a.html",
+  "fecha": "2026-11-09T22:27:22.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Sánchez ve evidencias para investigar la presunta reunión del abogado del PP con Koldo García",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-ve-evidencias-investigar-presunta-reunion-abogado-pp-koldo-garcia-20261109233326.html",
+  "fecha": "2026-11-09T22:33:26.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Pedro Sánchez anuncia consejos de ministros extraordinarios antes del 29-N con medidas sociales: “Hay temas que se nos han quedado pendientes”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-09/pedro-sanchez-anuncia-consejos-de-ministros-extraordinarios-antes-de-las-elecciones-con-medidas-sociales-hay-temas-que-se-nos-han-quedado-pendientes.html",
+  "fecha": "2026-11-09T22:36:16.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Abascal se despliega en inmigración y hace equilibrios sobre las mujeres y Gaza en 'La Revuelta'",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/09/6af21389e4d4d8c70e8b45a7.html",
+  "fecha": "2026-11-09T22:37:59.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Abascal justifica ante Broncano llamar \"dictador\" a Pedro Sánchez y asegura que \"asaltó todas las instituciones\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/abascal-justifica-broncano-llamar-dictador-pedro-sanchez-asegura-asalto-instituciones_1_13649863.html",
+  "fecha": "2026-11-09T22:42:52.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Sánchez asegura que Puente no le consultó su dimisión, pero la considera un \"acierto\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-asegura-puente-no-le-consulto-dimision-considera-acierto-20261110000414.html",
+  "fecha": "2026-11-09T23:04:14.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "La entrevista con Abascal le estalla en la cara a Broncano",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/entrevista-abascal-le-estalla-cara-broncano_129_13650926.html",
+  "fecha": "2026-11-09T23:10:46.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Abascal califica a Sánchez de “dictador” en el programa estrella de la televisión pública",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-09/abascal-califica-a-sanchez-de-dictador-en-el-el-programa-estrella-de-la-television-publica.html",
+  "fecha": "2026-11-09T23:11:34.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Sánchez dice que la llegada de más de 6.600 migrantes a Canarias \"es bastante habitual en este momento del año\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-dice-que-llegada-mas-6-600-migrantes-canarias-es-bastante-habitual-este-momento-ano_7059057_0.html",
+  "fecha": "2026-11-09T23:13:56.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Bildu rompe su techo en unas generales y ganaría en Euskadi frente a un PNV a la baja",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-rompe-techo-generales-ganaria-euskadi-frente-20261109001421-nt.html",
+  "fecha": "2026-11-09T23:14:21.000Z",
+  "partidos": [
+   "bildu",
+   "pnv"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Sánchez avanza que habrá Consejos de Ministros extraordinarios para aprobar medidas sociales antes de las generales",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-avanza-habra-consejos-ministros-extraordinarios-aprobar-medidas-sociales-antes-generales-20261110001609.html",
+  "fecha": "2026-11-09T23:16:09.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Broncano y Abascal, deconstrucción sin éxito",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-09/broncano-y-abascal-deconstruccion-sin-exito.html",
+  "fecha": "2026-11-09T23:21:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Máxima tensión entre Abascal y Broncano en 'La Revuelta': «No has tenido huevos de decírselo»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/abascal-aprovecha-visita-revuelta-lanzar-dardo-hormiguero-20261109224636-ntrc.html",
+  "fecha": "2026-11-09T23:40:57.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Abascal y Broncano protagonizan un intenso debate sobre vivienda, clima e inmigración en una 'Revuelta' sin las preguntas clásicas",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/abascal-broncano-protagonizan-un-intenso-debate-sobre-vivienda-clima-inmigracion-una-revuelta-sin-las-preguntas-clasicas_7059062_0.html",
+  "fecha": "2026-11-09T23:46:20.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "El PP quitará la nacionalidad a los extranjeros que tengan una condena firme por delitos muy graves",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pp-regula-primera-vez-perdida-nacionalidad-extranjeros-20261110011930-nt.html",
+  "fecha": "2026-11-10T00:19:45.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Feijóo someterá al Congreso las decisiones en política exterior que afecten a la soberanía y las fronteras",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-sometera-congreso-decisiones-politica-exterior-afecten-20261109011947-nt.html",
+  "fecha": "2026-11-10T00:20:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "El PP propone ampliar las competencias de la Audiencia Nacional frente al crimen organizado",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pp-propone-ampliar-competencias-audiencia-nacional-frente-20261110012000-nt.html",
+  "fecha": "2026-11-10T00:20:42.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
+ },
+ {
+  "titulo": "Broncano se estrella en la entrevista a Abascal en La Revuelta",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/broncano-estrella-abascal-20261109005520-nt.html",
+  "fecha": "2026-11-10T00:45:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-10T01:20:14.064Z"
  }
 ]

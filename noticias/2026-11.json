@@ -7122,6 +7122,16 @@
   "vista": "2026-11-10T21:55:14.707Z"
  },
  {
+  "titulo": "El Gobierno busca impulso agitando la huelga en pleno sprint social para condicionar un posible gobierno del PP y Vox",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/10/6af368cae85ece41108b45ad.html",
+  "fecha": "2026-11-10T22:16:02.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
+ },
+ {
   "titulo": "Traducir Feijóo al politizado",
   "medio": "El Mundo",
   "url": "https://www.elmundo.es/espana/2026/11/10/6af39330e9cf4a67248b45a1.html",
@@ -7165,6 +7175,17 @@
    "vox"
   ],
   "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Ada Colau, en el desquite de Broncano tras la entrevista de Abascal: \"Los impuestos son sexis\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/11/6af3a346fc6c83d16c8b4584.html",
+  "fecha": "2026-11-10T23:07:01.000Z",
+  "partidos": [
+   "frente-amplio",
+   "vox"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
  },
  {
   "titulo": "La entrevista de Broncano a Abascal en RTVE inflama la campaña electoral del 29-N",
@@ -7368,6 +7389,7 @@
   "fecha": "2026-11-11T06:00:00.000Z",
   "partidos": [
    "frente-amplio",
+   "pp",
    "psoe",
    "vox"
   ],
@@ -7402,5 +7424,56 @@
    "frente-amplio"
   ],
   "vista": "2026-11-11T07:31:47.634Z"
+ },
+ {
+  "titulo": "La trista entrevista de Broncano a Colau",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/trista-entrevista-broncano-colau_129_5906950.html",
+  "fecha": "2026-11-11T07:42:59.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
+ },
+ {
+  "titulo": "'La Revuelta' vuelve a liderar las audiencias pero 'Horizonte' marca récord con Feijóo",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/revuelta-vuelve-liderar-audiencias-horizonte-marca-record-20261111090835-nt.html",
+  "fecha": "2026-11-11T09:19:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
+ },
+ {
+  "titulo": "El PP denuncia una “huelga electoral” y “preventiva” contra el próximo Gobierno",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261111/11681473/pp-denuncia-huelga-electoral-preventiva-proximo-gobierno.html",
+  "fecha": "2026-11-11T09:30:56.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
+ },
+ {
+  "titulo": "Frente Amplio reivindica las huelgas generales y pide hacer \"imparable\" este 11N la movilización contra la especulación",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-frente-amplio-reivindica-huelgas-generales-pide-hacer-imparable-11n-movilizacion-contra-especulacion-20261111104453.html",
+  "fecha": "2026-11-11T09:44:53.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
+ },
+ {
+  "titulo": "El PP arremete contra la huelga general por \"electoral\", \"preventiva\" y por \"trabajar\" para la campaña de Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/11/6af43da8e4d4d8f8248b45a8.html",
+  "fecha": "2026-11-11T10:10:17.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-11T10:14:40.078Z"
  }
 ]

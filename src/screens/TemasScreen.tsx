@@ -3,7 +3,7 @@ import { Image, Linking, Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { TEMAS, Tema } from '../data/temas';
 import { PARTIDOS, Partido } from '../data/partidos';
-import { edicionVigente, numPropuestasTema, partidoTrataTema, vigentes } from '../data/propuestas';
+import { edicionVigente, numPropuestasTema, partidoTrataTema, programaNuevo, vigentes } from '../data/propuestas';
 import { BOE_CANDIDATURAS } from '../data/candidaturas';
 import { CONFIG, FUENTES_OFICIALES } from '../config';
 import Marca from '../components/Marca';
@@ -117,6 +117,9 @@ export default function TemasScreen({ onAbrirTema }: Props) {
       )}
       </View>
 
+      {/* Programas del 29-N publicados en los últimos 7 días */}
+      <AvisoNuevo />
+
       {/* El test y los partidos ya están en el menú de arriba: sin tarjetas aquí. */}
       {/* Solo en la web, cuando la app esté publicada */}
       <DescargarApp />
@@ -129,9 +132,8 @@ export default function TemasScreen({ onAbrirTema }: Props) {
           </Text>
         </View>
         <Text style={[T.meta, { color: C.suave, maxWidth: ANCHO_LECTURA }]}>
-          {movil
-            ? 'Programas de 2023 hasta que salgan los del 29-N.'
-            : 'Programas de 2023 hasta que salgan los del 29-N. Cuadrado relleno: el partido trata el tema.'}
+          {textoEdiciones()}
+          {!movil && ' Cuadrado relleno: el partido trata el tema.'}
         </Text>
         {!movil && <Leyenda partidos={PARTIDOS} />}
       </Revelar>
@@ -198,6 +200,50 @@ const MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'o
 const fechaCorta = (iso: string) => `${Number(iso.slice(8, 10))} ${MESES[Number(iso.slice(5, 7)) - 1]}`;
 
 // Cifras de la propia app que cualquiera puede comprobar.
+// Qué programas se están comparando: los de 2026 que ya hay y, el resto, de 2023.
+function textoEdiciones(): string {
+  const nuevos = CON_PROGRAMA.filter((p) => edicionVigente(p.id) === 2026).map((p) => p.siglas);
+  if (nuevos.length === 0) return 'Programas de 2023 hasta que salgan los del 29-N.';
+  if (nuevos.length === CON_PROGRAMA.length) return 'Programas del 29-N.';
+  const lista = nuevos.length === 1 ? nuevos[0] : `${nuevos.slice(0, -1).join(', ')} y ${nuevos[nuevos.length - 1]}`;
+  return `Ya con su programa del 29-N: ${lista}. El resto, con el de 2023 hasta que publiquen el suyo.`;
+}
+
+// Aviso de «Nuevo» durante la primera semana de cada programa del 29-N. Se
+// calcula al montar: depende de la fecha de hoy y la web se genera antes.
+function AvisoNuevo() {
+  const [nuevos, setNuevos] = useState<Partido[]>([]);
+  useEffect(() => {
+    const hoy = new Date();
+    setNuevos(PARTIDOS.filter((p) => programaNuevo(p, hoy)));
+  }, []);
+  if (nuevos.length === 0) return null;
+  const varios = nuevos.length > 1;
+  const nombres = nuevos.map((p) => p.siglas).join(varios ? ', ' : '');
+  return (
+    <Revelar>
+      <Pulsable
+        onPress={() => router.push(varios ? '/partidos' : `/partido/${nuevos[0].id}`)}
+        style={s.avisoNuevo}
+        escala={0.98}
+        accessibilityRole="link"
+        accessibilityLabel={`Nuevo: ${nombres} ${varios ? 'han' : 'ha'} publicado su programa para el 29-N`}
+      >
+        <View style={s.avisoNuevoChip}>
+          <Text style={[T.etiqueta, { color: C.tinta }]}>Nuevo</Text>
+        </View>
+        <View style={{ flex: 1, minWidth: 0, gap: 2 }}>
+          <Text style={[T.tarjeta, { color: C.sobreTinta }]}>
+            {varios ? `${nombres} han publicado su programa` : `${nombres} ha publicado su programa del 29-N`}
+          </Text>
+          <Text style={[T.meta, { color: C.sobreTintaSuave }]}>Ya puedes compararlo tema a tema, con la página de cada propuesta.</Text>
+        </View>
+        <Icono nombre="next" tam={16} color={C.sobreTinta} peso="bold" />
+      </Pulsable>
+    </Revelar>
+  );
+}
+
 function DatosComprobables({ centrado }: { centrado: boolean }) {
   const datos = [
     plural(PARTIDOS.length, 'partido', 'partidos'),
@@ -314,6 +360,8 @@ function TarjetaTema({ tema: t, onPress }: { tema: Tema; onPress: () => void }) 
 }
 
 const s = StyleSheet.create({
+  avisoNuevo: { flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 16, padding: 16, borderRadius: R.tarjeta, backgroundColor: C.tinta, boxShadow: S.tarjeta },
+  avisoNuevoChip: { backgroundColor: C.amarillo, borderRadius: R.pildora, paddingHorizontal: 10, paddingVertical: 4 },
   contenedor: { ...CENTRADO,
     paddingHorizontal: M,
     paddingTop: 12,

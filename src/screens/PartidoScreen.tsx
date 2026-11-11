@@ -6,7 +6,7 @@ import { provinciaPorId, Provincia } from '../data/provincias';
 import { senado } from '../data/escanos';
 import { BOE_LISTAS, listaDe } from '../data/listas';
 import { useProvincia } from '../lib/provincia';
-import { propuestasDe } from '../data/propuestas';
+import { documentoVigente, edicionVigente, propuestasDe } from '../data/propuestas';
 import { TEMAS } from '../data/temas';
 import { SIN_FOTOS } from '../lib/noticiasCore';
 import { haceCuanto, useNoticias } from '../lib/useNoticias';
@@ -202,7 +202,8 @@ const SEPIA = { fondo: '#F1E6CF', linea: 'rgba(110, 88, 48, 0.22)', borde: '#8C7
 // Dos descargas: un PDF con sus propuestas de los temas que elijas y el programa completo.
 function BloqueDescargas({ p }: { p: Partido }) {
   const [selector, setSelector] = useState(false);
-  const archivo = p.programa.url ?? (p.anterior?.archivo ? urlPublica(p.anterior.archivo) : null);
+  const edicion = edicionVigente(p.id);
+  const archivo = edicion === 2026 && p.programa.archivo ? urlPublica(p.programa.archivo) : p.programa.url ?? (p.anterior?.archivo ? urlPublica(p.anterior.archivo) : null);
   const hayPropuestas = TEMAS.some((t) => propuestasDe(p.id, t.id).length > 0);
 
   return (
@@ -240,7 +241,7 @@ function BloqueDescargas({ p }: { p: Partido }) {
             <Opcion
               titulo="Programa electoral completo"
               tono={0}
-              texto={p.anterior?.documento ? `${p.anterior.documento}.` : 'El PDF original del partido.'}
+              texto={documentoVigente(p) ? `${documentoVigente(p)}.` : 'El PDF original del partido.'}
               onPress={() => Linking.openURL(archivo)}
             />
           )}

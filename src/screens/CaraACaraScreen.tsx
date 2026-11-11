@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Linking, Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { PARTIDOS, Partido, partidoPorId } from '../data/partidos';
-import { edicionVigente, propuestasDe } from '../data/propuestas';
+import { archivoVigente, edicionVigente, propuestasDe } from '../data/propuestas';
 import { TEMAS, Tema } from '../data/temas';
 import { urlPagina } from '../lib/web';
 import Marca from '../components/Marca';
@@ -199,7 +199,7 @@ function BloqueTema({ tema, pa, pb, lado }: { tema: Tema; pa: Partido; pb: Parti
 }
 
 function Columna({ p, lista, lado }: { p: Partido; lista: ReturnType<typeof propuestasDe>; lado: boolean }) {
-  const archivo = edicionVigente(p.id) === 2023 ? p.anterior?.archivo : undefined;
+  const archivo = archivoVigente(p);
   return (
     <View style={{ flex: lado ? 1 : undefined, minWidth: 0, gap: 8 }}>
       {/* En el móvil las columnas van una debajo de otra: se repite el nombre */}

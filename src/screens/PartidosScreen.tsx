@@ -6,6 +6,8 @@ import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from '
 import { AUTONOMICOS, ESTATALES, Partido, sePresentaEn } from '../data/partidos';
 import { comunidadPorId, provinciaPorId, Provincia } from '../data/provincias';
 import { BOE_CANDIDATURAS, OTRAS_CANDIDATURAS } from '../data/candidaturas';
+import { edicionVigente } from '../data/propuestas';
+import EtiquetaEdicion from '../components/EtiquetaEdicion';
 import { DIPUTADOS } from '../data/escanos';
 import { listaDe } from '../data/listas';
 import { tocaPreguntar, useProvincia } from '../lib/provincia';
@@ -269,6 +271,7 @@ function TarjetaPartido({ p }: { p: Partido }) {
       <View style={s.cabecera}>
         <Marca color={activa ? sobre : p.color} tam={14} />
         <Text style={[T.tarjeta, { color: tinta, fontSize: 20, lineHeight: 24, flexShrink: 1 }]}>{p.siglas}</Text>
+        {edicionVigente(p.id) === 2026 && <EtiquetaEdicion p={p} />}
       </View>
       {p.nombre !== p.siglas && (
         <Text style={[T.meta, { color: tinta, marginTop: 4 }]}>{p.nombre}</Text>

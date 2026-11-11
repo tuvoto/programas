@@ -1,6 +1,6 @@
 // Ficha de un partido sobre un tema: datos comunes a la pantalla y al PDF.
 import { Partido } from '../data/partidos';
-import { Propuesta, edicionVigente, propuestasDe } from '../data/propuestas';
+import { Propuesta, documentoVigente, edicionVigente, propuestasDe } from '../data/propuestas';
 import { Tema } from '../data/temas';
 
 // Las primeras de cada partido y tema en propuestas.ts son las principales.
@@ -22,7 +22,7 @@ export function crearFicha(partido: Partido, tema: Tema): Ficha {
     partido,
     tema,
     edicion,
-    fuente: edicion === 2023 ? partido.anterior?.documento ?? null : edicion === 2026 ? `Programa de ${partido.siglas} para el 29-N (2026)` : null,
+    fuente: documentoVigente(partido) ?? null,
     principales: props.slice(0, PRINCIPALES),
     otras: props.slice(PRINCIPALES),
   };

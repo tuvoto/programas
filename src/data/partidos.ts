@@ -39,8 +39,12 @@ export type Partido = {
   estadoCandidatura: EstadoCandidatura;
   nota?: string;
   programa: {
-    url?: string;
-    fechaPublicacion?: string; // AAAA-MM-DD
+    url?: string; // en la web oficial del partido
+    fechaPublicacion?: string; // AAAA-MM-DD: durante 7 días sale como «Nuevo»
+    documento?: string; // cómo se cita en la app
+    // Copia del PDF dentro de la web (carpeta public/programas), de la que
+    // salen las páginas que cita la app.
+    archivo?: string;
   };
   anterior?: {
     documento: string; // p. ej. "Programa del PSOE para el 23-J (2023)"
@@ -75,7 +79,12 @@ export const PARTIDOS: Partido[] = [
     noSePresentaEn: ['navarra'],
     estadoCandidatura: 'confirmada',
     nota: 'En Navarra se presenta en coalición con UPN (UPN-PP).',
-    programa: {},
+    programa: {
+      url: 'https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf',
+      fechaPublicacion: '2026-11-10',
+      documento: 'Programa del PP para el 29-N (2026): «Reconstrucción Nacional»',
+      archivo: 'programas/pp-2026.pdf',
+    },
     anterior: { documento: 'Programa del PP para el 23-J (2023)', archivo: 'programas/pp-2023.pdf' },
   },
   {

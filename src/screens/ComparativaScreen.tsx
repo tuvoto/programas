@@ -6,7 +6,8 @@ import { router } from 'expo-router';
 import { AUTONOMICOS, ESTATALES, PARTIDOS, Partido, sePresentaEn } from '../data/partidos';
 import { provinciaPorId } from '../data/provincias';
 import { useProvincia } from '../lib/provincia';
-import { edicionVigente, propuestasDe } from '../data/propuestas';
+import { archivoVigente, edicionVigente, propuestasDe } from '../data/propuestas';
+import EtiquetaEdicion from '../components/EtiquetaEdicion';
 import { Tema } from '../data/temas';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -150,7 +151,7 @@ function BloquePartido({ partido: p, temaId }: { partido: Partido; temaId: strin
   const mostradas = abierto ? props : props.slice(0, VISIBLES);
   const edicion = edicionVigente(p.id);
   // PDF del programa publicado con la web, para abrirlo por la página citada.
-  const archivo = edicion === 2023 ? p.anterior?.archivo : undefined;
+  const archivo = archivoVigente(p);
   const vacio = edicion ? 'Su programa no trata este tema.' : 'Programa aún no disponible.';
 
   return (
@@ -158,11 +159,7 @@ function BloquePartido({ partido: p, temaId }: { partido: Partido; temaId: strin
       <View style={s.cabeceraPartido}>
         <Marca color={p.color} tam={12} />
         <Text style={[T.tarjeta, { color: C.tinta, fontSize: 18, flexShrink: 1 }]}>{p.siglas}</Text>
-        {edicion === 2023 && (
-          <View style={s.edicion}>
-            <Text style={[T.etiqueta, { color: C.suave }]}>Programa de 2023</Text>
-          </View>
-        )}
+        <EtiquetaEdicion p={p} />
       </View>
       {(p.candidato || p.territorio) && (
         <Text style={[T.meta, { color: C.suave, marginTop: 4 }]}>
@@ -271,7 +268,6 @@ const s = StyleSheet.create({
   rejilla: { flexDirection: 'row', gap: 12, marginTop: 16, alignItems: 'flex-start' },
   columna: { flex: 1, gap: 12, minWidth: 0 },
   cabeceraPartido: { flexDirection: 'row', alignItems: 'center', gap: 10, flexWrap: 'wrap' },
-  edicion: { marginLeft: 'auto', backgroundColor: C.relleno, borderRadius: R.pildora, paddingHorizontal: 9, paddingVertical: 3 },
   propuesta: { flexDirection: 'row', gap: 10 },
   verMas: {
     flexDirection: 'row',

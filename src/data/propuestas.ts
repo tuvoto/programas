@@ -24,6 +24,8 @@
 //     plazos); el resto, parafraseado.
 //   - No añadas valoraciones ("buena", "irrealizable"...).
 
+import type { Partido } from './partidos';
+
 export type Edicion = 2023 | 2026;
 
 export type Propuesta = {
@@ -35,6 +37,94 @@ export type Propuesta = {
 };
 
 export const PROPUESTAS: Propuesta[] = [
+  // ===== Programas para el 29-N (2026) =====
+  // PP: «Reconstrucción Nacional. El programa del cambio necesario para España»
+  // (publicado el 10-11-2026 en pp.es; copia en public/programas/pp-2026.pdf).
+  // `pagina` = página del PDF, que coincide con el número impreso.
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 53, resumen: 'Construir un millón de viviendas movilizando suelo público y privado, con una nueva Ley del Suelo y licencias resueltas en tres meses con silencio positivo.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 53, resumen: 'Derogar la Ley de Vivienda y eliminar las zonas tensionadas y el índice de precios del alquiler.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 53, resumen: 'Quitar las trabas normativas y financieras a la vivienda industrializada para construir más rápido.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 54, resumen: 'IVA superreducido del 4 % para rehabilitar la vivienda habitual, con ayudas, financiación y avales públicos.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 54, resumen: 'Créditos del ICO, del Banco Europeo de Inversiones y de fondos europeos para urbanizar suelo y construir vivienda asequible.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 55, resumen: '«Tres años+»: deducción en el IRPF por el alquiler según los ingresos, y otra para el propietario que renueve el contrato tres años más subiendo la renta por debajo del IPC.' },
+  { partidoId: 'pp', temaId: 'vivienda', edicion: 2026, pagina: 55, resumen: 'Una ley para que el propietario recupere en 48 horas, por orden judicial, una vivienda ocupada ilegalmente, y anular el empadronamiento de quien la ocupa.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 58, resumen: 'Un cheque de formación en inteligencia artificial para cada trabajador, que conserva aunque cambie de empresa, pagado con las cuotas de formación que ya existen.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 59, resumen: 'Los nuevos autónomos no pagarán cuota el primer año, ni el segundo si ingresan menos del salario mínimo, y su vivienda habitual quedará protegida por defecto.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 59, resumen: 'Los autónomos que facturen menos de 85.000 euros no tendrán que cobrar ni declarar el IVA, y podrán hacer declaraciones semestrales en vez de trimestrales.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 59, resumen: 'Bonificar el 100 % de las cotizaciones empresariales del primer trabajador durante un año y el 50 % del segundo.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 59, resumen: 'Las empresas con plantillas más estables que la media de su sector cotizarán menos por desempleo, y se publicará cada mes cuántos fijos discontinuos no trabajan.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 60, resumen: 'Prestación de hasta el 100 % de la base reguladora para enfermedades graves y de larga duración, y más control del absentismo injustificado.' },
+  { partidoId: 'pp', temaId: 'empleo', edicion: 2026, pagina: 56, resumen: 'Incentivos a las empresas por los trabajadores con hijos pequeños y cuota bonificada al 100 % durante dos años para los autónomos que vuelvan tras el permiso por nacimiento.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 69, resumen: 'Un Pacto de Estado por la Sanidad Pública y un plan urgente de reducción de listas de espera, de acuerdo con las comunidades autónomas.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 69, resumen: 'Al menos 4.500 médicos más en Atención Primaria y más plazas de formación sanitaria especializada.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 69, resumen: 'Un ámbito de negociación propio para los médicos y reducir la duración de las guardias.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 70, resumen: 'Un Plan Nacional de Salud Mental 2027-2037 con financiación garantizada y más profesionales.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 70, resumen: 'Acortar los plazos para financiar los nuevos medicamentos y crear un Fondo Estatal de Innovación en Enfermedades Raras y Terapias Avanzadas.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 70, resumen: 'Deducción en el IRPF de los gastos de tratamiento y cuidados para las familias con cáncer, ELA u otra enfermedad grave, y para las personas celíacas.' },
+  { partidoId: 'pp', temaId: 'sanidad', edicion: 2026, pagina: 70, resumen: 'Una ley nacional de cuidados paliativos, incluidos los pediátricos y la atención en casa.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 67, resumen: 'Sustituir la LOMLOE por un nuevo marco educativo, con refuerzo en el mismo curso para el alumnado con dificultades de lectura y cálculo.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 57, resumen: 'Escuela infantil de 0 a 3 años gratuita al final de la legislatura, con el Estado pagando la mitad de cada plaza pública o concertada.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 39, resumen: 'Una prueba de acceso a la universidad (PAU) común en toda España.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 39, resumen: 'Garantizar el derecho a recibir la enseñanza en castellano en todas las etapas y en toda España.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 67, resumen: 'Poder elegir colegio en todo el municipio y mantener los conciertos educativos donde haya demanda, con una duración mínima de seis años.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 68, resumen: 'En la ESO, volver a pasar de curso con las asignaturas aprobadas, con refuerzo obligatorio antes de tener que repetir.' },
+  { partidoId: 'pp', temaId: 'educacion', edicion: 2026, pagina: 68, resumen: 'Beca como derecho por ley para quien la necesite y apruebe, y FP sin matrícula en los ciclos con más demanda de empleo.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 60, resumen: 'Quien cobre el salario mínimo no pagará IRPF, con un umbral que subirá por ley con el SMI, y bajar el IRPF a las rentas medias y bajas.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 60, resumen: 'Deflactar el IRPF para que la inflación no suba los impuestos de forma encubierta.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 61, resumen: 'IVA del 0 % a los alimentos básicos, incluidos la carne, el pescado y las conservas, mientras dure la crisis de inflación.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 61, resumen: 'Libertad de amortización: las empresas podrán descontar el mismo año lo que inviertan en maquinaria, digitalización, inteligencia artificial o patentes.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 61, resumen: 'Un Estatuto del Contribuyente con «derecho al error» y sin cambios de criterio desfavorables con efecto retroactivo.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 56, resumen: 'Una sola deducción familiar en el IRPF, reembolsable y cobrada cada mes, y mínimos familiares actualizados con la inflación.' },
+  { partidoId: 'pp', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Auditar en los primeros cien días todo el gasto público, y que el primer presupuesto suprima gastos y estructuras según sus conclusiones.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 42, resumen: 'Reconstruir el Pacto de Toledo y subir las pensiones cada año con el IPC.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 43, resumen: 'Deducciones en el IRPF para incentivar la jubilación activa.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 43, resumen: 'Modernizar el IMSERSO y garantizar a los mayores la atención presencial.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 44, resumen: 'Hacer compatibles las pensiones de discapacidad con el empleo y ampliar la jubilación anticipada de las personas con síndrome de Down.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 44, resumen: 'Un Pacto de Estado por la Dependencia en el que el Estado pague el 50 % del coste público del sistema.' },
+  { partidoId: 'pp', temaId: 'pensiones', edicion: 2026, pagina: 44, resumen: 'Deducción del 40 % de lo que paguen las familias por la atención profesional de un mayor dependiente, y que el Estado cotice por quien deje de trabajar para cuidar a un familiar.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 21, resumen: 'Más agentes en la frontera sur, apoyo de las Fuerzas Armadas cuando lo exija la seguridad nacional y rechazo en frontera también para las entradas a nado en Ceuta y Melilla.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 21, resumen: 'Identificar en un máximo de siete días a quien entre de forma irregular y tramitar después sin demora el asilo o la devolución.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 22, resumen: 'Visados por puntos y cupos anuales de trabajadores según el paro y las vacantes, solo con países que colaboren en los retornos.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 22, resumen: 'Prohibir por ley las regularizaciones masivas y que el arraigo sea una vía excepcional.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 23, resumen: 'Compromiso de integración obligatorio para renovar la residencia (español, Constitución y valores europeos) y prohibir el burka y el niqab en los espacios públicos.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 23, resumen: 'La expulsión será la regla para los extranjeros condenados por delitos sexuales, delitos de sangre o multirreincidencia.' },
+  { partidoId: 'pp', temaId: 'inmigracion', edicion: 2026, pagina: 50, resumen: 'Una nueva Ley de Nacionalidad con más requisitos (residencia legal continuada, español, historia y valores constitucionales), con trato preferente para los países de la Hispanidad.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 71, resumen: 'Eliminar el calendario de cierre de las centrales nucleares y tramitar en cien días la extensión de su vida útil, con el visto bueno del Consejo de Seguridad Nuclear.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 71, resumen: 'Eliminar el impuesto del 7 % a la producción eléctrica y crear una Tarifa Social Única que sustituya a los bonos eléctrico y térmico.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 72, resumen: 'Un plan para reforzar el sistema eléctrico y evitar otro apagón: ninguna central de gas o hidroeléctrica de respaldo cerrará sin una alternativa.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 72, resumen: 'Revisar el ritmo de descarbonización de cada sector y retirar las obligaciones climáticas que perjudiquen a la industria o al empleo.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 46, resumen: 'Un Pacto Nacional del Agua con hasta 40.000 millones de euros hasta 2030 para regadíos, desalación y reutilización.' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 66, resumen: 'Ingresos extra para agricultores, ganaderos, pescadores y propietarios forestales por los beneficios ambientales que generen (carbono, agua y biodiversidad).' },
+  { partidoId: 'pp', temaId: 'medioambiente', edicion: 2026, pagina: 66, resumen: 'Reformar la Ley de Montes para prevenir incendios todo el año con gestión activa del monte y menos impuestos para quien lo cuide.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 60, resumen: 'Los jóvenes de 18 a 35 años no pagarán IRPF el primer año que lo declaren, y tendrán reducciones del 75 %, el 50 % y el 25 % en los tres siguientes.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 54, resumen: 'Bajar del 10 % al 4 % el IVA de la compra de la primera vivienda para los menores de 40 años, con pago a plazos al ritmo de la hipoteca.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 55, resumen: 'Aval público de hasta el 20 % del valor de la vivienda para compradores menores de 40 años, ampliable hasta los 50.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 55, resumen: '«Hucha Hogar Joven»: cuenta de ahorro para la primera vivienda con una deducción del 20 % de hasta 2.000 euros al año.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 58, resumen: 'Ninguna cuenta en redes sociales antes de los 14 años y autorización de los padres hasta los 16, con verificación de edad obligatoria.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 64, resumen: 'Los jóvenes no pagarán impuestos al comprar su vivienda habitual en un municipio despoblado.' },
+  { partidoId: 'pp', temaId: 'juventud', edicion: 2026, pagina: 65, resumen: 'Los jóvenes que se incorporen al campo cobrarán por adelantado hasta el 70 % de la ayuda de la PAC.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 19, resumen: 'Las pulseras de control de las órdenes de alejamiento pasarán a depender del Ministerio del Interior, con más medios para las unidades especializadas y los servicios asistenciales integrados en VioGen.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 19, resumen: 'Una ley integral contra la trata de seres humanos y criterios comunes contra la mutilación genital femenina y los matrimonios forzados.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 43, resumen: 'Combatir cualquier discriminación por origen, sexo, edad, discapacidad, orientación sexual o religión, también la LGTBIfobia.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 44, resumen: 'Revisar la Ley Trans, eliminar la libre autodeterminación registral del sexo y que el sexo biológico sea el criterio de las categorías deportivas femeninas.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 56, resumen: 'Facilitar la congelación de óvulos a mujeres jóvenes y mejorar el acceso a la reproducción asistida en la sanidad pública; el concebido no nacido contará para las ayudas familiares.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 57, resumen: 'Un reconocimiento común en toda España para las familias monoparentales, con conciliación adaptada a quien cría en solitario.' },
+  { partidoId: 'pp', temaId: 'igualdad', edicion: 2026, pagina: 44, resumen: 'Asistencia personal, vivienda con apoyos, empleo inclusivo y accesibilidad universal para las personas con discapacidad.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 16, resumen: 'Recuperar en el Código Penal el delito de sedición y el de convocatoria de referéndum ilegal.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 29, resumen: 'Derogar la Ley de Amnistía y prohibir los indultos a condenados por corrupción, terrorismo o delitos contra la integridad territorial.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 40, resumen: 'Un nuevo modelo de financiación autonómica acordado entre todas las comunidades, con un fondo de nivelación transitorio pagado por el Estado.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 41, resumen: 'Ninguna comunidad saldrá del régimen común de financiación ni habrá regímenes singulares negociados bilateralmente.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 17, resumen: 'Blindar la unidad de la Agencia Tributaria y la caja única de la Seguridad Social.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 47, resumen: 'El castellano será la lengua de trabajo en el Congreso; en el Senado se podrán seguir usando las lenguas cooficiales.' },
+  { partidoId: 'pp', temaId: 'territorial', edicion: 2026, pagina: 42, resumen: 'Compensar la insularidad y la ultraperiferia, con conexiones aéreas y marítimas suficientes para Canarias, Baleares, Ceuta y Melilla.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 26, resumen: 'Una ley de programación y financiación de la defensa, con inversión plurianual y compromisos respaldados por las Cortes.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 26, resumen: 'Más efectivos en las Fuerzas Armadas, reconocidos como profesión de riesgo y con mejores retribuciones.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 74, resumen: 'Mantener el apoyo político, económico, militar y humanitario a Ucrania y las sanciones a Rusia mientras dure la agresión.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 74, resumen: 'Volver a una política de equilibrio con Marruecos y Argelia y defender la españolidad de Ceuta, Melilla y Canarias.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 74, resumen: 'Apoyar los esfuerzos de la ONU para una solución política en el Sáhara Occidental «mutuamente aceptable para las partes».' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 75, resumen: 'Retomar con el Reino Unido el diálogo sobre Gibraltar y revisar las consecuencias del acuerdo entre la UE y el Reino Unido.' },
+  { partidoId: 'pp', temaId: 'exterior', edicion: 2026, pagina: 76, resumen: 'Proteger a la población civil en Oriente Medio, especialmente en Gaza, e impulsar soluciones diplomáticas con Israel y los países árabes.' },
+
   // ===== Programas de las elecciones del 23-J de 2023 =====
   // PSOE: «Programa electoral. Elecciones generales 23 julio 2023»
   // PP: «Un proyecto al servicio de un gran país. 365 medidas»
@@ -627,6 +717,27 @@ export function numPropuestasTema(temaId: string): number {
 // ¿Tiene este partido al menos una propuesta (vigente) en este tema?
 export function partidoTrataTema(partidoId: string, temaId: string): boolean {
   return vigentes().some((p) => p.partidoId === partidoId && p.temaId === temaId);
+}
+
+// PDF (copia en la web) del programa que se muestra de un partido: el de
+// 2026 si ya lo hay; si no, el de 2023. Las páginas citadas son de ese archivo.
+export function archivoVigente(p: Partido): string | undefined {
+  const e = edicionVigente(p.id);
+  return e === 2026 ? p.programa.archivo : e === 2023 ? p.anterior?.archivo : undefined;
+}
+
+// Documento con el que se cita el programa que se muestra.
+export function documentoVigente(p: Partido): string | undefined {
+  const e = edicionVigente(p.id);
+  return e === 2026 ? p.programa.documento ?? `Programa de ${p.siglas} para el 29-N (2026)` : e === 2023 ? p.anterior?.documento : undefined;
+}
+
+// Partidos que ya tienen el programa de 2026 publicado hace 7 días o menos.
+export function programaNuevo(p: Partido, hoy: Date): boolean {
+  const f = p.programa.fechaPublicacion;
+  if (!f || edicionVigente(p.id) !== 2026) return false;
+  const dias = (hoy.getTime() - new Date(`${f}T00:00:00+01:00`).getTime()) / 86400000;
+  return dias >= 0 && dias < 7;
 }
 
 // ¿Se está mostrando algún programa de 2023?

@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Linking, Platform, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
 import { PARTIDOS, partidoPorId } from '../data/partidos';
-import { edicionVigente } from '../data/propuestas';
+import { archivoVigente, edicionVigente } from '../data/propuestas';
+import EtiquetaEdicion from '../components/EtiquetaEdicion';
 import { temaPorId } from '../data/temas';
 import { buscar, trozos, SUGERENCIAS, Resultado } from '../lib/buscar';
 import { urlPagina } from '../lib/web';
@@ -111,17 +112,13 @@ export default function BuscarScreen({ inicial = '', onVolver }: Props) {
             {plural(resultados.length, 'propuesta', 'propuestas')} de {plural(porPartido.length, 'partido', 'partidos')}
           </Text>
           {porPartido.map(({ partido: p, lista }) => {
-            const archivo = edicionVigente(p.id) === 2023 ? p.anterior?.archivo : undefined;
+            const archivo = archivoVigente(p);
             return (
               <Tarjeta key={p.id} style={{ gap: 12 }}>
                 <Pulsable onPress={() => router.push(`/partido/${p.id}`)} style={s.cabecera} escala={0.98} accessibilityRole="link">
                   <Marca color={p.color} tam={12} />
                   <Text style={[T.tarjeta, { color: C.tinta, fontSize: 18, flexShrink: 1 }]}>{p.siglas}</Text>
-                  {edicionVigente(p.id) === 2023 && (
-                    <View style={s.edicion}>
-                      <Text style={[T.etiqueta, { color: C.suave }]}>Programa de 2023</Text>
-                    </View>
-                  )}
+                  <EtiquetaEdicion p={p} />
                 </Pulsable>
                 {lista.map(({ propuesta: pr, claves }, i) => (
                   <View key={i} style={s.propuesta}>
@@ -203,7 +200,6 @@ const s = StyleSheet.create({
   sugerencias: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10 },
   chip: { paddingHorizontal: 14, minHeight: 40, justifyContent: 'center', borderRadius: R.pildora, backgroundColor: C.tarjeta, boxShadow: S.tarjeta },
   cabecera: { flexDirection: 'row', alignItems: 'center', gap: 10, flexWrap: 'wrap' },
-  edicion: { marginLeft: 'auto', backgroundColor: C.relleno, borderRadius: R.pildora, paddingHorizontal: 9, paddingVertical: 3 },
   propuesta: { gap: 3, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: C.linea, paddingTop: 12 },
   marcado: { backgroundColor: C.avisoFondo, fontFamily: F.textoSemi },
 });

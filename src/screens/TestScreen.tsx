@@ -19,6 +19,7 @@ import { ManoDemo, PosicionesDemo, useDemo } from '../components/ManoDemo';
 import TarjetaResultado from '../components/TarjetaResultado';
 import { compartirResultado } from '../lib/compartirResultado';
 import { pedirValoracion } from '../lib/valorar';
+import { archivoVigente } from '../data/propuestas';
 import { C, F, HUECO_BARRA, M, R, S, T, esWeb, nivel } from '../theme';
 
 const ENTRAR = FadeIn.duration(220).easing(Easing.bezier(0.23, 1, 0.32, 1));
@@ -977,7 +978,7 @@ function Detalle({
 function FraseResultado({ a, partidoId, tu, importante, suelta = false }: { a: Afirmacion; partidoId: string; tu: Respuesta | undefined; importante: boolean; suelta?: boolean }) {
   const p = partidoPorId(partidoId)!;
   const po = a.posturas[partidoId];
-  const archivo = p.anterior?.archivo;
+  const archivo = archivoVigente(p);
   const coincide = po && tu != null && Math.sign(po.valor) === Math.sign(tu);
   return (
     <View style={[s.frase, suelta && s.fraseSuelta]}>

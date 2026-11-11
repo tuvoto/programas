@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { urlPagina } from '../lib/web';
 import { PARTIDOS } from '../data/partidos';
-import { Propuesta } from '../data/propuestas';
+import { Propuesta, archivoVigente } from '../data/propuestas';
 import { Ficha } from '../lib/ficha';
 import Marca from '../components/Marca';
 import Pulsable from '../components/Pulsable';
@@ -15,7 +15,7 @@ export default function FichaScreen({ ficha, onVolver }: Props) {
   const { partido: p, tema, principales, otras } = ficha;
   const total = principales.length + otras.length;
   // PDF publicado con la web: cada «Página N» lo abre por esa página.
-  const archivo = ficha.edicion === 2023 ? p.anterior?.archivo : undefined; // PDF publicado con la web
+  const archivo = archivoVigente(p);
   // Primero se ve el PDF y desde ahí se descarga.
   const verPdf = () => router.push(`/documento?partido=${p.id}&temas=${tema.id}`);
 

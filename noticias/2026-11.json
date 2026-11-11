@@ -7646,6 +7646,7 @@
   "fecha": "2026-11-11T12:18:30.000Z",
   "partidos": [
    "pp",
+   "psoe",
    "vox"
   ],
   "vista": "2026-11-11T13:28:06.777Z"
@@ -7993,5 +7994,192 @@
    "psoe"
   ],
   "vista": "2026-11-11T19:16:08.602Z"
+ },
+ {
+  "titulo": "Marta Bosquet, elegida como la primera mujer Defensora del Pueblo Andaluz con los votos de PP-A y Vox",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/marta-bosquet-elegida-primera-mujer-defensora-pueblo-20261111201358-nts.html",
+  "fecha": "2026-11-11T19:16:06.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El Frente Amplio se aferra a la huelga para \"movilizar a la izquierda\" en las elecciones: \"El PP está nervioso por los efectos\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/11/6af4aad2e9cf4af3268b45b6.html",
+  "fecha": "2026-11-11T19:17:06.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Frente Amplio y Podemos reclaman a Sánchez el cese de Marlaska por las cargas policiales durante la huelga",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frente-amplio-podemos-reclaman-sanchez-cese-marlaska-por-las-cargas-policiales-durante-huelga_7059953_0.html",
+  "fecha": "2026-11-11T19:28:35.000Z",
+  "partidos": [
+   "frente-amplio",
+   "podemos",
+   "psoe"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El PP explica en su programa de cara a las elecciones cuánto subirán las pensiones y anuncia incentivos a la jubilación activa",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/pensiones/pp-explica-programa-cara-elecciones-subiran-pensiones-20261110200944-nt.html",
+  "fecha": "2026-11-11T19:40:24.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "PP y Vox acusan al Gobierno de haber promovido una \"huelga preventiva\": \"Es un instrumento electoral al servicio de Sánchez\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/11/6af4c60021efa0de228b4591.html",
+  "fecha": "2026-11-11T19:48:30.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Núñez sostiene que Feijóo devolverá a España «la decencia, el respeto a la ley y el sentido común»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/nunez-sostiene-feijoo-devolvera-espana-decencia-respeto-20261111205901-nt.html",
+  "fecha": "2026-11-11T20:04:32.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El Gobierno expresa máximo respeto por quienes han secundado el paro y condena la actitud del PP durante la jornada",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-gobierno-expresa-maximo-respeto-quienes-secundado-paro-condena-actitud-pp-jornada-20261111211130.html",
+  "fecha": "2026-11-11T20:11:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Abascal entona el “visca Catalunya” en busca de triplicar escaños",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261111/11681824/abascal-entona-visca-catalunya-busca-triplicar-escanos.html",
+  "fecha": "2026-11-11T20:20:37.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El PP denuncia la agresión a dos jóvenes militantes en Barakaldo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pp-denuncia-agresion-dos-jovenes-militantes-barakaldo-20261111202047-nt.html",
+  "fecha": "2026-11-11T20:39:19.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El PP condena la agresión a Miguel y Daniel, dos miembros de Nuevas Generaciones, en el 11-N: \"Ni un paso atrás ante los violentos\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-condena-agresion-miguel-daniel-dos-miembros-nuevas-generaciones-29-n-ni-un-paso-atras-ante-los-violentos_7059970_0.html",
+  "fecha": "2026-11-11T20:39:29.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Agreden a dos miembros del PP vasco en Barakaldo durante la huelga general",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/agreden-dos-miembros-pp-vasco-barakaldo-huelga-20261111211258-nt.html",
+  "fecha": "2026-11-11T20:41:46.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "El Gobierno se pone de perfil con la huelga y deja que el PP llene su silencio con duras críticas a los sindicatos",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/gobierno-pone-perfil-huelga-deja-pp-llene-20261111213317-ntrc.html",
+  "fecha": "2026-11-11T21:19:47.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Feijóo ve un \"fracaso\" la huelga general: \"Es un acto camuflado de campaña electoral por parte de los sindicatos\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-ve-fracaso-huelga-general-acto-camuflado-campana-electoral-parte-sindicatos-20261111223111.html",
+  "fecha": "2026-11-11T21:31:11.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Feijóo espera de partidos y sindicatos una condena de la agresión a dos afiliados del PP en Barakaldo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/11/6af4e0aae4d4d84a5d8b45b5.html",
+  "fecha": "2026-11-11T21:44:30.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Sánchez blinda en silencio la Defensa antes del final de su mandato: millones comprometidos y misión de paz para Ucrania",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/11/6af48f33e85ece74488b45b2.html",
+  "fecha": "2026-11-11T21:55:38.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Pablo Motos confirma que Pedro Sánchez no acudirá a 'El Hormiguero'",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/pablo-motos-confirma-pedro-sanchez-acudira-hormiguero-20261111220705-nt.html",
+  "fecha": "2026-11-11T21:57:58.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "Feijóo, en 'El Hormiguero': «En el móvil de Sánchez tiene que haber una cloaca»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/feijoo-hormiguero-movil-sanchez-haber-cloaca-20261111224241-nt.html",
+  "fecha": "2026-11-11T21:59:44.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
+ },
+ {
+  "titulo": "5 frases de Alberto Núñez Feijóo en 'El Hormiguero'",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/frases-alberto-nunez-feijoo-hormiguero-20261111225601-nt.html",
+  "fecha": "2026-11-11T22:00:16.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T22:17:10.481Z"
  }
 ]

@@ -6730,6 +6730,16 @@
   "vista": "2026-11-10T19:13:40.811Z"
  },
  {
+  "titulo": "Un marroquí que entró a nado en Ceuta explica a la juez Tardón que se decidió tras escuchar \"que Pedro Sánchez iba a regularizar a todo el que entrara\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/10/6af31d1ee4d4d8a03b8b4596.html",
+  "fecha": "2026-11-10T14:26:21.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
   "titulo": "Las medidas clave del PP: una \"renta de activación\" ligará el cobro del IMV y otros subsidios a la búsqueda de empleo",
   "medio": "El Confidencial",
   "url": "https://www.elconfidencial.com/espana/2026-11-10/medidas-clave-pp-renta-de-activacion-cobro-imv-empleo_4462240/",
@@ -6894,6 +6904,16 @@
   "vista": "2026-11-10T19:13:40.811Z"
  },
  {
+  "titulo": "La abogada Leticia de la Hoz, imputada en el 'Caso cloacas' del PSOE, renuncia a continuar defendiendo a Koldo García",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/10/6af32af121efa002098b4587.html",
+  "fecha": "2026-11-10T18:01:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
   "titulo": "BNG y PSdeG secundarán la huelga en el Parlamento, jornada en la que el PP hará trabajo normal",
   "medio": "La Voz de Galicia",
   "url": "https://www.lavozdegalicia.es/noticia/galicia/2026/11/10/bng-psdeg-secundaran-huelga-parlamento-jornada-pp-hara-trabajo-normal/00031794320611247294766.htm",
@@ -7028,6 +7048,18 @@
   "vista": "2026-11-10T21:55:14.707Z"
  },
  {
+  "titulo": "El PP y Vox aprovechan la huelga general y la ausencia de Compromís en las Corts para avanzar en la polémica ley del suelo",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-aprovechan-huelga-general-ausencia-compromis-corts-avanzar-polemica-ley-suelo_1_13653413.html",
+  "fecha": "2026-11-10T20:28:15.000Z",
+  "partidos": [
+   "compromis",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
   "titulo": "Abascal llama a Sánchez «histérico» por comentar su entrevista con Broncano",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/cataluna/abascal-llama-sanchez-histerico-comentar-entrevista-broncano-20261110212645-nt.html",
@@ -7037,6 +7069,16 @@
    "vox"
   ],
   "vista": "2026-11-10T21:55:14.707Z"
+ },
+ {
+  "titulo": "Toledo despide a las víctimas de Urda entre el luto, los aplausos a los Reyes y la indignación: \"Sánchez no viene porque tiene mucho miedo al pueblo\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/10/6af339c3fdddff9e3e8b45ae.html",
+  "fecha": "2026-11-10T20:51:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
  },
  {
   "titulo": "Feijóo convierte la política de inmigración en la gran novedad de su programa electoral",
@@ -7054,6 +7096,7 @@
   "url": "https://www.ara.cat/politica/eleccions-generals/broncano-demana-disculpes-l-entrevista-santiago-abascal_1_5906864.html",
   "fecha": "2026-11-10T21:01:54.000Z",
   "partidos": [
+   "frente-amplio",
    "vox"
   ],
   "vista": "2026-11-10T21:55:14.707Z"
@@ -7077,5 +7120,130 @@
    "vox"
   ],
   "vista": "2026-11-10T21:55:14.707Z"
+ },
+ {
+  "titulo": "Traducir Feijóo al politizado",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/10/6af39330e9cf4a67248b45a1.html",
+  "fecha": "2026-11-10T22:16:26.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Precampaña elecciones generales en España, en directo: última hora de Pedro Sánchez (PSOE), Feijóo (PP), Abascal (Vox), Ada Colau (Frente Amplio) y resto de candidatos hoy",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/misa-funeral-catedral-toledo-victimas-tren-urda-20261110175926-di.html",
+  "fecha": "2026-11-10T22:53:14.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Colau en 'La Revuelta': “Una prioridad es que no haya Gobierno facha, y otra que el PSOE no sea connivente con la especulación\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/colau-revuelta-prioridad-no-haya-gobierno-facha-psoe-no-tenga-connivencia-especulacion_1_13654090.html",
+  "fecha": "2026-11-10T22:55:31.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Colau convierte la «prioridad nacional» en su bandera contra Vox durante la entrevista en La Revuelta",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/colau-convierte-prioridad-nacional-bandera-vox-entrevista-20261110234353-ntrc.html",
+  "fecha": "2026-11-10T22:58:13.000Z",
+  "partidos": [
+   "frente-amplio",
+   "vox"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "La entrevista de Broncano a Abascal en RTVE inflama la campaña electoral del 29-N",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/entrevista-broncano-abascal-rtve-inflama-campana-electoral-20261110000917-nt.html",
+  "fecha": "2026-11-10T23:09:17.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Colau se abre paso en 'La Revuelta' entre las disculpas de Broncano",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261111/11681338/colau-abre-paso-revuelta-disculpas-broncano.html",
+  "fecha": "2026-11-10T23:14:32.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "¿A qué hora es la entrevista a Feijóo en El Hormiguero? El líder del PP firma el triplete",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/entrevista-feijoo-hormiguero-20261110141650-nt.html",
+  "fecha": "2026-11-10T23:19:13.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Puig se borra de la campaña de movilización a la que apela Sánchez",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/puig-borra-campana-movilizacion-apela-sanchez-20261110004256-nt.html",
+  "fecha": "2026-11-10T23:42:56.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "El programa del PP no aclara la condonación de la deuda de la dana reclamada por Pérez Llorca y oculta la infrafinanciación",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/programa-pp-no-aclara-condonacion-deuda-dana-reclamada-perez-llorca-oculta-infrafinanciacion_1_13653706.html",
+  "fecha": "2026-11-11T00:27:12.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "La izquierda se lanza en tromba contra RTVE por dejar «salir a Abascal» en La Revuelta",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/izquierda-lanza-tromba-rtve-dejar-salir-abascal-20261110014021-nt.html",
+  "fecha": "2026-11-11T00:40:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Sánchez se hipoteca al éxito de la huelga para intentar remontar en la campaña",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-ata-exito-huelga-intentar-remontar-campana-20261111014458-nt.html",
+  "fecha": "2026-11-11T00:53:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
+ },
+ {
+  "titulo": "Feijóo anuncia acciones legales por la supresión de la dirección general de seguridad en Adif:«Vamos a llegar hasta el final»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-anuncia-acciones-legales-supresion-direccion-general-20261110233615-nt.html",
+  "fecha": "2026-11-11T00:53:32.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-11T01:22:51.144Z"
  }
 ]

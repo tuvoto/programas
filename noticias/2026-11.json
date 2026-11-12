@@ -9358,6 +9358,16 @@
   "vista": "2026-11-12T19:13:38.673Z"
  },
  {
+  "titulo": "El CIS pronostica que Compromís-Front Valencià tendría entre 4 y 6 escaños en las generales",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/cis-pronostica-compromis-front-valencia-tendria-4-6-escanos-generales_1_13659496.html",
+  "fecha": "2026-11-12T16:59:50.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
   "titulo": "El PSPV ganaría las elecciones en la Comunitat con 8 puntos de ventaja sobre un PP empatado con Vox según el CIS",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/politica/pspv-ganaria-elecciones-comunitat-puntos-ventaja-sobre-20261112180140-nt.html",
@@ -9470,6 +9480,26 @@
    "psoe"
   ],
   "vista": "2026-11-12T19:13:38.673Z"
+ },
+ {
+  "titulo": "Colau pide dar la vuelta a los sondeos y avisa a Sánchez: \"El futuro Gobierno será contra la especulación o no será\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-colau-pide-dar-vuelta-sondeos-avisa-sanchez-futuro-gobierno-sera-contra-especulacion-no-sera-20261112195439.html",
+  "fecha": "2026-11-12T18:54:39.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El Frente Amplio arranca la campaña en Vallecas al calor de la victoria del 'decreto Maricarmen'",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682867/frente-amplio-arranca-campana-vallecas-calor-victoria-decreto-maricarmen.html",
+  "fecha": "2026-11-12T18:54:43.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
  },
  {
   "titulo": "Begoña Gómez toma la palabra en el arranque de campaña del PSOE: \"Gracias por darme aliento para continuar\"",
@@ -9591,5 +9621,540 @@
    "psoe"
   ],
   "vista": "2026-11-12T19:13:38.673Z"
+ },
+ {
+  "titulo": "El Frente Amplio arranca la campaña apelando a la remontada: \"Si llegamos a un 10%, se les acaba la fiesta\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/frente-amplio-arranca-campana-apelando-remontada-si-llegamos-10-les-acaba-fiesta_1_13659726.html",
+  "fecha": "2026-11-12T19:15:06.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Colau se conjura para “desmentir” las encuestas y se compromete a conformar un Gobierno “contra la especulación”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/colau-se-conjura-para-desmentir-las-encuestas-y-se-compromete-a-conformar-un-gobierno-contra-la-especulacion.html",
+  "fecha": "2026-11-12T19:20:34.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El Front Ampli confia en la irrupció d’Ada Colau per reeditar el govern de coalició",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/front-ampli-confia-irrupcio-d-ada-colau-reeditar-govern-coalicio_1_5907983.html",
+  "fecha": "2026-11-12T19:22:41.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Un cálculo alternativo del CIS preelectoral da la mayoría absoluta a PP y Vox aunque el PSOE sería primera fuerza",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/calculo-alternativo-cis-preelectoral-da-mayoria-absoluta-pp-vox-psoe-seria-primera-fuerza_1_13659317.html",
+  "fecha": "2026-11-12T19:48:58.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Vox es queda sol al Consell de Mallorca contra la concessió del Premi Nacional de Poesia a Sebastià Alzamora",
+  "medio": "Ara",
+  "url": "https://www.arabalears.cat/politica/vox-queda-sol-consell-mallorca-concessio-premi-nacional-poesia-sebastia-alzamora_1_5908754.html",
+  "fecha": "2026-11-12T19:52:01.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "PSOE y PP rechazan la enmienda de Vox a la ley de carrera profesional sanitaria",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/psoe-pp-rechazan-enmienda-vox-ley-carrera-20261112210144-nt.html",
+  "fecha": "2026-11-12T20:01:46.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Redondo culpa al ministerio de Irene Montero del expediente que investiga la Fiscalía Europea sobre las pulseras antimaltrato",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/redondo-culpa-ministerio-irene-montero-expediente-investiga-20261112205537-nt.html",
+  "fecha": "2026-11-12T20:03:29.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Maíllo llama a \"la remontada\" el 29N y destaca \"la valentía\" del Frente Amplio: \"Somos la izquierda que se arremanga\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/andalucia/noticia-maillo-llama-remontada-29n-destaca-valentia-frente-amplio-somos-izquierda-arremanga-20261112210458.html",
+  "fecha": "2026-11-12T20:04:58.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Frente Amplio sitúa el 29-N como un referéndum «entre vivienda y rentismo»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/frente-amplio-situa-29n-referendum-vivienda-rentismo-20261112210602-nt.html",
+  "fecha": "2026-11-12T20:06:02.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "ERC y Junts trasladan su guerra al Congreso bajo la amenaza de perder su influencia en Madrid",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/erc-junts-trasladan-guerra-congreso-bajo-amenaza-20261112205858-nt.html",
+  "fecha": "2026-11-12T20:06:48.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Vox reducirá el IRPF en función del número de hijos y anuncia una cuota de cero euros para autónomos",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/fiscalidad/vox-promete-reduccion-irpf-funcion-numero-hijos-20261112210317-nt.html",
+  "fecha": "2026-11-12T20:07:02.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El PP promete una bajada masiva de impuestos: los menores de 35 tendrán una reducción en el IRPF durante cuatro años",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/fiscalidad/pp-promete-bajar-impuestos-rentas-medias-bajas-20261112181026-nt.html",
+  "fecha": "2026-11-12T20:07:45.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Sánchez apela a la movilización del voto de las mujeres para una \"remontada épica\" ante Feijóo y Abascal",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-apela-movilizacion-voto-mujeres-remontada-epica-feijoo-abascal-20261112210758.html",
+  "fecha": "2026-11-12T20:07:58.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El PSOE fia la remuntada a l’habitatge en el que pot ser la partida final del sanchisme",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/psoe-fia-remuntada-l-habitatge-pot-partida-final-sanchisme_1_5908125.html",
+  "fecha": "2026-11-12T20:10:19.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Sánchez convierte a Begoña Gómez en oradora estrella del primer mitin de campaña del PSOE",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/sanchez-convierte-begona-gomez-oradora-estrella-primer-20261112211157-ntrc.html",
+  "fecha": "2026-11-12T20:11:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "UPN y PP piden \"votar con responsabilidad\" en Navarra para \"acabar con el sanchismo\"",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/upn-pp-piden-votar-responsabilidad-navarra-acabar-sanchismo_1_13660071.html",
+  "fecha": "2026-11-12T20:12:50.000Z",
+  "partidos": [
+   "pp",
+   "upn"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Los partidos catalanes inician la campaña con el PSC en cabeza y Rufián y Colau peleando por el mismo espacio",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/partidos-catalanes-inician-campana-psc-cabeza-rufian-colau-peleando-espacio_1_13659910.html",
+  "fecha": "2026-11-12T20:13:39.000Z",
+  "partidos": [
+   "erc",
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "ERC se erige en el freno a la derecha para disputar la hegemonía al PSC",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/elecciones/20261112/11682864/erc-erige-freno-derecha-disputar-hegemonia-psc.html",
+  "fecha": "2026-11-12T20:16:54.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Junts vol tornar a ser decisiu el 29-N: “Som els únics que tornem a casa amb la feina feta”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/junts-vol-tornar-decisiu-29-n-unics-tornem-casa-feina-feta_1_5907913.html",
+  "fecha": "2026-11-12T20:16:59.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "UPC se presenta como la voz \"de las clases populares\" canarias en el Congreso",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/upc-presenta-voz-clases-populares-canarias-congreso_1_13660164.html",
+  "fecha": "2026-11-12T20:19:09.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Junts quiere aglutinar el voto catalán para volver a influir en Madrid tras las elecciones del 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682905/junts-quiere-aglutinar-voto-catalan-volver-influir-madrid-elecciones-29-n.html",
+  "fecha": "2026-11-12T20:19:22.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El CIS preelectoral de Tezanos infla al PSOE con hasta 143 escaños y hunde al PP",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cis-preelectoral-tezanos-infla-psoe-143-escanos-20261112174821-nt.html",
+  "fecha": "2026-11-12T20:19:24.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Nogueras erige a Junts como los únicos que priorizan a Catalunya: \"No nos apartaremos\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/catalunya/noticia-nogueras-erige-junts-unicos-priorizan-catalunya-no-nos-apartaremos-20261112211949.html",
+  "fecha": "2026-11-12T20:19:49.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Feijóo lanza la campaña del PP desacreditando la huelga: \"España va a cambiar y vamos a abrir una nueva etapa\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/feijoo-lanza-campana-pp-desacreditando-huelga-espana-cambiar-abrir-nueva-etapa_1_13660163.html",
+  "fecha": "2026-11-12T20:23:14.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Abascal carga contra la intervención de Begoña Gómez en campaña: “No tienen vergüenza”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682914/abascal-carga-intervencion-begona-gomez-campana-vergueenza.html",
+  "fecha": "2026-11-12T20:23:52.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Abascal culmina la precampaña con 22 provincias visitadas y 25 actos en dos semanas",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/abascal-culmina-la-precampana-con-22-provincias-visitadas-y-25-actos-en-dos-semanas.html",
+  "fecha": "2026-11-12T20:24:58.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Feijóo abre su campaña en Catalunya, clave en la ruta para llegar a la Moncloa",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682913/feijoo-abre-campana-catalunya-clave-ruta-llegar-moncloa.html",
+  "fecha": "2026-11-12T20:25:51.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Frente Amplio arranca la campaña apostando por mejoras en salarios y en el acceso a la vivienda",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/frente-amplio-arranca-campana-apostando-mejoras-salarios-acceso-vivienda_1_13660144.html",
+  "fecha": "2026-11-12T20:29:47.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Cristina Valido (CC-Primero Canarias) defiende su opción política en el 29N para huir \"del ruido de derecha e izquierda\"",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/cristina-valido-cc-canarias-defiende-opcion-politica-29n-huir-ruido-derecha-e-izquierda_1_13660134.html",
+  "fecha": "2026-11-12T20:31:03.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Rufián ironiza sobre un posible gobierno de PP y Vox: \"Viene Figo de ministro de deportes e Iker Jiménez en el telediario\"",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/rufian-ironiza-posible-gobierno-pp-vox-viene-figo-ministro-deportes-e-iker-jimenez-telediario_1_13659975.html",
+  "fecha": "2026-11-12T20:33:39.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Bildu se ofrece para dar una «paliza democrática al bloque reaccionario»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-ofrece-dar-paliza-democratica-bloque-reaccionario-20261112205243-nt.html",
+  "fecha": "2026-11-12T20:33:44.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Geroa Bai llama a \"defender Navarra\" de quienes \"ponen en cuestión\" el autogobierno",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/geroa-bai-llama-defender-navarra-ponen-cuestion-autogobierno_1_13660166.html",
+  "fecha": "2026-11-12T20:36:18.000Z",
+  "partidos": [
+   "geroa-bai"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Feijóo promete una «auditoría del saqueo y de la decadencia» de los años del sanchismo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/feijoo-promete-auditoria-saqueo-decadencia-anos-sanchismo-20261112203649-nt.html",
+  "fecha": "2026-11-12T20:37:18.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Pedro Sánchez saca a la imputada Begoña Gómez en su mitin de Sevilla: «Me habéis dado el aliento para continuar»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/pedro-sanchez-saca-begona-gomez-mitin-sevilla-20261112210128-nts.html",
+  "fecha": "2026-11-12T20:42:17.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Begoña Gómez se estrena en un mitin del PSOE para captar el voto de las mujeres",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/begona-gomez-se-estrena-en-un-mitin-del-psoe-para-captar-el-voto-de-las-mujeres.html",
+  "fecha": "2026-11-12T20:44:45.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "La UCO detecta un «descuadre contable» entre la documentación del Tribunal de Cuentas y las cuentas del PSOE",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/uco-detecta-descuadre-contable-documentacion-tribunal-cuentas-20261112214453-nt.html",
+  "fecha": "2026-11-12T20:46:23.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "De la caçadora a la camisa i corbata: Vox espera doblar resultats amb una imatge més institucional",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/cacadora-camisa-corbata-vox-espera-doblar-resultats-imatge-mes-institucional_1_5908471.html",
+  "fecha": "2026-11-12T20:47:34.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "29N: Abascal despide la precampaña con debates menos «absurdos» que el de La Revuelta: «Si ganan, se considerarán impunes»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/aragon/29n-abascal-despide-precampana-huesca-debates-esteriles-20261112204017-nt.html",
+  "fecha": "2026-11-12T20:47:54.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Podemos termina su precampaña con cargas contra el PSOE y el Frente Amplio: “Tienen como proyecto que las cosas sigan como están”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/podemos-termina-su-precampana-con-cargas-contra-el-psoe-y-el-frente-amplio-tienen-como-proyecto-que-las-cosas-sigan-como-estan.html",
+  "fecha": "2026-11-12T20:50:10.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "La campaña electoral arranca en Navarra con la batalla entre el PSN y la coalición de UPN y PP por ganar las elecciones",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/campana-electoral-arranca-navarra-batalla-psn-coalicion-upn-pp-ganar-elecciones_1_13659595.html",
+  "fecha": "2026-11-12T20:52:52.000Z",
+  "partidos": [
+   "pp",
+   "upn"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "El PNV se presenta como una «póliza de seguros» para «proteger la casa vasca»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pnv-presenta-poliza-seguros-proteger-casa-vasca-20261112215720-nt.html",
+  "fecha": "2026-11-12T20:57:20.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "A qué hora y dónde es el mitin de Pedro Sánchez en Arnedo",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/hora-mitin-pedro-sanchez-viernes-arnedo-20261112220438-nt.html",
+  "fecha": "2026-11-12T21:04:38.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Vox inicia la campaña electoral en Navarra apostando por \"la prioridad nacional, la desregulación y la reemigración\"",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/vox-inicia-campana-electoral-navarra-apostando-prioridad-nacional-desregulacion-reemigracion_1_13660251.html",
+  "fecha": "2026-11-12T21:05:09.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Rufián acusa a Junts de ser \"colaboracionista de Abascal\" por no posicionarse contra PP y Vox",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/catalunya/noticia-rufian-acusa-junts-ser-colaboracionista-abascal-no-posicionarse-contra-pp-vox-20261112220637.html",
+  "fecha": "2026-11-12T21:06:37.000Z",
+  "partidos": [
+   "erc",
+   "junts",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Los 'candidatos' por Valladolid, Puente y Redondo, un filón para el PP en el arranque de la campaña",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/lista-psoe-valladolid-puente-redondo-filon-pp-20261112193851-nt.html",
+  "fecha": "2026-11-12T21:07:05.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Pedro Sánchez vuelve a bailar en Sevilla y se agarra a Begoña Gómez para pedir el voto de la mujer",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/pedro-sanchez-vuelve-bailar-sevilla-reclama-voto-20261112211051-nts.html",
+  "fecha": "2026-11-12T21:07:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Colau se conjura para desafiar a las encuestas: «Vamos a darle la vuelta. Necesitamos superar el 8%»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/colau-conjura-desafiar-encuestas-vamos-darle-vuelta-20261112205209-nt.html",
+  "fecha": "2026-11-12T21:20:15.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Feijóo se presenta como “gestor” para “resolver los problemas” frente al “saqueo” de Sánchez",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-12/feijoo-se-presenta-como-gestor-para-resolver-los-problemas-frente-al-saqueo-de-sanchez.html",
+  "fecha": "2026-11-12T21:26:10.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "“Nos vamos a Madrid”: Adelante Andalucía arranca una campaña “histórica” con la que puede irrumpir en el Congreso",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/nos-vamos-a-madrid-adelante-andalucia-arranca-una-campana-historica-con-la-que-puede-irrumpir-en-el-congreso.html",
+  "fecha": "2026-11-12T21:28:18.000Z",
+  "partidos": [
+   "adelante"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Juanma Moreno: «Sánchez merece un castigo severo en las urnas por todo el daño que ha hecho»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/juanma-moreno-sanchez-merece-castigo-severo-urnas-20261112212818-nts.html",
+  "fecha": "2026-11-12T21:32:08.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Otegi coloca a Bildu como 'muleta vasca' del PSOE mientras el PNV intenta alejarse de Sánchez tras ocho años de apoyo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/otegi-coloca-bildu-muleta-vasca-psoe-pnv-20261112223723-nt.html",
+  "fecha": "2026-11-12T21:37:24.000Z",
+  "partidos": [
+   "bildu",
+   "pnv",
+   "psoe"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
+ },
+ {
+  "titulo": "Feijóo a Albiolona",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/feijoo-albiolona_129_5908915.html",
+  "fecha": "2026-11-12T21:51:53.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T21:59:50.918Z"
  }
 ]

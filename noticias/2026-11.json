@@ -8415,6 +8415,16 @@
   "vista": "2026-11-12T01:29:41.678Z"
  },
  {
+  "titulo": "Moncloa y el PSOE, desaparecidos en la celebración de una huelga que durante días han abanderado contra la oposición",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/moncloa-psoe-desaparecidos-celebracion-una-huelga-que-durante-dias-han-abanderado-contra-oposicion_7059875_0.html",
+  "fecha": "2026-11-12T04:00:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
   "titulo": "El maná del dinero no se acaba: Sánchez pisa el acelerador del rearme a dos semanas de las elecciones",
   "medio": "El Confidencial",
   "url": "https://www.elconfidencial.com/espana/2026-11-12/sanchez-pisa-el-acelerador-del-rearme-a-dos-semanas-de-las-elecciones_4462898/",
@@ -8423,5 +8433,84 @@
    "psoe"
   ],
   "vista": "2026-11-12T04:10:48.947Z"
+ },
+ {
+  "titulo": "Encuestas elecciones generales 29N: resultados de PSOE, PP, Vox y Frente Amplio y ganador según los sondeos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/encuestas-elecciones-generales-29n-resultados-psoe-pp-20261112050000-nt.html",
+  "fecha": "2026-11-12T04:00:07.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Tesh Sidi (Frente Amplio): \"Hay que atajar la privatización, hemos visto que una mala gestión de la sanidad pública mata\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/tesh-sidi-frente-amplio-hay-que-atajar-privatizacion-hemos-visto-que-una-mala-gestion-sanidad-publica-mata_7059266_0.html",
+  "fecha": "2026-11-12T04:01:11.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Sánchez abre campaña hoy en Sevilla, Feijóo lo hará en Badalona mientras que Abascal y Colau eligen Madrid",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-abre-campana-hoy-sevilla-feijoo-hara-badalona-mientras-abascal-colau-eligen-madrid-20261112072933.html",
+  "fecha": "2026-11-12T06:29:33.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Feijóo, sobre el 'decreto Maricarmen': \"Hay que tener respeto a los muertos, voy a derogarlos porque son malos para los inquilinos y los propietarios\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-12/feijoo-vivienda-decreto-maricarmen-okupas_4463251/",
+  "fecha": "2026-11-12T06:58:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Leire Díez afirma que abogados afines al PP le ofrecieron dos millones por mentir contra Sánchez",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/leire-diez-afirma-abogados-afines-pp-le-ofrecieron-millones-mentir-sanchez_1_13656894.html",
+  "fecha": "2026-11-12T07:00:13.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Elecciones generales del 29N, última hora de la precampaña electoral en directo: Sánchez, Feijóo, Abascal y resto de candidatos",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682180/elecciones-generales-29n-ultima-hora-precampana-electoral-feijoo-sanchez-abascal-resto-candidatos-hoy-jueves-12-noviembre-en-directo.html",
+  "fecha": "2026-11-12T07:00:27.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Feijóo, sobre la inmigración en 'El Hormiguero': \"Tenemos una falta de política migratoria; estamos regularizando a 1.300.000 inmigrantes\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-12/feijoo-hormiguero-inmigracion-ceuta-frontex_4463254/",
+  "fecha": "2026-11-12T07:10:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T07:36:32.832Z"
  }
 ]

@@ -7733,6 +7733,16 @@
   "vista": "2026-11-11T13:28:06.777Z"
  },
  {
+  "titulo": "El PP descalifica la huelga como “preventiva” contra Feijóo y Vox como “circo general”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-11/el-pp-descalifica-la-huelga-como-preventiva-contra-feijoo-y-vox-como-circo-general.html",
+  "fecha": "2026-11-11T12:49:34.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
   "titulo": "Alcalde asegura que Toledo «ha dado la espalda a la huelga política» y carga contra Sánchez y Tolón",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/alcalde-asegura-toledo-dado-espalda-huelga-politica-20261111135253-nt.html",
@@ -8224,6 +8234,16 @@
   "vista": "2026-11-12T01:29:41.678Z"
  },
  {
+  "titulo": "Feijóo, en 'El Hormiguero': «En el móvil de Sánchez tiene que haber una cloaca»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-hormiguero-movil-sanchez-haber-cloaca-20261111232759-ntrc.html",
+  "fecha": "2026-11-11T22:28:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
   "titulo": "Feijóo se examina en “El Hormiguero”",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261111/11681968/feijoo-examina-hormiguero.html",
@@ -8303,6 +8323,17 @@
    "pnv"
   ],
   "vista": "2026-11-12T01:29:41.678Z"
+ },
+ {
+  "titulo": "Una noche plácida para Feijóo en ‘El hormiguero’: “Le escribí a Sánchez por WhatsApp y no me salió el doble ‘check”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-11/una-noche-placida-para-feijoo-en-el-hormiguero-le-escribi-a-sanchez-por-whatsapp-y-no-me-salio-el-doble-check.html",
+  "fecha": "2026-11-11T23:57:01.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
  },
  {
   "titulo": "La exdirectora del Instituto de las Mujeres, investigada por corrupción: «Ahora solo me contratan del PP»",
@@ -8458,6 +8489,18 @@
   "vista": "2026-11-12T07:36:32.832Z"
  },
  {
+  "titulo": "Néstor Rego, candidato del BNG: “PP y PSOE llevan años alternándose en la discriminación a Galicia, pero no son exactamente lo mismo”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-12/nestor-rego-candidato-del-bng-pp-y-psoe-llevan-anos-alternandose-en-la-discriminacion-a-galicia-pero-no-son-exactamente-lo-mismo.html",
+  "fecha": "2026-11-12T04:30:01.000Z",
+  "partidos": [
+   "bng",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
   "titulo": "Sánchez abre campaña hoy en Sevilla, Feijóo lo hará en Badalona mientras que Abascal y Colau eligen Madrid",
   "medio": "Europa Press",
   "url": "https://www.europapress.es/nacional/noticia-sanchez-abre-campana-hoy-sevilla-feijoo-hara-badalona-mientras-abascal-colau-eligen-madrid-20261112072933.html",
@@ -8512,5 +8555,158 @@
    "pp"
   ],
   "vista": "2026-11-12T07:36:32.832Z"
+ },
+ {
+  "titulo": "Leire Díez assegura que l'entorn del PP li va oferir 2 milions d'euros per \"mentir\" sobre Sánchez",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/leire-diez-assegura-pp-li-oferir-2-milions-d-euros-mentir-sanchez_25_5907891.html",
+  "fecha": "2026-11-12T07:57:09.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Leire Díez dice también que le ofrecieron dos millones por inventarse acusaciones contra Pedro Sánchez",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682212/leire-diez-dice-le-ofrecieron-dos-millones-inventarse-acusaciones-pedro-sanchez.html",
+  "fecha": "2026-11-12T07:57:42.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "“Se ha cagado”: los ‘youtubers’ reaccionan al plantón de Abascal con Jordi Wild y la órbita de Vox lanza teorías conspiranoicas",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-12/se-ha-cagado-los-youtubers-reaccionan-al-planton-de-abascal-con-jordi-wild-y-la-orbita-de-vox-lanza-teorias-conspiranoicas.html",
+  "fecha": "2026-11-12T08:11:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "\"No podeu votar Vox\": la plantada a Jordi Wild que li pot sortir cara a Abascal",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/no-votar-vox-plantada-jordi-wild-li-pot-sortir-cara-abascal_1_5907895.html",
+  "fecha": "2026-11-12T08:19:57.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Jordi Wild denuncia que Abascal cancele su entrevista para \"minimizar riesgos\" tras su participación en 'La Revuelta'",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/jordi-wild-denuncia-abascal-cancele-entrevista-minimizar-riesgos-salir-reforzado-revuelta_1_13656948.html",
+  "fecha": "2026-11-12T08:35:12.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "El Constitucional rechaza la petición de Drago de impedir que Unidad del Pueblo Canario use las siglas UPC",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/tribunales/constitucional-rechaza-peticion-drago-impedir-unidad-pueblo-canario-use-siglas-upc_1_13657108.html",
+  "fecha": "2026-11-12T08:44:59.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Rufián ve \"excesiva\" la actuación policial en la huelga, culpa al PSOE e insiste en la dimisión de Marlaska",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-rufian-ve-excesiva-actuacion-policial-huelga-culpa-psoe-insiste-dimision-marlaska-20261112101335.html",
+  "fecha": "2026-11-12T09:13:35.000Z",
+  "partidos": [
+   "erc",
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "El PSPV se vuelca con Alicante y Sánchez no tiene previsto volver a Valencia en campaña",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pspv-vuelca-alicante-sanchez-previsto-volver-valencia-20261112093136-nt.html",
+  "fecha": "2026-11-12T09:14:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Rufián se pregunta por qué ha tardado tanto en convocarse una huelga y arranca la campaña \"con ganas de revancha\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-rufian-pregunta-tardado-tanto-convocarse-huelga-arranca-campana-ganas-revancha-20261112102742.html",
+  "fecha": "2026-11-12T09:27:42.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Podemos arremete contra el PSOE y el Frente Amplio por la «brutalidad policial» en la huelga general",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/podemos-arremete-psoe-frente-amplio-brutalidad-policial-20261112102932-ntrc.html",
+  "fecha": "2026-11-12T09:29:33.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Belarra pide amparo a Armengol al sentirse \"hostigada\" por la Policía en la huelga: \"Hubo agresiones injustificadas\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-belarra-pide-amparo-armengol-sentirse-hostigada-policia-huelga-hubo-agresiones-injustificadas-20261112103252.html",
+  "fecha": "2026-11-12T09:32:52.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Bolaños afirma que, pese a una mayoría reaccionaria, todas las encuestas coinciden en la tendencia al alza del PSOE",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-bolanos-afirma-pese-mayoria-reaccionaria-todas-encuestas-coinciden-tendencia-alza-psoe-20261112103550.html",
+  "fecha": "2026-11-12T09:35:50.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Junts pide a Illa que aplace la Comisión Bilateral prevista para hoy hasta después del 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261112/11682294/junts-pide-illa-aplace-comision-bilateral-prevista-hoy-29-n.html",
+  "fecha": "2026-11-12T09:36:17.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Jordi Wild aclara lo que pasó tras el plantón de Abascal y explica cómo serán sus entrevistas para el 29-N: «Noto mucho miedo»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/jordi-wild-aclara-paso-tras-planton-abascal-20261112105102-nt.html",
+  "fecha": "2026-11-12T09:51:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
+ },
+ {
+  "titulo": "Abascal: «Ni soy un héroe después de salir en 'La Revuelta' ni soy un villano tras no acudir con Jordi Wild»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/abascal-heroe-despues-salir-revuelta-villano-tras-20261112105235-nt.html",
+  "fecha": "2026-11-12T09:52:35.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-12T10:19:18.896Z"
  }
 ]

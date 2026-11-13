@@ -8869,7 +8869,8 @@
   "url": "https://www.ara.cat/politica/eleccions-generals/campanya-eleccions-generals-directe_6_5894106.html",
   "fecha": "2026-11-12T12:03:35.000Z",
   "partidos": [
-   "erc"
+   "erc",
+   "junts"
   ],
   "vista": "2026-11-13T19:12:50.930Z"
  },
@@ -11743,6 +11744,16 @@
   "vista": "2026-11-13T19:12:50.930Z"
  },
  {
+  "titulo": "Sánchez pide una participación del 75% para \"una mayoría progresista\" el 29N y se mofa de Feijóo por su entrevista con Jordi Wild",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-pide-participacion-mayoria-progresista-mofa-feijoo-jordi-wild_7060966_0.html",
+  "fecha": "2026-11-13T18:31:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
   "titulo": "Colau rompe dos huevos, Feijóo no sabe inglés",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261113/11683785/colau-rompe-dos-huevos-feijoo-ingles.html",
@@ -11815,6 +11826,16 @@
   "vista": "2026-11-13T19:12:50.930Z"
  },
  {
+  "titulo": "Bildu reivindica un SMI «propio» y carga contra las empresas energéticas",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-reivindica-smi-propio-carga-empresas-energeticas-20261113195840-nt.html",
+  "fecha": "2026-11-13T18:58:40.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
   "titulo": "El PSOE pide el voto frente a «dos partidos que no quieren ni el progreso ni mejorar la vida de las personas»",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/castilla-la-mancha/psoe-pide-voto-frente-dos-partidos-quieren-20261113195854-nt.html",
@@ -11846,5 +11867,222 @@
    "vox"
   ],
   "vista": "2026-11-13T19:12:50.930Z"
+ },
+ {
+  "titulo": "El PP critica a los dirigentes socialistas de Castilla-La Mancha por hacer campaña para Pedro Sánchez",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/pp-critica-dirigentes-socialistas-castillala-mancha-campana-20261113200725-nt.html",
+  "fecha": "2026-11-13T19:07:26.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Un vídeo con IA para ridiculizar el apoyo del PNV a Pedro Sánchez",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/video-ia-ridiculizarel-apoyo-pnv-pedro-sanchez-20261113200759-nt.html",
+  "fecha": "2026-11-13T19:11:25.000Z",
+  "partidos": [
+   "pnv",
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Entrada de Santiago Abascal a la plaça Colón de Madrid en el primer gran acte de campanya",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/entrada-santiago-abascal-placa-colon-madrid-gran-acte-campanya_8_5909989.html",
+  "fecha": "2026-11-13T19:15:22.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Els votants del PP se sumen a la majoria per limitar els preus dels lloguers",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/enquesta-ara-divisio-limitacio-preus-consens-desnonaments-persones-vulnerables_1_5909300.html",
+  "fecha": "2026-11-13T19:17:05.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Rufián se burla de Abascal: \"Si no se atreve con Jordi Wild, imaginadle con Mohamed VI\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/rufian-se-burla-abascal-si-no-se-atreve-con-jordi-wild-imaginadle-con-mohamed-vi_7060999_0.html",
+  "fecha": "2026-11-13T19:28:02.000Z",
+  "partidos": [
+   "erc",
+   "vox"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "«Construir más casas y más rápido», la promesa del PNV a los «jóvenes vascos»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/construir-casas-rapido-promesa-pnv-jovenes-vascos-20261113203215-nt.html",
+  "fecha": "2026-11-13T19:32:16.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Así es la programación de La Séptima este fin de semana: humor, dos películas, entrevista a Pedro Sánchez y cero deportes",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/programacion-septima-sabado-domingo-humor-dos-peliculas-20261113202412-nt.html",
+  "fecha": "2026-11-13T19:34:23.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Rufián y Montero defienden en Palma una izquierda que no se someta al PSOE: \"El frente somos nosotros\"",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/rufian-montero-defienden-palma-izquierda-no-someta-psoe-frente_1_13663237.html",
+  "fecha": "2026-11-13T19:39:04.000Z",
+  "partidos": [
+   "erc",
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "<![CDATA[Vídeo del mitin de Pedro Sánchez en Pamplona]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/multimedia/videos/navarra/2026/11/13/video-mitin-pedro-sanchez-pamplona.html",
+  "fecha": "2026-11-13T19:43:36.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "El Ingreso Mínimo Vital cambiará si gobierna el PP: la Renta de Activación que propone Feijóo unirá los subsidios y los condicionará al empleo",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/ingreso-minimo-vital-cambiara-gobierna-pp-renta-20261110204524-nt.html",
+  "fecha": "2026-11-13T19:45:46.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "<![CDATA[Sánchez afirma en Pamplona que Feijóo y Abascal no son alternativa, sino “un viaje al pasado, son involución”]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/13/sanchez-afirma-pamplona-feijoo-abascal-no-son-alternativa-viaje-pasado-son-involucion-842386-15.html",
+  "fecha": "2026-11-13T19:45:52.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Pedro Sánchez, con Jordi Wild: «Si no aumentamos la población migrante vamos a ser más pobres»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/pedro-sanchez-jordi-wild-aumentamos-poblacion-migrante-20261113202016-nt.html",
+  "fecha": "2026-11-13T19:46:27.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "La vivienda habitual del autónomo quedará protegida por defecto, según el PP",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/vivienda/vivienda-habitual-autonomo-programa-pp-20261110175626-nt.html",
+  "fecha": "2026-11-13T19:46:37.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Tellado amenaza con llevar al PSOE gallego a los tribunales por difundir una foto falsa suya con Koldo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/tellado-amenaza-llevar-psoe-gallego-tribunales-difundir-20261113200822-nt.html",
+  "fecha": "2026-11-13T19:46:38.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Los alumnos de ESO no podrán pasar de curso con suspensos: así es el programa electoral del PP en Educación",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/sociedad/alumnos-eso-suspensos-20261110174355-nt.html",
+  "fecha": "2026-11-13T19:47:11.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Sánchez recupera a Marvin e Iñaki para Granada: «El reto es romper la racha del rival»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/deportes/ud-las-palmas/palmas-directo-albert-sanchez-analiza-encuentro-conjunto-20261113092244-nt.html",
+  "fecha": "2026-11-13T19:58:12.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Ada Colau recoge el guante a Albiol y acepta un debate 'cara a cara' sobre vivienda",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ada-colau-recoge-guante-albiol-acepta-un-debate-cara-cara-sobre-vivienda_7061004_0.html",
+  "fecha": "2026-11-13T20:00:50.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "<![CDATA[Fotos del mitin de Pedro Sánchez en el frontón Labrit de Pamplona]]>",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/multimedia/galerias-imagenes/navarra/2026/11/13/fotos-mitin-pedro-sanchez-fronton-labrit-pamplona.html",
+  "fecha": "2026-11-13T20:03:28.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Sánchez reivindica su «buena política» desde Navarra, la cuna del 'caso Koldo'",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/navarra/sanchez-reivindica-buena-politica-navarra-cuna-koldo-20261113212059-nt.html",
+  "fecha": "2026-11-13T20:34:49.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Rueda llama a convertir el «enfado» con Sánchez en votos para Feijóo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/rueda-llama-convertir-enfado-sanchez-votos-feijoo-20261113193653-nt.html",
+  "fecha": "2026-11-13T20:50:51.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Abascal se conjura con sus socios internacionales para el 29N: «Estas elecciones son existenciales para España»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/abascal-conjura-socios-internacionales-29n-elecciones-existenciales-20261113220250-nt.html",
+  "fecha": "2026-11-13T21:33:16.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T21:59:00.211Z"
  }
 ]

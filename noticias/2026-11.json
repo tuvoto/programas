@@ -10208,6 +10208,16 @@
   "vista": "2026-11-13T01:26:17.954Z"
  },
  {
+  "titulo": "El presidente de Vox en Tarragona exhibe el logo del grupo neonazi Núcleo Nacional",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/presidente-vox-tarragona-exhibe-logo-grupo-neonazi-nucleo-nacional_1_13658004.html",
+  "fecha": "2026-11-12T21:57:42.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
   "titulo": "Un tribunal condena a Alvise y a Okdiario por difundir \"información sin contrastar\" sobre un falso terrorista",
   "medio": "elDiario.es",
   "url": "https://www.eldiario.es/politica/tribunal-condena-alvise-okdiario-difundir-noticia-contrastar_1_13637670.html",
@@ -10446,7 +10456,8 @@
   "url": "https://www.20minutos.es/nacional/entrevistas-jordi-wild-directo-youtuber-publica-esta-manana-forma-sucesiva-las-entrevistas-colau-feijoo-sanchez_7060536_6.html",
   "fecha": "2026-11-13T03:56:08.000Z",
   "partidos": [
-   "frente-amplio"
+   "frente-amplio",
+   "vox"
   ],
   "vista": "2026-11-13T07:34:24.364Z"
  },
@@ -10481,6 +10492,17 @@
    "upn"
   ],
   "vista": "2026-11-13T04:10:50.623Z"
+ },
+ {
+  "titulo": "Ada Colau en la entrevista con Jordi Wild, sobre Podemos: \"No quisieron hablar. No quisieron sentarse, ni quedar físicamente\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-jordi-wild-podemos-negociacion_4464163/",
+  "fecha": "2026-11-13T04:00:00.000Z",
+  "partidos": [
+   "frente-amplio",
+   "podemos"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
  },
  {
   "titulo": "Besteiro sostiene que «é máis importante que nunca concentrar o voto no PSOE»",
@@ -10633,6 +10655,7 @@
   "url": "https://www.lavanguardia.com/politica/20261113/11682241/elecciones-generales-campana-electoral-candidatos-ultima-hora-en-directo.html",
   "fecha": "2026-11-13T06:54:04.000Z",
   "partidos": [
+   "pp",
    "psoe"
   ],
   "vista": "2026-11-13T07:34:24.364Z"
@@ -10693,5 +10716,283 @@
    "frente-amplio"
   ],
   "vista": "2026-11-13T07:34:24.364Z"
+ },
+ {
+  "titulo": "Ada Colau en la entrevista con Jordi Wild, sobre la vivienda y los grandes propietarios: \"El Gobierno tiene que responder sí o sí, va tarde. No puede seguir gobernando el PSOE si no se ataja ya\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-entrevista-jordi-wild-vivienda-psoe_4464152/",
+  "fecha": "2026-11-13T07:40:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "L’opositora veneçolana María Corina Machado rep dos eurodiputats de Vox i agraeix el suport d’Abascal",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/internacional/america/l-opositora-venecolana-maria-corina-machado-rep-eurodiputats-vox-agraeix-suport-d-abascal_25_5909100.html",
+  "fecha": "2026-11-13T07:48:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Ada Colau, en la entrevista con Jordi Wild, sobre Ceuta y las vacaciones de Pedro Sánchez: \"Cuando pasa algo tan grave, hay que estar ahí y movilizar todos los recursos\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-entrevista-jordi-wild-elecciones-generales_4464228/",
+  "fecha": "2026-11-13T08:26:00.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "'El perro andaluz' logra su máximo histórico con Pedro Sánchez, mientras que 'Horizonte' adelanta a 'El Hormiguero'en el prime time",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/perro-andaluz-logra-maximo-historico-pedro-sanchez-20261113084358-nt.html",
+  "fecha": "2026-11-13T08:26:26.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Ada Colau, en la entrevista con Jordi Wild, sobre el papel de Marruecos en la crisis de Ceuta: \"Hay que revisar las relaciones. Quiero pensar que se esté haciendo desde la discreción\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-jordi-wild-entrevista-elecciones-generales_4464240/",
+  "fecha": "2026-11-13T08:37:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Ada Colau, en la entrevista con Jordi Wild, sobre las 'paguitas' a inmigrantes: \"Es falso. Los 7 millones que hay en el país aportan el 10% de las contribuciones a la Seguridad Social y suponen solo el 1% del gasto público\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-jordi-wild-entrevista-elecciones-generales_4464259/",
+  "fecha": "2026-11-13T08:54:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "CC vuelve a cambiar sus \"líneas rojas\" y ahora dice que sí apoyaría un Gobierno de PP con Vox",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/cc-vuelve-cambiar-lineas-rojas-ahora-dice-si-apoyaria-gobierno-pp-vox_1_13660728.html",
+  "fecha": "2026-11-13T08:57:48.000Z",
+  "partidos": [
+   "cc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Vox denuncia a Silvia Intxaurrondo ante la Junta Electoral tras cuestionar si deberían «tener cabida» en TVE",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/vox-denuncia-silvia-intxaurrondo-ante-junta-electoral-20261113095810-nt.html",
+  "fecha": "2026-11-13T08:59:39.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Los verificadores de Jordi Wild intervienen ante Ada Colau: el 91% de los detenidos por hurto en Barcelona son extranjeros",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/ada-colau-inmigracion-entrevista-jordi-wild-elecciones-generales_4464281/",
+  "fecha": "2026-11-13T09:10:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Torres (PSOE) pide a la ciudadanía evitar que gobiernen «los herederos de la dictadura»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/canarias/torres-psoe-pide-ciudadania-evitar-gobiernen-herederos-20261113101330-nt.html",
+  "fecha": "2026-11-13T09:13:30.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "La alcaldesa de Güímar lo vuelve a hacer: invita a un mitin del PP “con chocolatada” desde el área de Mayores a los usuarios del centro de día",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/alcaldesa-guimar-mitin-pp-chocolatada-mayores-usuarios-centro-dia_1_13660808.html",
+  "fecha": "2026-11-13T09:16:06.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Así fue la comentada actuación de una rapera con el rostro cubierto en el arranque de campaña del PSOE: \"A saco Paco\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/asi-fue-comentada-actuacion-una-rapera-con-rostro-cubierto-arranque-campana-psoe-saco-paco_7060609_0.html",
+  "fecha": "2026-11-13T09:27:56.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Rajoy, primero, y Aznar el sábado, abren la campaña del PP para reforzarse en Alicante",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/rajoy-primero-aznar-sabado-abren-campana-pp-20261113102846-nt.html",
+  "fecha": "2026-11-13T09:30:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "¿Por qué Sánchez habla de «remontada épica» si el CIS le da una victoria aplastante?",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/sanchez-habla-remontada-epica-cis-victoria-aplastante-20261113100719-nt.html",
+  "fecha": "2026-11-13T09:34:48.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo, en la entrevista con Jordi Wild, sobre un posible pacto con Vox y el reparto de ministerios: \"Tendré 14 o 15 ministerios. Y algunos deben tener preponderancia del presidente del Gobierno\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/feijoo-entrevista-jordi-wild-ministerios-vox_4464295/",
+  "fecha": "2026-11-13T09:36:00.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "García Albiol avisa a los okupas de viviendas en España: «Se os acaba el chollo de Pedro Sánchez. Voy a ir a por ellos»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/garcia-albiol-avisa-okupas-viviendas-espana-acaba-20261113103614-nt.html",
+  "fecha": "2026-11-13T09:36:14.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "La media de encuestas en el arranque de la campaña: el PSOE crece, pero la derecha mantiene una amplia ventaja",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/media-encuestas-arranque-campana-psoe-crece-derecha-mantiene-amplia-ventaja_1_13660672.html",
+  "fecha": "2026-11-13T09:36:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Leire Díez, sobre la oferta de dos millones que recibió del entorno del PP: “Si hubiese aceptado hubieran vencido”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683262/leire-diez-sobre-oferta-dos-millones-recibio-entorno-pp-hubiese-aceptado-hubieran-vencido.html",
+  "fecha": "2026-11-13T09:38:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Ada Colau, en la entrevista con Jordi Wild, sobre la inmigración y las 'paguitas': «Decir que hay un problema no responde a la realidad»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ada-colau-entrevista-jordi-wild-sobre-inmigracion-20261113103731-nt.html",
+  "fecha": "2026-11-13T09:41:38.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Vea las entrevistas de Jordi Wild a Feijóo y Colau",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-13/vea-la-entrevista-de-jordi-wild-a-ada-colau.html",
+  "fecha": "2026-11-13T09:47:51.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo, en la entrevista con Jordi Wild, sobre el absentismo laboral: \"¿Por qué el lunes y el viernes son los días con mayor absentismo?\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/feijoo-absentismo-laboral-jordi-wild-elecciones-generales_4464330/",
+  "fecha": "2026-11-13T09:51:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Ada Colau con Jordi Wild: de un impuesto a los pisos vacíos a sus errores como alcaldesa y el dardo a Florentino Pérez",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/ada-colau-jordi-wild-florentino-perez-paga-20261113091958-nt.html",
+  "fecha": "2026-11-13T09:55:11.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Colau afirma tener «tolerancia cero con la corrupción», pero justifica que Sumar siguiese en el Gobierno",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/colau-afirma-tener-tolerancia-cero-corrupcion-justifica-20261113100247-nt.html",
+  "fecha": "2026-11-13T09:56:17.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Feijóo con Jordi Wild: del plantón de Abascal al futuro de las pensiones",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/feijoo-jordi-wild-planton-abascal-futuro-pensiones-20261113104633-nt.html",
+  "fecha": "2026-11-13T09:58:32.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Vea las entrevistas de Jordi Wild a Colau, Feijóo y Sánchez",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683342/vea-entrevistas-jordi-wild-colau-feijoo-sanchez.html",
+  "fecha": "2026-11-13T09:58:56.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo, en la entrevista con Jordi Wild, sobre los autónomos y el pago de la cuota: \"No les hemos cuidado nunca de forma adecuada\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/feijoo-entrevista-jordi-wild-autonomos-elecciones-generales_4464351/",
+  "fecha": "2026-11-13T10:04:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Vox propone cuotas para alumnos “de otras culturas” en las aulas y excluir a los indocumentados del sistema sanitario",
+  "medio": "El País",
+  "url": "https://elpais.com/sociedad/2026-11-12/vox-propone-cuotas-para-alumnos-de-otras-culturas-en-las-aulas-y-excluir-a-los-indocumentados-del-sistema-sanitario.html",
+  "fecha": "2026-11-13T10:08:44.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T10:14:53.819Z"
  }
 ]

@@ -10918,7 +10918,8 @@
   "fecha": "2026-11-13T09:47:51.000Z",
   "partidos": [
    "frente-amplio",
-   "pp"
+   "pp",
+   "psoe"
   ],
   "vista": "2026-11-13T10:14:53.819Z"
  },
@@ -10994,5 +10995,291 @@
    "vox"
   ],
   "vista": "2026-11-13T10:14:53.819Z"
+ },
+ {
+  "titulo": "Colau, ante Jordi Wild, reprocha a Sánchez su gestión inicial de la crisis de Ceuta",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683358/colau-jordi-wild-reprocha-sanchez-gestion-inicial-crisis-ceuta.html",
+  "fecha": "2026-11-13T10:22:13.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Albiol propone a Colau un cara a cara sobre políticas de vivienda",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/catalunya/albiol-propone-colau-cara-cara-politicas-vivienda_1_13661103.html",
+  "fecha": "2026-11-13T10:25:26.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "El líder de UGT en Canarias, al portavoz de Vox: “Si nosotros somos unos comegambas, él es claramente un comemierda”",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/lider-ugt-canarias-portavoz-vox-si-comegambas-claramente-comemierda_1_13661148.html",
+  "fecha": "2026-11-13T10:35:12.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo, presidente del PP, sobre la inmigración: \"Si tiene permiso de trabajo, tiene permiso de residencia; si entra de forma irregular, se tiene que ir\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/feijoo-inmigracion-jordi-wild-elecciones-generales_4464382/",
+  "fecha": "2026-11-13T10:36:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Colau, con Jordi Wild: \"Algunos migrantes delinquen, pero la mayoría no suponen ningún problema\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/colau-jordi-wild-migrantes-delinquen-mayoria-no-suponen-problema_1_13660988.html",
+  "fecha": "2026-11-13T10:38:14.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Programa electoral de Vox para el 29N: de la prioridad nacional o la inmigración a los impuestos, consulta las 115 medidas",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/programa-electoral-vox-para-29n-consulta-las-115-medidas-sobre-impuestos-inmigracion-prioridad-nacional_7060601_0.html",
+  "fecha": "2026-11-13T10:52:31.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Condenado Alvise por asegurar sin pruebas en su Telegram que un hombre llevaba “explosivos”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-13/condenado-alvise-por-asegurar-sin-pruebas-en-su-telegram-que-un-hombre-llevaba-explosivos.html",
+  "fecha": "2026-11-13T10:52:40.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo confiesa a Wild que 'eliminará' Vivienda e Igualdad y responde por Dorado: \"Yo no tengo fotos con prostitutas\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/feijoo-confiesa-a-wild-que-eliminara-vivienda-e-igualdad-y-responde-por-dorado_4464429/",
+  "fecha": "2026-11-13T11:12:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Junts exige que el dinero de los catalanes se quede en Catalunya y salir de la Lofca",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683377/junts-exige-dinero-catalanes-quede-catalunya-salir-lofca.html",
+  "fecha": "2026-11-13T11:23:05.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo pone en duda que pueda bajar los impuestos por el estado de las cuentas públicas: “No me creo los datos”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-13/feijoo-pone-en-duda-que-pueda-bajar-los-impuestos-por-el-estado-de-las-cuentas-publicas-no-me-creo-los-datos.html",
+  "fecha": "2026-11-13T11:33:06.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo suprimirá Vivienda e Igualdad para reducir el número de ministerios y agrupar competencias",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683368/feijoo-suprimira-ministerios-propios-vivienda-e-igualdad-agrupara-competencias.html",
+  "fecha": "2026-11-13T11:55:15.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "PSOE y Compromís reprochan que se mantenga a Mazón y PP y Vox rivalizan en sus críticas a Sánchez en el debate de EL PAÍS y SER Valencia",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-13/psoe-y-compromis-reprochan-que-se-mantenga-a-mazon-y-pp-y-vox-rivalizan-en-sus-criticas-a-sanchez-en-el-debate-de-el-pais-y-ser-valencia.html",
+  "fecha": "2026-11-13T11:58:43.000Z",
+  "partidos": [
+   "compromis",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo añade Vivienda a Igualdad en los ministerios que eliminará si gobierna y asegura que hay carteras que vetará para Vox",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/feijoo-anade-vivienda-igualdad-ministerios-eliminara-si-gobierna-asegura-hay-carteras-vetara-vox_1_13660928.html",
+  "fecha": "2026-11-13T12:01:16.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Velázquez augura que la «superproducción de Sánchez» será un «fracaso en taquilla» el 29N",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/velazquez-augura-superproduccion-sanchez-fracaso-taquilla-29n-20261113120412-nt.html",
+  "fecha": "2026-11-13T12:31:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Sánchez aún no tiene información de que Marruecos esté detrás de lo ocurrido en Ceuta y niega que se fuera de vacaciones",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-aun-no-tiene-informacion-marruecos-detras-ocurrido-ceuta-niega-fuera-vacaciones-20261113133441.html",
+  "fecha": "2026-11-13T12:34:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "El Gobierno niega que Sánchez se reuniera en 2023 con Cristian Corvillo, su chófer en las primarias",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-gobierno-niega-sanchez-reuniera-2023-cristian-corvillo-chofer-primarias-20261113133533.html",
+  "fecha": "2026-11-13T12:35:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "La Policía acordona la calle de la sede del PSOE-Aragón por una amenaza de bomba",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/aragon/policia-acordona-calle-sede-psoearagon-amenaza-bomba-20261113133657-nt.html",
+  "fecha": "2026-11-13T12:36:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo, con Jordi Wild: «Yo no sé inglés, pero sé gobernar. Y no insulto en ningún idioma»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-jordi-wild-encabronaria-aliados-europeos-decir-20261113121544-nt.html",
+  "fecha": "2026-11-13T12:39:41.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Feijóo promete a los jóvenes rebajas fiscales en el primer sueldo, incentivos como autónomos y guarderías gratis",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-promete-jovenes-rebajas-fiscales-primer-sueldo-incentivos-autonomos-guarderias-gratis-20261113134312.html",
+  "fecha": "2026-11-13T12:43:12.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Sánchez asegura que pone \"la mano en el fuego\" por Zapatero: \"Creo en su inocencia\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-asegura-pone-mano-fuego-zapatero-creo-inocencia-20261113134710.html",
+  "fecha": "2026-11-13T12:47:10.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Máxima tensión entre Jordi Wild y Sánchez por los accidentes ferroviarios: «Esto no es serio»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/maxima-tension-jordi-wild-sanchez-accidentes-ferroviarios-20261113125410-nt.html",
+  "fecha": "2026-11-13T12:47:49.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Abascal arranca la campaña con un aviso a Feijóo: «Es un error vestirse ya con los ropajes de presidente»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/abascal-arranca-campana-aviso-feijoo-error-vestirse-20261113134451-ntrc.html",
+  "fecha": "2026-11-13T12:52:20.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Pedro Sánchez, frente a Jordi Wild: “No creo que las decisiones del ministro de Transportes hayan afectado directamente en la tragedia de Urda”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683433/pedro-sanchez-frente-jordi-wild-creo-decisiones-ministro-transportes-hayan-afectado-directamente-tragedia-urda.html",
+  "fecha": "2026-11-13T12:57:20.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "La discusión entre Jordi Wild y Pedro Sánchez por la inmigración marroquí acaba con la invervención de los verificadores",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/discusion-jordi-wild-pedro-sanchez-inmigracion-marroqui-20261113131852-nt.html",
+  "fecha": "2026-11-13T13:01:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Abascal aconseja a Feijóo no repartir ministerios antes de ganar las elecciones: «No hay que vender la piel del oso antes de cazarlo»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/abascal-aconseja-feijoo-repartir-ministerios-ganar-elecciones-20261113140023-nt.html",
+  "fecha": "2026-11-13T13:03:14.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "El PSOE denuncia al PP, Eduardo Inda y Okdiario por los pagos de la defensa de Koldo García",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/psoe-querella-pp-eduardo-inda-okdiario-pagos-defensa-koldo-garcia_1_13661746.html",
+  "fecha": "2026-11-13T13:06:11.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "Sánchez pone \"la mano en el fuego\" por Zapatero con Wild y niega que rinda \"pleitesía\" a Marruecos",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-13/pedro-sanchez-jordi-wild-zapatero-marruecos_4464570/",
+  "fecha": "2026-11-13T13:09:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
+ },
+ {
+  "titulo": "De la vivienda a la crisis ferroviaria: las frases de Pedro Sánchez a Jordi Wild",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/vivienda-crisis-ferroviaria-frases-pedro-sanchez-jordi-20261113141144-nt.html",
+  "fecha": "2026-11-13T13:14:21.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-13T13:27:02.967Z"
  }
 ]

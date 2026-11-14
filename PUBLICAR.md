@@ -21,7 +21,7 @@ empiecen, mejor.
 
 ## 1. Cuentas (las haces tú en cada web)
 
-1. **Correo nuevo** solo para la app (p. ej. `programaselectorales.app@gmail.com`).
+1. **Correo nuevo** solo para la app (p. ej. `tu-correo@gmail.com`).
 2. **GitHub** con ese correo. El usuario forma parte de la dirección de la web.
 3. **Google Play Console** (play.google.com/console): cuenta **personal**, 25 $.
    Verifica tu identidad y, después, **el acceso a un móvil Android**: instala
@@ -45,11 +45,12 @@ privacidad (`public/privacidad.html`).
 
 Necesitas **Git**: descárgalo de git-scm.com e instálalo con las opciones por
 defecto. Luego, **una sola vez**, configura el nombre que saldrá en los cambios
-(pon el del proyecto, no el tuyo):
+(pon el del proyecto, no el tuyo). Como correo usa el «noreply» que te da
+GitHub en Settings → Emails, para que tu correo no salga en los cambios:
 
 ```
 git config --global user.name "TuVoto"
-git config --global user.email tu-correo-nuevo@gmail.com
+git config --global user.email ID+USUARIO@users.noreply.github.com
 ```
 
 En github.com crea un repositorio **público** llamado `programas`, **vacío**

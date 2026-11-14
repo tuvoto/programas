@@ -304,8 +304,8 @@ export default function InfoScreen() {
     </Desplegable>,
     <Desplegable key="noticias" titulo="Noticias">
       <P>
-        Titulares de los últimos 7 días que mencionan a cada partido o a su líder, con el mismo criterio para todos y
-        ordenados por fecha. La app no los elige ni los valora.
+        Los titulares más recientes que mencionan a cada partido o a su líder (hasta 15 por partido), con el mismo
+        criterio para todos y ordenados por fecha. La app no los elige ni los valora.
       </P>
       <Nota>Estatales: {MEDIOS.filter((m) => !m.zona).map((m) => m.medio).join(', ')}.</Nota>
       <Nota>

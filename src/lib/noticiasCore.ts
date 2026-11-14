@@ -93,13 +93,16 @@ export const BUSQUEDA: Record<string, RegExp[]> = {
 // Partidos de los que se buscan noticias.
 export const PARTIDOS_NOTICIAS = Object.keys(BUSQUEDA);
 
-export const DIAS = 7; // antigüedad máxima
-export const MAX_POR_PARTIDO = 15;
+export const MAX_POR_PARTIDO = 15; // los más recientes de cada partido, sin límite de antigüedad
 
 const ENTIDADES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
 
+// Algunos medios (Diario de Navarra) codifican dos veces el título y, tras
+// decodificarlo, queda «<![CDATA[...]]>» a la vista: se quita.
+const sinCdata = (s: string) => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').trim();
+
 function limpiar(s: string): string {
-  return s
+  const texto = s
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
     .replace(/<[^>]+>/g, '')
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
@@ -107,6 +110,7 @@ function limpiar(s: string): string {
     .replace(/&([a-z]+);/gi, (m, n) => ENTIDADES[n.toLowerCase()] ?? m)
     .replace(/\s+/g, ' ')
     .trim();
+  return sinCdata(texto);
 }
 
 function etiqueta(item: string, nombre: string): string | null {
@@ -169,14 +173,14 @@ export function mencionaA(titulo: string, partidoId: string): boolean {
 
 const clave = (t: string) => t.toLowerCase().normalize('NFD').replace(/[^a-z0-9]/g, '');
 
-// Reparte las noticias entre partidos: recientes, sin repetidas, de más nueva a más antigua.
+// Reparte las noticias entre partidos: sin repetidas, de más nueva a más antigua.
 export function repartir(todas: Noticia[], partidos: string[], ahora = Date.now()): Record<string, Noticia[]> {
-  const limite = ahora - DIAS * 864e5;
   const vistas = new Set<string>();
   const unicas = todas
+    .map((n) => ({ ...n, titulo: sinCdata(n.titulo) })) // arregla titulares guardados antes
     .filter((n) => {
       const t = Date.parse(n.fecha);
-      return t >= limite && t <= ahora + 36e5;
+      return !isNaN(t) && t <= ahora + 36e5; // descarta fechas futuras erróneas
     })
     .sort((a, b) => Date.parse(b.fecha) - Date.parse(a.fecha))
     .filter((n) => {
@@ -189,6 +193,19 @@ export function repartir(todas: Noticia[], partidos: string[], ahora = Date.now(
   const res: Record<string, Noticia[]> = {};
   for (const id of partidos) res[id] = unicas.filter((n) => mencionaA(n.titulo, id)).slice(0, MAX_POR_PARTIDO);
   return res;
+}
+
+// Junta las noticias de antes con las nuevas, para que no se pierdan cuando
+// los RSS ya no las incluyen. Así cada partido conserva sus 15 titulares más
+// recientes, aunque sean de hace semanas.
+export function fusionar(anterior: ArchivoNoticias | null, nuevo: ArchivoNoticias, partidos: string[]): ArchivoNoticias {
+  if (!anterior?.partidos) return nuevo;
+  const todas = [...Object.values(nuevo.partidos).flat(), ...Object.values(anterior.partidos).flat()];
+  return {
+    ...nuevo,
+    partidos: repartir(todas, partidos),
+    ...(anterior.iconos || nuevo.iconos ? { iconos: { ...anterior.iconos, ...nuevo.iconos } } : {}),
+  };
 }
 
 type Descargar = (url: string) => Promise<string>;

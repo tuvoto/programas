@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 import { PARTIDOS } from '../data/partidos';
-import { ArchivoNoticias, Noticia, recopilar } from './noticiasCore';
+import { ArchivoNoticias, fusionar, Noticia, recopilar } from './noticiasCore';
 import { urlPublica } from './web';
 
 type Estado =
@@ -32,6 +32,16 @@ async function cargar(): Promise<ArchivoNoticias> {
     if (texto.trimStart().startsWith('<')) throw new SinArchivo('html');
     const datos = JSON.parse(texto) as ArchivoNoticias;
     if (!datos?.partidos) throw new Error('formato');
+    // En el móvil, si el archivo lleva más de un día sin actualizarse (por
+    // ejemplo, si falla GitHub Actions), se añaden los titulares de los RSS.
+    if (Platform.OS !== 'web' && !__DEV__ && Date.now() - Date.parse(datos.actualizado) > 864e5) {
+      try {
+        const nuevos = await recopilar(descargarTexto, PARTIDOS.map((p) => p.id));
+        if (nuevos.medios.length > 0) return fusionar(datos, nuevos, PARTIDOS.map((p) => p.id));
+      } catch {
+        // si falla, se muestra lo que había
+      }
+    }
     return datos;
   } catch (e) {
     if (Platform.OS === 'web') throw e;

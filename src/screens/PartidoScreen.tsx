@@ -296,7 +296,7 @@ function BloqueNoticias({ p }: { p: Partido }) {
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         Noticias
       </Text>
-      <Text style={[T.meta, { color: C.suave }]}>De los últimos 7 días.</Text>
+      <Text style={[T.meta, { color: C.suave }]}>Las más recientes.</Text>
 
       {estado.tipo === 'cargando' && (
         <View style={s.centro}>
@@ -329,7 +329,7 @@ function BloqueNoticias({ p }: { p: Partido }) {
       {estado.tipo === 'ok' &&
         (estado.noticias.length === 0 ? (
           <Text style={[T.cuerpo, { color: C.suave, marginTop: 12 }]}>
-            No hay titulares recientes sobre {p.siglas} en los medios consultados.
+            Todavía no hay titulares sobre {p.siglas} en los medios consultados.
           </Text>
         ) : (
           <View style={{ marginTop: 6 }}>

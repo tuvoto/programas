@@ -1,8 +1,8 @@
 // Genera noticias.json con los titulares recientes de cada partido.
 // Uso: node --experimental-strip-types scripts/noticias.mjs [ruta de salida]
 // (Node 22.6 o posterior). Lo ejecuta GitHub Actions cada 3 horas.
-import { writeFileSync } from 'node:fs';
-import { PARTIDOS_NOTICIAS as PARTIDOS, recopilar } from '../src/lib/noticiasCore.ts';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { PARTIDOS_NOTICIAS as PARTIDOS, fusionar, recopilar } from '../src/lib/noticiasCore.ts';
 const salida = process.argv[2] ?? 'public/noticias.json';
 
 const descargar = async (url) => {
@@ -18,11 +18,20 @@ const descargar = async (url) => {
   return r.text();
 };
 
-const datos = await recopilar(descargar, PARTIDOS, (m) => console.log(m), true);
-if (datos.medios.length === 0) {
+const nuevos = await recopilar(descargar, PARTIDOS, (m) => console.log(m), true);
+if (nuevos.medios.length === 0) {
   console.error('Ningún medio ha respondido: se mantiene el archivo anterior.');
   process.exit(1);
 }
+// Se conservan las noticias del archivo anterior (las de los RSS duran poco).
+let anterior = null;
+try {
+  if (existsSync(salida)) anterior = JSON.parse(readFileSync(salida, 'utf8'));
+} catch {
+  console.log('El archivo anterior no se ha podido leer: se empieza de cero.');
+}
+const datos = fusionar(anterior, nuevos, PARTIDOS);
 for (const [id, l] of Object.entries(datos.partidos)) console.log(`→ ${id}: ${l.length} noticias`);
 writeFileSync(salida, JSON.stringify(datos));
 console.log(`Guardado en ${salida}`);
+process.exit(0);

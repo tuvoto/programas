@@ -12479,7 +12479,10 @@
   "fecha": "2026-11-14T08:10:48.000Z",
   "partidos": [
    "adelante",
-   "pp"
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
   ],
   "vista": "2026-11-14T09:59:06.199Z"
  },
@@ -13032,6 +13035,16 @@
   "vista": "2026-11-14T15:53:17.331Z"
  },
  {
+  "titulo": "Abascal: \"La gran estafa del año 2023 fue la de Sánchez, Ábalos y el resto de guarros a las mujeres españolas\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/abascal-gran-estafa-ano-sanchez-abalos-guarros-mujeres-espanolas_7061136_0.html",
+  "fecha": "2026-11-14T15:10:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
   "titulo": "Meloni evita atacar a Sánchez en un prudente apoyo a Vox",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261114/11684309/meloni-evita-atacar-sanchez-prudente-apoyo-vox.html",
@@ -13094,5 +13107,285 @@
    "pp"
   ],
   "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "1ºCAN-CC reclama mayor financiación estatal para las administraciones locales: «Menos dinero a Marruecos y más para garantizar el agua en Canarias»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/1ocancc-reclama-mayor-financiacion-estatal-administraciones-locales-20261114163626-nt.html",
+  "fecha": "2026-11-14T15:36:26.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Abascal defiende la prioridad nacional: “Nos presentamos a las elecciones para hacer legal lo que hoy nos dicen que es ilegal”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-14/abascal-defiende-la-prioridad-nacional-nos-presentamos-a-las-elecciones-para-hacer-legal-lo-que-hoy-nos-dicen-que-es-ilegal.html",
+  "fecha": "2026-11-14T15:38:54.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Compromís-Front Valencià echa el resto en Castelló para sacar el diputado y pide viviendas para la clase trabajadora",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/compromis-front-valencia-echa-resto-castello-sacar-diputado-pide-viviendas-clase-trabajadora_1_13664399.html",
+  "fecha": "2026-11-14T16:12:50.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Jon Echeverría, tras ser agredido en Hernani: «Esta es la violencia que sufrimos por ser del PP en el País Vasco»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/jon-echeverria-tras-agredido-hernani-violencia-sufrimos-20261114165120-nt.html",
+  "fecha": "2026-11-14T16:13:22.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Vox anuncia su postura con las pensiones pero evita decir cuánto subirán",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/pensiones/vox-anuncia-postura-pensiones-evita-decir-subiran-20261114172102-nt.html",
+  "fecha": "2026-11-14T16:21:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "El programa de Vivienda de Vox propone que los jóvenes usen el dinero de su futura pensión para comprar una casa",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/programa-vivienda-vox-jovenes-pension-20261109180024-nt.html",
+  "fecha": "2026-11-14T16:21:30.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Lanzan piedras y petardos en Hernani contra el candidato del PP de Guipúzcoa Jon Echeverría",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/lanzan-piedras-petardos-hernani-contra-candidato-pp-guipuzcoa-jon-echeverria_7061141_0.html",
+  "fecha": "2026-11-14T16:27:06.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Colau tacha a Vox de «derechita cruel y cobarde» y acusa a Abascal de evitar los debates",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/colau-tacha-vox-derechita-cruel-cobarde-acusa-20261114142239-ntrc.html",
+  "fecha": "2026-11-14T16:33:48.000Z",
+  "partidos": [
+   "frente-amplio",
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Feijóo promete construir un millón de viviendas y acusa a Sánchez de disparar los impuestos y la deuda",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-promete-construir-millon-viviendas-acusa-sanchez-20261114140050-ntrc.html",
+  "fecha": "2026-11-14T16:42:39.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Sánchez llama a una movilización masiva y pide a los «europeístas» frenar a PP y Vox",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/sanchez-llama-movilizacion-masiva-pide-europeistas-frenar-20261114172226-ntrc.html",
+  "fecha": "2026-11-14T16:53:07.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Josep Maria Vila d'Abadal, cap de llista de Junts al Senat per Barcelona i exalcalde de Vic, carregant contra ERC durant un míting a Manresa.",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/josep-maria-vila-d-abadal-cap-llista-junts-senat-barcelona-exalcalde-vic-carregant-erc-durant-miting-manresa_8_5910523.html",
+  "fecha": "2026-11-14T17:01:35.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Pontón llama a concentrar el «voto galego de país e inconformista» en el BNG",
+  "medio": "La Voz de Galicia",
+  "url": "https://www.lavozdegalicia.es/noticia/galicia/2026/11/14/ponton-llama-concentrar-span-langglvoto-galego-pais-inconformistaspan-bng/00031794674382391364593.htm",
+  "fecha": "2026-11-14T17:12:00.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Javier Esparza: \"Con un gobierno socialista de la mano de Bildu no se habría hecho Itoiz ni el Canal de Navarra\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/14/javier-esparza-gobierno-socialista-mano-bildu-no-habria-hecho-itoiz-canal-navarra-842464-15.html",
+  "fecha": "2026-11-14T17:24:00.000Z",
+  "partidos": [
+   "bildu",
+   "upn"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Amnistía Internacional exige investigar la carga policial contra los manifestantes en el acto de Vox en Toledo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/amnistia-internacional-exige-investigar-carga-policial-manifestantes-20261114182827-nt.html",
+  "fecha": "2026-11-14T17:30:08.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Besteiro denuncia la gestión del PP en vivienda y propone 200 millones más de inversión: «Debe ser un dereito, non unha promesa electoral»",
+  "medio": "La Voz de Galicia",
+  "url": "https://www.lavozdegalicia.es/noticia/elecciones-29n/2026/11/14/besteiro-denuncia-gestion-pp-vivienda-propone-200-millones-inversion-debe-dereito-non-unha-promesa-electoral/00031794675521987309436.htm",
+  "fecha": "2026-11-14T17:41:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "La defensa de las personas migrantes y el límite al turismo, los dos mensajes de Irene Montero en Canarias",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/irene-montero-participa-acto-campana-podemos-palmas-20261114112053-nt.html",
+  "fecha": "2026-11-14T17:41:45.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Isabel Rodríguez defiende ayudas de hasta 50.000 euros para vivienda rural y alerta de los recortes de PP y Vox",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/isabel-rodriguez-defiende-ayudas-50000-euros-vivienda-20261114184110-nt.html",
+  "fecha": "2026-11-14T17:42:16.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Suspendido un acto del PSOE con Sánchez y Lula la Silva por la afonía del presidente de Brasil",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261114/11684360/suspendido-acto-psoe-sanchez-lula-silva-afonia-presidente-brasil.html",
+  "fecha": "2026-11-14T17:46:55.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "El fort ascens de Vox garanteix una majoria absoluta de dretes el 29-N",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/fort-ascens-vox-garanteix-majoria-absoluta-dretes-29-n_1_5907814.html",
+  "fecha": "2026-11-14T18:00:04.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Feijóo guanyaria la Moncloa i Abascal les eleccions",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/opinio/feijoo-guanyaria-moncloa-abascal-eleccions_129_5910535.html",
+  "fecha": "2026-11-14T18:00:05.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Pontón llama a concentrar el voto «inconformista» en el BNG",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/ponton-llama-concentrar-voto-inconformista-bng-20261114191304-nt.html",
+  "fecha": "2026-11-14T18:13:05.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "EH Bildu exhibe músculo en Bilbao y llama a “frenar el paso a la extrema derecha”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/paisvasco/20261114/11684371/eh-bildu-exhibe-musculo-bilbao-llama-frenar-paso-extrema-derecha.html",
+  "fecha": "2026-11-14T18:13:52.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "El PSOE cancela el acto de campaña de Sánchez con Lula por una afonía del líder brasileño",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/psoe-cancela-acto-campana-sanchez-con-lula-por-una-afonia-lider-brasileno_7061175_0.html",
+  "fecha": "2026-11-14T18:15:06.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "El PSOE denuncia a la editora de Okdiario ante la Agencia Tributaria",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/psoe-denuncia-editora-okdiario-agencia-tributaria_1_13664622.html",
+  "fecha": "2026-11-14T18:37:35.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Otegi se lanza a por «quienes no han votado a Bildu» para frenar a los «fascistas de PP y Vox»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/otegi-lanza-voto-votado-bildu-frenar-fascistas-20261114184637-nt.html",
+  "fecha": "2026-11-14T18:39:57.000Z",
+  "partidos": [
+   "bildu",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Otegi: «Nada hay más poderoso que una idea a la que llegó su hora. Es la nuestra»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/otegi-poderoso-idea-llego-hora-20261114193940-nt.html",
+  "fecha": "2026-11-14T18:40:08.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "El PSOE cancela el acto de Sánchez y Lula da Silva en Madrid por una afonía del presidente brasileño",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-psoe-cancela-acto-sanchez-lula-da-silva-madrid-afonia-presidente-brasileno-20261114194841.html",
+  "fecha": "2026-11-14T18:48:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T19:00:19.335Z"
  }
 ]

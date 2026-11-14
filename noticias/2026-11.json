@@ -13099,6 +13099,17 @@
   "vista": "2026-11-14T15:53:17.331Z"
  },
  {
+  "titulo": "Illa desafía a Junts a aclarar si investirá a Sánchez o a Feijóo: \"Si estáis en medio, apartaos\"",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/illa-desafia-junts-aclarar-si-investira-sanchez-feijoo-si-medio-apartaos_1_13664321.html",
+  "fecha": "2026-11-14T15:31:56.000Z",
+  "partidos": [
+   "junts",
+   "psoe"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
   "titulo": "Feijóo, en su gran mitin en Galicia: «A la Moncloa son 600 kilómetros y 15 días. Ayudadme a culminar este viaje»",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/feijoo-gran-mitin-galicia-moncloa-600-kilometros-20261114135957-nt.html",
@@ -13347,6 +13358,16 @@
   "vista": "2026-11-14T19:00:19.335Z"
  },
  {
+  "titulo": "«Irene Montero abre los mítines de los líderes nacionales en Canarias»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/electometro-canarias-dia-irene-montero-abre-mitines-20261114191955-nt.html",
+  "fecha": "2026-11-14T18:24:37.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
   "titulo": "El PSOE denuncia a la editora de Okdiario ante la Agencia Tributaria",
   "medio": "elDiario.es",
   "url": "https://www.eldiario.es/politica/psoe-denuncia-editora-okdiario-agencia-tributaria_1_13664622.html",
@@ -13387,5 +13408,79 @@
    "psoe"
   ],
   "vista": "2026-11-14T19:00:19.335Z"
+ },
+ {
+  "titulo": "Dolores Corujo, candidata del PSOE: ''Quieren un modelo de violencia y confrontación, y nosotros queremos convivencia''",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/elecciones-generales-psoe-dolores-corujo-candidata-29-noviembre-convivencia-violencia-confrontacion_1_13649316.html",
+  "fecha": "2026-11-14T19:08:10.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "La lluita del PSC al cinturó roig per evitar la fuga a Vox i ERC",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/lluita-psc-cinturo-roig-evitar-fuga-vox-erc_1_5910305.html",
+  "fecha": "2026-11-14T19:40:50.000Z",
+  "partidos": [
+   "erc",
+   "vox"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Torres afea a PP y Vox que postulen al Senado a personas \"que no saben arrugar una papa\"",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/torres-afea-pp-vox-postulen-senado-personas-no-arrugar-papa_1_13664722.html",
+  "fecha": "2026-11-14T20:04:21.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "El PNV se pondrá la \"camiseta verde\" en Madrid para defender Euskadi",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pnv-pondra-camiseta-verde-madrid-defender-euskadi-20261114211649-nt.html",
+  "fecha": "2026-11-14T20:16:49.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Los tribunales marcan el arranque de campaña del 29N con decisiones clave que afectan al Gobierno y el PSOE",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/tribunales-marcan-arranque-campana-29n-decisiones-clave-afectan-gobierno-psoe_1_13661635.html",
+  "fecha": "2026-11-14T20:41:48.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Irene Montero: \"Si los votos de izquierdas sirven para que no cambie nada, el PP y Vox han ganado igual\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/irene-montero-si-votos-izquierdas-sirven-no-cambie-pp-vox-han-ganado-igual_1_13661608.html",
+  "fecha": "2026-11-14T20:41:49.000Z",
+  "partidos": [
+   "podemos",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "El PSOE trata de ganar terreno en Ontinyent y monta un mitin con Rebeca Torró como cabeza de cartel",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/valencia/psoe-trata-ganar-terreno-ontinyent-monta-mitin-rebeca-torro-cabeza-cartel_1_13662971.html",
+  "fecha": "2026-11-14T21:36:23.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T21:51:28.698Z"
  }
 ]

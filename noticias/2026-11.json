@@ -11588,6 +11588,16 @@
   "vista": "2026-11-13T16:04:00.868Z"
  },
  {
+  "titulo": "La Policía carga contra manifestantes que increpaban a Abascal en un acto en Toledo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/13/6af72fcfe4d4d8bc518b4594.html",
+  "fecha": "2026-11-13T15:42:14.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
   "titulo": "Frente Amplio quiere \"extinguir\" los pisos turísticos en bloques residenciales y zonas tensionadas",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/frente-amplio-quiere-extinguir-los-pisos-turisticos-bloques-residenciales-zonas-tensionadas_7060881_0.html",
@@ -12045,6 +12055,16 @@
   "vista": "2026-11-13T21:59:00.211Z"
  },
  {
+  "titulo": "Feijóo se pone la capa de 'Anotop At' frente a Jordi Wild para conquistar a la Generación Z: \"Yo no sé inglés, pero sé gobernar\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/13/6af6e315fdddff705e8b4593.html",
+  "fecha": "2026-11-13T20:01:28.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
   "titulo": "<![CDATA[Fotos del mitin de Pedro Sánchez en el frontón Labrit de Pamplona]]>",
   "medio": "Diario de Navarra",
   "url": "https://www.diariodenavarra.es/multimedia/galerias-imagenes/navarra/2026/11/13/fotos-mitin-pedro-sanchez-fronton-labrit-pamplona.html",
@@ -12063,6 +12083,16 @@
    "psoe"
   ],
   "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Sánchez insta a una participación del 75% el 29-N para reeditar un Gobierno progresista que llegue “más lejos y antes en las conquistas sociales”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-13/sanchez-insta-a-una-participacion-del-75-el-29-n-para-reeditar-un-gobierno-progresista-que-llegue-mas-lejos-y-antes-en-las-conquistas-sociales.html",
+  "fecha": "2026-11-13T20:46:11.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
  },
  {
   "titulo": "Rueda llama a convertir el «enfado» con Sánchez en votos para Feijóo",
@@ -12084,5 +12114,104 @@
    "vox"
   ],
   "vista": "2026-11-13T21:59:00.211Z"
+ },
+ {
+  "titulo": "Abascal pide un 29-N glorioso que recosa la unidad patriótica",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261113/11683878/abascal-pide-29-n-glorioso-recosa-unidad-patriotica.html",
+  "fecha": "2026-11-13T21:52:56.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Sánchez busca una movilización histórica de la izquierda contra el PP y Vox que vuelva a echar por tierra los sondeos",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/sanchez-busca-movilizacion-historica-izquierda-pp-vox-vuelva-echar-tierra-sondeos_1_13662791.html",
+  "fecha": "2026-11-13T21:53:28.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Sánchez, Feijóo y Colau se internan en el mundo no muy peligroso de Jordi Wild",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/sanchez-feijoo-colau-internan-mundo-no-peligroso-jordi-wild_129_13662429.html",
+  "fecha": "2026-11-13T21:53:28.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "De qué se habló en las entrevistas de Jordi Wild: Ceuta con Sánchez, economía con Feijóo e inmigración con Colau",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/hablo-entrevistas-jordi-wild-ceuta-sanchez-economia-feijoo-e-inmigracion-colau_1_13662907.html",
+  "fecha": "2026-11-13T21:53:29.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Primer debate electoral en campaña: PSOE y Frente Amplio prometen inversión en el tren, frente a PP y Vox que piden auditar la red",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/primer-debate-electoral-campana-psoe-frente-amplio-prometen-inversion-tren-pp-vox-piden-auditar-red_7061028_0.html",
+  "fecha": "2026-11-13T22:27:57.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Abascal exhibe el respaldo de la ultraderecha internacional en su arranque de campaña",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-13/abascal-advierte-a-sus-votantes-de-que-su-mayor-enemigo-es-el-exceso-de-confianza.html",
+  "fecha": "2026-11-13T22:36:53.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Moncloa y Ferraz proyectan una campaña de golpes de efecto como Begoña o Lula que aísle al PSOE de la UCO: \"Habrá sorpresas\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/14/6af7685ae4d4d848758b4587.html",
+  "fecha": "2026-11-13T23:00:37.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "La Rinconada pone a prueba la fidelidad de Sevilla al PSOE: \"No hay que tenerle miedo a los cambios; en cuatro años volvemos a votar\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/14/6aeb0a42e9cf4a88038b4574.html",
+  "fecha": "2026-11-13T23:00:38.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
+ },
+ {
+  "titulo": "Últimos fusibles de Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/14/6af75bf0fc6c837f278b4595.html",
+  "fecha": "2026-11-14T00:11:03.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T01:21:28.161Z"
  }
 ]

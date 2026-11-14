@@ -95,7 +95,12 @@ export const PARTIDOS: Partido[] = [
     color: '#5AC035',
     ambito: 'estatal',
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf',
+      fechaPublicacion: '2026-11-12',
+      documento: 'Programa de Vox para el 29-N (2026): «Es sentido común»',
+      archivo: 'programas/vox-2026.pdf',
+    },
     anterior: { documento: 'Programa de Vox para el 23-J (2023)', archivo: 'programas/vox-2023.pdf' },
   },
   {

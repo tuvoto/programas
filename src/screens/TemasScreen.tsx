@@ -219,7 +219,8 @@ function AvisoNuevo() {
   }, []);
   if (nuevos.length === 0) return null;
   const varios = nuevos.length > 1;
-  const nombres = nuevos.map((p) => p.siglas).join(varios ? ', ' : '');
+  const siglas = nuevos.map((p) => p.siglas);
+  const nombres = varios ? `${siglas.slice(0, -1).join(', ')} y ${siglas[siglas.length - 1]}` : siglas[0];
   return (
     <Revelar>
       <Pulsable

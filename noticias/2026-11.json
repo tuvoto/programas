@@ -12205,6 +12205,16 @@
   "vista": "2026-11-14T01:21:28.161Z"
  },
  {
+  "titulo": "PSOE y Frente Amplio cierran filas en el primer debate a cuatro ante la crítica del PP a la gestión del Gobierno y un Vox centrado en la inmigración",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-13/psoe-y-frente-amplio-cierran-filas-en-el-primer-debate-a-cuatro-ante-la-critica-del-pp-a-la-gestion-del-gobierno-y-un-vox-centrado-en-la-inmigracion.html",
+  "fecha": "2026-11-13T23:19:02.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
   "titulo": "Últimos fusibles de Sánchez",
   "medio": "El Mundo",
   "url": "https://www.elmundo.es/espana/2026/11/14/6af75bf0fc6c837f278b4595.html",
@@ -12731,6 +12741,16 @@
   "vista": "2026-11-14T13:09:42.297Z"
  },
  {
+  "titulo": "Sánchez reivindica \"la buena política\" frente a \"la mala educación\", la \"involución\" y la \"motosierra\" de PP y Vox",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-reivindica-buena-politica-frente-mala-educacion-involucion-motosierra-pp-vox-20261114134239.html",
+  "fecha": "2026-11-14T12:42:39.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
   "titulo": "Mitin del PSOE con Pedro Sánchez en Palma, en directo",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/mitin-psoe-pedro-sanchez-palma-directo-20261114113414-nt.html",
@@ -12751,6 +12771,26 @@
   "vista": "2026-11-14T13:09:42.297Z"
  },
  {
+  "titulo": "Irene Montero, a Jordi Wild: “Culpan a las mujeres y a los migrantes para que no miremos hacia arriba”",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/irene-montero-gran-canaria-culpan-mujeres-migrantes-no-miremos_1_13664077.html",
+  "fecha": "2026-11-14T12:58:19.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Sánchez asegura que \"España volverá a hacer historia en las urnas frenando la involución de Feijóo y Abascal\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-14/sanchez-asegura-espana-volvera-hacer-historia-urnas-mitin-palma_4465099/",
+  "fecha": "2026-11-14T13:00:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
   "titulo": "Sánchez pide a Feijóo “aprender inglés” y “educación para la ciudadanía” para aceptar los resultados electorales del 29N",
   "medio": "elDiario.es",
   "url": "https://www.eldiario.es/politica/sanchez-pide-feijoo-aprender-ingles-educacion-ciudadania-aceptar-resultados-electorales-29n_1_13664025.html",
@@ -12760,5 +12800,299 @@
    "psoe"
   ],
   "vista": "2026-11-14T13:09:42.297Z"
+ },
+ {
+  "titulo": "Tellado carga contra Sánchez y Begoña Gómez, \"los Kirchner de España\": \"Les falta la pulsera de arresto, todo se andará\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/tellado-carga-contra-sanchez-begona-gomez-los-kirchner-espana-les-falta-pulsera-arresto-todo-se-andara_7061116_0.html",
+  "fecha": "2026-11-14T13:10:24.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "ERC critica que Junts se sitúe “en medio” y pide un castigo en las urnas para Nogueras, el PSC y los comunes",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261114/11684287/erc-critica-junts-situe-medio-pide-castigo-urnas.html",
+  "fecha": "2026-11-14T13:10:53.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Abascal llama a la movilización y pide no confiar en las encuestas: «Es ahora o nunca»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/abascal-llama-movilizacion-pide-confiar-encuestas-nunca-20261114141331-ntrc.html",
+  "fecha": "2026-11-14T13:13:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Sánchez advierte a PP y Vox: “Espero que al menos acepten el resultado electoral”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261114/11684286/sanchez-advierte-pp-vox-espero-acepten-resultado-electoral.html",
+  "fecha": "2026-11-14T13:14:25.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Sánchez pide “el voto europeísta” para frenar a Abascal",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-14/sanchez-pide-el-voto-europeista-para-frenar-a-abascal.html",
+  "fecha": "2026-11-14T13:18:32.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Sánchez pide a Feijóo \"aceptar el resultado\" de las elecciones del 29N: \"El PSOE va a ganar\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-pide-feijoo-aceptar-resultado-elecciones-29n-psoe-va-ganar_7061115_0.html",
+  "fecha": "2026-11-14T13:23:24.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Feijóo dice ahora que integrará Vivienda \"en una vicepresidencia\" sin especificar con qué rango",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/feijoo-dice-ahora-integrara-vivienda-vicepresidencia-especificar-rango_1_13664079.html",
+  "fecha": "2026-11-14T13:25:45.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Feijóo promete \"limpieza\" y reivindica su perfil gestor: \"Gestionar no es muy atractivo, pero salva vidas\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-14/feijoo-pp-mitin-campana-elecciones-29-n-galicia_4465120/",
+  "fecha": "2026-11-14T13:32:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Feijóo dice que si gana, la gestión de vivienda se llevará desde una vicepresidencia: \"Es el mayor problema de España\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/feijoo-dice-que-si-gana-gestion-vivienda-se-llevara-desde-una-vicepresidencia-es-mayor-problema-espana_7061118_0.html",
+  "fecha": "2026-11-14T13:41:26.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Colau contrapone su propuesta para ampliar la cobertura de la sanidad pública con el modelo “debilitado” del PP en Andalucía",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-14/colau-contrapone-su-propuesta-para-ampliar-la-cobertura-de-la-sanidad-publica-con-el-modelo-debilitado-del-pp-en-andalucia.html",
+  "fecha": "2026-11-14T13:47:10.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Abascal augura un \"todo o nada\" en las urnas y acusa al PSOE de \"destruir\" España: \"Meten miedo al mismo demonio\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/14/6af832e4e85eceaa6f8b4598.html",
+  "fecha": "2026-11-14T13:47:52.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Ada Colau promete incluir el dentista, los audífonos y la salud visual en la sanidad pública",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ada-colau-promete-incluir-dentista-audifonos-salud-visual-sanidad-publica_7061119_0.html",
+  "fecha": "2026-11-14T13:49:33.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Irene Montero, a Jordi Wild: \"¿Qué valor le tienes a la vida de una mujer para decir que 44 asesinadas no son tantas?\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/irene-montero-jordi-wild-valor-tienes-vida-mujer-decir-asesinadas-tantas_7061121_0.html",
+  "fecha": "2026-11-14T13:59:37.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Feijóo reclama en Galicia el impulso para llegar a La Moncloa: “Sigo siendo el mismo”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-14/feijoo-reclama-en-galicia-el-impulso-para-llegar-a-la-moncloa-sigo-siendo-el-mismo.html",
+  "fecha": "2026-11-14T14:00:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Abascal pide el voto para Vox y ofrece el del PP a quienes discrepen de sus propuestas: «Hay que echar a Sánchez»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/almeria/abascal-pide-voto-vox-ofrece-pp-discrepen-20261114143347-nts.html",
+  "fecha": "2026-11-14T14:02:43.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Vox promete cambiar el Ingreso Mínimo Vital y que sea solo para españoles",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/economia/vox-promete-cambiar-ingreso-minimo-vital-solo-20261114150502-nt.html",
+  "fecha": "2026-11-14T14:05:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "El PSOE reclama que los fondos que recibe Canarias mejoren la atención sanitaria",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/psoe-reclama-fondos-recibe-canarias-mejoren-atencion-sanitaria_1_13664209.html",
+  "fecha": "2026-11-14T14:10:08.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "El Frente Amplio aprieta al PSOE para defenderse de su llamada al voto útil: \"Queremos ir a por más\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/frente-amplio-aprieta-psoe-defenderse-llamada-voto-util-queremos_1_13664090.html",
+  "fecha": "2026-11-14T14:10:36.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Ayuso aparece en un mitin con una camiseta de 'J'aime les fruits' y el PP afea a Sánchez su crítica a Feijóo: \"¿De qué sirve tu inglés?\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ayuso-aparece-un-mitin-con-una-camiseta-j-aime-les-fruits-defiende-feijoo-frente-sanchez-que-sirve-tu-ingles-pedro_7061125_0.html",
+  "fecha": "2026-11-14T14:28:27.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Coalición Canaria exige al Estado \"las inversiones que Canarias merece\" en aeropuertos",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/coalicion-canaria-exige-inversiones-canarias-merece-aeropuertos_1_13664245.html",
+  "fecha": "2026-11-14T14:32:58.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "PP vasco cancela su campaña en Gipúzcoa tras un incidente violento en Hernani",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261114/11684301/pp-vasco-cancela-campana-gipuzcoa-darse-condiciones-democraticas.html",
+  "fecha": "2026-11-14T14:33:57.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "José Elías, empresario catalán: «Ada Colau ha sido una de las políticas más nefastas que ha pasado por el Ayuntamiento de Barcelona. Manifestarse está bien, pero hay que hacer cosas»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/jose-elias-empresario-catalan-ada-colau-politicas-20261114160000-nt.html",
+  "fecha": "2026-11-14T15:00:01.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Meloni evita atacar a Sánchez en un prudente apoyo a Vox",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261114/11684309/meloni-evita-atacar-sanchez-prudente-apoyo-vox.html",
+  "fecha": "2026-11-14T15:12:22.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "AP institute celebra el primer debate electoral con jóvenes de PP, PSOE, Vox y Frente Amplio",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-14/debate-electoral-jovenes-asociacionismo-1hms-1svm_4465157/",
+  "fecha": "2026-11-14T15:15:00.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "El PP cancela su ruta por Guipúzcoa después de que Jon Echeverría sea apedreado en Hernani",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pais-vasco/pp-cancela-ruta-campana-guipuzcoa-despues-jon-20261114140347-nt.html",
+  "fecha": "2026-11-14T15:15:13.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Tellado bautiza a Sánchez y a Begoña Gómez como \"los Kirchner de España\": \"Les falta la pulsera del arresto domiciliario\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-14/tellado-sanchez-begona-gomez-kirchner-pulsera-arresto-domiciliario_4465155/",
+  "fecha": "2026-11-14T15:16:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Rajoy y Aznar arropan al PP valenciano y ensalzan a Feijóo como la única opción para «recuperar» España",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/comunidad-valenciana/rajoy-aznar-arropan-pp-valenciano-ensalzan-feijoo-20261114162033-nt.html",
+  "fecha": "2026-11-14T15:20:59.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
+ },
+ {
+  "titulo": "Feijóo, en su gran mitin en Galicia: «A la Moncloa son 600 kilómetros y 15 días. Ayudadme a culminar este viaje»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-gran-mitin-galicia-moncloa-600-kilometros-20261114135957-nt.html",
+  "fecha": "2026-11-14T15:34:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-14T15:53:17.331Z"
  }
 ]

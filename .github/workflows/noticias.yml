@@ -27,11 +27,18 @@ jobs:
         with:
           ref: gh-pages
           path: web
+      # Histórico de titulares, para rellenar a los partidos de los que hace
+      # días que no se habla (si la rama aún no existe, se sigue sin él).
+      - uses: actions/checkout@v5
+        continue-on-error: true
+        with:
+          ref: historico
+          path: hist-previo
       - uses: actions/setup-node@v5
         with:
           node-version: 24
       - name: Generar noticias.json
-        run: node --experimental-strip-types codigo/scripts/noticias.mjs web/noticias.json
+        run: node --experimental-strip-types codigo/scripts/noticias.mjs web/noticias.json hist-previo/noticias
       - name: Publicar
         working-directory: web
         run: |

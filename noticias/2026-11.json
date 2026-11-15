@@ -14229,6 +14229,7 @@
   "url": "https://www.abc.es/espana/cataluna/abascal-encomienda-catalanes-reconquista-espana-echar-sanchez-20261115142559-nt.html",
   "fecha": "2026-11-15T13:58:54.000Z",
   "partidos": [
+   "psoe",
    "vox"
   ],
   "vista": "2026-11-15T15:54:08.303Z"
@@ -14243,6 +14244,16 @@
    "psoe"
   ],
   "vista": "2026-11-15T15:54:08.303Z"
+ },
+ {
+  "titulo": "Abascal vincula inmigración y delincuencia con datos falsos sobre la población extranjera de Cornellà",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-15/abascal-vincula-inmigracion-y-delincuencia-con-datos-falsos-sobre-la-poblacion-extranjera-de-cornella.html",
+  "fecha": "2026-11-15T14:10:56.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
  },
  {
   "titulo": "Frente Amplio echa el resto para revalidar su escaño por Zaragoza: “Puede ser decisivo y se juega aquí”",
@@ -14440,5 +14451,218 @@
    "psoe"
   ],
   "vista": "2026-11-15T15:54:08.303Z"
+ },
+ {
+  "titulo": "El PSOE promete blindar 19.000 millones hasta 2030 para mantener la red ferroviaria e impulsar un Pacto de Estado",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-psoe-promete-blindar-19000-millones-2030-mantener-red-ferroviaria-impulsar-pacto-estado-20261115164705.html",
+  "fecha": "2026-11-15T15:47:05.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El PSOE promete \"blindar\" el mantenimiento de vías de tren con 19.000 millones y un Pacto de Estado por la seguridad ferroviaria",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/psoe-promete-blindar-mantenimiento-vias-tren-con-19-000-millones-un-pacto-estado-por-seguridad-ferroviaria_7061321_0.html",
+  "fecha": "2026-11-15T15:50:50.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El PSOE promete dedicar el 1% del PIB a vivienda y alargar la duración de los contratos de alquiler",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/psoe-promete-dedicar-1-pib-vivienda-alargar-duracion-los-contratos-alquiler_7061322_0.html",
+  "fecha": "2026-11-15T15:52:41.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Horario y dónde ver el debate electoral entre Pedro Sánchez y Alberto Núñez Feijóo del 19 de noviembre",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/horario-donde-ver-debate-electoral-entre-pedro-sanchez-alberto-nunez-feijoo-19-noviembre_7061066_0.html",
+  "fecha": "2026-11-15T16:01:02.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Andueza pide a simpatizantes de Frente Amplio y Podemos en Euskadi «concentrar» el voto en el PSE",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/andueza-pide-simpatizantes-frente-amplio-podemos-euskadi-20261115172532-nt.html",
+  "fecha": "2026-11-15T16:25:32.000Z",
+  "partidos": [
+   "frente-amplio",
+   "podemos"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Sánchez quiere llevar la amistad al Código Civil: así sería la 'unión de amistad' que propone el PSOE",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-15/que-es-union-de-amistad-psoe-codigo-civil_4465452/",
+  "fecha": "2026-11-15T16:37:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Feijóo mete la financiación en campaña: Llorca confía en el futuro proyecto y el Gobierno le reprocha que han rechazado 3.600 millones",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/feijoo-mete-financiacion-campana-llorca-confia-futuro-20261115175458-nt.html",
+  "fecha": "2026-11-15T16:55:25.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Si la Punky i el Papa van a votar... diu Sánchez que tu també ho has de fer",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/punky-papa-votar-diu-sanchez-tambe-ho-has_129_5909909.html",
+  "fecha": "2026-11-15T16:55:28.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Plan Sonríe: qué es la ayuda de hasta 200 euros para ir al dentista que promete el PSOE en su programa electoral",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-15/plan-sonrie-ayuda-200-euros-dentista-psoe_4465465/",
+  "fecha": "2026-11-15T17:04:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El PP de reclama el despliegue \"urgente\" del Frontex ante una situación \"insostenible\" en El Hierro",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-reclama-despliegue-urgente-frontex-ante-una-situacion-insostenible-hierro_7061347_0.html",
+  "fecha": "2026-11-15T17:13:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El error del PP con la ikurriña en un vídeo de Feijóo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/error-pp-ikurrina-video-feijoo-20261115181719-nt.html",
+  "fecha": "2026-11-15T17:18:02.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Sánchez promete \"blindar\" el aborto, las pensiones y la vivienda en la Constitución sin tener los apoyos suficientes",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-promete-blindar-aborto-las-pensiones-vivienda-constitucion-sin-tener-los-apoyos-suficientes_7061350_0.html",
+  "fecha": "2026-11-15T17:23:58.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Colau pide permisos retribuidos para la “familia escogida”, para vecinos y amigos, si hay cuidados",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261115/11684858/colau-pide-permisos-retribuidos-familia-escogida-vecinos-amigos-hay-cuidados.html",
+  "fecha": "2026-11-15T17:25:53.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Bellido defiende que un Gobierno central del PP supondría una oportunidad para Córdoba",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/cordoba/bellido-defiende-gobierno-central-pp-supondria-oportunidad-20261115183410-nts.html",
+  "fecha": "2026-11-15T17:34:11.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El PSOE mete en campaña a la reina Isabel la Católica para defender su feminismo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/psoe-mete-campana-reina-isabel-catolica-defender-20261115184141-nt.html",
+  "fecha": "2026-11-15T17:44:11.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Sánchez rescata para el programa electoral la financiación autonómica que prima a Cataluña, pese al rechazo de Page y Barbón",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/15/6af9eeb5e85ecef4158b4570.html",
+  "fecha": "2026-11-15T17:50:03.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "L'eutanàsia, el primer dret que podria derogar-se amb un govern PP-Vox",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/l-eutanasia-dret-derogar-govern-pp-vox_1_5905438.html",
+  "fecha": "2026-11-15T18:00:16.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Tres de cada quatre espanyols lamenten que Puigdemont pugui tornar de l’exili",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/tres-quatre-espanyols-lamenten-puigdemont-pugui-tornar-l-exili_1_5911226.html",
+  "fecha": "2026-11-15T18:00:17.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "El PP pide en Valencia el voto a la comunidad hispana: «España sin vosotros no es nada»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pp-pide-valencia-voto-comunidad-hispana-espana-20261115191101-nt.html",
+  "fecha": "2026-11-15T18:11:56.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Nueva protesta contra Vox en Galicia: la Guardia Civil separa a los manifestantes de José María Figaredo en Cee",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/nueva-protesta-vox-galicia-guardia-civil-separa-20261115193451-nt.html",
+  "fecha": "2026-11-15T18:34:52.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
+ },
+ {
+  "titulo": "Gustavo González de Vega, candidato del PP, pide desplegar Frontex ante el repunte de llegadas a El Hierro",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/gustavo-gonzalez-vega-candidato-pp-pide-desplegar-frontex-repunte-llegadas-hierro_1_13666127.html",
+  "fecha": "2026-11-15T18:37:10.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T19:01:30.256Z"
  }
 ]

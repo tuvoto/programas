@@ -12774,6 +12774,16 @@
   "vista": "2026-11-14T13:09:42.297Z"
  },
  {
+  "titulo": "Nogueras (Junts) admite que estas elecciones \"van de impedir la coalición entre PP y Vox\", aunque sigue con sus ataques al PSOE y manda un recado a Jordi Wild",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/14/6af84df021efa03e3e8b4591.html",
+  "fecha": "2026-11-14T12:55:37.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
   "titulo": "Irene Montero, a Jordi Wild: “Culpan a las mujeres y a los migrantes para que no miremos hacia arriba”",
   "medio": "Canarias Ahora",
   "url": "https://www.eldiario.es/canariasahora/politica/irene-montero-gran-canaria-culpan-mujeres-migrantes-no-miremos_1_13664077.html",
@@ -13297,6 +13307,18 @@
   "vista": "2026-11-14T19:00:19.335Z"
  },
  {
+  "titulo": "Otegi reclama el apoyo del \"pueblo de Euskal Herria\" para darle una \"paliza democrática\" a los \"fascistas\" de PP y de Vox",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/pais-vasco/2026/11/14/6af89830e4d4d83e758b4595.html",
+  "fecha": "2026-11-14T17:44:33.000Z",
+  "partidos": [
+   "bildu",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
   "titulo": "Suspendido un acto del PSOE con Sánchez y Lula la Silva por la afonía del presidente de Brasil",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261114/11684360/suspendido-acto-psoe-sanchez-lula-silva-afonia-presidente-brasil.html",
@@ -13410,6 +13432,17 @@
   "vista": "2026-11-14T19:00:19.335Z"
  },
  {
+  "titulo": "Feijóo promete acabar con los \"ocho años de corrupción, machismo, incompetencia y soberbia\" de Sánchez: \"Habrá limpieza\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/14/6af85c61fdddff4d488b456f.html",
+  "fecha": "2026-11-14T18:49:15.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
   "titulo": "Dolores Corujo, candidata del PSOE: ''Quieren un modelo de violencia y confrontación, y nosotros queremos convivencia''",
   "medio": "Canarias Ahora",
   "url": "https://www.eldiario.es/canariasahora/politica/elecciones-generales-psoe-dolores-corujo-candidata-29-noviembre-convivencia-violencia-confrontacion_1_13649316.html",
@@ -13418,6 +13451,17 @@
    "psoe"
   ],
   "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Agreden con piedras y petardos a Jon Echeverría en Hernani y Feijóo reclama: \"Ni un paso atrás. Con todas las ganas de ganarles también a los socios de Sánchez\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/pais-vasco/2026/11/14/6af863cae85ecedc3b8b457b.html",
+  "fecha": "2026-11-14T19:27:33.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
  },
  {
   "titulo": "La lluita del PSC al cinturó roig per evitar la fuga a Vox i ERC",
@@ -13429,6 +13473,17 @@
    "vox"
   ],
   "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Podemos pide en Pamplona el voto para para la alianza con Rufián, pero ERC va en coalición con EH Bildu en Navarra",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/pide-pamplona-voto-alianza-rufian-erc-coalicion-eh-bildu-navarra_1_13664638.html",
+  "fecha": "2026-11-14T20:01:06.000Z",
+  "partidos": [
+   "bildu",
+   "erc"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
  },
  {
   "titulo": "Torres afea a PP y Vox que postulen al Senado a personas \"que no saben arrugar una papa\"",
@@ -13482,5 +13537,45 @@
    "psoe"
   ],
   "vista": "2026-11-14T21:51:28.698Z"
+ },
+ {
+  "titulo": "Gabriel Rufián desvela el contenido de una dedicatoria que una seguidora no podía descifrar: \"Letra de zurdo cerrado... perdón\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/gabriel-rufian-desvela-contenido-dedicatoria-seguidora-no-podia-descifrar-letra-zurdo-cerrado-perdon_7061206_0.html",
+  "fecha": "2026-11-14T21:58:43.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
+  "titulo": "«¡Sánchez dictador!»: PSOE y Hazte Oír se citan en los tribunales antes de las elecciones por comparar al presidente con Hitler",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-dictador-psoe-hazte-oir-citan-tribunales-20261115015944-nt.html",
+  "fecha": "2026-11-15T01:00:07.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
+  "titulo": "Ayuso, echa una manita a Feijóo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ayuso-echa-manita-feijoo-20261115020036-nt.html",
+  "fecha": "2026-11-15T01:00:49.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
+ },
+ {
+  "titulo": "El secreto del voto oculto del PSOE",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/secreto-voto-oculto-psoe-20261115020114-nt.html",
+  "fecha": "2026-11-15T01:01:26.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-15T01:25:46.506Z"
  }
 ]

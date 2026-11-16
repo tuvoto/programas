@@ -14946,6 +14946,16 @@
   "vista": "2026-11-16T01:41:23.746Z"
  },
  {
+  "titulo": "Feijóo asegura que el partido de las elecciones lo va \"ganando el PP\" aunque todo se resuelve \"en el minuto 90\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-asegura-partido-elecciones-va-ganando-pp-todo-resuelve-minuto-90-20261116020226.html",
+  "fecha": "2026-11-16T01:02:26.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
   "titulo": "Sánchez reproduce en su programa medidas de Sumar y se envuelve en la bandera para intentar pescar votos a izquierda y derecha",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/sanchez-reproduce-su-programa-medidas-sumar-se-envuelve-bandera-para-intentar-pescar-votos-izquierda-derecha_7061354_0.html",
@@ -15018,5 +15028,116 @@
    "bildu"
   ],
   "vista": "2026-11-16T04:50:52.276Z"
+ },
+ {
+  "titulo": "Feijóo acentúa su ofensiva contra el PSOE por el voto femenino",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261116/11684938/feijoo-acentua-ofensiva-psoe-voto-femenino.html",
+  "fecha": "2026-11-16T05:00:00.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Ceuta, Vox i la justícia espanyola: els altres titulars de l’Enquesta de l’ARA",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/ceuta-vox-justicia-espanyola-altres-titulars-l-enquesta-l-ara_1_5911438.html",
+  "fecha": "2026-11-16T06:00:27.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Estrategia intriga: el PP oculta ocho medidas de su programa electoral y apela a «permanecer atento» a la campaña",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/estrategia-intriga-pp-oculta-ocho-medidas-programa-20261116070000-nt.html",
+  "fecha": "2026-11-16T06:04:21.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "El PP andaluz se aleja del ruido y centra su campaña electoral en la gestión",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/pp-andaluz-aleja-ruido-centra-campana-electoral-20261116071931-nts.html",
+  "fecha": "2026-11-16T06:19:32.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Pedro Sánchez epistolar: la ingeniería del sentimiento como estrategia política",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pedro-sanchez-epistolar-ingenieria-sentimiento-estrategia-politica-20261116073359-ntrc.html",
+  "fecha": "2026-11-16T06:33:59.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "El Gobierno de Pedro Sánchez reactiva cuatro desahucios de familias en Andalucía tras aprobar su 'decreto Maricarmen'",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/malaga/gobierno-pedro-sanchez-reactiva-cuatro-desahucios-familias-20261116071055-nts.html",
+  "fecha": "2026-11-16T06:38:04.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Elecciones generales 2026, en directo: últimas encuestas del 29N y reunión de Sánchez con Lula da Silva",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-ultimas-encuestas-29n-reunion-sanchez-lula-da-silva-20261116083507.html",
+  "fecha": "2026-11-16T07:35:07.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Abascal apela en Cornellà a la defensa de la “identidad” amenazada por la inmigración",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261116/11684956/abascal-apela-cornella-defensa-identidad-amenazada-inmigracion.html",
+  "fecha": "2026-11-16T08:28:26.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "El Frente Amplio le canta a los que no llegan a fin de mes en la pieza central de su campaña",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261116/11685190/frente-amplio-cancion-videoclip-maria-arnal-spot-elecciones-29n.html",
+  "fecha": "2026-11-16T08:37:24.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Colau afirma que la OIT pierde a la mejor aspirante tras retirar Yolanda Díaz su candidata para dirigir el organismo",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-colau-afirma-oit-pierde-mejor-aspirante-retirar-yolanda-diaz-candidata-dirigir-organismo-20261116094456.html",
+  "fecha": "2026-11-16T08:44:56.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
+ },
+ {
+  "titulo": "Feijóo propone una 'ley de nietos' vasca para que voten los exiliados del terrorismo de ETA",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/feijoo-propone-ley-nietos-vasca-voten-exiliados-20261116093459-nt.html",
+  "fecha": "2026-11-16T08:47:27.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T09:01:52.272Z"
  }
 ]

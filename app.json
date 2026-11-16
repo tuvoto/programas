@@ -112,9 +112,6 @@
       "themeColor": "#161144",
       "backgroundColor": "#F6F4EF"
     },
-    "experiments": {
-      "baseUrl": "/programas"
-    },
     "scheme": "programaselectorales",
     "plugins": [
       "expo-router",

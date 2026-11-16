@@ -55,7 +55,7 @@ if (conNoticias) {
 }
 
 const CABECERAS = {
-  'User-Agent': 'Mozilla/5.0 (compatible; TuVoto/1.0; +https://tuvoto.github.io/programas)',
+  'User-Agent': 'Mozilla/5.0 (compatible; TuVoto/1.0; +https://tuvotoapp.es)',
   Accept: '*/*',
 };
 async function comprobar(url) {

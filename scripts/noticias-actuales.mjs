@@ -4,7 +4,7 @@
 // Si quieres descargarlas de nuevo a mano: npm run noticias -- dist/noticias.json
 import { writeFileSync } from 'node:fs';
 
-const URL_NOTICIAS = 'https://tuvoto.github.io/programas/noticias.json';
+const URL_NOTICIAS = 'https://tuvotoapp.es/noticias.json';
 try {
   const r = await fetch(URL_NOTICIAS, { signal: AbortSignal.timeout(10000), cache: 'no-store' });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);

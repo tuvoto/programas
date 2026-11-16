@@ -1,7 +1,8 @@
 // Enlaces que piden las tiendas. Se rellenan con «npm run configurar -- <usuario-github> <correo>».
-// Dirección de la web publicada (GitHub Pages). La app del móvil descarga de
-// aquí los programas en PDF y las noticias.
-const WEB = 'https://tuvoto.github.io/programas';
+// Dirección de la web publicada (GitHub Pages con el dominio tuvotoapp.es; la
+// antigua tuvoto.github.io/programas redirige aquí). La app del móvil descarga
+// de aquí los programas en PDF y las noticias.
+const WEB = 'https://tuvotoapp.es';
 
 export const CONFIG = {
   webUrl: WEB,

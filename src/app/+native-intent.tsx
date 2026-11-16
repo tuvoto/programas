@@ -1,4 +1,6 @@
-// Enlaces de la web que abren la app (https://tuvoto.github.io/programas/...).
+// Enlaces de la web antigua que abren la app (https://tuvoto.github.io/programas/...).
+// La web ahora está en https://tuvotoapp.es (sin /programas); para que esos
+// enlaces abran la app hace falta una versión nueva en Google Play (app.json).
 // La web vive bajo /programas; dentro de la app las rutas empiezan en /.
 const PREFIJO = /^(?:https?:\/\/tuvoto\.github\.io)?\/programas(?=\/|$|\?)/i;
 

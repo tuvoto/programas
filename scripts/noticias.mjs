@@ -13,7 +13,7 @@ const descargar = async (url) => {
   const r = await fetch(url, {
     headers: {
       // Algunos medios rechazan peticiones sin un navegador conocido.
-      'User-Agent': 'Mozilla/5.0 (compatible; TuVoto/1.0; +https://tuvoto.github.io/programas)',
+      'User-Agent': 'Mozilla/5.0 (compatible; TuVoto/1.0; +https://tuvotoapp.es)',
       Accept: '*/*',
     },
     signal: AbortSignal.timeout(15000),

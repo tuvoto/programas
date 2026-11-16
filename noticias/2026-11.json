@@ -14667,6 +14667,16 @@
   "vista": "2026-11-15T19:01:30.256Z"
  },
  {
+  "titulo": "Feijóo se dirige a Sánchez tras la agresión al candidato del PP en Guipúzcoa: \"Dígales a sus socios que no violenten la campaña\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6af98b45fdddff16668b457e.html",
+  "fecha": "2026-11-15T18:36:25.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
   "titulo": "Gustavo González de Vega, candidato del PP, pide desplegar Frontex ante el repunte de llegadas a El Hierro",
   "medio": "Canarias Ahora",
   "url": "https://www.eldiario.es/canariasahora/politica/gustavo-gonzalez-vega-candidato-pp-pide-desplegar-frontex-repunte-llegadas-hierro_1_13666127.html",
@@ -14792,6 +14802,16 @@
   "vista": "2026-11-15T21:52:48.035Z"
  },
  {
+  "titulo": "Con la voz al límite y su asesor fetiche, Lula compartirá con Sánchez la fórmula para revertir una elección perdida",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6afa1a6be9cf4afa148b457c.html",
+  "fecha": "2026-11-15T20:50:47.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
   "titulo": "El PP agita el discurso de la inseguridad pese a los bajos niveles de criminalidad y azuza el miedo a la inmigración",
   "medio": "elDiario.es",
   "url": "https://www.eldiario.es/politica/pp-agita-discurso-inseguridad-pese-bajos-niveles-criminalidad-azuza-miedo-inmigracion_1_13663991.html",
@@ -14861,5 +14881,68 @@
    "psoe"
   ],
   "vista": "2026-11-15T21:52:48.035Z"
+ },
+ {
+  "titulo": "Sánchez se vuelca con Madrid para dar munición al PSOE frente a Ayuso ante \"la increíble fuga\" de voto del PP a Vox",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6afa00f4e4d4d88a2b8b457e.html",
+  "fecha": "2026-11-15T23:10:52.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
+  "titulo": "María José Catalá: \"Feijóo está ante el reto de su vida y le costará sangre, sudor y lágrimas\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6af9e07ee9cf4a2f498b457f.html",
+  "fecha": "2026-11-15T23:10:53.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
+  "titulo": "Causa de la financiación irregular del PSOE: las explicaciones de los técnicos del Tribunal de Cuentas no convencen a la UCO",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/16/6afa0cf3fc6c83a70f8b456e.html",
+  "fecha": "2026-11-16T00:01:29.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
+  "titulo": "Moncloa guarda una grabación del abogado del PP para reventar la campaña electoral",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/moncloa-guarda-grabacion-abogado-pp-reventar-campana-20261113010127-nt.html",
+  "fecha": "2026-11-16T00:02:03.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
+  "titulo": "Vox refuerza a Moñino con una campaña por toda España previa a su batalla contra Ayuso",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/madrid/vox-refuerza-monino-campana-espana-previa-batalla-20261111010515-nt.html",
+  "fecha": "2026-11-16T00:25:55.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
+ },
+ {
+  "titulo": "El PP mantiene su mayoría absoluta en el Senado, pero no llega a los tres quintos con Vox",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/pp-mantiene-mayoria-absoluta-senado-llega-tres-20261116010020-nt.html",
+  "fecha": "2026-11-16T00:36:58.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-16T01:41:23.746Z"
  }
 ]

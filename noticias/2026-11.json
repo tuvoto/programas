@@ -12528,6 +12528,16 @@
   "vista": "2026-11-14T09:59:06.199Z"
  },
  {
+  "titulo": "El programa de Adelante Andalucía incluye el fin de las corridas de toros",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/programa-adelante-andalucia-incluye-fin-corridas-toros-20261114105713-nts.html",
+  "fecha": "2026-11-14T09:59:15.000Z",
+  "partidos": [
+   "adelante"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
   "titulo": "Feijóo y Jordi Wild discuten por Ayuso y el ático de 7 millones: «¿Qué aviso, hombre? Jordi, por favor»",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/culturas/tv/feijoo-jordi-wild-discuten-ayuso-atico-millones-20261114112600-nt.html",
@@ -14883,6 +14893,16 @@
   "vista": "2026-11-15T21:52:48.035Z"
  },
  {
+  "titulo": "Vox roza un hito con dos escaños en Galicia y dispara a la derecha en Cataluña",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/15/6afa153a21efa0bb1f8b458a.html",
+  "fecha": "2026-11-15T21:42:42.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
   "titulo": "Sánchez se vuelca con Madrid para dar munición al PSOE frente a Ayuso ante \"la increíble fuga\" de voto del PP a Vox",
   "medio": "El Mundo",
   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6afa00f4e4d4d88a2b8b457e.html",
@@ -15249,6 +15269,7 @@
   "url": "https://www.lavanguardia.com/politica/20261116/11683294/elecciones-generales-campana-electoral-candidatos-ultima-hora-en-directo.html",
   "fecha": "2026-11-16T10:03:13.000Z",
   "partidos": [
+   "frente-amplio",
    "pp",
    "psoe",
    "vox"
@@ -15266,6 +15287,16 @@
   "vista": "2026-11-16T10:47:46.949Z"
  },
  {
+  "titulo": "La candidata de Compromís-Front Valencià denuncia con una camiseta que \"la dirección de À Punt manipula\" en su entrevista en la televisión pública",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/candidata-compromis-front-valencia-denuncia-camiseta-direccion-punt-manipula-entrevista-television-publica_1_13666802.html",
+  "fecha": "2026-11-16T10:09:54.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
   "titulo": "El PSOE propone crear una «unión de amistad» en el Código Civil para amigos que se cuiden mutuamente",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/elecciones/generales/psoe-union-amistad-codigo-civil-20261116111321-nt.html",
@@ -15274,6 +15305,16 @@
    "psoe"
   ],
   "vista": "2026-11-16T10:47:46.949Z"
+ },
+ {
+  "titulo": "Feijóo propone una 'ley de nietos' vasca para que puedan votar los exiliados por ETA",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/feijoo-propone-una-ley-nietos-vasca-para-que-puedan-votar-los-exiliados-por-eta_7061515_0.html",
+  "fecha": "2026-11-16T10:18:31.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
  },
  {
   "titulo": "El PP propone una ‘ley de nietos’ para que los exiliados vascos por terrorismo de ETA puedan votar en las elecciones autonómicas",
@@ -15286,6 +15327,17 @@
   "vista": "2026-11-16T10:47:46.949Z"
  },
  {
+  "titulo": "Nogueras insta al PSOE a aprobar la condonación del FLA en la Diputación Permanente \"si se cree el pacto con ERC\"",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/nogueras-insta-psoe-aprobar-condonacion-fla-diputacion-permanente-si-cree-pacto-erc_1_13666896.html",
+  "fecha": "2026-11-16T10:34:00.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
   "titulo": "L’idil·li entre Mas i Nogueras: “Vull gent que no enganyi”",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/eleccions-generals/l-idil-li-nogueras-vull-gent-no-enganyi_1_5912010.html",
@@ -15294,5 +15346,373 @@
    "junts"
   ],
   "vista": "2026-11-16T10:47:46.949Z"
+ },
+ {
+  "titulo": "UPN-PP pide concentrar el voto en su candidatura para que \"Navarra contribuya al cambio de Gobierno\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/16/upn-pp-pide-concentrar-voto-candidatura-navarra-contribuya-cambio-gobierno-842628-15.html",
+  "fecha": "2026-11-16T10:54:09.000Z",
+  "partidos": [
+   "pp",
+   "upn"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Feijóo proposa una “llei de nets basca” per als exiliats pel terrorisme d’ETA",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/feijoo-proposa-llei-nets-basca-als-exiliats-pel-terrorisme-d-eta_1_5912022.html",
+  "fecha": "2026-11-16T11:09:02.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Vox critica \"el incidente registrado el sábado en la plaza Merindades de Pamplona\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/16/vox-afirma-tendencia-apunta-formacion-arrebatar-segundo-escano-psoe-navarra-842631-15.html",
+  "fecha": "2026-11-16T11:12:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Frente Amplio apuesta por una jornada laboral de 32 horas y jubilación a los 65 años",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/frente-amplio-apuesta-por-una-jornada-laboral-de-32-horas-y-jubilacion-a-los-65-anos.html",
+  "fecha": "2026-11-16T11:31:52.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Frente Amplio propone limitar las herencias de los \"ultrarricos\", jornada laboral de 32 horas y comedores gratuitos",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frente-propone-limitar-las-herencias-los-ultrarricos-una-prestacion-universal-por-crianza-200-euros-comedores-gratuitos_7061498_0.html",
+  "fecha": "2026-11-16T11:34:26.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Sánchez y Lula piden defender las instituciones democráticas ante la “amenaza ultraderechista”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261116/11685403/sanchez-exhibe-sintonia-politica-lula-visita-moncloa-plena-campana-electoral.html",
+  "fecha": "2026-11-16T11:52:20.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Ángel Gaitán, el mecánico más famoso de España, entrevista a Abascal tras el plantón a Jordi Wild: “Tienes mi voto”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/angel-gaitan-el-mecanico-mas-famoso-de-espana-entrevista-a-abascal-tras-el-planton-a-jordi-wild-tienes-mi-voto.html",
+  "fecha": "2026-11-16T11:58:18.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "“Gabriel Rufián? 18 mesos”: el joc de les sis cares de l’ARA amb Miriam Nogueras",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/gabriel-rufian-18-mesos-joc-sis-cares-l-ara-miriam-nogueras_1_5910059.html",
+  "fecha": "2026-11-16T12:00:13.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Bildu quiere extender la exigencia del euskera a la Administración del Estado y a los MIR",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-quiere-extender-exigencia-euskera-administracion-estado-20261116125508-nt.html",
+  "fecha": "2026-11-16T12:09:40.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Rufián vol ser un president com Pere Aragonès (però sense Junts)",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/rufian-vol-president-pere-aragones-junts_1_5912009.html",
+  "fecha": "2026-11-16T12:22:33.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Geroa Bai reivindica las políticas de memoria frente a la \"sociedad amnésica\" de la \"ultraderecha\"",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/geroa-bai-reivindica-politicas-memoria-frente-sociedad-amnesica-ultraderecha_1_13667056.html",
+  "fecha": "2026-11-16T12:23:07.000Z",
+  "partidos": [
+   "geroa-bai"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Programa electoral del PSOE para el 29N: de mejorar la red ferroviaria a facilitar el acceso a una vivienda, consulta las 500 medidas",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/programa-electoral-psoe-29n-mejorar-red-ferroviarias-facilitar-acceso-vivienda-500-medidas_7061522_0.html",
+  "fecha": "2026-11-16T12:36:49.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "El PSOE apuesta por rebajar la edad de voto a los 16 años y crear un escaño ciudadano en el Congreso y el Senado",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-psoe-apuesta-rebajar-edad-voto-16-anos-crear-escano-ciudadano-congreso-senado-20261116135359.html",
+  "fecha": "2026-11-16T12:53:59.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Morant cifra en el 75% la participación necesaria para que el PSOE pueda «plantarle cara a la ultraderecha»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/morant-cifra-participacion-necesaria-psoe-pueda-plantarle-20261116135459-nt.html",
+  "fecha": "2026-11-16T12:55:54.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "El Frente Amplio exige al PSOE aprobar ya la prestación por crianza dado que ahora la incluye en su programa",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/frente-amplio-exige-psoe-aprobar-prestacion-crianza-dado-ahora-incluye-programa_1_13667569.html",
+  "fecha": "2026-11-16T12:59:35.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Lula da en Madrid un respaldo político a Sánchez, que trata de usar la remontada brasileña como ejemplo",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-16/lula-visita-a-sanchez-durante-la-campana-electoral.html",
+  "fecha": "2026-11-16T13:00:28.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Enfado y sorpresa en el Frente Amplio tras copiarle Sánchez la ayuda de 200 euros por hijo que le ha negado durante años",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/16/6afafbccfc6c831b368b4581.html",
+  "fecha": "2026-11-16T13:02:17.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Sánchez salva su foto con Lula, el símbolo de la remontada histórica frente a la ultraderecha",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/sanchez-salva-foto-lula-simbolo-remontada-historica-20261116140746-ntrc.html",
+  "fecha": "2026-11-16T13:07:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Sánchez y Lula defienden las instituciones democráticas ante la \"amenaza ultraderechista\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-lula-defienden-las-instituciones-democraticas-ante-amenaza-ultraderechista_7061668_0.html",
+  "fecha": "2026-11-16T13:15:52.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "El PP se compromete a revisar el proyecto para soterrar el paso a nivel de Alfafar si Feijóo gobierna",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/comunitat/pp-compromete-revisar-proyecto-soterrar-paso-nivel-20261116125205-nt.html",
+  "fecha": "2026-11-16T13:16:04.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Feijóo promete al campo una fiscalidad específica, controlar productos extranjeros y reducir la burocracia",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/feijoo-promete-campo-una-fiscalidad-especifica-controlar-productos-extranjeros-reducir-burocracia_7061645_0.html",
+  "fecha": "2026-11-16T13:22:42.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Feijóo quiere “mano de obra” de inmigrantes para el medio rural, pero con compromiso de “integración”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-16/feijoo-quiere-mano-de-obra-de-inmigrantes-para-el-medio-rural-pero-con-compromiso-de-integracion.html",
+  "fecha": "2026-11-16T13:48:31.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Feijóo abre la campaña con un mensaje a Canarias: «Tenemos la oportunidad de acabar con el abandono de las islas»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/politica/feijoo-abre-campana-mensaje-canarias-oportunidad-acabar-20261116144203-nt.html",
+  "fecha": "2026-11-16T13:58:41.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "El PSC combate el auge de Vox en el cinturón rojo: “Están de paso”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261116/11685637/psc-combate-auge-vox-cinturon-rojo-paso.html",
+  "fecha": "2026-11-16T14:05:04.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Ada Colau, convencida sobre cuál es la solución al problema de la okupación en España: «Me gustaría que un pequeño propietario recupere su casa en uno o dos meses»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ada-colau-convencida-sobre-solucion-problema-okupacion-20261116150441-nt.html",
+  "fecha": "2026-11-16T14:05:37.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Moratorias por islas y desclasificar suelo turístico para uso residencial, entre las propuestas de UPC",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/moratorias-islas-desclasificar-suelo-turistico-residencial-propuestas-upc_1_13668114.html",
+  "fecha": "2026-11-16T14:10:53.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Gregorio denuncia que ni Page ni Sánchez han cumplido su compromiso con el Puente Viejo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/talavera/gregorio-denuncia-page-sanchez-cumplido-compromiso-puente-20261116151422-nt.html",
+  "fecha": "2026-11-16T14:14:23.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Ada Colau acude a Gran Canaria a reforzar la candidatura de UPC",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/ada-colau-gran-canaria-candidatura-upc-elecciones-29n_1_13668140.html",
+  "fecha": "2026-11-16T14:24:33.000Z",
+  "partidos": [
+   "frente-amplio",
+   "upc"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Sánchez explota su foto electoral con Lula",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-explota-foto-electoral-lula-20261116150740-nt.html",
+  "fecha": "2026-11-16T14:24:34.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Sánchez se reinventa en el Sánchez candidato de 2015: así fue el otro acto de hace once años con Begoña y una bandera gigante de España",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-se-reinventa-sanchez-candidato-2015-asi-fue-otro-acto-hace-once-anos-con-begona-una-bandera-gigante-espana_7061663_0.html",
+  "fecha": "2026-11-16T14:29:06.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Compromís no cambia de camiseta en 15 años",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/compromis-no-cambia-camiseta-20261116153153-nt.html",
+  "fecha": "2026-11-16T14:32:21.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Feijóo acusa a Sánchez de \"frivolidad\" por \"el show de las camisetas y bailes con su mujer\" en la campaña electoral del 29-N",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/cataluna/2026/11/16/6afb0761e9cf4a84238b4597.html",
+  "fecha": "2026-11-16T14:42:31.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Las medidas del PP contra la okupación: así beneficiaría a los propietarios con viviendas afectadas",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/las-medidas-pp-contra-okupacion-asi-beneficiaria-los-propietarios-con-viviendas-afectadas_7060238_0.html",
+  "fecha": "2026-11-16T14:48:05.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Instrucciones de Ana Redondo para ir a votar al PSOE en Valladolid: «Sin bolígrafo y con la papeleta sin tachar»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/instrucciones-ana-redondo-votar-psoe-valladolid-boligrafo-20261116132757-nt.html",
+  "fecha": "2026-11-16T15:10:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Frente Amplio propone rebajar la edad de voto a los 16 años y un referéndum para resolver «la cuestión territorial»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/frente-amplio-plantea-limitar-herencias-rebajar-anos-20261116122400-nt.html",
+  "fecha": "2026-11-16T15:12:03.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
+ },
+ {
+  "titulo": "Colau i Nogueras: quan el tuit del candidat se li gira en contra",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/media/colau-nogueras-tuit-candidat-li-gira_129_5912295.html",
+  "fecha": "2026-11-16T15:12:22.000Z",
+  "partidos": [
+   "frente-amplio",
+   "junts"
+  ],
+  "vista": "2026-11-16T15:23:20.142Z"
  }
 ]

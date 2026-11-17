@@ -16272,6 +16272,16 @@
   "vista": "2026-11-17T01:29:53.258Z"
  },
  {
+  "titulo": "Mireia Ingla, la sombra de Rufián en la lista de ERC: \"Gabriel no hace tándem con Montero y sigue siendo independentista\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/cataluna/2026/11/17/6afb56defdddffc4068b459a.html",
+  "fecha": "2026-11-17T01:00:52.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
   "titulo": "Sánchez acelera su estrategia mediática: sobreexposición y medios no afines",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/sanchez-cambia-estrategia-mediatica-sobreexposicion-medios-afines-20261117020707-nt.html",
@@ -16290,5 +16300,329 @@
    "psoe"
   ],
   "vista": "2026-11-17T01:29:53.258Z"
+ },
+ {
+  "titulo": "Gabriel Rufián: \"La gente está mucho más cerca de ser desahuciada que de ser ocupada\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/cataluna/rufian-erc-gente-esta-mucho-mas-cerca-ser-desahuciada-que-ser-ocupada_7060845_0.html",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Feijóo lleva la violencia en Euskadi al centro de la campaña para cuestionar las alianzas de Sánchez en busca del votante moderado",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/feijoo-lleva-violencia-euskadi-centro-campana-para-cuestionar-las-alianzas-sanchez-busca-votante-moderado_7061770_0.html",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Abascal, el líder que halló un nicho en la derecha descontenta y aspira ahora a un papel relevante en el Gobierno post-29N",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/santiago-abascal-lider-que-hallo-un-nicho-derecha-descontenta-aspira-ahora-un-papel-relevante-gobierno-post-29n_7058035_0.html",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Jon Echeverría, tras la agresión en Hernani: \"Esto lo alienta Bildu, justifican la violencia y les legitima el Gobierno\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/pais-vasco/guipuzcoa/jon-echeverria-tras-agresion-hernani-esto-alienta-bildu-justifican-violencia-son-un-partido-legitimado-por-gobierno_7061812_0.html",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Feijóo se vuelca en 'terreno hostil' en busca de tres diputados más en Cataluña y uno en País Vasco",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-17/feijoo-terreno-hostil-diputados-cataluna-pais-vasco_4466102/",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Jon Echeverría, el joven del PP: \"Estamos revistiendo de aura a Feijóo: Anotop At es el nuevo Perro Sanxe\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-17/jon-echeverria-joven-pp-entrevista-contraluz-cbtrntrv_4466107/",
+  "fecha": "2026-11-17T04:00:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Abascal evita revelar en campaña cuál es su plan para las pensiones",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/abascal-evita-revelar-en-campana-cual-es-su-plan-para-las-pensiones.html",
+  "fecha": "2026-11-17T04:30:01.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Vox se frena y cede terreno al PP",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/vox-se-frena-y-cede-terreno-al-pp.html",
+  "fecha": "2026-11-17T04:30:01.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "ERC y Junts, entre lo político y lo personal",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261117/11685874/erc-junts-politico-personal.html",
+  "fecha": "2026-11-17T05:00:00.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "El camuflatge de PP i Vox per no despertar Catalunya",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/camuflatge-pp-vox-no-despertar-catalunya_129_5912572.html",
+  "fecha": "2026-11-17T06:00:26.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "“Tenim una missió”: la cursa de Sánchez i Colau a WhatsApp per crear els seus exèrcits digitals",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/missio-cursa-sanchez-colau-whatsapp-crear-exercits-digitals_1_5912319.html",
+  "fecha": "2026-11-17T06:00:26.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Sánchez aprova una pujada exprés del salari mínim coincidint amb la campanya electoral",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/economia/mercat-laboral/sanchez-aprova-pujada-expres-salari-minim-coincidint-campanya-electoral_1_5912541.html",
+  "fecha": "2026-11-17T06:01:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Frente Amplio propone subir los salarios en función del IPC para preservar el poder adquisitivo",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-frente-amplio-propone-subir-salarios-funcion-ipc-preservar-poder-adquisitivo-20261117102309.html",
+  "fecha": "2026-11-17T09:23:09.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "El PP valenciano ordena máxima movilización para reventar la plaza de toros en el mitin de Feijóo",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pp-valenciano-mitin-plaza-toros-20261117102514-nt.html",
+  "fecha": "2026-11-17T09:27:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Colau plantea un blindaje para revalorizar los salarios con el IPC y un IVA progresivo para luz y gas",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afc21c521efa0ad798b4587.html",
+  "fecha": "2026-11-17T09:46:21.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "El oncólogo tudelano Rodrigo Sánchez-Bayona, reconocido entre los jóvenes talentos de la investigación oncológica en España",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/17/oncologo-tudelano-rodrigo-sanchez-bayona-reconocido-jovenes-talentos-investigacion-oncologica-espana-842757-15.html",
+  "fecha": "2026-11-17T09:58:46.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Santiago Abascal: “Vox va a garantizar las pensiones, son un derecho adquirido y hay que respetar las de los mayores y las de los jóvenes”",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-17/santiago-abascal-vox-garantizar-pensiones-derecho-adquirido_4466491/",
+  "fecha": "2026-11-17T10:06:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Rufián aboga por un Govern de concentración con el PSC, Comuns y la CUP si ganan el PP y Vox el 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/elecciones/20261117/11686252/rufian-aboga-govern-concentracion-psc-comuns-cup-ganan-pp-vox-29-n.html",
+  "fecha": "2026-11-17T10:09:12.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Junts pide a los candidatos un compromiso por escrito de que hablarán catalán en el Congreso",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261117/11686274/junts-pide-candidatos-compromiso-escrito-hablaran-catalan-congreso.html",
+  "fecha": "2026-11-17T10:13:28.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Colau exige a Sánchez que lleve a la justicia el pacto de cinco países de la UE para deportar migrantes en Ruanda",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/colau-exige-sanchez-lleve-justicia-pacto-cinco-paises-ue-deportar-migrantes-ruanda_1_13669807.html",
+  "fecha": "2026-11-17T10:15:48.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Colau quiere blindar por ley los salarios frente a la inflación y rescatar al 60% de los trabajadores",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261117/11686304/colau-quiere-blindar-ley-subida-salarios-frente-inflacion.html",
+  "fecha": "2026-11-17T10:19:17.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "María Jesús Montero: «Si alguien está sufriendo violencia política ese es Pedro Sánchez»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/maria-jesus-montero-alguien-sufriendo-violencia-politica-20261116132944-nts.html",
+  "fecha": "2026-11-17T10:24:45.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "UPN y PP rechazan la revocación de Fernando Ferrer como presidente de la Mancomunidad de la Ribera",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/tudela-ribera/2026/11/17/upn-pp-rechazan-revocacion-fernando-ferrer-presidente-mancomunidad-ribera-842762-22.html",
+  "fecha": "2026-11-17T10:25:31.000Z",
+  "partidos": [
+   "pp",
+   "upn"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Ada Colau defiende las pulseras antimaltrato tras las informaciones de ABC: «Funcionan y no se van a tocar»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ada-colau-defiende-pulseras-antimaltrato-tras-informaciones-20261117113239-nt.html",
+  "fecha": "2026-11-17T10:32:40.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Compromís celebra el mitin central de campaña en Valencia sin presencia «forastera»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/compromis-celebra-mitin-central-campana-valencia-presencia-20261117114411-nt.html",
+  "fecha": "2026-11-17T10:44:11.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "El PP replica a la número dos de Morant por proclamar que no se puede ser gay y de derechas: «La libertad no puede ser patrimonio de una ideología»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/pp-replica-numero-dos-morant-proclamar-puede-20261117115045-nt.html",
+  "fecha": "2026-11-17T10:50:45.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Rufián defensa un govern de concentració a Catalunya si el PP i Vox arriben a la Moncloa",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/rufian-defensa-govern-concentracio-catalunya-pp-vox-arriben-moncloa_1_5913022.html",
+  "fecha": "2026-11-17T11:12:38.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "«Es mentira»: Martínez Mus se revuelve contra Sánchez por decir que el Gobierno reconstruyó carreteras tras la dana",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/mentira-martinez-mus-sanchez-20261117103319-nt.html",
+  "fecha": "2026-11-17T11:22:57.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Feijóo, en Eibar: \"Siempre me sentiré más cerca de Santiago Abascal que de Arnaldo Otegi\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-17/feijoo-en-eibar_4466623/",
+  "fecha": "2026-11-17T11:24:00.000Z",
+  "partidos": [
+   "bildu",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "Gavira contra Adelante: «Es exactamente lo mismo que Bildu y Esquerra Republicana»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/gavira-adelante-exactamente-bildu-esquerra-republicana-20261117122347-nts.html",
+  "fecha": "2026-11-17T11:25:10.000Z",
+  "partidos": [
+   "bildu",
+   "erc"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
+ },
+ {
+  "titulo": "El BNG busca capitalizar su auge autonómico para multiplicar su peso en el Congreso",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261117/11686405/bng-capitalizar-auge-autonomico-multiplicar-peso-galicia-congreso.html",
+  "fecha": "2026-11-17T11:42:53.000Z",
+  "partidos": [
+   "bng"
+  ],
+  "vista": "2026-11-17T11:58:05.064Z"
  }
 ]

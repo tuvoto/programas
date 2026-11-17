@@ -1,10 +1,10 @@
 // Partidos para las elecciones generales del 29 de noviembre de 2026.
 //
 // Coaliciones revisadas tras el registro ante la Junta Electoral Central
-// (registradas el 17 de octubre de 2026). Ya están todos los partidos que se
-// presentan aunque aún no tengan programa: se añade en cuanto lo publiquen. Las candidaturas se proclaman el
-// 2 de noviembre y se publican en el BOE el 3: entonces hay que revisar los
-// candidatos.
+// (registradas el 17 de octubre de 2026). Están todos los partidos que se
+// presentan, aunque aún no tengan programa: se añade en cuanto lo publiquen.
+// Candidatos revisados con las candidaturas proclamadas (BOE del 3 de
+// noviembre de 2026).
 //
 // `estadoCandidatura`:
 //   - "confirmada": ya registrada / proclamada oficialmente
@@ -65,7 +65,12 @@ export const PARTIDOS: Partido[] = [
     color: '#E1251B',
     ambito: 'estatal',
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf',
+      fechaPublicacion: '2026-11-15',
+      documento: 'Programa del PSOE para el 29-N (2026): «La fuerza de seguir avanzando»',
+      archivo: 'programas/psoe-2026.pdf',
+    },
     anterior: { documento: 'Programa del PSOE para el 23-J (2023)', archivo: 'programas/psoe-2023.pdf' },
   },
   {
@@ -196,7 +201,6 @@ export const PARTIDOS: Partido[] = [
     territorio: 'País Vasco y Navarra',
     comunidades: ['pais-vasco', 'navarra'],
     estadoCandidatura: 'confirmada',
-    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
     programa: {},
     anterior: { documento: 'Programa de EH Bildu para el 23-J (2023)', archivo: 'programas/bildu-2023.pdf' },
   },
@@ -224,7 +228,6 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Galicia',
     comunidades: ['galicia'],
     estadoCandidatura: 'confirmada',
-    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
     programa: {},
     anterior: { documento: 'Programa del BNG para el 23-J (2023)', url: 'https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf', archivo: 'programas/bng-2023.pdf' },
   },

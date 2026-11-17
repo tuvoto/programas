@@ -211,7 +211,7 @@ function BloqueDescargas({ p }: { p: Partido }) {
       <Text style={[T.subseccion, { color: C.tinta }]} accessibilityRole="header" {...nivel(2)}>
         Descargas
       </Text>
-      {!p.programa.url && (
+      {edicion !== 2026 && !p.programa.url && (
         <Text style={[T.meta, { color: C.avisoTexto }]}>
           {p.anterior?.archivo
             ? 'Aún no ha publicado su programa para el 29-N. Mientras, aquí tienes el de 2023.'

@@ -16898,6 +16898,18 @@
   "vista": "2026-11-17T20:59:23.454Z"
  },
  {
+  "titulo": "Illa rechaza el \"Govern de concentración\" que propone Rufián en Cataluña frente a PP-Vox: \"Lo que hay que conseguir es que Sánchez siga gobernando\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/cataluna/2026/11/17/6afc82f1e4d4d8b81f8b459f.html",
+  "fecha": "2026-11-17T18:56:16.000Z",
+  "partidos": [
+   "erc",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
   "titulo": "En què xoquen ERC i Podem en els seus programes electorals?",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/eleccions-generals/xoquen-erc-programes-electorals_1_5912230.html",
@@ -16953,6 +16965,8 @@
   "url": "https://www.canarias7.es/elecciones/generales/elecciones-generales-santiago-abascal-busca-voto-gran-20261117185447-nt.html",
   "fecha": "2026-11-17T19:35:49.000Z",
   "partidos": [
+   "cc",
+   "psoe",
    "vox"
   ],
   "vista": "2026-11-17T20:59:23.454Z"
@@ -17031,6 +17045,16 @@
   "vista": "2026-11-17T20:59:23.454Z"
  },
  {
+  "titulo": "Sánchez aparca a Zapatero y atribuye a su ministro Bono el mérito de decir \"No a la guerra\" y \"retirar las tropas de Irak\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/17/6afc9889e9cf4ae5698b45c8.html",
+  "fecha": "2026-11-17T20:25:40.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
   "titulo": "Feijóo comparece junto a Echeverría, en Eibar, en medio de un gran dispositivo policial y algunos gritos de “fascista”",
   "medio": "El País",
   "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/feijoo-junto-a-echeverria-en-eibar-no-nos-van-a-callar-no-vamos-a-dar-un-paso-atras-en-euskadi-ni-en-ningun-lugar-de-espana.html",
@@ -17039,6 +17063,17 @@
    "pp"
   ],
   "vista": "2026-11-17T20:59:23.454Z"
+ },
+ {
+  "titulo": "Sánchez dice que el \"cambio\" no puede ser volver al \"pasado\" y alerta frente a Vox: \"No es que sea facha, es pura fachada\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-dice-que-cambio-no-puede-ser-volver-pasado-alerta-frente-vox-no-es-que-sea-facha-es-pura-fachada_7062363_0.html",
+  "fecha": "2026-11-17T20:30:07.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
  },
  {
   "titulo": "Sánchez advierte de que el PP y Vox «se presentan como el cambio pero son la involución»",
@@ -17063,6 +17098,16 @@
   "vista": "2026-11-17T20:59:23.454Z"
  },
  {
+  "titulo": "Pedro Sánchez se aferra de nuevo a la bandera: “Estamos muy orgullosos de España”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-17/pedro-sanchez-se-aferra-de-nuevo-a-la-bandera-estamos-muy-orgullosos-de-espana.html",
+  "fecha": "2026-11-17T20:38:45.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
   "titulo": "Feijóo señala a Gamarra como responsable política de las reuniones del abogado del PP con Koldo",
   "medio": "elDiario.es",
   "url": "https://www.eldiario.es/politica/feijoo-senala-gamarra-responsable-politica-reuniones-abogado-pp-koldo_1_13671009.html",
@@ -17081,5 +17126,161 @@
    "psoe"
   ],
   "vista": "2026-11-17T20:59:23.454Z"
+ },
+ {
+  "titulo": "Rueda incita a transformar «el enfado» con Sánchez en votos para «el cambio» de Feijóo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/rueda-incita-transformar-enfado-sanchez-votos-cambio-20261117220015-nt.html",
+  "fecha": "2026-11-17T21:00:15.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "El PP valenciano presiona con mensajes y llamadas a una diputada de Compromís embarazada para acelerar la Ley del Suelo",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/pp-valenciano-presiona-mensajes-llamadas-diputada-compromis-embarazada-acelerar-ley-suelo_1_13672135.html",
+  "fecha": "2026-11-17T21:15:21.000Z",
+  "partidos": [
+   "compromis",
+   "pp"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Alberto Núñez Feijóo, sobre el sanchismo: «Se ha cargado a España y al Partido Socialista»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/alberto-nunez-feijoo-sobre-sanchismo-cargado-espana-20261117215250-nt.html",
+  "fecha": "2026-11-17T21:23:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Abascal compara el «rictus» de Pedro Sánchez con el de José Bretón: «Está desesperado»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/canarias/abascal-compara-rictus-pedro-sanchez-jose-breton-20261117221114-nt.html",
+  "fecha": "2026-11-17T21:28:15.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Por qué el PSOE no puede bajar en votos",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/17/6afca97521efa01c438b45ba.html",
+  "fecha": "2026-11-17T21:50:54.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Sánchez resalta el blindaje del poder adquisitivo a 15 millones de personas",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261117/11686876/sanchez-resalta-blindaje-adquisitivo-15-millones-personas.html",
+  "fecha": "2026-11-17T22:16:29.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Vox denuncia que un grupo de magrebíes ha tratado de boicotear una rueda de prensa en Fuensalida",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/vox-denuncia-grupo-magrebies-tratado-boicotear-rueda-20261117232255-nt.html",
+  "fecha": "2026-11-17T22:25:42.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Compromís reclama documentación sobre el funcionario de la Diputación de Valencia investigado por Antifraude",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/compromis-reclama-documentacion-funcionario-diputacion-valencia-investigado-antifraude_1_13671920.html",
+  "fecha": "2026-11-17T22:40:19.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Frente Amplio, herencia capada",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/opinion/ramon-palomar-frente-amplio-herencia-capada-20261118000315-nt.html",
+  "fecha": "2026-11-17T23:03:15.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "El PSE acusa a los populares de «negar» el «autogobierno» por sus pactos con Vox",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pse-acusa-populares-negar-autogobierno-pactos-vox-20261117003731-nt.html",
+  "fecha": "2026-11-17T23:37:31.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Vox aparca la tregua con Ayuso y rechaza sus Presupuestos: «Ni rastro de prioridad nacional»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/madrid/vox-aparca-tregua-ayuso-rechaza-presupuestos-rastro-20261117010041-nt.html",
+  "fecha": "2026-11-18T00:00:41.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Oskar Matute: «No me tomaría un pote con alguien de Vox ni del PP»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/oskar-matute-tomaria-pote-alguien-vox-pp-20261118010656-nt.html",
+  "fecha": "2026-11-18T00:06:57.000Z",
+  "partidos": [
+   "bildu",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Abascal se vuelca en Canarias, consciente de que su discurso cala ante el caos migratorio",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/discurso-abascal-sobre-inmigracion-impulsa-plena-crisis-20261117013409-nt.html",
+  "fecha": "2026-11-18T00:34:33.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "El candidato de la coalición del PSOE en Ceuta tachó el feminismo de «odio al hombre» y pidió implantar el islam como «modo de vida»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/candidato-coalicion-psoe-ceuta-tacho-feminismo-odio-20261117013421-nt.html",
+  "fecha": "2026-11-18T00:34:35.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
+ },
+ {
+  "titulo": "Sánchez busca retener al más de medio millón de votantes que se va al PP",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-busca-retener-medio-millon-votantes-pp-20261117013708-nt.html",
+  "fecha": "2026-11-18T00:37:21.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-18T02:55:57.933Z"
  }
 ]

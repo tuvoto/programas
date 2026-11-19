@@ -18058,6 +18058,16 @@
   "vista": "2026-11-18T20:37:06.523Z"
  },
  {
+  "titulo": "PP y Vox mantienen su mayoría, Podemos baja del 1% y los bloques se estancan a la espera del voto de un 14,3% de indecisos",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/18/6afdd75c21efa083408b45b2.html",
+  "fecha": "2026-11-18T19:00:28.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
   "titulo": "El PP pide la comparecencia de la ministra de Igualdad tras admitir los «fallos» de las pulseras antimaltrato",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/pp-pide-comparecencia-ministra-igualdad-tras-admitir-20261118192519-nt.html",
@@ -18338,6 +18348,16 @@
    "vox"
   ],
   "vista": "2026-11-19T02:37:09.502Z"
+ },
+ {
+  "titulo": "Yolanda Díaz entra en campaña para desactivar que Sánchez se apropie de logros del Frente Amplio como el salario mínimo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6afdf61fe9cf4a62708b45a8.html",
+  "fecha": "2026-11-18T23:07:30.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
  },
  {
   "titulo": "La 'kale borroka' de Sánchez en la España post 29-N",
@@ -18765,6 +18785,16 @@
   "vista": "2026-11-19T11:46:16.972Z"
  },
  {
+  "titulo": "Aitor Esteban explica en Madrid que el PNV es la \"póliza de seguros\" que hace \"equipo\" con Pradales para dar \"voz\" a Euskadi",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/pais-vasco/2026/11/19/6afecf75fdddffd23c8b4583.html",
+  "fecha": "2026-11-19T10:52:45.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
   "titulo": "Sánchez ofrece un Bono Deporte de 200 euros al año para jóvenes de 18 a 25 años",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/deportes/20261119/11688089/pedro-sanchez-bono-deporte-200-euros.html",
@@ -18806,5 +18836,531 @@
    "psoe"
   ],
   "vista": "2026-11-19T11:46:16.972Z"
+ },
+ {
+  "titulo": "Condena de todos los partidos, salvo Bildu, al ataque contra el candidato de PP en Gipuzkoa",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/condena-partidos-salvo-bildu-ataque-candidato-pp-20261119125537-nt.html",
+  "fecha": "2026-11-19T11:55:37.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Los partidos se lanzan como arma arrojadiza la entrevista de Puigdemont, en la que atribuye a Sánchez “una ambición desmedida”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688166/partidos-lanzan-arma-arrojadiza-entrevista-puigdemont-atribuye-sanchez-ambicion-desmedida.html",
+  "fecha": "2026-11-19T11:59:24.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Chivite reprocha a UPN que necesite “mantener viva a ETA para hacer política”",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/chivite-reprocha-upn-necesite-mantener-viva-eta-politica_1_13676446.html",
+  "fecha": "2026-11-19T12:21:31.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "El primer gran bulo de la campaña se derrumba: Alvise, un garaje en Burgos y un “ataque violento” en un domicilio",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-19/el-primer-gran-bulo-de-la-campana-se-derrumba-alvise-un-garaje-en-burgos-y-un-ataque-violento-en-un-domicilio.html",
+  "fecha": "2026-11-19T12:22:58.000Z",
+  "partidos": [
+   "salf"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Gritos de \"fuera catalanista\" a Ada Colau durante un mitin de Compromís en Valencia",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6afeb9ebe85eceaf1b8b4571.html",
+  "fecha": "2026-11-19T12:29:53.000Z",
+  "partidos": [
+   "compromis",
+   "frente-amplio"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "El PNV negociaría “reglas más claras” para investir a Sánchez y rechaza apoyar a Feijóo si Vox “participa”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/paisvasco/20261119/11688208/pnv-negociaria-reglas-mas-claras-investir-sanchez-rechaza-apoyar-feijoo-vox-participa.html",
+  "fecha": "2026-11-19T12:33:40.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Rufián reclama al PSOE que explique su proyecto “más allá de camisetas y bailes”: “No lo conocemos”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688222/rufian-reclama-psoe-explique-proyecto-mas-camisetas-bailes-conocemos.html",
+  "fecha": "2026-11-19T12:37:29.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Decaen las tres enmiendas a la totalidad presentadas por UPN, PP y Vox a los Presupuestos de Navarra de 2027",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/19/decaen-tres-enmiendas-totalidad-presentadas-upn-pp-vox-presupuestos-navarra-2027-843037-15.html",
+  "fecha": "2026-11-19T12:40:27.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "El PP ve la entrevista de Puigdemont como el \"acta notarial\" de la legislatura de Sánchez: \"Beneficia a la verdad\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-pp-ve-entrevista-puigdemont-acta-notarial-legislatura-sanchez-beneficia-verdad-20261119134746.html",
+  "fecha": "2026-11-19T12:47:46.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "“¿Qué piensa el señor Trias?” de Rufián y las otras frases del debate a seis de 'La Vanguardia' y RAC1",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688221/que-piensa-senor-trias-rufian-frases-debate-seis-vanguardia-rac1.html",
+  "fecha": "2026-11-19T13:01:05.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Ada Colau se lanza a disputar el voto de las mujeres al PSOE y advierte contra el llamamiento al voto útil de Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6afeec9afc6c83d53a8b459f.html",
+  "fecha": "2026-11-19T13:01:19.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Colau se compromete con las víctimas de la dana a reanudar la comisión de investigación",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261119/11688260/colau-compromete-victimas-dana-reanudar-comision-investigacion.html",
+  "fecha": "2026-11-19T13:20:45.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La vivienda, la violencia y Vox prenden el debate entre los candidatos por Bizkaia",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/vivienda-violencia-vox-prenden-debate-candidatos-bizkaia-20261119124740-nt.html",
+  "fecha": "2026-11-19T15:24:33.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Vox finiquita el programa de cooperación internacional con el Estado",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688357/vox-finiquita-programa-cooperacion-internacional.html",
+  "fecha": "2026-11-19T15:37:36.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Del 39-N de Abascal al lío de Feijóo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688363/39-n-abascal-lio-feijoo.html",
+  "fecha": "2026-11-19T16:04:01.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La penúltima jugada mestra de Puigdemont",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/media/penultima-jugada-mestra-puigdemont_129_5916164.html",
+  "fecha": "2026-11-19T16:17:45.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "El PSPV denuncia una lona de Vox en València por incitar al odio contra las personas migrantes",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/pspv-denuncia-lona-vox-incitar-odio-personas-migrantes_1_13677972.html",
+  "fecha": "2026-11-19T16:22:30.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Santiago Abascal, candidato de Vox, sobre 'La Revuelta' y Broncano: \"Dejó de ser humor y se convirtió en una entrevista muy dura\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-19/santiago-abascal-vox-revuelta-broncano-entrevista-dura-1qrt_4468191/",
+  "fecha": "2026-11-19T16:28:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Dirigentes de izquierdas critican que la familia de Abascal cobre el bono social térmico: \"Es pornográfico\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/dirigentes-izquierdas-critican-familia-abascal-cobre-bono-social-termico-pornografico_1_13676214.html",
+  "fecha": "2026-11-19T16:58:59.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Los socios de Chivite tumban las enmiendas a la totalidad de UPN, PP y Vox a los presupuestos pactados con EH Bildu",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/socios-chivite-tumban-enmiendas-totalidad-upn-pp-vox-presupuestos-pactados-eh-bildu_1_13677051.html",
+  "fecha": "2026-11-19T17:14:41.000Z",
+  "partidos": [
+   "bildu",
+   "upn",
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Abascal critica su ausencia en el debate y Montero lo ve como una \"estrategia\" del PSOE y del PP \"para concentrar el voto\" el 29-N",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/abascal-critica-su-ausencia-debate-montero-ve-como-una-estrategia-psoe-pp-para-concentrar-voto-29-n_7063328_0.html",
+  "fecha": "2026-11-19T17:40:55.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Carles Puigdemont: \"El PSOE me propuso una foto con Sánchez en los pasillos del Parlamento Europeo\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/19/6aff26e3e85ece240e8b4592.html",
+  "fecha": "2026-11-19T18:01:30.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Carles Puigdemont: \"Si Vox llama a la puerta de Junts el portazo lo recordarán toda su vida\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/19/6aff350ae85ece75168b4594.html",
+  "fecha": "2026-11-19T18:01:34.000Z",
+  "partidos": [
+   "junts",
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Torres acusa a PP y Vox de arañar votos aprovechando el dolor de los que migran",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/torres-acusa-pp-vox-aranar-votos-aprovechando-20261119191127-nt.html",
+  "fecha": "2026-11-19T18:12:19.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "1ºCAN-CC defenderá «con uñas y dientes» lagratuidad de las guaguas y el descuento del 75%",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/1ocancc-defendera-dientes-lagratuidad-guaguas-descuento-20261119193053-nt.html",
+  "fecha": "2026-11-19T18:30:54.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Sánchez y Feijóo, cara a cara en el debate electoral",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688507/sanchez-feijoo-cara-cara-debate-electoral.html",
+  "fecha": "2026-11-19T18:33:51.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Debate Sánchez - Feijóo, en directo: última hora del cara a cara electoral",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/debate-sanchez-feijoo-directo-ultima-hora-cara-cara-electoral_6_13678432.html",
+  "fecha": "2026-11-19T18:39:39.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La JEC rechaza que Podemos participe en el debate a cuatro y que La Sexta le compense",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688509/jec-rechaza-participe-debate-cuatro-sexta-compense.html",
+  "fecha": "2026-11-19T18:48:12.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "EH Bildu Sangüesa: \"¿Cómo se financiará la pista de patinaje?\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/sanguesa-merindad/2026/11/19/eh-bildu-sangueesa-financiara-pista-patinaje-843081-26.html",
+  "fecha": "2026-11-19T18:51:56.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La JEC avala el tijeretazo de Broncano a Abascal y cierra la puerta de los debates a Podemos",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-19/jec-broncano-abascal-podemos-debates_4468770/",
+  "fecha": "2026-11-19T19:00:00.000Z",
+  "partidos": [
+   "podemos",
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La JEC dice que TVE no vulneró los derechos de Abascal al quitar 40 minutos de 'La Revuelta'",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688524/jec-dice-tve-vulnero-derechos-abascal-quitar-40-minutos-revuelta.html",
+  "fecha": "2026-11-19T19:11:14.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Puigdemont dice que el PSOE le propuso una foto con Sánchez en la Eurocámara y que la rechazó: \"Yo quería una conversación larga\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/puigdemont-asegura-que-psoe-le-propuso-una-foto-con-sanchez-parlamento-europeo-que-rechazo_7063346_0.html",
+  "fecha": "2026-11-19T19:21:05.000Z",
+  "partidos": [
+   "junts",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Guia per entendre com col·laboren i rivalitzen les esquerres: el trencaclosques de Colau, Rufián i Montero",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/guia-entendre-col-laboren-rivalitzen-esquerres-trencaclosques-colau-rufian-montero_1_5915995.html",
+  "fecha": "2026-11-19T19:24:14.000Z",
+  "partidos": [
+   "erc",
+   "frente-amplio"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Coalición Canaria endurece su discurso contra Sánchez por miedo a perder su diputada",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/coalicion-canaria-endurece-discurso-sanchez-miedo-perder-diputada_1_13678684.html",
+  "fecha": "2026-11-19T19:25:01.000Z",
+  "partidos": [
+   "cc",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Qué proponen Feijóo y el PP para resolver el problema de la inmigración en España: medidas de su programa electoral",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/proponen-feijoo-pp-resolver-problema-inmigracion-espana-20261119202628-nt.html",
+  "fecha": "2026-11-19T19:27:15.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Las medidas de Pedro Sánchez y el PSOE para resolver el problema de la inmigración en España: qué proponen en su programa electoral",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/medidas-pedro-sanchez-psoe-resolver-problema-inmigracion-20261119202333-nt.html",
+  "fecha": "2026-11-19T19:27:35.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Así ha sido la llegada al cara a cara de Sánchez y Feijóo, uno de los debates más esperados del 29N",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/asi-ha-sido-llegada-cara-cara-sanchez-feijoo-uno-los-debates-mas-esperados-29n_7063372_0.html",
+  "fecha": "2026-11-19T19:49:12.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "La Junta Electoral niega que Podemos tenga derecho a estar en el debate a cuatro de la Academia de Televisión",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/junta-electoral-niega-que-podemos-tenga-derecho-estar-debate-cuatro-academia-television_7063376_0.html",
+  "fecha": "2026-11-19T19:55:50.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Las medidas de Feijóo y el PP para resolver el problema de la vivienda en España: qué proponen en su programa electoral",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/medidas-feijoo-pp-resolver-problema-vivienda-espana-20261119205603-nt.html",
+  "fecha": "2026-11-19T19:56:29.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Qué proponen Pedro Sánchez y el PSOE para resolver el problema de la vivienda en España: medidas de su programa electoral",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/proponen-pedro-sanchez-psoe-resolver-problema-vivienda-20261119204138-nt.html",
+  "fecha": "2026-11-19T19:56:59.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Tellado afirma que Sánchez lo pasa mal frente a la verdad «como un vampiro expuesto a la luz»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/tellado-afirma-sanchez-pasa-mal-frente-verdad-20261119203534-nt.html",
+  "fecha": "2026-11-19T19:57:27.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Debate Pedro Sánchez - Feijóo, en directo: resultado, ganador, medidas de PSOE y PP y reacciones al cara a cara hoy",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/debate-pedro-sanchez-feijoo-directo-resultado-ganador-20261119200902-di.html",
+  "fecha": "2026-11-19T20:00:36.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Pedro Sánchez, accedint als estudis de l'Acadèmia de Televisió de Tres Cantos, a Madrid.",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/pedro-sanchez-accedint-als-estudis-l-academia-televisio-tres-cantos-madrid_8_5916461.html",
+  "fecha": "2026-11-19T20:00:55.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Rueda reclama el «único voto útil» para Feijóo en el feudo de Abel Caballero",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/rueda-reclama-unico-voto-util-feijoo-feudo-20261119210201-nt.html",
+  "fecha": "2026-11-19T20:02:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Encuestas elecciones generales 29N: resultados de PSOE, PP, Vox y Frente Amplio y ganador según los sondeos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/encuestas-elecciones-generales-29n-resultados-psoe-pp-20261119051500-nt.html",
+  "fecha": "2026-11-19T20:10:01.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Núñez llama el 29N a «recuperar la dignidad de España» con Feijóo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/nunez-llama-29n-recuperar-dignidad-espana-feijoo-20261119211159-nt.html",
+  "fecha": "2026-11-19T20:12:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Aznar y Abascal reavivan la campaña electoral en Castilla y León",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-leon/aznar-abascal-reavivan-campana-electoral-20261119185541-nt.html",
+  "fecha": "2026-11-19T20:21:07.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Las mejores fotos del cara a cara entre Sánchez y Feijóo",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/las-mejores-fotos-cara-cara-entre-sanchez-feijoo_7063386_1.html",
+  "fecha": "2026-11-19T20:22:55.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Cara a cara Pedro Sánchez - Feijóo: cuánto dura, bloques y formato del debate de las elecciones generales",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cara-cara-pedro-sanchez-feijoo-formato-bloques-20261119053000-nt.html",
+  "fecha": "2026-11-19T20:25:33.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Ayuso desembarca a Barcelona per defensar la hispanitat i insultar Sánchez",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/ayuso-desembarca-barcelona-defensar-hispanitat-insultar-sanchez_1_5916270.html",
+  "fecha": "2026-11-19T20:25:51.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "Última hora del debate entre Sánchez y Feijóo: el cara a cara de las elecciones generales del 29N, en directo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261119/11688338/cara-cara-sanchez-feijoo-directo-ultima-hora-debate-candidatos-psoe-pp.html",
+  "fecha": "2026-11-19T20:28:14.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-19T20:42:48.480Z"
  }
 ]

@@ -14,7 +14,7 @@
 //   - Solo entran partidos con programa cargado en la app.
 //
 // Cuando salgan los programas de 2026, hay que revisar todas las posturas.
-// PSOE, PP y Vox: revisadas con su programa de 2026 (las páginas son de ese PDF).
+// PSOE, PP, Vox, Frente Amplio, ERC, Junts, EH Bildu, PNV, BNG y CC: revisadas con su programa de 2026 (las páginas son de ese PDF).
 
 import { PARTIDOS } from './partidos';
 
@@ -54,12 +54,13 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Los inquilinos pagarían menos. Para que no falten pisos, varios programas proponen sacar al mercado las viviendas vacías: más IBI, un registro o ventajas fiscales a quien alquile barato.',
     enContra: 'Quienes se oponen creen que algunos propietarios dejarían de alquilar o pasarían al alquiler de temporada, y habría menos pisos en oferta.',
     posturas: {
+      junts: P(-2, 60, 'Derogar la contención de precios y las zonas tensionadas de la Ley de Vivienda.'),
+      bng: P(2, 12, 'Topar por ley el precio del alquiler.'),
       psoe: P(2, 30, 'Congelar las rentas que superen los índices de referencia en zonas tensionadas.'),
       pp: P(-2, 53, 'Derogar la Ley de Vivienda y eliminar las zonas tensionadas y el índice de precios.'),
       vox: P(-1, 23, 'Derogar la Ley de Vivienda.'),
-      'frente-amplio': P(2, 77, 'Regular de forma más efectiva los precios del alquiler.'),
-      erc: P(2, 52, 'Defender la limitación y la reducción de los precios del alquiler.'),
-      bildu: P(1, 2, 'Apoyó la Ley de Vivienda que limita los alquileres.'),
+      'frente-amplio': P(2, 13, 'Limitar el alquiler para que no supere el 25 % de la renta del barrio.'),
+      bildu: P(2, 5, 'Subida anual máxima del 2 % en los alquileres y apoyo a las zonas tensionadas.'),
     },
   },
   {
@@ -72,10 +73,9 @@ export const AFIRMACIONES: Afirmacion[] = [
       psoe: P(-1, 30, 'Congelar las rentas que superen los índices de referencia.'),
       pp: P(2, 53, 'Un millón de viviendas con más suelo; cree que los límites al alquiler han reducido la oferta.'),
       vox: P(2, 23, 'Reformar la Ley del Suelo para construir mucho más y derogar la Ley de Vivienda.'),
-      'frente-amplio': P(-1, 77, 'Regular de forma más efectiva los precios del alquiler.'),
-      erc: P(-1, 52, 'Limitar los precios del alquiler.'),
-      bildu: P(-1, 2, 'Apoyó la Ley de Vivienda que limita los alquileres.'),
-      junts: P(1, 95, 'Bonificaciones fiscales a quien alquile por debajo del índice de precios.'),
+      'frente-amplio': P(-1, 13, 'Limitar por ley los alquileres en las zonas tensionadas.'),
+      bildu: P(-1, 5, 'Intervenir el mercado de la vivienda y regular los precios.'),
+      junts: P(2, 16, 'Más oferta y menos impuestos; los topes de precios no crean pisos.'),
     },
   },
   {
@@ -88,11 +88,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       psoe: P(1, 28, 'Un parque público estatal de 100.000 viviendas, junto a préstamos para comprar.'),
       pp: P(-1, 55, 'Aval público y una cuenta de ahorro con ventajas fiscales para comprar la primera vivienda.'),
-      'frente-amplio': P(2, 76, 'Hacer crecer el parque de alquiler social y asequible.'),
-      erc: P(1, 114, 'Ampliar el parque de vivienda protegida, sobre todo de alquiler social.'),
-      junts: P(1, 95, 'Usar el Plan de Vivienda para construir alquiler asequible.'),
-      pnv: P(1, 45, 'Fomentar el alquiler y la promoción de vivienda pública.'),
-      bng: P(1, 15, 'Ampliar el parque público de vivienda con los pisos de la SAREB.'),
+      'frente-amplio': P(2, 10, 'Un parque público de 1,5 millones de viviendas en alquiler.'),
+      erc: P(2, 19, 'El 1,5 % del PIB para ampliar el parque público de alquiler.'),
+      pnv: P(-1, 8, 'Que el alquiler protegido no sea la única opción para emanciparse.'),
+      bng: P(2, 12, 'El 3 % de los Presupuestos para un parque público de alquiler.'),
     },
   },
   // Empleo y salarios
@@ -105,12 +104,12 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Empresas y sindicatos perderían poder para negociarlo según la economía de cada momento.',
     posturas: {
       psoe: P(2, 37, 'Fijar por ley el salario mínimo por encima del 60 % del salario medio.'),
-      'frente-amplio': P(2, 7, 'Subirlo cada año por encima del IPC.'),
-      bng: P(2, 16, 'Salario mínimo del 60 % del salario medio.'),
-      bildu: P(1, 3, 'Salario mínimo propio guiado por el 60 % del salario medio.'),
-      erc: P(1, 91, 'Fijar por ley una subida mínima anual de salarios.'),
-      junts: P(1, 63, 'Salario mínimo catalán según el coste de la vida.'),
-      pnv: P(-1, 29, 'Que el empleo se debata en el diálogo social.'),
+      'frente-amplio': P(2, 51, 'Un suelo legal del 60 % del salario medio neto.'),
+      bng: P(2, 15, 'Salario mínimo del 60 % del salario medio.'),
+      bildu: P(1, 6, 'Salario mínimo propio con la Carta Social Europea como referencia.'),
+      erc: P(2, 20, 'Subir el salario mínimo hasta el 60 % del salario medio.'),
+      junts: P(1, 70, 'Salario mínimo catalán que avance hacia el 60 % del salario medio.'),
+      pnv: P(-1, 9, 'Un salario mínimo vasco fijado en el diálogo social.'),
     },
   },
   {
@@ -122,9 +121,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(2, 59, 'Nuevos autónomos sin cuota el primer año y el 100 % de las cotizaciones del primer trabajador bonificadas.'),
       vox: P(1, 9, 'Cuota cero para los autónomos que ingresen menos del salario mínimo.'),
-      cc: P(1, 6, 'Bonificar la cuota empresarial por contratos indefinidos a jóvenes.'),
-      junts: P(1, 58, 'Moderar las cotizaciones de quienes tienen más difícil encontrar empleo.'),
-      erc: P(1, 90, 'Bajar la cuota de los autónomos a niveles europeos.'),
+      cc: P(1, 12, 'Bonificar cotizaciones ligadas a subidas de sueldo.'),
+      junts: P(1, 61, 'Bonificar las cotizaciones por contratar indefinidamente a menores de 35.'),
     },
   },
   {
@@ -135,11 +133,12 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Más tiempo para la vida personal y familiar, con el mismo salario.',
     enContra: 'Quienes se oponen creen que subiría los costes, sobre todo en pequeños negocios y en sectores con horarios largos.',
     posturas: {
+      junts: P(-2, 88, 'En contra de imponer por ley la jornada de 37,5 horas.'),
       psoe: P(2, 41, 'Completar la reducción de la jornada a 37,5 horas.'),
-      'frente-amplio': P(2, 7, 'Jornada máxima de 37,5 horas por ley, sin bajar el sueldo.'),
-      bildu: P(2, 3, 'Jornada de 32 horas sin rebajar el salario.'),
-      bng: P(2, 16, 'Jornada de 35 horas sin rebajar el salario.'),
-      erc: P(1, 53, 'Implantar la semana laboral de cuatro días.'),
+      'frente-amplio': P(2, 56, 'Bajar a 37,5 horas ya y avanzar hasta las 32, sin bajar el sueldo.'),
+      bildu: P(2, 6, 'Jornada de 32 horas o de cuatro días sin rebajar el salario.'),
+      bng: P(2, 15, 'Jornada de 35 horas sin rebajar el salario.'),
+      erc: P(2, 26, 'Reducir la jornada a 37,5 horas sin bajar el sueldo.'),
     },
   },
   // Impuestos y economía
@@ -153,11 +152,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       psoe: P(2, 47, 'Un impuesto complementario a los grandes patrimonios.'),
       pp: P(-1, 61, 'Eliminar los impuestos que frenan la inversión.'),
-      'frente-amplio': P(2, 16, 'Un impuesto permanente a las grandes fortunas.'),
-      erc: P(2, 8, 'Crear impuestos a las grandes fortunas.'),
-      bildu: P(2, 8, 'Hacer permanente el impuesto a las grandes fortunas.'),
-      bng: P(2, 40, 'Impuestos permanentes a las grandes fortunas.'),
-      junts: P(1, 57, 'Gravar más el capital improductivo.'),
+      'frente-amplio': P(2, 45, 'Que los patrimonios de más de un millón paguen al menos un 2 %.'),
+      bildu: P(2, 14, 'Aumentar el impuesto a la banca y las grandes fortunas.'),
     },
   },
   {
@@ -168,10 +164,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Más dinero en el bolsillo cada mes. Algunos programas proponen ajustarlo a la inflación, para no pagar más por subidas de sueldo que solo compensan los precios.',
     enContra: 'Habría menos dinero para sanidad, educación o pensiones, salvo que se recorte otro gasto o suba la deuda.',
     posturas: {
+      junts: P(1, 67, 'Bajar la carga fiscal a la clase media y trabajadora.'),
       pp: P(2, 60, 'Bajar el IRPF a las rentas medias y bajas y deflactar la tarifa.'),
       vox: P(2, 9, 'Simplificar y bajar el IRPF, con un tipo menor según el número de hijos.'),
-      'frente-amplio': P(-1, 17, 'Subir el tipo máximo al 52 % para rentas de más de 300.000 euros.'),
-      bildu: P(-1, 8, 'Aumentar la carga impositiva.'),
+      'frente-amplio': P(-1, 46, 'Subir el tipo máximo al 52 % para rentas de más de 300.000 euros.'),
     },
   },
   {
@@ -182,11 +178,12 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Quienes lo defienden creen que traería más inversión y empleo.',
     enContra: 'El Estado ingresaría menos. Otros programas proponen lo contrario: un tipo mínimo para las grandes empresas.',
     posturas: {
+      junts: P(1, 69, 'Acelerar la rebaja del impuesto de sociedades para pymes.'),
       psoe: P(-1, 48, 'Más impuestos a las cotizadas con grandes diferencias salariales.'),
       pp: P(1, 61, 'Libertad de amortización: descontar el mismo año lo que se invierta.'),
       vox: P(2, 9, 'Reducir el tipo del impuesto de sociedades.'),
-      'frente-amplio': P(-2, 16, 'Reformarlo para que las grandes empresas paguen más.'),
-      erc: P(-1, 71, 'Tipo mínimo del 15 % en sociedades para grandes empresas.'),
+      'frente-amplio': P(-2, 44, 'Un tipo mínimo real del 20 % en sociedades.'),
+      erc: P(-1, 27, 'Más progresividad en el impuesto de sociedades.'),
     },
   },
   {
@@ -196,10 +193,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Parte de los beneficios extraordinarios vuelve a la sociedad.',
     enContra: 'Bancos y eléctricas podrían trasladar el coste a sus clientes.',
     posturas: {
-      'frente-amplio': P(2, 16, 'Mantener los impuestos extraordinarios a energéticas y financieras.'),
-      bildu: P(2, 8, 'Hacer permanentes los impuestos a la banca y las energéticas.'),
-      bng: P(2, 40, 'Hacer permanentes los impuestos a la banca y las energéticas.'),
-      erc: P(1, 71, 'Que la Generalitat recaude su parte de esos impuestos.'),
+      'frente-amplio': P(2, 44, 'Mantener de forma permanente el gravamen a la banca.'),
+      bildu: P(2, 14, 'Impuesto permanente a las energéticas y más carga a la banca.'),
+      erc: P(2, 22, 'Recuperar el de las energéticas y hacer permanente el de la banca.'),
     },
   },
   {
@@ -209,8 +205,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Heredar no costaría impuestos y sería igual en todas las comunidades.',
     enContra: 'Las comunidades ingresarían menos, y el ahorro sería mayor para las herencias grandes.',
     posturas: {
-      'frente-amplio': P(-2, 16, 'Un mínimo común en toda España que las comunidades no puedan rebajar.'),
-      erc: P(-1, 55, 'Critica las bonificaciones del impuesto de sucesiones.'),
+      'frente-amplio': P(-2, 45, 'Un impuesto estatal a las herencias de más de un millón.'),
     },
   },
   // Pensiones
@@ -222,13 +217,14 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Las pensiones mantendrían su poder de compra pase lo que pase.',
     enContra: 'En una crisis, el Estado tendría menos margen para ajustar el gasto.',
     posturas: {
+      bildu: P(1, 7, 'Blindar la revalorización anual con el IPC.'),
+      erc: P(2, 26, 'Blindar la revalorización de las pensiones.'),
       psoe: P(2, 89, 'Blindar en la Constitución la subida de las pensiones con el IPC.'),
       pp: P(1, 43, 'Subir las pensiones cada año con el IPC, dentro del Pacto de Toledo.'),
-      'frente-amplio': P(1, 15, 'Mantener la subida de las pensiones con el IPC.'),
+      'frente-amplio': P(2, 7, 'Revalorizar las pensiones por mandato constitucional.'),
       bng: P(1, 18, 'Revalorizar las pensiones según el IPC real.'),
-      pnv: P(1, 33, 'Impedir que las pensiones no se actualicen con el IPC.'),
-      cc: P(1, 7, 'Pensiones actualizadas según el coste de la vida.'),
-      junts: P(1, 100, 'Tener en cuenta el coste de la vida en las pensiones.'),
+      pnv: P(1, 31, 'Revalorizar cada año las pensiones con el IPC.'),
+      junts: P(1, 56, 'Revisar cada año las pensiones con el IPC catalán.'),
     },
   },
   {
@@ -239,12 +235,11 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Ayuda más a quien tiene menos para vivir. Varios programas quieren llevarlas al umbral de la pobreza o al 60 % del salario medio.',
     enContra: 'Quien cotizó más años o con sueldos más altos vería que su pensión se acerca a la mínima.',
     posturas: {
+      pnv: P(1, 31, 'Mejorar poco a poco las pensiones mínimas.'),
       psoe: P(2, 39, 'Seguir acercando las pensiones mínimas a los ingresos medios.'),
-      'frente-amplio': P(2, 15, 'Subir más las mínimas y no contributivas.'),
-      bildu: P(2, 5, 'Subir las pensiones mínimas a 1.080 €.'),
-      bng: P(2, 17, 'Pensiones mínimas del 60 % del salario medio.'),
-      erc: P(2, 96, 'Subir las pensiones mínimas.'),
-      junts: P(1, 100, 'Mejorar de forma gradual las pensiones mínimas.'),
+      'frente-amplio': P(2, 24, 'Subir las mínimas y no contributivas hasta el umbral de la pobreza.'),
+      bildu: P(2, 8, 'Pensiones mínimas de al menos 1.220 € y subir un 15 % viudedad y no contributivas.'),
+      bng: P(2, 18, 'Pensiones mínimas iguales al salario mínimo.'),
     },
   },
   {
@@ -254,9 +249,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'La jubilación tendría un complemento además de la pensión pública.',
     enContra: 'Beneficia más a quien trabaja en empresas grandes, y parte del ahorro se va a fondos privados.',
     posturas: {
-      pnv: P(2, 34, 'Impulsar de forma decidida los planes de empresa.'),
-      junts: P(2, 100, 'Extender los planes de pensiones complementarios a las pymes.'),
-      erc: P(-1, 7, 'Se opone al negocio de los planes de pensiones privados.'),
+      pnv: P(2, 31, 'Extender los planes de pensiones complementarios.'),
     },
   },
   // Sanidad
@@ -270,9 +263,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       psoe: P(-2, 49, 'Limitar la privatización: gestión directa como forma preferente.'),
       vox: P(1, 37, 'Colaboración público-privada cuando ayude a reducir las listas de espera.'),
-      'frente-amplio': P(-1, 92, 'Pasar a la sanidad pública a quienes hoy se atienden por mutualidades.'),
-      bildu: P(-2, 6, 'Derogar la ley que permite privatizar servicios sanitarios.'),
-      bng: P(-2, 35, 'Limitar la privatización de la sanidad pública.'),
+      'frente-amplio': P(-2, 26, 'Gestión directa y revertir servicios privatizados.'),
+      bildu: P(-2, 11, 'Derogar la Ley 15/1997, que permite la gestión privada de la sanidad.'),
+      bng: P(-2, 18, 'Limitar las privatizaciones y recuperar lo privatizado.'),
     },
   },
   {
@@ -283,10 +276,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Supone más gasto sanitario. Quienes se oponen prefieren limitar la atención a urgencias y enfermedades contagiosas.',
     posturas: {
       vox: P(-2, 19, 'Excluirlos de la sanidad pública salvo urgencia grave.'),
-      'frente-amplio': P(2, 105, 'Acceso universal, incluidos los migrantes en situación irregular.'),
-      pnv: P(1, 46, 'Acceso universal a la sanidad.'),
-      bng: P(1, 35, 'Recuperar la universalidad sanitaria.'),
-      bildu: P(1, 11, 'Acceso de todas las personas migrantes a los servicios públicos.'),
+      'frente-amplio': P(2, 26, 'Sanidad universal sea cual sea la situación administrativa.'),
+      bng: P(1, 23, 'Acceso a la sanidad para las personas migrantes.'),
+      bildu: P(2, 20, 'Acceso a la sanidad sea cual sea la situación administrativa.'),
     },
   },
   {
@@ -296,7 +288,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Todo el mundo tendría el mismo plazo garantizado, viva donde viva.',
     enContra: 'La sanidad la gestionan las comunidades, que perderían margen para organizarse.',
     posturas: {
-      'frente-amplio': P(2, 89, 'Una ley de listas de espera con tiempos máximos.'),
+      'frente-amplio': P(1, 29, 'Aprobar la norma de listas de espera con tiempos y registros.'),
     },
   },
   {
@@ -307,9 +299,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Quien sufre una enfermedad grave e incurable puede decidir cómo morir.',
     enContra: 'Hay quien teme presiones sobre personas vulnerables y pide más cuidados paliativos.',
     posturas: {
+      bildu: P(2, 10, 'Reforzar el derecho a la eutanasia, también por sufrimiento psíquico.'),
       psoe: P(2, 50, 'Garantizar el ejercicio efectivo del derecho a la eutanasia.'),
       vox: P(-1, 52, 'Defender la vida hasta la muerte natural y potenciar los cuidados paliativos.'),
-      'frente-amplio': P(2, 99, 'Reconocer el derecho a una muerte digna según la Ley de Eutanasia.'),
+      'frente-amplio': P(2, 150, 'Garantizar el derecho a la eutanasia y al suicidio asistido.'),
     },
   },
   {
@@ -320,9 +313,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Costaría mucho dinero, que habría que sacar de otras partidas o de más impuestos.',
     posturas: {
       psoe: P(2, 49, 'Plan Sonríe: tratamientos dentales básicos para toda la población.'),
-      'frente-amplio': P(2, 89, 'Incorporar la salud bucodental, la óptica y otras prestaciones.'),
-      bildu: P(2, 6, 'Incluir el dentista básico en la sanidad pública.'),
-      erc: P(1, 62, 'Financiar los planes de salud bucodental.'),
+      'frente-amplio': P(2, 27, 'Ampliar la cobertura dental en la sanidad pública.'),
+      bildu: P(2, 10, 'Incluir la salud bucodental en la cartera común.'),
+      erc: P(2, 42, 'Atención dental completa en la sanidad pública.'),
     },
   },
   // Educación
@@ -336,7 +329,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(1, 67, 'Elegir colegio en todo el municipio y mantener los conciertos donde haya demanda.'),
       vox: P(1, 41, 'Libre elección de centro sin que lo impida la situación económica.'),
-      'frente-amplio': P(-2, 155, 'Que la concertada sea solo subsidiaria de la pública.'),
+      'frente-amplio': P(-2, 31, 'Hacia una red única pública, sin cuotas en la concertada.'),
     },
   },
   {
@@ -347,8 +340,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'También pagaría el Estado los estudios de quien sí puede pagarlos, y se perdería el incentivo de aprobar a la primera.',
     posturas: {
       psoe: P(1, 54, 'Matrícula gratuita del primer curso de grado.'),
-      'frente-amplio': P(2, 160, 'Bajar las tasas hasta la gratuidad.'),
-      erc: P(1, 129, 'Precios públicos que avancen hacia la gratuidad.'),
+      'frente-amplio': P(2, 7, 'Gratuidad desde los 0 años hasta la universidad.'),
     },
   },
   {
@@ -360,7 +352,6 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(2, 39, 'Una prueba de acceso a la universidad (PAU) común en toda España.'),
       vox: P(2, 41, 'Reválidas y una EVAU única en toda España.'),
-      pnv: P(-2, 48, 'Respetar el modelo propio de EBAU.'),
     },
   },
   {
@@ -371,9 +362,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'El horario lectivo se dedicaría a otras materias.',
     enContra: 'Las familias que quieren esa asignatura tendrían que buscarla fuera del horario.',
     posturas: {
-      'frente-amplio': P(2, 156, 'Ninguna religión dentro del currículo ni del horario lectivo.'),
-      erc: P(2, 32, 'Anular los acuerdos con la Santa Sede que obligan a ofrecer Religión.'),
-      bng: P(2, 33, 'Que Religión no forme parte del currículo.'),
+      'frente-amplio': P(1, 150, 'Revisar los acuerdos con la Santa Sede y el artículo 27.'),
+      erc: P(2, 8, 'Dejar sin efecto los acuerdos de 1979 con la Santa Sede.'),
+      bng: P(2, 35, 'Que Religión no forme parte del currículo.'),
     },
   },
   // Inmigración
@@ -385,12 +376,13 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Esas personas pagarían impuestos y tendrían derechos laborales.',
     enContra: 'Quienes se oponen creen que podría atraer más llegadas irregulares.',
     posturas: {
+      bildu: P(2, 20, 'Una regularización efectiva, accesible y estable.'),
+      bng: P(2, 22, 'Promover la regularización administrativa.'),
       pp: P(-2, 22, 'Prohibir las regularizaciones masivas; el arraigo será excepcional, no una vía generalizada.'),
       vox: P(-2, 15, 'Prohibir las regularizaciones masivas y suprimir el arraigo.'),
-      'frente-amplio': P(2, 104, 'Un procedimiento de regularización permanente.'),
-      erc: P(1, 37, 'Flexibilizar los permisos de residencia y acabar con la irregularidad sobrevenida.'),
-      junts: P(1, 107, 'Buscar soluciones para quienes están sin papeles.'),
-      pnv: P(1, 34, 'Que quien tenga contrato no tenga que pasar por el arraigo.'),
+      'frente-amplio': P(2, 126, 'Procedimientos estables de regularización.'),
+      junts: P(-1, 48, 'En contra de las regularizaciones masivas por decreto.'),
+      pnv: P(1, 25, 'Avanzar en las regularizaciones que prevé la ley.'),
     },
   },
   {
@@ -403,12 +395,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(2, 21, 'Más agentes en la frontera sur y apoyo de las Fuerzas Armadas cuando haga falta.'),
       vox: P(2, 46, 'Proteger las fronteras de forma permanente con apoyo de las Fuerzas Armadas.'),
-      erc: P(-2, 38, 'Acabar con las devoluciones en caliente.'),
-      bildu: P(-2, 11, 'Acabar con las devoluciones en caliente.'),
-      bng: P(-2, 20, 'Cerrar los CIE y acabar con las deportaciones.'),
-      junts: P(-1, 107, 'Eliminar las devoluciones en caliente.'),
-      pnv: P(-1, 10, 'Garantizar los derechos humanos en los rechazos en frontera.'),
-      cc: P(1, 13, 'Cooperar con los países de origen contra la inmigración irregular.'),
+      bildu: P(-2, 20, 'Rechazar las devoluciones sumarias y la externalización de fronteras.'),
+      junts: P(1, 47, 'Limitar y controlar los flujos desordenados, con los Mossos en la frontera.'),
     },
   },
   {
@@ -421,11 +409,11 @@ export const AFIRMACIONES: Afirmacion[] = [
       psoe: P(2, 92, 'Simplificar trámites e impulsar la contratación en origen.'),
       pp: P(1, 22, 'Cupos anuales y contratos firmados en origen para los sectores donde falten trabajadores.'),
       vox: P(-2, 15, '«Ni uno más»: España no puede acoger a más inmigrantes.'),
-      'frente-amplio': P(1, 104, 'Reformar la ley de extranjería.'),
-      erc: P(2, 37, 'Vías legales y seguras de migración.'),
-      junts: P(2, 107, 'Vías legales y seguras de migración regular.'),
-      pnv: P(2, 34, 'Que quien tenga contrato no tenga que pasar por el arraigo.'),
-      bildu: P(1, 11, 'Corredores y vías seguras para las personas migrantes.'),
+      'frente-amplio': P(2, 127, 'Más vías legales y seguras de migración y asilo.'),
+      erc: P(2, 17, 'Vías legales y seguras para migrar.'),
+      junts: P(2, 48, 'Priorizar las vías legales y la contratación en origen.'),
+      pnv: P(2, 25, 'Vías legales y contratación en origen.'),
+      bildu: P(1, 20, 'Facilitar las autorizaciones de residencia y trabajo.'),
     },
   },
   {
@@ -435,9 +423,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Las ayudas se concentran en quienes residen legalmente.',
     enContra: 'Personas sin papeles, también niños, podrían quedar sin ayuda básica.',
     posturas: {
+      bildu: P(-2, 20, 'Protección social sea cual sea la situación administrativa.'),
       pp: P(1, 40, 'Prioridad en las ayudas para quien tenga un arraigo real con España, sin basarse solo en la nacionalidad.'),
       vox: P(2, 19, 'Suprimir toda ayuda social a los inmigrantes en situación irregular.'),
-      'frente-amplio': P(-1, 105, 'Acceso universal a la sanidad, también en situación irregular.'),
+      'frente-amplio': P(-1, 26, 'Derechos sociales sea cual sea la situación administrativa.'),
     },
   },
   // Medio ambiente y energía
@@ -449,10 +438,11 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Electricidad sin emisiones de CO₂ y estable mientras crecen las renovables.',
     enContra: 'Genera residuos que duran miles de años y alargarlas obliga a invertir más en ellas.',
     posturas: {
+      bildu: P(-2, 15, 'Mantener el calendario de cierre nuclear.'),
       psoe: P(-2, 66, 'Mantener el calendario de cierre hasta 2035.'),
       pp: P(2, 71, 'Eliminar el calendario de cierre y extender su vida útil con el visto bueno del CSN.'),
       vox: P(2, 12, 'Derogar el calendario de cierre de las centrales nucleares.'),
-      'frente-amplio': P(-2, 48, 'Mantener el calendario de cierre.'),
+      'frente-amplio': P(-2, 64, 'Cumplir el calendario de cierre (Almaraz, 2027-2028).'),
     },
   },
   {
@@ -466,12 +456,10 @@ export const AFIRMACIONES: Afirmacion[] = [
       psoe: P(2, 73, 'Defender el Pacto Verde Europeo sin rebajar la ambición climática.'),
       pp: P(-1, 72, 'Revisar el ritmo de descarbonización de cada sector y frenar «calendarios imposibles».'),
       vox: P(-2, 29, 'Acabar con las imposiciones climáticas como el Pacto Verde.'),
-      'frente-amplio': P(2, 41, 'Más reducción de emisiones y más renovables en 2030.'),
-      bildu: P(2, 9, 'Neutralidad climática en 2040.'),
-      erc: P(2, 99, 'Subir el objetivo de reducción de emisiones al 55 % en 2030.'),
-      pnv: P(1, 19, 'Transición hacia una economía baja en carbono.'),
-      junts: P(1, 142, 'Cumplir los compromisos de reducción de emisiones.'),
-      cc: P(1, 12, 'Acelerar la transición energética en Canarias.'),
+      'frente-amplio': P(2, 60, 'Reducir las emisiones un 85 % en 2040.'),
+      bildu: P(2, 15, 'Adelantar la descarbonización al menos a 2045.'),
+      erc: P(1, 32, 'Alinear la planificación climática con la ciencia.'),
+      junts: P(1, 81, 'Neutralidad climática antes de 2050.'),
     },
   },
   {
@@ -482,7 +470,6 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Los coches eléctricos aún son más caros y no hay cargadores en todas partes.',
     posturas: {
       vox: P(-2, 11, 'Revertir la prohibición europea de los motores de combustión.'),
-      'frente-amplio': P(2, 11, 'Que en 2040 no circulen coches de combustión en España.'),
     },
   },
   {
@@ -494,9 +481,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(1, 48, 'Restituir el Premio Nacional de Tauromaquia y promoverla como patrimonio cultural.'),
       vox: P(1, 43, 'Defender y promocionar la tauromaquia.'),
-      'frente-amplio': P(-2, 56, 'Suprimir la financiación pública de los espectáculos taurinos.'),
-      erc: P(-1, 106, 'Abolir las corridas de toros.'),
-      junts: P(-1, 146, 'Derogar la declaración de la tauromaquia como patrimonio cultural.'),
+      'frente-amplio': P(-2, 76, 'Acabar con la financiación pública de la tauromaquia.'),
+      junts: P(-1, 41, 'Critica que la tauromaquia siga declarada patrimonio cultural.'),
     },
   },
   // Juventud
@@ -508,8 +494,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Los jóvenes podrían independizarse antes.',
     enContra: 'Si no hay más pisos, la ayuda puede acabar subiendo los alquileres.',
     posturas: {
-      'frente-amplio': P(2, 78, 'Más ayudas al alquiler y mejorar el bono joven.'),
-      junts: P(2, 98, 'Convertir el Bono Joven en una renta de emancipación.'),
+      junts: P(2, 18, 'Convertir el Bono Joven en una renta de emancipación.'),
     },
   },
   {
@@ -521,7 +506,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       psoe: P(1, 31, 'Préstamos sin intereses de hasta 50.000 € para la primera vivienda.'),
       pp: P(2, 55, 'Aval público de hasta el 20 % del valor de la vivienda para menores de 40 años.'),
-      junts: P(1, 98, 'Mejores condiciones hipotecarias del ICO para menores de 35 años.'),
+      junts: P(2, 18, 'Que el aval de la entrada de la primera vivienda llegue a los menores de 35.'),
     },
   },
   {
@@ -531,6 +516,7 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Los menores estarían más protegidos en internet.',
     enContra: 'Habría que dar datos personales para usar las redes, con riesgos para la privacidad.',
     posturas: {
+      'frente-amplio': P(2, 41, 'Verificación de edad para menores de 16 años en redes.'),
       psoe: P(2, 95, 'Verificación de edad pública y anónima; mínimo 16 años.'),
       pp: P(2, 58, 'Verificación de edad obligatoria y ninguna cuenta antes de los 14 años.'),
       vox: P(1, 52, 'Proteger a los menores en los entornos digitales.'),
@@ -545,10 +531,9 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Hay quien cree que a esa edad todavía no se tiene suficiente madurez para votar.',
     posturas: {
       psoe: P(2, 90, 'Rebajar la edad de voto a los 16 años.'),
-      'frente-amplio': P(2, 102, 'Derecho a votar desde los 16 años.'),
-      erc: P(2, 53, 'Derecho a votar desde los 16 años.'),
-      bng: P(2, 63, 'Derecho a votar desde los 16 años.'),
-      junts: P(2, 99, 'Avanzar hacia el voto a los 16 años.'),
+      'frente-amplio': P(2, 42, 'Derecho a votar desde los 16 años.'),
+      erc: P(2, 17, 'Promover el voto a partir de los 16 años.'),
+      junts: P(2, 59, 'Reconocer el voto a los 16 años.'),
     },
   },
   {
@@ -559,7 +544,6 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Cuesta mucho dinero y lo recibirían también quienes no lo necesitan.',
     posturas: {
       psoe: P(1, 56, 'Cuenta de Futuro: 1.000 € al nacer, disponibles a los 18.'),
-      'frente-amplio': P(2, 15, 'Una «herencia universal» de 20.000 € a los 23 años.'),
     },
   },
   // Igualdad
@@ -574,13 +558,13 @@ export const AFIRMACIONES: Afirmacion[] = [
       psoe: P(2, 82, 'Nueva estrategia contra las violencias machistas.'),
       pp: P(1, 19, 'Rendir cuentas cada año del Pacto de Estado contra la Violencia de Género y más medios para VioGen.'),
       vox: P(-2, 30, 'Derogar las leyes de género.'),
-      'frente-amplio': P(2, 111, 'Blindar el Pacto de Estado y su financiación.'),
-      erc: P(2, 47, 'Ampliar la ley de violencia de género.'),
-      bng: P(2, 22, 'Juzgados exclusivos de violencia machista.'),
-      cc: P(2, 8, 'Oponerse a cualquier retroceso en las leyes contra la violencia de género.'),
-      pnv: P(1, 26, 'Más recursos contra la violencia machista.'),
-      bildu: P(1, 10, 'Reforzar la lucha contra la violencia machista.'),
-      junts: P(1, 111, 'Más prevención de la violencia machista.'),
+      'frente-amplio': P(2, 38, 'Blindar la financiación del Pacto de Estado contra la Violencia de Género.'),
+      erc: P(2, 24, 'Ampliar la ley de violencia de género.'),
+      bng: P(2, 24, 'Reformar la ley para cubrir todas las violencias.'),
+      cc: P(2, 10, 'Financiar el Pacto de Estado en todas las islas.'),
+      pnv: P(2, 26, 'Cumplir íntegramente el Pacto de Estado.'),
+      bildu: P(1, 19, 'Reconocer la violencia vicaria y revisar la protección a las víctimas.'),
+      junts: P(1, 33, 'Reforzar la prevención y la protección frente a la violencia machista.'),
     },
   },
   {
@@ -592,9 +576,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Son papeleo y coste para las empresas.',
     posturas: {
       psoe: P(2, 78, 'Reforzar el cumplimiento de los planes de igualdad.'),
-      'frente-amplio': P(2, 108, 'Ampliar los planes de igualdad en las empresas.'),
-      pnv: P(1, 26, 'Cumplir las medidas de igualdad retributiva en las empresas.'),
-      erc: P(1, 91, 'Transparencia retributiva en las empresas.'),
+      'frente-amplio': P(1, 123, 'Más inspección contra la brecha salarial.'),
+      pnv: P(1, 9, 'Aplicar la transparencia salarial europea.'),
     },
   },
   {
@@ -604,11 +587,15 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Se mantiene que las personas trans no necesiten informes médicos para el cambio.',
     enContra: 'Hay quien pide algún tipo de control, sobre todo en menores o en el deporte.',
     posturas: {
+      bildu: P(1, 19, 'No aceptar retrocesos en los derechos de las personas trans.'),
+      junts: P(1, 36, 'Oponerse a recortar la ley trans y LGTBI.'),
+      bng: P(2, 29, 'Respetar la autodeterminación de género.'),
+      pnv: P(1, 27, 'Desarrollar el cambio de documentación de la ley de 2023.'),
       psoe: P(1, 97, 'Que la ley LGTBI de 2023 sea el mínimo común en toda España.'),
       pp: P(-2, 44, 'Eliminar la libre autodeterminación registral del sexo.'),
       vox: P(-1, 43, 'Que el deporte femenino se rija por criterios biológicos.'),
-      'frente-amplio': P(2, 116, 'Defender la autodeterminación de las personas trans.'),
-      erc: P(1, 51, 'Que las personas trans migrantes puedan rectificar su sexo legal.'),
+      'frente-amplio': P(2, 123, 'Aplicar de forma efectiva la Ley Trans.'),
+      erc: P(1, 23, 'Reconocer todas las identidades de género.'),
     },
   },
   {
@@ -618,9 +605,11 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Las mujeres no tendrían que desplazarse ni ir a una clínica privada.',
     enContra: 'Algunos médicos se oponen por conciencia y habría que organizar los servicios.',
     posturas: {
+      bildu: P(1, 19, 'Blindar el acceso libre y seguro al aborto.'),
+      pnv: P(1, 26, 'Perímetros de protección en las clínicas.'),
       psoe: P(1, 81, 'Blindar el aborto en la Constitución.'),
       vox: P(-1, 52, 'Defender la vida desde la concepción.'),
-      'frente-amplio': P(2, 111, 'Garantizarlo en la sanidad pública en todo el territorio.'),
+      'frente-amplio': P(2, 28, 'Garantizar el aborto en la sanidad pública.'),
     },
   },
   {
@@ -644,13 +633,13 @@ export const AFIRMACIONES: Afirmacion[] = [
       psoe: P(-1, 91, 'Reforzar el Estado autonómico y el autogobierno.'),
       pp: P(-1, 16, 'Defender el Estado de las Autonomías, con estándares comunes en lo que gestionan las comunidades.'),
       vox: P(1, 41, 'Currículo, evaluaciones e inspección comunes en toda España.'),
-      'frente-amplio': P(-1, 120, 'Un pacto territorial que reconozca la plurinacionalidad.'),
-      erc: P(-2, 127, 'Competencias exclusivas sobre los currículos escolares.'),
-      junts: P(-2, 115, 'Traspasar las becas a la Generalitat.'),
-      bildu: P(-2, 15, 'Blindar los modelos educativos propios.'),
-      pnv: P(-2, 48, 'Respetar las competencias educativas vascas.'),
-      bng: P(-2, 62, 'Transferir a Galicia todas las competencias de enseñanza.'),
-      cc: P(-1, 3, 'Máximo nivel de autogobierno para Canarias.'),
+      'frente-amplio': P(-1, 140, 'Una república federal y plurinacional.'),
+      erc: P(-2, 11, 'Competencias exclusivas en educación y currículos.'),
+      junts: P(-2, 50, 'Defender las competencias de la Generalitat en sanidad y educación.'),
+      bildu: P(-2, 24, 'Traspasar todas las competencias pendientes y otras nuevas.'),
+      pnv: P(-2, 38, 'Rechazar cualquier recentralización.'),
+      bng: P(-2, 85, 'Transferir a Galicia todas las competencias de enseñanza.'),
+      cc: P(-1, 5, 'Oponerse a la recentralización.'),
     },
   },
   {
@@ -662,10 +651,10 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       pp: P(2, 16, 'Recuperar el delito de convocatoria de referéndum ilegal.'),
       vox: P(1, 55, 'Recuperar el delito de sedición.'),
-      erc: P(-2, 12, 'Negociar un referéndum de autodeterminación.'),
-      bildu: P(-2, 14, 'Reconocer el derecho a decidir.'),
-      bng: P(-2, 10, 'Reconocer el derecho de autodeterminación de Galicia.'),
-      junts: P(-2, 5, 'No apoyar a quien niegue el derecho de autodeterminación.'),
+      erc: P(-2, 8, 'Negociar un referéndum de autodeterminación.'),
+      bildu: P(-2, 24, 'Reconocer el derecho a decidir del pueblo vasco.'),
+      bng: P(-2, 89, 'Reconocer la autodeterminación de las naciones del Estado.'),
+      junts: P(-2, 13, 'Garantizar el derecho de Cataluña a la autodeterminación.'),
     },
   },
   {
@@ -677,13 +666,12 @@ export const AFIRMACIONES: Afirmacion[] = [
     enContra: 'Hay quien cree que debilita la unidad del país y la igualdad entre comunidades.',
     posturas: {
       vox: P(-2, 28, 'España es «una sola Nación».'),
-      'frente-amplio': P(2, 120, 'Reconocer a España como realidad plurinacional.'),
-      bildu: P(2, 14, 'Reconocer el carácter plurinacional del Estado.'),
-      pnv: P(2, 6, 'Reconocimiento nacional de Euskadi.'),
-      bng: P(2, 10, 'Galicia como nación con derecho de autodeterminación.'),
-      erc: P(2, 116, 'Critica que se niegue la realidad plurinacional del Estado.'),
-      junts: P(2, 27, 'Define a Cataluña como una nación.'),
-      cc: P(1, 3, 'Canarias dentro de un Estado plurinacional consensuado.'),
+      'frente-amplio': P(2, 140, 'Una república federal y plurinacional.'),
+      bildu: P(2, 23, 'Reconocer el carácter plurinacional del Estado.'),
+      pnv: P(2, 39, 'Reconocimiento nacional de Euskadi.'),
+      bng: P(2, 8, 'Defiende los derechos nacionales de Galicia.'),
+      erc: P(1, 7, 'Defiende la autodeterminación de Cataluña.'),
+      junts: P(2, 26, 'Cataluña es una nación con derecho a decidir su futuro.'),
     },
   },
   {
@@ -704,11 +692,12 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'España estaría más preparada y cumpliría lo acordado con sus aliados.',
     enContra: 'Habría que recortar otros gastos, como servicios públicos o pensiones, o subir impuestos o deuda.',
     posturas: {
+      bildu: P(-2, 28, 'Rechazar el aumento del gasto en defensa que exige la OTAN.'),
+      'frente-amplio': P(-2, 130, 'Rechazar el 5 % y reducir el gasto militar.'),
       psoe: P(-1, 105, 'Rechazó subir el gasto militar al 5 % del PIB.'),
       pp: P(1, 26, 'Una ley de financiación de la defensa y más efectivos en las Fuerzas Armadas.'),
       vox: P(2, 47, 'Aumentar la inversión en Defensa.'),
-      erc: P(-2, 30, 'Reducir el gasto militar.'),
-      bng: P(-2, 66, 'Anular el compromiso del 2 % del PIB en defensa.'),
+      bng: P(-2, 89, 'Rechazar el aumento del gasto militar.'),
     },
   },
   {
@@ -718,12 +707,13 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Se apoya a un país invadido y se frena a Rusia.',
     enContra: 'Algunos temen que alargue la guerra y cuesta dinero público.',
     posturas: {
+      bildu: P(-1, 28, 'Rechazar el envío de armas a los conflictos.'),
       psoe: P(1, 105, 'Ha apoyado a Ucrania, también con ayuda militar.'),
       pp: P(2, 74, 'Mantener el apoyo político, económico, militar y humanitario a Ucrania.'),
-      'frente-amplio': P(1, 141, 'Solidaridad con Ucrania, reforzando la vía diplomática.'),
-      bng: P(-2, 66, 'Dejar de enviar armas a Ucrania.'),
-      erc: P(1, 14, 'Apoyo al pueblo ucraniano frente a la invasión.'),
-      junts: P(1, 30, 'Apoyo a Ucrania frente a la invasión rusa.'),
+      'frente-amplio': P(1, 133, 'Solidaridad con Ucrania, por la vía diplomática.'),
+      bng: P(-2, 89, 'Dejar de enviar armamento a Ucrania.'),
+      erc: P(1, 16, 'Ayuda europea a Ucrania frente a la agresión rusa.'),
+      junts: P(2, 26, 'Apoyo humanitario, financiero y militar a Ucrania.'),
     },
   },
   {
@@ -735,10 +725,8 @@ export const AFIRMACIONES: Afirmacion[] = [
     posturas: {
       psoe: P(2, 107, 'Cerrar la brecha con el 0,7 % de la renta nacional.'),
       vox: P(-1, 16, 'Retirar la cooperación a los países que no colaboren con los flujos migratorios.'),
-      'frente-amplio': P(2, 148, 'Alcanzar el 0,7 % de la renta nacional.'),
-      erc: P(2, 29, 'Llegar al 0,7 % en cooperación.'),
-      junts: P(2, 107, 'Recuperar el objetivo del 0,7 %.'),
-      pnv: P(1, 11, 'Un peso suficiente de la cooperación en los presupuestos.'),
+      'frente-amplio': P(2, 133, 'Llegar al 0,7 % de la renta nacional.'),
+      erc: P(2, 16, 'Cumplir el 0,7 % en cooperación.'),
     },
   },
   {
@@ -748,10 +736,14 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Europa decidiría su seguridad sin depender de lo que vote Estados Unidos.',
     enContra: 'Crear una defensa europea propia costaría mucho dinero y años.',
     posturas: {
+      bildu: P(2, 28, 'Rechazar la OTAN y una seguridad europea sin depender de EE. UU.'),
+      bng: P(2, 89, 'Salir de la OTAN.'),
+      pnv: P(1, 41, 'Más autonomía estratégica europea.'),
+      erc: P(1, 16, 'Una UE autónoma de la OTAN en defensa.'),
       psoe: P(1, 112, 'Reforzar la autonomía estratégica y la defensa común de la UE.'),
       pp: P(-1, 75, 'Recuperar el vínculo transatlántico y reforzar el pilar europeo dentro de la OTAN.'),
-      'frente-amplio': P(2, 139, 'Pasar de las garantías de la OTAN a una autonomía estratégica europea.'),
-      junts: P(1, 29, 'Reforzar la política exterior y de seguridad común de la UE.'),
+      'frente-amplio': P(2, 135, 'Pasar de la OTAN a una autonomía estratégica europea.'),
+      junts: P(1, 28, 'Una defensa europea más integrada, complementaria de la OTAN.'),
     },
   },
   {
@@ -762,12 +754,11 @@ export const AFIRMACIONES: Afirmacion[] = [
     aFavor: 'Se defiende lo que dicen las resoluciones de la ONU.',
     enContra: 'Empeoraría la relación con Marruecos, clave en migración y comercio.',
     posturas: {
+      bildu: P(2, 29, 'Recuperar el apoyo a la autodeterminación del pueblo saharaui.'),
       pp: P(-1, 74, 'Apoyar a la ONU para una solución «mutuamente aceptable para las partes».'),
-      'frente-amplio': P(2, 141, 'Apoyar la libre determinación del Sáhara Occidental.'),
-      erc: P(2, 14, 'Defender la autodeterminación del Sáhara Occidental.'),
-      pnv: P(2, 11, 'Defender la autodeterminación del pueblo saharaui.'),
-      bng: P(2, 67, 'Un referéndum de autodeterminación en el Sáhara.'),
-      junts: P(2, 29, 'Cumplir las resoluciones de la ONU sobre la autodeterminación del Sáhara.'),
+      'frente-amplio': P(2, 132, 'Referéndum de autodeterminación con opción de independencia.'),
+      erc: P(1, 16, 'Revertir el giro sobre el Sáhara Occidental.'),
+      bng: P(2, 90, 'Un referéndum de autodeterminación en el Sáhara.'),
     },
   },
 ];

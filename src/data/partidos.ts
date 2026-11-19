@@ -120,7 +120,12 @@ export const PARTIDOS: Partido[] = [
     noSePresentaEn: ['canarias', 'baleares', 'valenciana'],
     estadoCandidatura: 'confirmada',
     nota: 'En Canarias, Baleares y la Comunitat Valenciana va dentro de otras coaliciones, y no presenta lista en Teruel, Ceuta ni Melilla.',
-    programa: {},
+    programa: {
+      url: 'https://frenteamplio.info/programa/',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Programa del Frente Amplio para el 29-N (2026)',
+      archivo: 'programas/frente-amplio-2026.pdf',
+    },
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
@@ -139,7 +144,12 @@ export const PARTIDOS: Partido[] = [
     noSePresentaEn: ['cataluna', 'canarias', 'valenciana', 'baleares'],
     estadoCandidatura: 'confirmada',
     nota: 'Va por separado del Frente Amplio. En Canarias y la Comunitat Valenciana va dentro de otras coaliciones; en Cataluña apoya la lista de ERC, y no presenta lista en Baleares ni en Melilla.',
-    programa: {},
+    programa: {
+      url: 'https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf',
+      fechaPublicacion: '2026-11-17',
+      documento: 'Programa de Podemos para el 29-N (2026): «Así de básico: Paz, casa y trabajo»',
+      archivo: 'programas/podemos-2026.pdf',
+    },
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
@@ -154,7 +164,12 @@ export const PARTIDOS: Partido[] = [
     color: '#A0522D',
     ambito: 'estatal',
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.seacabolafiesta.com/SALF_Contrato_Electoral_29N.pdf',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Contrato electoral de SALF para el 29-N (2026)',
+      archivo: 'programas/salf-2026.pdf',
+    },
     anterior: {
       documento: 'Sin programa para las generales de 2023',
       nota: 'Se fundó en 2024 y no se presentó a las generales de 2023.',
@@ -174,7 +189,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['cataluna'],
     estadoCandidatura: 'confirmada',
     nota: 'Incluye independientes de Podemos en la lista de Barcelona.',
-    programa: {},
+    programa: {
+      url: 'https://esquerrarepublicana.cat/documents/e2026-programa.pdf',
+      fechaPublicacion: '2026-11-17',
+      documento: 'Programa de ERC para el 29-N (2026): «Pel país. Per la gent. Pel futur»',
+      archivo: 'programas/erc-2026.pdf',
+    },
     anterior: { documento: 'Programa de ERC para el 23-J (2023)', url: 'https://defensacatalunya.esquerrarepublicana.cat/documents/e2023-programa.pdf', archivo: 'programas/erc-2023.pdf' },
   },
   {
@@ -188,7 +208,12 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Cataluña',
     comunidades: ['cataluna'],
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.elnacional.cat/uploads/s1/60/70/28/30/junts-programa-electoral-29n.pdf',
+      fechaPublicacion: '2026-11-19',
+      documento: 'Programa de Junts para el 29-N (2026): «Catalunya al centre» (en catalán)',
+      archivo: 'programas/junts-2026.pdf',
+    },
     anterior: { documento: 'Programa de Junts para el 23-J (2023)', archivo: 'programas/junts-2023.pdf' },
   },
   {
@@ -201,7 +226,12 @@ export const PARTIDOS: Partido[] = [
     territorio: 'País Vasco y Navarra',
     comunidades: ['pais-vasco', 'navarra'],
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.naiz.eus/media/asset_publics/resources/001/388/034/original/posibleegin-programa-cas.pdf',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Programa de EH Bildu para el 29-N (2026): «Garantía y derechos»',
+      archivo: 'programas/bildu-2026.pdf',
+    },
     anterior: { documento: 'Programa de EH Bildu para el 23-J (2023)', archivo: 'programas/bildu-2023.pdf' },
   },
   {
@@ -215,7 +245,12 @@ export const PARTIDOS: Partido[] = [
     territorio: 'País Vasco',
     comunidades: ['pais-vasco'],
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Programa del PNV para el 29-N (2026): «Defendemos Euskadi»',
+      archivo: 'programas/pnv-2026.pdf',
+    },
     anterior: { documento: 'Programa del PNV para el 23-J (2023)', url: 'https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j', archivo: 'programas/pnv-2023.pdf' },
   },
   {
@@ -228,7 +263,12 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Galicia',
     comunidades: ['galicia'],
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf',
+      fechaPublicacion: '2026-11-12',
+      documento: 'Programa del BNG para el 29-N (2026)',
+      archivo: 'programas/bng-2026.pdf',
+    },
     anterior: { documento: 'Programa del BNG para el 23-J (2023)', url: 'https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf', archivo: 'programas/bng-2023.pdf' },
   },
   {
@@ -242,7 +282,12 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Canarias',
     comunidades: ['canarias'],
     estadoCandidatura: 'confirmada',
-    programa: {},
+    programa: {
+      url: 'https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf',
+      fechaPublicacion: '2026-11-13',
+      documento: 'Programa de Coalición Canaria y Primero Canarias para el 29-N (2026): «Defiende Canarias»',
+      archivo: 'programas/cc-2026.pdf',
+    },
     anterior: {
       documento: 'Manifiesto de Coalición Canaria para el 23-J (2023)',
       url: 'https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf',
@@ -262,7 +307,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['valenciana'],
     estadoCandidatura: 'confirmada',
     nota: 'Coalición registrada ante la Junta Electoral. Une a Compromís, Podemos, Esquerra Unida, Esquerra Republicana del País Valencià y otros partidos valencianos.',
-    programa: {},
+    programa: {
+      url: 'https://frontvalencia.org/programa-compromis-front-valencia.pdf',
+      fechaPublicacion: '2026-11-15',
+      documento: 'Programa de Compromís-Front Valencià para el 29-N (2026)',
+      archivo: 'programas/compromis-2026.pdf',
+    },
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
@@ -329,7 +379,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['andalucia'],
     estadoCandidatura: 'confirmada',
     nota: 'Se presenta en solitario en las ocho provincias andaluzas, sin el Frente Amplio. Tiene 8 escaños en el Parlamento de Andalucía desde mayo de 2026.',
-    programa: {},
+    programa: {
+      url: 'https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Programa de Adelante Andalucía para el 29-N (2026): «Un programa para frenar a las derechas»',
+      archivo: 'programas/adelante-2026.pdf',
+    },
   },
   {
     id: 'existe',
@@ -341,7 +396,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['aragon'],
     estadoCandidatura: 'confirmada',
     nota: 'Al Congreso solo se presenta en Teruel, como Teruel Existe. Tiene escaños en las Cortes de Aragón.',
-    programa: {},
+    programa: {
+      url: 'https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf',
+      fechaPublicacion: '2026-11-15',
+      documento: 'Programa de Teruel Existe para el 29-N (2026): «Vamos a seguir defendiendo nuestra tierra»',
+      archivo: 'programas/existe-2026.pdf',
+    },
   },
   {
     id: 'geroa-bai',

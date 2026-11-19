@@ -36,7 +36,9 @@ export type Propuesta = {
   pagina?: number;
 };
 
-export const PROPUESTAS: Propuesta[] = [
+// La lista va partida en dos (2026 y 2023) porque TypeScript no admite un
+// único array literal tan largo (error TS2590).
+const PROPUESTAS_2026: Propuesta[] = [
   // ===== Programas para el 29-N (2026) =====
   // PP: «Reconstrucción Nacional. El programa del cambio necesario para España»
   // (publicado el 10-11-2026 en pp.es; copia en public/programas/pp-2026.pdf).
@@ -314,7 +316,933 @@ export const PROPUESTAS: Propuesta[] = [
   { partidoId: 'psoe', temaId: 'exterior', edicion: 2026, pagina: 109, resumen: 'Promover la solución de los dos Estados en Israel y Palestina.' },
   { partidoId: 'psoe', temaId: 'exterior', edicion: 2026, pagina: 109, resumen: 'Una Unión Europea que sea también unión política y fiscal.' },
   { partidoId: 'psoe', temaId: 'exterior', edicion: 2026, pagina: 110, resumen: 'Aplicar el acuerdo sobre Gibraltar para que la eliminación de la Verja traiga empleo al Campo de Gibraltar.' },
+  // Frente Amplio: «Programa electoral Frente Amplio» (elecciones del 29-11-2026;
+  // propuestas publicadas en frenteamplio.info/programa; copia del PDF en
+  // public/programas/frente-amplio-2026.pdf). `pagina` = página del PDF, que no
+  // coincide con el número impreso (este va unas páginas por delante).
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 10, resumen: 'Dedicar el 1 % del PIB cada año a un parque público de 1,5 millones de viviendas en alquiler en 12 años, con alquileres de como máximo 600 € para un piso tipo.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 13, resumen: 'Limitar por ley el alquiler en las zonas tensionadas para que no supere el 25 % de la renta del barrio.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 14, resumen: 'Que los contratos de alquiler sean indefinidos por defecto y que las zonas tensionadas se declaren automáticamente al cumplir los criterios de la Ley de Vivienda.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 12, resumen: 'Extinguir en tres años las licencias de pisos turísticos en edificios residenciales de las zonas tensionadas, y que tributen al IVA del 21 %.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 15, resumen: 'Prohibir por ley los desahucios de personas vulnerables sin una alternativa de vivienda.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 13, resumen: 'Reconocer por ley a los sindicatos de inquilinas y regular la huelga de alquileres ante abusos graves.' },
+  { partidoId: 'frente-amplio', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Reformar el artículo 47 de la Constitución para que el derecho a la vivienda se pueda exigir ante los tribunales.' },
 
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 56, resumen: 'Reducir la jornada máxima de forma progresiva hasta las 32 horas semanales sin bajar el sueldo, empezando por las 37,5 de forma inmediata.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 51, resumen: 'Fijar por ley que el salario mínimo sea al menos el 60 % del salario medio neto, sin que se pueda absorber con pluses.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 51, resumen: 'Que los convenios incluyan siempre cláusulas de revisión salarial ligadas al IPC.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 51, resumen: 'Igualar el sueldo de quienes trabajan en contratas y subcontratas con el de la empresa principal.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 53, resumen: 'Un despido improcedente que repare el daño real y disuada de despedir sin causa.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 115, resumen: 'Representación de las plantillas en los consejos de administración y reparto obligatorio de beneficios con los trabajadores.' },
+  { partidoId: 'frente-amplio', temaId: 'empleo', edicion: 2026, pagina: 52, resumen: 'Derecho a que una persona revise cualquier despido o sanción decidido por un algoritmo.' },
+
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 26, resumen: 'Blindar el 8 % del PIB para la sanidad pública y reforzar la atención primaria.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 26, resumen: 'Gestión directa como norma: la privada solo en casos excepcionales justificados, y un plan para revertir servicios privatizados.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 26, resumen: 'Blindar por ley la sanidad universal para todos los residentes, sea cual sea su situación administrativa.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 27, resumen: 'Ampliar la cobertura dental, visual y auditiva (audífonos) en la sanidad pública.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 27, resumen: 'Integrar las mutuas de funcionarios (MUFACE, MUGEJU e ISFAS) en la sanidad pública.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 29, resumen: 'Aprobar la norma de listas de espera con tiempos y registros públicos.' },
+  { partidoId: 'frente-amplio', temaId: 'sanidad', edicion: 2026, pagina: 29, resumen: 'Una industria farmacéutica 100 % pública.' },
+
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 31, resumen: 'Una ley que blinde al menos el 7 % del PIB para la educación pública.' },
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 7, resumen: 'Educación pública gratuita desde los 0 años hasta la universidad, con ratios más bajas.' },
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 31, resumen: 'Prohibir ya las cuotas obligatorias en la concertada, con el objetivo de una red pública única.' },
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 32, resumen: 'Un máximo de 18 horas lectivas para el profesorado de Secundaria y FP y de 23 en Infantil y Primaria.' },
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 25, resumen: 'Bajar las ratios y mejorar las condiciones en la etapa de 0 a 3 años.' },
+  { partidoId: 'frente-amplio', temaId: 'educacion', edicion: 2026, pagina: 33, resumen: 'Que las comunidades dediquen al menos el 1 % de su PIB a las universidades públicas.' },
+
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 44, resumen: 'Un tipo mínimo real del 20 % en el impuesto de sociedades y mantener de forma permanente el gravamen a la banca.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 45, resumen: 'Que los patrimonios de más de un millón de euros paguen como mínimo un 2 %.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 45, resumen: 'Un impuesto estatal a las herencias de más de un millón de euros.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 46, resumen: 'Que las rentas del capital tributen como las del trabajo, y subir el tipo del IRPF hasta el 52 % para rentas de más de 300.000 €.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 8, resumen: 'Bajar el IRPF a los salarios más bajos y el IVA de los bienes básicos y la energía.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 44, resumen: 'Subir el impuesto sobre depósitos bancarios del 0,03 % al 1 %.' },
+  { partidoId: 'frente-amplio', temaId: 'impuestos', edicion: 2026, pagina: 104, resumen: 'Perdonar deuda a las comunidades autónomas a cambio de que no bajen impuestos a las rentas altas.' },
+
+  { partidoId: 'frente-amplio', temaId: 'pensiones', edicion: 2026, pagina: 7, resumen: 'Que la Constitución obligue a revalorizar las pensiones públicas.' },
+  { partidoId: 'frente-amplio', temaId: 'pensiones', edicion: 2026, pagina: 24, resumen: 'Subir las pensiones mínimas y no contributivas hasta el umbral de la pobreza.' },
+  { partidoId: 'frente-amplio', temaId: 'pensiones', edicion: 2026, pagina: 23, resumen: 'Subir la inversión en dependencia del 0,8 % al 1,7 % del PIB en 2030 y eliminar los copagos.' },
+  { partidoId: 'frente-amplio', temaId: 'pensiones', edicion: 2026, pagina: 24, resumen: 'Ampliar los permisos por cuidado de menores y familiares.' },
+
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 126, resumen: 'Terminar la regularización extraordinaria de 2026 y crear procedimientos estables de regularización.' },
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 127, resumen: 'Cerrar los Centros de Internamiento de Extranjeros (CIE).' },
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 127, resumen: 'Prohibir las devoluciones en frontera encubiertas como retornos voluntarios.' },
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 127, resumen: 'Eliminar la lista de países seguros y rechazar los centros de retorno en terceros países.' },
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 127, resumen: 'Más vías legales y seguras, como la protección internacional en embajadas.' },
+  { partidoId: 'frente-amplio', temaId: 'inmigracion', edicion: 2026, pagina: 126, resumen: 'Aprobar una ley integral antirracista y el Estatuto del Pueblo Gitano.' },
+
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 8, resumen: 'Dedicar el 3,5 % del PIB cada año a la transición ecológica, con una banca pública y un fondo soberano de renovables.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 60, resumen: 'Reducir las emisiones un 85 % en 2040 respecto a 1990 y llegar a la neutralidad climática en 2050.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 64, resumen: 'Cumplir el calendario de cierre nuclear: Almaraz I y II, en 2027-2028.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 8, resumen: 'Una comercializadora eléctrica pública, recuperar las redes de distribución y tres horas de luz gratis al día.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 57, resumen: 'Sacar la nuclear y la hidroeléctrica del sistema marginal de precios de la luz, con un precio máximo.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 65, resumen: 'Un abono de transporte único y mensual válido en todo el Estado.' },
+  { partidoId: 'frente-amplio', temaId: 'medioambiente', edicion: 2026, pagina: 76, resumen: 'Derogar la ley que protege la tauromaquia y acabar con su financiación pública.' },
+
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 42, resumen: 'Reconocer por ley el derecho a votar desde los 16 años.' },
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 22, resumen: 'Abrir el Ingreso Mínimo Vital a los jóvenes de 18 a 30 años sin exigirles estar ya emancipados.' },
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 42, resumen: 'Un plan de emancipación juvenil.' },
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 41, resumen: 'Regular las redes sociales para menores de 16 años: verificación de edad con privacidad y fuera el scroll infinito y otras funciones adictivas.' },
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 21, resumen: 'Una prestación universal por crianza de 200 € al mes por cada menor.' },
+  { partidoId: 'frente-amplio', temaId: 'juventud', edicion: 2026, pagina: 40, resumen: 'Subir la inversión en infancia y familias del 1,5 % al 2,4 % del PIB.' },
+
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 28, resumen: 'Incluir el derecho al aborto en la Constitución y garantizarlo en la sanidad pública.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 38, resumen: 'Dedicar por ley al menos un 5 % del presupuesto del Estado a igualdad y blindar la financiación del Pacto de Estado contra la Violencia de Género.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 40, resumen: 'Reformar el Código Penal contra la violencia machista digital y la hecha con inteligencia artificial.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 123, resumen: 'Aplicar de forma efectiva la Ley Trans y reconocer a las personas no binarias.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 123, resumen: 'Un plan de choque contra la precariedad en sectores feminizados (limpieza, cuidados, comercio, hostelería) y la brecha salarial.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 39, resumen: 'Que el permiso de residencia de las víctimas de trata no dependa de que denuncien.' },
+  { partidoId: 'frente-amplio', temaId: 'igualdad', edicion: 2026, pagina: 150, resumen: 'Un Estado laico: revisar los acuerdos con la Santa Sede, quitar exenciones fiscales a las confesiones y garantizar el aborto, la eutanasia y el suicidio asistido.' },
+
+  { partidoId: 'frente-amplio', temaId: 'territorial', edicion: 2026, pagina: 140, resumen: 'Avanzar hacia una república federal y plurinacional.' },
+  { partidoId: 'frente-amplio', temaId: 'territorial', edicion: 2026, pagina: 103, resumen: 'Reformar ya la financiación autonómica, partiendo de la propuesta del Gobierno, con más autogobierno para quien lo pida.' },
+  { partidoId: 'frente-amplio', temaId: 'territorial', edicion: 2026, pagina: 104, resumen: 'Perdonar deuda autonómica a cambio de que las comunidades no compitan bajando impuestos.' },
+  { partidoId: 'frente-amplio', temaId: 'territorial', edicion: 2026, pagina: 142, resumen: 'Derogar los delitos contra la Corona, de ofensas a España y de escarnio religioso.' },
+  { partidoId: 'frente-amplio', temaId: 'territorial', edicion: 2026, pagina: 61, resumen: 'Crear biorregiones para gestionar los grandes ecosistemas sin cambiar las competencias actuales.' },
+
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 130, resumen: 'Rechazar el objetivo de la OTAN del 5 % del PIB en defensa y reducir el gasto militar.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 130, resumen: 'Firmar el Tratado sobre la Prohibición de las Armas Nucleares.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 135, resumen: 'Pasar poco a poco de las garantías de seguridad de la OTAN a una autonomía estratégica europea.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 133, resumen: 'Subir la ayuda al desarrollo del 0,27 % al 0,7 % de la renta nacional.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 132, resumen: 'Un referéndum de autodeterminación en el Sáhara Occidental supervisado por la ONU, con la opción de la independencia.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 131, resumen: 'Embargo automático de armas a los Estados cuyos dirigentes investigue la Corte Penal Internacional.' },
+  { partidoId: 'frente-amplio', temaId: 'exterior', edicion: 2026, pagina: 133, resumen: 'Solidaridad con Ucrania, buscando una paz justa por la vía diplomática.' },
+  // Podemos: «Así de básico: Paz, casa y trabajo» (elecciones del 29-11-2026;
+  // publicado en podemos.info; copia en public/programas/podemos-2026.pdf).
+  // `pagina` = página del PDF, que coincide con el número impreso.
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Bajar por ley un 40 % los alquileres, también en los contratos que ya están en vigor.' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Contratos de alquiler indefinidos.' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Prohibir comprar viviendas que no sean para vivir en ellas.' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Expropiar el uso de las viviendas de grandes tenedores a partir de la décima para el alquiler público.' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 9, resumen: 'Acabar con los pisos turísticos en edificios residenciales mientras dure la emergencia de vivienda.' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 9, resumen: 'Prohibir los desahucios de personas vulnerables sin alternativa y las empresas de «desokupación».' },
+  { partidoId: 'podemos', temaId: 'vivienda', edicion: 2026, pagina: 10, resumen: 'Una inmobiliaria pública y pasar al parque público todas las viviendas de la SAREB.' },
+
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 41, resumen: 'Subir el salario mínimo hasta 1.800 € al mes en la legislatura.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 41, resumen: 'Bajar la jornada a 35 horas y luego a 30 sin bajar el sueldo, con la opción de la semana de cuatro días.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 41, resumen: 'Subida automática de los salarios para proteger el poder adquisitivo.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 42, resumen: 'Volver a los 45 días por año en los despidos ilegales y que la persona elija entre indemnización o volver al trabajo.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 42, resumen: 'Prohibir las horas extra y perseguir penalmente las que se hagan de forma ilegal.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 43, resumen: 'Mismas condiciones laborales en las empresas principales y en las subcontratas.' },
+  { partidoId: 'podemos', temaId: 'empleo', edicion: 2026, pagina: 45, resumen: 'Una renta universal incondicional.' },
+
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 88, resumen: 'Acabar con la privatización y recuperar para lo público la sanidad privatizada.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 88, resumen: 'Crear una industria sanitaria y farmacéutica pública.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 90, resumen: 'Un plan para reducir las listas de espera y una ley integral de atención primaria.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 91, resumen: 'Una ley general de salud mental con atención psicológica pública.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 91, resumen: 'Sanidad universal real, con más prestaciones y sin copagos.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 92, resumen: 'Empleo estable y planificación para los profesionales sanitarios.' },
+  { partidoId: 'podemos', temaId: 'sanidad', edicion: 2026, pagina: 94, resumen: 'Garantizar el ejercicio efectivo del derecho a una muerte digna.' },
+
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 79, resumen: 'Desprivatizar la educación y apostar por la gestión pública.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 79, resumen: 'Bajar las ratios en las aulas.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 82, resumen: 'Libros, material escolar y comedor gratuitos para todo el alumnado.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 83, resumen: 'Suprimir la asignatura de religión.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 85, resumen: 'Universidad pública gratuita, para que nadie se quede fuera por dinero.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 86, resumen: 'Una moratoria indefinida a nuevas universidades privadas.' },
+  { partidoId: 'podemos', temaId: 'educacion', edicion: 2026, pagina: 81, resumen: 'Reducir la jornada lectiva y la burocracia del profesorado.' },
+
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Un impuesto estatal permanente a las grandes fortunas que las comunidades no puedan eliminar.' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Hacer permanentes los impuestos a la banca y a las eléctricas.' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Que las rentas del capital tributen como las del trabajo y que quien cobre menos del salario mínimo no pague IRPF.' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Reformar el impuesto de sociedades para que las grandes empresas paguen más y derogar la «Ley Beckham».' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 22, resumen: 'Quitar el régimen fiscal especial de las SOCIMI y la exención del IBI a la Iglesia católica.' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 18, resumen: 'Topes a los márgenes de las grandes distribuidoras de alimentos y a los precios de la luz, el gas y los carburantes.' },
+  { partidoId: 'podemos', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Una banca pública, una red pública de supermercados y nacionalizar Repsol.' },
+
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 44, resumen: 'Igualar la pensión mínima contributiva al salario mínimo.' },
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 41, resumen: 'Adelantar la edad ordinaria de jubilación a los 63 años.' },
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 41, resumen: 'Quitar las penalizaciones por jubilación anticipada a quien tenga 40 años cotizados.' },
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 44, resumen: 'Eliminar el tope máximo de las bases de cotización.' },
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 45, resumen: 'Eliminar la brecha de género en las pensiones.' },
+  { partidoId: 'podemos', temaId: 'pensiones', edicion: 2026, pagina: 63, resumen: 'Sacar de la gestión privada el sistema de residencias.' },
+
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 65, resumen: 'Derogar la Ley de Extranjería y reformar por completo el modelo migratorio.' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 65, resumen: 'Cerrar los Centros de Internamiento de Extranjeros (CIE).' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 66, resumen: '«Ius soli»: que quien nazca en España sea español.' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 67, resumen: 'Un procedimiento permanente de regularización.' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 68, resumen: 'Sanidad, educación y servicios sociales universales, también para quien no tenga papeles.' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 69, resumen: 'Un reparto obligatorio y solidario entre comunidades de los menores migrantes no acompañados.' },
+  { partidoId: 'podemos', temaId: 'inmigracion', edicion: 2026, pagina: 33, resumen: 'Acabar con los acuerdos de control migratorio con terceros países.' },
+
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 98, resumen: 'Un sistema eléctrico 100 % renovable, sin combustibles fósiles.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 18, resumen: 'Una empresa pública de energía y que Red Eléctrica sea 100 % pública.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 103, resumen: 'Cumplir el calendario de cierre nuclear con una transición justa.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 19, resumen: 'Transporte público gratuito para todos y una tarjeta única.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 104, resumen: 'Prohibir los vuelos cortos cuando haya alternativa en tren.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 105, resumen: 'Renacionalizar el sistema ferroviario.' },
+  { partidoId: 'podemos', temaId: 'medioambiente', edicion: 2026, pagina: 124, resumen: 'Acabar con la tauromaquia y las fiestas basadas en el maltrato animal.' },
+
+  { partidoId: 'podemos', temaId: 'juventud', edicion: 2026, pagina: 129, resumen: 'Derecho a votar a partir de los 16 años.' },
+  { partidoId: 'podemos', temaId: 'juventud', edicion: 2026, pagina: 45, resumen: 'Ordenar las prácticas para que sean formación y no empleo barato.' },
+  { partidoId: 'podemos', temaId: 'juventud', edicion: 2026, pagina: 60, resumen: 'Una prestación universal por crianza hasta los 21 años.' },
+  { partidoId: 'podemos', temaId: 'juventud', edicion: 2026, pagina: 85, resumen: 'Universidad pública gratuita y una carrera científica estable.' },
+  { partidoId: 'podemos', temaId: 'juventud', edicion: 2026, pagina: 133, resumen: 'Despenalizar el cannabis y legalizar su uso.' },
+
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 51, resumen: 'Blindar el derecho al aborto.' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 51, resumen: 'Un plan de choque contra las violencias digitales machistas y LGTBIfóbicas.' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 52, resumen: 'Un paquete de nuevos derechos LGTBIQA+ y de protección frente a la LGTBIfobia.' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 55, resumen: 'Una ley integral contra la trata y la explotación sexual.' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 56, resumen: 'Reconocer la violencia obstétrica y proteger a las «madres protectoras».' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 60, resumen: 'Ampliar a 9 meses los permisos por nacimiento y pagar el permiso parental.' },
+  { partidoId: 'podemos', temaId: 'igualdad', edicion: 2026, pagina: 62, resumen: 'Un Sistema Estatal de Cuidados y Conciliación.' },
+
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 128, resumen: 'Un proceso constituyente hacia una república plurinacional, con referéndum sobre la forma de Estado.' },
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 129, resumen: 'Una reforma federal del Senado.' },
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 129, resumen: 'Reformar el sistema electoral para que sea más proporcional.' },
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 131, resumen: 'Suprimir la Audiencia Nacional y repartir sus competencias.' },
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 133, resumen: 'Derogar la «Ley Mordaza».' },
+  { partidoId: 'podemos', temaId: 'territorial', edicion: 2026, pagina: 23, resumen: 'Una fiscalidad propia y justa para Canarias.' },
+
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Salir de la OTAN y cerrar las bases estadounidenses de Rota y Morón.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Revertir el rearme, rechazar el 5 % del PIB en defensa y un estatuto de neutralidad para España.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 34, resumen: 'Romper relaciones diplomáticas y comerciales con Israel y un embargo de armas efectivo.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 36, resumen: 'Reconocer diplomáticamente a la República Árabe Saharaui Democrática.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 37, resumen: 'Un acuerdo de paz, justicia y reconstrucción para Ucrania.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 37, resumen: 'Rechazar los tratados de libre comercio.' },
+  { partidoId: 'podemos', temaId: 'exterior', edicion: 2026, pagina: 32, resumen: 'Un sistema público europeo de salvamento marítimo y vías legales y seguras para migrar.' },
+  // ERC: «Pel país. Per la gent. Pel futur. Programa electoral. Eleccions al
+  // Congrés 2026» (en catalán; publicado en esquerrarepublicana.cat; copia en
+  // public/programas/erc-2026.pdf). Resúmenes traducidos al castellano.
+  // `pagina` = página del PDF, que coincide con el número impreso.
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Dedicar al menos el 1,5 % del PIB a vivienda, transferido a las comunidades para ampliar el parque público de alquiler.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Que la Generalitat pueda legislar por completo sobre alquileres, con una ley catalana de arrendamientos.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Traspasar gratis a la Generalitat todos los inmuebles de la SAREB y de Casa 47 en Cataluña.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Obligar a construir en el suelo urbanizable en plazo, con venta forzosa si no se cumple.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Subir el IVA y el ITP de las viviendas que no sean residencia habitual y bajarlos cuando lo sean; IVA del 21 % al alquiler turístico.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 20, resumen: 'Nuevas limitaciones y obligaciones fiscales a los fondos y grandes tenedores.' },
+  { partidoId: 'erc', temaId: 'vivienda', edicion: 2026, pagina: 19, resumen: 'Evitar los desahucios de personas vulnerables sin alternativa, compensando a los pequeños propietarios.' },
+
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 20, resumen: 'Subir el salario mínimo hasta el 60 % del salario medio y que Cataluña tenga uno propio.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 26, resumen: 'Reducir la jornada máxima a 37,5 horas sin bajar el sueldo.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 26, resumen: 'Derogar lo que queda de las reformas laborales de 2010 y 2012 y una indemnización extra por despido sin causa.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 26, resumen: 'Participación de los trabajadores en la gestión de las empresas.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 27, resumen: 'Igualar la protección social de los autónomos con la de los asalariados y cuota cero si tienen una enfermedad grave.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Traspasar a la Generalitat la Inspección de Trabajo y las prestaciones por desempleo.' },
+  { partidoId: 'erc', temaId: 'empleo', edicion: 2026, pagina: 27, resumen: 'Un sistema integrado de formación profesional a lo largo de la vida, ligado a la universidad y la empresa.' },
+
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 41, resumen: 'Más financiación estatal para la sanidad pública.' },
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 42, resumen: 'Incorporar a la sanidad pública la atención dental completa.' },
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 42, resumen: 'Ampliar la salud visual pública, con gafas gratuitas.' },
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 42, resumen: 'Más financiación pública para la atención psicológica.' },
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 42, resumen: 'Blindar las competencias de la Generalitat en sanidad.' },
+  { partidoId: 'erc', temaId: 'sanidad', edicion: 2026, pagina: 41, resumen: 'Garantizar la financiación de la Ley de Dependencia.' },
+
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 11, resumen: 'Dedicar el 6 % del PIB a educación para reforzar la escuela pública y bajar las ratios.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 11, resumen: 'Financiación estatal para una educación de 0 a 3 años pública, universal y gratuita.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Defender la escuela en catalán y la inmersión lingüística frente a porcentajes impuestos por los tribunales.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 11, resumen: 'Competencias exclusivas de la Generalitat en educación y en los currículos.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 45, resumen: 'Más financiación para universidades públicas e investigación hasta 2030, y mejores condiciones para su personal.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 45, resumen: 'Eliminar el distrito único universitario.' },
+  { partidoId: 'erc', temaId: 'educacion', edicion: 2026, pagina: 46, resumen: 'Endurecer los requisitos para crear universidades privadas.' },
+
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 22, resumen: 'Recuperar el impuesto a las grandes energéticas y hacer permanente el de la banca.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Una reforma social del IRPF y del IVA para abaratar los productos básicos.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 22, resumen: 'Combatir el «dumping» fiscal de las comunidades que bajan impuestos.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 27, resumen: 'Más progresividad en el impuesto de sociedades según el tamaño de la empresa.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'Que la Agència Tributària de Catalunya recaude los impuestos estatales en Cataluña.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Un nuevo modelo de financiación con más soberanía fiscal para Cataluña.' },
+  { partidoId: 'erc', temaId: 'impuestos', edicion: 2026, pagina: 22, resumen: 'Una fiscalidad verde para la emergencia climática y acabar con privilegios fiscales.' },
+
+  { partidoId: 'erc', temaId: 'pensiones', edicion: 2026, pagina: 26, resumen: 'Blindar la revalorización de las pensiones y que sigan el IPC de cada territorio.' },
+  { partidoId: 'erc', temaId: 'pensiones', edicion: 2026, pagina: 26, resumen: 'Jubilación anticipada por la dureza de la profesión, con coeficientes reductores.' },
+  { partidoId: 'erc', temaId: 'pensiones', edicion: 2026, pagina: 26, resumen: 'Ampliar los permisos de crianza.' },
+  { partidoId: 'erc', temaId: 'pensiones', edicion: 2026, pagina: 28, resumen: 'Adaptar el Ingreso Mínimo Vital al coste de la vida de cada territorio.' },
+  { partidoId: 'erc', temaId: 'pensiones', edicion: 2026, pagina: 27, resumen: 'Integrar a los trabajadores de mutualidades en el régimen de autónomos con los mismos derechos.' },
+
+  { partidoId: 'erc', temaId: 'inmigracion', edicion: 2026, pagina: 14, resumen: 'Transferir a la Generalitat todas las competencias de migración y asilo.' },
+  { partidoId: 'erc', temaId: 'inmigracion', edicion: 2026, pagina: 17, resumen: 'Acabar con la externalización de fronteras y garantizar vías legales y seguras para migrar.' },
+  { partidoId: 'erc', temaId: 'inmigracion', edicion: 2026, pagina: 15, resumen: 'Traspasar a la Generalitat la homologación de títulos extranjeros.' },
+  { partidoId: 'erc', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Igualdad de trato sea cual sea el origen y más persecución de los delitos de odio racistas.' },
+  { partidoId: 'erc', temaId: 'inmigracion', edicion: 2026, pagina: 24, resumen: 'Proteger a las víctimas de trata sea cual sea su situación administrativa.' },
+
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 30, resumen: 'Más decisión de la Generalitat sobre la red eléctrica y traspasar las centrales hidroeléctricas.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 30, resumen: 'Impulsar el autoconsumo, las comunidades energéticas y quitar privilegios a las grandes eléctricas.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 31, resumen: 'Que el Estado aporte al Fondo de Transición Nuclear de Cataluña lo mismo que la Generalitat.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 31, resumen: 'Cambiar el Plan Hidrológico del Ebro para garantizar el caudal ecológico y proteger el delta.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 32, resumen: 'Alinear la planificación climática y energética con los objetivos científicos.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 40, resumen: 'Culminar el traspaso de Rodalies y terminar el Corredor Mediterráneo.' },
+  { partidoId: 'erc', temaId: 'medioambiente', edicion: 2026, pagina: 36, resumen: 'Endurecer la respuesta al maltrato animal y reconocerlo como violencia vicaria.' },
+
+  { partidoId: 'erc', temaId: 'juventud', edicion: 2026, pagina: 17, resumen: 'Promover el derecho a votar desde los 16 años.' },
+  { partidoId: 'erc', temaId: 'juventud', edicion: 2026, pagina: 21, resumen: 'Recursos para una prestación universal por crianza adaptada al coste de la vida.' },
+  { partidoId: 'erc', temaId: 'juventud', edicion: 2026, pagina: 45, resumen: 'Reformar las prácticas universitarias.' },
+  { partidoId: 'erc', temaId: 'juventud', edicion: 2026, pagina: 35, resumen: 'Proteger los derechos de niños y adolescentes en el entorno digital.' },
+  { partidoId: 'erc', temaId: 'juventud', edicion: 2026, pagina: 21, resumen: 'Más financiación estable para el transporte público.' },
+
+  { partidoId: 'erc', temaId: 'igualdad', edicion: 2026, pagina: 24, resumen: 'Reformar la ley de violencia de género para incluir la violencia económica, vicaria y digital.' },
+  { partidoId: 'erc', temaId: 'igualdad', edicion: 2026, pagina: 24, resumen: 'Blindar con garantías legales y presupuestarias las políticas feministas.' },
+  { partidoId: 'erc', temaId: 'igualdad', edicion: 2026, pagina: 24, resumen: 'Una ley integral contra la trata y la explotación de personas.' },
+  { partidoId: 'erc', temaId: 'igualdad', edicion: 2026, pagina: 23, resumen: 'Reconocer todas las identidades de género y modelos de familia y combatir las terapias de conversión.' },
+  { partidoId: 'erc', temaId: 'igualdad', edicion: 2026, pagina: 25, resumen: 'Frenar los discursos de odio en las redes sociales.' },
+
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Negociar un referéndum de autodeterminación en Cataluña con acompañamiento internacional.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 7, resumen: 'Cumplir el acuerdo de financiación: unos 5.000 millones más al año, condonar buena parte de la deuda y la gestión catalana de Rodalies.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Una ley del plurilingüismo para proteger los derechos lingüísticos del catalán.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Nuevas competencias en seguridad y traspasar los inmuebles del Estado en Cataluña.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 15, resumen: 'Crear el Consejo de Justicia de Cataluña.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Reconocimiento oficial de las selecciones deportivas catalanas.' },
+  { partidoId: 'erc', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Dejar sin efecto los acuerdos de 1979 con la Santa Sede y suprimir el delito de ofensas a los sentimientos religiosos.' },
+
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Una Unión Europea con más presupuesto propio y autónoma de la OTAN en defensa.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Embargo total de armas a Israel y suspender el acuerdo de asociación UE-Israel.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Revertir el giro sobre el Sáhara Occidental y exigir que se cumplan las sentencias del Tribunal de Justicia de la UE.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Cumplir el 0,7 % en ayuda al desarrollo.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Fiscalizar los programas especiales de armamento de Defensa.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Que el catalán sea lengua oficial de la Unión Europea.' },
+  { partidoId: 'erc', temaId: 'exterior', edicion: 2026, pagina: 16, resumen: 'Ayuda europea a Ucrania frente a la agresión rusa.' },
+  // PNV: «Defendemos Euskadi. Programa elecciones generales 2026» (publicado
+  // en eaj-pnv.eus; copia en public/programas/pnv-2026.pdf). `pagina` = página
+  // del PDF, que coincide con el número impreso.
+  { partidoId: 'pnv', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Agilizar los trámites urbanísticos para construir más vivienda y movilizar pisos vacíos dando seguridad a los propietarios.' },
+  { partidoId: 'pnv', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Evitar que se usen contratos de temporada para esquivar las garantías del alquiler habitual.' },
+  { partidoId: 'pnv', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Regular los alquileres de temporada y turísticos para que no quiten viviendas al alquiler residencial.' },
+  { partidoId: 'pnv', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Alternativas de vivienda para las familias vulnerables sin cargar toda la responsabilidad en los pequeños propietarios.' },
+  { partidoId: 'pnv', temaId: 'vivienda', edicion: 2026, pagina: 8, resumen: 'Ayudar a los jóvenes a acceder a su primera vivienda, de alquiler o en propiedad, sin que el alquiler protegido sea la única opción.' },
+
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 9, resumen: 'Que Euskadi pueda fijar un salario mínimo propio, siempre por encima del estatal, mediante el diálogo social.' },
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 9, resumen: 'Proteger un marco vasco de relaciones laborales y la prevalencia de los convenios vascos más favorables.' },
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 9, resumen: 'Reforzar la Inspección de Trabajo contra el fraude, los falsos autónomos y la economía sumergida.' },
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 10, resumen: 'Analizar con sindicatos y empresas la productividad, el absentismo y los salarios.' },
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Acercar la prestación por cese de actividad de los autónomos a la de desempleo.' },
+  { partidoId: 'pnv', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Facilitar que las plantillas se hagan cargo de empresas viables como cooperativas.' },
+
+  { partidoId: 'pnv', temaId: 'sanidad', edicion: 2026, pagina: 32, resumen: 'Adaptar el sistema MIR para formar especialistas donde hacen falta y valorar el euskera en el acceso.' },
+  { partidoId: 'pnv', temaId: 'sanidad', edicion: 2026, pagina: 32, resumen: 'Culminar las transferencias sanitarias pendientes a Euskadi.' },
+  { partidoId: 'pnv', temaId: 'sanidad', edicion: 2026, pagina: 32, resumen: 'Que los Gobiernos vasco y navarro participen en la autorización y el precio de los medicamentos.' },
+  { partidoId: 'pnv', temaId: 'sanidad', edicion: 2026, pagina: 32, resumen: 'Regular el uso medicinal del cannabis.' },
+  { partidoId: 'pnv', temaId: 'sanidad', edicion: 2026, pagina: 32, resumen: 'Más atención e investigación para las enfermedades raras y neurodegenerativas, como el alzhéimer.' },
+
+  { partidoId: 'pnv', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Preservar las competencias educativas vascas frente a interferencias del Estado.' },
+  { partidoId: 'pnv', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Una educación inclusiva, plurilingüe e intercultural, con coeducación y educación afectivo-sexual.' },
+  { partidoId: 'pnv', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Defender el sistema vasco de becas.' },
+  { partidoId: 'pnv', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Reforzar la Formación Profesional dual con las empresas.' },
+
+  { partidoId: 'pnv', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Estudiar un IVA del 0 % o superreducido para alimentos básicos y revisar el de la luz, el gas y el transporte público.' },
+  { partidoId: 'pnv', temaId: 'impuestos', edicion: 2026, pagina: 16, resumen: 'Bajar de forma permanente el impuesto especial sobre la electricidad al 0,5 %.' },
+  { partidoId: 'pnv', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Más capacidad de las Haciendas Forales sobre el IVA y los impuestos especiales.' },
+  { partidoId: 'pnv', temaId: 'impuestos', edicion: 2026, pagina: 21, resumen: 'Reglas de gasto más flexibles para que las instituciones vascas puedan invertir sus superávits.' },
+  { partidoId: 'pnv', temaId: 'impuestos', edicion: 2026, pagina: 39, resumen: 'Modificar la Ley del Concierto Económico para ampliar la capacidad fiscal vasca.' },
+
+  { partidoId: 'pnv', temaId: 'pensiones', edicion: 2026, pagina: 31, resumen: 'Revalorizar cada año las pensiones con el IPC.' },
+  { partidoId: 'pnv', temaId: 'pensiones', edicion: 2026, pagina: 31, resumen: 'Mejorar poco a poco las pensiones mínimas y no contributivas.' },
+  { partidoId: 'pnv', temaId: 'pensiones', edicion: 2026, pagina: 31, resumen: 'Quitar las penalizaciones por jubilación anticipada a quien tenga más de 40 años cotizados.' },
+  { partidoId: 'pnv', temaId: 'pensiones', edicion: 2026, pagina: 31, resumen: 'Reducir la brecha de género en las pensiones y contar los periodos de cuidados familiares.' },
+  { partidoId: 'pnv', temaId: 'pensiones', edicion: 2026, pagina: 31, resumen: 'Extender los planes de pensiones complementarios, dentro del Pacto de Toledo.' },
+
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Que Euskadi gestione más los permisos de residencia y trabajo.' },
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Vías legales, seguras y ordenadas, con contratación en origen según las necesidades vascas.' },
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Avanzar en las regularizaciones que ya prevé la ley.' },
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Una acogida descentralizada de los solicitantes de asilo, sin grandes centros como el previsto en Arana (Vitoria).' },
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 25, resumen: 'Agilizar la homologación de títulos extranjeros.' },
+  { partidoId: 'pnv', temaId: 'inmigracion', edicion: 2026, pagina: 24, resumen: 'Reformas legales contra la multirreincidencia.' },
+
+  { partidoId: 'pnv', temaId: 'medioambiente', edicion: 2026, pagina: 16, resumen: 'Apoyar la cogeneración industrial, reforzar la red de gas y el hidrógeno renovable y el biometano.' },
+  { partidoId: 'pnv', temaId: 'medioambiente', edicion: 2026, pagina: 17, resumen: 'Una estrategia de adaptación al cambio climático, centrada en inundaciones, temporales e incendios.' },
+  { partidoId: 'pnv', temaId: 'medioambiente', edicion: 2026, pagina: 17, resumen: 'Reformar la Ley de Costas para adaptar el litoral al cambio climático.' },
+  { partidoId: 'pnv', temaId: 'medioambiente', edicion: 2026, pagina: 20, resumen: 'Ayudas estables para comprar vehículos eléctricos, aplicadas en el momento de la compra.' },
+  { partidoId: 'pnv', temaId: 'medioambiente', edicion: 2026, pagina: 17, resumen: 'Impulsar la economía circular y recuperar suelos industriales degradados.' },
+
+  { partidoId: 'pnv', temaId: 'juventud', edicion: 2026, pagina: 8, resumen: 'Medidas para que los jóvenes accedan a su primera vivienda, en alquiler o en propiedad.' },
+  { partidoId: 'pnv', temaId: 'juventud', edicion: 2026, pagina: 8, resumen: 'Que las reformas de vivienda, empleo y salarios evalúen su efecto en la emancipación juvenil.' },
+  { partidoId: 'pnv', temaId: 'juventud', edicion: 2026, pagina: 11, resumen: 'Más participación de los jóvenes en las políticas públicas y perspectiva juvenil en las leyes.' },
+
+  { partidoId: 'pnv', temaId: 'igualdad', edicion: 2026, pagina: 26, resumen: 'Perímetros de protección de al menos 150 metros alrededor de las clínicas donde se practican abortos.' },
+  { partidoId: 'pnv', temaId: 'igualdad', edicion: 2026, pagina: 26, resumen: 'Cumplir íntegramente el Pacto de Estado contra la Violencia de Género y reforzar los juzgados especializados.' },
+  { partidoId: 'pnv', temaId: 'igualdad', edicion: 2026, pagina: 9, resumen: 'Aplicar la directiva europea de transparencia salarial contra la brecha entre mujeres y hombres.' },
+  { partidoId: 'pnv', temaId: 'igualdad', edicion: 2026, pagina: 27, resumen: 'Tipificar como delito las «terapias de conversión» y desarrollar el cambio de documentación de la ley LGTBI.' },
+  { partidoId: 'pnv', temaId: 'igualdad', edicion: 2026, pagina: 26, resumen: 'Reparar a las víctimas del Patronato de Protección a la Mujer durante el franquismo.' },
+
+  { partidoId: 'pnv', temaId: 'territorial', edicion: 2026, pagina: 38, resumen: 'Cumplir íntegramente el Estatuto de Gernika y rechazar cualquier recentralización.' },
+  { partidoId: 'pnv', temaId: 'territorial', edicion: 2026, pagina: 39, resumen: 'Una nueva relación política basada en el reconocimiento nacional de Euskadi: un «Concierto Político».' },
+  { partidoId: 'pnv', temaId: 'territorial', edicion: 2026, pagina: 38, resumen: 'Mecanismos bilaterales entre Euskadi y el Estado para vigilar los acuerdos.' },
+  { partidoId: 'pnv', temaId: 'territorial', edicion: 2026, pagina: 24, resumen: 'Reconocer a la Ertzaintza como policía integral, con acceso a las bases de datos europeas.' },
+  { partidoId: 'pnv', temaId: 'territorial', edicion: 2026, pagina: 40, resumen: 'Una nueva Ley de Secretos Oficiales con desclasificación automática.' },
+
+  { partidoId: 'pnv', temaId: 'exterior', edicion: 2026, pagina: 41, resumen: 'Que Euskadi participe directamente en las instituciones europeas en sus competencias.' },
+  { partidoId: 'pnv', temaId: 'exterior', edicion: 2026, pagina: 41, resumen: 'Que el euskera, el catalán y el gallego sean lenguas oficiales de la UE.' },
+  { partidoId: 'pnv', temaId: 'exterior', edicion: 2026, pagina: 41, resumen: 'Una Europa más democrática y social, con más autonomía estratégica.' },
+  { partidoId: 'pnv', temaId: 'exterior', edicion: 2026, pagina: 41, resumen: 'Una macrorregión atlántica europea para cooperar en tren y energía.' },
+  // BNG: «Programa electoral 29N. Xerais 2026» (en gallego; publicado en
+  // bng.gal; copia en public/programas/bng-2026.pdf). Resúmenes traducidos al
+  // castellano. `pagina` = página del PDF, que coincide con el número impreso.
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 12, resumen: 'Topar por ley el precio del alquiler y prohibir los desahucios de personas vulnerables sin alternativa.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 12, resumen: 'Contratos de alquiler indefinidos por ley y renovación automática.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 12, resumen: 'Dedicar el 3 % de los Presupuestos del Estado a un parque público de alquiler permanente.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 12, resumen: 'Facilitar la expropiación de viviendas públicas que hayan comprado fondos de inversión.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 13, resumen: 'Recargos en el impuesto de sociedades a fondos y SOCIMI que no cumplan la función social de la vivienda.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 14, resumen: 'Un canon mínimo de 10 € por metro cuadrado a las viviendas vacías durante 5 años o más de grandes propietarios.' },
+  { partidoId: 'bng', temaId: 'vivienda', edicion: 2026, pagina: 85, resumen: 'Transferir a la Xunta todos los activos de la SAREB para vivienda pública de alquiler.' },
+
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Jornada de 35 horas sin bajar el sueldo y avanzar hacia las 32 horas en cuatro días.' },
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Subir el salario mínimo al 60 % del salario medio, como fija la Carta Social Europea.' },
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Volver a los 45 días de indemnización por despido improcedente, a la autorización de los ERE y a los salarios de tramitación.' },
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 15, resumen: 'Que prevalezcan los convenios gallegos y provinciales sobre los estatales.' },
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 9, resumen: 'Transferir a Galicia las competencias de relaciones laborales para un marco gallego propio.' },
+  { partidoId: 'bng', temaId: 'empleo', edicion: 2026, pagina: 18, resumen: 'Suprimir la tasa de reposición en el empleo público y una interinidad máxima del 5 %.' },
+
+  { partidoId: 'bng', temaId: 'sanidad', edicion: 2026, pagina: 37, resumen: 'Que Galicia asuma la plena capacidad de gestionar su sistema sanitario.' },
+  { partidoId: 'bng', temaId: 'sanidad', edicion: 2026, pagina: 38, resumen: 'Acabar con los copagos farmacéuticos.' },
+  { partidoId: 'bng', temaId: 'sanidad', edicion: 2026, pagina: 38, resumen: 'Requisitos mínimos y transparentes de información sobre las listas de espera.' },
+  { partidoId: 'bng', temaId: 'sanidad', edicion: 2026, pagina: 38, resumen: 'Eliminar la tasa de reposición del personal sanitario.' },
+  { partidoId: 'bng', temaId: 'sanidad', edicion: 2026, pagina: 18, resumen: 'Que los servicios públicos los preste personal público, limitando privatizaciones y recuperando los ya privatizados.' },
+
+  { partidoId: 'bng', temaId: 'educacion', edicion: 2026, pagina: 33, resumen: 'Educación pública, universal y gratuita de 0 a 18 años.' },
+  { partidoId: 'bng', temaId: 'educacion', edicion: 2026, pagina: 35, resumen: 'Un ensino laico: que Religión no forme parte del currículo.' },
+  { partidoId: 'bng', temaId: 'educacion', edicion: 2026, pagina: 36, resumen: 'Financiar las universidades públicas tomando como referencia el 1,5 % del PIB.' },
+  { partidoId: 'bng', temaId: 'educacion', edicion: 2026, pagina: 85, resumen: 'Transferir a Galicia todas las competencias de enseñanza y de becas universitarias.' },
+  { partidoId: 'bng', temaId: 'educacion', edicion: 2026, pagina: 35, resumen: 'Reformar la ley de universidades para evitar la privatización del sistema universitario gallego.' },
+
+  { partidoId: 'bng', temaId: 'impuestos', edicion: 2026, pagina: 8, resumen: 'Un concierto económico para Galicia: una Facenda Galega que recaude todos los impuestos.' },
+  { partidoId: 'bng', temaId: 'impuestos', edicion: 2026, pagina: 43, resumen: 'Más progresividad en el IRPF: menos impuestos al trabajo y más a las rentas del capital.' },
+  { partidoId: 'bng', temaId: 'impuestos', edicion: 2026, pagina: 44, resumen: 'Un impuesto de sociedades progresivo según el tamaño de la empresa, con ventajas para las pymes que reinviertan.' },
+  { partidoId: 'bng', temaId: 'impuestos', edicion: 2026, pagina: 44, resumen: 'Bajar de forma permanente el IVA de los alimentos básicos, el pescado, la higiene y el transporte público.' },
+  { partidoId: 'bng', temaId: 'impuestos', edicion: 2026, pagina: 43, resumen: 'Actualizar los tramos del IRPF con el IPC de Galicia.' },
+
+  { partidoId: 'bng', temaId: 'pensiones', edicion: 2026, pagina: 18, resumen: 'Derogar las reformas de pensiones de 2011, 2013, 2021 y 2023.' },
+  { partidoId: 'bng', temaId: 'pensiones', edicion: 2026, pagina: 18, resumen: 'Que la pensión mínima sea como mínimo igual al salario mínimo.' },
+  { partidoId: 'bng', temaId: 'pensiones', edicion: 2026, pagina: 18, resumen: 'Revalorizar las pensiones cada año según el IPC real.' },
+  { partidoId: 'bng', temaId: 'pensiones', edicion: 2026, pagina: 9, resumen: 'Transferir a Galicia la Seguridad Social y las pensiones.' },
+
+  { partidoId: 'bng', temaId: 'inmigracion', edicion: 2026, pagina: 22, resumen: 'Promover la regularización administrativa para acabar con la irregularidad como herramienta de explotación.' },
+  { partidoId: 'bng', temaId: 'inmigracion', edicion: 2026, pagina: 22, resumen: 'Más inspección laboral contra la explotación de los trabajadores migrantes.' },
+  { partidoId: 'bng', temaId: 'inmigracion', edicion: 2026, pagina: 23, resumen: 'Acceso a la sanidad y la educación y cumplir el derecho internacional de protección a los refugiados.' },
+
+  { partidoId: 'bng', temaId: 'medioambiente', edicion: 2026, pagina: 9, resumen: 'Control público gallego de la producción de energía y una tarifa eléctrica gallega más barata.' },
+  { partidoId: 'bng', temaId: 'medioambiente', edicion: 2026, pagina: 54, resumen: 'Declarar el litoral gallego no apto para parques eólicos marinos.' },
+  { partidoId: 'bng', temaId: 'medioambiente', edicion: 2026, pagina: 9, resumen: 'Transferir a Galicia las competencias de costas, puertos, aeropuertos y ferrocarril.' },
+  { partidoId: 'bng', temaId: 'medioambiente', edicion: 2026, pagina: 89, resumen: 'Excluir de la minería los materiales críticos de uso militar, como el litio.' },
+
+  { partidoId: 'bng', temaId: 'juventud', edicion: 2026, pagina: 84, resumen: 'Políticas de empleo juvenil estable.' },
+  { partidoId: 'bng', temaId: 'juventud', edicion: 2026, pagina: 85, resumen: 'Prioridad para los jóvenes en la vivienda pública y medidas contra la discriminación por no tener avales familiares.' },
+  { partidoId: 'bng', temaId: 'juventud', edicion: 2026, pagina: 85, resumen: 'Rehabilitar viviendas vacías en el rural para que los jóvenes puedan vivir y emprender allí.' },
+  { partidoId: 'bng', temaId: 'juventud', edicion: 2026, pagina: 85, resumen: 'Más contenidos en gallego en plataformas audiovisuales y videojuegos.' },
+
+  { partidoId: 'bng', temaId: 'igualdad', edicion: 2026, pagina: 24, resumen: 'Reformar la ley de violencia de género para cubrir todas las violencias y dar rango de ley a la violencia vicaria.' },
+  { partidoId: 'bng', temaId: 'igualdad', edicion: 2026, pagina: 28, resumen: 'Investigación sobre la salud de las mujeres y garantizar la medicación de la menopausia.' },
+  { partidoId: 'bng', temaId: 'igualdad', edicion: 2026, pagina: 29, resumen: 'Proteger a las personas trans menores de 12 años respetando su autodeterminación de género y reconocer a las no binarias.' },
+  { partidoId: 'bng', temaId: 'igualdad', edicion: 2026, pagina: 29, resumen: 'Que las personas trans migrantes puedan cambiar su sexo legal.' },
+
+  { partidoId: 'bng', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Avanzar en los derechos nacionales de Galicia y la «ruptura democrática» con un Estado que considera irreformable.' },
+  { partidoId: 'bng', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Traspasar a Galicia la seguridad y desplegar una Policía Galega.' },
+  { partidoId: 'bng', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Reformar la financiación local para no discriminar a los ayuntamientos gallegos.' },
+  { partidoId: 'bng', temaId: 'territorial', edicion: 2026, pagina: 32, resumen: 'Un Estado laico y un sistema electoral proporcional.' },
+  { partidoId: 'bng', temaId: 'territorial', edicion: 2026, pagina: 89, resumen: 'Que el Estado reconozca el derecho de autodeterminación de las naciones que forman parte de él.' },
+
+  { partidoId: 'bng', temaId: 'exterior', edicion: 2026, pagina: 89, resumen: 'Neutralidad activa: salir de la OTAN y cerrar los acuerdos militares con Estados Unidos.' },
+  { partidoId: 'bng', temaId: 'exterior', edicion: 2026, pagina: 89, resumen: 'Dejar de enviar armamento a Ucrania y buscar una salida negociada.' },
+  { partidoId: 'bng', temaId: 'exterior', edicion: 2026, pagina: 89, resumen: 'Rechazar más gasto militar y reducirlo.' },
+  { partidoId: 'bng', temaId: 'exterior', edicion: 2026, pagina: 90, resumen: 'Un referéndum de autodeterminación en el Sáhara Occidental.' },
+  { partidoId: 'bng', temaId: 'exterior', edicion: 2026, pagina: 90, resumen: 'Condenar la ocupación israelí y reconocer de forma efectiva el Estado palestino.' },
+  // Coalición Canaria: «Defiende Canarias. Bases del programa electoral de
+  // Coalición Canaria y Municipalistas Primero Canarias» (29-N 2026; publicado
+  // en coalicioncanaria.org; copia en public/programas/cc-2026.pdf). 100
+  // acciones numeradas. `pagina` = página del PDF.
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 10, resumen: 'Un fondo estatal de ocho años para cofinanciar vivienda pública y asequible, con una parte ajustada a Canarias.' },
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 11, resumen: 'Limitar la compra de vivienda en Canarias por parte de extranjeros.' },
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 11, resumen: 'Más incentivos fiscales a los pequeños propietarios que pongan su vivienda en alquiler asequible, con garantías públicas.' },
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 11, resumen: 'Reglas y control para la vivienda vacacional.' },
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 11, resumen: 'Vivienda para la emancipación de los jóvenes y agilizar la vivienda protegida.' },
+  { partidoId: 'cc', temaId: 'vivienda', edicion: 2026, pagina: 11, resumen: 'Rehabilitar barrios y proteger del calor a los hogares vulnerables.' },
+
+  { partidoId: 'cc', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Incentivos fiscales y bonificaciones de cotizaciones ligados a subidas de sueldo pactadas en Canarias.' },
+  { partidoId: 'cc', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Planes de empleo para reducir la desigualdad y apoyo a autónomos y pequeñas empresas.' },
+  { partidoId: 'cc', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Que el turismo contribuya más al bienestar de las islas.' },
+  { partidoId: 'cc', temaId: 'empleo', edicion: 2026, pagina: 14, resumen: 'Más oportunidades en la economía azul y la investigación en Canarias.' },
+  { partidoId: 'cc', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Poder comprar y vender por internet desde Canarias en igualdad de condiciones.' },
+
+  { partidoId: 'cc', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Una financiación sanitaria que reconozca el coste de atender a la población de ocho islas.' },
+  { partidoId: 'cc', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Reforzar la salud mental.' },
+  { partidoId: 'cc', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Financiación estable para la dependencia y los cuidados.' },
+
+  { partidoId: 'cc', temaId: 'educacion', edicion: 2026, pagina: 9, resumen: 'Más financiación estatal para plazas públicas y gratuitas de 0 a 3 años.' },
+  { partidoId: 'cc', temaId: 'educacion', edicion: 2026, pagina: 14, resumen: 'Becas que tengan en cuenta los gastos de quien tiene que desplazarse entre islas o a la Península.' },
+  { partidoId: 'cc', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Centros educativos adaptados a las necesidades de cada isla.' },
+  { partidoId: 'cc', temaId: 'educacion', edicion: 2026, pagina: 14, resumen: 'Formación conectada con el empleo y con el retorno de quienes se fueron.' },
+
+  { partidoId: 'cc', temaId: 'impuestos', edicion: 2026, pagina: 8, resumen: 'Proteger y actualizar el Régimen Económico y Fiscal (REF) y separarlo de la financiación de los servicios públicos.' },
+  { partidoId: 'cc', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'Mantener la deducción del 60 % en el IRPF en La Palma y extenderla a La Gomera y El Hierro.' },
+  { partidoId: 'cc', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Orientar el REF hacia la actividad productiva y no solo a la localización fiscal.' },
+  { partidoId: 'cc', temaId: 'impuestos', edicion: 2026, pagina: 11, resumen: 'Una cesta de la compra más asequible.' },
+
+  { partidoId: 'cc', temaId: 'pensiones', edicion: 2026, pagina: 10, resumen: 'Que los complementos canarios sean compatibles con las pensiones no contributivas y no tributen.' },
+  { partidoId: 'cc', temaId: 'pensiones', edicion: 2026, pagina: 9, resumen: 'Financiación estable para la dependencia y los cuidados.' },
+
+  { partidoId: 'cc', temaId: 'inmigracion', edicion: 2026, pagina: 19, resumen: 'Que el reparto de migrantes entre comunidades sea obligatorio y automático cuando una se desborde.' },
+  { partidoId: 'cc', temaId: 'inmigracion', edicion: 2026, pagina: 19, resumen: 'Financiación estable del Estado para atender a los menores extranjeros no acompañados acogidos en Canarias.' },
+  { partidoId: 'cc', temaId: 'inmigracion', edicion: 2026, pagina: 18, resumen: 'Salvamento y acogida con recursos compartidos.' },
+  { partidoId: 'cc', temaId: 'inmigracion', edicion: 2026, pagina: 19, resumen: 'Que Canarias tenga voz en las decisiones migratorias y en la cooperación con los países de origen.' },
+
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Desarrollar la eólica marina en Gran Canaria con planificación propia para las islas.' },
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Renovar las centrales, reforzar las redes y almacenar energía para asegurar el suministro.' },
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 16, resumen: 'Electrificar taxis y coches de alquiler y producir combustibles sostenibles en Canarias.' },
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 16, resumen: 'Asegurar el agua, aprovechar la depurada y abaratar su coste energético.' },
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 18, resumen: 'Financiación estatal para mantener gratis guaguas y tranvías.' },
+  { partidoId: 'cc', temaId: 'medioambiente', edicion: 2026, pagina: 17, resumen: 'Consolidar el descuento del 75 % para residentes en el transporte.' },
+
+  { partidoId: 'cc', temaId: 'juventud', edicion: 2026, pagina: 14, resumen: 'Aportación del Estado al plan de empleo para menores de 35 años en Canarias.' },
+  { partidoId: 'cc', temaId: 'juventud', edicion: 2026, pagina: 11, resumen: 'Vivienda para la emancipación.' },
+  { partidoId: 'cc', temaId: 'juventud', edicion: 2026, pagina: 19, resumen: 'Facilitar el retorno de los canarios en el exterior.' },
+
+  { partidoId: 'cc', temaId: 'igualdad', edicion: 2026, pagina: 10, resumen: 'Financiación estatal suficiente para aplicar el Pacto de Estado contra la Violencia de Género en todas las islas.' },
+  { partidoId: 'cc', temaId: 'igualdad', edicion: 2026, pagina: 10, resumen: 'Accesibilidad en la vida diaria para las personas con discapacidad.' },
+
+  { partidoId: 'cc', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Cumplir el Estatuto y reconocer de forma permanente la singularidad canaria.' },
+  { partidoId: 'cc', temaId: 'territorial', edicion: 2026, pagina: 10, resumen: 'Financiar el despliegue de la Policía Canaria.' },
+  { partidoId: 'cc', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Que Canarias decida sobre sus puertos y aeropuertos.' },
+  { partidoId: 'cc', temaId: 'territorial', edicion: 2026, pagina: 21, resumen: 'Cumplir la Agenda Canaria y aprobar el Decreto Canarias.' },
+  { partidoId: 'cc', temaId: 'territorial', edicion: 2026, pagina: 5, resumen: 'Más capacidad de decisión desde Canarias y oponerse a la recentralización.' },
+
+  { partidoId: 'cc', temaId: 'exterior', edicion: 2026, pagina: 9, resumen: 'Recuperar para uso civil terrenos militares, como el campo de tiro de Pájara (Fuerteventura).' },
+  { partidoId: 'cc', temaId: 'exterior', edicion: 2026, pagina: 20, resumen: 'Mantener los fondos europeos de las regiones ultraperiféricas y aplicar el artículo 349 del Tratado.' },
+  { partidoId: 'cc', temaId: 'exterior', edicion: 2026, pagina: 20, resumen: 'Que Canarias participe en la política exterior que afecta a las islas.' },
+  { partidoId: 'cc', temaId: 'exterior', edicion: 2026, pagina: 18, resumen: 'Más vuelos directos con otros países.' },
+  // Compromís-Front Valencià: programa para el Congreso del 29-N 2026 (en
+  // valenciano; publicado en frontvalencia.org; copia en
+  // public/programas/compromis-2026.pdf). Resúmenes traducidos al castellano.
+  // `pagina` = página del PDF, que es una más que el número impreso.
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Prohibir que fondos y sociedades especulativas compren viviendas.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'El alquiler indefinido como régimen normal, salvo que el propietario necesite la vivienda.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Una ley para expropiar viviendas a los grandes fondos, empezando por los que tengan más de 1.000 y bajando hasta 50.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Dedicar el 1 % del PIB al año a comprar o construir vivienda protegida.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Prohibir temporalmente la compra de vivienda a no residentes en zonas tensionadas y que los ayuntamientos puedan declararlas.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Un gravamen del 10 % del valor catastral a partir de la tercera vivienda y quitar los privilegios fiscales de las SOCIMI.' },
+  { partidoId: 'compromis', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Sin ITP en la compra de la primera vivienda de menos de 350.000 €.' },
+
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Semana laboral de cuatro días (32 horas) sin bajar el sueldo.' },
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Garantizar por ley que el salario mínimo llegue al 60 % del salario medio.' },
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Volver a los 45 días por año de indemnización y a los salarios de tramitación en el despido improcedente.' },
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Reducir a la mitad los domingos y festivos de apertura comercial.' },
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Que las prácticas no sustituyan a la plantilla y estén pagadas.' },
+  { partidoId: 'compromis', temaId: 'empleo', edicion: 2026, pagina: 8, resumen: 'IVA franquiciado para autónomos que facturen menos de 85.000 € y cuota pagada desde el primer día de baja por enfermedad grave.' },
+
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Blindar la gestión pública de la sanidad derogando la ley que permite privatizarla (Ley 15/1997).' },
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Sanidad universal sin discriminación por origen o situación administrativa.' },
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Fijar por ley una financiación mínima de la atención primaria y listas de espera máximas.' },
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 9, resumen: 'Un pacto estatal por la salud mental y la prevención del suicidio.' },
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Una industria farmacéutica pública.' },
+  { partidoId: 'compromis', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Prohibir fumar en terrazas y playas y vender bebidas energéticas a menores de 16 años.' },
+
+  { partidoId: 'compromis', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Avanzar hacia un 7 % del PIB en educación.' },
+  { partidoId: 'compromis', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Que la concertada sea de verdad subsidiaria de la pública y no ceder suelo público a colegios privados.' },
+  { partidoId: 'compromis', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Ampliar la red pública de 0 a 3 años hacia la gratuidad.' },
+  { partidoId: 'compromis', temaId: 'educacion', edicion: 2026, pagina: 10, resumen: 'Comedor escolar gratuito y universal.' },
+  { partidoId: 'compromis', temaId: 'educacion', edicion: 2026, pagina: 17, resumen: 'Limitar la proliferación de universidades privadas.' },
+
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Mantener y ampliar el impuesto a las grandes fortunas, en la línea de la «tasa Zucman».' },
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Deflactar el IRPF para las rentas de menos de 30.000 €.' },
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Que las rentas financieras tributen igual que las del trabajo.' },
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Un impuesto sobre los beneficios de las empresas oligopolísticas.' },
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 17, resumen: 'Reducir las deducciones por alquilar y amortizar inmuebles.' },
+  { partidoId: 'compromis', temaId: 'impuestos', edicion: 2026, pagina: 9, resumen: 'Quitar las ventajas fiscales de los planes de pensiones privados, los PIAS y los SIALP.' },
+
+  { partidoId: 'compromis', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Volver a la jubilación a los 65 años.' },
+  { partidoId: 'compromis', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Quitar la penalización por jubilación anticipada a quien haya trabajado 40 años.' },
+  { partidoId: 'compromis', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Eliminar el tope de la base máxima de cotización.' },
+  { partidoId: 'compromis', temaId: 'pensiones', edicion: 2026, pagina: 9, resumen: 'Subir las pensiones no contributivas hasta 800 €.' },
+  { partidoId: 'compromis', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Mantener el poder adquisitivo de las pensiones según el coste de la vida.' },
+
+  { partidoId: 'compromis', temaId: 'inmigracion', edicion: 2026, pagina: 56, resumen: 'Eliminar los CIE.' },
+  { partidoId: 'compromis', temaId: 'inmigracion', edicion: 2026, pagina: 56, resumen: 'Regularizar y dar derechos a quienes viven aquí, con vías de regularización claras.' },
+  { partidoId: 'compromis', temaId: 'inmigracion', edicion: 2026, pagina: 56, resumen: 'Pedir que el Pacto Europeo de Migración y Asilo se lleve al Tribunal de Justicia de la UE.' },
+  { partidoId: 'compromis', temaId: 'inmigracion', edicion: 2026, pagina: 54, resumen: 'Ratificar la convención de la ONU sobre los derechos de los trabajadores migrantes.' },
+
+  { partidoId: 'compromis', temaId: 'medioambiente', edicion: 2026, pagina: 4, resumen: 'Reparar a las víctimas de la DANA y proteger a la población ante la emergencia climática como condición de cualquier acuerdo.' },
+  { partidoId: 'compromis', temaId: 'medioambiente', edicion: 2026, pagina: 25, resumen: 'Un filtro climático vinculante que impida proyectos que aumenten las emisiones.' },
+  { partidoId: 'compromis', temaId: 'medioambiente', edicion: 2026, pagina: 12, resumen: 'Más trenes y frecuencias en Rodalies y una autoridad metropolitana de transporte con 50 millones del Estado.' },
+  { partidoId: 'compromis', temaId: 'medioambiente', edicion: 2026, pagina: 12, resumen: 'Acelerar el Corredor Mediterráneo con calendario y presupuesto.' },
+  { partidoId: 'compromis', temaId: 'medioambiente', edicion: 2026, pagina: 25, resumen: 'Una transición ecológica justa con formación y reciclaje para los colectivos afectados.' },
+
+  { partidoId: 'compromis', temaId: 'juventud', edicion: 2026, pagina: 35, resumen: 'Ampliar el derecho a voto a los 16 años.' },
+  { partidoId: 'compromis', temaId: 'juventud', edicion: 2026, pagina: 7, resumen: 'Programas de primera experiencia laboral con contrato, formación y continuidad.' },
+  { partidoId: 'compromis', temaId: 'juventud', edicion: 2026, pagina: 44, resumen: 'Un plan de acción contra el acoso escolar LGTBIQ+ y productos menstruales gratis en centros educativos.' },
+
+  { partidoId: 'compromis', temaId: 'igualdad', edicion: 2026, pagina: 48, resumen: 'Proteger a los hijos frente a la violencia vicaria, revisando custodias y visitas cuando haya riesgo.' },
+  { partidoId: 'compromis', temaId: 'igualdad', edicion: 2026, pagina: 48, resumen: 'Un plan estatal contra la explotación sexual y la trata, sin sancionar a las personas prostituidas.' },
+  { partidoId: 'compromis', temaId: 'igualdad', edicion: 2026, pagina: 47, resumen: 'Una respuesta penal efectiva ante la violencia machista, con atención a la reincidencia.' },
+  { partidoId: 'compromis', temaId: 'igualdad', edicion: 2026, pagina: 50, resumen: 'Defender los derechos LGTBI en los organismos internacionales.' },
+
+  { partidoId: 'compromis', temaId: 'territorial', edicion: 2026, pagina: 50, resumen: 'Reformar la financiación autonómica para acabar con la infrafinanciación valenciana, o un concierto económico.' },
+  { partidoId: 'compromis', temaId: 'territorial', edicion: 2026, pagina: 50, resumen: 'Condonar la deuda histórica de la Generalitat y un fondo de nivelación mientras llega la reforma.' },
+  { partidoId: 'compromis', temaId: 'territorial', edicion: 2026, pagina: 52, resumen: 'Avanzar hacia un Estado plurinacional que reconozca la diversidad nacional, cultural y lingüística.' },
+  { partidoId: 'compromis', temaId: 'territorial', edicion: 2026, pagina: 52, resumen: 'Traspasar a la Generalitat costas, puertos, aeropuertos, Rodalies, el Ingreso Mínimo Vital y la Inspección de Trabajo.' },
+  { partidoId: 'compromis', temaId: 'territorial', edicion: 2026, pagina: 50, resumen: 'Que el Estado pague el 50 % de la Ley de Dependencia.' },
+
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 54, resumen: 'Una Unión Europea de la Defensa que pueda sustituir el marco de la OTAN.' },
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 55, resumen: 'Que el gasto militar no suba a costa de la inversión social y evitar compras de armamento innecesarias.' },
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 55, resumen: 'Un referéndum de autodeterminación en el Sáhara Occidental.' },
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 56, resumen: 'Blindar por ley el 0,7 % para cooperación.' },
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 54, resumen: 'Democratizar la ONU con una asamblea parlamentaria y limitar los vetos en el Consejo de Seguridad.' },
+  { partidoId: 'compromis', temaId: 'exterior', edicion: 2026, pagina: 54, resumen: 'Un centro internacional de resolución de disputas en Alicante.' },
+
+  // SALF: «Contrato electoral simplificado. Generales 2026» (publicado en
+  // seacabolafiesta.com; copia en public/programas/salf-2026.pdf). `pagina` =
+  // página del PDF, que coincide con el número impreso.
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Rebajar por ley al menos un 35 % el precio de la primera vivienda: sin ITP ni AJD, IVA devuelto en la renta, licencias en plazo y suelo público gratis.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Desalojo de una vivienda ocupada en 48 horas con denuncia y título de propiedad, y de los inquilinos que dejen de pagar («inquiokupas») en 30 días.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Sacar a concurso en 12 meses todo el suelo de la Sareb y del Estado para vivienda protegida en propiedad a precio tasado.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Licencias de obra en uno a tres meses; si la Administración no responde, se entienden concedidas.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Aval público del 20 % de la entrada para menores de 40 años que compren su primera vivienda.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Que las SOCIMI con más de 100 viviendas en alquiler tributen al 25 %, como cualquier empresa.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Un seguro público de impago que cubra al propietario 12 meses de renta y daños, a cambio de no exigir nóminas ni avales.' },
+  { partidoId: 'salf', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Pisos turísticos con registro único y cumplimiento fiscal, sin prohibiciones.' },
+
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Nadie pagaría IRPF por los primeros 35.000 euros de ingresos (de forma gradual hasta 2030), más 5.000 euros exentos por hijo para cada progenitor.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 7, resumen: 'Eliminar el IBI para todos, sin compensar a los ayuntamientos.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'Bajar el impuesto de sociedades al 20 %, al 15 % si se reinvierte el beneficio y al 10 % para empresas nuevas.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'Suprimir los impuestos de sucesiones, donaciones, patrimonio y grandes fortunas.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'IVA del 4 % para la luz y el agua, y que ninguna bajada de impuestos entre en vigor sin un ahorro equivalente certificado por la AIReF.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'Exigir tres quintos del Congreso para subir cualquier impuesto, mediante reforma constitucional.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 15, resumen: 'Pago en efectivo sin límite de importe como derecho constitucional.' },
+  { partidoId: 'salf', temaId: 'impuestos', edicion: 2026, pagina: 15, resumen: 'Que los bancos que absorbieron las cajas rescatadas devuelvan 70.000 millones en 15 años, sin poder repercutirlo al cliente.' },
+
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Eliminar por completo la cuota de autónomos.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 30, resumen: 'Un contrato único indefinido con indemnización creciente de 12 a 33 días por año y una «mochila austriaca».' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 30, resumen: 'Bajar la cuña fiscal del 41 al 29 % y que quien cobra el salario mínimo no pague cotizaciones.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 30, resumen: 'Que las mutuas puedan dar el alta en bajas por enfermedad común a los 15 días, con revisión del INSS en 72 horas.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 31, resumen: 'Que la Seguridad Social pague las bajas por enfermedad desde el primer día en lugar de la empresa.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 31, resumen: 'Por cada nueva norma que afecte a las empresas, derogar dos.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 32, resumen: 'Perder la prestación por desempleo al rechazar dos ofertas adecuadas, y que el Ingreso Mínimo baje solo 50 céntimos por cada euro ganado trabajando.' },
+  { partidoId: 'salf', temaId: 'empleo', edicion: 2026, pagina: 32, resumen: 'Contar como parados a los fijos discontinuos cuando no trabajan.' },
+
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 17, resumen: 'Ejecutar todas las órdenes de expulsión, con identificación y salida en 48 horas e internamiento hasta la expulsión.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 17, resumen: 'Derogar la regularización de 2026, revisar una a una las concedidas y prohibir por ley orgánica las regularizaciones masivas.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 18, resumen: 'Paralizar la inmigración de los países que no readmitan a sus nacionales; para el resto, solo con contrato previo y un cupo anual votado en el Congreso.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 18, resumen: 'Preferencia para los hispanoamericanos y nacionalidad tras diez años de residencia legal, con examen y sin depender de ayudas.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 18, resumen: 'Perder la residencia con una condena de más de un año y la nacionalidad, si se tiene doble, por terrorismo o delitos graves.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 19, resumen: 'Ninguna ayuda no contributiva ni vivienda pública sin cinco años de residencia legal y cotización.' },
+  { partidoId: 'salf', temaId: 'inmigracion', edicion: 2026, pagina: 19, resumen: 'Prohibir el burka y el niqab en el espacio público, y la financiación extranjera de lugares de culto.' },
+
+  { partidoId: 'salf', temaId: 'pensiones', edicion: 2026, pagina: 20, resumen: 'Blindar en la Constitución la subida de las pensiones con el IPC.' },
+  { partidoId: 'salf', temaId: 'pensiones', edicion: 2026, pagina: 20, resumen: 'Un sistema mixto: los menores de 45 años destinarían el 2 % del salario a una cuenta individual obligatoria y heredable.' },
+  { partidoId: 'salf', temaId: 'pensiones', edicion: 2026, pagina: 20, resumen: 'Cobrar el 100 % de la pensión trabajando y jubilarse cuando se quiera, sin penalización, con 40 años cotizados.' },
+  { partidoId: 'salf', temaId: 'pensiones', edicion: 2026, pagina: 21, resumen: 'Pensión mínima de 1.000 euros en 14 pagas con 35 años cotizados.' },
+  { partidoId: 'salf', temaId: 'pensiones', edicion: 2026, pagina: 21, resumen: 'Suprimir el complemento de pensión de los parlamentarios y los privilegios vitalicios de los expresidentes.' },
+
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 22, resumen: 'Una única central de compras sanitarias para toda España y usar el ahorro en sueldos y plazas.' },
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 22, resumen: 'Operación en un máximo de 60 días; si no, el paciente elige centro, público o privado, y paga la sanidad pública.' },
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 22, resumen: 'Subir un 20 % el sueldo de los médicos y un 10 % el del resto de sanitarios en cuatro años.' },
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 23, resumen: 'Tarjeta sanitaria solo para españoles y residentes legales con cotización o cobertura; urgencias para todos.' },
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 23, resumen: '10.000 camas y 1.500 de UCI más, y cita con el médico de cabecera en 48 horas.' },
+  { partidoId: 'salf', temaId: 'sanidad', edicion: 2026, pagina: 24, resumen: 'Un psicólogo clínico por cada 10.000 habitantes en los centros de salud y atención en 15 días.' },
+
+  { partidoId: 'salf', temaId: 'educacion', edicion: 2026, pagina: 33, resumen: 'Una ley educativa aprobada por dos tercios que no se pueda cambiar sin la misma mayoría, y selectividad única en toda España.' },
+  { partidoId: 'salf', temaId: 'educacion', edicion: 2026, pagina: 33, resumen: 'Derecho a estudiar en castellano en toda España, con una Alta Inspección estatal que sancione.' },
+  { partidoId: 'salf', temaId: 'educacion', edicion: 2026, pagina: 33, resumen: 'Un «MIR docente»: dos años de prácticas pagadas y examen nacional para ser profesor.' },
+  { partidoId: 'salf', temaId: 'educacion', edicion: 2026, pagina: 34, resumen: 'Cheque escolar del mismo importe por alumno para pública, concertada y privada.' },
+  { partidoId: 'salf', temaId: 'educacion', edicion: 2026, pagina: 34, resumen: 'Mismo temario de Historia en toda España, y Economía y Constitución obligatorias en Secundaria.' },
+
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 3, resumen: 'Reducir el Gobierno de 22 a 10 ministerios y a la mitad los altos cargos.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Financiación autonómica con criterios iguales para todas las comunidades y sin condonaciones de deuda, salvo catástrofe.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 16, resumen: 'Suprimir las diputaciones provinciales y el Senado, y gestión mancomunada obligatoria en municipios de menos de 5.000 habitantes.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 25, resumen: 'Que los delitos de corrupción no prescriban, sin tercer grado ni indultos, y devolver el triple de lo robado.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 26, resumen: 'Prohibir las amnistías en la Constitución.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 27, resumen: 'Suprimir el Tribunal Constitucional y pasar su función a una sala del Supremo elegida por los jueces.' },
+  { partidoId: 'salf', temaId: 'territorial', edicion: 2026, pagina: 28, resumen: 'Eliminar los aforamientos y que los jueces elijan el CGPJ.' },
+
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 35, resumen: 'Un referéndum para renegociar la relación con la UE y, si Bruselas se niega, otro sobre la salida.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 35, resumen: 'Vetar el acuerdo con Mercosur, el recorte de la PAC y el Pacto Verde Europeo.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 36, resumen: 'Bloqueo comercial a Marruecos si bloquea un puerto español o usa la inmigración contra la frontera.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 38, resumen: 'Sáhara: retirar el apoyo de 2022 al plan de Marruecos, volver a la posición de la ONU y recuperar la relación con Argelia.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 39, resumen: 'Cortar la ayuda al desarrollo, salvo emergencias humanitarias, a los países que no readmitan a sus nacionales en 72 horas.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 38, resumen: 'Gastar el 2 % del PIB en defensa con prioridad para la industria nacional, y equiparar el sueldo de los militares al de la Guardia Civil.' },
+  { partidoId: 'salf', temaId: 'exterior', edicion: 2026, pagina: 37, resumen: 'Negociar con el Reino Unido la cosoberanía de Gibraltar como primer paso y el fin de su régimen fiscal.' },
+
+  { partidoId: 'salf', temaId: 'juventud', edicion: 2026, pagina: 9, resumen: 'Una «mili voluntaria» de 6 a 12 meses para jóvenes de 18 a 30 años, pagada con 1.600 euros al mes y ventajas fiscales posteriores.' },
+  { partidoId: 'salf', temaId: 'juventud', edicion: 2026, pagina: 31, resumen: 'FP dual con contrato pagado al 50 % del convenio y cotización cero durante dos años por contratar a menores de 30.' },
+  { partidoId: 'salf', temaId: 'juventud', edicion: 2026, pagina: 34, resumen: 'Beca-salario de 2.000 euros al año para la FP superior en sectores con falta de profesionales y certificado B2 de inglés pagado al acabar Bachillerato.' },
+
+  { partidoId: 'salf', temaId: 'igualdad', edicion: 2026, pagina: 8, resumen: 'Registro público de agresores sexuales reincidentes, pulsera de por vida y castración química voluntaria como condición para beneficios penitenciarios.' },
+  { partidoId: 'salf', temaId: 'igualdad', edicion: 2026, pagina: 24, resumen: 'Prueba de paternidad gratuita al nacer en el hospital, salvo que ambos progenitores renuncien.' },
+
+  { partidoId: 'salf', temaId: 'medioambiente', edicion: 2026, pagina: 35, resumen: 'Vetar la Ley de Restauración de la Naturaleza y el Pacto Verde Europeo por su efecto sobre el campo.' },
+  { partidoId: 'salf', temaId: 'medioambiente', edicion: 2026, pagina: 13, resumen: 'Suprimir el impuesto a la producción eléctrica.' },
+
+  // Adelante Andalucía: «Programa completo. Elecciones generales 29-11-2026»
+  // (publicado en programa.adelanteandalucia.org; copia en
+  // public/programas/adelante-2026.pdf). `pagina` = página del PDF, que
+  // coincide con el número impreso.
+  { partidoId: 'adelante', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Que la vivienda sea un derecho exigible ante los tribunales y que ningún alquiler supere el 20 % del salario, con contratos indefinidos.' },
+  { partidoId: 'adelante', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Pasar a manos públicas las viviendas de bancos y fondos para lograr un parque público de alquiler de al menos el 9 % del total.' },
+  { partidoId: 'adelante', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Prohibir que los fondos compren vivienda y la compra especulativa, y un impuesto a la vivienda vacía de grandes propietarios.' },
+  { partidoId: 'adelante', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Crear una constructora pública e ilegalizar las empresas de «desokupación».' },
+  { partidoId: 'adelante', temaId: 'vivienda', edicion: 2026, pagina: 50, resumen: 'Ninguna licencia nueva de piso turístico en zonas tensionadas, retirada progresiva y cupos por zona según la población.' },
+
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Jornada laboral de 32 horas sin rebaja de sueldo.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 8, resumen: 'Prohibir el turno partido sin rebaja de salario.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 9, resumen: 'Que los salarios y el salario mínimo suban por ley con la inflación.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 11, resumen: 'Cuota de autónomos según ingresos reales, bonificada en vacaciones y permisos, con ventanilla única y asesoría pública gratuita.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Una red de supermercados públicos que pague precios justos al campo y abarate los productos básicos.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 21, resumen: 'Una banca pública que dé crédito a pymes, autónomos, cooperativas y vivienda pública.' },
+  { partidoId: 'adelante', temaId: 'empleo', edicion: 2026, pagina: 31, resumen: 'Una red pública de hoteles y campings asequibles, tasa turística y fin de la subcontratación en los hoteles.' },
+
+  { partidoId: 'adelante', temaId: 'impuestos', edicion: 2026, pagina: 10, resumen: 'Impuesto a las grandes fortunas y a los grandes propietarios de tierras.' },
+  { partidoId: 'adelante', temaId: 'impuestos', edicion: 2026, pagina: 10, resumen: 'Un IRPF que baje a las rentas más bajas y suba con fuerza a partir de 100.000 euros al año.' },
+  { partidoId: 'adelante', temaId: 'impuestos', edicion: 2026, pagina: 10, resumen: 'Impuestos permanentes a los beneficios extraordinarios de la banca y las eléctricas.' },
+  { partidoId: 'adelante', temaId: 'impuestos', edicion: 2026, pagina: 15, resumen: 'Un impuesto sobre los beneficios que la sanidad privada obtiene de los conciertos, destinado a investigar el cáncer.' },
+
+  { partidoId: 'adelante', temaId: 'pensiones', edicion: 2026, pagina: 13, resumen: 'Blindar en la Constitución un sistema de pensiones 100 % público, revalorizado con el IPC real por ley.' },
+  { partidoId: 'adelante', temaId: 'pensiones', edicion: 2026, pagina: 13, resumen: 'Igualar las pensiones mínimas y no contributivas al salario mínimo neto.' },
+  { partidoId: 'adelante', temaId: 'pensiones', edicion: 2026, pagina: 13, resumen: 'Jubilación a los 64 años, desde los 55 con contrato de relevo, y completa con 40 años cotizados.' },
+  { partidoId: 'adelante', temaId: 'pensiones', edicion: 2026, pagina: 20, resumen: 'Una ley estatal de cuidados con el Estado pagando la mitad de la dependencia y una empresa pública andaluza de ayuda a domicilio.' },
+
+  { partidoId: 'adelante', temaId: 'sanidad', edicion: 2026, pagina: 14, resumen: 'Sanidad 100 % pública: gasto mínimo del 8 % del PIB por ley, derogar la Ley 15/1997 y acabar con conciertos y externalizaciones.' },
+  { partidoId: 'adelante', temaId: 'sanidad', edicion: 2026, pagina: 16, resumen: 'Cita en atención primaria en 48 horas, al menos 10 minutos por consulta y salud mental en un máximo de 15 días.' },
+  { partidoId: 'adelante', temaId: 'sanidad', edicion: 2026, pagina: 38, resumen: 'Plazos más ágiles por ley para la eutanasia y que familiares o allegados no puedan recurrirla.' },
+
+  { partidoId: 'adelante', temaId: 'educacion', edicion: 2026, pagina: 17, resumen: 'Todo el dinero público para la escuela pública hasta igualar la inversión media europea por estudiante, con ratios más bajas.' },
+  { partidoId: 'adelante', temaId: 'educacion', edicion: 2026, pagina: 18, resumen: 'Escuela infantil de 0 a 3 años gratuita y 100 % pública para toda la infancia que la necesite.' },
+  { partidoId: 'adelante', temaId: 'educacion', edicion: 2026, pagina: 19, resumen: 'Ninguna universidad privada más ni dinero público para ellas, más plazas públicas y residencias públicas para estudiantes.' },
+
+  { partidoId: 'adelante', temaId: 'juventud', edicion: 2026, pagina: 92, resumen: 'Votar desde los 16 años.' },
+  { partidoId: 'adelante', temaId: 'juventud', edicion: 2026, pagina: 45, resumen: 'Prácticas de FP pagadas con al menos el salario mínimo proporcional y cotización desde el primer día.' },
+  { partidoId: 'adelante', temaId: 'juventud', edicion: 2026, pagina: 59, resumen: 'Recuperar la deducción en el IRPF por comprar la primera vivienda y por el alquiler de los jóvenes que se emancipan.' },
+  { partidoId: 'adelante', temaId: 'juventud', edicion: 2026, pagina: 39, resumen: 'Espacios de apoyo psicológico para jóvenes en barrios y pueblos.' },
+
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 23, resumen: 'Financiación autonómica sin ordinalidad, con un fondo de nivelación inmediato y el pago de la deuda histórica con Andalucía.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 24, resumen: 'Andalucía como nacionalidad histórica, con el máximo nivel de autogobierno en cualquier reforma.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 6, resumen: 'Cercanías en las ocho provincias gestionado desde Andalucía, tren en todos los municipios de más de 20.000 habitantes y abono único andaluz.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 5, resumen: 'Revertir la liberalización ferroviaria y auditar la alta velocidad.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 26, resumen: 'Sin pagas vitalicias para los políticos y una autoridad independiente contra la corrupción.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 29, resumen: 'Derogar la «ley mordaza» y los delitos de opinión del Código Penal.' },
+  { partidoId: 'adelante', temaId: 'territorial', edicion: 2026, pagina: 92, resumen: 'Elección directa del CGPJ, referéndum de iniciativa ciudadana y referéndum obligatorio para toda reforma constitucional.' },
+
+  { partidoId: 'adelante', temaId: 'medioambiente', edicion: 2026, pagina: 22, resumen: 'Energía pública: una empresa pública andaluza de energía y una ley de emergencia climática con objetivos anuales verificables.' },
+  { partidoId: 'adelante', temaId: 'medioambiente', edicion: 2026, pagina: 22, resumen: 'Renovables pequeñas y repartidas por el territorio en lugar de macroplantas.' },
+  { partidoId: 'adelante', temaId: 'medioambiente', edicion: 2026, pagina: 25, resumen: 'Una ley del ciclo del agua y una ley estatal para proteger Doñana.' },
+  { partidoId: 'adelante', temaId: 'medioambiente', edicion: 2026, pagina: 120, resumen: 'Transición hasta abolir la tauromaquia y prohibir que los menores de 16 años asistan a corridas.' },
+
+  { partidoId: 'adelante', temaId: 'igualdad', edicion: 2026, pagina: 27, resumen: 'Un Pacto de Estado contra la violencia machista con presupuesto propio.' },
+  { partidoId: 'adelante', temaId: 'igualdad', edicion: 2026, pagina: 27, resumen: 'Permisos por nacimiento iguales y pagados al 100 %.' },
+  { partidoId: 'adelante', temaId: 'igualdad', edicion: 2026, pagina: 27, resumen: 'El aborto en la sanidad pública y en la Constitución, sin dinero público para quien acose a las mujeres que abortan.' },
+  { partidoId: 'adelante', temaId: 'igualdad', edicion: 2026, pagina: 103, resumen: 'Un plan estatal contra la LGTBIfobia y plazos garantizados en la sanidad para las personas trans.' },
+
+  { partidoId: 'adelante', temaId: 'inmigracion', edicion: 2026, pagina: 28, resumen: 'Derogar la Ley de Extranjería y una regularización extraordinaria.' },
+  { partidoId: 'adelante', temaId: 'inmigracion', edicion: 2026, pagina: 28, resumen: 'Cerrar los CIE, empezando por el de Algeciras.' },
+
+  { partidoId: 'adelante', temaId: 'exterior', edicion: 2026, pagina: 32, resumen: 'Romper relaciones con Israel, embargo total de armas y apoyo al boicot, las desinversiones y las sanciones.' },
+  { partidoId: 'adelante', temaId: 'exterior', edicion: 2026, pagina: 32, resumen: 'Autodeterminación del Sáhara Occidental, con España asumiendo su papel de potencia administradora.' },
+  { partidoId: 'adelante', temaId: 'exterior', edicion: 2026, pagina: 109, resumen: 'Rechazo al rearme europeo y al objetivo del 5 % de la OTAN, y reducción progresiva del gasto militar.' },
+  { partidoId: 'adelante', temaId: 'exterior', edicion: 2026, pagina: 109, resumen: 'Un referéndum sobre la permanencia de España en la OTAN.' },
+  { partidoId: 'adelante', temaId: 'exterior', edicion: 2026, pagina: 109, resumen: 'Renegociar los convenios de Rota y Morón con el objetivo de cerrar las bases extranjeras.' },
+
+  // Teruel Existe: «Programa electoral. Vamos a seguir defendiendo nuestra
+  // tierra» (publicado en teruelexiste.info; copia en
+  // public/programas/existe-2026.pdf). `pagina` = página del PDF, que coincide
+  // con el número impreso.
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 3, resumen: 'Un «mecanismo rural de garantía»: toda ley y política pública se diseñará y evaluará pensando en sus efectos sobre el medio rural.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 3, resumen: 'Repartir los fondos europeos con el criterio de zonas escasamente pobladas en lugar del PIB por habitante.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 5, resumen: 'Reformar la financiación autonómica para que cuente el coste real de dar servicios con poca población, dispersión y orografía difícil.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 5, resumen: 'Reconocer la deuda histórica del Estado con Teruel, un plan estatal específico para la provincia y subir el FITE a 100 millones para proyectos que creen empleo.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Terminar y ampliar las autovías A-68, A-40 y A-25, y una nueva autovía Teruel-Requena-Almansa, para pasar de un modelo radial a una red mallada.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Corredor ferroviario Cantábrico-Mediterráneo con doble vía electrificada y uso mixto, y tren directo Teruel-Madrid.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Fibra de al menos 300 megas simétricos y 5G real en las zonas rurales.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 13, resumen: 'Un Pacto de Estado contra la despoblación que dedique cada año, durante 30 años, al menos el 2 % del PIB a corregir los desequilibrios territoriales.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 13, resumen: 'Plan 300/30/30: 300 megas en todos los municipios, servicios básicos a menos de 30 minutos y una vía de alta capacidad a menos de 30 km.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 13, resumen: 'Llevar sedes de organismos y empresas públicas a ciudades medianas y al medio rural, y que Correos acerque la Administración a los pueblos.' },
+  { partidoId: 'existe', temaId: 'territorial', edicion: 2026, pagina: 15, resumen: 'Elegir directamente a los representantes de las diputaciones provinciales y de las comarcas.' },
+
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 3, resumen: 'Moratoria a los grandes parques renovables y a las líneas de muy alta tensión para ordenar su implantación; los macroparques pagarán un canon para el desarrollo local.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 4, resumen: 'Centros de datos solo con las máximas garantías ambientales y sociales: el agua y la energía, primero para la economía productiva y la ciudadanía.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 4, resumen: 'Reservar el 20 % de la capacidad de la red para pequeñas instalaciones y apoyar el autoconsumo y las comunidades energéticas.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 4, resumen: 'Cumplir los objetivos de emisiones de 2030 y la neutralidad climática en 2050.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 10, resumen: 'No al trasvase del Ebro.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 11, resumen: 'Una estrategia nacional contra los incendios todo el año y apoyo a la ganadería extensiva y la silvicultura para prevenirlos.' },
+  { partidoId: 'existe', temaId: 'medioambiente', edicion: 2026, pagina: 14, resumen: 'Más parques naturales y protección más fuerte para paisajes como el Maestrazgo, los Pinares de Rodeno y los Puertos de Beceite.' },
+
+  { partidoId: 'existe', temaId: 'empleo', edicion: 2026, pagina: 11, resumen: 'Ayudas al funcionamiento de las empresas y autónomos de Teruel al máximo que permite la UE (20 % de los costes laborales).' },
+  { partidoId: 'existe', temaId: 'empleo', edicion: 2026, pagina: 11, resumen: 'Atraer industria al medio rural ligada a los recursos de la zona y transformar los productos donde se producen.' },
+  { partidoId: 'existe', temaId: 'empleo', edicion: 2026, pagina: 12, resumen: 'Reindustrializar de verdad las Cuencas Mineras y Andorra, y crear áreas logístico-industriales en el Bajo Aragón y el Jiloca.' },
+  { partidoId: 'existe', temaId: 'empleo', edicion: 2026, pagina: 10, resumen: 'Defender la agricultura y ganadería familiar frente a los fondos de inversión y las megagranjas, e igualar la PAC entre territorios vecinos.' },
+  { partidoId: 'existe', temaId: 'empleo', edicion: 2026, pagina: 13, resumen: 'Un complemento salarial para los empleados públicos de zonas poco pobladas y de plazas difíciles de cubrir.' },
+
+  { partidoId: 'existe', temaId: 'impuestos', edicion: 2026, pagina: 13, resumen: 'En pueblos de menos de 5.000 habitantes con despoblación: exención del IBI para rentas bajas y medias, 80 % menos de ITP al comprar vivienda y hasta 25 % menos de IRPF.' },
+  { partidoId: 'existe', temaId: 'impuestos', edicion: 2026, pagina: 5, resumen: 'Una fiscalidad progresiva con bonificaciones para atraer y asentar población en la provincia.' },
+  { partidoId: 'existe', temaId: 'impuestos', edicion: 2026, pagina: 4, resumen: 'Un fondo soberano financiado con un gravamen a las actividades extractivas y recuperar el canon que compensaba a las provincias productoras de energía.' },
+
+  { partidoId: 'existe', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Vivienda pública de alquiler en todos los municipios, al menos cuatro en cada localidad pequeña.' },
+  { partidoId: 'existe', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Que la vivienda protegida llegue a todo el territorio y no solo a las grandes ciudades.' },
+  { partidoId: 'existe', temaId: 'vivienda', edicion: 2026, pagina: 7, resumen: 'Permitir limitar los pisos turísticos a un porcentaje del parque (por ejemplo, el 5 %) en los municipios con presión turística.' },
+  { partidoId: 'existe', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Ayudas para rehabilitar 700.000 viviendas al año en eficiencia energética, el 30 % en el medio rural.' },
+
+  { partidoId: 'existe', temaId: 'sanidad', edicion: 2026, pagina: 5, resumen: 'Un pacto de Estado por la sanidad pública y llevar la atención primaria al 25 % del presupuesto sanitario.' },
+  { partidoId: 'existe', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Mejores sueldos y carrera para retener personal sanitario, sobre todo en los centros rurales, y ajustar las plazas MIR a las necesidades.' },
+  { partidoId: 'existe', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Listas de espera únicas y con los mismos criterios en todas las comunidades.' },
+  { partidoId: 'existe', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Cribado de cáncer de próstata y de pulmón, e historia clínica electrónica válida en todo el Estado.' },
+  { partidoId: 'existe', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Transporte sanitario urgente público las 24 horas, todo el año.' },
+
+  { partidoId: 'existe', temaId: 'educacion', edicion: 2026, pagina: 6, resumen: 'Educación pública de calidad en todo el territorio, escolarización de 0 a 3 años y ratios de profesorado adaptadas al medio rural.' },
+  { partidoId: 'existe', temaId: 'educacion', edicion: 2026, pagina: 12, resumen: 'Más grados y másteres en los campus de la provincia, incluidos Medicina e Ingeniería Aeronáutica en Teruel, y consolidar la UNED.' },
+  { partidoId: 'existe', temaId: 'educacion', edicion: 2026, pagina: 12, resumen: 'Ayudas para atraer y retener investigadores en las provincias menos pobladas.' },
+
+  { partidoId: 'existe', temaId: 'pensiones', edicion: 2026, pagina: 7, resumen: 'Adaptar la atención a la dependencia al medio rural, con más ayuda a domicilio, teleasistencia y centros de proximidad.' },
+  { partidoId: 'existe', temaId: 'pensiones', edicion: 2026, pagina: 7, resumen: 'Combatir la soledad no deseada de las personas mayores y crear «islas de cuidados» en los pueblos.' },
+
+  { partidoId: 'existe', temaId: 'igualdad', edicion: 2026, pagina: 15, resumen: 'Cumplir y actualizar el Pacto de Estado contra la Violencia de Género, con recursos que lleguen también a los pueblos pequeños.' },
+  { partidoId: 'existe', temaId: 'igualdad', edicion: 2026, pagina: 15, resumen: 'Ampliar el permiso de lactancia hasta un año, acumulable.' },
+  { partidoId: 'existe', temaId: 'igualdad', edicion: 2026, pagina: 15, resumen: 'Financiar el emprendimiento de las mujeres rurales y reconocer su papel en la agricultura y la ganadería.' },
+  { partidoId: 'existe', temaId: 'igualdad', edicion: 2026, pagina: 14, resumen: 'Dar visibilidad al colectivo LGTBIQ+ en los pueblos y luchar contra la discriminación racial y de género.' },
+
+  { partidoId: 'existe', temaId: 'juventud', edicion: 2026, pagina: 10, resumen: 'Apoyo especial a los jóvenes que se incorporan a explotaciones agrícolas y ganaderas familiares.' },
+  { partidoId: 'existe', temaId: 'juventud', edicion: 2026, pagina: 14, resumen: 'Fomentar el teletrabajo en la Administración y la empresa privada para que se pueda vivir en los pueblos.' },
+
+  // Junts: «Programa electoral 29N. Catalunya al centre» (en catalán; copia en
+  // public/programas/junts-2026.pdf). `pagina` = página del PDF, que coincide
+  // con el número impreso.
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 17, resumen: 'Desalojar las ocupaciones ilegales en un máximo de 48 horas con un juicio inmediato, y que la policía pueda desalojar al momento si la detecta mientras se produce.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 17, resumen: 'Que la Administración pague al pequeño propietario, en dos meses y con fondos estatales, el alquiler que no pueda pagar un inquilino vulnerable.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 17, resumen: 'Recuperar en el IRPF la deducción del 15 % por alquiler, por hipoteca y por ahorro para comprar la primera vivienda.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 17, resumen: 'Bajar del 10 % al 5 % el IVA de la vivienda nueva para residencia habitual, con límites de precio y renta.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 18, resumen: 'Ceder gratis a la Generalitat y a los ayuntamientos todas las viviendas y el suelo de la Sareb y de Casa 47 en Cataluña.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 60, resumen: 'Derogar los artículos de la Ley de Vivienda sobre contención de precios y zonas tensionadas por invadir competencias catalanas.' },
+  { partidoId: 'junts', temaId: 'vivienda', edicion: 2026, pagina: 16, resumen: 'Impedir que los «fondos buitre» compren vivienda para especular.' },
+
+  { partidoId: 'junts', temaId: 'impuestos', edicion: 2026, pagina: 68, resumen: 'Un concierto económico para Cataluña, fuera del régimen común, con una Agencia Tributaria de Cataluña que recaude todos los impuestos.' },
+  { partidoId: 'junts', temaId: 'impuestos', edicion: 2026, pagina: 69, resumen: 'Que autónomos y empresas que facturan menos de dos millones paguen el IVA solo cuando cobren las facturas.' },
+  { partidoId: 'junts', temaId: 'impuestos', edicion: 2026, pagina: 69, resumen: 'Bajar al 10 % el IVA de la luz y el gas, y al 4 % el de la ayuda a domicilio, los centros de día y las residencias.' },
+  { partidoId: 'junts', temaId: 'impuestos', edicion: 2026, pagina: 69, resumen: 'Acelerar la rebaja del impuesto de sociedades para pymes y un IVA franquiciado voluntario para autónomos que facturan hasta 85.000 euros.' },
+  { partidoId: 'junts', temaId: 'impuestos', edicion: 2026, pagina: 67, resumen: 'Publicar cada año las balanzas fiscales y bajar la carga fiscal a la clase media, los autónomos y las pymes.' },
+
+  { partidoId: 'junts', temaId: 'empleo', edicion: 2026, pagina: 70, resumen: 'Un salario mínimo catalán propio que avance hacia el 60 % del salario medio de Cataluña.' },
+  { partidoId: 'junts', temaId: 'empleo', edicion: 2026, pagina: 70, resumen: 'Ampliar el límite de horas extra voluntarias, registradas y pagadas.' },
+  { partidoId: 'junts', temaId: 'empleo', edicion: 2026, pagina: 70, resumen: 'Un plan contra el absentismo laboral y más colaboración de las mutuas con la sanidad pública.' },
+  { partidoId: 'junts', temaId: 'empleo', edicion: 2026, pagina: 68, resumen: 'Traspasar a Cataluña la gestión de las prestaciones de paro.' },
+
+  { partidoId: 'junts', temaId: 'pensiones', edicion: 2026, pagina: 56, resumen: 'Pensiones públicas revisadas cada año con el IPC catalán.' },
+  { partidoId: 'junts', temaId: 'pensiones', edicion: 2026, pagina: 70, resumen: 'Eliminar, con efecto retroactivo, las penalizaciones por jubilación anticipada con 40 o más años cotizados.' },
+  { partidoId: 'junts', temaId: 'pensiones', edicion: 2026, pagina: 70, resumen: 'Traspasar la Seguridad Social a Cataluña.' },
+  { partidoId: 'junts', temaId: 'pensiones', edicion: 2026, pagina: 45, resumen: 'Que el Estado pague el 50 % de la dependencia, como fija la ley.' },
+  { partidoId: 'junts', temaId: 'pensiones', edicion: 2026, pagina: 57, resumen: 'Obligar a los bancos a atender en persona y en catalán a las personas mayores, y endurecer las penas por estafas contra ellas.' },
+
+  { partidoId: 'junts', temaId: 'sanidad', edicion: 2026, pagina: 51, resumen: 'Avanzar hacia un gasto sanitario público del 8 % del PIB y el 25 % del presupuesto de salud para la atención primaria.' },
+  { partidoId: 'junts', temaId: 'sanidad', edicion: 2026, pagina: 51, resumen: 'Más plazas MIR, sobre todo de medicina de familia, y traspasar a Cataluña la formación de especialistas.' },
+  { partidoId: 'junts', temaId: 'sanidad', edicion: 2026, pagina: 51, resumen: 'Defender el modelo sanitario catalán de colaboración con proveedores no públicos frente a medidas estatales uniformizadoras.' },
+  { partidoId: 'junts', temaId: 'sanidad', edicion: 2026, pagina: 52, resumen: 'Incorporar antes a la sanidad pública los medicamentos aprobados en la UE, como los del alzhéimer, y priorizar su investigación.' },
+
+  { partidoId: 'junts', temaId: 'educacion', edicion: 2026, pagina: 53, resumen: 'Defender la inmersión lingüística, con el catalán como lengua vehicular de la escuela.' },
+  { partidoId: 'junts', temaId: 'educacion', edicion: 2026, pagina: 54, resumen: 'Financiación estatal de la educación de 0 a 3 años y gratuidad de la enseñanza de 16 a 18 años.' },
+  { partidoId: 'junts', temaId: 'educacion', edicion: 2026, pagina: 54, resumen: 'Actualizar los módulos de la concertada a los costes reales.' },
+  { partidoId: 'junts', temaId: 'educacion', edicion: 2026, pagina: 60, resumen: 'Un distrito universitario propio de Cataluña y el traspaso completo de las becas, para avanzar hacia becas salario.' },
+
+  { partidoId: 'junts', temaId: 'juventud', edicion: 2026, pagina: 61, resumen: 'Menores de 35 años: sin IRPF estatal el primer año de trabajo, 75 % menos el segundo, 50 % el tercero y rebajas hasta el décimo.' },
+  { partidoId: 'junts', temaId: 'juventud', edicion: 2026, pagina: 61, resumen: 'Cuota cero de autónomos durante tres años para menores de 35.' },
+  { partidoId: 'junts', temaId: 'juventud', edicion: 2026, pagina: 18, resumen: 'Que el aval para la entrada de la primera vivienda llegue de verdad a los menores de 35, y convertir el Bono Joven en una renta de emancipación.' },
+  { partidoId: 'junts', temaId: 'juventud', edicion: 2026, pagina: 59, resumen: 'Reconocer el derecho a votar a los 16 años.' },
+  { partidoId: 'junts', temaId: 'juventud', edicion: 2026, pagina: 62, resumen: 'Productos de higiene menstrual, anticonceptivos y preservativos gratis hasta los 35 años.' },
+
+  { partidoId: 'junts', temaId: 'inmigracion', edicion: 2026, pagina: 48, resumen: 'Delegar a la Generalitat las competencias de inmigración: permisos de residencia y trabajo, expulsiones, CIE y documentos.' },
+  { partidoId: 'junts', temaId: 'inmigracion', edicion: 2026, pagina: 48, resumen: 'Oponerse a las regularizaciones masivas por decreto y priorizar la contratación en origen.' },
+  { partidoId: 'junts', temaId: 'inmigracion', edicion: 2026, pagina: 48, resumen: 'Exigir conocer el catalán para obtener el arraigo.' },
+  { partidoId: 'junts', temaId: 'inmigracion', edicion: 2026, pagina: 49, resumen: 'Que los Mossos controlen la frontera Schengen en puertos y aeropuertos, y llegar a 26.800 agentes en 2032.' },
+  { partidoId: 'junts', temaId: 'inmigracion', edicion: 2026, pagina: 49, resumen: 'Que se cumplan las órdenes de retorno, distinguiendo siempre a solicitantes de asilo, víctimas de trata y menores.' },
+
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 12, resumen: 'Cualquier referéndum pactado con el Estado sobre el futuro de Cataluña debe ofrecer la opción de la independencia.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 13, resumen: 'Garantizar el derecho de Cataluña a la autodeterminación por todos los medios democráticos.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Suprimir la Audiencia Nacional y que el TSJ de Cataluña sea la última instancia judicial en Cataluña.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Derogar la «ley mordaza», suprimir el delito de injurias y restringir el de enaltecimiento del terrorismo.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 15, resumen: 'Exigir el catalán a jueces, fiscales y letrados que trabajen en Cataluña.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 71, resumen: 'Traspaso completo de Rodalies y Media Distancia, del aeropuerto de El Prat y de los puertos.' },
+  { partidoId: 'junts', temaId: 'territorial', edicion: 2026, pagina: 23, resumen: 'Que la Generalitat asuma el tráfico, el control de armas y explosivos y la seguridad de puertos y aeropuertos.' },
+
+  { partidoId: 'junts', temaId: 'exterior', edicion: 2026, pagina: 26, resumen: 'Una Cataluña independiente miembro de la UE y de la OTAN.' },
+  { partidoId: 'junts', temaId: 'exterior', edicion: 2026, pagina: 26, resumen: 'Apoyo humanitario, financiero y militar a Ucrania frente a Rusia.' },
+  { partidoId: 'junts', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Una solución de dos estados en Oriente Próximo; defender el derecho de Israel a existir y a defenderse dentro del derecho internacional, y condenar a Hamás y Hezbolá.' },
+  { partidoId: 'junts', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Rechazar los boicots indiscriminados contra judíos o israelíes y reforzar la lucha contra el antisemitismo.' },
+  { partidoId: 'junts', temaId: 'exterior', edicion: 2026, pagina: 27, resumen: 'Oficialidad plena del catalán en la UE.' },
+
+  { partidoId: 'junts', temaId: 'igualdad', edicion: 2026, pagina: 33, resumen: 'Reforzar la igualdad salarial con auditorías retributivas y que cuidar de hijos o familiares no reduzca la pensión.' },
+  { partidoId: 'junts', temaId: 'igualdad', edicion: 2026, pagina: 34, resumen: 'Retirada rápida de imágenes íntimas difundidas sin consentimiento o manipuladas con IA, y perseguir la violencia sexual digital contra menores.' },
+  { partidoId: 'junts', temaId: 'igualdad', edicion: 2026, pagina: 36, resumen: 'Aprobar la ley que castiga las terapias de conversión y oponerse a recortar la ley trans y LGTBI.' },
+  { partidoId: 'junts', temaId: 'igualdad', edicion: 2026, pagina: 46, resumen: 'Equiparar las familias monoparentales a las numerosas en las ayudas estatales.' },
+
+  { partidoId: 'junts', temaId: 'medioambiente', edicion: 2026, pagina: 81, resumen: 'Neutralidad climática antes de 2050, reduciendo más del 55 % de las emisiones antes de 2030.' },
+  { partidoId: 'junts', temaId: 'medioambiente', edicion: 2026, pagina: 81, resumen: 'Competencia plena sobre el agua en Cataluña, incluidas las cuencas que hoy dependen de la Confederación del Ebro.' },
+  { partidoId: 'junts', temaId: 'medioambiente', edicion: 2026, pagina: 77, resumen: 'Ampliar de 5 a 100 km el radio del autoconsumo compartido y abrir los nudos de la red a nuevos proyectos renovables.' },
+  { partidoId: 'junts', temaId: 'medioambiente', edicion: 2026, pagina: 41, resumen: 'Endurecer las penas por maltrato animal y bajar el IVA veterinario.' },
+
+  // EH Bildu: «Programa. Garantía y derechos» para el 29-N (difundido el
+  // 16-11-2026; copia en public/programas/bildu-2026.pdf). `pagina` = página
+  // del PDF, que coincide con el número impreso.
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Contratos de alquiler con prórroga automática y subida anual máxima del 2 % de forma permanente.' },
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Prohibir de forma permanente los desahucios de personas vulnerables sin alternativa de vivienda, con compensación estatal.' },
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Prohibir la compra especulativa de vivienda por empresas, fondos y grandes propietarios.' },
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Exigir a los extranjeros con varias propiedades dos años empadronados antes de comprar, y que la vivienda sea habitual o de alquiler regulado.' },
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 5, resumen: 'Prohibir que las plataformas anuncien pisos turísticos ilegales.' },
+  { partidoId: 'bildu', temaId: 'vivienda', edicion: 2026, pagina: 6, resumen: 'Eliminar las SOCIMI y sus ventajas fiscales.' },
+
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 6, resumen: 'Jornada de 32 horas o de cuatro días sin rebaja de sueldo; las pymes empezarían por 35 horas y llegarían en tres años.' },
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 6, resumen: 'Que cada comunidad pueda fijar su propio salario mínimo por encima del estatal.' },
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 6, resumen: 'Indemnización de al menos 45 días por año por despido improcedente y recuperar los salarios de tramitación.' },
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 6, resumen: 'Volver a exigir autorización de la autoridad laboral para los ERE.' },
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Un marco vasco y navarro propio de relaciones laborales y el traspaso de la Inspección de Trabajo.' },
+  { partidoId: 'bildu', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Equiparar del todo los derechos de las empleadas de hogar con los del resto de trabajadores.' },
+
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 7, resumen: 'Blindar las pensiones públicas, con revalorización con el IPC y sin subir la edad de jubilación.' },
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Subir las pensiones mínimas al menos a 1.220 euros, ligadas al salario mínimo.' },
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Subir al menos un 15 % las pensiones de viudedad y no contributivas.' },
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Jubilarse sin penalización con al menos 40 años cotizados.' },
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 8, resumen: 'Traspasar la Seguridad Social a las instituciones vascas y navarras.' },
+  { partidoId: 'bildu', temaId: 'pensiones', edicion: 2026, pagina: 12, resumen: 'Quitar el copago de los cuidados personales en la ley de dependencia y pagar las ayudas desde la fecha de solicitud.' },
+
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'Recuperar el impuesto a las energéticas y hacerlo permanente.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'Subir los impuestos a la banca y a las grandes fortunas.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'Un nuevo impuesto sobre los beneficios de las grandes cadenas de alimentación.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'IVA del 21 % para los alojamientos turísticos de corta duración.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 14, resumen: 'Derogar la reforma del artículo 135 de la Constitución, que da prioridad al pago de la deuda.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 18, resumen: 'Un impuesto especial a los vuelos privados y eliminar la exención del queroseno de aviación.' },
+  { partidoId: 'bildu', temaId: 'impuestos', edicion: 2026, pagina: 8, resumen: 'Obligar a las grandes empresas de energía y alimentación a absorber parte de las subidas de costes en situaciones de crisis, y topes temporales a los precios básicos.' },
+
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Incluir la salud bucodental en la sanidad pública.' },
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Productos de higiene menstrual gratis en farmacias, y preservativos y pruebas de ITS gratuitos.' },
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Reformar la ley de eutanasia para que incluya el sufrimiento psíquico y terceros no puedan recurrirla en los tribunales.' },
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 10, resumen: 'Limitar la venta y la publicidad de ultraprocesados y bebidas azucaradas y energéticas a menores.' },
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 11, resumen: 'Derogar la Ley 15/1997, que permite la gestión privada de servicios sanitarios.' },
+  { partidoId: 'bildu', temaId: 'sanidad', edicion: 2026, pagina: 11, resumen: 'Una farmacia pública que produzca medicamentos básicos y los que sufren desabastecimiento.' },
+
+  { partidoId: 'bildu', temaId: 'educacion', edicion: 2026, pagina: 11, resumen: 'Un sistema educativo propio para Euskal Herria, euskaldun y laico.' },
+  { partidoId: 'bildu', temaId: 'educacion', edicion: 2026, pagina: 11, resumen: 'Bajar las ratios aprovechando el descenso de la natalidad.' },
+  { partidoId: 'bildu', temaId: 'educacion', edicion: 2026, pagina: 12, resumen: 'Acercarse al 6 % del PIB de inversión en educación que recomienda la UNESCO.' },
+
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Adelantar la descarbonización al menos a 2045.' },
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Mantener el calendario de cierre de las centrales nucleares.' },
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Despliegue rápido de renovables con participación pública y comunitaria y beneficios para los territorios donde se instalan.' },
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 18, resumen: 'Eliminar las subvenciones a los combustibles fósiles , incluida la equiparación del impuesto de hidrocarburos.' },
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 18, resumen: 'Ayudas de hasta el 100 % para la rehabilitación energética de las viviendas de las personas más vulnerables.' },
+  { partidoId: 'bildu', temaId: 'medioambiente', edicion: 2026, pagina: 17, resumen: 'Ayudas al coche eléctrico según renta y fin de las subvenciones a los híbridos.' },
+
+  { partidoId: 'bildu', temaId: 'igualdad', edicion: 2026, pagina: 19, resumen: 'Blindar el derecho al aborto y zonas de protección frente al acoso alrededor de las clínicas.' },
+  { partidoId: 'bildu', temaId: 'igualdad', edicion: 2026, pagina: 19, resumen: 'Reconocer y castigar la violencia vicaria.' },
+  { partidoId: 'bildu', temaId: 'igualdad', edicion: 2026, pagina: 19, resumen: 'Prohibir las terapias de conversión y no aceptar retrocesos en los derechos de las personas trans.' },
+  { partidoId: 'bildu', temaId: 'igualdad', edicion: 2026, pagina: 14, resumen: 'Ampliar los permisos de las familias monoparentales para igualarlos a los de dos progenitores, y crear permisos de maternidad antes y después del parto.' },
+
+  { partidoId: 'bildu', temaId: 'inmigracion', edicion: 2026, pagina: 20, resumen: 'Una regularización efectiva y una nueva Ley de Extranjería basada en los derechos humanos.' },
+  { partidoId: 'bildu', temaId: 'inmigracion', edicion: 2026, pagina: 20, resumen: 'Rechazar las devoluciones sumarias, los CIE y las partes restrictivas del Pacto Europeo de Migración y Asilo.' },
+  { partidoId: 'bildu', temaId: 'inmigracion', edicion: 2026, pagina: 20, resumen: 'Acceso a la sanidad, la educación y la vivienda sea cual sea la situación administrativa.' },
+  { partidoId: 'bildu', temaId: 'inmigracion', edicion: 2026, pagina: 20, resumen: 'Ampliar el derecho a voto de los extranjeros residentes.' },
+  { partidoId: 'bildu', temaId: 'inmigracion', edicion: 2026, pagina: 20, resumen: 'Traspasar las competencias de migración para un modelo vasco de acogida.' },
+
+  { partidoId: 'bildu', temaId: 'juventud', edicion: 2026, pagina: 21, resumen: 'Que las redes desactiven por defecto las recomendaciones algorítmicas basadas en el perfil de los menores.' },
+  { partidoId: 'bildu', temaId: 'juventud', edicion: 2026, pagina: 13, resumen: 'Garantizar la participación de jóvenes y niños en la vida política y social.' },
+  { partidoId: 'bildu', temaId: 'juventud', edicion: 2026, pagina: 6, resumen: 'Medidas contra la temporalidad y la parcialidad, que afectan sobre todo a jóvenes y mujeres.' },
+
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 23, resumen: 'Reconocer Euskal Herria como nación y el carácter plurinacional del Estado.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 24, resumen: 'Reconocer el derecho a decidir del pueblo vasco y respetar los nuevos estatus que refrende la sociedad vasca.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 24, resumen: 'Traspasar todas las competencias pendientes y otras nuevas, como migración, Seguridad Social, puertos, aeropuertos y energía.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 24, resumen: 'Defender y ampliar el Concierto y el Convenio económicos, con un nuevo cálculo del Cupo.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 25, resumen: 'Atención en euskera en toda la Administración del Estado y oficialidad del euskera, el catalán y el gallego en la UE.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 26, resumen: 'Que las selecciones deportivas vascas puedan competir oficialmente a nivel internacional.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 22, resumen: 'Derogar la «ley mordaza» y despenalizar las críticas a la Corona, a las instituciones y a los sentimientos religiosos.' },
+  { partidoId: 'bildu', temaId: 'territorial', edicion: 2026, pagina: 27, resumen: 'Derogar la Ley de Secretos Oficiales y retirar de Euskadi y Navarra la Policía Nacional y la Guardia Civil.' },
+
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Rechazar la OTAN y la subida del gasto en defensa que exige.' },
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'No enviar armas ni financiarlas en los conflictos; apoyar el diálogo y la diplomacia.' },
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Cerrar el campo de tiro de las Bardenas e impedir que Estados Unidos use bases como Rota y Morón.' },
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Adherirse al Tratado sobre la Prohibición de las Armas Nucleares.' },
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 29, resumen: 'Romper el «Tratado de Amistad» de la UE con Israel, cortar las relaciones comerciales y un embargo total de armas.' },
+  { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 29, resumen: 'Recuperar el apoyo a la autodeterminación del Sáhara Occidental.' },
+];
+
+const PROPUESTAS_2023: Propuesta[] = [
   // ===== Programas de las elecciones del 23-J de 2023 =====
   // PSOE: «Programa electoral. Elecciones generales 23 julio 2023»
   // PP: «Un proyecto al servicio de un gran país. 365 medidas»
@@ -883,6 +1811,8 @@ export const PROPUESTAS: Propuesta[] = [
   { partidoId: 'cc', temaId: 'exterior', edicion: 2023, pagina: 5, resumen: 'Reforzar la alianza con Portugal y Francia en defensa de las regiones ultraperiféricas y pedir que Canarias quede exenta de la nueva tasa verde a los vuelos.' },
   { partidoId: 'cc', temaId: 'exterior', edicion: 2023, pagina: 13, resumen: 'Promover Canarias como plataforma atlántica para atraer inversión exterior.' },
 ];
+
+export const PROPUESTAS: Propuesta[] = [...PROPUESTAS_2026, ...PROPUESTAS_2023];
 
 // Programa que se muestra de cada partido: el de 2026 si ya hay propuestas
 // suyas de 2026; si no, el de 2023; si no hay ninguno, null.

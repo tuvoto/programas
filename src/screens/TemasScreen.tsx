@@ -205,8 +205,13 @@ function textoEdiciones(): string {
   const nuevos = CON_PROGRAMA.filter((p) => edicionVigente(p.id) === 2026).map((p) => p.siglas);
   if (nuevos.length === 0) return 'Programas de 2023 hasta que salgan los del 29-N.';
   if (nuevos.length === CON_PROGRAMA.length) return 'Programas del 29-N.';
-  const lista = nuevos.length === 1 ? nuevos[0] : `${nuevos.slice(0, -1).join(', ')} y ${nuevos[nuevos.length - 1]}`;
-  return `Ya con su programa del 29-N: ${lista}. El resto, con el de 2023 hasta que publiquen el suyo.`;
+  const y = (l: string[]) => (l.length === 1 ? l[0] : `${l.slice(0, -1).join(', ')} y ${l[l.length - 1]}`);
+  const pendientes = CON_PROGRAMA.filter((p) => edicionVigente(p.id) !== 2026).map((p) => p.siglas);
+  // Cuando ya son mayoría los de 2026, es más corto nombrar los que faltan.
+  if (nuevos.length > pendientes.length) {
+    return `Ya con su programa del 29-N: ${nuevos.length} partidos. ${y(pendientes)}, con el de 2023 hasta que publiquen el suyo.`;
+  }
+  return `Ya con su programa del 29-N: ${y(nuevos)}. El resto, con el de 2023 hasta que publiquen el suyo.`;
 }
 
 // Aviso de «Nuevo» durante la primera semana de cada programa del 29-N. Se
@@ -220,7 +225,13 @@ function AvisoNuevo() {
   if (nuevos.length === 0) return null;
   const varios = nuevos.length > 1;
   const siglas = nuevos.map((p) => p.siglas);
-  const nombres = varios ? `${siglas.slice(0, -1).join(', ')} y ${siglas[siglas.length - 1]}` : siglas[0];
+  // Con muchos partidos a la vez, la lista de siglas no cabe: se dice cuántos.
+  const nombres =
+    nuevos.length > 4
+      ? `${nuevos.length} partidos`
+      : varios
+        ? `${siglas.slice(0, -1).join(', ')} y ${siglas[siglas.length - 1]}`
+        : siglas[0];
   return (
     <Revelar>
       <Pulsable

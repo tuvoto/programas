@@ -1240,6 +1240,77 @@ const PROPUESTAS_2026: Propuesta[] = [
   { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 28, resumen: 'Adherirse al Tratado sobre la Prohibición de las Armas Nucleares.' },
   { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 29, resumen: 'Romper el «Tratado de Amistad» de la UE con Israel, cortar las relaciones comerciales y un embargo total de armas.' },
   { partidoId: 'bildu', temaId: 'exterior', edicion: 2026, pagina: 29, resumen: 'Recuperar el apoyo a la autodeterminación del Sáhara Occidental.' },
+
+  // Unidad del Pueblo Canario: «Manifiesto electoral» con las líneas básicas
+  // de su programa (publicado en unidadpueblocanario.org; copia en
+  // public/programas/upc-2026.pdf). `pagina` = página del PDF, que coincide
+  // con el número impreso.
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 2, resumen: 'Declarar la vivienda derecho fundamental en la Constitución, exigible por cada persona.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 3, resumen: 'Controlar los precios de venta y alquiler, y renovar automáticamente los contratos de alquiler de vivienda habitual.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 3, resumen: 'Expropiar viviendas a los «fondos buitre» y obligar a los grandes propietarios a ceder sus viviendas vacías a un parque público de alquiler.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 3, resumen: 'Que la vivienda pública llegue al menos al 9 % del parque, frente al 2 % actual en Canarias.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Eliminar las SOCIMI y destinar a uso social las viviendas de la Sareb y de los bancos rescatados.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Ningún desahucio de familias vulnerables sin realojo digno garantizado por la Administración.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Hipoteca al 0 % hasta 100.000 euros para la primera vivienda, sin límite de edad.' },
+  { partidoId: 'upc', temaId: 'vivienda', edicion: 2026, pagina: 4, resumen: 'Limitar la compra de vivienda por extranjeros no residentes y regular la vivienda vacacional en zonas residenciales.' },
+
+  { partidoId: 'upc', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Subir el salario mínimo de forma progresiva hasta 1.800 euros en doce pagas.' },
+  { partidoId: 'upc', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Jornada de 37,5 horas por ley y avanzar hacia las 34 horas semanales.' },
+  { partidoId: 'upc', temaId: 'empleo', edicion: 2026, pagina: 7, resumen: 'Más control de las horas extra con registro de jornada e Inspección de Trabajo, con atención especial a turismo, hostelería y comercio.' },
+  { partidoId: 'upc', temaId: 'empleo', edicion: 2026, pagina: 13, resumen: 'Tarifa plana de 88 euros al mes para los autónomos con menos ingresos.' },
+  { partidoId: 'upc', temaId: 'empleo', edicion: 2026, pagina: 10, resumen: 'Diversificar la economía canaria para depender menos del turismo: sector primario, economía azul, renovables e investigación.' },
+
+  { partidoId: 'upc', temaId: 'impuestos', edicion: 2026, pagina: 11, resumen: 'IRPF más progresivo, con más tramos a partir de 120.000 euros.' },
+  { partidoId: 'upc', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Mantener el impuesto a la banca, recuperar el de las energéticas y hacer permanente el de las grandes fortunas.' },
+  { partidoId: 'upc', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Deducción de 175 a 300 euros en el IRPF para rentas de menos de 40.000 euros mientras dure la inflación alta.' },
+  { partidoId: 'upc', temaId: 'impuestos', edicion: 2026, pagina: 12, resumen: 'Deflactar el IRPF hasta rentas de 65.000 euros.' },
+  { partidoId: 'upc', temaId: 'impuestos', edicion: 2026, pagina: 10, resumen: 'Una tasa turística para los no residentes.' },
+
+  { partidoId: 'upc', temaId: 'pensiones', edicion: 2026, pagina: 6, resumen: 'Actualizar las pensiones con el IPC por ley de forma inmediata y blindarlo en la Constitución.' },
+  { partidoId: 'upc', temaId: 'pensiones', edicion: 2026, pagina: 6, resumen: 'Subir las pensiones mínimas, no contributivas y de viudedad hacia los objetivos de la Carta Social Europea.' },
+  { partidoId: 'upc', temaId: 'pensiones', edicion: 2026, pagina: 6, resumen: 'Jubilación antes de los 65 sin penalización en trabajos duros, como camareras de piso, ayuda a domicilio o estiba.' },
+  { partidoId: 'upc', temaId: 'pensiones', edicion: 2026, pagina: 5, resumen: 'Un sistema público y universal de cuidados de larga duración, y un programa contra la soledad no deseada de las personas mayores.' },
+
+  { partidoId: 'upc', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Derogar la Ley 15/1997 para evitar la privatización de la sanidad.' },
+  { partidoId: 'upc', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Que la sanidad pública cubra el dentista, la vista, el oído y la fisioterapia.' },
+  { partidoId: 'upc', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Una farmacéutica pública y topes al precio de los medicamentos.' },
+  { partidoId: 'upc', temaId: 'sanidad', edicion: 2026, pagina: 6, resumen: 'Nutricionistas en atención primaria y una Ley para la Diabetes.' },
+
+  { partidoId: 'upc', temaId: 'educacion', edicion: 2026, pagina: 5, resumen: 'Educación pública y gratuita de 0 a 3 años y ratios más bajas en colegios e institutos.' },
+  { partidoId: 'upc', temaId: 'educacion', edicion: 2026, pagina: 5, resumen: 'Reforzar las universidades públicas y controlar la proliferación de las privadas.' },
+  { partidoId: 'upc', temaId: 'educacion', edicion: 2026, pagina: 5, resumen: 'Un plan estatal para adaptar los colegios al cambio climático.' },
+
+  { partidoId: 'upc', temaId: 'juventud', edicion: 2026, pagina: 8, resumen: 'Votar desde los 16 años.' },
+  { partidoId: 'upc', temaId: 'juventud', edicion: 2026, pagina: 8, resumen: 'Un Pacto de Estado por la emancipación juvenil (vivienda, trabajo y estudios) con participación de los jóvenes.' },
+  { partidoId: 'upc', temaId: 'juventud', edicion: 2026, pagina: 3, resumen: 'Prioridad para los jóvenes en el parque público de alquiler.' },
+
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 8, resumen: 'Que los recursos del REF no computen en la financiación autonómica y que se mantenga el peso de la insularidad en el reparto.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Mantener el descuento del 75 % para residentes en billetes de avión y barco y el 100 % para las mercancías agrícolas e industriales.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Que el Estado compense el sobrecoste eléctrico para que la luz cueste en Canarias lo mismo que en el resto de España.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 15, resumen: 'Reconocer Canarias como sujeto político, con cogestión de los aeropuertos y participación en las negociaciones con otros Estados que la afecten.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 15, resumen: 'Fijar la mediana con Marruecos y reconocer las aguas, los fondos marinos y el espacio aéreo de Canarias.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 16, resumen: 'Defensa del derecho a decidir y de la autodeterminación de los pueblos.' },
+  { partidoId: 'upc', temaId: 'territorial', edicion: 2026, pagina: 18, resumen: 'Más participación directa: revocación de cargos, presupuestos participativos, referéndums y asambleas ciudadanas vinculantes.' },
+
+  { partidoId: 'upc', temaId: 'medioambiente', edicion: 2026, pagina: 13, resumen: 'Moratoria a nuevas camas e instalaciones turísticas.' },
+  { partidoId: 'upc', temaId: 'medioambiente', edicion: 2026, pagina: 14, resumen: 'Una empresa pública de energía que impulse las renovables y abarate la luz.' },
+  { partidoId: 'upc', temaId: 'medioambiente', edicion: 2026, pagina: 14, resumen: 'Un plan de placas solares en tejados y refugios climáticos ante el frío y el calor extremos.' },
+  { partidoId: 'upc', temaId: 'medioambiente', edicion: 2026, pagina: 11, resumen: 'Ampliar las reservas marinas de interés pesquero, al menos una por isla, y reforzar la vigilancia contra la pesca ilegal.' },
+  { partidoId: 'upc', temaId: 'medioambiente', edicion: 2026, pagina: 15, resumen: 'Una Ley de Biodiversidad de Canarias y protección general para tiburones y rayas en aguas canarias.' },
+
+  { partidoId: 'upc', temaId: 'inmigracion', edicion: 2026, pagina: 16, resumen: 'Una política migratoria basada en los derechos humanos, con vías legales y seguras y acogida digna.' },
+  { partidoId: 'upc', temaId: 'inmigracion', edicion: 2026, pagina: 16, resumen: 'Reparto solidario entre comunidades de los menores migrantes no acompañados.' },
+  { partidoId: 'upc', temaId: 'inmigracion', edicion: 2026, pagina: 16, resumen: 'Rechazo a la externalización de fronteras y más medios permanentes de salvamento en las islas.' },
+  { partidoId: 'upc', temaId: 'inmigracion', edicion: 2026, pagina: 10, resumen: 'Fondos europeos regionalizados para que Canarias gestione directamente la acogida, sobre todo de menores.' },
+
+  { partidoId: 'upc', temaId: 'igualdad', edicion: 2026, pagina: 18, resumen: 'Estudiar blindar el derecho al aborto en la Constitución, como Francia.' },
+  { partidoId: 'upc', temaId: 'igualdad', edicion: 2026, pagina: 17, resumen: 'Más recursos para prevenir la violencia machista y atender a las víctimas, y coeducación desde las primeras etapas.' },
+  { partidoId: 'upc', temaId: 'igualdad', edicion: 2026, pagina: 18, resumen: 'Igualdad de derechos y protección frente a la discriminación de las personas LGTBIQA+, en especial las personas trans.' },
+
+  { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 19, resumen: 'Apoyo a la autodeterminación e independencia del Sáhara Occidental.' },
+  { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 19, resumen: 'Denunciar el genocidio en Palestina y la complicidad internacional.' },
+  { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 19, resumen: 'Dedicar al menos el 0,7 % de los Presupuestos a cooperación internacional.' },
+  { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 10, resumen: 'Que la UE mantenga el trato específico a Canarias como región ultraperiférica, incluido el programa agrario POSEI.' },
 ];
 
 const PROPUESTAS_2023: Propuesta[] = [
@@ -1812,7 +1883,15 @@ const PROPUESTAS_2023: Propuesta[] = [
   { partidoId: 'cc', temaId: 'exterior', edicion: 2023, pagina: 13, resumen: 'Promover Canarias como plataforma atlántica para atraer inversión exterior.' },
 ];
 
-export const PROPUESTAS: Propuesta[] = [...PROPUESTAS_2026, ...PROPUESTAS_2023];
+// UPN se presenta al Congreso en coalición con el PP y comparte su programa
+// («Reconstrucción Nacional»): sus propuestas son las del PP, con las mismas
+// páginas del mismo PDF.
+const PROPUESTAS_UPN: Propuesta[] = PROPUESTAS_2026.filter((p) => p.partidoId === 'pp').map((p) => ({
+  ...p,
+  partidoId: 'upn',
+}));
+
+export const PROPUESTAS: Propuesta[] = [...PROPUESTAS_2026, ...PROPUESTAS_UPN, ...PROPUESTAS_2023];
 
 // Programa que se muestra de cada partido: el de 2026 si ya hay propuestas
 // suyas de 2026; si no, el de 2023; si no hay ninguno, null.

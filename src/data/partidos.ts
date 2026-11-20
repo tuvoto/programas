@@ -329,7 +329,12 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['canarias'],
     estadoCandidatura: 'confirmada',
     nota: 'Coalición registrada ante la Junta Electoral, para el Congreso y el Senado. Une a Nueva Canarias-Bloque Canarista, Podemos, Movimiento Sumar e Izquierda Unida Canaria.',
-    programa: {},
+    programa: {
+      url: 'https://www.unidadpueblocanario.org/manifiesto-20261119/manifiesto-electoral-upc.pdf',
+      fechaPublicacion: '2026-11-17',
+      documento: 'Manifiesto electoral de Unidad del Pueblo Canario para el 29-N (2026), con las líneas básicas de su programa',
+      archivo: 'programas/upc-2026.pdf',
+    },
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
@@ -362,8 +367,13 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Navarra',
     comunidades: ['navarra'],
     estadoCandidatura: 'confirmada',
-    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP).',
-    programa: {},
+    nota: 'Se presenta al Congreso en coalición con el PP (UPN-PP) y comparte su programa: las propuestas que ves son las del PP.',
+    programa: {
+      url: 'https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf',
+      fechaPublicacion: '2026-11-10',
+      documento: 'Programa conjunto de PP y UPN para el 29-N (2026): «Reconstrucción Nacional»',
+      archivo: 'programas/pp-2026.pdf',
+    },
     anterior: {
       documento: 'Sin programa propio para las generales de 2023',
       nota: 'En 2023 UPN no publicó programa para las generales, solo el de las elecciones forales de Navarra.',

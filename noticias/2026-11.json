@@ -18949,6 +18949,16 @@
   "vista": "2026-11-19T20:42:48.480Z"
  },
  {
+  "titulo": "Reacciones al debate Pedro Sánchez - Alberto Núñez Feijóo, en directo | Rufián: \"Feijóo fue a ganar votos de Vox y le salió bien. Sánchez no movilizó ningún voto\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/debate-electoral-pedro-sanchez-feijoo-directo-ultima-hora-cara-cara-las-elecciones-generales-29n_7063153_6.html",
+  "fecha": "2026-11-19T13:01:30.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
   "titulo": "Colau se compromete con las víctimas de la dana a reanudar la comisión de investigación",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/local/valencia/20261119/11688260/colau-compromete-victimas-dana-reanudar-comision-investigacion.html",
@@ -19141,6 +19151,16 @@
    "vox"
   ],
   "vista": "2026-11-19T20:42:48.480Z"
+ },
+ {
+  "titulo": "El PP coge fuerza a costa de Vox y Sánchez llega al cara a cara a cuatro puntos de Feijóo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/19/6aff2a9afc6c83886c8b459b.html",
+  "fecha": "2026-11-19T19:00:09.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
  },
  {
   "titulo": "La JEC dice que TVE no vulneró los derechos de Abascal al quitar 40 minutos de 'La Revuelta'",
@@ -19670,5 +19690,259 @@
    "psoe"
   ],
   "vista": "2026-11-20T02:21:53.127Z"
+ },
+ {
+  "titulo": "Asiron deberá pagar 5.541 euros en costas en un juicio contra Vox",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/pamplona-comarca/2026/11/20/asiron-debera-pagar-5-541-euros-costas-juicio-vox-843098-16.html",
+  "fecha": "2026-11-20T04:00:00.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Virginia Alonso, candidata de Podemos: \"Nadie está hablando de quitarle la vivienda a alguien con 3 pisos\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/20/virginia-alonso-candidata-nadie-hablando-quitarle-vivienda-alguien-3-pisos-843016-15.html",
+  "fecha": "2026-11-20T06:17:24.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Rufián vio a Sánchez mal asesorado en el cara a cara y otras críticas de la izquierda",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261120/11688905/gabriel-rufian-acusa-sanchez-prepararse-mas-cara-cara-mal-asesorado.html",
+  "fecha": "2026-11-20T08:35:11.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Las encuestas insisten en dar la victoria a Feijóo y una holgada mayoría absoluta a PP y Vox",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261120/11688932/encuestas-insisten-dar-victoria-feijoo-holgada-mayoria-absoluta-pp-vox.html",
+  "fecha": "2026-11-20T09:06:29.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Nou capítol del serial d’ERC a Girona: dimiteix l’executiva local i el partit encara no té candidat per a les municipals",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/nou-capitol-serial-d-erc-girona-dimiteix-l-executiva-local-partit-encara-no-candidat-municipals_25_5916899.html",
+  "fecha": "2026-11-20T09:19:20.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Irene Montero, crítica con los debatientes: \"Dos mujeres asesinadas ayer, pero solo Feijóo habló de feminismo.... y para atacarlo\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/irene-montero-critica-con-los-debatientes-dos-mujeres-asesinadas-ayer-pero-solo-feijoo-hablo-feminismo-para-atacarlo_7063525_0.html",
+  "fecha": "2026-11-20T09:42:27.000Z",
+  "partidos": [
+   "podemos",
+   "pp"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Colau recrimina a Sánchez dar la sensación de \"bajar los brazos\" y proclama que \"solo\" no puede frenar al PP",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-colau-recrimina-sanchez-dar-sensacion-bajar-brazos-proclama-solo-no-puede-frenar-pp-20261120104355.html",
+  "fecha": "2026-11-20T09:43:55.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "El PP celebra su \"victoria\" con una foto de Feijóo paseando a su perro y el PSOE saca a relucir sus \"mentiras\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-pp-celebra-victoria-foto-feijoo-paseando-perro-psoe-saca-relucir-mentiras-20261120104407.html",
+  "fecha": "2026-11-20T09:44:07.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Albert Sánchez: «Esta semana van a jugar Caro y 10 más»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/deportes/ud-las-palmas/albert-sanchez-semana-van-jugar-caro-20261120095309-nt.html",
+  "fecha": "2026-11-20T09:48:48.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Así han visto los comentaristas de EL CORREO el debate entre Sánchez y Feijóo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/visto-comentaristas-correo-sanchez-feijoo-20261120001724-nt.html",
+  "fecha": "2026-11-20T09:56:19.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Feijóo de paseo con su perro... la imagen con la que el PP da los buenos días",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/feijoo-paseo-perro-imagen-pp-buenos-dias-20261120095218-nt.html",
+  "fecha": "2026-11-20T10:00:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Ester Muñoz cree que Feijóo ganó a Sánchez en el cara a cara por \"cinco a cero\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/ester-munoz-cree-que-feijoo-gano-sanchez-cara-cara-por-cinco-cero_7063542_0.html",
+  "fecha": "2026-11-20T10:07:24.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "El sector primario de Canarias interpela a Feijóo: ¿defenderá sus ayudas europeas?",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/sector-primario-canarias-interpela-feijoo-defendera-ayudas-europeas_1_13679648.html",
+  "fecha": "2026-11-20T10:09:47.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Por qué aparece Óscar Puente en las listas del PSOE de las elecciones generales si dimitió y anunció que no se presentaría",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/por-que-aparece-oscar-puente-listas-psoe-elecciones-generales-si-dimitio-anuncio-que-no-se-presentaria_7062020_0.html",
+  "fecha": "2026-11-20T10:16:39.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Sabrido afirma que el PSOE ganará las elecciones tras un debate en el que Feijóo «mintió a mansalva»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/sabrido-afirma-psoe-ganara-elecciones-tras-debate-20261120111709-nt.html",
+  "fecha": "2026-11-20T10:17:10.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "La reformulada frase de Aznar a la que se agarra el PSOE tras el duro cara a cara con Feijóo",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/reformulada-frase-aznar-agarra-psoe-tras-duro-20261120112150-nt.html",
+  "fecha": "2026-11-20T10:21:50.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Illa critica els atacs de Feijóo al cara a cara: “Està molt obsessionat amb Sánchez”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/illa-critica-atacs-feijoo-cara-cara-obsessionat-sanchez_1_5916900.html",
+  "fecha": "2026-11-20T10:29:15.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Votantes de Vox, SALF, Iustitia Europa y Falange: nostálgicos del franquismo coinciden en la misa del aniversario de la muerte del dictador",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-20/votantes-de-vox-salf-iustitia-europa-y-falange-nostalgicos-del-franquismo-coinciden-en-la-misa-del-aniversario-de-la-muerte-del-dictador.html",
+  "fecha": "2026-11-20T10:31:53.000Z",
+  "partidos": [
+   "salf",
+   "vox"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Los momentos más destacados del cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261120/11689016/cara-a-cara-pedro-sanchez-alberto-nunez-feijoo-debate-sanchez-feijoo-momentos-destacados-cara-a-cara-crisis-de-la-vivienda-espana-politica-migratoria-ceuta-el-hierro-rebaja-impuestos-iva-alimentos-politica-exterior-espana.html",
+  "fecha": "2026-11-20T10:39:19.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Las frases del cara a cara entre Sánchez y Feijóo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261120/11689009/frases-cara-cara-sanchez-feijoo.html",
+  "fecha": "2026-11-20T10:40:32.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "El mentrestant de Puigdemont inclou tornar-se a deslliurar del marc mental espanyol",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/analisi/mentrestant-puigdemont-inclou-tornar-deslliurar-marc-mental-espanyol_1_5916954.html",
+  "fecha": "2026-11-20T10:43:33.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "José María Aznar carga contra el Gobierno de Pedro Sánchez: «Es una banda de delincuentes que ha tomado nuestro país»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/jose-maria-aznar-carga-gobierno-pedro-sanchez-20261120121649-nt.html",
+  "fecha": "2026-11-20T11:16:50.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "¿En qué cadena vieron los espectadores el cara a cara entre Pedro Sánchez y Alberto Núñez Feijóo?",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/culturas/tv/cadena-vieron-espectadores-cara-cara-pedro-sanchez-20261120085308-nt.html",
+  "fecha": "2026-11-20T11:19:15.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
+ },
+ {
+  "titulo": "Ganador del debate Cara a cara Sánchez - Feijóo, en directo: reacciones y últimas noticias de las elecciones generales 29N hoy",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/ganador-debate-cara-cara-sanchez-feijoo-directo-20261120074658-di.html",
+  "fecha": "2026-11-20T11:28:38.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-20T11:47:19.383Z"
  }
 ]

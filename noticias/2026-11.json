@@ -19567,6 +19567,8 @@
   "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/20/6aff88a4fc6c831c7c8b459d.html",
   "fecha": "2026-11-20T00:04:29.000Z",
   "partidos": [
+   "erc",
+   "frente-amplio",
    "pp",
    "psoe"
   ],
@@ -20006,6 +20008,16 @@
   "vista": "2026-11-20T20:27:07.916Z"
  },
  {
+  "titulo": "\"Celebro que se ponga a Sánchez colorado como si fuera yo quien lo hace\": Abascal retoma la senda de la tregua con Feijóo",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/20/6b004a08e9cf4aa11d8b4597.html",
+  "fecha": "2026-11-20T13:30:40.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
   "titulo": "UPC defiende una sanidad pública gestionada desde Canarias y no en Madrid",
   "medio": "Canarias Ahora",
   "url": "https://www.eldiario.es/canariasahora/politica/upc-defiende-sanidad-publica-gestionada-canarias-no-madrid_1_13680974.html",
@@ -20307,6 +20319,39 @@
   "vista": "2026-11-20T20:27:07.916Z"
  },
  {
+  "titulo": "Irene Montero exige salir de la OTAN y destinar el gasto militar a sanidad y educación: \"Militares yanquis go home\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-irene-montero-exige-salir-otan-destinar-gasto-militar-sanidad-educacion-militares-yanquis-go-home-20261120210111.html",
+  "fecha": "2026-11-20T20:01:11.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Montero y Rufián sacan músculo en Madrid en un acto con un duro discurso contra PSOE y Frente Amplio",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-20/montero-y-rufian-sacan-musculo-en-madrid-en-un-acto-con-un-duro-discurso-contra-psoe-y-frente-amplio.html",
+  "fecha": "2026-11-20T20:07:34.000Z",
+  "partidos": [
+   "erc",
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Sánchez se cobra la revancha y gana a Feijóo en Galicia: “Votemos en homenaje a Ramón Sampedro”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-20/sanchez-se-toma-la-revancha-en-galicia-y-esgrime-contra-feijoo-el-derecho-a-la-eutanasia-votemos-en-homenaje-a-ramon-sampedro.html",
+  "fecha": "2026-11-20T20:09:42.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
   "titulo": "Gabriel Rufián revela l’origen del seu idil·li amb Podem: “Sou la meva gent”",
   "medio": "Ara",
   "url": "https://www.ara.cat/politica/gabriel-rufian-revela-l-origen-idil-li-sou-meva-gent_1_5917804.html",
@@ -20315,6 +20360,17 @@
    "erc"
   ],
   "vista": "2026-11-20T20:27:07.916Z"
+ },
+ {
+  "titulo": "Puigdemont rebautiza ERC para cargar contra Rufián: «Esquerra Rufiana de Catalunya»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/puigdemont-rebautiza-erc-cargar-rufian-esquerra-rufiana-20261120210926-nt.html",
+  "fecha": "2026-11-20T20:11:32.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
  },
  {
   "titulo": "El alcalde de Oleiros, Ángel García Seoane, en el mitin de Pedro Sánchez en Santiago",
@@ -20335,5 +20391,184 @@
    "pp"
   ],
   "vista": "2026-11-20T20:27:07.916Z"
+ },
+ {
+  "titulo": "El cara a cara impulsa a Feijóo en la recta final: «Ahora a por el siguiente debate»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cara-cara-impulsa-feijoo-recta-final-siguiente-20261120183822-nt.html",
+  "fecha": "2026-11-20T20:33:47.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Besteiro cuestiona al «Feijóo gestor, vago, acomplejado, machista y desorientado»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/besteiro-cuestiona-feijoo-gestor-vago-acomplejado-machista-20261120213542-nt.html",
+  "fecha": "2026-11-20T20:35:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Sánchez se mide con Feijóo tras el debate y le supera en aforo en su plaza talismán en Galicia",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261120/11689512/sanchez-mide-feijoo-debate-le-supera-aforo-plaza-talisman-galicia.html",
+  "fecha": "2026-11-20T20:50:15.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Pedro Sánchez dice que Feijóo acabó \"retratándose\" en el debate porque \"no tiene nada que ofrecer más que los insultos\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pedro-sanchez-dice-que-feijoo-acabo-retratandose-debate-porque-no-tiene-nada-que-ofrecer-mas-que-los-insultos_7063935_0.html",
+  "fecha": "2026-11-20T20:52:19.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Decepción y malestar en el PSOE por la estrategia de Sánchez en el cara a cara",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/decepcion-malestar-psoe-estrategia-sanchez-cara-cara-20261121183038-nt.html",
+  "fecha": "2026-11-20T20:55:13.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Puigdemont agafa les regnes de la campanya i equipara Rufián amb Abascal: “Volen que desapareguem”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/puigdemont-agafa-regnes-campanya-equipara-rufian-abascal-volen-desapareguem_1_5917714.html",
+  "fecha": "2026-11-20T21:03:05.000Z",
+  "partidos": [
+   "erc",
+   "junts",
+   "vox"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "La intrahistoria de los préstamos con los que el húngaro Orbán rescató a Abascal",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/intrahistoria-prestamos-hungaro-orban-rescato-abascal_1_13677768.html",
+  "fecha": "2026-11-20T21:08:32.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Abascal advierte al PP de que van a tener que negociar \"muy duramente\" y duda de su \"colaboración\" con Vox",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-abascal-advierte-pp-van-tener-negociar-muy-duramente-duda-colaboracion-vox-20261120224541.html",
+  "fecha": "2026-11-20T21:45:41.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Irene Montero dice que Yolanda Díaz y Urtasun defendieron enviar armas a Ucrania que ahora entrenan a Núcleo Nacional",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/irene-montero-dice-yolanda-diaz-urtasun-defendieron-enviar-armas-ucrania-ahora-entrenan-nicleo-nacional_7063947_0.html",
+  "fecha": "2026-11-20T22:12:23.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Sánchez receta \"buena educación\" a Feijóo desde Galicia tras su cara a cara: \"La ventaja de dejarle hablar es que acaba retratándose\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/20/6b007d60fdddffa1598b45a1.html",
+  "fecha": "2026-11-20T22:23:25.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "El ‘momentum’ Puigdemont",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261121/11689362/momentum-puigdemont.html",
+  "fecha": "2026-11-20T23:05:00.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Jorge Buxadé: «Sánchez ha intentado machacar a la Comunitat por rencor y porque aquí no se le ha votado»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/jorge-buxade-sanchez-intentado-machacar-comunitat-rencor-20261120000758-nt.html",
+  "fecha": "2026-11-20T23:07:59.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Esteban se suma a la fiebre de los videopodcast: «Sánchez es una lagartija, es escurridizo»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/esteban-suma-fiebre-videopodcast-sanchez-lagartija-escurridizo-20261120000930-nt.html",
+  "fecha": "2026-11-20T23:09:30.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Bildu recuerda a Brouard y Muguruza y ve una nueva «amenaza del fascismo»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/bildu-recuerda-brouard-muguruza-nueva-amenaza-fascismo-20261120001217-nt.html",
+  "fecha": "2026-11-20T23:12:17.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "El fantasma de la mili salta de los programas electorales: así son las ideas de PP, PSOE y Vox sobre el Ejército",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/mili-programas-electorales-20261120144616-nt.html",
+  "fecha": "2026-11-20T23:29:58.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "José María Lassalle: «La mejor de las opciones es una gran coalición entre el PP y el PSOE»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/jose-maria-lassalle-mejor-opciones-gran-coalicion-20261120014114-ntrc.html",
+  "fecha": "2026-11-21T00:41:14.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
+ },
+ {
+  "titulo": "Un asesor del PP en La Vila Joiosa y expresidente de NNGG gana una oposición para trabajar en el ayuntamiento",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/asesor-pp-vila-joiosa-expresidente-nngg-gana-oposicion-trabajar-ayuntamiento_1_13673134.html",
+  "fecha": "2026-11-21T00:46:44.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-21T02:22:27.017Z"
  }
 ]

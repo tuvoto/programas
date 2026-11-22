@@ -20935,6 +20935,17 @@
   "vista": "2026-11-21T19:21:28.887Z"
  },
  {
+  "titulo": "El videojuego de Rufián donde debes esquivar los micros de Vito Quiles y los billetes de Nogueras",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/videojuego-rufian-debes-esquivar-micros-vito-quiles-billetes-nogueras_1_13682751.html",
+  "fecha": "2026-11-21T12:08:51.000Z",
+  "partidos": [
+   "erc",
+   "junts"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
   "titulo": "Compromís defiende la «polarización contra Abascal» y arremete contra el bipartidismo en su mitin central",
   "medio": "Las Provincias",
   "url": "https://www.lasprovincias.es/politica/compromis-defiende-polarizacion-abascal-arremete-bipartidismo-mitin-20261121133028-nt.html",
@@ -21495,6 +21506,16 @@
   "vista": "2026-11-22T01:22:22.258Z"
  },
  {
+  "titulo": "Yolanda Díaz y Gabriel Rufián intercambian reproches por la reforma laboral",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/yolanda-diaz-gabriel-rufian-intercambian-reproches-reforma-laboral_1_13683415.html",
+  "fecha": "2026-11-21T20:38:30.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
   "titulo": "Besteiro apela a un respaldo «masivo» y confía en la remontada del PSOE",
   "medio": "ABC",
   "url": "https://www.abc.es/espana/galicia/besteiro-apela-respaldo-masivo-confia-remontada-psoe-20261121215054-nt.html",
@@ -21525,6 +21546,17 @@
    "psoe"
   ],
   "vista": "2026-11-22T01:22:22.258Z"
+ },
+ {
+  "titulo": "El PSOE se perfila como ganador de las elecciones en Canarias, con un fuerte crecimiento de Vox",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/psoe-perfila-ganador-elecciones-canarias-fuerte-crecimiento-vox_1_13683028.html",
+  "fecha": "2026-11-21T21:10:47.000Z",
+  "partidos": [
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
  },
  {
   "titulo": "Bono a Felipe González: «No hagas el tonto. El PSOE te debe mucho, pero tú más al PSOE»",
@@ -21620,5 +21652,278 @@
    "vox"
   ],
   "vista": "2026-11-22T01:22:22.258Z"
+ },
+ {
+  "titulo": "La actriz canaria Mari Carmen Sánchez estrena 'Raíces' en Puerto Rico",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/cultura/cine/actriz-canaria-mari-carmen-sanchez-estrena-raices-20261122055400-nt.html",
+  "fecha": "2026-11-22T03:54:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Javier Ibáñez, cabeza de lista de Frente Amplio en Navarra: \"Hay que expropiar a los fondos buitre miles de viviendas vacías\"",
+  "medio": "Diario de Navarra",
+  "url": "https://www.diariodenavarra.es/noticias/navarra/2026/11/22/javier-ibanez-cabeza-lista-frente-amplio-navarra-hay-expropiar-fondos-buitre-miles-viviendas-vacias-843217-15.html",
+  "fecha": "2026-11-22T04:00:00.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El PP ya absorbe en Galicia al 17 % del electorado de Vox, que no logra escaño",
+  "medio": "La Voz de Galicia",
+  "url": "https://www.lavozdegalicia.es/noticia/espana/2026/11/21/pp-absorbe-galicia-17-electorado-vox-logra-escano/00031795284542391821958.htm",
+  "fecha": "2026-11-22T04:00:00.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Compromís busca consolidar el 29-N su frente valenciano para las autonómicas de 2027",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261122/11688940/compromis-busca-consolidar-29-n-frente-valenciano-autonomicas-2027.html",
+  "fecha": "2026-11-22T04:30:00.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Doce horas en campaña con Pedro Sánchez: “La última vez que la ultraderecha gobernó no había democracia”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-22/doce-horas-en-campana-con-pedro-sanchez-la-ultima-vez-que-la-ultraderecha-goberno-no-habia-democracia.html",
+  "fecha": "2026-11-22T04:30:01.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "La revancha de Feijóo consigo mismo",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-22/la-revancha-de-feijoo-consigo-mismo.html",
+  "fecha": "2026-11-22T04:30:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Oskar Matute, candidato de EH Bildu: “Para parar a PP y Vox no cobramos ninguna contraprestación”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/2026-11-22/oskar-matute-candidato-de-eh-bildu-para-parar-a-pp-y-vox-no-cobramos-ninguna-contraprestacion.html",
+  "fecha": "2026-11-22T04:30:01.000Z",
+  "partidos": [
+   "bildu",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Gabriel Rufián: “Más que fascismo hay hijoputismo; la maldad está de moda”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-22/gabriel-rufian-mas-que-fascismo-hay-hijoputismo-la-maldad-esta-de-moda.html",
+  "fecha": "2026-11-22T04:30:01.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Arturo Pérez-Reverte, sobre la diferencia entre PP y Vox: \"Para los jóvenes, Feijóo es el padre aburrido y Abascal el tío simpático y gamberro\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-22/1qrt-reverte-diferencia-pp-vox-feijoo-padre-aburrido-abascal-tio-simpatico_4468237/",
+  "fecha": "2026-11-22T04:45:00.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Gabriel Rufián: “El ‘cuanto peor, mejor’ es tóxico para el independentismo”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261122/11689945/gabriel-rufian-cuanto-peor-mejor-toxico-independentismo.html",
+  "fecha": "2026-11-22T05:00:00.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Sánchez considera que Zapatero “muy probablemente esté arrepentido” de haberse quedado las joyas",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261122/11690018/sanchez-considera-zapatero-probablemente-este-arrepentido-haberse-quedado-joyas.html",
+  "fecha": "2026-11-22T05:00:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Pedro Sánchez revela en Salvados que Zapatero le está \"ayudando\" y \"aconsejando\" en la campaña electoral",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/pedro-sanchez-revela-salvados-zapatero-le-ayudando-aconsejando-campana-electoral_1_13683140.html",
+  "fecha": "2026-11-22T05:01:39.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El refugio de Feijóo lejos de la campaña: el lugar al que se escapa el candidato del PP para desconectar",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/galicia/2026-11-22/refugio-feijoo-desconectar-pueblo-rios-galicia_4468059/",
+  "fecha": "2026-11-22T05:30:00.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El PSOE relega al Frente Amplio en esta campaña y confía en el tirón de los partidos territoriales: \"Tienen más fuerza\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/psoe-relega-frente-amplio-esta-campana-confia-tiron-los-partidos-territoriales-tienen-mas-fuerza_7063323_0.html",
+  "fecha": "2026-11-22T07:00:28.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El PP i Vox amaguen la seva agenda anticatalanista en campanya",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/pp-vox-amaguen-seva-agenda-anticatalanista-campanya_1_5916920.html",
+  "fecha": "2026-11-22T07:00:54.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Gabriel Rufián, el vers lliure que ERC va reclutar amb 180 seguidors a X",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/gabriel-rufian-vers-lliure-erc-reclutar-180-seguidors-x_1_5912710.html",
+  "fecha": "2026-11-22T07:00:58.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Irene Montero, última gran carta de Podemos para el 29N que busca que la política vuelva a preocuparse de \"lo básico\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/irene-montero-ultima-gran-carta-podemos-29n-que-busca-que-politica-vuelva-preocuparse-basico_7054127_0.html",
+  "fecha": "2026-11-22T07:06:33.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Alma Ezcurra (PP): \"Necesitamos un pacto de Estado por la educación porque nos estamos jugando la España de los próximos 50 años\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/alma-ezcurra-pp-necesitamos-un-pacto-estado-por-educacion-porque-nos-estamos-jugando-espana-los-proximos-50-anos_7062142_0.html",
+  "fecha": "2026-11-22T07:08:18.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El patrimonio del futuro presidente del Gobierno: de los 636.215,69 € en fondos e inversiones de Feijóo a las viviendas de Sánchez",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/patrimonio-futuro-presidente-gobierno-20261120103616-nt.html",
+  "fecha": "2026-11-22T08:41:39.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El sondeo de GAD3 da tres diputados a Vox en Canarias y solo Cristina Valido representaría al nacionalismo",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/sondeo-gad3-tres-diputados-vox-canarias-solo-20261122095902-nt.html",
+  "fecha": "2026-11-22T08:59:03.000Z",
+  "partidos": [
+   "cc",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Feijóo apelará al voto útil en la recta final para ampliar su mayoría tras el revulsivo del 'cara a cara'",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-apelara-voto-util-recta-final-ampliar-mayoria-revulsivo-cara-cara-20261122103605.html",
+  "fecha": "2026-11-22T09:36:05.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Encuesta de GAD3 de las elecciones generales en Córdoba: ganador y resultados de PP, PSOE, Vox y Frente Amplio",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/cordoba/encuesta-gad3-elecciones-generales-cordoba-ganador-resultados-20261122094528-nts.html",
+  "fecha": "2026-11-22T09:37:15.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Confirmado, el PP condiciona la participación de España en el Mundial 2030 a organizar la final: ¿puede la Selección retirarse de la competición?",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-condiciona-participacion-espana-mundial-2030-organizar-final-puede-seleccion-retirarse-competicion_7060307_0.html",
+  "fecha": "2026-11-22T09:43:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Bernabé acusa al PP de manipular el vídeo de Morant sobre las bofetadas a Feijóo: «Es una cuestión dialéctica»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/bernabe-acusa-pp-manipular-video-morant-sobre-20261122115828-nt.html",
+  "fecha": "2026-11-22T10:59:08.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "El PP acusa a Page y Bono de «hacer campaña para Sánchez» pese a sus críticas al presidente",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/pp-acusa-page-bono-campana-sanchez-pese-20261122122129-nt.html",
+  "fecha": "2026-11-22T11:21:29.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
+ },
+ {
+  "titulo": "Sánchez ya no es el preferido de las mujeres: Feijóo empata en preferencia para ser presidente",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/encuestas/2026/11/22/6b01d978fc6c830e508b457a.html",
+  "fecha": "2026-11-22T11:25:58.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-22T11:32:10.056Z"
  }
 ]

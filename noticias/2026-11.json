@@ -23934,7 +23934,8 @@
   "url": "https://www.20minutos.es/nacional/irene-montero-frente-amplio-psoe-no-solo-tienen-cercania-tambien-misma-lectura-gobierno_7062742_0.html",
   "fecha": "2026-11-24T04:00:00.000Z",
   "partidos": [
-   "frente-amplio"
+   "frente-amplio",
+   "podemos"
   ],
   "vista": "2026-11-24T13:49:52.757Z"
  },
@@ -24008,6 +24009,16 @@
    "vox"
   ],
   "vista": "2026-11-24T13:49:52.757Z"
+ },
+ {
+  "titulo": "Pablo Iglesias sale al rescate de Podemos para evitar que Irene Montero se quede sin escaño",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/24/6b054b58e85eceb17f8b459a.html",
+  "fecha": "2026-11-24T08:40:41.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
  },
  {
   "titulo": "Sánchez considera que con la amnistía a Puigdemont \"se cierra el círculo\" del procés",
@@ -24164,6 +24175,16 @@
    "frente-amplio"
   ],
   "vista": "2026-11-24T13:49:52.757Z"
+ },
+ {
+  "titulo": "El TSJ catalán se resiste a amnistiar a dos cargos de ERC pese al Constitucional y el TJUE",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/tsj-catalan-resiste-amnistiar-cargos-erc-pese-constitucional-tjue_1_13688067.html",
+  "fecha": "2026-11-24T11:24:49.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
  },
  {
   "titulo": "Los 499 mensajes de Óscar Puente en campaña: “Cuando tuitea, se nota. Es un activo para el PSOE”",
@@ -24349,6 +24370,16 @@
   "vista": "2026-11-24T13:49:52.757Z"
  },
  {
+  "titulo": "¿CC OO hace campaña a favor del Gobierno central?: crea una web y un grupo de WhatsApp para alertar de lo que se viene con PP y Vox",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/campana-favor-gobierno-central-crea-web-grupo-20261124142215-nt.html",
+  "fecha": "2026-11-24T13:23:07.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
   "titulo": "Vandalizan la sede de EH Bildu en Pamplona",
   "medio": "Diario de Navarra",
   "url": "https://www.diariodenavarra.es/noticias/navarra/pamplona-comarca/2026/11/24/vandalizan-sede-eh-bildu-pamplona-843607-16.html",
@@ -24368,5 +24399,544 @@
    "vox"
   ],
   "vista": "2026-11-24T13:49:52.757Z"
+ },
+ {
+  "titulo": "El vicepresident de Vox que va dur un boc mort a dissecar en un cotxe del Consell de Mallorca, investigat per malversació",
+  "medio": "Ara",
+  "url": "https://www.arabalears.cat/politica/vicepresident-vox-dur-boc-mort-dissecar-cotxe-consell-mallorca-investigat-malversacio_1_5921418.html",
+  "fecha": "2026-11-24T13:41:05.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Calzada (CC) contradice a Morales con la entrada de Marsa Maroc en las terminales de Boluda: «No vemos un gran riesgo»",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/economia/puertos/calzada-contradice-morales-entrada-marsa-maroc-terminales-20261124132226-nt.html",
+  "fecha": "2026-11-24T14:14:37.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "La Junta Electoral estima la cautelar de Vox y suspende la retirada de la lona denunciada por racista",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/junta-electoral-estima-cautelar-vox-suspende-retirada-20261124151754-nt.html",
+  "fecha": "2026-11-24T14:18:13.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Octavi Vilà revela que en el 2017 intentó con Puigdemont “que la situación no fuera tan complicada”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692305/octavi-vila-revela-2017-intento-puigdemont-situacion-fuera-complicada.html",
+  "fecha": "2026-11-24T14:21:52.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "UPC reclama al Estado el 100% de las ayudas Poseican y subirlas entre un 40 y 60%",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/upc-reclama-100-ayudas-poseican-subirlas-40-60_1_13689656.html",
+  "fecha": "2026-11-24T14:25:21.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Coalición Canaria-Primero Canarias pone precio a su voto en la investidura: 2.084 millones",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/coalicion-canaria-canarias-pone-precio-voto-investidura-2-084-millones_1_13689710.html",
+  "fecha": "2026-11-24T14:47:49.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PP rectifica y apoya el pacto de Estado de que piden las víctimas de Adamuz y suscriben PSOE, Vox y otras ocho formaciones",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/pp-rectifica-apoya-pacto-estado-que-piden-las-victimas-adamuz-suscriben-psoe-vox-otras-ocho-formaciones_7065177_0.html",
+  "fecha": "2026-11-24T16:13:14.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PSOE de Tenerife pide blindar pensiones y advierten de \"pretensiones privatizadoras\" de PP y Vox",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/tenerifeahora/politica/candidatos-congreso-santa-cruz-tenerife-pensiones-pp-vox_1_13690028.html",
+  "fecha": "2026-11-24T16:17:48.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "UPN y PP culpan al PSOE del \"retroceso\" de la Educación en Navarra",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/upn-pp-culpan-psoe-retroceso-educacion-navarra_1_13690020.html",
+  "fecha": "2026-11-24T17:08:19.000Z",
+  "partidos": [
+   "upn"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Luis Figo y Gabriel Rufián elevan el tono de su enfrentamiento en X en plena campaña del 29-N",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692476/luis-figo-gabriel-rufian-elevan-tono-enfrentamiento-x-plena-campana-29-n.html",
+  "fecha": "2026-11-24T17:38:29.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Rufián, una estrella de rock en campanya: tots els ‘followers’ són vots?",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/estrella-rock-campanya-tots-followers-son-vots_129_5921688.html",
+  "fecha": "2026-11-24T18:40:28.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Pradales acusa a Otegi de querer «salvar España» y desdeña el «voto útil» al PSE",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pradales-acusa-otegi-querer-salvar-espana-desdena-20261124194641-nt.html",
+  "fecha": "2026-11-24T18:46:41.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Vox anuncia un \"despliegue histórico\" con 208 apoderados en 61 consulados para \"denunciar\" irregularidades\" en el 29N",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-vox-anuncia-despliegue-historico-208-apoderados-61-consulados-denunciar-irregularidades-29n-20261124200711.html",
+  "fecha": "2026-11-24T19:07:11.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Vox rescata las vallas en defensa de la identidad catalana de las autonómicas",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692543/vox-rescata-vallas-defensa-identidad-catalana-autonomicas.html",
+  "fecha": "2026-11-24T19:19:44.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Rufián, en el 17, y Figo, en el 36",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692539/rufian-17-figo-36.html",
+  "fecha": "2026-11-24T19:20:36.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El Frente Amplio promete revertir todas las privatizaciones sanitarias",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692553/frente-amplio-promete-revertir-todas-privatizaciones-sanitarias.html",
+  "fecha": "2026-11-24T19:29:41.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "1ºCan-CC investirá presidente al candidato que firme un contrato con las 10 principales reclamaciones de Canarias",
+  "medio": "Canarias7",
+  "url": "https://www.canarias7.es/elecciones/generales/1ocancc-investira-presidente-candidato-firme-contrato-principales-20261124134802-nt.html",
+  "fecha": "2026-11-24T19:39:37.000Z",
+  "partidos": [
+   "cc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Junqueras incluye a “mucha gente de Junts” en el modelo de “ruina y miseria que representan” el PP, Vox y AC",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692502/junqueras-incluye-gente-junts-modelo-ruina-miseria-representan-pp-vox-ac.html",
+  "fecha": "2026-11-24T19:48:30.000Z",
+  "partidos": [
+   "junts",
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Juanma Moreno pide el «voto directo» al PP para lograr el quinto diputado por Málaga",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/malaga/juanma-moreno-pide-voto-directo-pp-lograr-20261124205625-nts.html",
+  "fecha": "2026-11-24T19:56:26.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Elecciones generales 29N, en directo: última hora de los debates y noticias sobre la campaña del PSOE, PP, Vox, Frente Amplio y resto de partidos hoy",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/debate-ocho-elecciones-generales-directo-intervenciones-pp-psoe-vox-20261123164534-di.html",
+  "fecha": "2026-11-24T19:57:23.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "“Em preocupa que Esquerra doni per perdudes les eleccions”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/em-preocupa-esquerra-no-doni-perdudes-eleccions_128_5919199.html",
+  "fecha": "2026-11-24T20:00:21.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Irene Montero alerta de una \"ofensiva antifeminista\" por la \"machosfera\" y lanza críticas a PP y PSOE",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/sociedad/noticia-irene-montero-alerta-ofensiva-antifeminista-machosfera-lanza-criticas-pp-psoe-20261124210136.html",
+  "fecha": "2026-11-24T20:01:36.000Z",
+  "partidos": [
+   "podemos",
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Feijóo se lanza en tromba desde Alicante por el voto de las mujeres con la promesa de «expulsar» a los delincuentes sexuales",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/elecciones/generales/feijoo-lanza-tromba-alicante-voto-mujeres-promesa-20261124211224-nt.html",
+  "fecha": "2026-11-24T20:12:24.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Junts replica a Sánchez que no se pasa página con la amnistía: “Os habéis equivocado de gente”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692562/junts-replica-sanchez-pasa-pagina-amnistia-habeis-equivocado-gente.html",
+  "fecha": "2026-11-24T20:16:08.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez recala en Barcelona para consolidar la 'ventaja competitiva' respecto al PP en Cataluña",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/sanchez-recala-barcelona-consolidar-ventaja-competitiva-respecto-20261124204702-nt.html",
+  "fecha": "2026-11-24T20:17:20.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Feijóo: “En España no habrá sitio para quien no respete a las mujeres ni a las personas LGTBI”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/feijoo-en-espana-no-habra-sitio-para-quien-no-respete-a-las-mujeres-ni-a-las-personas-lgtbi.html",
+  "fecha": "2026-11-24T20:19:09.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez mete a Loles León y a Serrat en campaña tras el apoyo de Bardem y otras personalidades de la cultura a Frente Amplio",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/24/6b05d44c21efa0d9778b456d.html",
+  "fecha": "2026-11-24T20:20:33.000Z",
+  "partidos": [
+   "frente-amplio",
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Almeida a Bono: «Si pretendes ser el referente moral del PSOE, mira qué tienes en la caja fuerte»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/almeida-bono-pretendes-referente-moral-psoe-mira-20261124212247-nt.html",
+  "fecha": "2026-11-24T20:22:48.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Feijóo busca el «voto prestado» de socialistas desencantados con el sanchismo",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/comunidad-valenciana/alicante/feijoo-busca-voto-prestado-socialistas-desencantados-sanchismo-20261124205831-nt.html",
+  "fecha": "2026-11-24T20:34:11.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez promete reformar la ley de Seguridad Nacional para que España no participe de “guerras ilegales”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692569/sanchez-promete-reformar-ley-seguridad-nacional-espana-participe-guerras-ilegales.html",
+  "fecha": "2026-11-24T20:34:19.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Pedro Sánchez: “Cataluña no va a fallar y va a liderar la gran victoria progresista”",
+  "medio": "El País",
+  "url": "https://elpais.com/espana/elecciones-generales/2026-11-24/pedro-sanchez-cataluna-no-va-a-fallar-y-va-a-liderar-la-gran-victoria-progresista.html",
+  "fecha": "2026-11-24T20:36:18.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Feijóo arremete contra la “hipocresía” de Sánchez por el voto femenino",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261124/11692568/feijoo-arremete-hipocresia-sanchez-voto-femenino.html",
+  "fecha": "2026-11-24T20:38:42.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Feijóo ve a Sánchez \"desesperado\" por convertir \"la campaña del amor y los bailecitos\" en la de meter \"miedo\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-ve-sanchez-desesperado-convertir-campana-amor-bailecitos-meter-miedo-20261124214122.html",
+  "fecha": "2026-11-24T20:41:22.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "La media final de las encuestas: el PSOE sube y los bloques se acercan antes del apagón demoscópico",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/media-final-encuestas-psoe-sube-bloques-acercan-apagon-demoscopico_1_13688784.html",
+  "fecha": "2026-11-24T20:45:09.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Puigdemont torna a la campanya de Junts després de l’amnistia: “Aviat ens tornarem a trobar”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/puigdemont-torna-campanya-junts-despres-l-amnistia-aviat-tornarem-trobar_1_5921882.html",
+  "fecha": "2026-11-24T20:45:54.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Nogueras (Junts) ve una victoria en la amnistía a Puigdemont: \"¡Es libre, os ha ganado!\"",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/catalunya/noticia-nogueras-junts-ve-victoria-amnistia-puigdemont-libre-os-ganado-20261124214949.html",
+  "fecha": "2026-11-24T20:49:49.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez s’encomana a Catalunya per a una “remuntada èpica”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/sanchez-s-encomana-catalunya-remuntada-epica_1_5921605.html",
+  "fecha": "2026-11-24T20:53:31.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Eneka Maiz, candidata de EH Bildu: \"La derecha recurre a ETA porque no tiene alternativa para nuestro país\"",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/eneka-maiz-candidata-eh-bildu-derecha-recurre-eta-no-alternativa-pais_128_13689853.html",
+  "fecha": "2026-11-24T21:00:35.000Z",
+  "partidos": [
+   "bildu"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Rueda se abraza a la prudencia y llama a la movilización para «vaciar la Moncloa de Sánchez y sus socios»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/galicia/rueda-abraza-prudencia-llama-movilizacion-vaciar-moncloa-20261124220218-nt.html",
+  "fecha": "2026-11-24T21:02:18.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El gran truc de màgia de Pedro Sánchez",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/gran-truc-magia-pedro-sanchez_129_5921778.html",
+  "fecha": "2026-11-24T21:03:05.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PP amenaza con derogar las ampliaciones de los permisos por nacimiento y duelo: \"Son papel mojado\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/pp-amenaza-derogar-ampliaciones-permisos-nacimiento-duelo-son-papel-mojado_1_13689805.html",
+  "fecha": "2026-11-24T21:12:49.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Palos de ciego en la Audiencia Nacional para buscar pruebas contra el PSOE en plena campaña electoral",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/palos-ciego-audiencia-nacional-buscar-pruebas-psoe-plena-campana-electoral_129_13685746.html",
+  "fecha": "2026-11-24T21:12:51.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PP de Ayuso postula para el Constitucional a la letrada mayor del Senado por indicación de Feijóo",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/pp-ayuso-postula-constitucional-letrada-mayor-senado-indicacion-feijoo_1_13690137.html",
+  "fecha": "2026-11-24T21:12:57.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "La actividad de la alcaldesa Català como diputada autonómica del PP: sin sueldo, cero iniciativas y cero intervenciones",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/actividad-alcaldesa-catala-diputada-autonomica-pp-sueldo-cero-iniciativas-cero-intervenciones_1_13690080.html",
+  "fecha": "2026-11-24T21:15:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PP de La Rioja, Aragón o Murcia apoyó retirar los aforamientos como piden las víctimas de la dana a Pérez Llorca",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/pp-rioja-aragon-murcia-apoyo-retirar-aforamientos-piden-victimas-dana-perez-llorca_1_13689181.html",
+  "fecha": "2026-11-24T21:15:43.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez promete en Barcelona modificar la ley de Defensa Nacional \"para que España nunca participe en una guerra ilegal\"",
+  "medio": "El Confidencial",
+  "url": "https://www.elconfidencial.com/espana/2026-11-24/sanchez-promete-en-barcelona-modificar-la-ley-de-seguridad-nacional_4471951/",
+  "fecha": "2026-11-24T21:16:00.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Tolón contrapone la inversión educativa del PSOE a los recortes del PP durante el Gobierno de Cospedal",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/talavera/tolon-contrapone-inversion-educativa-psoe-recortes-pp-20261124201214-nt.html",
+  "fecha": "2026-11-24T21:26:14.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "El PP irá al parador de Teruel y al piso de Jésica en el Día Internacional contra la Violencia de las Mujeres",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pp-ira-parador-teruel-piso-jesica-dia-20261124222836-ntrc.html",
+  "fecha": "2026-11-24T21:32:24.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Sánchez promete cambiar la Ley de Defensa Nacional para prohibir entrar en \"guerras ilegales\" como Irak e Irán",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/sanchez-promete-cambiar-ley-defensa-nacional-para-prohibir-entrar-guerras-ilegales-como-irak-iran_7065406_0.html",
+  "fecha": "2026-11-24T21:49:39.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "“No m’imagino què faria de vicepresidenta després del que ha fet a Barcelona”: Albiol i Colau se les tenen en el cara a cara",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/no-m-imagino-faria-vicepresidenta-despres-fet-barcelona-albiol-colau-tenen-cara-cara_1_5921854.html",
+  "fecha": "2026-11-24T22:28:31.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "La foto de la reunificación de la derecha navarra para derrotar la corrupción del PSOE y el \"binomio con Bildu\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/25/6b05d77bfdddfff75d8b4589.html",
+  "fecha": "2026-11-24T23:12:42.000Z",
+  "partidos": [
+   "bildu",
+   "psoe"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Albiol propone seguridad jurídica a los propietarios de viviendas y Colau expropiar los 400.000 pisos turísticos",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/cataluna/albiol-propone-seguridad-juridica-propietarios-viviendas-colau-20261124001909-nt.html",
+  "fecha": "2026-11-24T23:24:30.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
+ },
+ {
+  "titulo": "Albiol se enzarza con Colau en un cara a cara sobre la vivienda cargado de datos tergiversados",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/catalunya/albiol-enzarza-colau-cara-cara-vivienda-cargado-datos-tergiversados_1_13690499.html",
+  "fecha": "2026-11-24T23:44:24.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-24T23:55:34.649Z"
  }
 ]

@@ -28,7 +28,7 @@ const FECHAS = [
   { fecha: 'Desde 2 nov', fin: '2026-11-12', texto: 'Llegan las tarjetas censales, con tu mesa' },
   { fecha: '13–27 nov', fin: '2026-11-27', texto: 'Campaña electoral' },
   { fecha: '19 nov', fin: '2026-11-19', texto: 'Último día para pedir el voto por correo' },
-  { fecha: '25 nov', fin: '2026-11-25', texto: 'Último día para enviar el voto por correo' },
+  { fecha: '26 nov', fin: '2026-11-26', texto: 'Último día para enviar el voto por correo, hasta las 14:00' },
   { fecha: '28 nov', fin: '2026-11-28', texto: 'Jornada de reflexión' },
   { fecha: '29 nov', fin: '2026-11-29', texto: 'Elecciones, de 9:00 a 20:00', destacada: true },
 ];
@@ -52,10 +52,10 @@ const PASOS: Paso[] = [
     boton: { texto: 'Guía del voto por correo', ir: () => router.push('/voto-correo') },
   },
   {
-    desde: 'Hasta el 25 de noviembre',
-    hasta: '2026-11-25',
+    desde: 'Hasta el 26 de noviembre, a las 14:00',
+    hasta: '2026-11-26',
     titulo: 'Si pediste el voto por correo, envíalo',
-    texto: 'Como muy tarde el 25 de noviembre, en cualquier oficina de Correos.',
+    texto: 'La Junta Electoral Central ha ampliado el plazo: hasta el jueves 26 de noviembre a las 14:00, en cualquier oficina de Correos.',
     boton: { texto: 'Guía del voto por correo', ir: () => router.push('/voto-correo') },
   },
   {
@@ -197,7 +197,7 @@ export default function InfoScreen() {
     <Desplegable key="correo" color={2} titulo="Voto por correo" icono="correo" resumen="Pídelo hasta el 19 de noviembre">
       <P>
         Si ese día no puedes ir, pídelo en Correos (en persona o por internet) hasta el <B>19 de noviembre</B> y envía tu
-        voto como muy tarde el <B>25 de noviembre</B>.
+        voto como muy tarde el <B>26 de noviembre, a las 14:00</B> (la Junta Electoral Central amplió el plazo un día).
       </P>
       <Pulsable onPress={() => router.push('/voto-correo')} style={s.boton} vibracion="ligera" accessibilityRole="link">
         <Text style={[T.etiqueta, { color: C.sobreTinta, fontSize: 14 }]}>Ver la guía paso a paso</Text>
@@ -251,7 +251,7 @@ export default function InfoScreen() {
       </Punto>
       <Punto>
         Si en esas fechas estás en España, pide el voto por correo en Correos hasta el 19 de noviembre y envíalo hasta
-        el 25.
+        el 26 a las 14:00.
       </Punto>
       <Text style={[T.cuerpoSemi, { color: C.tinta, marginTop: 6 }]}>Si vives en España y estarás fuera (ERTA)</Text>
       <P>

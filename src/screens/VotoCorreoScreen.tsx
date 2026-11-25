@@ -10,7 +10,7 @@ import { C, F, M, R, S, T, ANCHO_LECTURA } from '../theme';
 const PLAZOS = [
   { fecha: '9 nov', texto: 'Empieza el envío de la documentación' },
   { fecha: '19 nov', texto: 'Último día para pedirlo' },
-  { fecha: '25 nov', texto: 'Último día para enviar tu voto' },
+  { fecha: '26 nov', texto: 'Último día para enviar tu voto, hasta las 14:00' },
   { fecha: '29 nov', texto: 'Elecciones' },
 ];
 
@@ -98,10 +98,10 @@ export default function VotoCorreoScreen({ onVolver }: { onVolver: () => void })
           </View>
         </Paso>
 
-        <Paso n={4} titulo="Envíalo, hasta el 25 de noviembre">
+        <Paso n={4} titulo="Envíalo, hasta el 26 de noviembre a las 14:00">
           <P>
             Lleva el sobre a cualquier oficina de Correos y envíalo por <B>correo certificado</B>. Es gratis. Te pedirán
-            identificarte.
+            identificarte. La Junta Electoral Central amplió el plazo un día: hasta el jueves 26, como máximo a las 14:00.
           </P>
           <Text style={[T.meta, { color: C.suave }]}>
             Si no puedes ir tú, otra persona puede llevarlo con una autorización firmada por ti y una fotocopia de tu

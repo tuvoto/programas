@@ -18,7 +18,7 @@ export const AVISOS: Aviso[] = [
   { id: 'campana', fecha: '2026-11-13T10:00:00+01:00', titulo: 'Empieza la campaña electoral', texto: 'Compara qué propone cada partido, tema a tema.', ruta: '/' },
   { id: 'correo-2', fecha: '2026-11-17T19:00:00+01:00', titulo: '¿Vas a votar por correo?', texto: 'Quedan 2 días para pedirlo en Correos.', ruta: '/voto-correo' },
   { id: 'correo-0', fecha: '2026-11-19T10:00:00+01:00', titulo: 'Último día para pedir el voto por correo', texto: 'Hoy puedes pedirlo en Correos, en persona o por internet.', ruta: '/voto-correo' },
-  { id: 'enviar', fecha: '2026-11-24T19:00:00+01:00', titulo: 'Si votas por correo, mañana es el último día', texto: 'Envía tu voto en Correos como muy tarde el 25 de noviembre.', ruta: '/voto-correo' },
+  { id: 'enviar', fecha: '2026-11-25T19:00:00+01:00', titulo: 'Si votas por correo, mañana es el último día', texto: 'Envía tu voto en Correos como muy tarde el jueves 26, a las 14:00.', ruta: '/voto-correo' },
   { id: 'manana', fecha: '2026-11-28T19:00:00+01:00', titulo: 'Mañana se vota', texto: 'Mira dónde te toca y qué tienes que llevar.', ruta: '/vota' },
   { id: 'hoy', fecha: '2026-11-29T09:00:00+01:00', titulo: 'Hoy se vota', texto: 'Los colegios están abiertos de 9:00 a 20:00.', ruta: '/vota' },
 ];

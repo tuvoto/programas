@@ -1311,6 +1311,23 @@ const PROPUESTAS_2026: Propuesta[] = [
   { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 19, resumen: 'Denunciar el genocidio en Palestina y la complicidad internacional.' },
   { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 19, resumen: 'Dedicar al menos el 0,7 % de los Presupuestos a cooperación internacional.' },
   { partidoId: 'upc', temaId: 'exterior', edicion: 2026, pagina: 10, resumen: 'Que la UE mantenga el trato específico a Canarias como región ultraperiférica, incluido el programa agrario POSEI.' },
+  // Geroa Bai: «Defiéndete. Guk, Nafarroa». Bases políticas para el 29-N (2026).
+  { partidoId: 'geroa-bai', temaId: 'educacion', edicion: 2026, pagina: 12, resumen: 'Transferir a Navarra la competencia de las becas.' },
+  { partidoId: 'geroa-bai', temaId: 'inmigracion', edicion: 2026, pagina: 14, resumen: 'Que Navarra siga siendo «tierra de acogida».' },
+  { partidoId: 'geroa-bai', temaId: 'medioambiente', edicion: 2026, pagina: 7, resumen: 'Que el Estado cumpla sus compromisos con el regadío navarro.' },
+  { partidoId: 'geroa-bai', temaId: 'medioambiente', edicion: 2026, pagina: 12, resumen: 'Cerrar la posición de Navarra en la planificación eléctrica para 2030.' },
+  { partidoId: 'geroa-bai', temaId: 'medioambiente', edicion: 2026, pagina: 14, resumen: 'Reforzar las políticas frente al cambio climático.' },
+  { partidoId: 'geroa-bai', temaId: 'igualdad', edicion: 2026, pagina: 14, resumen: 'Mantener los derechos civiles conseguidos estos años por el colectivo LGTBI.' },
+  { partidoId: 'geroa-bai', temaId: 'igualdad', edicion: 2026, pagina: 14, resumen: 'Reforzar las políticas públicas de protección de las mujeres víctimas de maltrato.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 7, resumen: 'Que el Estado cumpla en Navarra sus compromisos en infraestructuras ferroviarias.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 7, resumen: 'Conectar la futura red ferroviaria de altas prestaciones de Navarra con la «Y vasca» por Ezkio, y no por un recorrido más barato.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 7, resumen: 'Completar las transferencias de competencias que marca la LORAFNA (el «Amejoramiento» del Fuero) y respetar la relación bilateral entre Navarra y el Estado.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 7, resumen: 'Reformar la Ley de Secretos Oficiales y reconocer el daño causado, para poder esclarecer casos como el de Mikel Zabalza.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Mantener el Convenio Económico como herramienta básica del autogobierno de Navarra, frente a quienes proponen suprimir el Concierto y el Convenio.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 9, resumen: 'Frenar en el Senado una reforma de la Constitución que acabe con el reconocimiento de los derechos históricos.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Reforzar las políticas de memoria histórica.' },
+  { partidoId: 'geroa-bai', temaId: 'territorial', edicion: 2026, pagina: 14, resumen: 'Reconocer la realidad plurinacional del Estado y proteger las lenguas oficiales.' },
+  { partidoId: 'geroa-bai', temaId: 'exterior', edicion: 2026, pagina: 7, resumen: 'Que el Gobierno de Navarra tenga representación con voz y voto en las instituciones europeas que deciden sobre competencias forales, como el Ecofin.' },
 ];
 
 const PROPUESTAS_2023: Propuesta[] = [
@@ -1891,7 +1908,15 @@ const PROPUESTAS_UPN: Propuesta[] = PROPUESTAS_2026.filter((p) => p.partidoId ==
   partidoId: 'upn',
 }));
 
-export const PROPUESTAS: Propuesta[] = [...PROPUESTAS_2026, ...PROPUESTAS_UPN, ...PROPUESTAS_2023];
+// Ara Més-Front Ampli no tiene programa completo publicado que hayamos
+// encontrado: se muestran las propuestas del Frente Amplio, su socio en la
+// coalición, como dice la nota del partido.
+const PROPUESTAS_ARA_MES: Propuesta[] = PROPUESTAS_2026.filter((p) => p.partidoId === 'frente-amplio').map((p) => ({
+  ...p,
+  partidoId: 'ara-mes',
+}));
+
+export const PROPUESTAS: Propuesta[] = [...PROPUESTAS_2026, ...PROPUESTAS_UPN, ...PROPUESTAS_ARA_MES, ...PROPUESTAS_2023];
 
 // Programa que se muestra de cada partido: el de 2026 si ya hay propuestas
 // suyas de 2026; si no, el de 2023; si no hay ninguno, null.

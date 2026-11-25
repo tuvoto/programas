@@ -121,7 +121,7 @@ export const PARTIDOS: Partido[] = [
     estadoCandidatura: 'confirmada',
     nota: 'En Canarias, Baleares y la Comunitat Valenciana va dentro de otras coaliciones, y no presenta lista en Teruel, Ceuta ni Melilla.',
     programa: {
-      url: 'https://frenteamplio.info/programa/',
+      url: 'https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf',
       fechaPublicacion: '2026-11-16',
       documento: 'Programa del Frente Amplio para el 29-N (2026)',
       archivo: 'programas/frente-amplio-2026.pdf',
@@ -350,8 +350,13 @@ export const PARTIDOS: Partido[] = [
     territorio: 'Illes Balears',
     comunidades: ['baleares'],
     estadoCandidatura: 'confirmada',
-    nota: 'Coalición para el Congreso en Baleares de Ara Més con el Frente Amplio (Esquerra Unida y Movimiento Sumar).',
-    programa: {},
+    nota: 'Coalición para el Congreso en Baleares de Ara Més con el Frente Amplio (Esquerra Unida y Movimiento Sumar). Ara Més ha presentado propuestas propias para Baleares, pero no hemos encontrado su programa completo publicado: mientras tanto, las propuestas que ves son las del programa del Frente Amplio, su socio en la coalición.',
+    programa: {
+      url: 'https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf',
+      fechaPublicacion: '2026-11-16',
+      documento: 'Programa del Frente Amplio para el 29-N (2026), socio de Ara Més en la coalición',
+      archivo: 'programas/frente-amplio-2026.pdf',
+    },
     anterior: {
       documento: 'Programa de Sumar para el 23-J (2023)',
       archivo: 'programas/sumar-2023.pdf',
@@ -423,7 +428,11 @@ export const PARTIDOS: Partido[] = [
     comunidades: ['navarra'],
     estadoCandidatura: 'confirmada',
     nota: 'Se presenta con candidatura propia al Congreso en Navarra. Tiene 7 escaños en el Parlamento de Navarra.',
-    programa: {},
+    programa: {
+      fechaPublicacion: '2026-11-18',
+      documento: '«Defiéndete. Guk, Nafarroa». Bases políticas de Geroa Bai para el 29-N (2026)',
+      archivo: 'programas/geroa-bai-2026.pdf',
+    },
   },
 ];
 

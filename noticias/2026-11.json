@@ -24599,6 +24599,7 @@
   "partidos": [
    "frente-amplio",
    "pp",
+   "psoe",
    "vox"
   ],
   "vista": "2026-11-24T23:55:34.649Z"
@@ -24899,6 +24900,16 @@
   "vista": "2026-11-24T23:55:34.649Z"
  },
  {
+  "titulo": "La década del prodigioso hundimiento de las 'izquierdas Podemos': mil guerras y sin proyecto nacional hasta la puntilla de Sánchez",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/24/6b05bd62fdddffba288b45a1.html",
+  "fecha": "2026-11-24T21:46:11.000Z",
+  "partidos": [
+   "podemos"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
   "titulo": "Sánchez promete cambiar la Ley de Defensa Nacional para prohibir entrar en \"guerras ilegales\" como Irak e Irán",
   "medio": "20minutos",
   "url": "https://www.20minutos.es/nacional/sanchez-promete-cambiar-ley-defensa-nacional-para-prohibir-entrar-guerras-ilegales-como-irak-iran_7065406_0.html",
@@ -24968,6 +24979,16 @@
    "cc"
   ],
   "vista": "2026-11-25T08:42:47.079Z"
+ },
+ {
+  "titulo": "Luis de los Santos, candidato de Adelante Andalucía: \"Nos van a votar los conservadores que no quieren el retroceso que plantean el PP y Vox\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/25/6b05ddb5e85ecec2568b4579.html",
+  "fecha": "2026-11-25T01:10:42.000Z",
+  "partidos": [
+   "adelante"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
  },
  {
   "titulo": "Figaredo (Vox): \"Si traen productos de fuera, que se produzcan en iguales condiciones que en España\"",
@@ -25205,6 +25226,16 @@
   "vista": "2026-11-25T08:42:47.079Z"
  },
  {
+  "titulo": "Elecciones generales 2026, en directo: Puigdemont anuncia su regreso el 12 de diciembre y última hora del 29N",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-elecciones-generales-2026-directo-ultimas-noticias-29n-encuestas-debate-electoral-manana-20261125084430.html",
+  "fecha": "2026-11-25T07:44:30.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
   "titulo": "Colau y Albiol confrontan los dos modelos de vivienda y sociedad que se medirán en las urnas",
   "medio": "La Vanguardia",
   "url": "https://www.lavanguardia.com/politica/20261125/11692838/colau-albiol-confrontan-debate-dos-modelos-vivienda-sociedad-mediran-urnas.html",
@@ -25259,5 +25290,527 @@
    "vox"
   ],
   "vista": "2026-11-25T08:42:47.079Z"
+ },
+ {
+  "titulo": "Colau atribuye a la presión de Frente y de las movilizaciones que el PSOE \"se haya visto obligado\" a impulsar medidas de vivienda",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/colau-atribuye-presion-frente-las-movilizaciones-que-psoe-se-haya-visto-obligado-impulsar-medidas-vivienda_7065481_0.html",
+  "fecha": "2026-11-25T08:51:42.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Podria votar diumenge Puigdemont amb el DNI caducat? Aquesta i altres respostes sobre les eleccions",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/podra-votar-diumenge-puigdemont-dni-caducat-aquesta-altres-respostes-eleccions_1_5902511.html",
+  "fecha": "2026-11-25T08:57:36.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Carles Puigdemont comparece desde Bruselas tras aplicarse la Ley de Amnistía",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261125/11692908/carles-puigdemont-comparece-bruselas-aplicarse-ley-amnistia.html",
+  "fecha": "2026-11-25T09:08:02.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont tornarà a Catalunya el 12 de desembre “sense demanar permís ni perdó”",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/puigdemont-anuncia-avui-tornara-catalunya_1_5922362.html",
+  "fecha": "2026-11-25T09:37:40.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont confirma que regresará a Catalunya el 12 de diciembre y acudirá al Parlament",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261125/11692596/puigdemont-confirma-regresara-catalunya-12-diciembre-acudira-parlament.html",
+  "fecha": "2026-11-25T10:08:32.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont volverá el 12 de diciembre: \"España ha fracasado, retornaré sin pedir permiso ni perdón\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/puigdemont-volvera-espana-12-diciembre-celebra-aministia-esta-es-derrota-represion_7065451_0.html",
+  "fecha": "2026-11-25T10:09:54.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont volverá a España el 12 de diciembre tras la amnistía: \"El Estado ha fracasado, regresaré a mi país, a Cataluña, sin pedir perdón ni permiso\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/25/6b06b417fc6c83ba038b458e.html",
+  "fecha": "2026-11-25T10:13:41.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont anuncia que volverá el 12 de diciembre a Catalunya \"sin pedir perdón ni renunciar a nada\"",
+  "medio": "elDiario.es Catalunya",
+  "url": "https://www.eldiario.es/catalunya/puigdemont-anuncia-volvera-12-diciembre-catalunya-pedir-perdon-renunciar_1_13691159.html",
+  "fecha": "2026-11-25T10:15:06.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Aitor Esteban descarta un fraude electoral y cree que al PP y Vox no les hará “ni falta” denunciarlo",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/paisvasco/20261125/11692973/aitor-esteban-descarta-fraude-electoral-cree-pp-vox-les-hara-falta-denunciarlo.html",
+  "fecha": "2026-11-25T10:15:09.000Z",
+  "partidos": [
+   "pnv",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont anuncia que regresará a Cataluña el 12 de diciembre después de 9 años en Bélgica",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-puigdemont-anuncia-regresara-cataluna-12-diciembre-despues-anos-belgica-20261125111810.html",
+  "fecha": "2026-11-25T10:18:10.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Gabriel Rufián pone a Canarias como ejemplo de unidad de la izquierda y muestra su apoyo a UPC",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/gabriel-rufian-pone-canarias-ejemplo-unidad-izquierda-muestra-apoyo-upc_1_13691582.html",
+  "fecha": "2026-11-25T10:36:02.000Z",
+  "partidos": [
+   "erc",
+   "upc"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Así es el perfil del votante de Vox en las elecciones generales del 29N, según el CIS",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/perfil-votante-vox-elecciones-generales-cis_7063870_0.html",
+  "fecha": "2026-11-25T10:36:39.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Vox acusa a una asociación de víctimas mortales de la dana de “compartir cartel e intereses” con la izquierda",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/local/valencia/20261125/11693014/vox-acusa-asociacion-victimas-mortales-dana-compartir-cartel-e-intereses-izquierda.html",
+  "fecha": "2026-11-25T11:00:08.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "La Audiencia de Madrid obliga a interrogar a Leire Díez y al expresidente de Correos por una denuncia de Vox que la jueza archivó",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/audiencia-madrid-obliga-interrogar-leire-diez-expresidente-correos-denuncia-vox-jueza-archivo_1_13691705.html",
+  "fecha": "2026-11-25T11:10:03.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "UPN, PP y Vox buscan que un juzgado investigue a la ministra socialista Elma Saiz a cuatro días de las generales",
+  "medio": "elDiario.es Navarra",
+  "url": "https://www.eldiario.es/navarra/upn-pp-vox-buscan-juzgado-investigue-ministra-socialista-elma-saiz-cuatro-dias-generales_1_13691337.html",
+  "fecha": "2026-11-25T11:46:52.000Z",
+  "partidos": [
+   "upn",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Vox, sobre el mitin de Abascal en la plaza de toros: «La vamos a reventar»",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/vox-sobre-mitin-abascal-plaza-toros-vamos-20261125122734-nt.html",
+  "fecha": "2026-11-25T11:55:09.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Jordi Wild, el Martinenc i una mare lleona: un tomb amb Ada Colau",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/jordi-wild-martinenc-mare-lleona-tomb-ada-colau_1_5921647.html",
+  "fecha": "2026-11-25T12:00:21.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "UPC defiende mantener el Ministerio de Igualdad y que \"no esté camuflado\" en otras áreas",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/politica/upc-defiende-mantener-ministerio-igualdad-no-camuflado-areas_1_13692153.html",
+  "fecha": "2026-11-25T12:16:21.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Compromís radicaliza su discurso y vincula a PP y Vox con el nazismo",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/compromis-vincula-pp-vox-nazismo-20261125125033-nt.html",
+  "fecha": "2026-11-25T12:32:13.000Z",
+  "partidos": [
+   "compromis",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Colau, Albiol i l’últim ‘perroflauta’",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/media/tv/colau-albiol-l-ultim-perroflauta_129_5922585.html",
+  "fecha": "2026-11-25T12:41:06.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Cañadas (Vox) es declara “absolutament feminista”: “És respectar tothom, no criminalitzar els homes”",
+  "medio": "Ara",
+  "url": "https://www.arabalears.cat/parlament/canadas-vox-declara-absolutament-feminista-respectar-tothom-no-criminalitzar-homes_1_5922570.html",
+  "fecha": "2026-11-25T12:54:53.000Z",
+  "partidos": [
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El PP acude al Parador de Teruel en el 25-N para simbolizar \"la desvergüenza\" del PSOE: \"Es el símbolo de los pecados capitales del sanchismo\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/elecciones/2026/11/25/6b06d40b21efa0396c8b4585.html",
+  "fecha": "2026-11-25T13:09:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Horario y dónde ver el debate a cuatro de este jueves entre Sánchez, Feijóo, Abascal y Colau",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/horario-donde-ver-debate-cuatro-sanchez-feijoo-abascal-colau-jueves_7065628_0.html",
+  "fecha": "2026-11-25T13:12:23.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "UPC: pasado, presente y futuro",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/opinion/upc-pasado-presente-futuro_132_13692537.html",
+  "fecha": "2026-11-25T13:15:08.000Z",
+  "partidos": [
+   "upc"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont no plega",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/puigdemont-no-plega_129_5922432.html",
+  "fecha": "2026-11-25T13:24:44.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Álvarez de Toledo, sobre la política de vivienda de Sánchez: “Le puso un piso a una puta en la Plaza de España”",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261125/11693170/alvarez-toledo-resume-politica-vivienda-sanchez-le-puso-piso-puta-plaza-espana.html",
+  "fecha": "2026-11-25T13:26:35.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Illa recibirá a Puigdemont en el Palau de la Generalitat, en una fecha aún sin concretar",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/cataluna/illa-recibira-puigdemont-palau-generalitat-una-fecha-aun-sin-concretar_7065692_0.html",
+  "fecha": "2026-11-25T13:48:57.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Feijóo retará a Sánchez a responder preguntas que no aclaró en el 'cara a cara' y evitará el choque con Abascal",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-feijoo-retara-sanchez-responder-preguntas-no-aclaro-cara-cara-evitara-choque-abascal-20261125145838.html",
+  "fecha": "2026-11-25T13:58:38.000Z",
+  "partidos": [
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "La presidenta del Poder Judicial, los conservadores y un vocal de Sumar proponen concederse una “medalla de honor”",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/presidenta-judicial-conservadores-vocal-sumar-proponen-concederse-medalla-honor_1_13692729.html",
+  "fecha": "2026-11-25T14:05:34.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El PP utiliza el día contra la violencia machista para cargar contra el Gobierno: \"Le pusieron un piso a una puta\"",
+  "medio": "elDiario.es",
+  "url": "https://www.eldiario.es/politica/pp-utiliza-dia-violencia-machista-cargar-gobierno-le-pusieron-piso-puta_1_13692754.html",
+  "fecha": "2026-11-25T14:34:01.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Illa recibirá a Puigdemont en el Palau de la Generalitat cuando regrese a Barcelona",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/illa-recibira-puigdemont-palau-generalitat-regrese-barcelona-20261125143009-ntrc.html",
+  "fecha": "2026-11-25T14:36:26.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Puigdemont volverá a España el 12 de diciembre",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/puigdemont-volvera-espana-diciembre-20261125111335-ntrc.html",
+  "fecha": "2026-11-25T14:39:37.000Z",
+  "partidos": [
+   "junts"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Compromís estudia medidas jurídicas por el expediente a un maestro valenciano y se compromete a derogar la norma de \"neutralidad ideológica\"",
+  "medio": "elDiario.es Comunitat Valenciana",
+  "url": "https://www.eldiario.es/comunitat-valenciana/politica/compromis-estudia-medidas-juridicas-expediente-maestro-valenciano-compromete-derogar-norma-neutralidad-ideologica_1_13692900.html",
+  "fecha": "2026-11-25T14:42:04.000Z",
+  "partidos": [
+   "compromis"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "CC y PP aprueban el último presupuesto del mandato en el Cabildo de Tenerife con el rechazo de PSOE y Vox",
+  "medio": "Canarias Ahora",
+  "url": "https://www.eldiario.es/canariasahora/tenerifeahora/politica/cc-pp-aprueban-ultimo-presupuesto-mandato-cabildo-tenerife-rechazo-psoe-vox_1_13692939.html",
+  "fecha": "2026-11-25T15:26:35.000Z",
+  "partidos": [
+   "cc",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Rufián critica los métodos de Vito Quiles y el agitador le responde: «¿Se puede ser más llorón?»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/rufian-critica-metodos-vito-quiles-comunicador-responde-20261125150121-nt.html",
+  "fecha": "2026-11-25T15:34:38.000Z",
+  "partidos": [
+   "erc"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El PP promete 'pantallas cero' en los primeros años de la escuela: \"Los libros y el cuaderno volverán a ser las herramientas prioritarias\"",
+  "medio": "El Mundo",
+  "url": "https://www.elmundo.es/espana/2026/11/25/6b06c120e85ece682b8b4594.html",
+  "fecha": "2026-11-25T15:55:41.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Sánchez, Feijóo, Abascal y Colau se miden mañana en un debate a cuatro que dibujará los dos bloques ante el 29N",
+  "medio": "Europa Press",
+  "url": "https://www.europapress.es/nacional/noticia-sanchez-feijoo-abascal-colau-miden-debate-cuatro-dibujara-dos-bloques-29n-20261125172619.html",
+  "fecha": "2026-11-25T16:26:19.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Frente Amplio suma 450 apoyos más al manifiesto de la cultura española: Antonio de la Torre, Tristán Ulloa, Nathalie Poza...",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/frente-amplio-suma-450-apoyos-mas-manifiesto-cultura-espanola-antonio-torre-tristan-ulloa-nathalie-poza_7065824_0.html",
+  "fecha": "2026-11-25T16:41:50.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Una jueza imputa a Leire Díez y al exjefe de Gabinete de Sánchez por cuatro delitos en Correos",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/juez-imputa-leire-diez-exjefe-gabinete-sanchez-20261125121117-ntrc.html",
+  "fecha": "2026-11-25T16:43:33.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Pradales 'adapta' el himno del Athletic para pedir el voto para el PNV: «A veces toca dar el do de pecho»",
+  "medio": "El Correo",
+  "url": "https://www.elcorreo.com/politica/pradales-adapta-himno-athletic-pedir-voto-pnv-20261125175308-nt.html",
+  "fecha": "2026-11-25T16:53:58.000Z",
+  "partidos": [
+   "pnv"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Com governarien PP i Vox?",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/opinio/governarien-pp-vox_129_5921277.html",
+  "fecha": "2026-11-25T17:00:49.000Z",
+  "partidos": [
+   "pp",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Encuestas elecciones generales 29N: resultados de PP, PSOE, Vox y Frente Amplio y ganador según GAD3, el CIS y otros sondeos",
+  "medio": "Las Provincias",
+  "url": "https://www.lasprovincias.es/politica/encuestas-elecciones-generales-29n-resultados-pp-psoe-20261125180856-nt.html",
+  "fecha": "2026-11-25T17:15:41.000Z",
+  "partidos": [
+   "frente-amplio",
+   "pp",
+   "psoe",
+   "vox"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Álvarez de Toledo, desde el edificio en el que vivía Jésica, expareja de Ábalos: \"El PSOE ha utilizado a las mujeres como mercancía\"",
+  "medio": "20minutos",
+  "url": "https://www.20minutos.es/nacional/alvarez-toledo-desde-edificio-que-vivia-jesica-expareja-abalos-psoe-ha-utilizado-las-mujeres-como-mercancia_7065861_0.html",
+  "fecha": "2026-11-25T17:50:11.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El PP acusa al PSOE de Talavera de anteponer sus siglas a los intereses de España y de la ciudad",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/talavera/pp-acusa-psoe-talavera-anteponer-siglas-intereses-20261125191842-nt.html",
+  "fecha": "2026-11-25T18:18:43.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Albiol juega con el amarillo y pide el apoyo de los soberanistas que rechazan a Sánchez",
+  "medio": "La Vanguardia",
+  "url": "https://www.lavanguardia.com/politica/20261125/11693400/albiol-juega-amarillo-pide-apoyo-soberanistas-rechazan-sanchez.html",
+  "fecha": "2026-11-25T18:20:09.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El PP supera el PSOE en dones caps de llista",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/eleccions-generals/pp-supera-psoe-dones-caps-llista_1_5910466.html",
+  "fecha": "2026-11-25T18:22:18.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "La 'ruta de Ábalos' conduce al PP al Parador de Teruel: «La corrupción rodea a Sánchez»",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/aragon/ruta-abalos-conduce-pp-parador-teruel-corrupcion-20261125174744-nt.html",
+  "fecha": "2026-11-25T18:44:20.000Z",
+  "partidos": [
+   "pp",
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "El manifiesto de Frente Amplio cuenta ya con el apoyo de más de 650 personalidades de la cultura",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/manifiesto-frente-amplio-cuenta-apoyo-650-personalidades-20261125195819-nt.html",
+  "fecha": "2026-11-25T18:58:20.000Z",
+  "partidos": [
+   "frente-amplio"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Acte del PP a Madrid amb Alberto Núñez Feijóo, Isabel Díaz Ayuso, José Luis Martínez Almeida i Cayetana Álvarez de Toledo",
+  "medio": "Ara",
+  "url": "https://www.ara.cat/politica/acte-pp-madrid-alberto-nunez-feijoo-isabel-diaz-ayuso-jose-luis-martinez-almeida-cayetana-alvarez-toledo_8_5923243.html",
+  "fecha": "2026-11-25T19:04:54.000Z",
+  "partidos": [
+   "pp"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
+ },
+ {
+  "titulo": "Pedro Sánchez se monta una película en Córdoba: monta en bici y apela a la movilización desde Andalucía",
+  "medio": "ABC",
+  "url": "https://www.abc.es/espana/andalucia/cordoba/pedro-sanchez-monta-pelicula-cordoba-monta-bici-20261125200850-nts.html",
+  "fecha": "2026-11-25T19:08:51.000Z",
+  "partidos": [
+   "psoe"
+  ],
+  "vista": "2026-11-25T19:21:15.490Z"
  }
 ]
